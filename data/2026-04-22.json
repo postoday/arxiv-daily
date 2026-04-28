@@ -56,7 +56,8 @@
       "updated": "2026-04-22T07:56:57Z",
       "comments": "24 pages, model evaluation report",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "figures": []
     },
     {
       "arxiv_id": "2604.19747",
@@ -86,6 +87,13 @@
       "code_links": [],
       "project_links": [
         "https://yutian10.github.io/AnyRecon/"
+      ],
+      "html_url": "https://arxiv.org/html/2604.19747v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19747v1/x1.png",
+        "https://arxiv.org/html/2604.19747v1/x2.png",
+        "https://arxiv.org/html/2604.19747v1/x3.png",
+        "https://arxiv.org/html/2604.19747v1/x4.png"
       ]
     },
     {
@@ -113,7 +121,14 @@
       "updated": "2026-04-21T17:59:03Z",
       "comments": "Project page: cityrag.github.io",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19741v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19741v1/x1.png",
+        "https://arxiv.org/html/2604.19741v1/x2.png",
+        "https://arxiv.org/html/2604.19741v1/x3.png",
+        "https://arxiv.org/html/2604.19741v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19740",
@@ -140,6 +155,13 @@
       "code_links": [],
       "project_links": [
         "https://circle-group.github.io/research/GATES"
+      ],
+      "html_url": "https://arxiv.org/html/2604.19740v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19740v1/x1.png",
+        "https://arxiv.org/html/2604.19740v1/x2.png",
+        "https://arxiv.org/html/2604.19740v1/x3.png",
+        "https://arxiv.org/html/2604.19740v1/x4.png"
       ]
     },
     {
@@ -174,7 +196,14 @@
       "updated": "2026-04-21T17:59:02Z",
       "comments": "Technical Report of DR-Venus",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19859v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19859v1/x1.png",
+        "https://arxiv.org/html/2604.19859v1/x2.png",
+        "https://arxiv.org/html/2604.19859v1/x3.png",
+        "https://arxiv.org/html/2604.19859v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19858",
@@ -248,7 +277,14 @@
       "updated": "2026-04-21T17:58:58Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19858v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19858v1/x1.png",
+        "https://arxiv.org/html/2604.19858v1/x2.png",
+        "https://arxiv.org/html/2604.19858v1/x3.png",
+        "https://arxiv.org/html/2604.19858v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19736",
@@ -272,7 +308,14 @@
       "updated": "2026-04-21T17:58:26Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19736v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19736v1/x1.png",
+        "https://arxiv.org/html/2604.19736v1/x2.png",
+        "https://arxiv.org/html/2604.19736v1/x3.png",
+        "https://arxiv.org/html/2604.19736v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19734",
@@ -299,6 +342,17 @@
       "code_links": [],
       "project_links": [
         "https://xpeng-robotics.github.io/unit/"
+      ],
+      "html_url": "https://arxiv.org/html/2604.19734v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19734v1/x1.png",
+        "https://arxiv.org/html/2604.19734v1/x2.png",
+        "https://arxiv.org/html/2604.19734v1/x3.png",
+        "https://arxiv.org/html/2604.19734v1/x4.png"
+      ],
+      "affiliations": [
+        "Tsinghua University",
+        "The University of Hong Kong"
       ]
     },
     {
@@ -324,7 +378,14 @@
       "code_links": [
         "https://github.com/alexanderswerdlow/faster"
       ],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19730v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19730v1/figures/method.png",
+        "https://arxiv.org/html/2604.19730v1/figures/mdp.png",
+        "https://arxiv.org/html/2604.19730v1/x1.png",
+        "https://arxiv.org/html/2604.19730v1/x2.png"
+      ]
     },
     {
       "arxiv_id": "2604.19728",
@@ -358,6 +419,13 @@
       ],
       "project_links": [
         "https://tri-ml.github.io/vla_foundry"
+      ],
+      "html_url": "https://arxiv.org/html/2604.19728v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19728v1/x1.png",
+        "https://arxiv.org/html/2604.19728v1/x2.png",
+        "https://arxiv.org/html/2604.19728v1/images/colored_logo.png",
+        "https://arxiv.org/html/2604.19728v1/images/cat.png"
       ]
     },
     {
@@ -382,7 +450,8 @@
       "updated": "2026-04-21T17:48:51Z",
       "comments": "arXiv admin note: text overlap with arXiv:2409.19345 by other authors",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "figures": []
     },
     {
       "arxiv_id": "2604.19722",
@@ -402,7 +471,14 @@
       "updated": "2026-04-21T17:48:27Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19722v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19722v1/fig_distribution.png",
+        "https://arxiv.org/html/2604.19722v1/fig_scalability.png",
+        "https://arxiv.org/html/2604.19722v1/fig_accuracy.png",
+        "https://arxiv.org/html/2604.19722v1/fig_time.png"
+      ]
     },
     {
       "arxiv_id": "2604.19720",
@@ -432,7 +508,14 @@
       "code_links": [
         "https://github.com/Taited/ReImagine"
       ],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19720v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19720v1/x1.png",
+        "https://arxiv.org/html/2604.19720v1/x2.png",
+        "https://arxiv.org/html/2604.19720v1/x3.png",
+        "https://arxiv.org/html/2604.19720v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19715",
@@ -452,7 +535,14 @@
       "updated": "2026-04-21T17:40:36Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19715v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19715v1/figures/communcation_model.png",
+        "https://arxiv.org/html/2604.19715v1/figures/ieee37_feeder.png",
+        "https://arxiv.org/html/2604.19715v1/figures/load_profiles.png",
+        "https://arxiv.org/html/2604.19715v1/figures/pv_profiles.png"
+      ]
     },
     {
       "arxiv_id": "2604.19710",
@@ -483,6 +573,13 @@
       "code_links": [],
       "project_links": [
         "https://spanvla.github.io/"
+      ],
+      "html_url": "https://arxiv.org/html/2604.19710v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19710v1/x1.png",
+        "https://arxiv.org/html/2604.19710v1/x2.png",
+        "https://arxiv.org/html/2604.19710v1/x3.png",
+        "https://arxiv.org/html/2604.19710v1/x4.png"
       ]
     },
     {
@@ -507,6 +604,13 @@
       "code_links": [],
       "project_links": [
         "https://kocasariumut.github.io/FaceAnything/"
+      ],
+      "html_url": "https://arxiv.org/html/2604.19702v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19702v1/experiments/framework/FaceAnything_framework_method4.png",
+        "https://arxiv.org/html/2604.19702v1/experiments/framework/FaceAnything_framework_dataset3.png",
+        "https://arxiv.org/html/2604.19702v1/experiments/points_qualitative/depth_qualitative_concatenated3.jpg",
+        "https://arxiv.org/html/2604.19702v1/experiments/multiview_singleview/306_cam_222200044.png"
       ]
     },
     {
@@ -528,7 +632,9 @@
       "updated": "2026-04-21T17:20:24Z",
       "comments": "17 pages, 6 figures. Preprint",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19856v1",
+      "figures": []
     },
     {
       "arxiv_id": "2604.19697",
@@ -559,7 +665,21 @@
       "code_links": [
         "https://github.com/lll-hhh/STEPSTEM"
       ],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19697v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19697v1/figure/123.png",
+        "https://arxiv.org/html/2604.19697v1/figure/data_bintu.png",
+        "https://arxiv.org/html/2604.19697v1/figure/33.png",
+        "https://arxiv.org/html/2604.19697v1/x1.png"
+      ],
+      "affiliations": [
+        "Central South University",
+        "Meituan Inc",
+        "Peking University",
+        "University of Chinese Academy of Sciences",
+        "Nanyang Technological University"
+      ]
     },
     {
       "arxiv_id": "2604.19689",
@@ -588,7 +708,14 @@
       "code_links": [
         "https://github.com/ShuaiWang97/A-MAR"
       ],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19689v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19689v1/x1.png",
+        "https://arxiv.org/html/2604.19689v1/x2.png",
+        "https://arxiv.org/html/2604.19689v1/x3.png",
+        "https://arxiv.org/html/2604.19689v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19683",
@@ -618,7 +745,14 @@
       "updated": "2026-04-22T17:44:56Z",
       "comments": "16 pages,5 figures",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19683v2",
+      "figures": [
+        "https://arxiv.org/html/2604.19683v2/x1.png",
+        "https://arxiv.org/html/2604.19683v2/x2.png",
+        "https://arxiv.org/html/2604.19683v2/x3.png",
+        "https://arxiv.org/html/2604.19683v2/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19680",
@@ -644,7 +778,14 @@
       "code_links": [
         "https://github.com/fanzh03/IR-Flow"
       ],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19680v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19680v1/x1.png",
+        "https://arxiv.org/html/2604.19680v1/x2.png",
+        "https://arxiv.org/html/2604.19680v1/x3.png",
+        "https://arxiv.org/html/2604.19680v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19679",
@@ -671,6 +812,13 @@
       "code_links": [],
       "project_links": [
         "https://aim-uofa.github.io/MMControl/"
+      ],
+      "html_url": "https://arxiv.org/html/2604.19679v2",
+      "figures": [
+        "https://arxiv.org/html/2604.19679v2/x1.png",
+        "https://arxiv.org/html/2604.19679v2/x2.png",
+        "https://arxiv.org/html/2604.19679v2/x3.png",
+        "https://arxiv.org/html/2604.19679v2/x4.png"
       ]
     },
     {
@@ -694,7 +842,14 @@
       "updated": "2026-04-21T16:55:48Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19677v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19677v1/x1.png",
+        "https://arxiv.org/html/2604.19677v1/x2.png",
+        "https://arxiv.org/html/2604.19677v1/x3.png",
+        "https://arxiv.org/html/2604.19677v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19675",
@@ -715,7 +870,18 @@
       "updated": "2026-04-21T16:54:43Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19675v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19675v1/x1.png",
+        "https://arxiv.org/html/2604.19675v1/x2.png",
+        "https://arxiv.org/html/2604.19675v1/x3.png",
+        "https://arxiv.org/html/2604.19675v1/x4.png"
+      ],
+      "affiliations": [
+        "School of Engineering, University of Birmingham",
+        "School of Public Health, Peking University"
+      ]
     },
     {
       "arxiv_id": "2604.19673",
@@ -739,7 +905,14 @@
       "updated": "2026-04-21T16:53:18Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19673v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19673v1/x2.png",
+        "https://arxiv.org/html/2604.19673v1/x3.png",
+        "https://arxiv.org/html/2604.19673v1/x4.png",
+        "https://arxiv.org/html/2604.19673v1/x5.png"
+      ]
     },
     {
       "arxiv_id": "2604.19670",
@@ -763,6 +936,13 @@
       "code_links": [],
       "project_links": [
         "https://youtu.be/55Q3lq1fINs"
+      ],
+      "html_url": "https://arxiv.org/html/2604.19670v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19670v1/x1.png",
+        "https://arxiv.org/html/2604.19670v1/x2.png",
+        "https://arxiv.org/html/2604.19670v1/x3.png",
+        "https://arxiv.org/html/2604.19670v1/x4.png"
       ]
     },
     {
@@ -794,7 +974,14 @@
       "code_links": [
         "https://github.com/zjunlp/Chat2Workflow"
       ],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19667v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19667v1/x1.png",
+        "https://arxiv.org/html/2604.19667v1/x2.png",
+        "https://arxiv.org/html/2604.19667v1/x3.png",
+        "https://arxiv.org/html/2604.19667v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19657",
@@ -819,7 +1006,14 @@
       "updated": "2026-04-21T16:45:30Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19657v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19657v1/x1.png",
+        "https://arxiv.org/html/2604.19657v1/x2.png",
+        "https://arxiv.org/html/2604.19657v1/x3.png",
+        "https://arxiv.org/html/2604.19657v1/figures/privacy.png"
+      ]
     },
     {
       "arxiv_id": "2604.19653",
@@ -841,7 +1035,14 @@
       "updated": "2026-04-21T16:42:33Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19653v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19653v1/x1.png",
+        "https://arxiv.org/html/2604.19653v1/x2.png",
+        "https://arxiv.org/html/2604.19653v1/x3.png",
+        "https://arxiv.org/html/2604.19653v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19652",
@@ -869,7 +1070,12 @@
       "updated": "2026-04-21T16:41:55Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19652v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19652v1/x1.png",
+        "https://arxiv.org/html/2604.19652v1/x2.png"
+      ]
     },
     {
       "arxiv_id": "2604.19648",
@@ -892,7 +1098,14 @@
       "updated": "2026-04-21T16:37:18Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19648v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19648v1/x1.png",
+        "https://arxiv.org/html/2604.19648v1/x2.png",
+        "https://arxiv.org/html/2604.19648v1/x3.png",
+        "https://arxiv.org/html/2604.19648v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19643",
@@ -914,7 +1127,14 @@
       "updated": "2026-04-21T16:32:38Z",
       "comments": "This paper has been accepted for publication in the Proceedings of the 2026 4th International Conference on Robotics, Control and Vision Engineering (RCVE 2026)",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19643v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19643v1/images/appendix/teaser_diagram.png",
+        "https://arxiv.org/html/2604.19643v1/images/appendix/system_diagram.png",
+        "https://arxiv.org/html/2604.19643v1/images/appendix/acoustoBot-gesture.png",
+        "https://arxiv.org/html/2604.19643v1/images/appendix/comparison_training_speed.png"
+      ]
     },
     {
       "arxiv_id": "2604.19639",
@@ -934,7 +1154,14 @@
       "updated": "2026-04-21T16:28:36Z",
       "comments": "20 pages, 12 figures",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19639v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19639v1/x1.png",
+        "https://arxiv.org/html/2604.19639v1/x2.png",
+        "https://arxiv.org/html/2604.19639v1/x3.png",
+        "https://arxiv.org/html/2604.19639v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19638",
@@ -964,7 +1191,18 @@
       "code_links": [
         "https://github.com/sled-group/SafetyALFRED.git"
       ],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19638v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19638v1/x1.png",
+        "https://arxiv.org/html/2604.19638v1/latex/figures/MicrowaveWithTomatoAndCellPhonejpg.jpg",
+        "https://arxiv.org/html/2604.19638v1/latex/figures/FridgeLeftOpen.jpg",
+        "https://arxiv.org/html/2604.19638v1/latex/figures/FloorCabinetLeftOpen.jpg"
+      ],
+      "affiliations": [
+        "University of Michigan",
+        "Boise State University"
+      ]
     },
     {
       "arxiv_id": "2604.19636",
@@ -990,6 +1228,13 @@
       "code_links": [],
       "project_links": [
         "https://xinxiaozhe12345.github.io/CoInteract_Project/"
+      ],
+      "html_url": "https://arxiv.org/html/2604.19636v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19636v1/x1.png",
+        "https://arxiv.org/html/2604.19636v1/x2.png",
+        "https://arxiv.org/html/2604.19636v1/x3.png",
+        "https://arxiv.org/html/2604.19636v1/x4.png"
       ]
     },
     {
@@ -1020,7 +1265,11 @@
       "updated": "2026-04-21T16:25:22Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19635v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19635v1/framework.png"
+      ]
     },
     {
       "arxiv_id": "2604.19633",
@@ -1043,7 +1292,14 @@
       "updated": "2026-04-21T16:20:59Z",
       "comments": "11 pages, 3 figures, 2 tables",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19633v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19633v1/architecture.png",
+        "https://arxiv.org/html/2604.19633v1/results_T0.png",
+        "https://arxiv.org/html/2604.19633v1/results_metrics.png",
+        "https://arxiv.org/html/2604.19633v1/results_spq.png"
+      ]
     },
     {
       "arxiv_id": "2604.19632",
@@ -1068,7 +1324,14 @@
       "updated": "2026-04-21T16:20:19Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19632v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19632v1/figs/instruct.png",
+        "https://arxiv.org/html/2604.19632v1/figs/overview_framework.png",
+        "https://arxiv.org/html/2604.19632v1/figs/LTA.png",
+        "https://arxiv.org/html/2604.19632v1/figs/visualize2.png"
+      ]
     },
     {
       "arxiv_id": "2604.19631",
@@ -1090,7 +1353,13 @@
       "updated": "2026-04-21T16:18:26Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19631v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19631v1/x1.png",
+        "https://arxiv.org/html/2604.19631v1/x2.png",
+        "https://arxiv.org/html/2604.19631v1/x3.png"
+      ]
     },
     {
       "arxiv_id": "2604.19624",
@@ -1116,6 +1385,13 @@
       "code_links": [],
       "project_links": [
         "https://pradyumnaym.github.io/graft"
+      ],
+      "html_url": "https://arxiv.org/html/2604.19624v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19624v1/x1.png",
+        "https://arxiv.org/html/2604.19624v1/x2.png",
+        "https://arxiv.org/html/2604.19624v1/x3.png",
+        "https://arxiv.org/html/2604.19624v1/x4.png"
       ]
     },
     {
@@ -1138,7 +1414,14 @@
       "updated": "2026-04-21T16:11:56Z",
       "comments": "11pages, 9 figures",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19623v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19623v1/x1.png",
+        "https://arxiv.org/html/2604.19623v1/x2.png",
+        "https://arxiv.org/html/2604.19623v1/x3.png",
+        "https://arxiv.org/html/2604.19623v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19618",
@@ -1162,7 +1445,14 @@
       "updated": "2026-04-21T16:05:34Z",
       "comments": "11 pages, 12 figures, Under Review",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19618v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19618v1/fig/frame.png",
+        "https://arxiv.org/html/2604.19618v1/fig/image_model.png",
+        "https://arxiv.org/html/2604.19618v1/fig/overview.png",
+        "https://arxiv.org/html/2604.19618v1/fig/prediction.png"
+      ]
     },
     {
       "arxiv_id": "2604.19609",
@@ -1187,7 +1477,8 @@
       "code_links": [],
       "project_links": [
         "https://vision.rwth-aachen.de/Volt"
-      ]
+      ],
+      "figures": []
     },
     {
       "arxiv_id": "2604.19606",
@@ -1218,7 +1509,14 @@
       "updated": "2026-04-21T15:55:33Z",
       "comments": "25 pages, 5 figures",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19606v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19606v1/x1.png",
+        "https://arxiv.org/html/2604.19606v1/x2.png",
+        "https://arxiv.org/html/2604.19606v1/x3.png",
+        "https://arxiv.org/html/2604.19606v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19598",
@@ -1238,7 +1536,8 @@
       "updated": "2026-04-21T15:51:46Z",
       "comments": "24 Pages, 2 Figures, 6 Tables and 2 Supplementary Materials",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "figures": []
     },
     {
       "arxiv_id": "2604.19596",
@@ -1262,7 +1561,14 @@
       "updated": "2026-04-21T15:44:40Z",
       "comments": "ISPRS Congress 2026, Toronto",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19596v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19596v1/figures/pc2model.png",
+        "https://arxiv.org/html/2604.19596v1/figures/scan_with_occulusions_2.png",
+        "https://arxiv.org/html/2604.19596v1/figures/noise.png",
+        "https://arxiv.org/html/2604.19596v1/figures/mixed_pixels.png"
+      ]
     },
     {
       "arxiv_id": "2604.19593",
@@ -1285,7 +1591,16 @@
       "updated": "2026-04-22T16:53:57Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19593v2",
+      "figures": [
+        "https://arxiv.org/html/2604.19593v2/x1.png"
+      ],
+      "affiliations": [
+        "National University of Science and Technology POLITEHNICA Bucharest, Bucharest, Romania",
+        "Paris 1 Panthéon-Sorbonne University, Paris, France",
+        "University of Bucharest, Bucharest, Romania"
+      ]
     },
     {
       "arxiv_id": "2604.19591",
@@ -1310,7 +1625,17 @@
       "updated": "2026-04-22T09:29:15Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19591v2",
+      "figures": [
+        "https://arxiv.org/html/2604.19591v2/figs/teaser_motivation.png",
+        "https://arxiv.org/html/2604.19591v2/figs/framework.png",
+        "https://arxiv.org/html/2604.19591v2/figs/qualitative_compare.png"
+      ],
+      "affiliations": [
+        "Sun Yat-Sen University",
+        "Tsinghua University"
+      ]
     },
     {
       "arxiv_id": "2604.19587",
@@ -1343,7 +1668,14 @@
       "code_links": [
         "https://github.com/vivoCameraResearch/SmartPhotoCrafter"
       ],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19587v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19587v1/x1.png",
+        "https://arxiv.org/html/2604.19587v1/x2.png",
+        "https://arxiv.org/html/2604.19587v1/x3.png",
+        "https://arxiv.org/html/2604.19587v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19578",
@@ -1368,7 +1700,14 @@
       "updated": "2026-04-21T15:33:53Z",
       "comments": "Scientometrics",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19578v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19578v1/x1.png",
+        "https://arxiv.org/html/2604.19578v1/x2.png",
+        "https://arxiv.org/html/2604.19578v1/x3.png",
+        "https://arxiv.org/html/2604.19578v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19571",
@@ -1392,7 +1731,14 @@
       "updated": "2026-04-21T15:25:50Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19571v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19571v1/x1.png",
+        "https://arxiv.org/html/2604.19571v1/x2.png",
+        "https://arxiv.org/html/2604.19571v1/x3.png",
+        "https://arxiv.org/html/2604.19571v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19851",
@@ -1415,7 +1761,9 @@
       "updated": "2026-04-21T15:25:12Z",
       "comments": "Appears at the 8th Games, Agents, and Incentives Workshop (GAIW-26). Held as part of the Workshops at the 25th International Conference on Autonomous Agents and Multiagent Systems",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19851v1",
+      "figures": []
     },
     {
       "arxiv_id": "2604.19570",
@@ -1439,7 +1787,12 @@
       "updated": "2026-04-21T15:24:39Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19570v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19570v1/images/arch.png",
+        "https://arxiv.org/html/2604.19570v1/images/visualization.png"
+      ]
     },
     {
       "arxiv_id": "2604.19569",
@@ -1460,7 +1813,9 @@
       "updated": "2026-04-21T15:22:42Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19569v1",
+      "figures": []
     },
     {
       "arxiv_id": "2604.19567",
@@ -1481,7 +1836,14 @@
       "updated": "2026-04-21T15:19:49Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19567v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19567v1/x1.png",
+        "https://arxiv.org/html/2604.19567v1/x2.png",
+        "https://arxiv.org/html/2604.19567v1/x3.png",
+        "https://arxiv.org/html/2604.19567v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19565",
@@ -1504,7 +1866,17 @@
       "updated": "2026-04-21T15:18:10Z",
       "comments": "Accepted to Findings of ACL 2026",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19565v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19565v1/x1.png",
+        "https://arxiv.org/html/2604.19565v1/x2.png",
+        "https://arxiv.org/html/2604.19565v1/x3.png"
+      ],
+      "affiliations": [
+        "University of Edinburgh",
+        "Amazon AGI"
+      ]
     },
     {
       "arxiv_id": "2604.19564",
@@ -1532,6 +1904,13 @@
       "code_links": [],
       "project_links": [
         "https://abie-e.github.io/EgoSelf/"
+      ],
+      "html_url": "https://arxiv.org/html/2604.19564v2",
+      "figures": [
+        "https://arxiv.org/html/2604.19564v2/x1.png",
+        "https://arxiv.org/html/2604.19564v2/x2.png",
+        "https://arxiv.org/html/2604.19564v2/x3.png",
+        "https://arxiv.org/html/2604.19564v2/x4.png"
       ]
     },
     {
@@ -1554,7 +1933,12 @@
       "updated": "2026-04-21T15:13:30Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19561v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19561v1/download.png",
+        "https://arxiv.org/html/2604.19561v1/heattttmapppp.png"
+      ]
     },
     {
       "arxiv_id": "2604.19559",
@@ -1576,7 +1960,14 @@
       "updated": "2026-04-21T15:12:28Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19559v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19559v1/figures/flow1_chart.png",
+        "https://arxiv.org/html/2604.19559v1/figures/research_flow.jpg",
+        "https://arxiv.org/html/2604.19559v1/figures/experimental_procedure.jpg",
+        "https://arxiv.org/html/2604.19559v1/figures/base_confusion.png"
+      ]
     },
     {
       "arxiv_id": "2604.19556",
@@ -1600,7 +1991,8 @@
       "code_links": [],
       "project_links": [
         "https://davidea97.github.io/paparazzo-page/"
-      ]
+      ],
+      "figures": []
     },
     {
       "arxiv_id": "2604.19548",
@@ -1630,6 +2022,20 @@
       "code_links": [],
       "project_links": [
         "https://unikcc.github.io/ReTAS/"
+      ],
+      "html_url": "https://arxiv.org/html/2604.19548v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19548v1/tikz_figs/exp.png",
+        "https://arxiv.org/html/2604.19548v1/tikz_figs/main.png",
+        "https://arxiv.org/html/2604.19548v1/tikz_figs/acc_bar.png",
+        "https://arxiv.org/html/2604.19548v1/tikz_figs/aoa_bar.png"
+      ],
+      "affiliations": [
+        "National University of Singapore",
+        "Sichuan University",
+        "University of Minnesota Twin Cities",
+        "Harbin Institute of Technology, Shenzhen",
+        "University of Oxford"
       ]
     },
     {
@@ -1658,7 +2064,11 @@
       "code_links": [
         "https://github.com/zhang123434/DT2IT-MRM"
       ],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19544v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19544v1/x1.png"
+      ]
     },
     {
       "arxiv_id": "2604.19540",
@@ -1678,7 +2088,12 @@
       "updated": "2026-04-21T15:00:25Z",
       "comments": "23 pages, 2 figures, 2 listings, 1 table. MMP v0.2.3 specification at https://sym.bot/spec/mmp (CC BY 4.0). Reference implementations on npm (@sym-bot/sym, @sym-bot/mesh-channel; Apache 2.0)",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19540v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19540v1/mmp-8-layer-architecture.png",
+        "https://arxiv.org/html/2604.19540v1/mmp-mesh-topology.png"
+      ]
     },
     {
       "arxiv_id": "2604.19538",
@@ -1700,7 +2115,13 @@
       "updated": "2026-04-21T14:57:36Z",
       "comments": "6 pages, 3 figures",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19538v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19538v1/pngs/Fig1.png",
+        "https://arxiv.org/html/2604.19538v1/pngs/Fig2.png",
+        "https://arxiv.org/html/2604.19538v1/pngs/Fig3.png"
+      ]
     },
     {
       "arxiv_id": "2604.19536",
@@ -1728,7 +2149,14 @@
       "code_links": [
         "https://github.com/NIneeeeeem/LiveVLN"
       ],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19536v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19536v1/fig/livenav_teaser.png",
+        "https://arxiv.org/html/2604.19536v1/x1.png",
+        "https://arxiv.org/html/2604.19536v1/x2.png",
+        "https://arxiv.org/html/2604.19536v1/x3.png"
+      ]
     },
     {
       "arxiv_id": "2604.19533",
@@ -1750,7 +2178,8 @@
       "updated": "2026-04-22T16:03:07Z",
       "comments": "13 pages, 3 figures, 5 tables. Complete benchmark and hunt traces available on request",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "figures": []
     },
     {
       "arxiv_id": "2604.19532",
@@ -1773,7 +2202,14 @@
       "updated": "2026-04-21T14:53:10Z",
       "comments": "Preprint. 20 pages, 8 figures",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19532v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19532v1/Figure/Framework_v2.png",
+        "https://arxiv.org/html/2604.19532v1/x1.png",
+        "https://arxiv.org/html/2604.19532v1/x2.png",
+        "https://arxiv.org/html/2604.19532v1/x3.png"
+      ]
     },
     {
       "arxiv_id": "2604.19528",
@@ -1801,7 +2237,13 @@
       "updated": "2026-04-21T14:51:16Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19528v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19528v1/content/figures/rabitq_ip_mat.png",
+        "https://arxiv.org/html/2604.19528v1/content/figures/turbo_ip.png",
+        "https://arxiv.org/html/2604.19528v1/content/figures/recall_at1_three_panel.png"
+      ]
     },
     {
       "arxiv_id": "2604.19523",
@@ -1822,7 +2264,9 @@
       "updated": "2026-04-21T14:45:10Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19523v1",
+      "figures": []
     },
     {
       "arxiv_id": "2604.19522",
@@ -1846,7 +2290,14 @@
       "updated": "2026-04-21T14:44:38Z",
       "comments": "6 pages, 7 figures",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19522v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19522v1/fig_teaser.png",
+        "https://arxiv.org/html/2604.19522v1/sim_isaac.png",
+        "https://arxiv.org/html/2604.19522v1/fig1_architecture.png",
+        "https://arxiv.org/html/2604.19522v1/robot_platform.png"
+      ]
     },
     {
       "arxiv_id": "2604.19520",
@@ -1871,7 +2322,14 @@
       "updated": "2026-04-21T14:43:21Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19520v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19520v1/x2.png",
+        "https://arxiv.org/html/2604.19520v1/x3.png",
+        "https://arxiv.org/html/2604.19520v1/x4.png",
+        "https://arxiv.org/html/2604.19520v1/x5.png"
+      ]
     },
     {
       "arxiv_id": "2604.19516",
@@ -1901,7 +2359,21 @@
       "code_links": [
         "https://github.com/Wu-beining/MAGEO"
       ],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19516v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19516v1/fig/background.png",
+        "https://arxiv.org/html/2604.19516v1/fig/model.png",
+        "https://arxiv.org/html/2604.19516v1/fig/data.png",
+        "https://arxiv.org/html/2604.19516v1/fig/Logo-of-OpenAI-768x161.jpg"
+      ],
+      "affiliations": [
+        "Hangzhou Dianzi University",
+        "Central South University",
+        "Shanghai Artificial Intelligence Laboratory",
+        "Sun Yat-sen University",
+        "Hong Kong University of Science and Technology (GuangZhou)"
+      ]
     },
     {
       "arxiv_id": "2604.19514",
@@ -1923,7 +2395,14 @@
       "updated": "2026-04-21T14:32:20Z",
       "comments": "Code to be released soon",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19514v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19514v1/paperfigures/fig17_dataset_analysis.png",
+        "https://arxiv.org/html/2604.19514v1/x1.png",
+        "https://arxiv.org/html/2604.19514v1/paperfigures/fig_graph_construction.png",
+        "https://arxiv.org/html/2604.19514v1/paperfigures/graph_ablation_extended.png"
+      ]
     },
     {
       "arxiv_id": "2604.19510",
@@ -1948,7 +2427,8 @@
       "updated": "2026-04-21T14:27:21Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "figures": []
     },
     {
       "arxiv_id": "2604.19509",
@@ -1970,7 +2450,14 @@
       "updated": "2026-04-21T14:26:29Z",
       "comments": "AAMAS 2026 (main track), 9 pages, 4 figures",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19509v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19509v1/pipeline.png",
+        "https://arxiv.org/html/2604.19509v1/f1s.png",
+        "https://arxiv.org/html/2604.19509v1/confusion.png",
+        "https://arxiv.org/html/2604.19509v1/examples.png"
+      ]
     },
     {
       "arxiv_id": "2604.19489",
@@ -1992,7 +2479,14 @@
       "updated": "2026-04-21T14:10:39Z",
       "comments": "An earlier version was presented at #SMSociety 2024 (London)",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19489v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19489v1/images/van-aelst.png",
+        "https://arxiv.org/html/2604.19489v1/images/2024-01-24-SMS-Paper-Workflows-RQ2.png",
+        "https://arxiv.org/html/2604.19489v1/images/2024-01-24-SMS-Paper-Workflows-rq1a.png",
+        "https://arxiv.org/html/2604.19489v1/images/2024-01-24-SMS-Paper-Workflows-rq1b.png"
+      ]
     },
     {
       "arxiv_id": "2604.19488",
@@ -2016,7 +2510,14 @@
       "updated": "2026-04-21T14:10:37Z",
       "comments": "12 pages, 6 figures",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19488v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19488v1/x1.png",
+        "https://arxiv.org/html/2604.19488v1/x2.png",
+        "https://arxiv.org/html/2604.19488v1/x3.png",
+        "https://arxiv.org/html/2604.19488v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19485",
@@ -2049,7 +2550,20 @@
       "updated": "2026-04-21T14:07:39Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19485v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19485v1/x1.png",
+        "https://arxiv.org/html/2604.19485v1/x2.png",
+        "https://arxiv.org/html/2604.19485v1/x3.png",
+        "https://arxiv.org/html/2604.19485v1/x4.png"
+      ],
+      "affiliations": [
+        "Peking University",
+        "Fudan University",
+        "Shanghai Qiji Zhifeng Co., Ltd.",
+        "Shanghai AI Lab Equal contribution."
+      ]
     },
     {
       "arxiv_id": "2604.19480",
@@ -2070,7 +2584,14 @@
       "updated": "2026-04-21T14:02:08Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19480v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19480v1/x1.jpg",
+        "https://arxiv.org/html/2604.19480v1/",
+        "https://arxiv.org/html/2604.19480v1/x3.png",
+        "https://arxiv.org/html/2604.19480v1/Figures/high-level-tmlr.png"
+      ]
     },
     {
       "arxiv_id": "2604.19473",
@@ -2099,7 +2620,22 @@
       "code_links": [
         "https://github.com/Hong-yu-Zhang/TS-Attn"
       ],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19473v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19473v1/fig/Fig1_teaser.png",
+        "https://arxiv.org/html/2604.19473v1/fig/Fig2_visual.png",
+        "https://arxiv.org/html/2604.19473v1/fig/Fig3_method_overview.png",
+        "https://arxiv.org/html/2604.19473v1/fig/Fig4_wan22_t2v.png"
+      ],
+      "affiliations": [
+        "Peking University, Shenzhen Graduate School",
+        "Zhejiang University",
+        "Nankai University",
+        "Massachusetts Institute of Technology",
+        "Nanjing University",
+        "University of California, Santa Barbara"
+      ]
     },
     {
       "arxiv_id": "2604.19469",
@@ -2120,7 +2656,14 @@
       "updated": "2026-04-21T13:50:48Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19469v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19469v1/figs/Schematic_arm.png",
+        "https://arxiv.org/html/2604.19469v1/figs/Arm_photo.jpg",
+        "https://arxiv.org/html/2604.19469v1/figs/fig3_offset_x_and_x_transport.png",
+        "https://arxiv.org/html/2604.19469v1/figs/fig2_positioning_geometry.png"
+      ]
     },
     {
       "arxiv_id": "2604.19468",
@@ -2146,7 +2689,11 @@
       "updated": "2026-04-21T13:50:43Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19468v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19468v1/Graphics/Distribution_of_Prediction_Probabilities_for_Domestic_and_International_Students.png"
+      ]
     },
     {
       "arxiv_id": "2604.19465",
@@ -2168,7 +2715,18 @@
       "updated": "2026-04-21T13:43:32Z",
       "comments": "30 pages, 10 figures",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19465v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19465v1/x1.png",
+        "https://arxiv.org/html/2604.19465v1/x2.png",
+        "https://arxiv.org/html/2604.19465v1/x3.png",
+        "https://arxiv.org/html/2604.19465v1/x4.png"
+      ],
+      "affiliations": [
+        "School of Computation, Information and Technology, Technical University of Munich",
+        "Beijing Institute of Astronautical Systems Engineering, Beijing, China"
+      ]
     },
     {
       "arxiv_id": "2604.19464",
@@ -2196,7 +2754,14 @@
       "updated": "2026-04-21T13:42:24Z",
       "comments": "Accepted by ACL 2026 Main Conference",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19464v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19464v1/x1.png",
+        "https://arxiv.org/html/2604.19464v1/figures/Human_Evaluation_Result_Summary.png",
+        "https://arxiv.org/html/2604.19464v1/figures/3svm/stability_overview.png",
+        "https://arxiv.org/html/2604.19464v1/figures/4svm/stability_overview.png"
+      ]
     },
     {
       "arxiv_id": "2604.19459",
@@ -2221,7 +2786,14 @@
       "code_links": [
         "https://github.com/koreankiwi99/formalization-gaming"
       ],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19459v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19459v1/figure/sankey_v15_FOLIO_gpt-5.png",
+        "https://arxiv.org/html/2604.19459v1/figure/sankey_v15_FOLIO_deepseek.png",
+        "https://arxiv.org/html/2604.19459v1/figure/sankey_v15_M-LogiEval_gpt-5.png",
+        "https://arxiv.org/html/2604.19459v1/figure/sankey_v15_M-LogiEval_deepseek.png"
+      ]
     },
     {
       "arxiv_id": "2604.19457",
@@ -2242,7 +2814,13 @@
       "code_links": [
         "https://github.com/vasundras/decision-alignment-long-horizon-agents"
       ],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19457v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19457v1/pilot/stage2/figures/metric_by_condition.png",
+        "https://arxiv.org/html/2604.19457v1/pilot/stage2/figures/budget_sweep_eda.png",
+        "https://arxiv.org/html/2604.19457v1/pilot/stage5/figures/car_tradeoff.png"
+      ]
     },
     {
       "arxiv_id": "2604.19445",
@@ -2317,7 +2895,14 @@
       "updated": "2026-04-21T13:26:09Z",
       "comments": "CVPR Workshops 2026; https://lowlevelcv.com/",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19445v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19445v1/figs/2_RedMediaTech.png",
+        "https://arxiv.org/html/2604.19445v1/figs/4_GDK-IR.jpg",
+        "https://arxiv.org/html/2604.19445v1/x1.png",
+        "https://arxiv.org/html/2604.19445v1/figs/6_GU-day_Mate.jpg"
+      ]
     },
     {
       "arxiv_id": "2604.19432",
@@ -2345,7 +2930,19 @@
       "updated": "2026-04-21T13:04:51Z",
       "comments": "Accepted to CVPR 2026",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19432v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19432v1/x1.png",
+        "https://arxiv.org/html/2604.19432v1/x2.png",
+        "https://arxiv.org/html/2604.19432v1/x3.png",
+        "https://arxiv.org/html/2604.19432v1/x4.png"
+      ],
+      "affiliations": [
+        "Huazhong Agricultural University",
+        "Huazhong University of Science and Technology",
+        "Shenzhen University"
+      ]
     },
     {
       "arxiv_id": "2604.19431",
@@ -2368,7 +2965,14 @@
       "updated": "2026-04-21T13:00:47Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19431v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19431v1/01.png",
+        "https://arxiv.org/html/2604.19431v1/02.png",
+        "https://arxiv.org/html/2604.19431v1/03.png",
+        "https://arxiv.org/html/2604.19431v1/04.png"
+      ]
     },
     {
       "arxiv_id": "2604.19420",
@@ -2389,7 +2993,14 @@
       "updated": "2026-04-21T12:52:25Z",
       "comments": "Accepted at CVPR 2026 (Oral)",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19420v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19420v1/x1.png",
+        "https://arxiv.org/html/2604.19420v1/img/keypoint_sg_wo_filt.png",
+        "https://arxiv.org/html/2604.19420v1/x2.png",
+        "https://arxiv.org/html/2604.19420v1/x3.png"
+      ]
     },
     {
       "arxiv_id": "2604.19419",
@@ -2412,7 +3023,14 @@
       "updated": "2026-04-21T12:51:45Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19419v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19419v1/x1.png",
+        "https://arxiv.org/html/2604.19419v1/x2.png",
+        "https://arxiv.org/html/2604.19419v1/x3.png",
+        "https://arxiv.org/html/2604.19419v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19412",
@@ -2440,7 +3058,12 @@
       "updated": "2026-04-21T12:40:07Z",
       "comments": "ICASSP 2026",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19412v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19412v1/x1.png",
+        "https://arxiv.org/html/2604.19412v1/x2.png"
+      ]
     },
     {
       "arxiv_id": "2604.19411",
@@ -2465,7 +3088,14 @@
       "updated": "2026-04-21T12:39:41Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19411v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19411v1/figures/teaser_gold.png",
+        "https://arxiv.org/html/2604.19411v1/figures/car_pic.jpg",
+        "https://arxiv.org/html/2604.19411v1/figures/trajectory.png",
+        "https://arxiv.org/html/2604.19411v1/figures/data_sample.png"
+      ]
     },
     {
       "arxiv_id": "2604.19406",
@@ -2496,7 +3126,19 @@
       "updated": "2026-04-21T12:29:50Z",
       "comments": "Accepted by CVPR2026",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19406v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19406v1/x1.png",
+        "https://arxiv.org/html/2604.19406v1/figure/data.png",
+        "https://arxiv.org/html/2604.19406v1/x2.png",
+        "https://arxiv.org/html/2604.19406v1/figure/reward.jpg"
+      ],
+      "affiliations": [
+        "Huawei Noah’s Ark Lab",
+        "Harbin Institute of Technology",
+        "Nankai University"
+      ]
     },
     {
       "arxiv_id": "2604.19404",
@@ -2520,7 +3162,14 @@
       "updated": "2026-04-21T12:29:00Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19404v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19404v1/x1.png",
+        "https://arxiv.org/html/2604.19404v1/x2.png",
+        "https://arxiv.org/html/2604.19404v1/x3.png",
+        "https://arxiv.org/html/2604.19404v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19403",
@@ -2540,7 +3189,14 @@
       "updated": "2026-04-21T12:27:38Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19403v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19403v1/x1.png",
+        "https://arxiv.org/html/2604.19403v1/x2.png",
+        "https://arxiv.org/html/2604.19403v1/x3.png",
+        "https://arxiv.org/html/2604.19403v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19846",
@@ -2976,7 +3632,85 @@
       "updated": "2026-04-21T12:27:26Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19846v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19846v1/figs/track_6_xy.png",
+        "https://arxiv.org/html/2604.19846v1/figs/track_6_xz.png",
+        "https://arxiv.org/html/2604.19846v1/figs/cropped_new.png",
+        "https://arxiv.org/html/2604.19846v1/figs/shower_4_xy.png"
+      ],
+      "affiliations": [
+        "S. Fukami",
+        "J. Kiryluk",
+        "J. Mitchell",
+        "D. Mousadi",
+        "T. Mukherjee",
+        "A. Terliuk",
+        "Department of Physics, Loyola University Chicago, Chicago, IL 60660, USA",
+        "Deutsches Elektronen-Synchrotron DESY, Platanenallee 6, D-15738 Zeuthen, Germany",
+        "Dept. of Physics and Astronomy, University of Canterbury, Private Bag 4800, Christchurch, New Zealand",
+        "Université Libre de Bruxelles, Science Faculty CP230, B-1050 Brussels, Belgium",
+        "Niels Bohr Institute, University of Copenhagen, DK-2100 Copenhagen, Denmark",
+        "Dept. of Physics, TU Dortmund University, D-44221 Dortmund, Germany",
+        "Dept. of Physics and Astronomy, University of Kansas, Lawrence, KS 66045, USA",
+        "Bartol Research Institute and Dept. of Physics and Astronomy, University of Delaware, Newark, DE 19716, USA",
+        "Department of Physics, Marquette University, Milwaukee, WI 53201, USA",
+        "Department of Physics and Laboratory for Particle Physics and Cosmology, Harvard University, Cambridge, MA 02138, USA",
+        "Department of Physics and Astronomy, University of Utah, Salt Lake City, UT 84112, USA",
+        "Dept. of Physics and Astronomy, Michigan State University, East Lansing, MI 48824, USA",
+        "Physics Department, South Dakota School of Mines and Technology, Rapid City, SD 57701, USA",
+        "Dept. of Physics and Astronomy, University of California, Irvine, CA 92697, USA",
+        "Dept. of Physics, University of California, Berkeley, CA 94720, USA",
+        "Dept. of Astronomy, Ohio State University, Columbus, OH 43210, USA",
+        "Dept. of Physics and Center for Cosmology and Astro-Particle Physics, Ohio State University, Columbus, OH 43210, USA",
+        "Fakultät für Physik & Astronomie, Ruhr-Universität Bochum, D-44780 Bochum, Germany",
+        "III. Physikalisches Institut, RWTH Aachen University, D-52056 Aachen, Germany",
+        "Dept. of Physics and Astronomy, Uppsala University, Box 516, SE-75120 Uppsala, Sweden",
+        "Physik-department, Technische Universität München, D-85748 Garching, Germany",
+        "Dept. of Physics and Astronomy, University of Rochester, Rochester, NY 14627, USA",
+        "Dept. of Physics, University of Maryland, College Park, MD 20742, USA",
+        "Dipartimento di Fisica e Astronomia Galileo Galilei, Università Degli Studi di Padova, I-35122 Padova PD, Italy",
+        "Dept. of Physics and Astronomy, University of Alabama, Tuscaloosa, AL 35487, USA",
+        "Karlsruhe Institute of Technology, Institute for Astroparticle Physics, D-76021 Karlsruhe, Germany",
+        "Institute of Physics, University of Mainz, Staudinger Weg 7, D-55099 Mainz, Germany",
+        "Dept. of Physics and Wisconsin IceCube Particle Astrophysics Center, University of Wisconsin—Madison, Madison, WI 53706, USA",
+        "School of Physics and Center for Relativistic Astrophysics, Georgia Institute of Technology, Atlanta, GA 30332, USA",
+        "Dept. of Physics, Engineering Physics, and Astronomy, Queen’s University, Kingston, ON K7L 3N6, Canada",
+        "Department of Physics, University of Adelaide, Adelaide, 5005, Australia",
+        "Department of Physics & Astronomy, University of Nevada, Las Vegas, NV 89154, USA",
+        "Nevada Center for Astrophysics, University of Nevada, Las Vegas, NV 89154, USA",
+        "Dept. of Physics and Astronomy, Stony Brook University, Stony Brook, NY 11794-3800, USA",
+        "Erlangen Centre for Astroparticle Physics, Friedrich-Alexander-Universität Erlangen-Nürnberg, D-91058 Erlangen, Germany",
+        "Dept. of Physics, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+        "Dept. of Astronomy and Astrophysics, Pennsylvania State University, University Park, PA 16802, USA",
+        "Dept. of Physics, Pennsylvania State University, University Park, PA 16802, USA",
+        "Vrije Universiteit Brussel (VUB), Dienst ELEM, B-1050 Brussels, Belgium",
+        "UCLouvain, Centre for Cosmology, Particle Physics and Phenomenology, CP3, Chemin du Cyclotron 2, 1348 Louvain-la-Neuve, Belgium",
+        "Institut für Kernphysik, Universität Münster, D-48149 Münster, Germany",
+        "Dept. of Physics, University of Alberta, Edmonton, Alberta, T6G 2E1, Canada",
+        "Dept. of Physics and Astronomy, University of Gent, B-9000 Gent, Belgium",
+        "Dept. of Physics, University of Wuppertal, D-42119 Wuppertal, Germany",
+        "Karlsruhe Institute of Technology, Institute of Experimental Particle Physics, D-76021 Karlsruhe, Germany",
+        "Dept. of Physics and The International Center for Hadron Astrophysics, Chiba University, Chiba 263-8522, Japan",
+        "Dept. of Physics, Southern University, Baton Rouge, LA 70813, USA",
+        "Institute of Physics, Academia Sinica, Taipei, 11529, Taiwan",
+        "Institut für Physik, Humboldt-Universität zu Berlin, D-12489 Berlin, Germany",
+        "Oskar Klein Centre and Dept. of Physics, Stockholm University, SE-10691 Stockholm, Sweden",
+        "Dept. of Astronomy, University of Wisconsin—Madison, Madison, WI 53706, USA",
+        "Lawrence Berkeley National Laboratory, Berkeley, CA 94720, USA",
+        "Dept. of Physics, Simon Fraser University, Burnaby, BC V5A 1S6, Canada",
+        "Dept. of Physics, Chung-Ang University, Seoul 06974, Republic of Korea",
+        "Dept. of Physics, Drexel University, 3141 Chestnut Street, Philadelphia, PA 19104, USA",
+        "Dept. of Physics, Sungkyunkwan University, Suwon 16419, Republic of Korea",
+        "Département de physique nucléaire et corpusculaire, Université de Genève, CH-1211 Genève, Switzerland",
+        "Columbia Astrophysics and Nevis Laboratories, Columbia University, New York, NY 10027, USA",
+        "Dept. of Physics, Yale University, New Haven, CT 06520, USA",
+        "Department of Physics, Mercer University, Macon, GA 31207-0001, USA",
+        "Dept. of Physics and Astronomy, University of Alaska Anchorage, 3211 Providence Dr., Anchorage, AK 99508, USA",
+        "Dept. of Physics, University of Wisconsin, River Falls, WI 54022, USA",
+        "Dept. of Physics, University of Oxford, Parks Road, Oxford OX1 3PU, United Kingdom"
+      ]
     },
     {
       "arxiv_id": "2604.19401",
@@ -2999,7 +3733,13 @@
       "updated": "2026-04-21T12:26:56Z",
       "comments": "Pre-print submitted",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19401v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19401v1/figures/dense.png",
+        "https://arxiv.org/html/2604.19401v1/figures/Figure1.png",
+        "https://arxiv.org/html/2604.19401v1/figures/Figure2.png"
+      ]
     },
     {
       "arxiv_id": "2604.19398",
@@ -3023,7 +3763,19 @@
       "updated": "2026-04-21T12:26:16Z",
       "comments": "Accepted to ACL 2026 Main Conference",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19398v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19398v1/x1.png",
+        "https://arxiv.org/html/2604.19398v1/x2.png",
+        "https://arxiv.org/html/2604.19398v1/x3.png",
+        "https://arxiv.org/html/2604.19398v1/x4.png"
+      ],
+      "affiliations": [
+        "Beijing Institute of Technology, Zhuhai",
+        "Shenzhen University",
+        "Osaka University"
+      ]
     },
     {
       "arxiv_id": "2604.19392",
@@ -3046,7 +3798,14 @@
       "code_links": [
         "https://github.com/XiaoqiZhuang/HarmoniDiff-RS"
       ],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19392v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19392v1/x1.png",
+        "https://arxiv.org/html/2604.19392v1/x2.png",
+        "https://arxiv.org/html/2604.19392v1/x3.png",
+        "https://arxiv.org/html/2604.19392v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19386",
@@ -3070,7 +3829,14 @@
       "updated": "2026-04-22T08:52:24Z",
       "comments": "Accepted by CVPR 2026",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19386v2",
+      "figures": [
+        "https://arxiv.org/html/2604.19386v2/x1.png",
+        "https://arxiv.org/html/2604.19386v2/x2.png",
+        "https://arxiv.org/html/2604.19386v2/",
+        "https://arxiv.org/html/2604.19386v2/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19383",
@@ -3092,7 +3858,8 @@
       "updated": "2026-04-21T12:06:52Z",
       "comments": "22 pages, 7 figures",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "figures": []
     },
     {
       "arxiv_id": "2604.19379",
@@ -3115,7 +3882,18 @@
       "updated": "2026-04-21T12:01:29Z",
       "comments": "Accepted at the IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2026",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19379v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19379v1/x1.png",
+        "https://arxiv.org/html/2604.19379v1/x2.png",
+        "https://arxiv.org/html/2604.19379v1/x3.png",
+        "https://arxiv.org/html/2604.19379v1/x4.png"
+      ],
+      "affiliations": [
+        "Singapore University of Technology and Design",
+        "Institute for Infocomm Research (I2R), A*STAR, Singapore"
+      ]
     },
     {
       "arxiv_id": "2604.19377",
@@ -3138,7 +3916,14 @@
       "updated": "2026-04-21T11:59:08Z",
       "comments": "6 pages, 4 figures. Accepted for presentation at the IEEE GLOBECOM 2025 Workshop on Workshop on Green Learning for Wireless Communications",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19377v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19377v1/images/speed_measurement.png",
+        "https://arxiv.org/html/2604.19377v1/images/decentralized_learning.png",
+        "https://arxiv.org/html/2604.19377v1/x1.png",
+        "https://arxiv.org/html/2604.19377v1/x2.png"
+      ]
     },
     {
       "arxiv_id": "2604.19374",
@@ -3161,7 +3946,11 @@
       "updated": "2026-04-21T11:55:23Z",
       "comments": "5 pages, 1 figure, Workshop on Errors, Mistakes, and Failures in Humans and Robots at 2026 ACM/IEEE International Conference on Human-Robot Interaction",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19374v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19374v1/HRI_LBW_26_Fluidity_System_Architecture_Final.png"
+      ]
     },
     {
       "arxiv_id": "2604.19372",
@@ -3182,7 +3971,14 @@
       "updated": "2026-04-21T11:54:29Z",
       "comments": "Accepted at the XAI 2026 Conference. 24 pages, 10 figures",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19372v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19372v1/x1.png",
+        "https://arxiv.org/html/2604.19372v1/x2.png",
+        "https://arxiv.org/html/2604.19372v1/x3.png",
+        "https://arxiv.org/html/2604.19372v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19369",
@@ -3207,7 +4003,8 @@
       "code_links": [
         "https://github.com/CeMOS-IS/IonMorphNet"
       ],
-      "project_links": []
+      "project_links": [],
+      "figures": []
     },
     {
       "arxiv_id": "2604.19368",
@@ -3236,7 +4033,19 @@
       "code_links": [
         "https://github.com/galosaimi/Mind2Drive"
       ],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19368v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19368v1/x1.png",
+        "https://arxiv.org/html/2604.19368v1/x2.png",
+        "https://arxiv.org/html/2604.19368v1/x3.png",
+        "https://arxiv.org/html/2604.19368v1/x4.png"
+      ],
+      "affiliations": [
+        "Department of Computer Science, Imam Mohammad Ibn Saud Islamic University, Saudi Arabia",
+        "Engineering}, Durham University, UK",
+        "Department of Computer Science, Princess Nourah bint Abdulrahman University, Saudi Arabia"
+      ]
     },
     {
       "arxiv_id": "2604.19365",
@@ -3258,7 +4067,14 @@
       "updated": "2026-04-21T11:47:01Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19365v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19365v1/x1.png",
+        "https://arxiv.org/html/2604.19365v1/x2.png",
+        "https://arxiv.org/html/2604.19365v1/x3.png",
+        "https://arxiv.org/html/2604.19365v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19845",
@@ -3277,7 +4093,9 @@
       "updated": "2026-04-21T11:39:50Z",
       "comments": "Under review",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19845v1",
+      "figures": []
     },
     {
       "arxiv_id": "2604.19355",
@@ -3302,7 +4120,14 @@
       "updated": "2026-04-21T11:36:09Z",
       "comments": "Preprint",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19355v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19355v1/x1.png",
+        "https://arxiv.org/html/2604.19355v1/x2.png",
+        "https://arxiv.org/html/2604.19355v1/x3.png",
+        "https://arxiv.org/html/2604.19355v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19354",
@@ -3328,7 +4153,9 @@
       "updated": "2026-04-21T11:35:33Z",
       "comments": "Accepted to AIWare'26 Benchmark and Dataset Track",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19354v1",
+      "figures": []
     },
     {
       "arxiv_id": "2604.19350",
@@ -3354,6 +4181,10 @@
       "code_links": [],
       "project_links": [
         "https://aih-iitd.github.io/publications/attend-what-matters"
+      ],
+      "html_url": "https://arxiv.org/html/2604.19350v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19350v1/x1.png"
       ]
     },
     {
@@ -3379,7 +4210,14 @@
       "code_links": [
         "https://github.com/sunzunyi/RAFT-MSF-PlusPlus"
       ],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19349v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19349v1/pic/key_challenges.png",
+        "https://arxiv.org/html/2604.19349v1/x1.png",
+        "https://arxiv.org/html/2604.19349v1/x2.png",
+        "https://arxiv.org/html/2604.19349v1/x3.png"
+      ]
     },
     {
       "arxiv_id": "2604.19345",
@@ -3403,7 +4241,18 @@
       "updated": "2026-04-21T11:27:33Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19345v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19345v1/x1.png",
+        "https://arxiv.org/html/2604.19345v1/x2.png",
+        "https://arxiv.org/html/2604.19345v1/x3.png",
+        "https://arxiv.org/html/2604.19345v1/x4.png"
+      ],
+      "affiliations": [
+        "Shandong University of Science and Technology, China",
+        "The University of Queensland, Australia"
+      ]
     },
     {
       "arxiv_id": "2604.19844",
@@ -3430,6 +4279,13 @@
       "code_links": [],
       "project_links": [
         "https://anonymous.4open.science/r/Visual-Prompt-Inject"
+      ],
+      "html_url": "https://arxiv.org/html/2604.19844v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19844v1/figures/system.png",
+        "https://arxiv.org/html/2604.19844v1/figures/example.png",
+        "https://arxiv.org/html/2604.19844v1/figures/ie_samples.png",
+        "https://arxiv.org/html/2604.19844v1/figures/prompt_detect.png"
       ]
     },
     {
@@ -3453,7 +4309,14 @@
       "updated": "2026-04-21T11:27:13Z",
       "comments": "8 pages, 5 figures",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19344v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19344v1/figures/demo_imgs/demo_behind_marshgate.png",
+        "https://arxiv.org/html/2604.19344v1/figures/parkour_composed_img/box_1_approach.png",
+        "https://arxiv.org/html/2604.19344v1/figures/parkour_composed_img/img_raw_0000109_7.2919042110443115.jpeg",
+        "https://arxiv.org/html/2604.19344v1/figures/parkour_composed_img/img_color_0000217_7.268167018890381.jpeg"
+      ]
     },
     {
       "arxiv_id": "2604.19341",
@@ -3497,7 +4360,8 @@
       "updated": "2026-04-21T11:24:09Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "figures": []
     },
     {
       "arxiv_id": "2604.19339",
@@ -3521,7 +4385,18 @@
       "updated": "2026-04-21T11:17:09Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19339v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19339v1/x1.png",
+        "https://arxiv.org/html/2604.19339v1/x2.png",
+        "https://arxiv.org/html/2604.19339v1/x3.png",
+        "https://arxiv.org/html/2604.19339v1/figq1.jpg"
+      ],
+      "affiliations": [
+        "Shandong University of Science and Technology, China",
+        "The University of Queensland, Australia"
+      ]
     },
     {
       "arxiv_id": "2604.19334",
@@ -3542,7 +4417,8 @@
       "updated": "2026-04-21T11:06:27Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "figures": []
     },
     {
       "arxiv_id": "2604.19324",
@@ -3569,7 +4445,14 @@
       "updated": "2026-04-21T10:46:42Z",
       "comments": "35 pages, 9 figreus",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19324v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19324v1/fig/pair_image_creation.png",
+        "https://arxiv.org/html/2604.19324v1/x1.png",
+        "https://arxiv.org/html/2604.19324v1/fig/synthesized_anomalous_image.png",
+        "https://arxiv.org/html/2604.19324v1/fig/geometric_transformations.png"
+      ]
     },
     {
       "arxiv_id": "2604.19323",
@@ -3591,7 +4474,14 @@
       "updated": "2026-04-21T10:45:50Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19323v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19323v1/x1.png",
+        "https://arxiv.org/html/2604.19323v1/x2.png",
+        "https://arxiv.org/html/2604.19323v1/x3.png",
+        "https://arxiv.org/html/2604.19323v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19321",
@@ -3619,7 +4509,14 @@
       "updated": "2026-04-21T10:29:42Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19321v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19321v1/rdp-2d.png",
+        "https://arxiv.org/html/2604.19321v1/rdp-3d.png",
+        "https://arxiv.org/html/2604.19321v1/embedding-3d-pca.png",
+        "https://arxiv.org/html/2604.19321v1/embedding-3d-rdp.png"
+      ]
     },
     {
       "arxiv_id": "2604.19318",
@@ -3645,7 +4542,14 @@
       "code_links": [
         "https://github.com/zqyq/MVTrackTrans"
       ],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19318v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19318v1/x1.png",
+        "https://arxiv.org/html/2604.19318v1/x2.png",
+        "https://arxiv.org/html/2604.19318v1/x3.png",
+        "https://arxiv.org/html/2604.19318v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19314",
@@ -3667,7 +4571,14 @@
       "updated": "2026-04-21T10:24:15Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19314v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19314v1/im1.png",
+        "https://arxiv.org/html/2604.19314v1/im1_kernel1_img_deblurred.png",
+        "https://arxiv.org/html/2604.19314v1/im2.png",
+        "https://arxiv.org/html/2604.19314v1/im2_kernel2_img_deblurred.png"
+      ]
     },
     {
       "arxiv_id": "2604.19309",
@@ -3690,7 +4601,13 @@
       "updated": "2026-04-21T10:16:13Z",
       "comments": "7 pages, 4 figures. Includes details on system architecture, a three-stage audit pipeline, and a formative user study",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19309v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19309v1/doc-viewer.png",
+        "https://arxiv.org/html/2604.19309v1/high-level-arch.png",
+        "https://arxiv.org/html/2604.19309v1/code-audit.png"
+      ]
     },
     {
       "arxiv_id": "2604.19301",
@@ -3714,7 +4631,14 @@
       "updated": "2026-04-21T10:06:25Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19301v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19301v1/x1.png",
+        "https://arxiv.org/html/2604.19301v1/x2.png",
+        "https://arxiv.org/html/2604.19301v1/x3.png",
+        "https://arxiv.org/html/2604.19301v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19300",
@@ -3739,7 +4663,18 @@
       "updated": "2026-04-21T10:05:28Z",
       "comments": "Accepted to ACL 2026",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19300v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19300v1/x1.png",
+        "https://arxiv.org/html/2604.19300v1/x2.png",
+        "https://arxiv.org/html/2604.19300v1/x3.png",
+        "https://arxiv.org/html/2604.19300v1/x4.png"
+      ],
+      "affiliations": [
+        "College of Intelligence and Computing, Tianjin University, China",
+        "ASUS Intelligent Cloud Services, Singapore"
+      ]
     },
     {
       "arxiv_id": "2604.19299",
@@ -3760,7 +4695,14 @@
       "updated": "2026-04-21T10:05:10Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19299v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19299v1/img/sys.png",
+        "https://arxiv.org/html/2604.19299v1/img/ee.png",
+        "https://arxiv.org/html/2604.19299v1/img/pattern.png",
+        "https://arxiv.org/html/2604.19299v1/img/failure.png"
+      ]
     },
     {
       "arxiv_id": "2604.19298",
@@ -3783,7 +4725,8 @@
       "code_links": [
         "https://github.com/rajveerpall/IndiaFinBench"
       ],
-      "project_links": []
+      "project_links": [],
+      "figures": []
     },
     {
       "arxiv_id": "2604.19292",
@@ -3811,7 +4754,14 @@
       "updated": "2026-04-21T09:57:41Z",
       "comments": "ACL 2026 main conference",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19292v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19292v1/x1.png",
+        "https://arxiv.org/html/2604.19292v1/x2.png",
+        "https://arxiv.org/html/2604.19292v1/x3.png",
+        "https://arxiv.org/html/2604.19292v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19281",
@@ -3835,7 +4785,14 @@
       "updated": "2026-04-21T09:50:08Z",
       "comments": "Accepted in the Ninth Annual ACM Conference on Fairness, Accountability, and Transparency (ACM FAccT) 2026",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19281v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19281v1/results_figures/section_4.1/figure_4.1.1_component_breakdown.png",
+        "https://arxiv.org/html/2604.19281v1/results_figures/section_4.2/figure_4.2.2_performance_radar.png",
+        "https://arxiv.org/html/2604.19281v1/results_figures/section_4.3/figure_4.3.1_semantic_entity_gap.png",
+        "https://arxiv.org/html/2604.19281v1/results_figures/figure4_component_breakdown.png"
+      ]
     },
     {
       "arxiv_id": "2604.19278",
@@ -3860,7 +4817,18 @@
       "updated": "2026-04-22T16:58:59Z",
       "comments": "Accepted at ACL 2026 Main Conference",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19278v2",
+      "figures": [
+        "https://arxiv.org/html/2604.19278v2/x1.png",
+        "https://arxiv.org/html/2604.19278v2/x2.png",
+        "https://arxiv.org/html/2604.19278v2/x3.png",
+        "https://arxiv.org/html/2604.19278v2/x4.png"
+      ],
+      "affiliations": [
+        "University of Southern California",
+        "AWS Agentic AI Labs"
+      ]
     },
     {
       "arxiv_id": "2604.19275",
@@ -3885,7 +4853,14 @@
       "updated": "2026-04-21T09:46:41Z",
       "comments": "9 pages, 8 figures, conference",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19275v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19275v1/x1.png",
+        "https://arxiv.org/html/2604.19275v1/x2.png",
+        "https://arxiv.org/html/2604.19275v1/x3.png",
+        "https://arxiv.org/html/2604.19275v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19270",
@@ -3907,7 +4882,14 @@
       "updated": "2026-04-21T09:35:57Z",
       "comments": "15 pages, 4 figures, camera-ready version for ANTS 2026",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19270v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19270v1/x1.png",
+        "https://arxiv.org/html/2604.19270v1/x2.png",
+        "https://arxiv.org/html/2604.19270v1/x3.png",
+        "https://arxiv.org/html/2604.19270v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19267",
@@ -3930,7 +4912,14 @@
       "updated": "2026-04-21T09:32:59Z",
       "comments": "8 pages, 7 figures",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19267v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19267v1/x1.png",
+        "https://arxiv.org/html/2604.19267v1/figures/MultimodalNavTransformerCurr.png",
+        "https://arxiv.org/html/2604.19267v1/figures/lidar_tokenization.png",
+        "https://arxiv.org/html/2604.19267v1/figures/clearance_distance_crop.png"
+      ]
     },
     {
       "arxiv_id": "2604.19264",
@@ -3955,7 +4944,14 @@
       "updated": "2026-04-21T09:28:34Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19264v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19264v1/figure_radar.png",
+        "https://arxiv.org/html/2604.19264v1/figure_bar.png",
+        "https://arxiv.org/html/2604.19264v1/x1.png",
+        "https://arxiv.org/html/2604.19264v1/x2.png"
+      ]
     },
     {
       "arxiv_id": "2604.19262",
@@ -3999,7 +4995,23 @@
       "updated": "2026-04-21T09:21:46Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19262v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19262v1/x1.png",
+        "https://arxiv.org/html/2604.19262v1/x2.png",
+        "https://arxiv.org/html/2604.19262v1/x3.png",
+        "https://arxiv.org/html/2604.19262v1/x4.png"
+      ],
+      "affiliations": [
+        "Alibaba Group",
+        "Beijing Language and Culture University",
+        "ELLIS Institute Finland",
+        "University of Turku",
+        "IBM Research AI, UAE",
+        "Harbin Institute of Technology, Shenzhen",
+        "Southern University of Science and Technology"
+      ]
     },
     {
       "arxiv_id": "2604.19259",
@@ -4020,7 +5032,12 @@
       "updated": "2026-04-21T09:20:55Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19259v1",
+      "figures": [],
+      "affiliations": [
+        "School of Information Engineering, Sichuan University, China Corresponding author."
+      ]
     },
     {
       "arxiv_id": "2604.19257",
@@ -4051,7 +5068,18 @@
       "updated": "2026-04-21T09:20:39Z",
       "comments": "Accepted by CVPR 2026",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19257v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19257v1/x2.png",
+        "https://arxiv.org/html/2604.19257v1/x3.png",
+        "https://arxiv.org/html/2604.19257v1/x4.png",
+        "https://arxiv.org/html/2604.19257v1/x5.png"
+      ],
+      "affiliations": [
+        "University of Science and Technology Beijing",
+        "Li Auto Inc Corresponding author"
+      ]
     },
     {
       "arxiv_id": "2604.19254",
@@ -4076,7 +5104,15 @@
       "updated": "2026-04-21T09:17:35Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19254v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19254v1/x2.png",
+        "https://arxiv.org/html/2604.19254v1/x3.png"
+      ],
+      "affiliations": [
+        "Division of Artificial Intelligence, Lingnan University"
+      ]
     },
     {
       "arxiv_id": "2604.19839",
@@ -4102,6 +5138,13 @@
       "code_links": [],
       "project_links": [
         "https://eu-ea.github.io"
+      ],
+      "html_url": "https://arxiv.org/html/2604.19839v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19839v1/x1.png",
+        "https://arxiv.org/html/2604.19839v1/x2.png",
+        "https://arxiv.org/html/2604.19839v1/figure/ablation_study_bar_chart.png",
+        "https://arxiv.org/html/2604.19839v1/figure/custom_color_bar_chart.png"
       ]
     },
     {
@@ -4125,7 +5168,14 @@
       "updated": "2026-04-21T09:10:04Z",
       "comments": "To appear in Technical Communications of the 42nd International Conference on Logic Programming (ICLP 2026)",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19251v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19251v1/x1.png",
+        "https://arxiv.org/html/2604.19251v1/pup1.png",
+        "https://arxiv.org/html/2604.19251v1/pup2.png",
+        "https://arxiv.org/html/2604.19251v1/sokoban1.png"
+      ]
     },
     {
       "arxiv_id": "2604.19245",
@@ -4147,7 +5197,14 @@
       "updated": "2026-04-22T07:02:47Z",
       "comments": "Preprint accepted at ACL Main Conference 2026",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19245v2",
+      "figures": [
+        "https://arxiv.org/html/2604.19245v2/x1.png",
+        "https://arxiv.org/html/2604.19245v2/differences_36.png",
+        "https://arxiv.org/html/2604.19245v2/x2.png",
+        "https://arxiv.org/html/2604.19245v2/First_position_repair.png"
+      ]
     },
     {
       "arxiv_id": "2604.19240",
@@ -4169,7 +5226,14 @@
       "updated": "2026-04-21T08:47:32Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19240v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19240v1/fig1.png",
+        "https://arxiv.org/html/2604.19240v1/fig2.png",
+        "https://arxiv.org/html/2604.19240v1/fig3.png",
+        "https://arxiv.org/html/2604.19240v1/fig4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19238",
@@ -4194,7 +5258,14 @@
       "updated": "2026-04-21T08:44:40Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19238v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19238v1/x1.png",
+        "https://arxiv.org/html/2604.19238v1/x2.png",
+        "https://arxiv.org/html/2604.19238v1/x3.png",
+        "https://arxiv.org/html/2604.19238v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19838",
@@ -4218,7 +5289,17 @@
       "updated": "2026-04-21T08:42:47Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19838v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19838v1/x1.png",
+        "https://arxiv.org/html/2604.19838v1/x2.png",
+        "https://arxiv.org/html/2604.19838v1/x3.png",
+        "https://arxiv.org/html/2604.19838v1/x4.png"
+      ],
+      "affiliations": [
+        "affiliationmark: Waymo LLC, Mountain View, CA, USA"
+      ]
     },
     {
       "arxiv_id": "2604.19234",
@@ -4243,7 +5324,14 @@
       "updated": "2026-04-21T08:37:13Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19234v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19234v1/x1.png",
+        "https://arxiv.org/html/2604.19234v1/x2.png",
+        "https://arxiv.org/html/2604.19234v1/x3.png",
+        "https://arxiv.org/html/2604.19234v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19233",
@@ -4264,7 +5352,12 @@
       "updated": "2026-04-21T08:36:51Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19233v1",
+      "figures": [],
+      "affiliations": [
+        "College of Educational Science and Technology, Polytechnic University of Turin"
+      ]
     },
     {
       "arxiv_id": "2604.19221",
@@ -4288,7 +5381,13 @@
       "updated": "2026-04-21T08:24:55Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19221v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19221v1/figures/architecture.png",
+        "https://arxiv.org/html/2604.19221v1/figures/model-architecture.png",
+        "https://arxiv.org/html/2604.19221v1/figures/data-pipeline.png"
+      ]
     },
     {
       "arxiv_id": "2604.19218",
@@ -4312,7 +5411,14 @@
       "updated": "2026-04-21T08:24:07Z",
       "comments": "10 pages",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19218v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19218v1/x1.png",
+        "https://arxiv.org/html/2604.19218v1/x2.png",
+        "https://arxiv.org/html/2604.19218v1/x3.png",
+        "https://arxiv.org/html/2604.19218v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19219",
@@ -4339,7 +5445,8 @@
       "updated": "2026-04-21T08:24:07Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "figures": []
     },
     {
       "arxiv_id": "2604.19217",
@@ -4360,7 +5467,12 @@
       "updated": "2026-04-21T08:23:50Z",
       "comments": "6 pages, 2 Figures",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19217v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19217v1/figsp.png",
+        "https://arxiv.org/html/2604.19217v1/1204fig.png"
+      ]
     },
     {
       "arxiv_id": "2604.19216",
@@ -4384,7 +5496,14 @@
       "updated": "2026-04-21T08:22:56Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19216v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19216v1/x1.png",
+        "https://arxiv.org/html/2604.19216v1/main.png",
+        "https://arxiv.org/html/2604.19216v1/x2.png",
+        "https://arxiv.org/html/2604.19216v1/fig213.png"
+      ]
     },
     {
       "arxiv_id": "2604.19211",
@@ -4409,7 +5528,14 @@
       "updated": "2026-04-21T08:15:05Z",
       "comments": "13 pages",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19211v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19211v1/openclaw_pattern.png",
+        "https://arxiv.org/html/2604.19211v1/clawnet_pattern.png",
+        "https://arxiv.org/html/2604.19211v1/x2.png",
+        "https://arxiv.org/html/2604.19211v1/x3.png"
+      ]
     },
     {
       "arxiv_id": "2604.19837",
@@ -4429,7 +5555,14 @@
       "updated": "2026-04-21T08:14:09Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19837v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19837v1/x1.png",
+        "https://arxiv.org/html/2604.19837v1/x2.png",
+        "https://arxiv.org/html/2604.19837v1/x3.png",
+        "https://arxiv.org/html/2604.19837v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19206",
@@ -4455,7 +5588,13 @@
       "updated": "2026-04-21T08:10:41Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19206v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19206v1/framework.jpg",
+        "https://arxiv.org/html/2604.19206v1/222.jpg",
+        "https://arxiv.org/html/2604.19206v1/333.jpg"
+      ]
     },
     {
       "arxiv_id": "2604.19202",
@@ -4483,7 +5622,21 @@
       "code_links": [
         "https://github.com/gogoneural/SketchFaceGS_jittor"
       ],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19202v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19202v1/picture/pipeline_sketchfaceGS.png",
+        "https://arxiv.org/html/2604.19202v1/x2.png",
+        "https://arxiv.org/html/2604.19202v1/picture/continue_editing.jpg",
+        "https://arxiv.org/html/2604.19202v1/picture/comparison_generation.jpg"
+      ],
+      "affiliations": [
+        "Shandong Technology and Business University",
+        "Nanchang Hangkong University",
+        "Institute of Computing Technology, Chinese Academy of Sciences",
+        "University of Chinese Academy of Sciences",
+        "University of New South Wales"
+      ]
     },
     {
       "arxiv_id": "2604.19196",
@@ -4507,6 +5660,11 @@
       "code_links": [],
       "project_links": [
         "https://gsisaoki.github.io/FAS-VFMbenchmark-CVPRW2026/"
+      ],
+      "html_url": "https://arxiv.org/html/2604.19196v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19196v1/x1.png",
+        "https://arxiv.org/html/2604.19196v1/x2.png"
       ]
     },
     {
@@ -4537,7 +5695,14 @@
       "updated": "2026-04-21T08:04:02Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19193v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19193v1/x1.png",
+        "https://arxiv.org/html/2604.19193v1/x2.png",
+        "https://arxiv.org/html/2604.19193v1/x3.png",
+        "https://arxiv.org/html/2604.19193v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19191",
@@ -4559,7 +5724,17 @@
       "updated": "2026-04-21T07:58:44Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19191v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19191v1/plots/msde_pipeline.png",
+        "https://arxiv.org/html/2604.19191v1/plots/rsna_anatpaste_umap_both.png",
+        "https://arxiv.org/html/2604.19191v1/plots/rsna_anatpaste_msde_shifted_umap.png",
+        "https://arxiv.org/html/2604.19191v1/plots/c16_resnet18_umap_both.png"
+      ],
+      "affiliations": [
+        "School of Data Science, Indian Institute of Science Education and Research, India"
+      ]
     },
     {
       "arxiv_id": "2604.19186",
@@ -4584,7 +5759,14 @@
       "updated": "2026-04-21T07:55:19Z",
       "comments": "SIGIR 2026",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19186v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19186v1/x1.png",
+        "https://arxiv.org/html/2604.19186v1/x3.png",
+        "https://arxiv.org/html/2604.19186v1/x4.png",
+        "https://arxiv.org/html/2604.19186v1/x8.png"
+      ]
     },
     {
       "arxiv_id": "2604.19185",
@@ -4608,7 +5790,20 @@
       "code_links": [
         "https://github.com/IKMLab/SCURank"
       ],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19185v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19185v1/x1.png",
+        "https://arxiv.org/html/2604.19185v1/x2.png",
+        "https://arxiv.org/html/2604.19185v1/x3.png",
+        "https://arxiv.org/html/2604.19185v1/x4.png"
+      ],
+      "affiliations": [
+        "Department of Computer Science and Information Engineering",
+        "Artificial Intelligence Research Center, Chang Gung University",
+        "Department of Artificial Intelligence, Chang Gung University",
+        "Department of Computer Science, National Tsing Hua University"
+      ]
     },
     {
       "arxiv_id": "2604.19172",
@@ -4630,7 +5825,19 @@
       "updated": "2026-04-21T07:29:55Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19172v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19172v1/x1.png",
+        "https://arxiv.org/html/2604.19172v1/x2.png",
+        "https://arxiv.org/html/2604.19172v1/x3.png",
+        "https://arxiv.org/html/2604.19172v1/x4.png"
+      ],
+      "affiliations": [
+        "Gaoling School of Artificial Intelligence, Renmin University of China",
+        "Duke University",
+        "Microsoft Research Asia"
+      ]
     },
     {
       "arxiv_id": "2604.19167",
@@ -4654,7 +5861,19 @@
       "updated": "2026-04-21T07:25:02Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19167v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19167v1/results.png",
+        "https://arxiv.org/html/2604.19167v1/method.png",
+        "https://arxiv.org/html/2604.19167v1/method2.png",
+        "https://arxiv.org/html/2604.19167v1/activation_distribution.png"
+      ],
+      "affiliations": [
+        "MAIS, Institute of Automation, Chinese Academy of Sciences, China",
+        "School of Artificial Intelligence, University of Chinese Academy of Sciences, China",
+        "Central Media Technology Institute, Huawei Corresponding author."
+      ]
     },
     {
       "arxiv_id": "2604.19159",
@@ -4679,7 +5898,13 @@
       "updated": "2026-04-21T07:13:00Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19159v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19159v1/teaser0.jpg",
+        "https://arxiv.org/html/2604.19159v1/MSDS.jpg",
+        "https://arxiv.org/html/2604.19159v1/feature.jpg"
+      ]
     },
     {
       "arxiv_id": "2604.19149",
@@ -4704,7 +5929,14 @@
       "updated": "2026-04-21T06:55:17Z",
       "comments": "Accepted in the Findings of ACL 2026",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19149v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19149v1/x1.png",
+        "https://arxiv.org/html/2604.19149v1/x2.png",
+        "https://arxiv.org/html/2604.19149v1/x3.png",
+        "https://arxiv.org/html/2604.19149v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19148",
@@ -4729,7 +5961,17 @@
       "updated": "2026-04-21T06:55:14Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19148v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19148v1/x1.png",
+        "https://arxiv.org/html/2604.19148v1/x2.png",
+        "https://arxiv.org/html/2604.19148v1/x3.png",
+        "https://arxiv.org/html/2604.19148v1/x4.png"
+      ],
+      "affiliations": [
+        "Alex Beaudin and Murat Arcak are with the Department of Electrical Engineering and Computer Sciences, University of California, Berkeley, CA 94720, USA E-mail A. Beaudin:"
+      ]
     },
     {
       "arxiv_id": "2604.19147",
@@ -4755,7 +5997,14 @@
       "updated": "2026-04-21T06:54:16Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19147v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19147v1/x1.png",
+        "https://arxiv.org/html/2604.19147v1/tu2.jpg",
+        "https://arxiv.org/html/2604.19147v1/tu6.jpeg",
+        "https://arxiv.org/html/2604.19147v1/x2.png"
+      ]
     },
     {
       "arxiv_id": "2604.19145",
@@ -4781,7 +6030,14 @@
       "updated": "2026-04-21T06:51:08Z",
       "comments": "18 pages, 4 figures",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19145v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19145v1/motivation.jpg",
+        "https://arxiv.org/html/2604.19145v1/overview.jpg",
+        "https://arxiv.org/html/2604.19145v1/lambda1.jpg",
+        "https://arxiv.org/html/2604.19145v1/lambda2.jpg"
+      ]
     },
     {
       "arxiv_id": "2604.19141",
@@ -4807,7 +6063,14 @@
       "code_links": [
         "https://github.com/CompVis/patch-forcing"
       ],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19141v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19141v1/x1.png",
+        "https://arxiv.org/html/2604.19141v1/x2.png",
+        "https://arxiv.org/html/2604.19141v1/x3.png",
+        "https://arxiv.org/html/2604.19141v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19139",
@@ -4832,7 +6095,14 @@
       "updated": "2026-04-21T06:43:01Z",
       "comments": "20 pages, 17 figures, 8 tables. Technical report",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19139v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19139v1/x1.png",
+        "https://arxiv.org/html/2604.19139v1/x2.png",
+        "https://arxiv.org/html/2604.19139v1/x3.png",
+        "https://arxiv.org/html/2604.19139v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19135",
@@ -4853,7 +6123,14 @@
       "updated": "2026-04-21T06:32:34Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19135v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19135v1/x1.png",
+        "https://arxiv.org/html/2604.19135v1/x2.png",
+        "https://arxiv.org/html/2604.19135v1/x3.png",
+        "https://arxiv.org/html/2604.19135v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19133",
@@ -4877,7 +6154,8 @@
       "updated": "2026-04-21T06:32:07Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "figures": []
     },
     {
       "arxiv_id": "2604.19131",
@@ -4896,7 +6174,11 @@
       "updated": "2026-04-21T06:29:13Z",
       "comments": "Accepted for publication at AIED 2026 (full paper)",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19131v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19131v1/x1.png"
+      ]
     },
     {
       "arxiv_id": "2604.19129",
@@ -4919,7 +6201,14 @@
       "updated": "2026-04-21T06:22:47Z",
       "comments": "accepted by CVPR2026",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19129v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19129v1/x2.png",
+        "https://arxiv.org/html/2604.19129v1/x3.png",
+        "https://arxiv.org/html/2604.19129v1/x4.png",
+        "https://arxiv.org/html/2604.19129v1/x5.png"
+      ]
     },
     {
       "arxiv_id": "2604.19118",
@@ -4941,7 +6230,8 @@
       "updated": "2026-04-21T05:56:51Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "figures": []
     },
     {
       "arxiv_id": "2604.19835",
@@ -4966,7 +6256,12 @@
       "updated": "2026-04-21T05:53:33Z",
       "comments": "12 Pages, 5 Tables. 14 Pages in Appendix",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19835v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19835v1/plots/figure_optE_hires.png",
+        "https://arxiv.org/html/2604.19835v1/plots/teaser_chart.jpeg"
+      ]
     },
     {
       "arxiv_id": "2604.19834",
@@ -4990,7 +6285,14 @@
       "updated": "2026-04-21T05:50:41Z",
       "comments": "Accepted at IEEE/ACM CHASE 2026",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19834v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19834v1/Assets/Images/det_iou.png",
+        "https://arxiv.org/html/2604.19834v1/Assets/Images/roi_motivation.png",
+        "https://arxiv.org/html/2604.19834v1/Assets/Images/overview_3.png",
+        "https://arxiv.org/html/2604.19834v1/Assets/Images/stage_1.png"
+      ]
     },
     {
       "arxiv_id": "2604.19113",
@@ -5011,7 +6313,14 @@
       "updated": "2026-04-21T05:47:04Z",
       "comments": "14 pages, 5 figures",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19113v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19113v1/x1.png",
+        "https://arxiv.org/html/2604.19113v1/x2.png",
+        "https://arxiv.org/html/2604.19113v1/x3.png",
+        "https://arxiv.org/html/2604.19113v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19108",
@@ -5033,7 +6342,19 @@
       "updated": "2026-04-21T05:35:54Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19108v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19108v1/figures/two_prob4.png",
+        "https://arxiv.org/html/2604.19108v1/figures/cifar2_tow_all_v8.png",
+        "https://arxiv.org/html/2604.19108v1/figures/vgg2_tow_all_v8.png",
+        "https://arxiv.org/html/2604.19108v1/figures/mufac_tow_all_v8.png"
+      ],
+      "affiliations": [
+        "Sungkyunkwan University",
+        "The Catholic University of Korea",
+        "Secure Machines Lab"
+      ]
     },
     {
       "arxiv_id": "2604.19106",
@@ -5059,7 +6380,14 @@
       "updated": "2026-04-21T05:33:11Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19106v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19106v1/2026-pics/intro.png",
+        "https://arxiv.org/html/2604.19106v1/2026-pics/LUT-wall.png",
+        "https://arxiv.org/html/2604.19106v1/2026-pics/obbg.png",
+        "https://arxiv.org/html/2604.19106v1/new-pics/lat_hm_api_tiling.png"
+      ]
     },
     {
       "arxiv_id": "2604.19105",
@@ -5085,7 +6413,13 @@
       "updated": "2026-04-21T05:31:06Z",
       "comments": "12 pages, 3 figures",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19105v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19105v1/x1.png",
+        "https://arxiv.org/html/2604.19105v1/x2.png",
+        "https://arxiv.org/html/2604.19105v1/x3.png"
+      ]
     },
     {
       "arxiv_id": "2604.19104",
@@ -5108,7 +6442,14 @@
       "updated": "2026-04-21T05:27:43Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19104v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19104v1/fig4.png",
+        "https://arxiv.org/html/2604.19104v1/fig3-1.png",
+        "https://arxiv.org/html/2604.19104v1/fig3-2.png",
+        "https://arxiv.org/html/2604.19104v1/fig1.png"
+      ]
     },
     {
       "arxiv_id": "2604.19102",
@@ -5131,7 +6472,13 @@
       "updated": "2026-04-21T05:26:20Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19102v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19102v1/Overview.png",
+        "https://arxiv.org/html/2604.19102v1/fig_real_robot_sequences.png",
+        "https://arxiv.org/html/2604.19102v1/fig_amp_vs_noamp_goose_jump_clean.png"
+      ]
     },
     {
       "arxiv_id": "2604.19099",
@@ -5158,7 +6505,11 @@
       "updated": "2026-04-21T05:25:11Z",
       "comments": "Accepted",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19099v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19099v1/View.png"
+      ]
     },
     {
       "arxiv_id": "2604.19098",
@@ -5193,7 +6544,17 @@
       "updated": "2026-04-21T05:24:08Z",
       "comments": "29 page",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19098v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19098v1/x1.png",
+        "https://arxiv.org/html/2604.19098v1/x2.png",
+        "https://arxiv.org/html/2604.19098v1/x3.png",
+        "https://arxiv.org/html/2604.19098v1/x4.png"
+      ],
+      "affiliations": [
+        "The University of Manchester"
+      ]
     },
     {
       "arxiv_id": "2604.19093",
@@ -5220,7 +6581,18 @@
       "code_links": [
         "https://github.com/XuJinglinn/AdaPGC"
       ],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19093v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19093v1/x1.png",
+        "https://arxiv.org/html/2604.19093v1/x2.png",
+        "https://arxiv.org/html/2604.19093v1/x3.png"
+      ],
+      "affiliations": [
+        "Institute of Software Chinese Academy of Sciences",
+        "University of Chinese Academy of Sciences",
+        "National Defense University"
+      ]
     },
     {
       "arxiv_id": "2604.19092",
@@ -5250,7 +6622,14 @@
       "updated": "2026-04-21T05:09:56Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19092v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19092v1/x1.png",
+        "https://arxiv.org/html/2604.19092v1/x2.png",
+        "https://arxiv.org/html/2604.19092v1/x3.png",
+        "https://arxiv.org/html/2604.19092v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19089",
@@ -5271,7 +6650,14 @@
       "updated": "2026-04-21T05:02:29Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19089v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19089v1/x1.png",
+        "https://arxiv.org/html/2604.19089v1/x2.png",
+        "https://arxiv.org/html/2604.19089v1/x3.png",
+        "https://arxiv.org/html/2604.19089v1/figure/topk.png"
+      ]
     },
     {
       "arxiv_id": "2604.19087",
@@ -5292,7 +6678,14 @@
       "updated": "2026-04-21T04:59:37Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19087v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19087v1/x1.png",
+        "https://arxiv.org/html/2604.19087v1/x2.png",
+        "https://arxiv.org/html/2604.19087v1/x3.png",
+        "https://arxiv.org/html/2604.19087v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19083",
@@ -5322,6 +6715,13 @@
       "code_links": [],
       "project_links": [
         "https://anonymous.4open.science/r/ProjLens-8FD7"
+      ],
+      "html_url": "https://arxiv.org/html/2604.19083v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19083v1/x1.png",
+        "https://arxiv.org/html/2604.19083v1/x2.png",
+        "https://arxiv.org/html/2604.19083v1/x3.png",
+        "https://arxiv.org/html/2604.19083v1/x4.png"
       ]
     },
     {
@@ -5349,7 +6749,12 @@
       "updated": "2026-04-21T04:43:03Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19079v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19079v1/unified_asr_cr-rnnt_2.png",
+        "https://arxiv.org/html/2604.19079v1/wer_rc_plot_2.png"
+      ]
     },
     {
       "arxiv_id": "2604.19072",
@@ -5374,7 +6779,14 @@
       "updated": "2026-04-21T04:27:12Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19072v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19072v1/x1.png",
+        "https://arxiv.org/html/2604.19072v1/images/1-1.png",
+        "https://arxiv.org/html/2604.19072v1/images/1-2.png",
+        "https://arxiv.org/html/2604.19072v1/images/1-3.png"
+      ]
     },
     {
       "arxiv_id": "2604.19069",
@@ -5394,7 +6806,13 @@
       "updated": "2026-04-21T04:23:20Z",
       "comments": "10 pages, 3 figures, 4 tables. Single-author paper",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19069v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19069v1/poecomprehensiveanalysis.png",
+        "https://arxiv.org/html/2604.19069v1/poeablationstudy.png",
+        "https://arxiv.org/html/2604.19069v1/poetrainingdynamics.png"
+      ]
     },
     {
       "arxiv_id": "2604.19064",
@@ -5418,7 +6836,14 @@
       "updated": "2026-04-21T04:17:35Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19064v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19064v1/introduction.png",
+        "https://arxiv.org/html/2604.19064v1/overview_new.png",
+        "https://arxiv.org/html/2604.19064v1/spcr.png",
+        "https://arxiv.org/html/2604.19064v1/x1.png"
+      ]
     },
     {
       "arxiv_id": "2604.19062",
@@ -5438,7 +6863,14 @@
       "updated": "2026-04-21T04:11:43Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19062v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19062v1/x3.png",
+        "https://arxiv.org/html/2604.19062v1/x4.png",
+        "https://arxiv.org/html/2604.19062v1/x5.png",
+        "https://arxiv.org/html/2604.19062v1/x6.png"
+      ]
     },
     {
       "arxiv_id": "2604.19060",
@@ -5461,7 +6893,14 @@
       "updated": "2026-04-21T04:09:09Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19060v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19060v1/x1.png",
+        "https://arxiv.org/html/2604.19060v1/x2.png",
+        "https://arxiv.org/html/2604.19060v1/x3.png",
+        "https://arxiv.org/html/2604.19060v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19059",
@@ -5480,7 +6919,14 @@
       "updated": "2026-04-21T04:08:23Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19059v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19059v1/x1.png",
+        "https://arxiv.org/html/2604.19059v1/x2.png",
+        "https://arxiv.org/html/2604.19059v1/x3.png",
+        "https://arxiv.org/html/2604.19059v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19054",
@@ -5515,7 +6961,14 @@
       "updated": "2026-04-22T01:26:04Z",
       "comments": "11 pages, 8 figures, 4 tables",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19054v2",
+      "figures": [
+        "https://arxiv.org/html/2604.19054v2/img/airplane_indoor_backlit_01.png",
+        "https://arxiv.org/html/2604.19054v2/img/book_indoor_normal_light_00.jpg",
+        "https://arxiv.org/html/2604.19054v2/img/bus_outdoor_normal_light_02.png",
+        "https://arxiv.org/html/2604.19054v2/img/bird_outdoor_low_light_00.jpg"
+      ]
     },
     {
       "arxiv_id": "2604.19049",
@@ -5538,7 +6991,9 @@
       "code_links": [
         "https://github.com/abhinavagarwal07/refute-or-promote"
       ],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19049v1",
+      "figures": []
     },
     {
       "arxiv_id": "2604.19048",
@@ -5566,7 +7021,21 @@
       "code_links": [
         "https://github.com/boyan-code/SAMoRA"
       ],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19048v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19048v1/x1.png",
+        "https://arxiv.org/html/2604.19048v1/x2.png",
+        "https://arxiv.org/html/2604.19048v1/x3.png",
+        "https://arxiv.org/html/2604.19048v1/x4.png"
+      ],
+      "affiliations": [
+        "School of Computer Science and Technology, Beijing Jiaotong University, China",
+        "Guangxi Key Lab of Trusted Software, Guilin University of Electronic Technology, China",
+        "Beijing Key Lab of Traffic Data Mining and Embodied Intelligence, China",
+        "Institute of AI for Industries, Chinese Academy of Sciences, China",
+        "Nanjing Institute of Software Technology, China"
+      ]
     },
     {
       "arxiv_id": "2604.19047",
@@ -5588,7 +7057,14 @@
       "updated": "2026-04-21T03:54:09Z",
       "comments": "Accepted to ACL 2026 (Main Conference)",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19047v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19047v1/x1.png",
+        "https://arxiv.org/html/2604.19047v1/x2.png",
+        "https://arxiv.org/html/2604.19047v1/x3.png",
+        "https://arxiv.org/html/2604.19047v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19043",
@@ -5609,7 +7085,14 @@
       "updated": "2026-04-21T03:49:04Z",
       "comments": "Accepted to the 36th International Conference on Automated Planning and Scheduling (ICAPS-26)",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19043v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19043v1/x1.png",
+        "https://arxiv.org/html/2604.19043v1/x2.png",
+        "https://arxiv.org/html/2604.19043v1/x3.png",
+        "https://arxiv.org/html/2604.19043v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19039",
@@ -5634,7 +7117,14 @@
       "code_links": [
         "https://github.com/OnlyZZZZ/Generative_Texture_Filtering"
       ],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19039v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19039v1/fig/teaser/1.png",
+        "https://arxiv.org/html/2604.19039v1/fig/teaser/26.png",
+        "https://arxiv.org/html/2604.19039v1/fig/teaser/7.png",
+        "https://arxiv.org/html/2604.19039v1/fig/teaser/19.png"
+      ]
     },
     {
       "arxiv_id": "2604.19036",
@@ -5654,7 +7144,9 @@
       "updated": "2026-04-21T03:39:56Z",
       "comments": "28 pages. arXiv admin note: text overlap with arXiv:1703.01697",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19036v1",
+      "figures": []
     },
     {
       "arxiv_id": "2604.19034",
@@ -5682,7 +7174,17 @@
       "updated": "2026-04-21T03:35:31Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19034v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19034v1/images/Fig_1.jpg",
+        "https://arxiv.org/html/2604.19034v1/images/Fig_2.jpg",
+        "https://arxiv.org/html/2604.19034v1/images/Fig_3.jpg",
+        "https://arxiv.org/html/2604.19034v1/images/Fig_4.jpg"
+      ],
+      "affiliations": [
+        "Amap, Alibaba Group, China."
+      ]
     },
     {
       "arxiv_id": "2604.19033",
@@ -5706,7 +7208,14 @@
       "updated": "2026-04-21T03:33:40Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19033v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19033v1/x1.png",
+        "https://arxiv.org/html/2604.19033v1/x2.png",
+        "https://arxiv.org/html/2604.19033v1/x3.png",
+        "https://arxiv.org/html/2604.19033v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19025",
@@ -5729,7 +7238,14 @@
       "updated": "2026-04-21T03:20:18Z",
       "comments": "23 pages, including supplementary material. Accepted to the 2024 IEEE International Symposium on Mixed and Augmented Reality (ISMAR). Best Paper Nominee",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19025v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19025v1/Methods/Figures/finalOverviewRev.png",
+        "https://arxiv.org/html/2604.19025v1/Methods/Figures/MBB.png",
+        "https://arxiv.org/html/2604.19025v1/Methods/Figures/meshFilteringSceheme.png",
+        "https://arxiv.org/html/2604.19025v1/Methods/Figures/remeshingScheme.png"
+      ]
     },
     {
       "arxiv_id": "2604.19022",
@@ -5748,7 +7264,11 @@
       "updated": "2026-04-21T03:16:16Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19022v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19022v1/main_figure.png"
+      ]
     },
     {
       "arxiv_id": "2604.19018",
@@ -5775,7 +7295,14 @@
       "code_links": [
         "https://github.com/trustworthyrobotics/lqr-activation-steering"
       ],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19018v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19018v1/x1.png",
+        "https://arxiv.org/html/2604.19018v1/x2.png",
+        "https://arxiv.org/html/2604.19018v1/x3.png",
+        "https://arxiv.org/html/2604.19018v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19015",
@@ -5800,7 +7327,9 @@
       "updated": "2026-04-21T03:06:24Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19015v1",
+      "figures": []
     },
     {
       "arxiv_id": "2604.19011",
@@ -5823,7 +7352,14 @@
       "updated": "2026-04-21T03:00:52Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19011v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19011v1/x1.png",
+        "https://arxiv.org/html/2604.19011v1/x2.png",
+        "https://arxiv.org/html/2604.19011v1/x3.png",
+        "https://arxiv.org/html/2604.19011v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19009",
@@ -5848,7 +7384,14 @@
       "updated": "2026-04-21T02:57:13Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19009v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19009v1/x1.png",
+        "https://arxiv.org/html/2604.19009v1/x2.png",
+        "https://arxiv.org/html/2604.19009v1/x3.png",
+        "https://arxiv.org/html/2604.19009v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.19000",
@@ -5873,7 +7416,14 @@
       "updated": "2026-04-21T02:36:55Z",
       "comments": "Initial version",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.19000v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19000v1/x1.png",
+        "https://arxiv.org/html/2604.19000v1/x2.png",
+        "https://arxiv.org/html/2604.19000v1/x3.png",
+        "https://arxiv.org/html/2604.19000v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.18995",
@@ -5902,7 +7452,8 @@
       "updated": "2026-04-21T02:26:08Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "figures": []
     },
     {
       "arxiv_id": "2604.18993",
@@ -5933,7 +7484,14 @@
       "code_links": [
         "https://github.com/higherhu/AutoAWG"
       ],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18993v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18993v1/x1.png",
+        "https://arxiv.org/html/2604.18993v1/x2.png",
+        "https://arxiv.org/html/2604.18993v1/x3.png",
+        "https://arxiv.org/html/2604.18993v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.18988",
@@ -5957,7 +7515,14 @@
       "updated": "2026-04-21T02:18:18Z",
       "comments": "Submitted to ACM Multimetida 2026",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18988v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18988v1/sec/figure/figure_13.jpg",
+        "https://arxiv.org/html/2604.18988v1/sec/figure/overreview.jpg",
+        "https://arxiv.org/html/2604.18988v1/sec/figure/emotion_strategy_right_legend_v14.png",
+        "https://arxiv.org/html/2604.18988v1/sec/figure/critic_bar_iemocap_meld_font_up.png"
+      ]
     },
     {
       "arxiv_id": "2604.18982",
@@ -5987,7 +7552,19 @@
       "updated": "2026-04-21T02:08:25Z",
       "comments": "ACL 2026 Findings",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18982v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18982v1/x1.png",
+        "https://arxiv.org/html/2604.18982v1/x2.png",
+        "https://arxiv.org/html/2604.18982v1/x3.png",
+        "https://arxiv.org/html/2604.18982v1/x4.png"
+      ],
+      "affiliations": [
+        "The University of Hong Kong",
+        "Harbin Institute of Technology",
+        "Harbin Institute of Technology, Shenzhen"
+      ]
     },
     {
       "arxiv_id": "2604.18980",
@@ -6009,7 +7586,8 @@
       "updated": "2026-04-21T02:07:02Z",
       "comments": "DAC 2026",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "figures": []
     },
     {
       "arxiv_id": "2604.18978",
@@ -6038,7 +7616,19 @@
       "updated": "2026-04-21T01:59:54Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18978v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18978v1/x1.png",
+        "https://arxiv.org/html/2604.18978v1/x2.png",
+        "https://arxiv.org/html/2604.18978v1/x3.png",
+        "https://arxiv.org/html/2604.18978v1/figures/avg_combined.png"
+      ],
+      "affiliations": [
+        "University of Connecticut",
+        "University of California San Diego",
+        "University of Texas at Arlington"
+      ]
     },
     {
       "arxiv_id": "2604.18967",
@@ -6066,7 +7656,8 @@
       "updated": "2026-04-21T01:30:51Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "figures": []
     },
     {
       "arxiv_id": "2604.18966",
@@ -6089,7 +7680,14 @@
       "updated": "2026-04-21T01:29:52Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18966v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18966v1/figs/flow_small.jpg",
+        "https://arxiv.org/html/2604.18966v1/figs/training_da.png",
+        "https://arxiv.org/html/2604.18966v1/figs/classifiers_da.png",
+        "https://arxiv.org/html/2604.18966v1/figs/training_classifier_da.png"
+      ]
     },
     {
       "arxiv_id": "2604.18964",
@@ -6110,7 +7708,14 @@
       "updated": "2026-04-21T01:28:32Z",
       "comments": "24 pages, 6 figures. Datasets and evaluation code available at GitHub",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18964v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18964v1/x1.png",
+        "https://arxiv.org/html/2604.18964v1/x2.png",
+        "https://arxiv.org/html/2604.18964v1/x3.png",
+        "https://arxiv.org/html/2604.18964v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.18963",
@@ -6133,7 +7738,16 @@
       "updated": "2026-04-21T01:22:35Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18963v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18963v1/fig/KL_Qwen.png",
+        "https://arxiv.org/html/2604.18963v1/fig/KL_gemma.png"
+      ],
+      "affiliations": [
+        "Generative AI Lab, College of Computing and Data Science",
+        "Systems Research Institute of the Polish Academy of Sciences, AGH University of Krakow"
+      ]
     },
     {
       "arxiv_id": "2604.18961",
@@ -6155,7 +7769,14 @@
       "updated": "2026-04-21T01:19:11Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18961v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18961v1/x1.png",
+        "https://arxiv.org/html/2604.18961v1/x2.png",
+        "https://arxiv.org/html/2604.18961v1/x3.png",
+        "https://arxiv.org/html/2604.18961v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.18957",
@@ -6177,7 +7798,14 @@
       "code_links": [
         "https://github.com/mueez-overflow/ASTM-Grain-Size-Estimator"
       ],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18957v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18957v1/x1.png",
+        "https://arxiv.org/html/2604.18957v1/figure/patches/RG1_1_1.jpg",
+        "https://arxiv.org/html/2604.18957v1/figure/patches/RG1_1_2.jpg",
+        "https://arxiv.org/html/2604.18957v1/figure/patches/RG1_1_3.jpg"
+      ]
     },
     {
       "arxiv_id": "2604.18955",
@@ -6202,7 +7830,14 @@
       "updated": "2026-04-21T01:05:52Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18955v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18955v1/x1.png",
+        "https://arxiv.org/html/2604.18955v1/x2.png",
+        "https://arxiv.org/html/2604.18955v1/x3.png",
+        "https://arxiv.org/html/2604.18955v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.18946",
@@ -6224,7 +7859,14 @@
       "updated": "2026-04-21T00:50:13Z",
       "comments": "ACL 2026",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18946v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18946v1/x1.png",
+        "https://arxiv.org/html/2604.18946v1/x2.png",
+        "https://arxiv.org/html/2604.18946v1/x3.png",
+        "https://arxiv.org/html/2604.18946v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.18943",
@@ -6249,7 +7891,14 @@
       "updated": "2026-04-21T00:40:47Z",
       "comments": "Accepted to Findings of ACL 2026",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18943v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18943v1/figures/correlations/correlation.png",
+        "https://arxiv.org/html/2604.18943v1/figures/user_topic_mixture_stacked_bar.png",
+        "https://arxiv.org/html/2604.18943v1/figures/user_style_clusters_pca.png",
+        "https://arxiv.org/html/2604.18943v1/figures/interpretable_style_cluster_signatures3.png"
+      ]
     },
     {
       "arxiv_id": "2604.18940",
@@ -6273,7 +7922,18 @@
       "updated": "2026-04-21T00:26:25Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18940v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18940v1/x1.png",
+        "https://arxiv.org/html/2604.18940v1/x2.png",
+        "https://arxiv.org/html/2604.18940v1/x3.png",
+        "https://arxiv.org/html/2604.18940v1/x4.png"
+      ],
+      "affiliations": [
+        "Toyota Motor Corporation, Japan",
+        "Toyota Motor North America, USA"
+      ]
     },
     {
       "arxiv_id": "2604.18936",
@@ -6300,7 +7960,8 @@
       "updated": "2026-04-21T00:21:05Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "figures": []
     },
     {
       "arxiv_id": "2604.18934",
@@ -6320,7 +7981,12 @@
       "updated": "2026-04-21T00:14:59Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18934v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18934v1/Diagram.png",
+        "https://arxiv.org/html/2604.18934v1/leaderboard.png"
+      ]
     },
     {
       "arxiv_id": "2604.18933",
@@ -6345,6 +8011,13 @@
       "code_links": [],
       "project_links": [
         "https://gated-memory-policy.github.io/"
+      ],
+      "html_url": "https://arxiv.org/html/2604.18933v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18933v1/figures/jpg/teaser.jpg",
+        "https://arxiv.org/html/2604.18933v1/figures/jpg/network.jpg",
+        "https://arxiv.org/html/2604.18933v1/figures/jpg/training.jpg",
+        "https://arxiv.org/html/2604.18933v1/figures/jpg/exp1_match_color.jpg"
       ]
     },
     {
@@ -6367,6 +8040,13 @@
       "code_links": [],
       "project_links": [
         "https://fherran.github.io/tadabur/"
+      ],
+      "html_url": "https://arxiv.org/html/2604.18932v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18932v1/Iqraa_doc2.png",
+        "https://arxiv.org/html/2604.18932v1/Iqraa_doc_alm2.png",
+        "https://arxiv.org/html/2604.18932v1/Iqraa_doc_recseg.png",
+        "https://arxiv.org/html/2604.18932v1/Iqraa_doc_dc_llm.png"
       ]
     },
     {
@@ -6386,7 +8066,12 @@
       "updated": "2026-04-20T23:37:12Z",
       "comments": "8 pages, 2 figure, 1 table",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18916v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18916v1/x1.png",
+        "https://arxiv.org/html/2604.18916v1/x2.png"
+      ]
     },
     {
       "arxiv_id": "2604.18914",
@@ -6411,7 +8096,14 @@
       "updated": "2026-04-20T23:35:24Z",
       "comments": "25 pages, accepted to ACL 2026 (Main)",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18914v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18914v1/images/gender_problem_explanation.png",
+        "https://arxiv.org/html/2604.18914v1/x1.png",
+        "https://arxiv.org/html/2604.18914v1/images/heirarchical_morphology.png",
+        "https://arxiv.org/html/2604.18914v1/x2.png"
+      ]
     },
     {
       "arxiv_id": "2604.18907",
@@ -6434,7 +8126,14 @@
       "updated": "2026-04-20T23:14:48Z",
       "comments": "26 pages, The International Conference on Learning Representations (ICLR)",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18907v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18907v1/content/images/DLPN_diagram.jpg",
+        "https://arxiv.org/html/2604.18907v1/x1.png",
+        "https://arxiv.org/html/2604.18907v1/x2.png",
+        "https://arxiv.org/html/2604.18907v1/x3.png"
+      ]
     },
     {
       "arxiv_id": "2604.18905",
@@ -6455,7 +8154,14 @@
       "updated": "2026-04-20T23:13:14Z",
       "comments": "Preprint of accepted manuscript to be published in IEEE Robotics and Automation Letters (RA-L)",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18905v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18905v1/quadCLT_v9.jpg",
+        "https://arxiv.org/html/2604.18905v1/VIM-S_e_ac_v5.jpg",
+        "https://arxiv.org/html/2604.18905v1/CLT_control_diagram_v11.jpg",
+        "https://arxiv.org/html/2604.18905v1/ac_params_table.jpg"
+      ]
     },
     {
       "arxiv_id": "2604.18901",
@@ -6478,7 +8184,14 @@
       "code_links": [
         "https://github.com/isaac-6/harm-directions"
       ],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18901v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18901v1/x1.png",
+        "https://arxiv.org/html/2604.18901v1/x2.png",
+        "https://arxiv.org/html/2604.18901v1/x3.png",
+        "https://arxiv.org/html/2604.18901v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.18900",
@@ -6497,7 +8210,14 @@
       "updated": "2026-04-20T23:01:53Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18900v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18900v1/figs/gamma_cover_image_annotated.png",
+        "https://arxiv.org/html/2604.18900v1/figs/delta_multiview_annotated.png",
+        "https://arxiv.org/html/2604.18900v1/figs/thesis_front_labels.png",
+        "https://arxiv.org/html/2604.18900v1/figs/thesis_fbd_r1_r2.png"
+      ]
     },
     {
       "arxiv_id": "2604.18893",
@@ -6520,7 +8240,8 @@
       "updated": "2026-04-20T22:30:52Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "figures": []
     },
     {
       "arxiv_id": "2604.18887",
@@ -6544,7 +8265,14 @@
       "updated": "2026-04-20T22:09:27Z",
       "comments": "20 pages, 8 figures",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18887v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18887v1/x1.png",
+        "https://arxiv.org/html/2604.18887v1/x2.png",
+        "https://arxiv.org/html/2604.18887v1/x3.png",
+        "https://arxiv.org/html/2604.18887v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.18883",
@@ -6567,7 +8295,14 @@
       "updated": "2026-04-20T22:05:09Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18883v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18883v1/system_screenshots/graph_view.png",
+        "https://arxiv.org/html/2604.18883v1/system_screenshots/checkpoint_fixed.png",
+        "https://arxiv.org/html/2604.18883v1/system_screenshots/review_mode_zoomed.png",
+        "https://arxiv.org/html/2604.18883v1/figure_raw/nasa_tlx_short.png"
+      ]
     },
     {
       "arxiv_id": "2604.18882",
@@ -6588,7 +8323,14 @@
       "updated": "2026-04-20T22:02:57Z",
       "comments": "100 pages, 8 figures, 9 tables, 6 algorithms",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18882v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18882v1/x1.png",
+        "https://arxiv.org/html/2604.18882v1/x2.png",
+        "https://arxiv.org/html/2604.18882v1/x3.png",
+        "https://arxiv.org/html/2604.18882v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.18881",
@@ -6612,7 +8354,14 @@
       "updated": "2026-04-20T22:01:23Z",
       "comments": "Accepted to EarthVision 2026 (CVPR Workshop). 13 pages total (10 pages main paper + 3 pages supplementary material), 5 main figures",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18881v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18881v1/",
+        "https://arxiv.org/html/2604.18881v1/x2.png",
+        "https://arxiv.org/html/2604.18881v1/x3.png",
+        "https://arxiv.org/html/2604.18881v1/figs/nopcl_embeddings_pca1_map_trained_scaledbyframe_doy50.png"
+      ]
     },
     {
       "arxiv_id": "2604.18880",
@@ -6635,7 +8384,14 @@
       "updated": "2026-04-20T22:01:16Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18880v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18880v1/x1.png",
+        "https://arxiv.org/html/2604.18880v1/x2.png",
+        "https://arxiv.org/html/2604.18880v1/x3.png",
+        "https://arxiv.org/html/2604.18880v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.18874",
@@ -6659,7 +8415,14 @@
       "updated": "2026-04-20T21:53:39Z",
       "comments": "Accepted to Findings of the Association for Computational Linguistics: ACL 2026",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18874v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18874v1/x1.png",
+        "https://arxiv.org/html/2604.18874v1/x2.png",
+        "https://arxiv.org/html/2604.18874v1/x3.png",
+        "https://arxiv.org/html/2604.18874v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.18873",
@@ -6679,7 +8442,9 @@
       "updated": "2026-04-20T21:53:11Z",
       "comments": "14 pages. Submitted to AGI-26",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18873v1",
+      "figures": []
     },
     {
       "arxiv_id": "2604.19829",
@@ -6702,6 +8467,13 @@
       "code_links": [],
       "project_links": [
         "https://TactileEval.github.io/"
+      ],
+      "html_url": "https://arxiv.org/html/2604.19829v1",
+      "figures": [
+        "https://arxiv.org/html/2604.19829v1/loss_curve.png",
+        "https://arxiv.org/html/2604.19829v1/per_task_accuracy.png",
+        "https://arxiv.org/html/2604.19829v1/per_option_worst.png",
+        "https://arxiv.org/html/2604.19829v1/zeroshot_text_penguin.png"
       ]
     },
     {
@@ -6727,7 +8499,19 @@
       "updated": "2026-04-20T21:42:14Z",
       "comments": "This paper is accepted by CVPR'26",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18867v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18867v1/x1.png",
+        "https://arxiv.org/html/2604.18867v1/x2.png",
+        "https://arxiv.org/html/2604.18867v1/x3.png",
+        "https://arxiv.org/html/2604.18867v1/x4.png"
+      ],
+      "affiliations": [
+        "Nanyang Technological University",
+        "Northwest Polytechnical University",
+        "University of New South Wales"
+      ]
     },
     {
       "arxiv_id": "2604.18866",
@@ -6750,7 +8534,14 @@
       "updated": "2026-04-20T21:41:23Z",
       "comments": "Submitted to IJCV September 2025",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18866v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18866v1/x1.png",
+        "https://arxiv.org/html/2604.18866v1/Expert-assign.png",
+        "https://arxiv.org/html/2604.18866v1/x2.png",
+        "https://arxiv.org/html/2604.18866v1/x3.png"
+      ]
     },
     {
       "arxiv_id": "2604.18862",
@@ -6773,7 +8564,14 @@
       "updated": "2026-04-20T21:37:29Z",
       "comments": "Accepted by TOSEM",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18862v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18862v1/fig/example.png",
+        "https://arxiv.org/html/2604.18862v1/x1.png",
+        "https://arxiv.org/html/2604.18862v1/x2.png",
+        "https://arxiv.org/html/2604.18862v1/x3.png"
+      ]
     },
     {
       "arxiv_id": "2604.18860",
@@ -6793,7 +8591,14 @@
       "updated": "2026-04-20T21:36:16Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18860v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18860v1/figures/prim_a_obs_ann.png",
+        "https://arxiv.org/html/2604.18860v1/figures/prim_a_act_ann.png",
+        "https://arxiv.org/html/2604.18860v1/figures/prim_b_obs_ann.png",
+        "https://arxiv.org/html/2604.18860v1/figures/prim_b_act_ann.png"
+      ]
     },
     {
       "arxiv_id": "2604.18857",
@@ -6817,7 +8622,14 @@
       "updated": "2026-04-20T21:28:13Z",
       "comments": "Submitted to IEEE TPAMI January 2026",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18857v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18857v1/x1.png",
+        "https://arxiv.org/html/2604.18857v1/x2.png",
+        "https://arxiv.org/html/2604.18857v1/x3.png",
+        "https://arxiv.org/html/2604.18857v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.18856",
@@ -6838,7 +8650,14 @@
       "code_links": [
         "https://github.com/mqalkhatib/ConvVitMamba"
       ],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18856v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18856v1/x1.png",
+        "https://arxiv.org/html/2604.18856v1/x2.png",
+        "https://arxiv.org/html/2604.18856v1/x3.png",
+        "https://arxiv.org/html/2604.18856v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.18853",
@@ -6859,7 +8678,14 @@
       "code_links": [
         "https://github.com/mqalkhatib/DDF2Pol"
       ],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18853v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18853v1/Fig_DDF2Pol.png",
+        "https://arxiv.org/html/2604.18853v1/Fig_CNN_Feature_Extractor.png",
+        "https://arxiv.org/html/2604.18853v1/Fig_FL_Results.png",
+        "https://arxiv.org/html/2604.18853v1/Fig_SF_Results.png"
+      ]
     },
     {
       "arxiv_id": "2604.18850",
@@ -6882,7 +8708,11 @@
       "updated": "2026-04-20T21:19:36Z",
       "comments": "6 pages, 1 figure, Proceedings the Human-AI Interaction Alignment Workshop at CHI 2026 (CHI26 BiAlign Workshop)",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18850v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18850v1/framework-figure.png"
+      ]
     },
     {
       "arxiv_id": "2604.18847",
@@ -6905,7 +8735,14 @@
       "updated": "2026-04-20T21:12:40Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18847v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18847v1/x1.png",
+        "https://arxiv.org/html/2604.18847v1/x2.png",
+        "https://arxiv.org/html/2604.18847v1/x3.png",
+        "https://arxiv.org/html/2604.18847v1/figures/backbench_tasks.png"
+      ]
     },
     {
       "arxiv_id": "2604.18842",
@@ -6929,7 +8766,14 @@
       "updated": "2026-04-20T21:09:34Z",
       "comments": "Submitted to IEEE TPAMI on August 2025",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18842v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18842v1/detection-1.png",
+        "https://arxiv.org/html/2604.18842v1/con.png",
+        "https://arxiv.org/html/2604.18842v1/x1.png",
+        "https://arxiv.org/html/2604.18842v1/x2.png"
+      ]
     },
     {
       "arxiv_id": "2604.18839",
@@ -6954,7 +8798,19 @@
       "updated": "2026-04-20T21:06:12Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18839v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18839v1/x1.png",
+        "https://arxiv.org/html/2604.18839v1/x2.png",
+        "https://arxiv.org/html/2604.18839v1/x3.png",
+        "https://arxiv.org/html/2604.18839v1/x6.png"
+      ],
+      "affiliations": [
+        "Huawei Technologies",
+        "University of Toronto",
+        "University of Waterloo"
+      ]
     },
     {
       "arxiv_id": "2604.18838",
@@ -6975,7 +8831,8 @@
       "updated": "2026-04-20T21:03:33Z",
       "comments": "16 pages, 7 figures. Published in Scientific Reports (2025)",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "figures": []
     },
     {
       "arxiv_id": "2604.18835",
@@ -6999,7 +8856,19 @@
       "updated": "2026-04-20T20:59:25Z",
       "comments": "15 pages, 8 figures",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18835v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18835v1/x1.png",
+        "https://arxiv.org/html/2604.18835v1/x2.png",
+        "https://arxiv.org/html/2604.18835v1/x3.png",
+        "https://arxiv.org/html/2604.18835v1/x4.png"
+      ],
+      "affiliations": [
+        "Pacific Northwest National Laboratory",
+        "Washington University in St. Louis",
+        "Humana Inc."
+      ]
     },
     {
       "arxiv_id": "2604.18831",
@@ -7022,7 +8891,14 @@
       "updated": "2026-04-20T20:55:21Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18831v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18831v1/figures/Overview.png",
+        "https://arxiv.org/html/2604.18831v1/figures/projection_comparison.png",
+        "https://arxiv.org/html/2604.18831v1/figures/pseudo_label.png",
+        "https://arxiv.org/html/2604.18831v1/figures/mannual_label_results.png"
+      ]
     },
     {
       "arxiv_id": "2604.18829",
@@ -7048,6 +8924,18 @@
       "code_links": [],
       "project_links": [
         "https://abrarmajeedi.github.io/dualvision"
+      ],
+      "html_url": "https://arxiv.org/html/2604.18829v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18829v1/x2.png",
+        "https://arxiv.org/html/2604.18829v1/x3.png",
+        "https://arxiv.org/html/2604.18829v1/x4.png",
+        "https://arxiv.org/html/2604.18829v1/x5.png"
+      ],
+      "affiliations": [
+        "University of Wisconsin-Madison",
+        "Amazon",
+        "Northeastern University"
       ]
     },
     {
@@ -7090,7 +8978,14 @@
       "code_links": [
         "https://github.com/enigma-brain/omnimouse"
       ],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18827v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18827v1/figures/fig1_v4.png",
+        "https://arxiv.org/html/2604.18827v1/figures/fig_3_v3.png",
+        "https://arxiv.org/html/2604.18827v1/figures/model_schematic_v5.png",
+        "https://arxiv.org/html/2604.18827v1/figures/masking_schematic.png"
+      ]
     },
     {
       "arxiv_id": "2604.18816",
@@ -7110,7 +9005,14 @@
       "updated": "2026-04-20T20:36:36Z",
       "comments": "30 pages, 8 figures and 7 tables",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18816v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18816v1/Tangent_plane.png",
+        "https://arxiv.org/html/2604.18816v1/shape.png",
+        "https://arxiv.org/html/2604.18816v1/cardio_PCA.png",
+        "https://arxiv.org/html/2604.18816v1/cardio_KPCA.png"
+      ]
     },
     {
       "arxiv_id": "2604.18811",
@@ -7134,7 +9036,8 @@
       "updated": "2026-04-20T20:29:09Z",
       "comments": "CVPR 2026 (Oral). First two authors contributed equally",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "figures": []
     },
     {
       "arxiv_id": "2604.18805",
@@ -7162,7 +9065,8 @@
       "updated": "2026-04-20T20:23:42Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "figures": []
     },
     {
       "arxiv_id": "2604.18804",
@@ -7184,7 +9088,14 @@
       "updated": "2026-04-20T20:22:27Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18804v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18804v1/images/heatMap_visual/chichen/normal/ID_S0_IMG.png",
+        "https://arxiv.org/html/2604.18804v1/images/heatMap_visual/chichen/normal/ID_S0_lc.png",
+        "https://arxiv.org/html/2604.18804v1/images/heatMap_visual/chichen/normal/ID_S0_phfe.png",
+        "https://arxiv.org/html/2604.18804v1/images/heatMap_visual/chichen/ood/ood_S0_IMG.png"
+      ]
     },
     {
       "arxiv_id": "2604.18803",
@@ -7214,7 +9125,14 @@
       "updated": "2026-04-22T02:39:44Z",
       "comments": "23 pages, 12 figures",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18803v2",
+      "figures": [
+        "https://arxiv.org/html/2604.18803v2/figure/4.png",
+        "https://arxiv.org/html/2604.18803v2/figure/3.png",
+        "https://arxiv.org/html/2604.18803v2/figure/sample.jpg",
+        "https://arxiv.org/html/2604.18803v2/figure/all_models_tone_asr_with_gemma4.png"
+      ]
     },
     {
       "arxiv_id": "2604.18797",
@@ -7247,7 +9165,8 @@
       "code_links": [],
       "project_links": [
         "https://crosspan.netlify.app/"
-      ]
+      ],
+      "figures": []
     },
     {
       "arxiv_id": "2604.18791",
@@ -7270,7 +9189,14 @@
       "updated": "2026-04-20T19:57:35Z",
       "comments": "9 pages, 2 figures",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18791v1",
+      "figures": [],
+      "affiliations": [
+        "Tsinghua University",
+        "Alibaba Group",
+        "Bengbu University"
+      ]
     },
     {
       "arxiv_id": "2604.18790",
@@ -7295,7 +9221,14 @@
       "updated": "2026-04-20T19:56:04Z",
       "comments": "This work has been submitted to the IEEE for possible publication",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18790v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18790v1/figures_used_efpe/Efficient_PENet_arch.png",
+        "https://arxiv.org/html/2604.18790v1/figures_used_efpe/fig_pareto.png",
+        "https://arxiv.org/html/2604.18790v1/figures_used_efpe/fig_complexity.png",
+        "https://arxiv.org/html/2604.18790v1/figures_used_efpe/fig_radar.png"
+      ]
     },
     {
       "arxiv_id": "2604.18789",
@@ -7323,7 +9256,13 @@
       "updated": "2026-04-20T19:54:47Z",
       "comments": "9 pages, ACL 2026 Main",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18789v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18789v1/x1.png",
+        "https://arxiv.org/html/2604.18789v1/x2.png",
+        "https://arxiv.org/html/2604.18789v1/x3.png"
+      ]
     },
     {
       "arxiv_id": "2604.18786",
@@ -7345,7 +9284,11 @@
       "updated": "2026-04-20T19:48:33Z",
       "comments": "Accepted at ACL 2026",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18786v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18786v1/x1.png"
+      ]
     },
     {
       "arxiv_id": "2604.18781",
@@ -7374,7 +9317,14 @@
       "updated": "2026-04-20T19:45:11Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18781v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18781v1/images/figure_resolutions_new.png",
+        "https://arxiv.org/html/2604.18781v1/images/training_complexity_heatmap.png",
+        "https://arxiv.org/html/2604.18781v1/images/seg_comparison.jpg",
+        "https://arxiv.org/html/2604.18781v1/images/trend_lines_psnr_fullres.png"
+      ]
     },
     {
       "arxiv_id": "2604.18765",
@@ -7396,7 +9346,14 @@
       "updated": "2026-04-20T19:20:29Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18765v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18765v1/x1.png",
+        "https://arxiv.org/html/2604.18765v1/x2.png",
+        "https://arxiv.org/html/2604.18765v1/x3.png",
+        "https://arxiv.org/html/2604.18765v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.18757",
@@ -7420,7 +9377,14 @@
       "updated": "2026-04-20T19:01:54Z",
       "comments": "Accepted for publication a MIDL 2026",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18757v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18757v1/x1.png",
+        "https://arxiv.org/html/2604.18757v1/x2.png",
+        "https://arxiv.org/html/2604.18757v1/x3.png",
+        "https://arxiv.org/html/2604.18757v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.18756",
@@ -7444,7 +9408,14 @@
       "updated": "2026-04-20T19:00:09Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18756v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18756v1/x1.png",
+        "https://arxiv.org/html/2604.18756v1/latex/imgs/transfer_matrix_quadrants_3_10_gcg-3.png",
+        "https://arxiv.org/html/2604.18756v1/latex/imgs/transfer_matrix_1x4_beast-3_10-4.png",
+        "https://arxiv.org/html/2604.18756v1/latex/imgs/jaccard_2x3_labeled_top81.png"
+      ]
     },
     {
       "arxiv_id": "2604.18753",
@@ -7466,7 +9437,14 @@
       "updated": "2026-04-20T18:55:56Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18753v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18753v1/x1.png",
+        "https://arxiv.org/html/2604.18753v1/x2.png",
+        "https://arxiv.org/html/2604.18753v1/x3.png",
+        "https://arxiv.org/html/2604.18753v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.18751",
@@ -7489,7 +9467,12 @@
       "updated": "2026-04-20T18:55:04Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18751v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18751v1/Figure1.png",
+        "https://arxiv.org/html/2604.18751v1/Figure2.png"
+      ]
     },
     {
       "arxiv_id": "2604.18747",
@@ -7516,6 +9499,13 @@
       "code_links": [],
       "project_links": [
         "https://urope-pe.github.io/"
+      ],
+      "html_url": "https://arxiv.org/html/2604.18747v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18747v1/x1.png",
+        "https://arxiv.org/html/2604.18747v1/x2.png",
+        "https://arxiv.org/html/2604.18747v1/figs/nvs_vis_new.png",
+        "https://arxiv.org/html/2604.18747v1/figs/detection.png"
       ]
     },
     {
@@ -7538,7 +9528,18 @@
       "updated": "2026-04-20T18:49:16Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18745v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18745v1/x1.png",
+        "https://arxiv.org/html/2604.18745v1/x2.png",
+        "https://arxiv.org/html/2604.18745v1/model_comparison_by_class.png",
+        "https://arxiv.org/html/2604.18745v1/ablation_comparison_by_class.png"
+      ],
+      "affiliations": [
+        "University of New Orleans, New Orleans, LA, USA",
+        "Center for Geospatial Sciences, Naval Research Laboratory, Hancock County, MS, USA"
+      ]
     },
     {
       "arxiv_id": "2604.18744",
@@ -7562,7 +9563,14 @@
       "code_links": [
         "https://github.com/spikelab-jhu/Match-Any-Events"
       ],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18744v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18744v1/x2.png",
+        "https://arxiv.org/html/2604.18744v1/x3.png",
+        "https://arxiv.org/html/2604.18744v1/x4.png",
+        "https://arxiv.org/html/2604.18744v1/x5.png"
+      ]
     },
     {
       "arxiv_id": "2604.18740",
@@ -7587,7 +9595,14 @@
       "code_links": [
         "https://github.com/marszzibros/C-arm-localization-LLMs.git"
       ],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18740v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18740v1/x1.png",
+        "https://arxiv.org/html/2604.18740v1/x2.png",
+        "https://arxiv.org/html/2604.18740v1/x3.png",
+        "https://arxiv.org/html/2604.18740v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.18728",
@@ -7610,7 +9625,14 @@
       "updated": "2026-04-20T18:25:56Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18728v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18728v1/figures/running-example-2/running-example-1-notitle.png",
+        "https://arxiv.org/html/2604.18728v1/figures/running-example-2/running-example-2-notitle.png",
+        "https://arxiv.org/html/2604.18728v1/figures/running-example-2/running-example-3-notitle.png",
+        "https://arxiv.org/html/2604.18728v1/figures/lattice-v2.png"
+      ]
     },
     {
       "arxiv_id": "2604.18727",
@@ -7634,7 +9656,14 @@
       "updated": "2026-04-20T18:24:17Z",
       "comments": "13 pages, 4 figures",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18727v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18727v1/x1.png",
+        "https://arxiv.org/html/2604.18727v1/x2.png",
+        "https://arxiv.org/html/2604.18727v1/x3.png",
+        "https://arxiv.org/html/2604.18727v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.18725",
@@ -7656,7 +9685,14 @@
       "updated": "2026-04-20T18:23:07Z",
       "comments": "18 pages long (excluding references), 12 figures, to be submitted in NCCV 2026",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18725v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18725v1/Images/annotation/original_image.png",
+        "https://arxiv.org/html/2604.18725v1/Images/annotation/resultant-tiff.png",
+        "https://arxiv.org/html/2604.18725v1/Images/research-flowchart.png",
+        "https://arxiv.org/html/2604.18725v1/Images/model/finetune-1-yolo.png"
+      ]
     },
     {
       "arxiv_id": "2604.18724",
@@ -7680,7 +9716,14 @@
       "updated": "2026-04-20T18:22:31Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18724v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18724v1/figures/simple_annot.png",
+        "https://arxiv.org/html/2604.18724v1/figures/compare_presidents.png",
+        "https://arxiv.org/html/2604.18724v1/figures/combined_diff_accuracy_by_participant.png",
+        "https://arxiv.org/html/2604.18724v1/figures/direct_comparison_overall_preference.png"
+      ]
     },
     {
       "arxiv_id": "2604.18721",
@@ -7706,7 +9749,14 @@
       "updated": "2026-04-20T18:20:16Z",
       "comments": "5 pages, 3 figures, Accepted for publication at IEEE IGARSS 2026",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18721v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18721v1/Figures/PNG/Architecture_diagram.png",
+        "https://arxiv.org/html/2604.18721v1/Figures/PNG/loveda_qualitative.png",
+        "https://arxiv.org/html/2604.18721v1/Figures/PNG/potsdam_qualitative.png",
+        "https://arxiv.org/html/2604.18721v1/Figures/PNG/fps_vs_miou.png"
+      ]
     },
     {
       "arxiv_id": "2604.18718",
@@ -7727,7 +9777,14 @@
       "updated": "2026-04-20T18:17:51Z",
       "comments": "18 pages, 4 figures, supplementary appendix and benchmark artifacts",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18718v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18718v1/generated/core_detection_heatmap_whitebox.png",
+        "https://arxiv.org/html/2604.18718v1/generated/core_detection_heatmap_blackbox.png",
+        "https://arxiv.org/html/2604.18718v1/generated/core_cost_quality.png",
+        "https://arxiv.org/html/2604.18718v1/generated/core_cost_components.png"
+      ]
     },
     {
       "arxiv_id": "2604.18715",
@@ -7749,7 +9806,14 @@
       "updated": "2026-04-20T18:14:33Z",
       "comments": null,
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18715v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18715v1/x1.png",
+        "https://arxiv.org/html/2604.18715v1/x2.png",
+        "https://arxiv.org/html/2604.18715v1/x3.png",
+        "https://arxiv.org/html/2604.18715v1/x4.png"
+      ]
     },
     {
       "arxiv_id": "2604.18713",
@@ -7781,7 +9845,12 @@
       "code_links": [
         "https://github.com/NUBagciLab/Prostate-Lesion-Segmentation"
       ],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18713v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18713v1/x1.png",
+        "https://arxiv.org/html/2604.18713v1/x2.png"
+      ]
     },
     {
       "arxiv_id": "2604.18701",
@@ -7803,7 +9872,14 @@
       "updated": "2026-04-20T18:01:15Z",
       "comments": "17 pages, 6 figures, 1 table",
       "code_links": [],
-      "project_links": []
+      "project_links": [],
+      "html_url": "https://arxiv.org/html/2604.18701v1",
+      "figures": [
+        "https://arxiv.org/html/2604.18701v1/error_w_zoom.png",
+        "https://arxiv.org/html/2604.18701v1/frame_step0030000.png",
+        "https://arxiv.org/html/2604.18701v1/visit_frac.png",
+        "https://arxiv.org/html/2604.18701v1/heatmap_end.png"
+      ]
     }
   ]
 }
