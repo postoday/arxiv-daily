@@ -7329,7 +7329,12 @@
       "code_links": [],
       "project_links": [],
       "html_url": "https://arxiv.org/html/2604.19015v1",
-      "figures": []
+      "figures": [],
+      "affiliations": [
+        "Hong Kong University of Science and Technology, Hong Kong, China",
+        "WeBank Co., Ltd, Shenzhen, China",
+        "Hong Kong Polytechnic University, Hong Kong, China"
+      ]
     },
     {
       "arxiv_id": "2604.19011",
