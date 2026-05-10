@@ -1,0 +1,1519 @@
+{
+  "date": "2026-05-08",
+  "total_candidates": 116,
+  "categories": [
+    {
+      "id": "worldmodel",
+      "name": "世界模型&生成模型",
+      "papers": [
+        {
+          "id": "2605.06337",
+          "rank": 1,
+          "score": 92,
+          "reason_zh": "弃用网格化数据同化，从原始观测直接学习三维大气连续演化，匹敌IFS预报精度",
+          "tags": [
+            "世界模型",
+            "生成模型"
+          ],
+          "title": "Earth-o1: A Grid-free Observation-native Atmospheric World Model",
+          "authors": [
+            "Junchao Gong",
+            "Kaiyi Xu",
+            "Wangxu Wei",
+            "Siwei Tu",
+            "Jingyi Xu"
+          ],
+          "abstract": "Despite the unprecedented volume of multimodal data provided by modern Earth observation systems, our ability to model atmospheric dynamics remains constrained. Traditional modeling frameworks force heterogeneous measurements into predefined spatial grids, inherently limiting the full exploitation of raw sensor data and creating severe computational bottlenecks. Here we present Earth-o1, an observation-native atmospheric world model that overcomes these structural limitations. Rather than relying on conventional atmospheric dynamical modeling systems or traditional data assimilation, Earth-o1 directly learns the continuous, three-dimensional physical evolution of the Earth system from ungridded observational data. By integrating diverse sensor inputs into a unified, grid-free dynamical field, the model autonomously advances the atmospheric state in space and time. We show that this fundamentally distinct paradigm enables direct, real-time forecasting and cross-sensor inference without the overhead of explicit numerical solvers. In hindcast evaluations, Earth-o1 achieves surface forecast skill comparable to the operational Integrated Forecasting System (IFS). These results establish that continuous, observation-driven world models -- a new class of fully observation-native geophysical simulators -- can match the fidelity of established physical frameworks, providing a scalable data-driven foundation for a digital twin of the Earth.",
+          "abs_url": "https://arxiv.org/abs/2605.06337",
+          "pdf_url": "https://arxiv.org/pdf/2605.06337v1",
+          "html_url": "https://arxiv.org/html/2605.06337v1",
+          "figures": [
+            "https://arxiv.org/html/2605.06337v1/Figures/Fig.1.jpg",
+            "https://arxiv.org/html/2605.06337v1/x1.png",
+            "https://arxiv.org/html/2605.06337v1/x2.png",
+            "https://arxiv.org/html/2605.06337v1/x3.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": null,
+          "submitted": "2026-05-07T14:27:48Z",
+          "updated": "2026-05-07T14:27:48Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "Earth-o1：无网格观测原生大气世界模型",
+          "abstract_zh": "尽管现代地球观测系统提供了前所未有的多模态数据量，但我们模拟大气动力学的能力仍然受到限制。传统的建模框架迫使异构测量进入预定义的空间网格，本质上限制了原始传感器数据的充分利用并造成严重的计算瓶颈。在这里，我们介绍 Earth-o1，这是一种克服这些结构限制的观测原生大气世界模型。 Earth-o1 不依赖传统的大气动力学建模系统或传统的数据同化，而是直接从无网格的观测数据中学习地球系统的连续、三维物理演化。通过将不同的传感器输入集成到一个统一的、无网格的动态场中，该模型可以在空间和时间上自主地推进大气状态。我们证明，这种根本不同的范式可以实现直接、实时的预测和跨传感器推理，而无需显式数值求解器的开销。在事后评估中，Earth-o1 的地面预报能力可与运行中的综合预报系统 (IFS) 相媲美。这些结果表明，连续的、观测驱动的世界模型——一种完全观测原生的新型地球物理模拟器——可以与已建立的物理框架的保真度相匹配，为地球的数字孪生提供可扩展的数据驱动基础。"
+        },
+        {
+          "id": "2605.06509",
+          "rank": 2,
+          "score": 90,
+          "reason_zh": "用奇异谱分解解耦长视频生成的全局-局部特征，避免传统刚性划分导致的运动退化",
+          "tags": [
+            "生成模型",
+            "视频生成"
+          ],
+          "title": "FreeSpec: Training-Free Long Video Generation via Singular-Spectrum Reconstruction",
+          "authors": [
+            "Fangda Chen",
+            "Shanshan Zhao",
+            "Longrong Yang",
+            "Chuanfu Xu",
+            "Zhigang Luo"
+          ],
+          "abstract": "Video diffusion models perform well in short-video synthesis, but their training-free extension to long videos often suffers from content drift, temporal inconsistency, and over-smoothed dynamics. Existing methods improve temporal consistency by combining a global branch with a local branch, but they often further decompose appearance consistency and temporal dynamics within each branch using predefined criteria. This assignment is unreliable when appearance and action progression are tightly coupled, such as in camera motion and sequential motion. We analyze the video temporal extension issue from a singular-spectrum perspective and show that enlarged self-attention windows induce spectral concentration: spectral energy becomes dominated by a few low-rank singular directions, preserving coarse structure but suppressing high-rank spatial details and motion-rich temporal variations. To mitigate this problem, we propose FreeSpec, a training-free spectral reconstruction framework for long-video generation. FreeSpec decomposes global and local features with singular value decomposition, and uses the global branch as low-rank spectral guidance and the local branch as a high-rank reconstruction basis. This spectrum-level fusion avoids the rigid feature partitioning of previous decomposition rules, preserving long-range consistency while better retaining spatial details and temporal dynamics. Experiments on Wan2.1 and LTX-Video demonstrate that FreeSpec improves long-video generation, especially for temporal dynamics, while maintaining strong visual quality and temporal consistency. Project demo: https://fdchen24.github.io/FreeSpec-Website/.",
+          "abs_url": "https://arxiv.org/abs/2605.06509",
+          "pdf_url": "https://arxiv.org/pdf/2605.06509v1",
+          "html_url": "https://arxiv.org/html/2605.06509v1",
+          "figures": [
+            "https://arxiv.org/html/2605.06509v1/figs/teaser.jpg",
+            "https://arxiv.org/html/2605.06509v1/figs/svd_singular_analysis.jpg",
+            "https://arxiv.org/html/2605.06509v1/figs/framework.jpg",
+            "https://arxiv.org/html/2605.06509v1/figs/compare-1.jpg"
+          ],
+          "code_url": null,
+          "project_url": "https://fdchen24.github.io/FreeSpec-Website/",
+          "code_links": [],
+          "project_links": [
+            "https://fdchen24.github.io/FreeSpec-Website/"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": null,
+          "comments": null,
+          "submitted": "2026-05-07T16:21:34Z",
+          "updated": "2026-05-07T16:21:34Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "FreeSpec：通过奇异谱重建进行免训练长视频生成",
+          "abstract_zh": "视频扩散模型在短视频合成中表现良好，但其对长视频的免训练扩展经常会遇到内容漂移、时间不一致和过度平滑动态的问题。现有方法通过将全局分支与局部分支相结合来提高时间一致性，但它们通常使用预定义的标准进一步分解每个分支内的外观一致性和时间动态。当外观和动作进程紧密耦合时（例如在摄像机运动和顺序运动中），此分配是不可靠的。我们从奇异频谱的角度分析了视频时间扩展问题，并表明扩大的自注意力窗口会导致频谱集中：频谱能量由一些低阶奇异方向主导，保留粗糙结构，但抑制高阶空间细节和运动丰富的时间变化。为了缓解这个问题，我们提出了 FreeSpec，一种用于长视频生成的免训练光谱重建框架。 FreeSpec通过奇异值分解来分解全局和局部特征，并使用全局分支作为低秩谱指导和局部分支作为高秩重建基础。这种谱级融合避免了先前分解规则的严格特征划分，保持了远程一致性，同时更好地保留了空间细节和时间动态。 Wan2.1 和 LTX-Video 上的实验表明，FreeSpec 改进了长视频生成，尤其是时间动态，同时保持了强大的视觉质量和时间一致性。项目演示：https://fdchen24.github.io/FreeSpec-Website/。"
+        },
+        {
+          "id": "2605.06388",
+          "rank": 3,
+          "score": 89,
+          "reason_zh": "系统评估六种编码器对机器人世界模型的影响，发现语义潜空间优于像素重建潜空间",
+          "tags": [
+            "世界模型",
+            "机器人",
+            "具身智能"
+          ],
+          "title": "Reconstruction or Semantics? What Makes a Latent Space Useful for Robotic World Models",
+          "authors": [
+            "Nilaksh",
+            "Saurav Jha",
+            "Artem Zholus",
+            "Sarath Chandar"
+          ],
+          "abstract": "World model-based policy evaluation is a practical proxy for testing real-world robot control by rolling out candidate actions in action-conditioned video diffusion models. As these models increasingly adopt latent diffusion modeling (LDM), choosing the right latent space becomes critical. While the status quo uses autoencoding latent spaces like VAEs that are primarily trained for pixel reconstruction, recent work suggests benefits from pretrained encoders with representation-aligned semantic latent spaces. We systematically evaluate these latent spaces for action-conditioned LDM by comparing six reconstruction and semantic encoders to train world model variants under a fixed protocol on BridgeV2 dataset, and show effective world model training in high-dimensional representation spaces with and without dimension compression. We then propose three axes to assess robotic world model performance: visual fidelity, planning and downstream policy performance, and latent representation quality. Our results show visual fidelity alone is insufficient for world model selection. While reconstruction encoders like VAE and Cosmos achieve strong pixel-level scores, semantic encoders such as V-JEPA 2.1 (strongest overall on policy), Web-DINO, and SigLIP 2 generally excel across the other two axes at all model scales. Our study advocates semantic latent space as stronger foundation for policy-relevant robotics diffusion world models.",
+          "abs_url": "https://arxiv.org/abs/2605.06388",
+          "pdf_url": "https://arxiv.org/pdf/2605.06388v1",
+          "html_url": "https://arxiv.org/html/2605.06388v1",
+          "figures": [
+            "https://arxiv.org/html/2605.06388v1/figures/main-fig-frames/frame_3_t33.png",
+            "https://arxiv.org/html/2605.06388v1/figures/main-fig-frames/frame_2_t22.png",
+            "https://arxiv.org/html/2605.06388v1/figures/main-fig-frames/frame_0_t0.png",
+            "https://arxiv.org/html/2605.06388v1/x3.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": "9 pages",
+          "submitted": "2026-05-07T15:05:26Z",
+          "updated": "2026-05-07T15:05:26Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV",
+            "cs.LG",
+            "cs.RO"
+          ],
+          "title_zh": "重构还是语义？是什么让潜在空间对机器人世界模型有用",
+          "abstract_zh": "基于世界模型的策略评估是通过在动作条件视频扩散模型中推出候选动作来测试现实世界机器人控制的实用代理。随着这些模型越来越多地采用潜在扩散模型（LDM），选择正确的潜在空间变得至关重要。虽然现状使用自动编码潜在空间（例如主要针对像素重建进行训练的 VAE），但最近的工作表明具有与表示对齐的语义潜在空间的预训练编码器的好处。我们通过比较六种重建和语义编码器来系统地评估动作条件 LDM 的这些潜在空间，以在 BridgeV2 数据集上的固定协议下训练世界模型变体，并展示在有和没有维度压缩的高维表示空间中有效的世界模型训练。然后，我们提出三个轴来评估机器人世界模型的性能：视觉保真度、规划和下游政策性能以及潜在表示质量。我们的结果表明，仅靠视觉保真度不足以选择世界模型。虽然 VAE 和 Cosmos 等重建编码器实现了很强的像素级分数，但 V-JEPA 2.1（策略整体最强）、Web-DINO 和 SigLIP 2 等语义编码器通常在所有模型规模的其他两个轴上都表现出色。我们的研究主张语义潜在空间作为与政策相关的机器人扩散世界模型的更坚实的基础。"
+        },
+        {
+          "id": "2605.06051",
+          "rank": 4,
+          "score": 88,
+          "reason_zh": "自回归+蒸馏实现实时相机可控新视角视频生成，提出闭环数据增强解决loop一致性问题",
+          "tags": [
+            "生成模型",
+            "3D重建",
+            "开源"
+          ],
+          "title": "RealCam: Real-Time Novel-View Video Generation with Interactive Camera Control",
+          "authors": [
+            "Youcan Xu",
+            "Jiaxin Shi",
+            "Zhen Wang",
+            "Wensong Song",
+            "Feifei Shao"
+          ],
+          "abstract": "Camera-controlled video-to-video (V2V) generation enables dynamic viewpoint synthesis from monocular footage, holding immense potential for interactive filmmaking and live broadcasting. However, existing implicit synthesis methods fundamentally rely on non-causal, full-sequence processing and rigid prefix-style temporal concatenation. This architectural paradigm mandates bidirectional attention, resulting in prohibitive computational latency, quadratic complexity scaling, and inherent incompatibility with real-time streaming or variable-length inputs. To overcome these limitations, we introduce \\texttt{RealCam}, a novel autoregressive framework for interactive, real-time camera-controlled V2V generation. We first design a high-fidelity teacher model grounded in a \\textbf{Cross-frame In-context Learning} paradigm. By interleaving source and target frames into synchronized contextual pairs, our design inherently enables length-agnostic generalization and naturally facilitates causal adaptation, breaking the rigid prefix bottleneck. We then distill this teacher into a few-step causal student via Self-Forcing with Distribution Matching Distillation, enabling efficient, on-the-fly streaming synthesis. Furthermore, to mitigate severe loop inconsistency in closed-loop trajectories, we propose \\textbf{Loop-Closed Data Augmentation (LoopAug)}, a novel paradigm that synthesizes globally consistent loop sequences from existing multiview datasets. Extensive experiments demonstrate that \\texttt{RealCam} achieves state-of-the-art visual fidelity and temporal consistency while enabling truly interactive camera control with orders-of-magnitude faster inference than existing paradigms. Our project page is at https://xyc-fly.github.io/RealCam/.",
+          "abs_url": "https://arxiv.org/abs/2605.06051",
+          "pdf_url": "https://arxiv.org/pdf/2605.06051v1",
+          "html_url": "https://arxiv.org/html/2605.06051v1",
+          "figures": [
+            "https://arxiv.org/html/2605.06051v1/x1.png",
+            "https://arxiv.org/html/2605.06051v1/x2.png",
+            "https://arxiv.org/html/2605.06051v1/x3.png",
+            "https://arxiv.org/html/2605.06051v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": "https://xyc-fly.github.io/RealCam/",
+          "code_links": [],
+          "project_links": [
+            "https://xyc-fly.github.io/RealCam/"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": null,
+          "comments": null,
+          "submitted": "2026-05-07T11:36:29Z",
+          "updated": "2026-05-07T11:36:29Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "RealCam：通过交互式摄像机控制生成实时新视角视频",
+          "abstract_zh": "摄像机控制的视频到视频 (V2V) 生成可实现单目镜头的动态视点合成，为交互式电影制作和直播带来巨大潜力。然而，现有的隐式综合方法从根本上依赖于非因果、全序列处理和严格的前缀式时间连接。这种架构范式要求双向关注，导致计算延迟过高、复杂度二次缩放以及与实时流或可变长度输入固有的不兼容性。为了克服这些限制，我们引入了 \\texttt{RealCam}，这是一种新颖的自回归框架，用于交互式、实时摄像头控制的 V2V 生成。我们首先设计一个基于 \\textbf{跨框架上下文学习}范式的高保真教师模型。通过将源帧和目标帧交织成同步的上下文对，我们的设计本质上实现了与长度无关的泛化，并自然地促进了因果适应，打破了严格的前缀瓶颈。然后，我们通过分布匹配蒸馏的自强迫将这位教师蒸馏为几个步骤的因果学生，从而实现高效、动态的流合成。此外，为了减轻闭环轨迹中严重的循环不一致问题，我们提出了 \\textbf{Loop-Closed Data Augmentation (LoopAug)}，这是一种从现有多视图数据集中合成全局一致的循环序列的新范例。大量实验表明，\\texttt{RealCam} 实现了最先进的视觉保真度和时间一致性，同时实现了真正的交互式相机控制，推理速度比现有范例快几个数量级。我们的项目页面位于 https://xyc-fly.github.io/RealCam/。"
+        },
+        {
+          "id": "2605.06356",
+          "rank": 5,
+          "score": 86,
+          "reason_zh": "分段条件生成实现2K图生视频，双向上下文交互保证跨段一致性，单卡可跑",
+          "tags": [
+            "生成模型",
+            "视频生成"
+          ],
+          "title": "SwiftI2V: Efficient High-Resolution Image-to-Video Generation via Conditional Segment-wise Generation",
+          "authors": [
+            "YaoYang Liu",
+            "Yuechen Zhang",
+            "Wenbo Li",
+            "Yufei Zhao",
+            "Rui Liu"
+          ],
+          "abstract": "High-resolution image-to-video (I2V) generation aims to synthesize realistic temporal dynamics while preserving fine-grained appearance details of the input image. At 2K resolution, it becomes extremely challenging, and existing solutions suffer from various weaknesses: 1) end-to-end models are often prohibitively expensive in memory and latency; 2) cascading low-resolution generation with a generic video super-resolution tends to hallucinate details and drift from input-specific local structures, since the super-resolution stage is not explicitly conditioned on the input image. To this end, we propose SwiftI2V, an efficient framework tailored for high-resolution I2V. Following the widely used two-stage design, it addresses the efficiency--fidelity dilemma by first generating a low-resolution motion reference to reduce token costs and ease the modeling burden, then performing a strongly image-conditioned 2K synthesis guided by the motion to recover input-faithful details with controlled overhead. Specifically, to make generation more scalable, SwiftI2V introduces Conditional Segment-wise Generation (CSG) to synthesize videos segment-by-segment with a bounded per-step token budget, and adopts bidirectional contextual interaction within each segment to improve cross-segment coherence and input fidelity. On VBench-I2V at 2K resolution, SwiftI2V achieves performance comparable to end-to-end baselines while reducing total GPU-time by 202x. Particularly, it enables practical 2K I2V generation on a single datacenter GPU (e.g., H800) or consumer GPU (e.g., RTX 4090).",
+          "abs_url": "https://arxiv.org/abs/2605.06356",
+          "pdf_url": "https://arxiv.org/pdf/2605.06356v1",
+          "html_url": "https://arxiv.org/html/2605.06356v1",
+          "figures": [
+            "https://arxiv.org/html/2605.06356v1/x1.png",
+            "https://arxiv.org/html/2605.06356v1/x2.png",
+            "https://arxiv.org/html/2605.06356v1/x3.png",
+            "https://arxiv.org/html/2605.06356v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": "NEURIPS",
+          "comments": "27 pages, 17 figures. Submitted to NeurIPS 2026",
+          "submitted": "2026-05-07T14:34:23Z",
+          "updated": "2026-05-07T14:34:23Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "SwiftI2V：通过条件分段生成高效的高分辨率图像到视频生成",
+          "abstract_zh": "高分辨率图像到视频 (I2V) 生成旨在合成真实的时间动态，同时保留输入图像的细粒度外观细节。在 2K 分辨率下，这变得极具挑战性，并且现有的解决方案存在各种弱点：1）端到端模型在内存和延迟方面通常非常昂贵； 2）级联低分辨率生成与通用视频超分辨率往往会产生细节幻觉，并且会偏离输入特定的局部结构，因为超分辨率阶段没有明确地以输入图像为条件。为此，我们提出了 SwiftI2V，一个专为高分辨率 I2V 量身定制的高效框架。遵循广泛使用的两阶段设计，它首先生成低分辨率运动参考以降低令牌成本并减轻建模负担，然后执行由运动引导的强图像条件 2K 合成，以在控制开销的情况下恢复输入忠实的细节，从而解决了效率保真度困境。具体来说，为了使生成更具可扩展性，SwiftI2V 引入了条件分段生成 (CSG)，以有限的每步令牌预算逐段合成视频，并在每个分段内采用双向上下文交互来提高跨分段一致性和输入保真度。在 2K 分辨率的 VBench-I2V 上，SwiftI2V 实现了与端到端基线相当的性能，同时将总 GPU 时间减少了 202 倍。特别是，它可以在单个数据中心 GPU（例如 H800）或消费类 GPU（例如 RTX 4090）上生成实用的 2K I2V。"
+        },
+        {
+          "id": "2605.06507",
+          "rank": 6,
+          "score": 85,
+          "reason_zh": "梯度空间解耦多奖励策略，用二次规划平衡扩散RL的各奖励维度，消除手工权重调参",
+          "tags": [
+            "生成模型",
+            "强化学习"
+          ],
+          "title": "MARBLE: Multi-Aspect Reward Balance for Diffusion RL",
+          "authors": [
+            "Canyu Zhao",
+            "Hao Chen",
+            "Yunze Tong",
+            "Yu Qiao",
+            "Jiacheng Li"
+          ],
+          "abstract": "Reinforcement learning fine-tuning has become the dominant approach for aligning diffusion models with human preferences. However, assessing images is intrinsically a multi-dimensional task, and multiple evaluation criteria need to be optimized simultaneously. Existing practice deal with multiple rewards by training one specialist model per reward, optimizing a weighted-sum reward $R(x)=\\sum_k w_k R_k(x)$, or sequentially fine-tuning with a hand-crafted stage schedule. These approaches either fail to produce a unified model that can be jointly trained on all rewards or necessitates heavy manually tuned sequential training. We find that the failure stems from using a naive weighted-sum reward aggregation. This approach suffers from a sample-level mismatch because most rollouts are specialist samples, highly informative for certain reward dimensions but irrelevant for others; consequently, weighted summation dilutes their supervision. To address this issue, we propose MARBLE (Multi-Aspect Reward BaLancE), a gradient-space optimization framework that maintains independent advantage estimators for each reward, computes per-reward policy gradients, and harmonizes them into a single update direction without manually-tuned reward weighting, by solving a Quadratic Programming problem. We further propose an amortized formulation that exploits the affine structure of the loss used in DiffusionNFT, to reduce the per-step cost from K+1 backward passes to near single-reward baseline cost, together with EMA smoothing on the balancing coefficients to stabilize updates against transient single-batch fluctuations. On SD3.5 Medium with five rewards, MARBLE improves all five reward dimensions simultaneously, turns the worst-aligned reward's gradient cosine from negative under weighted summation in 80% of mini-batches to consistently positive, and runs at 0.97X the training speed of baseline training.",
+          "abs_url": "https://arxiv.org/abs/2605.06507",
+          "pdf_url": "https://arxiv.org/pdf/2605.06507v1",
+          "html_url": "https://arxiv.org/html/2605.06507v1",
+          "figures": [
+            "https://arxiv.org/html/2605.06507v1/x1.png",
+            "https://arxiv.org/html/2605.06507v1/x2.png",
+            "https://arxiv.org/html/2605.06507v1/x3.png",
+            "https://arxiv.org/html/2605.06507v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": "https://aim-uofa.github.io/MARBLE",
+          "code_links": [],
+          "project_links": [
+            "https://aim-uofa.github.io/MARBLE"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": null,
+          "comments": "Homepage and code repo: https://aim-uofa.github.io/MARBLE",
+          "submitted": "2026-05-07T16:20:42Z",
+          "updated": "2026-05-07T16:20:42Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV",
+            "cs.LG"
+          ],
+          "title_zh": "MARBLE：扩散 RL 的多方面奖励平衡",
+          "abstract_zh": "强化学习微调已成为使扩散模型与人类偏好保持一致的主要方法。然而，评估图像本质上是一个多维度的任务，需要同时优化多个评估标准。现有的实践通过为每个奖励训练一个专业模型、优化加权和奖励 $R(x)=\\sum_k w_k R_k(x)$ 或使用手工制作的阶段时间表进行顺序微调来处理多种奖励。这些方法要么无法生成可以对所有奖励进行联合训练的统一模型，要么需要大量手动调整的顺序训练。我们发现失败源于使用朴素的加权和奖励聚合。这种方法存在样本级别不匹配的问题，因为大多数推出都是专业样本，对于某些奖励维度来说信息量很大，但与其他维度无关；因此，加权求和削弱了他们的监督。为了解决这个问题，我们提出了 MARBLE（多方面奖励 BaLancE），这是一种梯度空间优化框架，它为每个奖励维护独立的优势估计器，计算每个奖励的策略梯度，并通过解决二次规划问题将它们协调为单个更新方向，而无需手动调整奖励权重。我们进一步提出了一种摊销公式，该公式利用 DiffusionNFT 中使用的损失的仿射结构，将每步成本从 K+1 向后传递降低到接近单奖励基线成本，同时对平衡系数进行 EMA 平滑，以稳定更新以应对瞬态单批次波动。在具有五个奖励的 SD3.5 Medium 上，MARBLE 同时改进了所有五个奖励维度，将 80% 小批量中最差对齐奖励的梯度余弦从加权求和下的负值变为一致的正值，并以基线训练的 0.97 倍的训练速度运行。"
+        },
+        {
+          "id": "2605.06512",
+          "rank": 7,
+          "score": 84,
+          "reason_zh": "构建反事实吸引子抑制扩散模型的默认补全偏差，训练无关即插即用",
+          "tags": [
+            "生成模型"
+          ],
+          "title": "DCR: Counterfactual Attractor Guidance for Rare Compositional Generation",
+          "authors": [
+            "Taewon Kang",
+            "Matthias Zwicker"
+          ],
+          "abstract": "Diffusion models generate realistic visual content, yet often fail to produce rare but plausible compositions. When prompted with combinations that are valid but underrepresented in training data, such as a snowy beach or a rainbow at night, the generation process frequently collapses toward more common alternatives. We identify this failure mode as default completion bias, where denoising trajectories are implicitly attracted toward high-frequency semantic configurations. Existing guidance mechanisms do not explicitly model this competing tendency and therefore struggle to prevent such collapse. We introduce Default Completion Repulsion (DCR), a training-free framework that explicitly models and suppresses default completion behavior. DCR constructs a counterfactual attractor by relaxing the rare compositional factor while preserving surrounding semantics, inducing an alternative denoising trajectory reflecting the model's preferred completion. We define the discrepancy between target and attractor trajectories as a counterfactual drift, and propose a projection-based repulsion mechanism that removes guidance components aligned with this drift direction. This suppresses undesired frequent completions while preserving other semantic components. DCR operates entirely within the standard diffusion sampling process without retraining or architectural modification. Experiments on rare compositional prompts show that DCR improves compositional fidelity while maintaining visual quality. Our analysis further shows that the framework exposes and counteracts intrinsic model biases, offering a new perspective on controllable generation beyond explicit constraint enforcement.",
+          "abs_url": "https://arxiv.org/abs/2605.06512",
+          "pdf_url": "https://arxiv.org/pdf/2605.06512v1",
+          "html_url": "https://arxiv.org/html/2605.06512v1",
+          "figures": [
+            "https://arxiv.org/html/2605.06512v1/x1.png",
+            "https://arxiv.org/html/2605.06512v1/x2.png",
+            "https://arxiv.org/html/2605.06512v1/x3.png",
+            "https://arxiv.org/html/2605.06512v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": "40 pages, 33 figures",
+          "submitted": "2026-05-07T16:22:21Z",
+          "updated": "2026-05-07T16:22:21Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "DCR：稀有组合生成的反事实吸引子指南",
+          "abstract_zh": "扩散模型可以生成逼真的视觉内容，但通常无法生成罕见但合理的组合。当提示有效但在训练数据中代表性不足的组合（例如白雪皑皑的海滩或夜间的彩虹）时，生成过程经常会崩溃，转向更常见的替代方案。我们将这种失败模式识别为默认完成偏差，其中去噪轨迹隐式地被高频语义配置吸引。现有的指导机制没有明确模拟这种竞争趋势，因此很难防止这种崩溃。我们引入了默认完成排斥（DCR），这是一个无需训练的框架，可以显式地建模和抑制默认完成行为。 DCR 通过放松罕见的组成因素同时保留周围的语义来构建反事实吸引子，从而引入反映模型首选完成的替代去噪轨迹。我们将目标轨迹和吸引子轨迹之间的差异定义为反事实漂移，并提出一种基于投影的斥力机制，消除与该漂移方向对齐的引导组件。这可以抑制不需要的频繁完成，同时保留其他语义组件。 DCR 完全在标准扩散采样过程中运行，无需重新训练或架构修改。对罕见构图提示的实验表明，DCR 可以提高构图保真度，同时保持视觉质量。我们的分析进一步表明，该框架暴露并抵消了内在模型偏差，为超越显式约束执行的可控发电提供了新的视角。"
+        },
+        {
+          "id": "2605.05922",
+          "rank": 8,
+          "score": 83,
+          "reason_zh": "解耦CoT推理与回归评分的视频奖励模型，两阶段RL独立优化推理质量和奖励校准",
+          "tags": [
+            "生成模型",
+            "强化学习"
+          ],
+          "title": "Think, then Score: Decoupled Reasoning and Scoring for Video Reward Modeling",
+          "authors": [
+            "Yuan Wang",
+            "Ouxiang Li",
+            "Yulong Xu",
+            "Borui Liao",
+            "Jiajun Liang"
+          ],
+          "abstract": "Recent advances in generative video models are increasingly driven by post-training and test-time scaling, both of which critically depend on the quality of video reward models (RMs). An ideal reward model should predict accurate rewards that align with human preferences across diverse scenarios. However, existing paradigms face a fundamental dilemma: \\textit{Discriminative RMs} regress rewards directly on features extracted by multimodal large language models (MLLMs) without explicit reasoning, making them prone to shortcut learning and heavily reliant on massive data scaling for generalization. In contrast, \\textit{Generative RMs} with Chain-of-Thought (CoT) reasoning exhibit superior interpretability and generalization potential, as they leverage fine-grained semantic supervision to internalize the rationales behind human preferences. However, they suffer from inherent optimization bottlenecks due to the coupling of reasoning and scoring within a single autoregressive inference chain. To harness the generalization benefits of CoT reasoning while mitigating the training instability of coupled reasoning and scoring, we introduce DeScore, a training-efficient and generalizable video reward model. DeScore employs a decoupled ``think-then-score'' paradigm: an MLLM first generates an explicit CoT, followed by a dedicated discriminative scoring module consisting of a learnable query token and a regression head that predicts the final reward. DeScore is optimized via a two-stage framework: (1) a discriminative cold start incorporating a random mask mechanism to ensure robust scoring capabilities, and (2) a dual-objective reinforcement learning stage that independently refines CoT reasoning quality and calibrates the final reward, ensuring that higher-quality reasoning directly translates to superior model performance.",
+          "abs_url": "https://arxiv.org/abs/2605.05922",
+          "pdf_url": "https://arxiv.org/pdf/2605.05922v1",
+          "html_url": "https://arxiv.org/html/2605.05922v1",
+          "figures": [
+            "https://arxiv.org/html/2605.05922v1/x1.png",
+            "https://arxiv.org/html/2605.05922v1/x2.png",
+            "https://arxiv.org/html/2605.05922v1/x3.png",
+            "https://arxiv.org/html/2605.05922v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": null,
+          "submitted": "2026-05-07T09:30:58Z",
+          "updated": "2026-05-07T09:30:58Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "先思考，然后评分：视频奖励模型的解耦推理和评分",
+          "abstract_zh": "生成视频模型的最新进展越来越受到训练后和测试时间缩放的推动，这两者都严重依赖于视频奖励模型（RM）的质量。理想的奖励模型应该预测准确的奖励，符合不同场景下的人类偏好。然而，现有的范式面临着一个根本性的困境：\\textit{Discriminative RMs} 直接在多模态大语言模型（MLLM）提取的特征上回归奖励，而没有明确的推理，这使得它们容易进行捷径学习，并且严重依赖于大规模数据扩展来进行泛化。相比之下，具有思想链（CoT）推理的 \\textit{Generative RMs} 表现出卓越的可解释性和泛化潜力，因为它们利用细粒度的语义监督来内化人类偏好背后的基本原理。然而，由于单个自回归推理链中推理和评分的耦合，它们遇到了固有的优化瓶颈。为了利用 CoT 推理的泛化优势，同时减轻耦合推理和评分的训练不稳定性，我们引入了 DeScore，一种训练高效且可泛化的视频奖励模型。 DeScore 采用解耦的“思考然后评分”范例：MLLM 首先生成显式 CoT，然后是一个专用的判别评分模块，该模块由可学习的查询标记和预测最终奖励的回归头组成。 DeScore 通过两阶段框架进行优化：(1) 区分性冷启动，结合随机掩码机制以确保强大的评分能力，(2) 双目标强化学习阶段，独立完善 CoT 推理质量并校准最终奖励，确保更高质量的推理直接转化为卓越的模型性能。"
+        },
+        {
+          "id": "2605.06421",
+          "rank": 9,
+          "score": 82,
+          "reason_zh": "将像素生成显式分解为高低频双路径流匹配，粗到细生成成为显式设计而非隐式行为",
+          "tags": [
+            "生成模型"
+          ],
+          "title": "FREPix: Frequency-Heterogeneous Flow Matching for Pixel-Space Image Generation",
+          "authors": [
+            "Mingfeng Lin",
+            "Jiakun Chen",
+            "Liang Han",
+            "Liqiang Nie"
+          ],
+          "abstract": "Pixel-space diffusion has re-emerged as a promising alternative to latent-space generation because it avoids the representation bottleneck introduced by VAEs. Yet most existing methods still treat image generation as a frequency-homogeneous process, overlooking the distinct roles and learning dynamics of low- and high-frequency components. To address this, we propose FREPix, a FREquency-heterogeneous flow matching framework for Pixel-space image generation. FREPix explicitly decomposes generation into low- and high-frequency components, assigns them separate transport paths, predicts them with a factorized network, and trains them with a frequency-aware objective. In this way, coarse-to-fine generation becomes an explicit design principle rather than an implicit behavior. On ImageNet class-to-image generation, FREPix achieves competitive results among pixel-space generation models, reaching 1.91 FID at $256\\times256$ and 2.38 FID at $512\\times512$, with particularly strong behavior in the low-NFE regime.",
+          "abs_url": "https://arxiv.org/abs/2605.06421",
+          "pdf_url": "https://arxiv.org/pdf/2605.06421v1",
+          "html_url": "https://arxiv.org/html/2605.06421v1",
+          "figures": [
+            "https://arxiv.org/html/2605.06421v1/x1.png",
+            "https://arxiv.org/html/2605.06421v1/x2.png",
+            "https://arxiv.org/html/2605.06421v1/x3.png",
+            "https://arxiv.org/html/2605.06421v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": null,
+          "submitted": "2026-05-07T15:27:46Z",
+          "updated": "2026-05-07T15:27:46Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV",
+            "cs.LG"
+          ],
+          "title_zh": "FREPix：用于像素空间图像生成的频率异构流匹配",
+          "abstract_zh": "像素空间扩散重新成为潜在空间生成的一种有前景的替代方案，因为它避免了 VAE 引入的表示瓶颈。然而，大多数现有方法仍然将图像生成视为频率同质过程，忽略了低频和高频分量的不同作用和学习动态。为了解决这个问题，我们提出了 FREPix，一种用于像素空间图像生成的频率异构流匹配框架。 FREPix 将发电明确分解为低频和高频分量，为它们分配单独的传输路径，使用分解网络预测它们，并使用频率感知目标训练它们。这样，从粗到细的生成就成为一种显式的设计原则，而不是一种隐式的行为。在 ImageNet 类到图像生成方面，FREPix 在像素空间生成模型中取得了有竞争力的结果，在 $256\\times256$ 下达到 1.91 FID，在 $512\\times512$ 下达到 2.38 FID，在低 NFE 状态下表现尤其强劲。"
+        },
+        {
+          "id": "2605.06070",
+          "rank": 10,
+          "score": 81,
+          "reason_zh": "用模型竞技场评分替代二元偏好实现细粒度DPO，兼具RLHF丰富信号与DPO的效率",
+          "tags": [
+            "生成模型",
+            "强化学习"
+          ],
+          "title": "Arena as Offline Reward: Efficient Fine-Grained Preference Optimization for Diffusion Models",
+          "authors": [
+            "Zhikai Li",
+            "Yue Zhao",
+            "Edward Zhongwei Zhang",
+            "Xuewen Liu",
+            "Jing Zhang"
+          ],
+          "abstract": "Reinforcement learning from human feedback (RLHF) effectively promotes preference alignment of text-to-image (T2I) diffusion models. To improve computational efficiency, direct preference optimization (DPO), which avoids explicit reward modeling, has been widely studied. However, its reliance on binary feedback limits it to coarse-grained modeling on chosen-rejected pairs, resulting in suboptimal optimization. In this paper, we propose ArenaPO, which leverages Arena scores as offline rewards to provide refined feedback, thus achieving efficient and fine-grained optimization without a reward model. This enables ArenaPO to benefit from both the rich rewards of traditional RLHF and the efficiency of DPO. Specifically, we first construct a model Arena in which each model's capability is represented as a Gaussian distribution, and infer these capabilities by traversing the annotated pairwise preferences. Each output image is treated as a sample from the corresponding capability distribution. Then, for a image pair, conditioned on the two capability distributions and the observed pairwise preference, the absolute quality gap is estimated using latent-variable inference based on truncated normal distribution, which serves as fine-grained feedback during training. It does not require a reward model and can be computed offline, thus introducing no additional training overhead. We conduct ArenaPO training on Pick-a-Pic v2 and HPD v3 datasets, showing that ArenaPO consistently outperforms existing baselines.",
+          "abs_url": "https://arxiv.org/abs/2605.06070",
+          "pdf_url": "https://arxiv.org/pdf/2605.06070v1",
+          "html_url": "https://arxiv.org/html/2605.06070v1",
+          "figures": [
+            "https://arxiv.org/html/2605.06070v1/x1.png",
+            "https://arxiv.org/html/2605.06070v1/x2.png",
+            "https://arxiv.org/html/2605.06070v1/x3.png",
+            "https://arxiv.org/html/2605.06070v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": null,
+          "submitted": "2026-05-07T11:56:26Z",
+          "updated": "2026-05-07T11:56:26Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "竞技场作为离线奖励：扩散模型的高效细粒度偏好优化",
+          "abstract_zh": "来自人类反馈的强化学习（RLHF）有效地促进了文本到图像（T2I）扩散模型的偏好对齐。为了提高计算效率，避免显式奖励建模的直接偏好优化（DPO）已被广泛研究。然而，它对二进制反馈的依赖限制了它对所选拒绝对的粗粒度建模，从而导致优化不理想。在本文中，我们提出了ArenaPO，它利用Arena分数作为线下奖励来提供精细化反馈，从而在没有奖励模型的情况下实现高效、细粒度的优化。这使得ArenaPO既能受益于传统RLHF的丰富奖励，又能受益于DPO的高效。具体来说，我们首先构建一个模型 Arena，其中每个模型的能力表示为高斯分布，并通过遍历带注释的成对偏好来推断这些能力。每个输出图像被视为相应能力分布的样本。然后，对于图像对，以两个能力分布和观察到的成对偏好为条件，使用基于截断正态分布的潜变量推断来估计绝对质量差距，这在训练期间充当细粒度反馈。它不需要奖励模型，并且可以离线计算，因此不会引入额外的训练开销。我们在 Pick-a-Pic v2 和 HPD v3 数据集上进行 ArenaPO 训练，结果表明 ArenaPO 始终优于现有基线。"
+        },
+        {
+          "id": "2605.05756",
+          "rank": 11,
+          "score": 80,
+          "reason_zh": "揭示HOI扩散生成中的几何遗忘现象，用几何邻近适配器+运动学和谐适配器解耦修复",
+          "tags": [
+            "生成模型",
+            "3D重建",
+            "开源"
+          ],
+          "title": "MaMi-HOI: Harmonizing Global Kinematics and Local Geometry for Human-Object Interaction Generation",
+          "authors": [
+            "Hao Wang",
+            "Shiqi Wang",
+            "Qi Liu"
+          ],
+          "abstract": "Generating realistic 3D Human-Object Interactions (HOI) is a fundamental task for applications ranging from embodied AI to virtual content creation, which requires harmonizing high-level semantic intent with strict low-level physical constraints. Existing methods excel at semantic alignment, however, they struggle to maintain precise object contact. We reveal a key finding termed \\textit{Geometric Forgetting}: as diffusion model depth increases, semantic feature tend to overshadow object geometry feature, causing the model to lose its perception to object geometry. To address this, we propose MaMi-HOI, a hierarchical framework reconciling \\textbf{Ma}cro-level kinematic fluidity with \\textbf{Mi}cro-level spatial precision. First, to counteract geometric forgetting, we introduce the Geometry-Aware Proximity Adapter (GAPA), which explicitly re-injects dense object details to perform residual snapping corrections for precise contact. Nevertheless, such aggressive local enforcement can disrupt global dynamics, leading to robotic stiffness. In response, we introduce the Kinematic Harmony Adapter (KHA), which proactively aligns whole-body posture with spatial objectives, ensuring the skeleton actively accommodates constraints without compromising naturalness. Extensive experiments validate that MaMi-HOI simultaneously achieves natural motion and precise contact. Crucially, it extends generation capabilities to long-term tasks with complex trajectories, effectively bridging the gap between global navigation and high-fidelity manipulation in 3D scenes. Code is available at https://github.com/DON738110198/MaMi-HOI.git",
+          "abs_url": "https://arxiv.org/abs/2605.05756",
+          "pdf_url": "https://arxiv.org/pdf/2605.05756v1",
+          "html_url": "https://arxiv.org/html/2605.05756v1",
+          "figures": [
+            "https://arxiv.org/html/2605.05756v1/geometric_dilution_final.png",
+            "https://arxiv.org/html/2605.05756v1/G2-HOI.png",
+            "https://arxiv.org/html/2605.05756v1/GAPA.png",
+            "https://arxiv.org/html/2605.05756v1/qualities_result.png"
+          ],
+          "code_url": "https://github.com/DON738110198/MaMi-HOI.git",
+          "project_url": null,
+          "code_links": [
+            "https://github.com/DON738110198/MaMi-HOI.git"
+          ],
+          "project_links": [],
+          "has_code": true,
+          "has_project": false,
+          "venue": null,
+          "comments": null,
+          "submitted": "2026-05-07T06:52:14Z",
+          "updated": "2026-05-07T06:52:14Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV",
+            "cs.RO"
+          ],
+          "title_zh": "MaMi-HOI：协调全局运动学和局部几何形状以生成人机交互",
+          "abstract_zh": "生成逼真的 3D 人机交互 (HOI) 是从具体人工智能到虚拟内容创建等应用程序的一项基本任务，这需要协调高级语义意图与严格的低级物理约束。现有的方法在语义对齐方面表现出色，但是它们很难保持精确的对象接触。我们揭示了一个称为 \\textit{Geometric Forgetting} 的关键发现：随着扩散模型深度的增加，语义特征往往会掩盖对象几何特征，导致模型失去对对象几何的感知。为了解决这个问题，我们提出了 MaMi-HOI，一个协调 \\textbf{Ma} 宏观运动流动性与 \\textbf{Mi} 宏观空间精度的分层框架。首先，为了抵消几何遗忘，我们引入了几何感知邻近适配器（GAPA），它显式地重新注入密集的对象细节以执行残余捕捉校正以实现精确接触。然而，这种激进的地方执法可能会扰乱全球动态，导致机器人僵化。为此，我们引入了运动和谐适配器 (KHA)，它可以主动将全身姿势与空间目标对齐，确保骨骼主动适应约束而不影响自然性。大量实验验证 MaMi-HOI 可同时实现自然运动和精确接触。至关重要的是，它将生成能力扩展到具有复杂轨迹的长期任务，有效地弥合了全局导航和 3D 场景中高保真操纵之间的差距。代码可在 https://github.com/DON738110198/MaMi-HOI.git 获取"
+        },
+        {
+          "id": "2605.06280",
+          "rank": 12,
+          "score": 79,
+          "reason_zh": "改用相邻帧欧拉运动场替代拉格朗日光流引导，双向几何一致性检查掩码遮挡区域",
+          "tags": [
+            "生成模型",
+            "视频生成"
+          ],
+          "title": "Eulerian Motion Guidance: Robust Image Animation via Bidirectional Geometric Consistency",
+          "authors": [
+            "Thong Nguyen",
+            "Khoi M. Le",
+            "Cong-Duy Nguyen",
+            "Luu Anh Tuan",
+            "See-Kiong Ng"
+          ],
+          "abstract": "Recent advancements in image animation have utilized diffusion models to breathe life into static images. However, existing controllable frameworks typically rely on Lagrangian motion guidance, where optical flow is estimated relative to the initial frame. This paper revisits the same optical-flow primitive through a more local supervision design: we use adjacent-frame Eulerian motion fields to guide generation, where the motion signal always describes a short temporal hop. This shift enables parallelized training and provides bounded-error supervision throughout the generation process. To mitigate the drift artifacts common in adjacent frame generation, we introduce a Bidirectional Geometric Consistency mechanism, which computes a forward-backward cycle check to mathematically identify and mask occluded regions, preventing the model from learning incorrect warping objectives. Extensive experiments demonstrate that our approach accelerates training, preserves temporal coherence, and reduces dynamic artifacts compared to reference-based baselines.",
+          "abs_url": "https://arxiv.org/abs/2605.06280",
+          "pdf_url": "https://arxiv.org/pdf/2605.06280v1",
+          "html_url": "https://arxiv.org/html/2605.06280v1",
+          "figures": [
+            "https://arxiv.org/html/2605.06280v1/x1.png",
+            "https://arxiv.org/html/2605.06280v1/x2.png",
+            "https://arxiv.org/html/2605.06280v1/x3.png",
+            "https://arxiv.org/html/2605.06280v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": "Work in progress",
+          "submitted": "2026-05-07T13:53:31Z",
+          "updated": "2026-05-07T13:53:31Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "欧拉运动引导：通过双向几何一致性实现稳健的图像动画",
+          "abstract_zh": "图像动画的最新进展利用扩散模型为静态图像注入生命力。然而，现有的可控框架通常依赖于拉格朗日运动引导，其中光流是相对于初始帧进行估计的。本文通过更局部的监督设计重新审视相同的光流原语：我们使用相邻帧欧拉运动场来指导生成，其中运动信号始终描述短时间跳跃。这种转变实现了并行训练，并在整个生成过程中提供有限误差监督。为了减轻相邻帧生成中常见的漂移伪影，我们引入了双向几何一致性机制，该机制计算前后循环检查，以数学方式识别和掩盖遮挡区域，防止模型学习不正确的扭曲目标。大量的实验表明，与基于参考的基线相比，我们的方法可以加速训练，保持时间一致性，并减少动态伪影。"
+        },
+        {
+          "id": "2605.05711",
+          "rank": 13,
+          "score": 78,
+          "reason_zh": "LLM+RL闭环驱动3D场景生成与VR交互，用户反馈持续对齐生成内容与人类感知",
+          "tags": [
+            "生成模型",
+            "3D重建",
+            "具身智能"
+          ],
+          "title": "Closing the Loop: Unified 3D Scene Generation and Immersive Interaction via LLM-RL Coupling",
+          "authors": [
+            "Anh H. Vo",
+            "Sungyo Lee",
+            "Phil-Joong Kim",
+            "Soo-Mi Choi",
+            "Yong-Guk Kim"
+          ],
+          "abstract": "Recent advances in large language models (LLMs) have significantly improved language-driven 3D content generation, but most existing approaches still treat scene generation and user interaction as separate processes, limiting the adaptability and immersive potential of interactive multimedia systems. This paper presents a unified framework that closes the loop between language-driven 3D scene generation and immersive user interaction. Given natural language instructions, the system first constructs structured scene representations using LLMs, and then optimizes spatial layouts via reinforcement learning under geometric and semantic constraints. The generated environments are deployed in a virtual reality setting to facilitate HRI-in-the-loop, where user interactions provide continuous feedback to align generated content with human perception and usability. By tightly coupling generation and interaction, the proposed framework enables more responsive, adaptive, and realistic multimedia experiences. Experiments on the ALFRED benchmark demonstrate state-of-the-art performance in task-based scene generation. Furthermore, qualitative results and user studies show consistent improvements in immersion, interaction quality, and task efficiency, highlighting the importance of closed-loop integration of generation and interaction for next-generation multimedia systems. Our project page can be found at https://proj-showcase.github.io/h3ds/.",
+          "abs_url": "https://arxiv.org/abs/2605.05711",
+          "pdf_url": "https://arxiv.org/pdf/2605.05711v1",
+          "html_url": "https://arxiv.org/html/2605.05711v1",
+          "figures": [
+            "https://arxiv.org/html/2605.05711v1/figs/intro.png",
+            "https://arxiv.org/html/2605.05711v1/x1.png",
+            "https://arxiv.org/html/2605.05711v1/x2.png",
+            "https://arxiv.org/html/2605.05711v1/figs/haptic_system.png"
+          ],
+          "code_url": null,
+          "project_url": "https://proj-showcase.github.io/h3ds/",
+          "code_links": [],
+          "project_links": [
+            "https://proj-showcase.github.io/h3ds/"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": null,
+          "comments": null,
+          "submitted": "2026-05-07T05:55:50Z",
+          "updated": "2026-05-07T05:55:50Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV",
+            "cs.GR",
+            "cs.HC",
+            "cs.LG",
+            "cs.MM"
+          ],
+          "title_zh": "闭环：通过 LLM-RL 耦合实现统一 3D 场景生成和沉浸式交互",
+          "abstract_zh": "大语言模型 (LLM) 的最新进展显着改进了语言驱动的 3D 内容生成，但大多数现有方法仍然将场景生成和用户交互视为单独的过程，限制了交互式多媒体系统的适应性和沉浸式潜力。本文提出了一个统一的框架，可以闭合语言驱动的 3D 场景生成和沉浸式用户交互之间的循环。给定自然语言指令，系统首先使用法学硕士构建结构化场景表示，然后在几何和语义约束下通过强化学习优化空间布局。生成的环境部署在虚拟现实环境中，以促进 HRI 循环，其中用户交互提供持续反馈，使生成的内容与人类感知和可用性保持一致。通过紧密耦合生成和交互，所提出的框架可实现更具响应性、适应性和真实性的多媒体体验。 ALFRED 基准测试展示了基于任务的场景生成的最先进的性能。此外，定性结果和用户研究表明沉浸感、交互质量和任务效率的持续改进，凸显了下一代多媒体系统的生成和交互闭环集成的重要性。我们的项目页面可以在 https://proj-showcase.github.io/h3ds/ 找到。"
+        }
+      ]
+    },
+    {
+      "id": "reconstruction",
+      "name": "3D/4D 重建与生成",
+      "papers": [
+        {
+          "id": "2605.06270",
+          "rank": 1,
+          "score": 93,
+          "reason_zh": "发现前馈3D重建中query/key-value token的非对称压缩容忍度，训练无关加速最高28倍",
+          "tags": [
+            "3D重建",
+            "feed-forward",
+            "开源"
+          ],
+          "title": "Spark3R: Asymmetric Token Reduction Makes Fast Feed-Forward 3D Reconstruction",
+          "authors": [
+            "Zecheng Tang",
+            "Jiaye Fu",
+            "Qiankun Gao",
+            "Haijie Li",
+            "Yanmin Wu"
+          ],
+          "abstract": "Feed-forward 3D reconstruction models based on Vision Transformers can directly estimate scene geometry and camera poses from a small set of input images, but scaling them to video inputs with hundreds or thousands of frames remains challenging due to the quadratic cost of global attention layers. Recent token-merging methods accelerate these models by compressing the token sequence within the global attention layers, but they apply a uniform reduction to query tokens and key-value tokens, ignoring their functionally distinct roles in 3D reconstruction. In this work, we identify a key property of feed-forward 3D reconstruction models: query tokens encode view-specific geometric requests and are sensitive to compression, while key-value tokens represent shared scene context and tolerate aggressive compression. Guided by this insight, we propose Spark3R, a training-free acceleration framework that decouples the compression of query tokens and key-value tokens by assigning distinct reduction factors, with intra-group token merging applied to query tokens and lightweight token pruning to key-value tokens. Additionally, Spark3R adaptively adjusts the key-value reduction factor across layers, further improving the quality-efficiency trade-off. As a plug-and-play framework requiring no retraining, Spark3R integrates directly into multiple pretrained feed-forward 3D reconstruction models, including VGGT, $π^3$, and Depth-Anything-3, and achieves up to $28\\times$ speedup on 1,000-frame inputs while maintaining competitive reconstruction quality.",
+          "abs_url": "https://arxiv.org/abs/2605.06270",
+          "pdf_url": "https://arxiv.org/pdf/2605.06270v1",
+          "html_url": "https://arxiv.org/html/2605.06270v1",
+          "figures": [
+            "https://arxiv.org/html/2605.06270v1/x1.png",
+            "https://arxiv.org/html/2605.06270v1/x2.png",
+            "https://arxiv.org/html/2605.06270v1/x3.png",
+            "https://arxiv.org/html/2605.06270v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": null,
+          "submitted": "2026-05-07T13:45:37Z",
+          "updated": "2026-05-07T13:45:37Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "Spark3R：非对称令牌缩减实现快速前馈 3D 重建",
+          "abstract_zh": "基于 Vision Transformer 的前馈 3D 重建模型可以直接从一小组输入图像中估计场景几何形状和相机姿势，但由于全局注意力层的二次成本，将它们缩放到具有数百或数千帧的视频输入仍然具有挑战性。最近的令牌合并方法通过压缩全局注意力层内的令牌序列来加速这些模型，但它们对查询令牌和键值令牌应用统一的减少，忽略了它们在 3D 重建中功能上不同的作用。在这项工作中，我们确定了前馈 3D 重建模型的一个关键属性：查询标记对特定于视图的几何请求进行编码并对压缩敏感，而键值标记表示共享场景上下文并容忍激进的压缩。在这一见解的指导下，我们提出了 Spark3R，这是一种免训练的加速框架，通过分配不同的缩减因子来解耦查询令牌和键值令牌的压缩，并将组内令牌合并应用于查询令牌，并将轻量级令牌修剪应用于键值令牌。此外，Spark3R 自适应地调整跨层的键值缩减因子，进一步改善质量效率权衡。作为无需重新训练的即插即用框架，Spark3R 直接集成到多个预训练的前馈 3D 重建模型中，包括 VGGT、$π^3$ 和 Depth-Anything-3，并在 1,000 帧输入上实现高达 $28\\times$ 的加速，同时保持有竞争力的重建质量。"
+        },
+        {
+          "id": "2605.06658",
+          "rank": 2,
+          "score": 92,
+          "reason_zh": "引入原始参考图到重光照渲染过程，联合预测重光照视频与逐帧环境图，入选SIGGRAPH 2026",
+          "tags": [
+            "3D重建",
+            "生成模型",
+            "顶会",
+            "开源"
+          ],
+          "title": "Relit-LiVE: Relight Video by Jointly Learning Environment Video",
+          "authors": [
+            "Weiqing Xiao",
+            "Hong Li",
+            "Xiuyu Yang",
+            "Houyuan Chen",
+            "Wenyi Li"
+          ],
+          "abstract": "Recent advances have shown that large-scale video diffusion models can be repurposed as neural renderers by first decomposing videos into intrinsic scene representations and then performing forward rendering under novel illumination. While promising, this paradigm fundamentally relies on accurate intrinsic decomposition, which remains highly unreliable for real-world videos and often leads to distorted appearances, broken materials, and accumulated temporal artifacts during relighting. In this work, we present Relit-LiVE, a novel video relighting framework that produces physically consistent, temporally stable results without requiring prior knowledge of camera pose. Our key insight is to explicitly introduce raw reference images into the rendering process, enabling the model to recover critical scene cues that are inevitably lost or corrupted in intrinsic representations. Furthermore, we propose a novel environment video prediction formulation that simultaneously generates relit videos and per-frame environment maps aligned with each camera viewpoint in a single diffusion process. This joint prediction enforces strong geometric-illumination alignment and naturally supports dynamic lighting and camera motion, significantly improving physical consistency in video relighting while easing the requirement of known per-frame camera pose. Extensive experiments demonstrate that Relit-LiVE consistently outperforms state-of-the-art video relighting and neural rendering methods across synthetic and real-world benchmarks. Beyond relighting, our framework naturally supports a wide range of downstream applications, including scene-level rendering, material editing, object insertion, and streaming video relighting. The Project is available at https://github.com/zhuxing0/Relit-LiVE.",
+          "abs_url": "https://arxiv.org/abs/2605.06658",
+          "pdf_url": "https://arxiv.org/pdf/2605.06658v1",
+          "html_url": "https://arxiv.org/html/2605.06658v1",
+          "figures": [
+            "https://arxiv.org/html/2605.06658v1/x1.png",
+            "https://arxiv.org/html/2605.06658v1/x2.png",
+            "https://arxiv.org/html/2605.06658v1/x3.png",
+            "https://arxiv.org/html/2605.06658v1/x4.png"
+          ],
+          "code_url": "https://github.com/zhuxing0/Relit-LiVE",
+          "project_url": null,
+          "code_links": [
+            "https://github.com/zhuxing0/Relit-LiVE"
+          ],
+          "project_links": [],
+          "has_code": true,
+          "has_project": false,
+          "venue": null,
+          "comments": "Accepted at SIGGRAPH 2026. Project site: https://github.com/zhuxing0/Relit-LiVE",
+          "submitted": "2026-05-07T17:58:15Z",
+          "updated": "2026-05-07T17:58:15Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "Relit-LiVE：联合学习环境视频的 Relight 视频",
+          "abstract_zh": "最近的进展表明，大规模视频扩散模型可以重新用作神经渲染器，首先将视频分解为内在场景表示，然后在新颖的照明下执行前向渲染。虽然很有希望，但这种范例从根本上依赖于准确的内在分解，这对于现实世界的视频来说仍然非常不可靠，并且经常导致外观扭曲、材料损坏以及重新照明期间累积​​的时间伪影。在这项工作中，我们提出了 Relit-LiVE，这是一种新颖的视频重新照明框架，可以产生物理一致、时间稳定的结果，而无需事先了解相机姿势。我们的主要见解是将原始参考图像显式引入渲染过程，使模型能够恢复内在表示中不可避免地丢失或损坏的关键场景线索。此外，我们提出了一种新颖的环境视频预测公式，该公式可以在单个扩散过程中同时生成与每个摄像机视点对齐的重照明视频和每帧环境图。这种联合预测强制执行强大的几何照明对齐，并自然支持动态照明和相机运动，显着提高视频重新照明的物理一致性，同时减轻已知每帧相机姿势的要求。大量实验表明，Relit-LiVE 在合成和现实基准测试中始终优于最先进的视频重新照明和神经渲染方法。除了重新照明之外，我们的框架自然支持广泛的下游应用程序，包括场景级渲染、材质编辑、对象插入和流视频重新照明。该项目可在 https://github.com/zhuxing0/Relit-LiVE 获取。"
+        },
+        {
+          "id": "2605.05876",
+          "rank": 3,
+          "score": 90,
+          "reason_zh": "首个可微表面splatting渲染器，从多视图联合恢复几何、BRDF材质和HDR环境光照",
+          "tags": [
+            "3D重建",
+            "NeRF",
+            "3DGS"
+          ],
+          "title": "3DSS: 3D Surface Splatting for Inverse Rendering",
+          "authors": [
+            "Mae Younes",
+            "Adnane Boukhayma"
+          ],
+          "abstract": "We present 3D Surface Splatting (3DSS), the first differentiable surface splatting renderer for physically-based inverse rendering from multi-view images. Our central insight is that the surface separation problem at the heart of surface splatting admits a direct formulation in terms of the reconstruction kernels themselves. From this foundation we derive a coverage-based compositing model whose per-layer opacity arises directly from the accumulated Elliptical Weighted Average reconstruction weight, yielding anti-aliased silhouettes and informative visibility gradients at sparsely covered edges. Combined with forward microfacet shading under co-optimized HDR environment lighting and density-aware adaptive refinement, 3DSS jointly recovers shape, spatially-varying BRDF materials, and illumination. Because the optimized representation is a set of oriented surface samples, it bridges natively to mesh-based workflows via surface reconstruction from oriented point cloud methods. We evaluate 3DSS against mesh-based, implicit, and Gaussian-splatting baselines across geometry reconstruction, novel-view synthesis, and novel-illumination relighting.",
+          "abs_url": "https://arxiv.org/abs/2605.05876",
+          "pdf_url": "https://arxiv.org/pdf/2605.05876v1",
+          "html_url": "https://arxiv.org/html/2605.05876v1",
+          "figures": [
+            "https://arxiv.org/html/2605.05876v1/x1.png",
+            "https://arxiv.org/html/2605.05876v1/x2.png",
+            "https://arxiv.org/html/2605.05876v1/x3.png",
+            "https://arxiv.org/html/2605.05876v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": null,
+          "submitted": "2026-05-07T08:43:51Z",
+          "updated": "2026-05-07T08:43:51Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV",
+            "cs.GR"
+          ],
+          "title_zh": "3DSS：用于逆向渲染的 3D 表面泼溅",
+          "abstract_zh": "We present 3D Surface Splatting (3DSS), the first differentiable surface splatting renderer for physically-based inverse rendering from multi-view images.我们的核心见解是，表面溅射核心的表面分离问题允许根据重建内核本身进行直接表述。在此基础上，我们推导出基于覆盖的合成模型，其每层不透明度直接来自累积的椭圆加权平均重建权重，在稀疏覆盖的边缘处产生抗锯齿轮廓和信息可见性梯度。结合共同优化的 HDR 环境照明和密度感知自适应细化下的前向微面着色，3DSS 联合恢复形状、空间变化的 BRDF 材料和照明。由于优化表示是一组定向表面样本，因此它可以通过定向点云方法的表面重建来本地连接到基于网格的工作流程。我们针对基于网格的、隐式的和高斯分布基线在几何重建、新颖视图合成和新颖照明重新照明方面评估 3DSS。"
+        },
+        {
+          "id": "2605.06088",
+          "rank": 4,
+          "score": 88,
+          "reason_zh": "将3DGS语义建模为几何-外观的连续函数，结构化码本注意力实现鲁棒开放词汇3D理解",
+          "tags": [
+            "3DGS",
+            "VLM",
+            "开源"
+          ],
+          "title": "OpenGaFF: Open-Vocabulary Gaussian Feature Field with Codebook Attention",
+          "authors": [
+            "Kunyi Li",
+            "Michael Niemeyer",
+            "Sen Wang",
+            "Stefano Gasperini",
+            "Nassir Navab"
+          ],
+          "abstract": "Understanding open-vocabulary 3D scenes with Gaussian-based representations remains challenging due to fragmented and spatially inconsistent semantic predictions across multi-view observations. In this paper, we present OpenGaFF, a novel framework for open-vocabulary 3D scene understanding built upon 3D Gaussian Splatting. At the core of our method is a Gaussian Feature Field that models semantics as a continuous function of Gaussian geometry and appearance. By explicitly conditioning semantic predictions on geometric structure, this formulation strengthens the coupling between geometry and semantics, leading to improved spatial coherence across similar structures in 3D space. To further enforce object-level semantic consistency, we introduce a structured codebook that serves as a set of shared semantic primitives. Furthermore, a codebook-guided attention mechanism is proposed to retrieve language features via similarity matching between query embeddings and learned codebook entries, enabling robust open-vocabulary reasoning while reducing intra-object feature variance. Extensive experiments on standard 2D and 3D open-vocabulary benchmarks demonstrate that our method consistently outperforms prior approaches, achieving improved segmentation quality, stronger 3D semantic consistency and a semantically interpretable codebook that provides insight into the learned representation.",
+          "abs_url": "https://arxiv.org/abs/2605.06088",
+          "pdf_url": "https://arxiv.org/pdf/2605.06088v1",
+          "html_url": "https://arxiv.org/html/2605.06088v1",
+          "figures": [
+            "https://arxiv.org/html/2605.06088v1/x2.png",
+            "https://arxiv.org/html/2605.06088v1/x3.png",
+            "https://arxiv.org/html/2605.06088v1/x4.png",
+            "https://arxiv.org/html/2605.06088v1/x5.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": null,
+          "submitted": "2026-05-07T12:10:07Z",
+          "updated": "2026-05-07T12:10:07Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "OpenGaFF：具有码本注意力的开放词汇高斯特征场",
+          "abstract_zh": "由于多视图观察中的语义预测碎片化且空间不一致，因此使用基于高斯的表示来理解开放词汇 3D 场景仍然具有挑战性。在本文中，我们提出了 OpenGaFF，这是一种基于 3D 高斯分布的开放词汇 3D 场景理解的新颖框架。我们方法的核心是高斯特征场，它将语义建模为高斯几何和外观的连续函数。通过显式调节几何结构上的语义预测，该公式增强了几何与语义之间的耦合，从而提高了 3D 空间中类似结构的空间连贯性。为了进一步加强对象级语义一致性，我们引入了一个结构化码本，它充当一组共享语义原语。此外，提出了一种码本引导的注意机制，通过查询嵌入和学习的码本条目之间的相似性匹配来检索语言特征，从而实现鲁棒的开放词汇推理，同时减少对象内特征方差。对标准 2D 和 3D 开放词汇基准的大量实验表明，我们的方法始终优于先前的方法，实现了改进的分割质量、更强的 3D 语义一致性和语义可解释的密码本，可提供对学习表示的洞察。"
+        },
+        {
+          "id": "2605.05636",
+          "rank": 5,
+          "score": 87,
+          "reason_zh": "用OLAT数据训练去光照先验网络约束inverse rendering，开源4K可重光照人脸扫描数据集",
+          "tags": [
+            "3D重建",
+            "生成模型",
+            "顶会",
+            "开源"
+          ],
+          "title": "Learning a Delighting Prior for Facial Appearance Capture in the Wild",
+          "authors": [
+            "Yuxuan Han",
+            "Xin Ming",
+            "Tianxiao Li",
+            "Zhuofan Shen",
+            "Qixuan Zhang"
+          ],
+          "abstract": "High-quality facial appearance capture has traditionally required costly studio recording. Recent works consider an in-the-wild smartphone-based setup; however, their model-based inverse rendering paradigm struggles with the complex disentanglement of reflectance from unknown illumination. To bridge this gap, we propose to shift the paradigm into training a powerful delighting network as a prior to constrain the optimization. We leverage the OLAT dataset and the rendered Light Stage scans for training, and propose Dataset Latent Modulation (DLM) to seamlessly integrate these heterogeneous data sources. Specifically, by conditioning the core network on learnable source-aware tokens, we decouple dataset-specific styles from physical delighting principles, enabling the emergence of a delighting prior that outperforms existing proprietary models. This powerful delighting prior enables a simple and automatic appearance capture pipeline that achieves high-quality reflectance estimation from casual video inputs, outperforming prior arts by a large margin. Furthermore, we leverage our appearance capture method to transform the multi-view NeRSemble dataset into NeRSemble-Scan, a large-scale collection of 4K-resolution relightable scans. By open-sourcing our model and the NeRSemble-Scan dataset, we democratize high-end facial capture and provide a new foundation for the research community to build photorealistic digital humans.",
+          "abs_url": "https://arxiv.org/abs/2605.05636",
+          "pdf_url": "https://arxiv.org/pdf/2605.05636v1",
+          "html_url": "https://arxiv.org/html/2605.05636v1",
+          "figures": [
+            "https://arxiv.org/html/2605.05636v1/figure/teaser.jpg",
+            "https://arxiv.org/html/2605.05636v1/figure/dataset.jpg",
+            "https://arxiv.org/html/2605.05636v1/figure/training_pair.jpg",
+            "https://arxiv.org/html/2605.05636v1/x1.png"
+          ],
+          "code_url": "https://github.com/yxuhan/OpenDelight",
+          "project_url": "https://yxuhan.github.io/OpenDelight/index.html",
+          "code_links": [
+            "https://github.com/yxuhan/OpenDelight"
+          ],
+          "project_links": [
+            "https://yxuhan.github.io/OpenDelight/index.html"
+          ],
+          "has_code": true,
+          "has_project": true,
+          "venue": null,
+          "comments": "ACM Transactions on Graphics (Proc. of SIGGRAPH), 2026. Code: https://github.com/yxuhan/OpenDelight Project Page: https://yxuhan.github.io/OpenDelight/index.html",
+          "submitted": "2026-05-07T03:43:24Z",
+          "updated": "2026-05-07T03:43:24Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV",
+            "cs.GR"
+          ],
+          "title_zh": "学习野外面部外观捕捉的令人愉快的先验",
+          "abstract_zh": "传统上，高质量的面部外观捕捉需要昂贵的录音室录音。最近的工作考虑了基于智能手机的野外设置；然而，他们基于模型的逆渲染范式很难解决未知照明反射率的复杂分离问题。为了弥补这一差距，我们建议将范式转变为训练一个强大的令人愉悦的网络作为限制优化的先验。我们利用 OLAT 数据集和渲染的 Light Stage 扫描进行训练，并提出数据集潜在调制 (DLM) 来无缝集成这些异构数据源。具体来说，通过在可学习的源感知令牌上调节核心网络，我们将数据集特定的样式与物理愉悦原则分离，从而出现优于现有专有模型的令人愉悦的先验。这种强大的令人愉悦的先验技术实现了简单且自动的外观捕获管道，可以从随意的视频输入中实现高质量的反射率估计，大大优于现有技术。此外，我们利用外观捕获方法将多视图 NeRSemble 数据集转换为 NeRSemble-Scan，这是 4K 分辨率可重新点亮扫描的大规模集合。通过开源我们的模型和 NeRSemble-Scan 数据集，我们实现了高端面部捕捉的大众化，并为研究社区构建逼真的数字人类提供了新的基础。"
+        },
+        {
+          "id": "2605.05749",
+          "rank": 6,
+          "score": 86,
+          "reason_zh": "创新射线感知的指针记忆单元，保留-替换策略替代传统融合压缩，联合推理空间距离与视角一致性",
+          "tags": [
+            "3D重建",
+            "feed-forward"
+          ],
+          "title": "Ray-Aware Pointer Memory with Adaptive Updates for Streaming 3D Reconstruction",
+          "authors": [
+            "Feifei Li",
+            "Qi Song",
+            "Chi Zhang",
+            "Rui Huang"
+          ],
+          "abstract": "Dense 3D reconstruction from continuous image streams requires both accurate geometric aggregation and stable long-term memory management. Recent feed-forward reconstruction frameworks integrate observations through persistent memory representations, yet most rely primarily on appearance-based similarity when updating memory. Such appearance-driven integration often leads to redundant accumulation of observations and unstable geometry when viewpoint changes occur. In this work, we propose a ray-aware pointer memory for streaming 3D reconstruction that explicitly models both spatial location and viewing direction within a unified memory representation. Each memory pointer stores its 3D position, associated ray direction, and feature embedding, allowing the system to reason jointly about geometric proximity and viewpoint consistency. Based on this representation, we introduce an adaptive pointer update strategy that replaces traditional fusion-based memory compression with a retain-or-replace mechanism. Instead of averaging nearby observations, the system selectively retains informative pointers while discarding redundant ones, preserving distinctive geometric structures while maintaining bounded memory growth. Furthermore, the joint reasoning over spatial distance and ray-direction discrepancy enables the system to distinguish between local redundancy, novel observations, and potential loop revisits in a unified manner. When loop candidates are detected, pose refinement is triggered to enforce global geometric consistency across the reconstruction. Extensive experiments demonstrate that the proposed ray-aware memory design significantly improves long-term reconstruction stability and camera pose accuracy while maintaining efficient streaming inference. Our approach provides a principled framework for scalable and drift-resistant online 3D reconstruction from image streams.",
+          "abs_url": "https://arxiv.org/abs/2605.05749",
+          "pdf_url": "https://arxiv.org/pdf/2605.05749v1",
+          "html_url": "https://arxiv.org/html/2605.05749v1",
+          "figures": [
+            "https://arxiv.org/html/2605.05749v1/x1.png",
+            "https://arxiv.org/html/2605.05749v1/x2.png",
+            "https://arxiv.org/html/2605.05749v1/x3.png",
+            "https://arxiv.org/html/2605.05749v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": null,
+          "submitted": "2026-05-07T06:42:11Z",
+          "updated": "2026-05-07T06:42:11Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "用于流式 3D 重建的具有自适应更新的光线感知指针存储器",
+          "abstract_zh": "从连续图像流进行密集 3D 重建需要精确的几何聚合和稳定的长期内存管理。最近的前馈重建框架通过持久记忆表示整合观察结果，但大多数在更新记忆时主要依赖于基于外观的相似性。当视点发生变化时，这种外观驱动的集成通常会导致观测值的冗余积累和不稳定的几何形状。在这项工作中，我们提出了一种用于流式 3D 重建的光线感知指针存储器，它在统一的存储器表示中显式地建模空间位置和观看方向。每个内存指针存储其 3D 位置、关联的光线方向和特征嵌入，允许系统联合推理几何接近度和视点一致性。基于这种表示，我们引入了一种自适应指针更新策略，该策略用保留或替换机制取代了传统的基于融合的内存压缩。该系统不是对附近的观察结果进行平均，而是有选择地保留信息指针，同时丢弃冗余指针，保留独特的几何结构，同时保持有限的内存增长。此外，对空间距离和射线方向差异的联合推理使系统能够以统一的方式区分局部冗余、新颖的观察结果和潜在的循环重访。当检测到循环候选时，会触发姿势细化，以在整个重建过程中强制执行全局几何一致性。大量实验表明，所提出的光线感知内存设计显着提高了长期重建稳定性和相机姿态准确性，同时保持高效的流推理。我们的方法为从图像流进行可扩展且抗漂移的在线 3D 重建提供了原则框架。"
+        },
+        {
+          "id": "2605.05664",
+          "rank": 7,
+          "score": 85,
+          "reason_zh": "从6-8张稀疏视图重建完整3D场景，场景特定扩散模型+轨迹规划实现无空洞重建",
+          "tags": [
+            "3D重建",
+            "生成模型",
+            "开源"
+          ],
+          "title": "Sparse-to-Complete: From Sparse Image Captures to Complete 3D Scenes",
+          "authors": [
+            "Yiyang Shen",
+            "Yin Yang",
+            "Kun Zhou",
+            "Tianjia Shao"
+          ],
+          "abstract": "We introduce S2C-3D, a novel sparse-view 3D reconstruction framework for high-fidelity and complete scene reconstruction from as few as six to eight images. Our framework features three components: a specialized diffusion model for scene-specific image restoration, a training-free view-consistency conditioned sampling process in the diffusion model for refined Gaussian optimization, and a camera trajectory planning scheme to ensure comprehensive scene coverage. The specialized diffusion model is developed by finetuning a pretrained architecture on the input views and their corresponding degraded counterparts. The adaptation to the scene distribution allows the model to repair Gaussian renderings while effectively eliminating domain gaps. Meanwhile, the trajectory planning scheme optimizes scene coverage by connecting each newly sampled camera to its two nearest neighbors. By iteratively constructing paths and retaining only those that significantly enhance visibility, the scheme establishes a trajectory that covers the entire scene. To address multi-view conflicts, the view-consistency conditioned sampling process quantifies the consistency between neighboring repaired images. This information is injected as a condition into the sampling process of the frozen diffusion model, facilitating the generation of view-consistent images without additional training. Consequently, our approach produces high-fidelity 3D Gaussians that are robust to artifacts. Experimental results demonstrate that S2C-3D outperforms state-of-the-art methods, constructing high-quality scenes that are free from missing regions, blurring, or other artifacts with very sparse inputs. The source code and data are available at https://gapszju.github.io/S2C-3D.",
+          "abs_url": "https://arxiv.org/abs/2605.05664",
+          "pdf_url": "https://arxiv.org/pdf/2605.05664v1",
+          "html_url": "https://arxiv.org/html/2605.05664v1",
+          "figures": [
+            "https://arxiv.org/html/2605.05664v1/x1.png",
+            "https://arxiv.org/html/2605.05664v1/x2.png",
+            "https://arxiv.org/html/2605.05664v1/x3.png",
+            "https://arxiv.org/html/2605.05664v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": "https://gapszju.github.io/S2C-3D",
+          "code_links": [],
+          "project_links": [
+            "https://gapszju.github.io/S2C-3D"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": null,
+          "comments": null,
+          "submitted": "2026-05-07T04:41:30Z",
+          "updated": "2026-05-07T04:41:30Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "从稀疏到完整：从稀疏图像捕获到完整的 3D 场景",
+          "abstract_zh": "我们引入了 S2C-3D，这是一种新颖的稀疏视图 3D 重建框架，用于从六到八张图像进行高保真和完整的场景重建。我们的框架具有三个组成部分：用于特定场景图像恢复的专用扩散模型、用于精细高斯优化的扩散模型中的免训练视图一致性条件采样过程以及用于确保全面场景覆盖的相机轨迹规划方案。专门的扩散模型是通过对输入视图及其相应的降级对应部分的预训练架构进行微调而开发的。对场景分布的适应使模型能够修复高斯渲染，同时有效消除域间隙。同时，轨迹规划方案通过将每个新采样的摄像机连接到其两个最近的邻居来优化场景覆盖。通过迭代构建路径并仅保留那些显着增强可见性的路径，该方案建立了覆盖整个场景的轨迹。为了解决多视图冲突，视图一致性条件采样过程量化了相邻修复图像之间的一致性。该信息作为条件注入到冻结扩散模型的采样过程中，从而有助于生成视图一致的图像，而无需额外的训练。因此，我们的方法产生了对伪影具有鲁棒性的高保真 3D 高斯分布。实验结果表明，S2C-3D 的性能优于最先进的方法，可以使用非常稀疏的输入构建没有丢失区域、模糊或其他伪影的高质量场景。源代码和数据可在 https://gapszju.github.io/S2C-3D 获取。"
+        },
+        {
+          "id": "2605.06214",
+          "rank": 8,
+          "score": 84,
+          "reason_zh": "可微自适应4D结构光联合采集形状与反射率，直方图概率模型驱动下次照明条件选择",
+          "tags": [
+            "3D重建",
+            "顶会"
+          ],
+          "title": "Differentiable Adaptive 4D Structured Illumination for Joint Capture of Shape and Reflectance",
+          "authors": [
+            "Huakeng Ding",
+            "Yaowen Chen",
+            "Kun Zhou",
+            "Hongzhi Wu"
+          ],
+          "abstract": "We present a differentiable framework to adaptively compute 4D illumination conditions with respect to an object, for efficient, high-quality simultaneous acquisition of its shape and reflectance, with a unified spatial-angular structured light and a single camera. Using a simple histogram-based pixel-level probability model for depth and reflectance, we differentiably link the next illumination condition(s) with a loss that encourages the reduction in depth uncertainty. As new structured illumination is cast, corresponding image measurements are used to update the uncertainty at each pixel. Finally, a fine-tuning-based approach reconstructs the depth map and reflectance parameter maps, by minimizing the differences between all physical measurements and their simulated counterparts. The effectiveness of our framework is demonstrated on physical objects with wide variations in shape and appearance. Our depth results compare favorably with state-of-the-art techniques, while our reflectance results are comparable when validated against photographs.",
+          "abs_url": "https://arxiv.org/abs/2605.06214",
+          "pdf_url": "https://arxiv.org/pdf/2605.06214v1",
+          "html_url": "https://arxiv.org/html/2605.06214v1",
+          "figures": [
+            "https://arxiv.org/html/2605.06214v1/imgs/setup/setup_1_.png",
+            "https://arxiv.org/html/2605.06214v1/imgs/setup/setup2.png",
+            "https://arxiv.org/html/2605.06214v1/imgs/setup/abstract.png",
+            "https://arxiv.org/html/2605.06214v1/x1.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": "CVPR",
+          "comments": "Accepted to CVPR 2026. 10 pages, 13 figures",
+          "submitted": "2026-05-07T13:15:48Z",
+          "updated": "2026-05-07T13:15:48Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "可微分自适应 4D 结构化照明，用于形状和反射率的联合捕获",
+          "abstract_zh": "我们提出了一个可微分框架，可以自适应计算物体的 4D 照明条件，通过统一的空间角度结构光和单个相机高效、高质量地同时获取其形状和反射率。使用简单的基于直方图的像素级概率模型来计算深度和反射率，我们将下一个照明条件与有助于减少深度不确定性的损失有区别地联系起来。当新的结构照明被投射时，相应的图像测量被用来更新每个像素的不确定性。最后，基于微调的方法通过最小化所有物理测量值与其模拟对应物之间的差异来重建深度图和反射率参数图。我们框架的有效性在形状和外观变化很大的物理对象上得到了证明。我们的深度结果与最先进的技术相比毫不逊色，而我们的反射率结果在与照片进行验证时具有可比性。"
+        }
+      ]
+    },
+    {
+      "id": "vla",
+      "name": "自动驾驶与机器人",
+      "papers": [
+        {
+          "id": "2605.06481",
+          "rank": 1,
+          "score": 93,
+          "reason_zh": "将帧分解为对象slot状态（地址+内容），地址路由注意力实现对象寻址的世界-动作模型",
+          "tags": [
+            "VLA",
+            "世界模型",
+            "操控"
+          ],
+          "title": "OA-WAM: Object-Addressable World Action Model for Robust Robot Manipulation",
+          "authors": [
+            "Yushan Liu",
+            "Peibo Sun",
+            "Shoujie Li",
+            "Yifan Xie",
+            "Lingfeng Zhang"
+          ],
+          "abstract": "World Action Models (WAMs) enhance Vision-Language-Action policies by jointly predicting scene evolution and robot actions, but existing methods usually represent the predicted world as holistic images, video tokens, or global latents. These representations are difficult for an action decoder to address when an instruction refers to a particular object, especially under scene shifts where object identity is entangled with context. We propose OA-WAM, an Object-Addressable World Action Model for robust robot manipulation. OA-WAM decomposes each frame into N+1 slot states, with one robot slot and N object slots. Each slot contains a persistent address vector and a time-varying content vector, and is fused with text, image, proprioception, and past-action tokens in a block-causal sequence. A world head predicts next-frame slot states, while a flow-matching action head decodes a 16-step continuous action chunk in the same forward pass. Addressability is enforced by routing cross-slot attention through address-only keys and resetting the address slice at every transformer layer, separating which object to act on from what that object currently is without adding extra tokens. OA-WAM matches strong VLA and WAM baselines on LIBERO (97.8%) and SimplerEnv (79.3%), reaches state-of-the-art performance on the most relevant LIBERO-Plus geometric axes, and remains competitive on the seven-axis aggregate. A causal slot-intervention test yields a swap-binding cosine of 0.87, versus at most 0.09 for holistic baselines. These results suggest that addressable object states provide an effective interface for robust world-action modeling under scene perturbations.",
+          "abs_url": "https://arxiv.org/abs/2605.06481",
+          "pdf_url": "https://arxiv.org/pdf/2605.06481v1",
+          "html_url": "https://arxiv.org/html/2605.06481v1",
+          "figures": [
+            "https://arxiv.org/html/2605.06481v1/x1.png",
+            "https://arxiv.org/html/2605.06481v1/x2.png",
+            "https://arxiv.org/html/2605.06481v1/x3.png",
+            "https://arxiv.org/html/2605.06481v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": null,
+          "submitted": "2026-05-07T16:06:08Z",
+          "updated": "2026-05-07T16:06:08Z",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.RO"
+          ],
+          "title_zh": "OA-WAM：用于鲁棒机器人操作的对象可寻址世界动作模型",
+          "abstract_zh": "世界动作模型（WAM）通过联合预测场景演化和机器人动作来增强视觉-语言-动作策略，但现有方法通常将预测的世界表示为整体图像、视频标记或全局潜在变量。当指令引用特定对象时，动作解码器很难处理这些表示，特别是在对象身份与上下文纠缠在一起的场景转换下。我们提出了 OA-WAM，一种用于稳健机器人操作的对象可寻址世界动作模型。 OA-WAM 将每一帧分解为 N+1 个槽状态，其中有一个机器人槽和 N 个对象槽。每个槽都包含一个持久地址向量和一个时变内容向量，并以块因果序列与文本、图像、本体感受和过去动作标记融合。世界头预测下一帧时隙状态，而流匹配动作头在同一前向传递中解码 16 步连续动作块。可寻址性是通过仅地址键路由跨时隙注意力并在每个转换器层重置地址片来强制执行的，从而将要操作的对象与当前对象分开，而无需添加额外的标记。 OA-WAM 在 LIBERO (97.8%) 和 SimplerEnv (79.3%) 上与强大的 VLA 和 WAM 基线相匹配，在最相关的 LIBERO-Plus 几何轴上达到最先进的性能，并在七轴聚合上保持竞争力。因果时隙干预测试产生的交换绑定余弦为 0.87，而整体基线最多为 0.09。这些结果表明，可寻址对象状态为场景扰动下的鲁棒世界动作建模提供了有效的接口。"
+        },
+        {
+          "id": "2605.06175",
+          "rank": 2,
+          "score": 92,
+          "reason_zh": "谱分解预训练VLA backbone，奇异分量做共享专家、残差做路由专家，2.51%参数超越全量微调",
+          "tags": [
+            "VLA",
+            "具身智能",
+            "开源"
+          ],
+          "title": "VLA-GSE: Boosting Parameter-Efficient Fine-Tuning in VLA with Generalized and Specialized Experts",
+          "authors": [
+            "Yuhua Jiang",
+            "Junjie Lu",
+            "Xinyao Qin",
+            "Xiaoyu Chen",
+            "Kaixin Wang"
+          ],
+          "abstract": "Vision-language-action (VLA) models inherit rich visual-semantic priors from pre-trained vision-language backbones, but adapting them to robotic control remains challenging. Full fine-tuning (FFT) is prone to overfitting on downstream robotic data and catastrophic forgetting of pretrained vision-language capabilities. Parameter-efficient fine-tuning (PEFT) better preserves pre-trained knowledge, yet existing PEFT methods still struggle to adapt effectively to robot control tasks. To address this gap, we propose VLA-GSE, a parameter-efficient VLA fine-tuning framework that improves control adaptation while retaining PEFT's knowledge preservation advantage. Specifically, VLA-GSE (Generalized and Specialized Experts) is initialized by spectrally decomposing the frozen backbone, assigning leading singular components to generalized experts (shared experts) and disjoint residual components to specialized experts (routed experts). This decomposition improves adaptation capacity under a fixed trainable-parameter budget. Under a comparable parameter budget, VLA-GSE updates only 2.51% of the full model parameters and consistently outperforms strong FFT and PEFT baselines. It achieves 81.2% average zero-shot success on LIBERO-Plus, preserves pre-trained VLM capability comparably to LoRA on multimodal understanding benchmarks, and improves real-world manipulation success under multiple distribution shifts. Code is available at: https://github.com/YuhuaJiang2002/VLA-GSE",
+          "abs_url": "https://arxiv.org/abs/2605.06175",
+          "pdf_url": "https://arxiv.org/pdf/2605.06175v1",
+          "html_url": "https://arxiv.org/html/2605.06175v1",
+          "figures": [
+            "https://arxiv.org/html/2605.06175v1/gse.png",
+            "https://arxiv.org/html/2605.06175v1/attention_map.png",
+            "https://arxiv.org/html/2605.06175v1/real_robot.png",
+            "https://arxiv.org/html/2605.06175v1/attention_map_appendix.png"
+          ],
+          "code_url": "https://github.com/YuhuaJiang2002/VLA-GSE",
+          "project_url": null,
+          "code_links": [
+            "https://github.com/YuhuaJiang2002/VLA-GSE"
+          ],
+          "project_links": [],
+          "has_code": true,
+          "has_project": false,
+          "venue": null,
+          "comments": null,
+          "submitted": "2026-05-07T12:56:58Z",
+          "updated": "2026-05-07T12:56:58Z",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.RO"
+          ],
+          "title_zh": "VLA-GSE：与通用和专业专家一起促进 VLA 中参数高效的微调",
+          "abstract_zh": "视觉语言动作（VLA）模型继承了预先训练的视觉语言主干的丰富视觉语义先验，但使它们适应机器人控制仍然具有挑战性。完全微调 (FFT) 很容易过度拟合下游机器人数据，并导致灾难性遗忘预训练的视觉语言功能。参数高效微调（PEFT）更好地保留了预先训练的知识，但现有的 PEFT 方法仍然难以有效地适应机器人控制任务。为了解决这一差距，我们提出了 VLA-GSE，一种参数高效的 VLA 微调框架，可以改善控制自适应，同时保留 PEFT 的知识保存优势。具体来说，VLA-GSE（广义和专业专家）通过对冻结主干进行频谱分解，将领先的奇异分量分配给广义专家（共享专家）并将不相交的剩余分量分配给专业专家（路由专家）来初始化。这种分解提高了固定可训练参数预算下的适应能力。在可比较的参数预算下，VLA-GSE 仅更新完整模型参数的 2.51%，并且始终优于强大的 FFT 和 PEFT 基线。它在 LIBERO-Plus 上实现了 81.2% 的平均零样本成功率，在多模态理解基准上保留了与 LoRA 相当的预训练 VLM 能力，并提高了多个分布变化下的实际操作成功率。代码位于：https://github.com/YuhuaJiang2002/VLA-GSE"
+        },
+        {
+          "id": "2605.05714",
+          "rank": 3,
+          "score": 90,
+          "reason_zh": "构建物体-手-任务三元关系图，关系瓶颈空间替代外观统计实现跨场景/物体/任务泛化",
+          "tags": [
+            "VLA",
+            "操控",
+            "具身智能"
+          ],
+          "title": "TriRelVLA: Triadic Relational Structure for Generalizable Embodied Manipulation",
+          "authors": [
+            "Hanyu Zhou",
+            "Chuanhao Ma",
+            "Gim Hee Lee"
+          ],
+          "abstract": "Vision-language-action (VLA) models perform well on training-seen robotic tasks but struggle to generalize to unseen scenes and objects. A key limitation lies in their implicit visual representations, which entangle object appearance, background, and scene layout. This makes policies sensitive to visual variations. Prior work improves transferability through structured intermediate representations that objectify visual content. However, these representations mainly capture scene semantics instead of action-relevant relations. As a result, action prediction remains tied to appearance statistics. We observe that manipulation actions depend on the object-hand-task relational structure, which governs interactions among task requirements, robot states, and object properties. Based on this observation, we propose TriRelVLA, a triadic relational VLA framework for generalizable embodied manipulation. Our approach consists of three components: 1) We construct explicit object-hand-task triadic representations from multimodal inputs as relational primitives. 2) We build a task-grounded relational graph. Task-guided cross-attention forms nodes, and a relation-aware graph transformer models interactions among them. 3) We perform relation-conditioned action generation. The relational structure is compressed into a bottleneck space and projected into the LLM for action prediction. This triadic relational bottleneck reduces reliance on appearance statistics and enables transfer across scenes, objects, and task compositions. We further introduce a real-world robotic dataset for fine-tuning. Experiments show strong performance on fine-tuned tasks and clear gains in cross-scene, cross-object, and cross-task generalization.",
+          "abs_url": "https://arxiv.org/abs/2605.05714",
+          "pdf_url": "https://arxiv.org/pdf/2605.05714v1",
+          "html_url": "https://arxiv.org/html/2605.05714v1",
+          "figures": [
+            "https://arxiv.org/html/2605.05714v1/x1.png",
+            "https://arxiv.org/html/2605.05714v1/x2.png",
+            "https://arxiv.org/html/2605.05714v1/x3.png",
+            "https://arxiv.org/html/2605.05714v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": null,
+          "submitted": "2026-05-07T05:57:49Z",
+          "updated": "2026-05-07T05:57:49Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV",
+            "cs.RO"
+          ],
+          "title_zh": "TriRelVLA：可概括化体现操作的三元关系结构",
+          "abstract_zh": "视觉-语言-动作（VLA）模型在训练见过的机器人任务上表现良好，但很难推广到看不见的场景和物体。一个关键的限制在于它们的隐式视觉表示，它使对象外观、背景和场景布局纠缠在一起。这使得策略对视觉变化敏感。先前的工作通过客观化视觉内容的结构化中间表示来提高可转移性。然而，这些表示主要捕获场景语义而不是动作相关关系。因此，动作预测仍然与外观统计数据相关。我们观察到操纵动作取决于对象-手-任务关系结构，该结构控制任务要求、机器人状态和对象属性之间的交互。基于这一观察，我们提出了 TriRelVLA，一种用于可泛化体现操作的三元关系 VLA 框架。我们的方法由三个组成部分组成：1）我们从多模态输入构建显式的对象-手动-任务三元表示作为关系基元。 2）我们构建一个基于任务的关系图。任务引导的交叉注意力形成节点，关系感知图转换器对它们之间的交互进行建模。 3）我们执行关系条件动作生成。关系结构被压缩到瓶颈空间并投影到LLM中以进行动作预测。这种三元关系瓶颈减少了对外观统计的依赖，并实现了跨场景、对象和任务组合的传输。我们进一步引入了用于微调的真实机器人数据集。实验表明，在微调任务上有很强的性能，并且在跨场景、跨对象和跨任务泛化方面有明显的进步。"
+        },
+        {
+          "id": "2605.06247",
+          "rank": 4,
+          "score": 88,
+          "reason_zh": "通过文本嵌入空间的紧凑上下文传递WAM知识，1.17%可训练参数达LIBERO-Plus 86.1%",
+          "tags": [
+            "VLA",
+            "世界模型",
+            "开源"
+          ],
+          "title": "CKT-WAM: Parameter-Efficient Context Knowledge Transfer Between World Action Models",
+          "authors": [
+            "Yuhua Jiang",
+            "Yijun Guo",
+            "Hongbing Yang",
+            "Guojun Lei",
+            "Nuo Chen"
+          ],
+          "abstract": "World action models (WAMs) provide a powerful generative framework for embodied control, yet transferring knowledge across heterogeneous WAMs remains challenging due to mismatched latent interfaces, high adaptation cost, and the rigidity of conventional distillation objectives. We propose \\textbf{CKT-WAM}, a parameter-efficient \\textbf{C}ontext \\textbf{K}nowledge \\textbf{T}ransfer framework that transfers teacher WAM's knowledge into a student WAM through a compact context in the text embedding space, rather than output imitation or dense hidden-state matching. Specifically, CKT-WAM extracts intermediate teacher hidden states, reduces the number of tokens via compressors' learnable-query cross attention (LQCA), and transforms them through an always-on generalized adapter, a lightweight router, and sparsely activated specialized adapters. The resulting context is then appended to the student's conditioning textual embeddings, thereby injecting the transferred knowledge into the student with minimal architectural modification. Experiments show that CKT-WAM consistently improves zero-shot generalization and achieves the best overall performance on LIBERO-Plus, reaching 86.1\\% total success rate with only 1.17\\% trainable parameters, while approaching full fine-tuning performance. Beyond simulation, CKT-WAM also demonstrates strong real-world long-horizon manipulation ability, achieving the best average success rate of 83.3\\% across four multi-step and long-horizon tasks. Code is available at https://github.com/YuhuaJiang2002/CKT-WAM.",
+          "abs_url": "https://arxiv.org/abs/2605.06247",
+          "pdf_url": "https://arxiv.org/pdf/2605.06247v1",
+          "html_url": "https://arxiv.org/html/2605.06247v1",
+          "figures": [
+            "https://arxiv.org/html/2605.06247v1/ckt.png",
+            "https://arxiv.org/html/2605.06247v1/latency_success.png",
+            "https://arxiv.org/html/2605.06247v1/real_robot.png",
+            "https://arxiv.org/html/2605.06247v1/selection_ckt.png"
+          ],
+          "code_url": "https://github.com/YuhuaJiang2002/CKT-WAM",
+          "project_url": null,
+          "code_links": [
+            "https://github.com/YuhuaJiang2002/CKT-WAM"
+          ],
+          "project_links": [],
+          "has_code": true,
+          "has_project": false,
+          "venue": null,
+          "comments": null,
+          "submitted": "2026-05-07T13:26:51Z",
+          "updated": "2026-05-07T13:26:51Z",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.RO"
+          ],
+          "title_zh": "CKT-WAM：世界行动模型之间参数高效的上下文知识转移",
+          "abstract_zh": "世界行动模型 (WAM) 为体现控制提供了强大的生成框架，但由于潜在接口不匹配、高适应成本和传统蒸馏目标的刚性，跨异构 WAM 传递知识仍然具有挑战性。我们提出了 \\textbf{CKT-WAM}，一个参数高效的 \\textbf{C}ontext \\textbf{K}nowledge \\textbf{T} 传输框架，通过文本嵌入空间中的紧凑上下文将教师 WAM 的知识传输到学生 WAM，而不是输出模仿或密集隐藏状态匹配。具体来说，CKT-WAM 提取中间教师隐藏状态，通过压缩器的可学习查询交叉注意 (LQCA) 减少标记数量，并通过始终在线的通用适配器、轻量级路由器和稀疏激活的专用适配器对它们进行转换。然后将生成的上下文附加到学生的条件文本嵌入中，从而以最小的架构修改将转移的知识注入学生体内。实验表明，CKT-WAM 持续提高了零样本泛化能力，并在 LIBERO-Plus 上实现了最佳的整体性能，仅用 1.17% 的可训练参数就达到了 86.1% 的总成功率，同时接近完全微调性能。除了模拟之外，CKT-WAM 还展示了强大的现实世界长视野操纵能力，在四个多步骤长视野任务中实现了 83.3% 的最佳平均成功率。代码可在 https://github.com/YuhuaJiang2002/CKT-WAM 获取。"
+        },
+        {
+          "id": "2605.05925",
+          "rank": 5,
+          "score": 87,
+          "reason_zh": "从稀疏人-物交互演示合成灵巧操作轨迹，任务空间残差RL实现sim-to-real迁移",
+          "tags": [
+            "机器人",
+            "操控",
+            "强化学习"
+          ],
+          "title": "DexSynRefine: Synthesizing and Refining Human-Object Interaction Motion for Physically Feasible Dexterous Robot Actions",
+          "authors": [
+            "Hyesung Lee",
+            "Hyunwoo Jung",
+            "Si-Hwan Heo",
+            "Sungwook Yang"
+          ],
+          "abstract": "Learning dexterous manipulation from human-object interaction (HOI) data is a scalable alternative to teleoperation, but HOI demonstrations are sparse and provide only kinematic motion that is not directly executable under embodiment mismatch and contact-rich dynamics. We present DexSynRefine, a framework with three coupled components: HOI-MMFP, a task- and object-initial-state-conditioned extension of motion manifold primitives that synthesizes coordinated hand-object trajectories from sparse HOI demonstrations; a task-space residual RL policy that physically grounds the synthesized reference while inheriting its kinematic structure; and a contact-and-dynamics adaptation module that enables sim-to-real transfer from proprioceptive history. Across five dexterous manipulation tasks spanning pick-and-place, tool use, and object reorientation, our task-space residual policy outperforms prior action-representation baselines in simulations and transfers to a real robot on all five tasks, improving over kinematic retargeting by 50-70 percentage points.",
+          "abs_url": "https://arxiv.org/abs/2605.05925",
+          "pdf_url": "https://arxiv.org/pdf/2605.05925v1",
+          "html_url": "https://arxiv.org/html/2605.05925v1",
+          "figures": [
+            "https://arxiv.org/html/2605.05925v1/x1.png",
+            "https://arxiv.org/html/2605.05925v1/x2.png",
+            "https://arxiv.org/html/2605.05925v1/x3.png",
+            "https://arxiv.org/html/2605.05925v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": "https://dexsynrefine.github.io/",
+          "code_links": [],
+          "project_links": [
+            "https://dexsynrefine.github.io/"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": null,
+          "comments": "Project page: https://dexsynrefine.github.io/",
+          "submitted": "2026-05-07T09:31:43Z",
+          "updated": "2026-05-07T09:31:43Z",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.RO"
+          ],
+          "title_zh": "DexSynRefine：综合和细化人机交互运动，实现物理上可行的灵巧机器人动作",
+          "abstract_zh": "从人机交互 (HOI) 数据中学习灵巧操作是远程操作的一种可扩展替代方案，但 HOI 演示很少，并且仅提供在实施例不匹配和接触丰富的动力学下无法直接执行的运动学运动。我们提出了 DexSynRefine，一个包含三个耦合组件的框架：HOI-MMFP，运动流形基元的任务和对象初始状态条件扩展，它从稀疏的 HOI 演示中合成协调的手部物体轨迹；任务空间剩余强化学习策略，在继承其运动学结构的同时，以物理方式为综合参考奠定基础；以及一个接触和动力学适应模块，可以实现从本体感受历史到模拟到真实的转换。在涵盖拾取和放置、工具使用和对象重新定向的五项灵巧操作任务中，我们的任务空间剩余策略在所有五项任务的模拟和转移到真实机器人中都优于先前的动作表示基线，比运动学重定向提高了 50-70 个百分点。"
+        },
+        {
+          "id": "2605.06311",
+          "rank": 6,
+          "score": 86,
+          "reason_zh": "构建PBR材质高保真机器人操控仿真benchmark，仿真-真实性能Pearson相关系数达0.92",
+          "tags": [
+            "机器人",
+            "VLA",
+            "数据集"
+          ],
+          "title": "Toward Visually Realistic Simulation: A Benchmark for Evaluating Robot Manipulation in Simulation",
+          "authors": [
+            "Yixin Zhu",
+            "Zixiong Wang",
+            "Jian Yang",
+            "Jin Xie",
+            "Jingyi Yu"
+          ],
+          "abstract": "Reliable simulation evaluation of robot manipulation policies serves as a high-fidelity proxy for real-world performance. Although existing benchmarks cover a wide range of task categories, they lack visual realism, creating a large domain gap between simulation and reality. This undermines the reliability of simulation-based evaluation in predicting real-world performance. To mitigate the sim-to-real visual gap, we conduct a systematic analysis to isolate the effects of lighting and material. Our results show that these factors play a critical role in geometric reasoning and spatial grounding, yet are largely overlooked in existing benchmarks. Motivated by the analysis, we propose VISER, a visually realistic benchmark for evaluating robot manipulation in simulation. VISER features a high-fidelity dataset of over 1,000 3D assets with physically-based rendering (PBR) materials, along with 3D scenes created from these assets through curated layouts or generation. To this end, we propose an automated pipeline leveraging Multi-modal Large Language Models (MLLMs) for material-aware part segmentation and material retrieval, enabling scalable generation of physically plausible assets. Building on the high-fidelity 3D asset dataset, we construct diverse evaluation tasks, such as grasping, placing, and long-horizon tasks, enabling scalable and reproducible assessment of Vision-Language-Action (VLA) models. Our benchmark shows a strong correlation between simulation and real-world performance, achieving an average Pearson correlation coefficient of 0.92 across different policies.",
+          "abs_url": "https://arxiv.org/abs/2605.06311",
+          "pdf_url": "https://arxiv.org/pdf/2605.06311v1",
+          "html_url": "https://arxiv.org/html/2605.06311v1",
+          "figures": [
+            "https://arxiv.org/html/2605.06311v1/x1.png",
+            "https://arxiv.org/html/2605.06311v1/x2.png",
+            "https://arxiv.org/html/2605.06311v1/x3.png",
+            "https://arxiv.org/html/2605.06311v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": null,
+          "submitted": "2026-05-07T14:13:05Z",
+          "updated": "2026-05-07T14:13:05Z",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.RO"
+          ],
+          "title_zh": "迈向视觉逼真的仿真：评估仿真中机器人操作的基准",
+          "abstract_zh": "机器人操纵策略的可靠模拟评估可作为现实世界性能的高保真代理。尽管现有的基准测试涵盖了广泛的任务类别，但它们缺乏视觉真实感，导致模拟与现实之间存在巨大的领域差距。这破坏了基于模拟的评估在预测现实世界性能方面的可靠性。为了缩小模拟与真实视觉差距，我们进行了系统分析以隔离照明和材质的影响。我们的结果表明，这些因素在几何推理和空间基础中发挥着关键作用，但在现有基准中很大程度上被忽视了。在分析的推动下，我们提出了 VISER，这是一种用于评估模拟中机器人操作的视觉真实基准。 VISER 具有包含 1,000 多个具有基于物理的渲染 (PBR) 材质的 3D 资源的高保真数据集，以及通过策划的布局或生成从这些资源创建的 3D 场景。为此，我们提出了一种利用多模态大型语言模型（MLLM）进行材料感知零件分割和材料检索的自动化管道，从而能够可扩展地生成物理上合理的资产。基于高保真 3D 资产数据集，我们构建了多种评估任务，例如抓取、放置和长视野任务，从而实现了视觉-语言-动作 (VLA) 模型的可扩展且可重复的评估。我们的基准显示模拟与现实世界表现之间存在很强的相关性，不同政策的平均 Pearson 相关系数为 0.92。"
+        },
+        {
+          "id": "2605.05960",
+          "rank": 7,
+          "score": 85,
+          "reason_zh": "用DDPM完成BEV语义地图遮挡区域标签扩散，即插即用集成现有导航策略，入选ICML 2026",
+          "tags": [
+            "导航",
+            "生成模型",
+            "顶会"
+          ],
+          "title": "Plug-and-Play Label Map Diffusion for Universal Goal-Oriented Navigation",
+          "authors": [
+            "Zhixuan Shen",
+            "Yijie Zeng",
+            "Shengxiang Luo",
+            "Tianrui Li",
+            "Haonan Luo"
+          ],
+          "abstract": "In embodied vision, Goal-Oriented Navigation (GON) requires robots to locate a specific goal within an unexplored environment. The primary challenge of GON arises from the need to construct a Bird's-Eye-View (BEV) map to understand the environment while simultaneously localizing an unobserved goal. Existing map-based methods typically employ self-centered semantic maps, often facing challenges such as reliance on complete maps or inconsistent semantic association. To this end, we propose Plug-and-Play Label Map Diffusion (PLMD), which defines a novel map completion diffusion model based on Denoising Diffusion Probabilistic Models (DDPM). PLMD generates obstacle and semantic labels for unobserved regions through a diffusion-based completion process, thereby enabling goal localization even in partially observed environments. Moreover, it mitigates inconsistent semantic association by leveraging structural consistency between known and unknown obstacle layouts and integrating obstacle priors into the semantic denoising process. By substituting predicted labels for unobserved regions, robots can accurately localize the specified objects. Extensive experiments demonstrate that PLMD \\textbf{(I)} effectively expands the region of unknown maps, \\textbf{(II)} integrates seamlessly into existing navigation strategies that rely on semantic maps, \\textbf{(III)} achieves state-of-the-art performance on three GON tasks.",
+          "abs_url": "https://arxiv.org/abs/2605.05960",
+          "pdf_url": "https://arxiv.org/pdf/2605.05960v1",
+          "html_url": "https://arxiv.org/html/2605.05960v1",
+          "figures": [
+            "https://arxiv.org/html/2605.05960v1/x1.png",
+            "https://arxiv.org/html/2605.05960v1/x2.png",
+            "https://arxiv.org/html/2605.05960v1/x3.png",
+            "https://arxiv.org/html/2605.05960v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": "ICML",
+          "comments": "21 pages, 10 figures, Extended Version of accepted ICML 2026 Paper",
+          "submitted": "2026-05-07T10:06:40Z",
+          "updated": "2026-05-07T10:06:40Z",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.RO"
+          ],
+          "title_zh": "用于通用目标导向导航的即插即用标签地图扩散",
+          "abstract_zh": "在具身视觉中，目标导向导航（GON）要求机器人在未探索的环境中定位特定目标。 GON 的主要挑战来自于需要构建鸟瞰图 (BEV) 地图来了解环境，同时定位未观察到的目标。现有的基于地图的方法通常采用以自我为中心的语义地图，通常面临诸如依赖完整地图或不一致的语义关联等挑战。为此，我们提出了即插即用标签地图扩散（PLMD），它定义了一种基于去噪扩散概率模型（DDPM）的新颖的地图完成扩散模型。 PLMD 通过基于扩散的完成过程为未观察区域生成障碍物和语义标签，从而即使在部分观察的环境中也能实现目标定位。此外，它通过利用已知和未知障碍物布局之间的结构一致性并将障碍物先验集成到语义去噪过程中来减轻不一致的语义关联。通过用预测标签替换未观察到的区域，机器人可以准确地定位指定的对象。大量实验表明，PLMD \\textbf{(I)} 有效扩展了未知地图的区域，\\textbf{(II)} 无缝集成到依赖语义地图的现有导航策略中，\\textbf{(III)} 在三个 GON 任务上实现了最先进的性能。"
+        },
+        {
+          "id": "2605.05897",
+          "rank": 8,
+          "score": 82,
+          "reason_zh": "通过LiDAR新视角合成从车侧数据生成路侧标注，点云补全+占用可见性约束弥合域差异",
+          "tags": [
+            "自动驾驶",
+            "3D重建"
+          ],
+          "title": "Generating Roadside LiDAR Datasets from Vehicle-Side Datasets via Novel View Synthesis",
+          "authors": [
+            "Yuhan Xia",
+            "Runxin Zhao",
+            "Hanyang Zhuang",
+            "Chunxiang Wang",
+            "Ming Yang"
+          ],
+          "abstract": "Intelligent Transportation Systems (ITS) require reliable environmental perception to support safe and efficient transportation. With the rapid development of Vehicle-to-everything (V2X), roadside perception has become an effective means to extend sensing coverage and improve traffic safety. However, the scarcity of large-scale annotated roadside LiDAR datasets poses a major challenge for training high-performance roadside perception models. In this paper, we introduce Vehicle-to-Roadside LiDAR Synthesis (VRS), a data synthesis framework that generates labeled roadside LiDAR datasets from vehicle-side datasets via LiDAR novel view synthesis. To mitigate the vehicle-to-roadside domain gap, VRS employs vehicle point cloud completion to compensate for missing geometry in vehicle-side observations, and introduces an occupancy-based visibility constraint to handle large viewpoint changes during cross-view rendering. The proposed framework enables flexible multi-view rendering for scalable roadside data generation. Extensive experiments on roadside 3D object detection demonstrate that the synthesized data effectively complements real roadside data, mitigates the limitations of limited real-world roadside data, and improves generalization to unseen roadside viewpoints.",
+          "abs_url": "https://arxiv.org/abs/2605.05897",
+          "pdf_url": "https://arxiv.org/pdf/2605.05897v1",
+          "html_url": "https://arxiv.org/html/2605.05897v1",
+          "figures": [
+            "https://arxiv.org/html/2605.05897v1/x1.png",
+            "https://arxiv.org/html/2605.05897v1/x2.png",
+            "https://arxiv.org/html/2605.05897v1/x3.png",
+            "https://arxiv.org/html/2605.05897v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": null,
+          "submitted": "2026-05-07T09:10:18Z",
+          "updated": "2026-05-07T09:10:18Z",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.RO"
+          ],
+          "title_zh": "通过新颖的视图合成从车端数据集生成路边 LiDAR 数据集",
+          "abstract_zh": "智能交通系统 (ITS) 需要可靠的环境感知来支持安全高效的交通。随着车联网（V2X）的快速发展，路侧感知已成为扩大感知覆盖范围、提高交通安全的有效手段。然而，大规模带注释的路边激光雷达数据集的稀缺给训练高性能路边感知模型带来了重大挑战。在本文中，我们介绍了车辆到路边 LiDAR 合成（VRS），这是一种数据合成框架，可通过 LiDAR 新颖视图合成从车辆端数据集生成带标签的路边 LiDAR 数据集。为了缩小车辆与路边的域差距，VRS 采用车辆点云补全来补偿车辆侧观测中缺失的几何图形，并引入基于占用的可见性约束来处理交叉视图渲染期间的大视点变化。所提出的框架支持灵活的多视图渲染，以实现可扩展的路边数据生成。路边 3D 物体检测的大量实验表明，合成数据有效补充了真实路边数据，减轻了有限的现实世界路边数据的局限性，并提高了对看不见的路边视点的泛化能力。"
+        },
+        {
+          "id": "2605.06323",
+          "rank": 9,
+          "score": 80,
+          "reason_zh": "辅助遥操作框架组合多视角状态估计与CBF几何感知共享自主，22人用户研究验证",
+          "tags": [
+            "机器人",
+            "操控"
+          ],
+          "title": "AssistDLO: Assistive Teleoperation for Deformable Linear Object Manipulation",
+          "authors": [
+            "Berk Guler",
+            "Simon Manschitz",
+            "Kay Pompetzki",
+            "Jan Peters"
+          ],
+          "abstract": "Manipulating Deformable Linear Objects (DLOs) is challenging in robotics due to their infinite-dimensional configuration space and complex nonlinear dynamics. In teleoperation, depth uncertainty hinders state perception and reaction. AssistDLO addresses this challenge as an assistive teleoperation framework for DLO manipulation that combines real-time multi-view state estimation, visual assistance (VA), and a geometry-aware shared-autonomy controller based on Control Barrier Functions (SA-CBF). While traditional shared autonomy methods often rely on simple geometric attractors and may fail to preserve DLO geometry, SA-CBF acts as a geometry-aware funnel, facilitating precise grasping while preserving the operator's high-level authority. The framework is evaluated in a bimanual knot-untangling user study (N = 22) using ropes with varying length and rigidity. Results show that the effectiveness of the assistance depends strongly on operator expertise and DLO properties. SA-CBF provides the strongest gains for naive users, acting as a skill equalizer that increases task success from 71% to 88%, and is effective for stiffer ropes. Conversely, expert users prefer VA, and highly compliant, long ropes benefit more from visual support than localized action assistance. Ultimately, these findings demonstrate that effective DLO teleoperation cannot rely on a fixed strategy, highlighting the critical need for adaptive, user-aware, and material-aware shared autonomy.",
+          "abs_url": "https://arxiv.org/abs/2605.06323",
+          "pdf_url": "https://arxiv.org/pdf/2605.06323v1",
+          "html_url": "https://arxiv.org/html/2605.06323v1",
+          "figures": [
+            "https://arxiv.org/html/2605.06323v1/x1.png",
+            "https://arxiv.org/html/2605.06323v1/x2.png",
+            "https://arxiv.org/html/2605.06323v1/x3.png",
+            "https://arxiv.org/html/2605.06323v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": "20 pages, 14 figures. Submitted to a peer-reviewed journal",
+          "submitted": "2026-05-07T14:21:41Z",
+          "updated": "2026-05-07T14:21:41Z",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.RO"
+          ],
+          "title_zh": "AssistDLO：可变形线性物体操纵的辅助远程操作",
+          "abstract_zh": "由于可变形线性物体 (DLO) 的无限维配置空间和复杂的非线性动力学，操纵可变形线性物体 (DLO) 在机器人技术中具有挑战性。在遥操作中，深度不确定性阻碍了状态感知和反应。 AssistDLO 作为 DLO 操作的辅助远程操作框架解决了这一挑战，该框架结合了实时多视图状态估计、视觉辅助 (VA) 和基于控制屏障函数 (SA-CBF) 的几何感知共享自主控制器。虽然传统的共享自治方法通常依赖于简单的几何吸引子，并且可能无法保留 DLO 几何结构，但 SA-CBF 充当几何感知漏斗，促进精确抓取，同时保留操作员的高级权限。该框架通过使用不同长度和刚度的绳索的双手解结用户研究（N = 22）进行评估。结果表明，援助的有效性在很大程度上取决于操作员的专业知识和 DLO 属性。 SA-CBF 为初级用户提供了最强的收益，充当技能均衡器，将任务成功率从 71% 提高到 88%，并且对于较硬的绳索有效。相反，专家用户更喜欢 VA，高度顺从的长绳索更能从视觉支持中受益，而不是本地化的行动辅助。最终，这些发现表明，有效的 DLO 远程操作不能依赖于固定的策略，这凸显了对自适应、用户感知和材料感知共享自治的迫切需求。"
+        },
+        {
+          "id": "2605.05328",
+          "rank": 10,
+          "score": 79,
+          "reason_zh": "利用DETR式3D检测器的潜对象query做密度估计，耦合后处理校准器实现分布偏移下鲁棒校准",
+          "tags": [
+            "自动驾驶",
+            "3D重建",
+            "顶会",
+            "开源"
+          ],
+          "title": "Query2Uncertainty: Robust Uncertainty Quantification and Calibration for 3D Object Detection under Distribution Shift",
+          "authors": [
+            "Till Beemelmanns",
+            "Alexey Nekrasov",
+            "Stefan Vilceanu",
+            "Jonas Steinhaus",
+            "Timo Woopen"
+          ],
+          "abstract": "Reliable uncertainty estimation for 3D object detection is critical for deploying safe autonomous systems, yet modern detectors remain poorly calibrated, especially under distribution shifts. Although post-hoc calibration methods address this issue and provide improved calibration for in-distribution tests, they fail to adapt in distribution-shifted scenarios. In this work, we address this issue and introduce a density-aware calibration method that couples post-hoc calibrators with the feature density of latent object queries from DETR-style 3D object detectors. These queries form a compact, location and class-aware feature, ideal for density estimation, allowing our approach to adjust model confidences in distribution-shift scenarios. By fitting a density estimator on these query features, our approach jointly recalibrates both classification and bounding box regression uncertainties. On both a multi-view camera and LiDAR-based detector, our approach consistently outperforms standard post-hoc methods in both in-distribution and distribution-shifted scenarios. Code available https://tillbeemelmanns.github.io/query2uncertainty/ .",
+          "abs_url": "https://arxiv.org/abs/2605.05328",
+          "pdf_url": "https://arxiv.org/pdf/2605.05328v1",
+          "html_url": null,
+          "figures": [],
+          "code_url": null,
+          "project_url": "https://tillbeemelmanns.github.io/query2uncertainty/",
+          "code_links": [],
+          "project_links": [
+            "https://tillbeemelmanns.github.io/query2uncertainty/"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": "CVPR",
+          "comments": "Accepted for publication at CVPR 2026",
+          "submitted": "2026-05-06T18:01:19Z",
+          "updated": "2026-05-06T18:01:19Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV",
+            "cs.RO"
+          ],
+          "title_zh": "Query2Uncertainty：分布偏移下 3D 物体检测的鲁棒不确定性量化和校准",
+          "abstract_zh": "3D 物体检测的可靠不确定性估计对于部署安全自主系统至关重要，但现代探测器的校准仍然很差，尤其是在分布变化的情况下。尽管事后校准方法解决了这个问题并为分布内测试提供了改进的校准，但它们无法适应分布转移的场景。在这项工作中，我们解决了这个问题，并引入了一种密度感知校准方法，该方法将事后校准器与来自 DETR 型 3D 对象检测器的潜在对象查询的特征密度结合起来。这些查询形成了紧凑的位置和类别感知功能，非常适合密度估计，使我们的方法能够在分布转移场景中调整模型置信度。通过在这些查询特征上拟合密度估计器，我们的方法联合重新校准分类和边界框回归不确定性。在多视图相机和基于激光雷达的探测器上，我们的方法在分布内和分布转移场景中始终优于标准事后方法。代码可用 https://tillbeemelmanns.github.io/query2uncertainty/ 。"
+        }
+      ]
+    },
+    {
+      "id": "vlm",
+      "name": "VLM / LLM",
+      "papers": [
+        {
+          "id": "2605.06522",
+          "rank": 1,
+          "score": 88,
+          "reason_zh": "证明FM存在参数覆盖上限，Agent系统通过感知-策略-行动-验证闭环严格扩展可达集",
+          "tags": [
+            "VLM",
+            "具身智能"
+          ],
+          "title": "Agentic AIs Are the Missing Paradigm for Out-of-Distribution Generalization in Foundation Models",
+          "authors": [
+            "Xin Wang",
+            "Haibo Chen",
+            "Wenxuan Liu",
+            "Wenwu Zhu"
+          ],
+          "abstract": "Foundation models (FMs) are increasingly deployed in open-world settings where distribution shift is the rule rather than the exception. The out-of-distribution (OOD) phenomena they face -- knowledge boundaries, capability ceilings, compositional shifts, and open-ended task variation -- differ in kind from the settings that have shaped prior OOD research, and are further complicated because the pretraining and post-training distributions of modern FMs are often only partially observed. Our position is that OOD for foundation models is a structurally distinct problem that cannot be solved within the prevailing model-centric paradigm, and that agentic systems constitute the missing paradigm required to address it. We defend this claim through four steps. First, we give a stage-aware formalization of OOD that accommodates partially observed multi-stage training distributions. Second, we prove a parameter coverage ceiling: there exist practically relevant inputs that no model-centric method (training-time or test-time) can handle within tolerance $\\varepsilon$, for reasons intrinsic to parameter-based representation. Third, we characterize agentic OOD systems by four structural properties -- perception, strategy selection, external action, and closed-loop verification -- and show that they strictly extend the reachable set beyond the ceiling. Fourth, we respond to seven counterarguments, conceding two, and outline a research agenda. We do not claim that agentic methods subsume model-centric ones; we argue that the two are complementary, and that progress on FM-OOD requires explicit recognition of the agentic paradigm as a first-class research direction.",
+          "abs_url": "https://arxiv.org/abs/2605.06522",
+          "pdf_url": "https://arxiv.org/pdf/2605.06522v1",
+          "html_url": "https://arxiv.org/html/2605.06522v1",
+          "figures": [
+            "https://arxiv.org/html/2605.06522v1/x1.png",
+            "https://arxiv.org/html/2605.06522v1/x2.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": "13 pages, 2 figures",
+          "submitted": "2026-05-07T16:29:33Z",
+          "updated": "2026-05-07T16:29:33Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV",
+            "cs.LG"
+          ],
+          "title_zh": "代理人工智能是基础模型中分布外泛化缺失的范式",
+          "abstract_zh": "基础模型 (FM) 越来越多地部署在开放世界环境中，其中分布转移是规则而不是例外。他们面临的分布外 (OOD) 现象——知识边界、能力上限、组成变化和开放式任务变化——与之前 OOD 研究的背景有所不同，而且更加复杂，因为现代 FM 的训练前和训练后分布通常只能部分观察到。我们的立场是，基础模型的 OOD 是一个结构上独特的问题，无法在流行的以模型为中心的范式中解决，而代理系统构成了解决该问题所需的缺失范式。我们通过四个步骤来捍卫这一主张。首先，我们给出了 OOD 的阶段感知形式化，它适应部分观察到的多阶段训练分布。其次，我们证明了参数覆盖上限：由于基于参数表示的固有原因，存在实际相关的输入，没有任何以模型为中心的方法（训练时间或测试时间）可以在容差 $\\varepsilon$ 内处理这些输入。第三，我们通过四个结构属性（感知、策略选择、外部行动和闭环验证）来描述代理 OOD 系统，并表明它们严格地将可达集扩展到上限之外。第四，我们回应了七个反驳，承认了两个，并概述了一个研究议程。我们并不声称代理方法包含以模型为中心的方法；我们认为两者是互补的，并且 FM-OOD 的进展需要明确承认主体范式作为一流的研究方向。"
+        },
+        {
+          "id": "2605.05997",
+          "rank": 2,
+          "score": 84,
+          "reason_zh": "首次让VLM通过动态潜空间心智图像内化4D推理，免标注数据生成+RL联合优化",
+          "tags": [
+            "VLM",
+            "4D重建",
+            "开源"
+          ],
+          "title": "4DThinker: Thinking with 4D Imagery for Dynamic Spatial Understanding",
+          "authors": [
+            "Zhangquan Chen",
+            "Manyuan Zhang",
+            "Xinlei Yu",
+            "Xiang An",
+            "Bo Li"
+          ],
+          "abstract": "Dynamic spatial reasoning from monocular video is essential for bridging visual intelligence and the physical world, yet remains challenging for vision-language models (VLMs). Prior approaches either verbalize spatial-temporal reasoning entirely as text, which is inherently verbose and imprecise for complex dynamics, or rely on external geometric modules that increase inference complexity without fostering intrinsic model capability. In this paper, we present 4DThinker, the first framework that enables VLMs to \"think with 4D\" through dynamic latent mental imagery, i.e., internally simulating how scenes evolve within the continuous hidden space. Specifically, we first introduce a scalable, annotation-free data generation pipeline that synthesizes 4D reasoning data from raw videos. We then propose Dynamic-Imagery Fine-Tuning (DIFT), which jointly supervises textual tokens and 4D latents to ground the model in dynamic visual semantics. Building on this, 4D Reinforcement Learning (4DRL) further tackles complex reasoning tasks via outcome-based rewards, restricting policy gradients to text tokens to ensure stable optimization. Extensive experiments across multiple dynamic spatial reasoning benchmarks demonstrate that 4DThinker consistently outperforms strong baselines and offers a new perspective toward 4D reasoning in VLMs. Our code is available at https://github.com/zhangquanchen/4DThinker.",
+          "abs_url": "https://arxiv.org/abs/2605.05997",
+          "pdf_url": "https://arxiv.org/pdf/2605.05997v1",
+          "html_url": "https://arxiv.org/html/2605.05997v1",
+          "figures": [
+            "https://arxiv.org/html/2605.05997v1/Figs/pipeline.png",
+            "https://arxiv.org/html/2605.05997v1/Figs/data_gen.png",
+            "https://arxiv.org/html/2605.05997v1/Figs/landmark_identification.png",
+            "https://arxiv.org/html/2605.05997v1/Figs/static_verification.png"
+          ],
+          "code_url": "https://github.com/zhangquanchen/4DThinker",
+          "project_url": null,
+          "code_links": [
+            "https://github.com/zhangquanchen/4DThinker"
+          ],
+          "project_links": [],
+          "has_code": true,
+          "has_project": false,
+          "venue": null,
+          "comments": "21 pages, 16 figures",
+          "submitted": "2026-05-07T10:48:46Z",
+          "updated": "2026-05-07T10:48:46Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "4DThinker：用 4D 图像思考动态空间理解",
+          "abstract_zh": "单目视频的动态空间推理对于连接视觉智能和物理世界至关重要，但对于视觉语言模型 (VLM) 来说仍然具有挑战性。先前的方法要么将时空推理完全表述为文本，这对于复杂的动力学来说本质上是冗长且不精确的，要么依赖外部几何模块来增加推理复杂性而不培养内在的模型能力。在本文中，我们提出了 4DThinker，这是第一个使 VLM 通过动态潜在心理意象“用 4D 思考”的框架，即内部模拟场景如何在连续隐藏空间内演变。具体来说，我们首先引入一个可扩展、无注释的数据生成管道，该管道从原始视频合成 4D 推理数据。然后，我们提出动态图像微调（DIFT），它联合监督文本标记和 4D 潜在变量，以动态视觉语义为模型奠定基础。在此基础上，4D 强化学习 (4DRL) 通过基于结果的奖励进一步处理复杂的推理任务，将策略梯度限制在文本标记上以确保稳定的优化。跨多个动态空间推理基准的大量实验表明，4DThinker 始终优于强大的基线，并为 VLM 中的 4D 推理提供了新的视角。我们的代码可在 https://github.com/zhangquanchen/4DThinker 获取。"
+        }
+      ]
+    }
+  ]
+}
