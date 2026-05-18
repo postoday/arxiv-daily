@@ -9840,7 +9840,8 @@
       "project_links": [],
       "title_zh": "揭穿Grad-ECLIP：全面研究其错误性和模型解释的基本原理",
       "abstract_zh": "Grad-ECLIP在ICML 2024上发布，代表了一种新的Transformer解释技术路线（基于中间特征）。首先，本文论证了基于中间特征的技术路线并不是一种新颖的技术路线。基于现有的基于注意力的路线，我们开发了Attention-ECLIP，它与Grad-ECLIP完全等效，但计算更简单。通过形式推导和实验验证，我们证明了以 Grad-ECLIP 为代表的基于中间特征的路线实际上是基于注意力的路线的等效变体。接下来，本文证明了 Grad-ECLIP 方法是有缺陷的。 Grad-ECLIP得到的模型解释结果不是原始模型的结果，解释结果与模型的性能不相符。我们分析了 Grad-ECLIP 缺陷的原因，并提出，或者更确切地说，明确强调模型解释应遵循的两个基本原则，以避免类似的错误。",
-      "figures": []
+      "figures": [],
+      "html_url": "https://arxiv.org/html/2605.12952v1"
     },
     {
       "arxiv_id": "2605.12947",
