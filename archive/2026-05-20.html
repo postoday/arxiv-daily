@@ -37,7 +37,7 @@
         AI<span class="tab-code">cs.AI</span>
       </button>
     
-    <button class="tab tab-selected" data-cat="__selected__">
+    <button class="tab tab-selected has-selected" data-cat="__selected__">
       Selected<span class="tab-code">精选</span>
     </button>
   </div>
@@ -20986,7 +20986,912 @@
 
 <div id="selected-panel" class="hidden">
   
-  <p class="sel-empty">今日暂无精选内容。</p>
+  
+  
+  <p class="sel-meta">从 147 篇中精选 21 篇</p>
+  
+  <div class="sel-category">
+    <h3 class="sel-cat-name">世界模型&amp;视频/场景生成模型<span class="sel-cat-count">（7）</span></h3>
+    <ul class="sel-paper-list">
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">1/7</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2605.20150" target="_blank" rel="noopener">TideGS: Scalable Training of Over One Billion 3D Gaussian Splatting Primitives via Out-of-Core Optimization</a></h2>
+            <p class="paper-title-zh">TideGS：通过核外优化对超过 10 亿个 3D 高斯泼溅基元进行可扩展训练</p>
+          </div>
+        </div>
+        <p class="sel-reason">首个十亿级3DGS训练方案，核外优化突破GPU显存瓶颈实现城市场景级重建</p>
+        <div class="sel-tags"><span class="sel-tag">3DGS</span><span class="sel-tag">3D重建</span><span class="sel-tag">顶会</span><span class="sel-tag">开源</span></div>
+        <div class="paper-meta">
+          <span class="authors">Chonghao Zhong, Linfeng Shi, Hua Chen, Tiecheng Sun, Hao Zhao</span>
+        </div>
+        <p class="paper-abstract">以十亿基元规模训练 3D 高斯分布 (3DGS) 从根本上来说是受内存限制的：每个高斯基元都携带一个大的属性向量，并且聚合参数表很快超出 GPU 容量，从而将现有系统限制在商用单 GPU 硬件上数千万个高斯。我们观察到 3DGS 训练本质上是稀疏的且受轨迹条件影响：每次迭代仅激活当前相机批次中可见的高斯分布，因此 GPU 内存可以用作工作集缓存，而不是持久参数存储。基于这一见解，我们引入了 TideGS，这是一个核外训练框架，它通过三种协同技术管理 SSD-CPU-GPU 层次结构中的参数：用于 SSD 对齐空间局部性的块虚拟化几何、用于重叠 I/O 与计算的分层异步管道，以及仅在迭代之间传输增量工作集增量的轨迹自适应差分流。实验表明，TideGS 能够在单个 24 GB GPU 上进行超过 10 亿个高斯的训练，同时在大规模场景的评估单 GPU 基线中实现最佳重建质量，超越先前的核外基线（例如，大约 100M 高斯）和标准内存训练（例如，大约 11M 高斯）。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Training 3D Gaussian Splatting (3DGS) at billion-primitive scale is fundamentally memory-bound: each Gaussian primitive carries a large attribute vector, and the aggregate parameter table quickly exceeds GPU capacity, limiting prior systems to tens of millions of Gaussians on commodity single-GPU hardware. We observe that 3DGS training is inherently sparse and trajectory-conditioned: each iteration activates only the Gaussians visible from the current camera batch, so GPU memory can serve as a working-set cache rather than a persistent parameter store. Building on this insight, we introduce TideGS, an out-of-core training framework that manages parameters across an SSD-CPU-GPU hierarchy via three synergistic techniques: block-virtualized geometry for SSD-aligned spatial locality, a hierarchical asynchronous pipeline to overlap I/O with computation, and trajectory-adaptive differential streaming that transfers only incremental working-set deltas between iterations. Experiments show that TideGS enables training with over one billion Gaussians on a single 24 GB GPU while achieving the best reconstruction quality among evaluated single-GPU baselines on large-scale scenes, scaling beyond prior out-of-core baselines (e.g., approximately 100M Gaussians) and standard in-memory training (e.g., approximately 11M Gaussians).</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2605.20150v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2605.20150" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2605.20150v1" target="_blank" rel="noopener">HTML</a>
+          
+          <a class="project" href="https://sponge-lab.github.io/TideGS" target="_blank" rel="noopener">Project</a>
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2605.20150v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.20150v1/x1.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.20150v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.20150v1/x2.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.20150v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.20150v1/x3.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.20150v1/x4.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.20150v1/x4.png" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">2/7</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2605.19600" target="_blank" rel="noopener">FlyMirage: A Fully Automated Generation Pipeline for Diverse and Scalable UAV Flight Data via Generative World Model</a></h2>
+            <p class="paper-title-zh">FlyMirage：通过生成世界模型实现多样化且可扩展的无人机飞行数据的全自动生成管道</p>
+          </div>
+        </div>
+        <p class="sel-reason">生成式世界模型全自动生成UAV飞行数据，突破航拍视觉语言导航数据瓶颈</p>
+        <div class="sel-tags"><span class="sel-tag">世界模型</span><span class="sel-tag">生成模型</span><span class="sel-tag">闭环仿真</span><span class="sel-tag">数据集</span></div>
+        <div class="paper-meta">
+          <span class="authors">Jinhan Li, Xijie Huang, Zhaoqi Wang, Yijin Wang, Weiqi Ge</span>
+        </div>
+        <p class="paper-abstract">在视觉语言导航（VLN）领域，航空数据集在结合规模、多样性和真实性方面的能力仍然有限，通常依赖于昂贵的现实世界场景或视觉上有限的模拟。为了应对这些挑战，我们推出了 FlyMirage，这是一种用于航空 VLN 的高度可扩展且完全自动化的数据生成管道。我们的方法利用大型语言模型 (LLM) 作为环境设计师来促进场景多样性，并与生成世界模型相结合，将这些设计实例化为高保真 3D 高斯泼溅 (3DGS) 场景。为了大幅减少人力并确保飞行数据的可行性，FlyMirage实现了场景探索和语义信息获取的自动化，并进一步集成了用于无人飞行器（UAV）轨迹生成的动态可行规划器。利用该工具链，我们生成了大规模、多样化且逼真的航空 VLN 数据集，具有动态可行的飞行轨迹，旨在支持下一代实体导航模型的开发。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>In the field of Vision-Language Navigation (VLN), aerial datasets remain limited in their ability to combine scale, diversity, and realism, often relying on either costly real-world scenes or visually limited simulations. To address these challenges, we introduce FlyMirage, a highly scalable and fully automated data generation pipeline for aerial VLN. Our approach leverages large language models (LLM) as an environment designer to promote scene diversity, paired with a generative world model that instantiates these designs into high-fidelity 3D Gaussian Splatting (3DGS) scenes. To substantially reduce human labor and ensure the feasibility of flight data, FlyMirage automates scene exploration and semantic information acquisition, and further integrates a dynamically feasible planner for uncrewed aerial vehicle (UAV) trajectory generation. Utilizing this toolchain, we generate a large-scale, diverse, and photorealistic aerial VLN dataset, with dynamically feasible flying trajectories, designed to support the development of next-generation embodied navigation models.</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2605.19600v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2605.19600" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2605.19600v1" target="_blank" rel="noopener">HTML</a>
+          
+          
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2605.19600v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19600v1/x1.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.19600v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19600v1/x2.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.19600v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19600v1/x3.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.19600v1/x4.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19600v1/x4.png" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">3/7</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2605.19631" target="_blank" rel="noopener">HEAT: Heterogeneous End-to-End Autonomous Driving via Trajectory-Guided World Models</a></h2>
+            <p class="paper-title-zh">HEAT：通过轨迹引导世界模型实现异构端到端自动驾驶</p>
+          </div>
+        </div>
+        <p class="sel-reason">轨迹引导世界模型统一多域端到端自动驾驶，异构数据联合训练不再退化</p>
+        <div class="sel-tags"><span class="sel-tag">世界模型</span><span class="sel-tag">自动驾驶</span><span class="sel-tag">闭环仿真</span></div>
+        <div class="paper-meta">
+          <span class="authors">Hoonhee Cho, Giwon Lee, Jae-Young Kang, Hyemin Yang, Heejun Park</span>
+        </div>
+        <p class="paper-abstract">通过将原始传感器数据直接映射到驾驶动作，端到端自动驾驶已成为传统模块化管道的引人注目的替代方案。虽然最近的方法在单域数据集上实现了强大的性能，但当跨多个异构域联合训练时，它们的性能会显着下降。然而，在实践中，自治系统必须在异构分布的不同环境中运行，包括不同的城市、传感器配置和交通模式，而无需进行特定领域的再训练。这一差距凸显了多领域学习中的一个关键挑战：异构领域中特定领域的变化引入了相互冲突的学习信号，导致模型走向跨领域的次优解决方案。为了解决这个问题，我们提出了一种轨迹驱动的学习范式，围绕规划轨迹组织训练，使模型能够捕获驾驶意图的域不变表示。此外，我们整合了一个世界模型，可以预测以自我行为为条件的未来潜在特征，提高特征一致性并减轻领域引起的偏差。我们在三个基准测试（nuScenes、NAVSIM 和 Waymo 端到端数据集）上评估了我们的方法，并展示了与所有领域的现有方法相比的重大改进。我们的结果表明，可以在异构数据集上训练单个统一模型，同时在每个域内保持强大的性能，这凸显了朝着可扩展的现实世界部署迈出了一步。我们将公开我们的代码。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>End-to-end autonomous driving has emerged as a compelling alternative to traditional modular pipelines by directly mapping raw sensor data to driving actions. While recent approaches achieve strong performance on single-domain datasets, their performance degrades significantly when trained jointly across multiple heterogeneous domains. In practice, however, autonomous systems must operate across diverse environments with heterogeneous distributions, including different cities, sensor configurations, and traffic patterns, without domain-specific retraining. This gap highlights a key challenge in multi-domain learning: domain-specific variations across heterogeneous domains introduce conflicting learning signals, driving models toward compromised solutions that are suboptimal across domains. To address this, we propose a trajectory-driven learning paradigm that organizes training around planning trajectories, enabling the model to capture domain-invariant representations of driving intent. Furthermore, we incorporate a world model that predicts future latent features conditioned on ego actions, improving feature consistency and mitigating domain-induced biases. We evaluate our approach on three benchmarks, nuScenes, NAVSIM, and the Waymo end-to-end dataset, and show substantial improvements over existing methods across all domains. Our results demonstrate that a single unified model can be trained on heterogeneous datasets while maintaining strong performance within each domain, highlighting a step toward scalable real-world deployment. We will make our code publicly available.</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2605.19631v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2605.19631" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2605.19631v1" target="_blank" rel="noopener">HTML</a>
+          
+          
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2605.19631v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19631v1/x1.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.19631v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19631v1/x2.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.19631v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19631v1/x3.png" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">4/7</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2605.19386" target="_blank" rel="noopener">MatPhys: Learning Material-Aware Physics Parameters for Deformable Object Simulation from Videos</a></h2>
+            <p class="paper-title-zh">MatPhys：从视频中学习用于可变形物体模拟的材料感知物理参数</p>
+          </div>
+        </div>
+        <p class="sel-reason">从视频学习材料感知物理参数，实现非均匀可变形体的仿真级数字孪生重建</p>
+        <div class="sel-tags"><span class="sel-tag">世界模型</span><span class="sel-tag">生成模型</span><span class="sel-tag">闭环仿真</span></div>
+        <div class="paper-meta">
+          <span class="authors">Yang Yang, Yiyan Wang, Zheming Liu, Naoya Iwamoto</span>
+        </div>
+        <p class="paper-abstract">重建可用于仿真的可变形对象对于视觉、图形和机器人技术非常重要。现有的物理驱动方法可以从视频中恢复物理数字孪生，但它们存在两个基本限制：它们通常假设整个对象具有同质材料，并且其特定于场景的逆优化，再加上单目观察固有的模糊性，会在不同场景或交互中为相同材料产生不一致的参数。我们提出了 MatPhys，一种材料感知的前馈框架，可以从单视图视频中预测弹簧质量参数，通过两种耦合设计解决这两个问题。为了放宽同质材料假设，我们使用 DINO 特征将对象分解为语义上有意义的部分，并先查询部分级别的材料，为每个部分分配其自己的物理行为。为了加强跨场景一致性，我们引入了共享材质嵌入的学习材质码本作为外观和物理之间的桥梁，并进一步使用部分级先验作为约束解码器的参考分布，以便相同的材质在场景和交互中产生一致的参数。这些设计共同将约束不足的单目问题转化为基于共享、可重用材料概念的前馈推理。实验表明，我们的方法在重建和未来预测中匹配每个场景的优化基线，同时对未见过的交互和具有更一致物理参数的对象实现更强的泛化。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Reconstructing simulation-ready deformable objects is important for vision, graphics, and robotics. Existing physics-driven methods can recover physical digital twins from videos, but they suffer from two fundamental limitations: they typically assume a homogeneous material across the whole object, and their scene-specific inverse optimization, combined with the inherent ambiguity of monocular observation, yields inconsistent parameters for the same material across different scenes or interactions. We propose MatPhys, a material-aware feed-forward framework that predicts spring-mass parameters from a single-view video, addressing these two issues with two coupled designs. To relax the homogeneous material assumption, we use DINO features to decompose the object into semantically meaningful parts and to query a part-level material prior, assigning each part its own physical behavior. To enforce cross-scene consistency, we introduce a learned material codebook of shared material embeddings as the bridge between appearance and physics, and further use the part-level prior as a reference distribution that constrains the decoder so that the same material yields consistent parameters across scenes and interactions. Together, these designs turn an under-constrained monocular problem into feed-forward inference grounded on shared, reusable material concepts. Experiments show that our method matches per-scene optimization baselines in reconstruction and future prediction, while achieving stronger generalization to unseen interactions and objects with more consistent physical parameters.</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2605.19386v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2605.19386" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2605.19386v1" target="_blank" rel="noopener">HTML</a>
+          
+          
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2605.19386v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19386v1/x2.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.19386v1/Figures/gt_double_lift_sloth_07.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19386v1/Figures/gt_double_lift_sloth_07.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.19386v1/Figures/gt_double_lift_sloth_08.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19386v1/Figures/gt_double_lift_sloth_08.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.19386v1/Figures/gt_double_lift_sloth_09.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19386v1/Figures/gt_double_lift_sloth_09.png" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">5/7</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2605.19995" target="_blank" rel="noopener">CogOmniControl: Reasoning-Driven Controllable Video Generation via Creative Intent Cognition</a></h2>
+            <p class="paper-title-zh">CogOmniControl：通过创意意图认知生成推理驱动的可控视频</p>
+          </div>
+        </div>
+        <p class="sel-reason">推理驱动可控视频生成，将创意意图认知注入扩散模型适应专业制作流程</p>
+        <div class="sel-tags"><span class="sel-tag">生成模型</span><span class="sel-tag">视频生成</span><span class="sel-tag">开源</span></div>
+        <div class="paper-meta">
+          <span class="authors">Hongji Yang, Songlian Li, Yucheng Zhou, Xiaotong Zhao, Alan Zhao</span>
+        </div>
+        <p class="paper-abstract">最近的扩散模型在视频生成中实现了很强的照片真实性和流畅性，但在抽象、稀疏或复杂的条件下仍然脆弱，导致在专业制作工作流程（例如故事板草图和粘土渲染条件）中表现不佳。现有的视频生成模型要么通过适配器注入条件，要么在扩散主干中耦合通用视觉语言模型 (VLM)，从而留下了能力差距，无法生成符合用户创意意图的视频。我们提出了 CogOmniControl，一个推理驱动的框架，它将可控视频生成分解为创意意图认知和生成。具体来说，我们使用真实的动漫制作数据训练专门的 CogVLM。与通用VLM相比，它产生更专业、更清晰的输出，从稀疏和抽象的条件中准确识别用户的创作意图，并将这些线索调整为密集的推理输出。此外，CogOmniDiT 通过上下文生成统一了各种条件的控制，并通过强化学习与 CogVLM 推理输出保持一致。此外，利用 CogVLM 在指导视频生成方面的强大功能，我们释放了其在规划特定评估者方面的潜力，并为生成的视频实现了 Best-of-N 选择。这种集成将整个框架转变为闭环“线束式”架构。我们进一步介绍了 CogReasonBench 和 CogControlBench，它们是根据专业工作流程数据构建的，这些数据承载着真正的创意意图而不是模拟意图。两个基准测试的实验表明，CogOmniControl 超越了现有的开源模型。项目网站：https://um-lab.github.io/CogOmniControl/</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Recent diffusion models achieve strong photorealism and fluency in video generation, yet remain fragile under abstract, sparse or complex conditions, leading to poor performance in professional production workflows such as storyboard sketches and clay render conditions. Existing video generation models, either inject conditions through adapters or couple a generic vision-language model (VLM) within a diffusion backbone, leaving a capability gap and failing to produce the videos that align with the user&#39;s creative intent. We present CogOmniControl, a reasoning-driven framework that factorizes controllable video generation into creative intent cognition and generation. Specifically, we train a specialized CogVLM using authentic anime production data. Compared to generic VLMs, it generates more professional and clear outputs, accurately cognizing user creative intent from sparse and abstract conditions and tuning these cues into dense reasoning output. Besides, CogOmniDiT unifies the controls from various conditions through in-context generation and is aligned to the CogVLM reasoning outputs via reinforcement learning. Furthermore, leveraging CogVLM&#39;s robust capability in guiding video generation, we release its potential in planning specific evaluators and enable a Best-of-N selection for the generated videos. This integration transforms the entire framework into a closed-loop &#34;harness-like&#34; architecture. We further introduce CogReasonBench and CogControlBench, built from professional workflows data that carry genuine creative intent rather than simulated ones. Experiments on two benchmarks show that CogOmniControl surpassed the existing open-source models. The project website: https://um-lab.github.io/CogOmniControl/</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2605.19995v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2605.19995" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2605.19995v1" target="_blank" rel="noopener">HTML</a>
+          
+          <a class="project" href="https://um-lab.github.io/CogOmniControl/" target="_blank" rel="noopener">Project</a>
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2605.19995v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19995v1/x1.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.19995v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19995v1/x2.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.19995v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19995v1/x3.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.19995v1/x4.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19995v1/x4.png" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">6/7</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2605.19319" target="_blank" rel="noopener">SWEET: Sparse World Modeling with Image Editing for Embodied Task Execution</a></h2>
+            <p class="paper-title-zh">SWEET：稀疏世界建模与图像编辑用于具体任务执行</p>
+          </div>
+        </div>
+        <p class="sel-reason">稀疏世界建模仅预测任务关键视觉状态，以图像编辑替代稠密视频生成降本增效</p>
+        <div class="sel-tags"><span class="sel-tag">世界模型</span><span class="sel-tag">具身智能</span><span class="sel-tag">生成模型</span></div>
+        <div class="paper-meta">
+          <span class="authors">Yiren Song, Yihan Wang, Xiyao Deng, Zhuoran Yan, Mike Zheng Shou</span>
+        </div>
+        <p class="paper-abstract">视觉预测已成为一种有前途的体现控制范例，其中生成未来的观察结果，然后转化为行动。然而，密集视频生成的计算成本很高，并且对于许多操作任务来说通常是不必要的，这些任务的进展可以通过少量与任务相关的视觉状态来概括。在这项工作中，我们研究图像编辑模型是否可以通过预测任务级未来状态而无需密集视频推出，作为机器人操作的稀疏视觉世界模型。我们首先在相同的机器人数据设置下对视频生成模型 Wan2.2 和图像编辑模型 FLUX-Kontext 进行受控比较，发现图像编辑产生更可靠的任务级关键帧，具有更好的视觉保真度和显着降低的推理成本。受这一观察的启发，我们提出了 SWEET，这是一种一次性稀疏视觉规划框架，它通过连续的图像编辑，以语言指令和可选的基于箭头的空间指导为条件，逐步生成一系列与任务相关的操作关键帧。然后，目标条件扩散动作预测器将相邻的想象关键帧转换为可执行的动作块。为了减少真实和编辑的视觉子目标之间的不匹配，我们进一步引入了带有过滤编辑目标的混合训练策略。 DROID 和 RoboMimic 上的实验表明，SWEET 改进了可见和未见场景的关键帧预测，并实现了从顺序关键帧规划到可执行机器人动作的完整流程，这表明图像编辑是体现视觉预测的一个有前途且尚未充分探索的方向。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Visual prediction has emerged as a promising paradigm for embodied control, where future observations are generated and then translated into actions. However, dense video generation is computationally expensive and often unnecessary for many manipulation tasks, whose progress can be summarized by a small number of task-relevant visual states. In this work, we study whether image editing models can serve as sparse visual world models for robot manipulation by predicting task-level future states without dense video rollout. We first conduct a controlled comparison between the video generation model Wan2.2 and the image editing model FLUX-Kontext under the same robotic data setting, and find that image editing produces more reliable task-level keyframes with better visual fidelity and substantially lower inference cost. Motivated by this observation, we propose SWEET, a one-shot sparse visual planning framework that progressively generates a sequence of task-relevant manipulation keyframes through successive image editing, conditioned on language instructions and optional arrow-based spatial guidance. A goal-conditioned diffusion action predictor then converts adjacent imagined keyframes into executable action chunks. To reduce the mismatch between real and edited visual subgoals, we further introduce a mixed-training strategy with filtered edited targets. Experiments on DROID and RoboMimic show that SWEET improves keyframe prediction across seen and unseen scenes and enables a full pipeline from sequential keyframe planning to executable robot actions, suggesting that image editing is a promising and underexplored direction for embodied visual prediction.</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2605.19319v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2605.19319" target="_blank" rel="noopener">Abs</a>
+          
+          
+          
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">7/7</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2605.19728" target="_blank" rel="noopener">Aero-World: Action-Conditioned Aerial Video Generation from Inertial Controls</a></h2>
+            <p class="paper-title-zh">航空世界：通过惯性控制生成动作条件航空视频</p>
+          </div>
+        </div>
+        <p class="sel-reason">惯性控制信号驱动航拍视频生成，6自由度飞行动作条件世界模型</p>
+        <div class="sel-tags"><span class="sel-tag">世界模型</span><span class="sel-tag">生成模型</span><span class="sel-tag">视频生成</span></div>
+        <div class="paper-meta">
+          <span class="authors">Abdul Mohaimen Al Radi, Kunyang Li, Yuzhang Shang, Mubarak Shah, Yu Tian</span>
+        </div>
+        <p class="paper-abstract">基础视频模型产生了令人印象深刻的视觉结果，但它们在具体人工智能中的使用仍然有限，因为它们主要接受自然语言而不是低级控制信号的训练。这种限制对于空中飞行尤其明显，其中运动发生在不受约束的 6 自由度空间中，自我运动中的小误差可能会产生较大的轨迹漂移。生成遵循细粒度惯性动作的航空视频可以通过为现实世界或昂贵的模拟数据提供可控代理来支持航空代理的可扩展训练和评估。为了解决这个问题，我们提出了 \textbf{Aero-World}，一种将预训练的图像到视频扩散模型转换为可控航空视频生成器的方法。 Aero-World 通过动作令牌流将平移加速度和角速度序列注入到预先训练的潜在扩散变压器中。冻结潜在空间物理探针在真实视频 IMU 对上独立训练，在 LoRA 微调期间提供可微分的惯性一致性监督，同时避免计算成本高昂的视频解码。我们进一步提出 \textbf{AeroBench}，这是一个评估生成的无人机视频是否遵循低级动作信号的基准。 AeroBench 使用动作对齐分数 (AAS) 来测量与命令惯性动作的一致性，并使用物理一致性率 (PCR) 来测量时间运动稳定性。在 AeroBench 上，Aero-World 将平均 AAS 从仅动作微调的 57.7 提高到 63.6，并提供了比 AirScape 更强的质量控制权衡，具有更低的 FVD（596.5 与 1058.6）、更高的 SSIM（0.595 与 0.505）以及更高的 Flow-IMU 相关性（0.44 与 0.20）。这些结果表明，冻结的物理探针监督是一种实用的机制，可以使预训练的视频生成器适应更符合动作的空中运动。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Foundation video models produce visually impressive results, but their use in embodied AI remains limited because they are primarily trained on natural language rather than low-level control signals. This limitation is especially pronounced for aerial flight, where motion occurs in unconstrained 6-DoF space and small errors in ego-motion can produce large trajectory drift. Generating aerial videos that follow fine-grained inertial actions can support scalable training and evaluation of aerial agents by providing a controllable proxy for real-world or expensive simulation data. To address this problem, we propose \textbf{Aero-World}, a method for converting a pretrained image-to-video diffusion model into a controllable aerial video generator. Aero-World injects sequences of translational acceleration and angular velocity into a pretrained latent diffusion transformer through an action-token stream. A frozen latent-space Physics Probe, trained independently on real video--IMU pairs, provides differentiable inertial-consistency supervision during LoRA finetuning while avoiding computationally expensive video decoding. We further propose \textbf{AeroBench}, a benchmark for evaluating whether generated drone videos adhere to low-level action signals. AeroBench uses Action Alignment Score (AAS) to measure agreement with commanded inertial actions and Physical Consistency Rate (PCR) to measure temporal motion stability. On AeroBench, Aero-World improves mean AAS from 57.7 to 63.6 over action-only finetuning and gives a stronger quality-control trade-off than AirScape, with lower FVD (596.5 vs. 1058.6), higher SSIM (0.595 vs. 0.505), and higher Flow-IMU correlation (0.44 vs. 0.20). These results suggest that frozen Physics Probe supervision is a practical mechanism for adapting pretrained video generators toward more action-aligned aerial motion.</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2605.19728v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2605.19728" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2605.19728v1" target="_blank" rel="noopener">HTML</a>
+          
+          
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2605.19728v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19728v1/x1.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.19728v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19728v1/x2.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.19728v1/ood2.jpg" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19728v1/ood2.jpg" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.19728v1/id1.jpg" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19728v1/id1.jpg" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+    </ul>
+  </div>
+  
+  <div class="sel-category">
+    <h3 class="sel-cat-name">3D/4D 重建与生成<span class="sel-cat-count">（5）</span></h3>
+    <ul class="sel-paper-list">
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">1/5</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2605.19539" target="_blank" rel="noopener">Trust It or Not: Evidential Uncertainty for Feed-Forward 3D Reconstruction with Trust3R</a></h2>
+            <p class="paper-title-zh">信不信由你：使用 Trust3R 进行前馈 3D 重建的证据不确定性</p>
+          </div>
+        </div>
+        <p class="sel-reason">为前馈3D重建引入证据不确定性，让几何预测自带可信度不再盲目信任</p>
+        <div class="sel-tags"><span class="sel-tag">3D重建</span><span class="sel-tag">feed-forward</span><span class="sel-tag">顶会</span><span class="sel-tag">开源</span></div>
+        <div class="paper-meta">
+          <span class="authors">Zihao Zhu, Wenyuan Zhao, Nuo Chen, Chao Tian, Zhiwen Fan</span>
+        </div>
+        <p class="paper-abstract">几何基础模型有望根据未校准的图像进行无约束的密集几何预测。然而，在当前的前馈设计中，它们的预测置信度分数是启发式的，缺乏概率解释，并且通常无法表明预测的几何结构在何处以及在多大程度上可以被信任。为了解决这一差距，我们提出了 Trust3R，这是一种用于前馈 3D 重建的轻量级证据不确定性框架。 Trust3R 将门控残差均值细化与正态逆威沙特证据头相结合，产生每点几何不确定性的封闭式多元 Student-t 分布。该设计提供了基于概率的点图不确定性估计，同时增加了适度的推理开销。我们对不同的室内和室外基准进行评估，并与 MASt3R 的内置置信度图以及跨越单通道异方差回归和基于采样的方法（例如 MC dropout 和深度集成）的常见不确定性基线进行比较。实验结果表明，Trust3R 持续提高了风险覆盖率和稀疏化，并且总体上提高了几何精度。这些成果反映在基准测试中更强的不确定性排名上，ScanNet++ 上的 AURC 降低了 25%，AUSE 降低了 41%，为下游几何管道中的不确定性感知权重提供了实用的可靠性信号。项目页面和代码可在 https://trust3r-z.github.io/ 获取。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Geometric foundation models hold promise for unconstrained dense geometry prediction from uncalibrated images. However, in current feed-forward designs, their predicted confidence scores are heuristic, lack probabilistic interpretation, and often fail to indicate where and how much the predicted geometry can be trusted. To address this gap, we present Trust3R, a lightweight evidential uncertainty framework for feed-forward 3D reconstruction. Trust3R combines gated residual mean refinement with a Normal-Inverse-Wishart evidential head, yielding a closed-form multivariate Student-t distribution for per-point geometric uncertainty. This design provides probabilistically grounded pointmap uncertainty estimates while adding moderate inference overhead. We evaluate on diverse indoor and outdoor benchmarks and compare against MASt3R&#39;s built-in confidence map as well as common uncertainty-aware baselines spanning single-pass heteroscedastic regression and sampling-based methods such as MC dropout and deep ensembles. Experimental results show that Trust3R consistently improves risk-coverage and sparsification, and generally improves geometric accuracy. These gains are reflected in stronger uncertainty ranking across benchmarks, with 25% lower AURC and 41% lower AUSE on ScanNet++, providing a practical reliability signal for uncertainty-aware weighting in downstream geometry pipelines. The project page and code are available at https://trust3r-z.github.io/.</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2605.19539v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2605.19539" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2605.19539v1" target="_blank" rel="noopener">HTML</a>
+          
+          <a class="project" href="https://trust3r-z.github.io/" target="_blank" rel="noopener">Project</a>
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2605.19539v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19539v1/x1.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.19539v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19539v1/x2.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.19539v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19539v1/x3.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.19539v1/x4.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19539v1/x4.png" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">2/5</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2605.19786" target="_blank" rel="noopener">Fast 4D Mesh Generation by Spatio-Temporal Attention Chains</a></h2>
+            <p class="paper-title-zh">通过时空注意力链快速生成 4D 网格</p>
+          </div>
+        </div>
+        <p class="sel-reason">NVIDIA训练免4D网格生成，时空注意力链加速动态3D结构从视频中恢复</p>
+        <div class="sel-tags"><span class="sel-tag">4D重建</span><span class="sel-tag">3D重建</span><span class="sel-tag">开源</span></div>
+        <div class="paper-meta">
+          <span class="authors">Dvir Samuel, Yuval Atzmon, Gal Chechik, Yoni Kasten</span>
+        </div>
+        <p class="paper-abstract">4D 网格生成最近已成为从视频中恢复动态 3D 结构的强大范例，但现有方法仍然缓慢、计算成本昂贵，并且难以扩展到更长的序列。我们引入了一种免训练方法，可加速 4D 网格生成，同时提高时间对应质量。我们的主要观察结果是，早在生成的网格在视觉上变得准确之前，时间对应关系就出现在 4D 主干内部。我们通过一个称为时空注意力链的通用框架来利用这一点，该框架跨空间和时间传播信息。从锚网格上的顶点开始，链将顶点映射到潜在标记。然后，它遵循潜在空间中的时间对应关系，并通过潜在到顶点的注意力恢复特定于帧的顶点。这种设计避免了昂贵的显式匹配，同时保留了锚定网格细节，从而提高了动态网格几何形状和时间一致性。
+  与最先进的方法相比，我们的方法可在 9 秒内生成 4D 网格，实现 $13\times$ 的加速，同时产生更高质量的结果。此外，我们的方法可以扩展到长达 16 美元\倍的视频，而不会降低网格质量。除了生成之外，改进的对应关系还可以在两个下游任务上实现具有竞争力的零样本性能：2D 对象跟踪和 4D 跟踪。我们进一步表明，我们的框架能够实现可靠的相机估计，这是先前 4D 网格生成方法不支持的功能。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>4D mesh generation has recently emerged as a powerful paradigm for recovering dynamic 3D structure from videos, but existing methods remain slow, computationally expensive, and difficult to scale to longer sequences. We introduce a training-free approach that accelerates 4D mesh generation while improving temporal correspondence quality. Our key observation is that temporal correspondences emerge inside a 4D backbone long before its generated meshes become visually accurate. We exploit this with a general framework we call Spatio-Temporal Attention Chain which propagates information across space and time. Starting from vertices on an anchor mesh, the chain maps vertices to latent tokens. It then follows temporal correspondences in latent space, and recovers frame-specific vertices through latent-to-vertex attention. This design avoids expensive explicit matching while preserving anchor mesh details and thereby improving dynamic mesh geometry and temporal consistency.
+  Compared to state-of-the-art, our method generates a 4D mesh in 9 seconds, achieving a $13\times$ speedup while producing higher-quality results. Moreover, our approach scales to videos up to $16\times$ longer without degrading mesh quality. Beyond generation, the improved correspondences enable competitive zero-shot performance on two downstream tasks: 2D object tracking and 4D tracking. We further show that our framework enables reliable camera estimation, a capability not supported by prior 4D mesh generation methods.</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2605.19786v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2605.19786" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2605.19786v1" target="_blank" rel="noopener">HTML</a>
+          
+          
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2605.19786v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19786v1/x1.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.19786v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19786v1/x2.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.19786v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19786v1/x3.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.19786v1/x4.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19786v1/x4.png" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">3/5</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2605.19656" target="_blank" rel="noopener">Cross-View Splatter: Feed-Forward View Synthesis with Georeferenced Images</a></h2>
+            <p class="paper-title-zh">Cross-View Splatter：具有地理参考图像的前馈视图合成</p>
+          </div>
+        </div>
+        <p class="sel-reason">前馈合成卫星+地面跨视图高斯泼溅，地理参照大幅外景覆盖范围</p>
+        <div class="sel-tags"><span class="sel-tag">3D重建</span><span class="sel-tag">3DGS</span><span class="sel-tag">feed-forward</span><span class="sel-tag">顶会</span><span class="sel-tag">开源</span></div>
+        <div class="paper-meta">
+          <span class="authors">Matias Turkulainen, Akshay Krishnan, Filippo Aleotti, Mohamed Sayed, Guillermo Garcia-Hernando</span>
+        </div>
+        <p class="paper-abstract">我们提出了 Cross-View Splatter，这是一种前馈方法，可以预测地面和卫星捕获的室外场景的像素对齐高斯斑点。忠实的重建需要良好的摄像机覆盖范围，但地面图像非常耗时，而且很难大规模捕捉大型户外场景。幸运的是，卫星图像可以提供全局几何先验，可以通过公共 API 轻松访问。 Cross-View Splatter 将正射卫星视图与 GPS 标记的地面照片融合在一起，以预测统一 3D 坐标系中的高斯分布。通过对齐地面和鸟瞰特征表示，与单独的地面图像相比，我们的模型提高了场景覆盖范围和新颖的视图合成。我们使用从开放地图服务中挖掘的精选地理参考数据集和配对卫星地形数据进行训练。我们在新的视图合成新基准上评估我们的方法，并使用地理参考图像来与之前最先进的方法进行比较。我们的代码和数据准备将在 https://nianticspatial.github.io/cross-view-splatter/ 上提供。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>We present Cross-View Splatter, a feed-forward method that predicts pixel-aligned Gaussian splats for outdoor scenes captured at ground level AND by satellite. Faithful reconstructions require good camera coverage, but ground imagery is time-consuming and hard to capture at scale for large outdoor scenes. Fortunately, satellite imagery can provide a global geometric prior that is easy to access via public APIs. Cross-View Splatter fuses orthorectified satellite views with GPS-tagged ground photos to predict Gaussian splats in a unified 3D coordinate frame. By aligning ground and bird&#39;s-eye feature representations, our model improves scene coverage and novel-view synthesis, compared to ground imagery alone. We train on curated georeferenced datasets and paired satellite-terrain data, mined from open mapping services. We evaluate our method on a new benchmark for novel-view synthesis with georeferenced imagery allowing comparison to prior state-of-the-art methods. Our code and data preparation will be available at https://nianticspatial.github.io/cross-view-splatter/.</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2605.19656v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2605.19656" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2605.19656v1" target="_blank" rel="noopener">HTML</a>
+          
+          <a class="project" href="https://nianticspatial.github.io/cross-view-splatter/" target="_blank" rel="noopener">Project</a>
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2605.19656v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19656v1/x2.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.19656v1/images/model_outputs/ie89qSfaHCgkpUQ4uOT6W7/context_1_gt.jpg" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19656v1/images/model_outputs/ie89qSfaHCgkpUQ4uOT6W7/context_1_gt.jpg" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.19656v1/images/model_outputs/ie89qSfaHCgkpUQ4uOT6W7/context_4_gt.jpg" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19656v1/images/model_outputs/ie89qSfaHCgkpUQ4uOT6W7/context_4_gt.jpg" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.19656v1/images/model_outputs/ie89qSfaHCgkpUQ4uOT6W7/sat.jpg" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19656v1/images/model_outputs/ie89qSfaHCgkpUQ4uOT6W7/sat.jpg" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">4/5</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2605.20185" target="_blank" rel="noopener">PiG-Avatar: Hierarchical Neural-Field-Guided Gaussian Avatars</a></h2>
+            <p class="paper-title-zh">PiG-Avatar：分层神经场引导高斯化身</p>
+          </div>
+        </div>
+        <p class="sel-reason">层次化神经场引导高斯avatar，解耦身体模板变形与离体衣物几何表示</p>
+        <div class="sel-tags"><span class="sel-tag">3D重建</span><span class="sel-tag">3DGS</span><span class="sel-tag">NeRF</span></div>
+        <div class="paper-meta">
+          <span class="authors">Julian Kaltheuner, Jan Spindler, Sina Kitz, Patrick Stotko, Reinhard Klein</span>
+        </div>
+        <p class="paper-abstract">现有的高斯化身方法通常参数化身体模板表面上的几何形状，这将化身的表示空间与模板的变形空间纠缠在一起，并限制了分层、离体和非刚性服装几何形状的捕获。我们提出了 PiG-Avatar，它通过仅使用参数化身体模型进行运动学传输来解决这一限制，同时将化身表示为锚定在由连续神经场控制的体积规范空间中的高斯分布。这将表示与模板拓扑解耦，避免了基于表面的参数化的几何约束。通过 3D 重心锚传输来保持运动学一致性，它可以在不限制几何形状的情况下引导运动，并允许锚自由偏离模板表面，从而通过构造产生密集、稳定的时间表面对应关系。为了使这种无约束的公式易于处理，我们引入了双层空间相干优化，将 Sobolev 预处理的神经场更新与基于 KNN 的新型规范锚几何预处理相结合。这些机制共同引发了锚点密度的新兴自组织：锚点在没有明确启发的情况下向高曲率、外观变化和非相干运动的区域迁移。因此，复杂的服装几何形状和分层表面成为自然的高保真输出。这种单一表示进一步支持跨多个细节级别的分层重建，粗级监督通过共享字段和耦合锚图传播到更精细的级别。在以复杂服装和具有挑战性的非刚性运动为特征的既定基准上，PiG-Avatar 实现了最先进的渲染质量，稳健地推广到不完美的身体模型初始化，并在所有细节级别上实时渲染。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Existing Gaussian avatar methods typically parameterize geometry on a body-template surface, which entangles the avatar&#39;s representation space with the template&#39;s deformation space and limits the capture of layered, off-body, and non-rigid clothing geometry. We present PiG-Avatar, which addresses this limitation by using the parametric body model solely for kinematic transport, while representing the avatar as Gaussians anchored in a volumetric canonical space governed by a continuous neural field. This decouples representation from template topology, avoiding the geometric constraints of surface-based parameterizations. Kinematic coherence is maintained through 3D barycentric anchor transport, which guides motion without constraining geometry and allows anchors to deviate freely from the template surface, yielding dense, stable temporal surface correspondences by construction. To make this unconstrained formulation tractable, we introduce dual-level spatially coherent optimization, combining Sobolev-preconditioned neural-field updates with a novel KNN-based preconditioning of canonical anchor geometry. Together, these mechanisms induce an emergent self-organization of anchor density: anchors migrate toward regions of high curvature, appearance variation, and non-coherent motion without explicit heuristics. As a result, complex clothing geometry and layered surfaces emerge as natural, high-fidelity outputs. This single representation further supports hierarchical reconstruction across multiple levels of detail, with coarse-level supervision propagating to finer levels through the shared field and coupled anchor graph. On established benchmarks featuring subjects with complex clothing and challenging non-rigid motion, PiG-Avatar achieves state-of-the-art rendering quality, generalizes robustly to imperfect body model initialization, and renders in real time across all detail levels.</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2605.20185v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2605.20185" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2605.20185v1" target="_blank" rel="noopener">HTML</a>
+          
+          
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2605.20185v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.20185v1/x1.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.20185v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.20185v1/x2.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.20185v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.20185v1/x3.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.20185v1/x4.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.20185v1/x4.png" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">5/5</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2605.19304" target="_blank" rel="noopener">MMGS: 10$\times$ Compressed 3DGS through Optimal Transport Aggregation based on Multi-view Ranking</a></h2>
+            <p class="paper-title-zh">MMGS：通过基于多视图排序的最佳传输聚合，10$\times$ 压缩 3DGS</p>
+          </div>
+        </div>
+        <p class="sel-reason">多视图排序+最优传输聚合实现10倍3DGS压缩，大幅削减冗余基元</p>
+        <div class="sel-tags"><span class="sel-tag">3DGS</span><span class="sel-tag">3D重建</span></div>
+        <div class="paper-meta">
+          <span class="authors">Beizhen Zhao, Sicheng Yu, Ziran Yin, Dongxu Shen, Hao Wang</span>
+        </div>
+        <p class="paper-abstract">虽然 3D 高斯分布 (3DGS) 彻底改变了 3D 重建，但由于大量冗余基元，它的开销很大。现有的压缩方法通常依赖于局部采样或固定修剪阈值，这通常很难在冗余减少与高保真渲染之间取得平衡。为了解决这个问题，我们提出了一种新颖的框架，将高斯优化表述为全局几何分布匹配问题。具体来说，我们的方法集成了三个组成部分：（1）我们引入了多视图 3D 高斯贡献排名机制，该机制使用几何一致性而不是局部启发式来过滤基元； （2）我们提出了一种基于全局最优传输（OT）的聚合算法，该算法合并冗余基元，同时保留底层几何结构； （3）我们设计了一个基于 OT 的致密化算子，它保持高斯分布特性以实现稳定优化。与普通 3DGS 相比，我们的方法仅使用 \textbf{10$\%$} 基元就实现了最先进的渲染质量，并且 \textbf{10$\times$} 加速了训练速度。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>While 3D Gaussian Splatting (3DGS) has revolutionized 3D reconstruction, it suffers from significant overhead due to massive redundant primitives. Existing compression methods typically rely on local sampling or fixed pruning thresholds, which often struggle to balance redundancy reduction with high-fidelity rendering. To address this, we propose a novel framework that formulates Gaussian optimization as a global geometric distribution matching problem. Specifically, our approach integrates three components: (1) we introduce a multi-view 3D Gaussian contribution ranking mechanism that filters primitives using geometric consistency instead of local heuristics; (2) we propose a global Optimal Transport (OT)-based aggregation algorithm that merges redundant primitives while preserving the underlying geometry; and (3) we design an OT-based densification operator that maintains the Gaussian&#39;s distributional properties for stable optimization. Our approach achieves state-of-the-art rendering quality with only \textbf{10$\%$} primitives and \textbf{10$\times$} accelerated training speeds compared to vanilla 3DGS.</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2605.19304v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2605.19304" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2605.19304v1" target="_blank" rel="noopener">HTML</a>
+          
+          
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2605.19304v1/figs/f1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19304v1/figs/f1.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.19304v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19304v1/x1.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.19304v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19304v1/x2.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.19304v1/figs/compression_comparison.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19304v1/figs/compression_comparison.png" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+    </ul>
+  </div>
+  
+  <div class="sel-category">
+    <h3 class="sel-cat-name">自动驾驶与机器人<span class="sel-cat-count">（7）</span></h3>
+    <ul class="sel-paper-list">
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">1/7</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2605.19678" target="_blank" rel="noopener">RoVLA: Multi-Consistency Constraints for Robust Vision-Language-Action Models</a></h2>
+            <p class="paper-title-zh">RoVLA：鲁棒视觉-语言-动作模型的多重一致性约束</p>
+          </div>
+        </div>
+        <p class="sel-reason">多一致性约束训练鲁棒VLA，对抗视觉扰动+语言改写+复合干扰不退化</p>
+        <div class="sel-tags"><span class="sel-tag">VLA</span><span class="sel-tag">具身智能</span><span class="sel-tag">操控</span><span class="sel-tag">开源</span></div>
+        <div class="paper-meta">
+          <span class="authors">Jingzhou Luo, Yifan Wen, Yongjie Bai, Xinshuai Song, Yang Liu</span>
+        </div>
+        <p class="paper-abstract">视觉-语言-动作（VLA）模型在具体操作方面表现出强大的性能，但在视觉观察变化、释义语言指令和复合扰动下仍然脆弱。这种限制表明现有方法仍然严重依赖于训练分布中的浅层相关性，而不是学习任务语义、环境状态和动作生成之间的稳定耦合。尽管最近的努力通过更大规模的训练、训练后适应或增强的预测模型来提高鲁棒性，但它们很少在端到端策略本身中强制执行面向不变性的一致性。为了解决这个问题，我们提出了 RoVLA，一个具有多重一致性约束的强大的视觉-语言-动作框架。 RoVLA 在三个互补转换下强制执行一致性：指令语义、轨迹演化和观察扰动。具体来说，指令一致性（IC）促进语义等效指令重写下的稳定基础，进化一致性（EC）在整个生成过程中保持一致的动作意图，观察一致性（OC）通过在目标干扰之前和之后强制执行一致的预测来提高对视觉和本体感觉扰动的鲁棒性。通过在训练期间对这些不变性进行显式建模，RoVLA 减少了对表面相关性的依赖，并提高了鲁棒性和泛化性。 LIBERO-Plus、RoboTwin 2.0 和现实世界操作任务的实验表明，RoVLA 始终优于强大的基线方法，并在不同的任务和观察变化下表现出卓越的鲁棒性。这些结果证明了多重一致性学习对于鲁棒体现控制的有效性。代码可在 https://github.com/HCPLab-SYSU/RoVLA 获取。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Vision-Language-Action (VLA) models have shown strong performance on embodied manipulation, yet they remain brittle under visual observation changes, paraphrased language instructions, and compounded perturbations. This limitation suggests that existing methods still rely heavily on shallow correlations in the training distribution, rather than learning stable couplings among task semantics, environment states, and action generation. Although recent efforts improve robustness through larger-scale training, post-training adaptation, or enhanced predictive modeling, they rarely enforce invariance-oriented consistency within the end-to-end policy itself. To address this issue, we propose RoVLA, a robust vision-language-action framework with multi-consistency constraints. RoVLA enforces consistency under three complementary transformations: instruction semantics, trajectory evolution, and observation perturbation. Specifically, Instructional Consistency (IC) promotes stable grounding under semantically equivalent instruction rewrites, Evolutionary Consistency (EC) preserves coherent action intent throughout the generation process, and Observational Consistency (OC) improves robustness to visual and proprioceptive perturbations by enforcing consistent predictions before and after targeted disturbances. By explicitly modeling these invariances during training, RoVLA reduces reliance on superficial correlations and improves robustness and generalization. Experiments on LIBERO-Plus, RoboTwin 2.0, and real-world manipulation tasks show that RoVLA consistently outperforms strong baseline methods and exhibits superior robustness under diverse task and observation shifts. These results demonstrate the effectiveness of multi-consistency learning for robust embodied control. Codes will be available at https://github.com/HCPLab-SYSU/RoVLA.</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2605.19678v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2605.19678" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2605.19678v1" target="_blank" rel="noopener">HTML</a>
+          <a class="code" href="https://github.com/HCPLab-SYSU/RoVLA" target="_blank" rel="noopener">Code</a>
+          
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2605.19678v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19678v1/x1.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.19678v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19678v1/x2.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.19678v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19678v1/x3.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.19678v1/x4.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19678v1/x4.png" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">2/7</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2605.19029" target="_blank" rel="noopener">Distributionally Robust Control via Stein Variational Inference for Contact-Rich Manipulation</a></h2>
+            <p class="paper-title-zh">通过 Stein 变分推理进行分布鲁棒控制，实现接触丰富的操作</p>
+          </div>
+        </div>
+        <p class="sel-reason">Stein变分推断实现分布鲁棒控制，小样本下接触式操控策略不崩</p>
+        <div class="sel-tags"><span class="sel-tag">机器人</span><span class="sel-tag">操控</span><span class="sel-tag">顶会</span></div>
+        <div class="paper-meta">
+          <span class="authors">Hrishikesh Sathyanarayan, Victor Vantilborgh, Harish Ravichandar, Tom Lefebvre, Ian Abraham</span>
+        </div>
+        <p class="paper-abstract">可靠的机器人操纵需要能够准确表示和适应因接触丰富的交互而产生的不确定性的控制策略。现代数据驱动方法通过大规模训练和计算来减轻不确定性，并在训练样本数量有限的情况下显着降低性能。相比之下，基于经典模型的控制器在计算上高效且可靠，但其表示任务相关不确定性的能力有限，可能会阻碍接触丰富的交互中的性能。
+  在这项工作中，我们建议通过更灵活的不确定性建模来扩展基于模型的操纵控制的能力，该建模在保留性能的同时准确适应不确定性。我们的方法将操纵问题视为分布式鲁棒控制优化，并提出了一种基于 Stein 变分推理的新颖确定性公式，该公式在显式建模任务敏感参数不确定性的同时保持性能。因此，派生控制器更加了解任务对不确定性的敏感性，从而在不影响性能的情况下产生高可靠性。实验结果表明，在广泛的参数不确定性下，一系列接触丰富的操作任务的鲁棒性提高了 3 倍，优于现有的基于模型的控制方法。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Reliable robotic manipulation requires control policies that can accurately represent and adapt to uncertainty arising from contact-rich interactions. Modern data-driven methods mitigate uncertainty through large-scale training and computation, and degrade significantly in performance with limited number of training samples. By contrast, classical model-based controllers are computationally efficient and reliable, but their limited ability to represent task-relevant uncertainty can hinder performance in contact-rich interactions.
+  In this work, we propose to expand the capabilities of model-based manipulation control through more flexible uncertainty modeling that retains performance while exactly adapting to uncertainty. Our approach casts the manipulation problem as a distributionally robust control optimization and proposes a novel deterministic formulation based on Stein variational inference that preserves performance while explicitly modeling task-sensitive parameter uncertainty. As a result, the derived controllers are more aware of task sensitivities to uncertainty, yielding high reliability without compromising performance. Experimental results demonstrate up to 3$\times$ improved robustness across a range of contact-rich manipulation tasks under broad parametric uncertainty, outperforming existing model-based control methods.</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2605.19029v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2605.19029" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2605.19029v1" target="_blank" rel="noopener">HTML</a>
+          
+          
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2605.19029v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19029v1/x1.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.19029v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19029v1/x2.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.19029v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19029v1/x3.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.19029v1/figs/results/hw_cup_experiment_figure.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19029v1/figs/results/hw_cup_experiment_figure.png" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">3/7</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2605.19580" target="_blank" rel="noopener">PAPO-VLA: Planning-Aware Policy Optimization for Vision-Language-Action Models</a></h2>
+            <p class="paper-title-zh">PAPO-VLA：视觉-语言-行动模型的规划感知政策优化</p>
+          </div>
+        </div>
+        <p class="sel-reason">规划感知策略优化让VLA看得更远，闭环交互中每步动作都为后续执行铺路</p>
+        <div class="sel-tags"><span class="sel-tag">VLA</span><span class="sel-tag">具身智能</span><span class="sel-tag">操控</span></div>
+        <div class="paper-meta">
+          <span class="authors">Peizheng Guo, Jingyao Wang, Changwen Zheng, Wenwen Qiang</span>
+        </div>
+        <p class="paper-abstract">视觉-语言-动作（VLA）模型在语言引导的机器人任务中显示出有前途的能力。然而，使VLA策略可靠仍然具有挑战性，因为操纵任务是通过闭环交互完成的，其中每个动作都会影响后续的执行。为了分析这个问题，我们重新审视执行过程中的 VLA 策略，并认为 VLA 策略既充当规划者（做出改变执行方向的面向任务的决策），又充当执行者（通过密集的连续行动实现这些决策）。这种观点表明，提高 VLA 可靠性需要特别注意规划行动。现有的优化方法可以模仿行动或改进完整的轨迹，但它们通常不会明确识别规划行动或衡量其对任务成功的重要性。为了解决这个问题，我们提出了 VLA 模型的规划感知策略优化（PAPO-VLA）。 PAPO-VLA首先通过共同考虑行动变化和轨迹结果来确定规划行动，然后通过因果充分性和因果必要性来估计其重要性，最后将这种重要性纳入GRPO优势估计中。这样，更重要的规划动作会受到更强的优化重视，而整个轨迹仍然通过轨迹级反馈进行优化​​。多个基准的实验证明了 PAPO-VLA 的有效性。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Vision-Language-Action (VLA) models show promising ability in language-guided robotic tasks. However, making VLA policies reliable remains challenging, because a manipulation task is completed through closed-loop interaction, where each action affects subsequent execution. To analyze this problem, we revisit VLA policy during execution and argue that a VLA policy acts both as a planner, which makes task-oriented decisions that change the direction of execution, and as an executor, which realizes these decisions through dense continuous actions. This view suggests that improving VLA reliability requires particular attention to planning actions. Existing optimization methods can imitate actions or improve complete trajectories, but they usually do not explicitly identify planning actions or measure their importance for task success. To address this issue, we propose Planning-Aware Policy Optimization for VLA models (PAPO-VLA). PAPO-VLA first identifies planning actions by jointly considering action variation and trajectory outcome, then estimates their importance through causal sufficiency and causal necessity, and finally incorporates this importance into GRPO advantage estimation. In this way, more important planning actions receive stronger optimization emphasis, while the whole trajectory is still optimized by trajectory-level feedback. Experiments on multiple benchmarks demonstrate the effectiveness of PAPO-VLA.</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2605.19580v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2605.19580" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2605.19580v1" target="_blank" rel="noopener">HTML</a>
+          
+          
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2605.19580v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19580v1/x1.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.19580v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19580v1/x2.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.19580v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19580v1/x3.png" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">4/7</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2605.19981" target="_blank" rel="noopener">CEER: Compliant End-Effector and Root Control as a Unified Interface for Hierarchical Humanoid Loco-Manipulation</a></h2>
+            <p class="paper-title-zh">CEER：兼容的末端执行器和根控制作为分层人形机器人操作的统一接口</p>
+          </div>
+        </div>
+        <p class="sel-reason">末端+根关节统一柔顺接口，层级化人形机器人全身协同移动操控</p>
+        <div class="sel-tags"><span class="sel-tag">机器人</span><span class="sel-tag">具身智能</span><span class="sel-tag">操控</span><span class="sel-tag">开源</span></div>
+        <div class="paper-meta">
+          <span class="authors">Xinyuan Luo, Xingrui Chen, Xunjian Yin, Hongxuan Wu, Boxi Xia</span>
+        </div>
+        <p class="paper-abstract">人形机器人已经取得了令人印象深刻的运动性能，但丰富的接触和长视野操作仍然是一个主要瓶颈。操纵本质上是接触丰富的，需要兼容的全身控制来实现稳定的交互，而其多样性和长视野性质有利于模块化、与规划器兼容的接口，而不是关节空间跟踪。
+  我们提出了 CEER，这是一种兼容的末端执行器根 (EE-root) 控制抽象，用于分层规划框架内的模块化人形机器人操作。 CEER 在由根运动命令和末端执行器姿势目标定义的可解释任务空间中实现合规性感知全身控制，并支持与异构高级规划器的即插即用集成。采用师生框架将通用运动跟踪控制器提炼为仅消耗 EE-root 命令的低级策略。
+  我们进一步构建了一个分层系统，通过 EE-root 接口集成异构规划器和任务模块，从而无需重新训练底层整体策略即可实现多样化的操作任务。仿真和硬件实验表明，末端执行器跟踪精度为 3.3 厘米，与基线相比，抖动显着降低，远程操作下的稳定接触丰富操作，以及在房间规模环境中模拟单对象局部操作任务的成功率高达 70%。这些结果表明，兼容的 EE 根控制为人形机器人操作提供了实用的抽象，从而实现了不同技能的模块化和可扩展集成。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Humanoid robots have achieved impressive locomotion performance, yet contact-rich and long-horizon manipulation remains a major bottleneck. Manipulation is inherently contact-rich and demands compliant whole-body control for stable interaction, while its diversity and long-horizon nature favor modular, planner-compatible interfaces over joint-space tracking.
+  We propose CEER, a compliant end-effector-root (EE-root) control abstraction for modular humanoid loco-manipulation within a hierarchical planning framework. CEER enables compliance-aware whole-body control in an interpretable task space defined by root motion commands and end-effector pose targets, and supports plug-and-play integration with heterogeneous high-level planners. A teacher-student framework is adopted to distill a general motion-tracking controller into a low-level policy that consumes only EE-root commands.
+  We further construct a hierarchical system that integrates heterogeneous planners and task modules through the EE-root interface, enabling diverse manipulation tasks without retraining the underlying whole-body policy. Experiments in simulation and on hardware demonstrate 3.3 cm end-effector tracking accuracy with substantially reduced jerk compared to baselines, stable contact-rich manipulation under teleoperation, and up to 70% success in simulated single-object loco-manipulation tasks within a room-scale environment. These results indicate that compliant EE-root control provides a practical abstraction for humanoid loco-manipulation, enabling modular and scalable integration of diverse skills.</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2605.19981v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2605.19981" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2605.19981v1" target="_blank" rel="noopener">HTML</a>
+          
+          <a class="project" href="https://robotproject8.github.io/ceer_page/" target="_blank" rel="noopener">Project</a>
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2605.19981v1/figure/teaser.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19981v1/figure/teaser.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.19981v1/figure/system_framework.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19981v1/figure/system_framework.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.19981v1/figure/network_structure.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19981v1/figure/network_structure.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.19981v1/figure/exp2a.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19981v1/figure/exp2a.png" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">5/7</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2605.19771" target="_blank" rel="noopener">Beyond Imitation: Learning Safe End-to-End Autonomous Driving from Hard Negatives</a></h2>
+            <p class="paper-title-zh">超越模仿：从硬性否定中学习安全的端到端自动驾驶</p>
+          </div>
+        </div>
+        <p class="sel-reason">从失败案例中学习安全驾驶，突破模仿学习仅拟合成功轨迹的安全盲区</p>
+        <div class="sel-tags"><span class="sel-tag">自动驾驶</span><span class="sel-tag">端到端</span></div>
+        <div class="paper-meta">
+          <span class="authors">Junli Wang, Zhihua Hua, Xueyi Liu, Zebin Xing, Haochen Tian</span>
+        </div>
+        <p class="paper-abstract">现有的端到端自动驾驶模仿学习方法主要通过最小化与专家轨迹的几何偏差来从成功的演示中学习。这种范式隐含地假设空间邻近性意味着行为安全，从而导致严重的目标不匹配：具有几乎相同的模仿损失的轨迹可能会表现出截然不同的安全结果，其中一个仍然可恢复，而另一个则导致碰撞。为了解决这一限制，我们提出了 BeyondDrive，这是一种故障感知模仿学习框架，可以从成功和失败的驾驶行为中共同学习。首先，我们引入了一种基于流量匹配的负轨迹生成器，它合成了安全关键且接近专家的轨迹，从而能够对安全不对称性进行显式建模。其次，我们开发了一种多样性感知采样策略，可以减轻模式崩溃并提高负轨迹生成期间各种故障模式的覆盖范围。第三，我们提出了一种排斥距离损失，它同时吸引对专家演示的预测，同时将它们从硬负轨迹中排斥出来，从而在轨迹空间中建立有区别的安全边界。应用于单模态基线 Latent TransFuser 时，BeyondDrive 在 NAVSIMv1 闭环基准测试中获得了 89.7 PDMS，优于之前最先进的方法。此外，BeyondDrive 有效地推广了不同的自动驾驶架构，包括多模式规划器，并进一步在 HUGSIM 基准上展示了强大的零样本可迁移性。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Existing imitation learning methods for end-to-end autonomous driving predominantly learn from successful demonstrations by minimizing geometric deviations from expert trajectories. This paradigm implicitly assumes that spatial proximity implies behavioral safety, leading to a critical objective mismatch: trajectories with nearly identical imitation losses may exhibit drastically different safety outcomes, where one remains recoverable while the other results in collision. To address this limitation, we propose BeyondDrive, a failure-aware imitation learning framework that jointly learns from successful and failed driving behaviors. First, we introduce a flow matching-based negative trajectory generator that synthesizes safety-critical yet expert-proximate trajectories, enabling explicit modeling of safety asymmetry. Second, we develop a diversity-aware sampling strategy that mitigates mode collapse and improves coverage of diverse failure modes during negative trajectory generation. Third, we propose a Repulsive Distance Loss that simultaneously attracts predictions toward expert demonstrations while repelling them from hard negative trajectories, thereby establishing discriminative safety boundaries in trajectory space. Applied to the uni-modal baseline Latent TransFuser, BeyondDrive achieves 89.7 PDMS on the NAVSIMv1 closed-loop benchmark, outperforming prior state-of-the-art methods. Moreover, BeyondDrive generalizes effectively across different autonomous driving architectures, including multi-modal planners, and further demonstrates strong zero-shot transferability on the HUGSIM benchmark.</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2605.19771v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2605.19771" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2605.19771v1" target="_blank" rel="noopener">HTML</a>
+          
+          
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2605.19771v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19771v1/x1.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.19771v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19771v1/x2.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.19771v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19771v1/x3.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.19771v1/x4.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19771v1/x4.png" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">6/7</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2605.19919" target="_blank" rel="noopener">Beyond Action Residuals: Real-World Robot Policy Steering via Bottleneck Latent Reinforcement Learning</a></h2>
+            <p class="paper-title-zh">超越行动残差：通过瓶颈潜在强化学习进行现实世界机器人策略指导</p>
+          </div>
+        </div>
+        <p class="sel-reason">瓶颈潜变量RL轻量微调预训练策略，解决模仿学习部署不匹配无需重训</p>
+        <div class="sel-tags"><span class="sel-tag">机器人</span><span class="sel-tag">操控</span><span class="sel-tag">强化学习</span><span class="sel-tag">开源</span></div>
+        <div class="paper-meta">
+          <span class="authors">Dongjie Yu, Kun Lei, Zhennan Jiang, Jia Pan, Huazhe Xu</span>
+        </div>
+        <p class="paper-abstract">预训练的模仿策略已成为机器人操作的坚实基础，但它们通常需要在线改进以克服执行错误、有限的数据集覆盖范围和部署不匹配。因此，一个核心问题是强化学习（RL）在离线预训练后应如何调整策略。现有的轻量级方法通常直接在动作空间中应用残差校正，但这通常会导致嘈杂且结构不良的探索。在这项工作中，我们提出了 Z 扰动强化学习（ZPRL），这是一种通过紧凑的潜在瓶颈而不是通过策略权重或输出动作来引导预训练策略的方法。在离线训练期间，我们使用即插即用的变分信息瓶颈（VIB）模块来增强策略，以从观察嵌入中提取与任务相关的潜在接口。在在线微调期间，基本策略被冻结，强化学习仅学习该潜在变量的残余扰动，其解码表示条件冻结的动作生成器。我们在流匹配策略上实例化 ZPRL，并在八个模拟任务和四个现实世界任务上对其进行评估。在不同的操作设置中，ZPRL 在强大的训练后基线上提高了样本效率和最终性能。在现实世界中，ZPRL 比模仿基础策略将四项任务的平均成功率提高了 33.7%，同时产生比行动残差对应物更平滑的探索行为。这些结果表明，紧凑的、与任务一致的潜在瓶颈为在线 RL 适应提供了有效的接口。更多视频请访问 https://manutdmoon.github.io/ZPRL/。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Pretrained imitation policies have become a strong foundation for robot manipulation, but they often require online improvement to overcome execution errors, limited dataset coverage, and deployment mismatch. A central question is therefore how reinforcement learning (RL) should adapt policies after offline pretraining. Existing lightweight methods commonly apply residual corrections directly in action space, but this often leads to noisy and poorly structured exploration. In this work, we propose Z-Perturbation Reinforcement Learning (ZPRL), an approach that steers pretrained policies through a compact bottleneck latent rather than through policy weights or output actions. During offline training, we augment the policy with a plug-and-play variational information bottleneck (VIB) module to extract a task-relevant latent interface from observation embeddings. During online finetuning, the base policy is frozen and RL learns only a residual perturbation on this latent, whose decoded representation conditions the frozen action generator. We instantiate ZPRL on flow-matching policies and evaluate it on eight simulation tasks and four real-world tasks. Across diverse manipulation settings, ZPRL improves both sample efficiency and final performance over strong post-training baselines. In the real world, ZPRL improves the average success rate on four tasks by 33.7% over imitation base policies while producing smoother exploration behaviors than an action residual counterpart. These results suggest that a compact, task-aligned bottleneck latent provides an effective interface for online RL adaptation. More videos can be found at https://manutdmoon.github.io/ZPRL/.</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2605.19919v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2605.19919" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2605.19919v1" target="_blank" rel="noopener">HTML</a>
+          
+          <a class="project" href="https://manutdmoon.github.io/ZPRL/" target="_blank" rel="noopener">Project</a>
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2605.19919v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19919v1/x1.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.19919v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19919v1/x2.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.19919v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19919v1/x3.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.19919v1/x4.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19919v1/x4.png" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">7/7</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2605.19524" target="_blank" rel="noopener">SafeAlign-VLA: A Negative-Enhanced Safe Alignment Framework for Risk-Aware Autonomous Driving</a></h2>
+            <p class="paper-title-zh">SafeAlign-VLA：用于风险感知自动驾驶的负增强安全对准框架</p>
+          </div>
+        </div>
+        <p class="sel-reason">负样本增强安全对齐，让VLA自动驾驶模型不仅模仿正确行为更学会避免危险</p>
+        <div class="sel-tags"><span class="sel-tag">VLA</span><span class="sel-tag">自动驾驶</span></div>
+        <div class="paper-meta">
+          <span class="authors">Kefei Tian, Yuansheng Lian, Kai Yang, Xiangdong Chen, Shen Li</span>
+        </div>
+        <p class="paper-abstract">端到端自动驾驶系统在常见场景中表现出色，但在安全关键的长尾情况下却表现不佳。视觉-语言-动作（VLA）模型因其强大的推理能力而前景广阔。然而，大多数基于VLA的方法依赖于正面的专家论证，很少利用负面样本，导致对危险行为和安全边界的理解不足。为了解决这个限制，我们提出了 SafeAlign-VLA，这是一个统一的负增强安全对齐框架，它将负数据纳入监督学习和强化学习中。首先，我们开发了一种反事实安全配对范式，通过反事实推理从风险场景中生成结构化安全标签和反事实积极轨迹。然后，采用两阶段训练策略：对失败反馈和轨迹校正进行负增强监督微调，然后进行基于锚的群体相对策略优化，使用正负轨迹作为对比锚来引导采样并通过群体相对优势来惩罚高风险行为。 NAVSIM 和 DeepAccident 上的实验验证了所提出的框架。 SafeAlign-VLA 在 NAVSIM v1 测试集上达到 89.1 PDMS，比没有负面数据的基线提高了 1.3%。在 DeepAccident 上，它将碰撞率降低至 3.36%，同时实现了 84.2% 的语言准确率和 85.8% 的风险预测准确率。这些结果证明了所提出的负增强安全对准框架对于安全和稳健的自动驾驶的有效性。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>End-to-end autonomous driving systems excel in common scenarios but struggle with safety-critical long-tail cases. Vision-Language-Action (VLA) models are promising due to their strong reasoning capabilities. However, most VLA-based approaches rely on positive expert demonstrations, rarely exploiting negative samples, leading to insufficient understanding of risky behaviors and safety boundaries. To address this limitation, we propose SafeAlign-VLA, a unified negative-enhanced safe alignment framework that incorporates negative data into supervised learning and reinforcement learning. First, we develop a counterfactual safety pairing paradigm to generate structured safety labels and counterfactual positive trajectories from risky scenarios via counterfactual reasoning. Then, a two-stage training strategy is adopted: negative-enhanced supervised fine-tuning for failure feedback and trajectory correction, followed by anchor-based group relative policy optimization that uses positive and negative trajectories as contrastive anchors to steer sampling and penalize high-risk behaviors via group-relative advantages. Experiments on NAVSIM and DeepAccident validate the proposed framework. SafeAlign-VLA achieves 89.1 PDMS on the NAVSIM v1 testset, improving over the baseline without negative data by 1.3%. On DeepAccident, it reduces the collision rate to 3.36%, while achieving 84.2% language accuracy and 85.8% risk prediction accuracy. These results demonstrate the effectiveness of the proposed negative-enhanced safe alignment framework for safe and robust autonomous driving.</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2605.19524v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2605.19524" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2605.19524v1" target="_blank" rel="noopener">HTML</a>
+          
+          
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2605.19524v1/Figure/overall_framework.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19524v1/Figure/overall_framework.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.19524v1/Figure/training.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19524v1/Figure/training.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.19524v1/Figure/Figure6.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19524v1/Figure/Figure6.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.19524v1/Figure/qualitative_case1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19524v1/Figure/qualitative_case1.png" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+    </ul>
+  </div>
+  
+  <div class="sel-category">
+    <h3 class="sel-cat-name">VLM / LLM<span class="sel-cat-count">（2）</span></h3>
+    <ul class="sel-paper-list">
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">1/2</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2605.19792" target="_blank" rel="noopener">Mechanisms of Object Localization in Vision-Language Models</a></h2>
+            <p class="paper-title-zh">视觉语言模型中的对象定位机制</p>
+          </div>
+        </div>
+        <p class="sel-reason">揭示VLM目标定位的内部机制，追溯视觉语言模型如何从特征到空间位置</p>
+        <div class="sel-tags"><span class="sel-tag">VLM</span><span class="sel-tag">顶会</span></div>
+        <div class="paper-meta">
+          <span class="authors">Timothy Schaumlöffel, Martina G. Vilas, Gemma Roig</span>
+        </div>
+        <p class="paper-abstract">基于视觉的语言模型 (VLM) 在链接视觉和文本信息方面非常有效，但它们常常难以完成基本的分类和本地化任务。虽然分类机制已经得到了更广泛的研究，但支持对象定位的过程仍然知之甚少。在这项工作中，我们使用一套机械解释工具（包括标记消融、注意力剔除和因果中介分析）研究了两个代表性家族 LLaVA-1.5 和 InternVL-3.5。我们发现定位是由容器化机制驱动的，其中对象对齐的标记定义了对象的空间范围，而这些边界内标记的语义排列在很大程度上与预测的框无关。只有一小部分注意力头介导分类和定位的因果效应，集中在 LLaVA 的早中层和 InternVL 的中晚层。这两项任务共享一些早期处理，但最终取决于很大程度上不同的专门负责人。总体而言，我们提供了 VLM 本地化的第一层和头层说明，揭示了可以指导未来模型设计和基础目标的狭窄计算路径。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Visually-grounded language models (VLMs) are highly effective in linking visual and textual information, yet they often struggle with basic classification and localization tasks. While classification mechanisms have been studied more extensively, the processes that support object localization remain poorly understood. In this work, we investigate two representative families, LLaVA-1.5 and InternVL-3.5, using a suite of mechanistic interpretability tools, including token ablations, attention knockout, and causal mediation analysis. We find that localization is driven by a containerization mechanism in which object-aligned tokens define the spatial extent of the object, while the semantic arrangement of tokens within those boundaries is largely irrelevant to the predicted box. Only a very small set of attention heads mediates the causal effect for both classification and localization, concentrating in early-mid layers for LLaVA and mid-late layers for InternVL. The two tasks share some early processing but ultimately depend on largely distinct specialized heads. Overall, we provide the first layer- and head-level account of localization in VLMs, revealing narrow computational pathways that can guide future model design and grounding objectives.</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2605.19792v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2605.19792" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2605.19792v1" target="_blank" rel="noopener">HTML</a>
+          
+          
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2605.19792v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19792v1/x1.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.19792v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19792v1/x2.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.19792v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19792v1/x3.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.19792v1/x4.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.19792v1/x4.png" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">2/2</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2605.20165" target="_blank" rel="noopener">CaMo: Camera Motion Grounded Evaluation and Training for Vision-Language Models</a></h2>
+            <p class="paper-title-zh">CaMo：基于相机运动的视觉语言模型评估和训练</p>
+          </div>
+        </div>
+        <p class="sel-reason">相机运动理解诊断VLM空间智能，揭示现有模型缺乏基本相机运动认知</p>
+        <div class="sel-tags"><span class="sel-tag">VLM</span><span class="sel-tag">开源</span></div>
+        <div class="paper-meta">
+          <span class="authors">Hsiang-Wei Huang, Junbin Lu, Kuang-Ming Chen, Jianxu Shangguan, Cheng-Yen Yang</span>
+        </div>
+        <p class="paper-abstract">视觉语言模型（VLM）在空间问答基准上取得了强劲的表现，但目前尚不清楚这种收益是否反映了真正的空间智能。我们表明，现有的空间 VLM 缺乏基本的相机运动理解，而这是空间认知的关键组成部分。我们提出了空间叙事评分（SNS），这是一个评估框架，要求 VLM 生成明确的空间叙事，捕获场景语义和摄像机运动，然后使用冻结的代理 LLM 进行推理。在 SNS 下，尽管直接问答准确率很高，但最先进的空间 VLM 却表现出显着的性能下降。为了解决这一差距，我们引入了 CaMo，这是一种基于相机运动的 VLM，它在 SNS 评估和直接空间问答准确性方面实现了一致的性能。我们的结果强调了明确的空间叙事外化对于评估具有可转移 3D 空间理解的 VLM 的重要性。我们的代码、数据和模型可在 https://github.com/hsiangwei0903/CaMo 获取</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Vision-Language Models (VLMs) achieve strong performance on spatial question answering benchmarks, yet it remains unclear whether such gains reflect genuine spatial intelligence. We show that existing spatial VLMs lack basic camera motion understanding, a key component of spatial cognition. We propose the Spatial Narrative Score (SNS), an evaluation framework that requires VLMs to generate explicit spatial narratives capturing both scene semantics and camera motion, followed by reasoning with a frozen proxy LLM. Under SNS, state-of-the-art spatial VLMs exhibit significant performance degradation despite high direct question answering accuracy. To address this gap, we introduce CaMo, a camera motion grounded VLM that achieves consistent performance across SNS evaluation and direct spatial question answering accuracy. Our results highlight the importance of explicit spatial narrative externalization for evaluating VLMs with transferable 3D spatial understanding. Our code, data, and model is available at https://github.com/hsiangwei0903/CaMo</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2605.20165v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2605.20165" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2605.20165v1" target="_blank" rel="noopener">HTML</a>
+          <a class="code" href="https://github.com/hsiangwei0903/CaMo" target="_blank" rel="noopener">Code</a>
+          
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2605.20165v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.20165v1/x1.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.20165v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.20165v1/x2.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.20165v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.20165v1/x3.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2605.20165v1/x4.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2605.20165v1/x4.png" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+    </ul>
+  </div>
+  
   
 </div>
 
@@ -20996,7 +21901,7 @@
     <div class="wrap">
       <span>Categories: cs.CV, cs.RO, cs.AI</span>
       <span class="sep">·</span>
-      <span>Generated 2026-05-24 13:45 UTC</span>
+      <span>Generated 2026-05-24 14:03 UTC</span>
     </div>
   </footer>
 
