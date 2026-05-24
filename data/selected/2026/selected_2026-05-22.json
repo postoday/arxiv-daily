@@ -1,0 +1,1035 @@
+{
+  "date": "2026-05-22",
+  "generated_at": "2026-05-24T21:12:21.833605",
+  "total_candidates": 137,
+  "categories": [
+    {
+      "id": "worldmodel",
+      "name": "世界模型&视频/场景生成模型",
+      "papers": [
+        {
+          "id": "2605.22718",
+          "rank": 1,
+          "score": 94,
+          "reason_zh": "训练免检索压缩KV缓存，实现持久世界模型的实时一致生成",
+          "tags": [
+            "世界模型",
+            "生成模型",
+            "开源"
+          ],
+          "title": "WorldKV: Efficient World Memory with World Retrieval and Compression",
+          "authors": [
+            "Jung Yi",
+            "Minjae Kim",
+            "Paul Hyunbin Cho",
+            "Wooseok Jang",
+            "Sangdoo Yun"
+          ],
+          "abstract": "Autoregressive video diffusion models have enabled real-time, action-conditioned world generation. However, sustaining a persistent world, where revisiting a previously seen viewpoint yields consistent content, remains an open problem. Full KV-cache attention preserves this consistency but breaks real-time constraints: memory footprint and attention cost grow linearly with rollout length. Sliding window inference restores throughput but discards long-term consistency. We propose WorldKV, a training-free framework with two components: World Retrieval and World Compression. World Retrieval stores evicted KV-cache chunks in GPU/CPU memory and selectively retrieves scene-relevant chunks via camera/ action correspondence, inserting them back into the native attention window without re-encoding. World Compression prunes redundant tokens within each chunk via key-key similarity to an anchor frame, halving per-chunk storage to fit 2x more history under a fixed budget. On Matrix-Game-2.0 and LingBot- World-Fast, WorldKV matches or exceeds full-KV memory fidelity at roughly 2x the throughput, and is competitive with memory-trained baselines without any fine-tuning. Project Page: https://cvlab-kaist.github.io/WorldKV/",
+          "abs_url": "https://arxiv.org/abs/2605.22718",
+          "pdf_url": "https://arxiv.org/pdf/2605.22718v1",
+          "html_url": "https://arxiv.org/html/2605.22718v1",
+          "figures": [
+            "https://arxiv.org/html/2605.22718v1/x1.png",
+            "https://arxiv.org/html/2605.22718v1/figs/introduction/kv_cache_vram_short_labels_large_font.png",
+            "https://arxiv.org/html/2605.22718v1/figs/introduction/fps_fullkv_ours_14b_13b_ours14_distinct.png",
+            "https://arxiv.org/html/2605.22718v1/x2.png"
+          ],
+          "code_url": null,
+          "project_url": "https://cvlab-kaist.github.io/WorldKV/",
+          "code_links": [],
+          "project_links": [
+            "https://cvlab-kaist.github.io/WorldKV/"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": null,
+          "comments": "Project Page: https://cvlab-kaist.github.io/WorldKV/",
+          "submitted": "2026-05-21T16:55:04Z",
+          "updated": "2026-05-21T16:55:04Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "WorldKV：具有世界检索和压缩功能的高效世界内存",
+          "abstract_zh": "自回归视频扩散模型实现了实时的、以动作为条件的世界生成。然而，维持一个持久的世界，重新审视以前的观点会产生一致的内容，仍然是一个悬而未决的问题。完整的 KV 缓存注意力保留了这种一致性，但打破了实时限制：内存占用和注意力成本随着推出长度线性增长。滑动窗口推理恢复了吞吐量，但放弃了长期一致性。我们提出了 WorldKV，一个免训练的框架，包含两个组件：世界检索和世界压缩。 World Retrieval 将被逐出的 KV 缓存块存储在 GPU/CPU 内存中，并通过相机/动作对应选择性地检索场景相关块，将它们插入到本机注意力窗口中而不需要重新编码。世界压缩通过与锚帧的键-键相似性来修剪每个块内的冗余令牌，将每个块的存储量减半，以在固定预算下容纳两倍的历史记录。在 Matrix-Game-2.0 和 LingBot-World-Fast 上，WorldKV 以大约 2 倍的吞吐量匹配或超过全 KV 内存保真度，并且无需任何微调即可与内存训练基线竞争。项目页面：https://cvlab-kaist.github.io/WorldKV/"
+        },
+        {
+          "id": "2605.22818",
+          "rank": 2,
+          "score": 92,
+          "reason_zh": "推理先行再生成，让运动控制视频生成理解因果连锁反应",
+          "tags": [
+            "生成模型",
+            "视频生成",
+            "顶会"
+          ],
+          "title": "MotiMotion: Motion-Controlled Video Generation with Visual Reasoning",
+          "authors": [
+            "Lee Hsin-Ying",
+            "Hanwen Jiang",
+            "Yiqun Mei",
+            "Jing Shi",
+            "Ming-Hsuan Yang"
+          ],
+          "abstract": "Current motion-controlled image-to-video generation models rigidly follow user-provided trajectories that are often sparse, imprecise, and causally incomplete. Such reliance often yields unnatural or implausible outcomes, especially by missing secondary causal consequences. To address this, we introduce MotiMotion, a novel framework that reformulates motion control as a reasoning-then-generation problem. To encourage causally grounded and commonsense-consistent interactions, we leverage a training-free vision-language reasoner to refine image-space coordinates of primary trajectories and to hallucinate plausible secondary motions. To further improve motion naturalness, we propose a confidence-aware control scheme that modulates guidance strength, enabling the model to closely follow high-confidence plans while correcting artifacts under low-confidence inputs with its internal generative priors. To support systematic evaluation, we curate a new image-to-video benchmark, MotiBench, consisting of interaction-centric scenes where new events are triggered by motion. Both VLM-based evaluation and a human study on MotiBench demonstrate that MotiMotion produces videos with more plausible object behaviors and interaction, and is preferred over existing approaches.",
+          "abs_url": "https://arxiv.org/abs/2605.22818",
+          "pdf_url": "https://arxiv.org/pdf/2605.22818v1",
+          "html_url": null,
+          "figures": [],
+          "code_url": null,
+          "project_url": "https://motimotion.github.io/",
+          "code_links": [],
+          "project_links": [
+            "https://motimotion.github.io/"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": "ICML",
+          "comments": "ICML 2026. Project page: https://motimotion.github.io/",
+          "submitted": "2026-05-21T17:59:36Z",
+          "updated": "2026-05-21T17:59:36Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "MotiMotion：利用视觉推理生成运动控制视频",
+          "abstract_zh": "当前的运动控制图像到视频生成模型严格遵循用户提供的轨迹，这些轨迹通常稀疏、不精确且因果不完整。这种依赖常常会产生不自然或难以置信的结果，特别是由于忽略了次要因果后果。为了解决这个问题，我们引入了 MotiMotion，这是一种新颖的框架，它将运动控制重新表述为推理然后生成的问题。为了鼓励基于因果关系和常识一致的交互，我们利用免训练的视觉语言推理器来细化主要轨迹的图像空间坐标并产生可信的次要运动。为了进一步提高运动自然度，我们提出了一种可调节引导强度的置信感知控制方案，使模型能够紧密遵循高置信度计划，同时利用其内部生成先验纠正低置信度输入下的伪影。为了支持系统评估，我们策划了一个新的图像到视频基准 MotiBench，它由以交互为中心的场景组成，其中新事件由运动触发。基于 VLM 的评估和 MotiBench 上的人体研究都表明，MotiMotion 生成的视频具有更合理的对象行为和交互，并且比现有方法更受青睐。"
+        },
+        {
+          "id": "2605.22809",
+          "rank": 3,
+          "score": 90,
+          "reason_zh": "跨具身传感器转换，将行车记录仪视频转为自动驾驶多传感器数据",
+          "tags": [
+            "闭环仿真",
+            "自动驾驶",
+            "顶会"
+          ],
+          "title": "Sensor2Sensor: Cross-Embodiment Sensor Conversion for Autonomous Driving",
+          "authors": [
+            "Jiahao Wang",
+            "Bo Sun",
+            "Yijing Bai",
+            "Vincent Casser",
+            "Songyou Peng"
+          ],
+          "abstract": "Robust training and validation of Autonomous Driving Systems (ADS) require massive, diverse datasets. Proprietary data collected by Autonomous Vehicle (AV) fleets, while high-fidelity, are limited in scale, diversity of sensor configurations, as well as geographic and long-tail-behavioral coverage. In contrast, in-the-wild data from sources like dashcams offers immense scale and diversity, capturing critical long-tail scenarios and novel environments. However, this unstructured, in-the-wild video data is incompatible with ADS expecting structured, multi-modal sensor inputs for validation and training. To bridge this data gap, we propose Sensor2Sensor, a novel generative modeling paradigm that translates in-the-wild monocular dashcam videos into a high-fidelity, multi-modal sensor suite (AV logs) comprising multi-view camera images and LiDAR point clouds. A core challenge is the lack of paired training data. We address this by converting real AV logs into dashcam-style videos via 4D Gaussian Splatting (4DGS) reconstruction and novel-view rendering. Sensor2Sensor then utilizes a diffusion architecture to perform the generative conversion. We perform comprehensive quantitative evaluations on the fidelity and realism of the generated sensor data. We demonstrate Sensor2Sensor's practical utility by converting challenging in-the-wild internet and dashcam footage into realistic, multi-modal data formats, further unlocking vast external data sources for AV development.",
+          "abs_url": "https://arxiv.org/abs/2605.22809",
+          "pdf_url": "https://arxiv.org/pdf/2605.22809v1",
+          "html_url": "https://arxiv.org/html/2605.22809v1",
+          "figures": [
+            "https://arxiv.org/html/2605.22809v1/x1.png",
+            "https://arxiv.org/html/2605.22809v1/x2.png",
+            "https://arxiv.org/html/2605.22809v1/x3.png",
+            "https://arxiv.org/html/2605.22809v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": "CVPR",
+          "comments": "Accepted by CVPR 2026",
+          "submitted": "2026-05-21T17:57:17Z",
+          "updated": "2026-05-21T17:57:17Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "Sensor2Sensor：用于自动驾驶的跨实施例传感器转换",
+          "abstract_zh": "自动驾驶系统 (ADS) 的稳健训练和验证需要大量、多样化的数据集。自动驾驶车辆 (AV) 车队收集的专有数据虽然保真度很高，但在规模、传感器配置的多样性以及地理和长尾行为覆盖范围方面受到限制。相比之下，来自行车记录仪等来源的野外数据提供了巨大的规模和多样性，可以捕获关键的长尾场景和新颖的环境。然而，这种非结构化的野外视频数据与 ADS 不兼容，ADS 需要结构化的多模式传感器输入进行验证和训练。为了弥补这一数据差距，我们提出了 Sensor2Sensor，这是一种新颖的生成建模范例，可将野外单目行车记录仪视频转换为包含多视图相机图像和 LiDAR 点云的高保真、多模态传感器套件（AV 日志）。一个核心挑战是缺乏配对训练数据。我们通过 4D 高斯泼溅 (4DGS) 重建和新颖视图渲染将真实的 AV 日志转换为行车记录仪风格的视频来解决这个问题。然后，Sensor2Sensor 利用扩散架构来执行生成转换。我们对生成的传感器数据的保真度和真实性进行全面的定量评估。我们通过将具有挑战性的野外互联网和行车记录仪镜头转换为现实的多模态数据格式来展示 Sensor2Sensor 的实用性，进一步释放用于 AV 开发的大量外部数据源。"
+        },
+        {
+          "id": "2605.22051",
+          "rank": 4,
+          "score": 88,
+          "reason_zh": "频域解耦高低频分量，在资源受限下高效合成逼真视觉特效",
+          "tags": [
+            "生成模型",
+            "开源"
+          ],
+          "title": "EasyVFX: Frequency-Driven Decoupling for Resource-Efficient VFX Generation",
+          "authors": [
+            "Yue Ma",
+            "Xu Ye",
+            "Qinghe Wang",
+            "Yucheng Wang",
+            "Hongyu Liu"
+          ],
+          "abstract": "Generating high-fidelity visual effects (VFX) typically demands massive datasets and prohibitive computational power due to the intricate coupling of spatial textures and temporal dynamics. In this paper, we introduce EasyVFX, a resource-efficient framework that achieves realistic VFX synthesis under stringent constraints. Our core philosophy lies in frequency-domain decomposition: we observe that the complexity of VFX can be significantly mitigated by decoupling high-frequency components, which represent intricate spatial appearances, from low-frequency components that encapsulate global motion dynamics. This spectral disentanglement transforms a high-dimensional learning problem into manageable sub-tasks, thereby lowering the optimization barrier and reducing data dependency. Building upon this insight, we propose a two-stage training paradigm. First, we design a Frequency-aware Mixture-of-Experts (Freq-MoE) architecture. By utilizing a soft routing mechanism, our model assigns specialized experts to distinct spectral bands, enabling them to cultivate robust priors for appearance and motion dynamics. This specialization allows the model to acquire foundational VFX knowledge with fewer GPU resources. Second, we introduce a Test-Time Training strategy powered by a novel Frequency-constraint Loss. This allows the pre-trained model to swiftly adapt to specific, unseen effects through localized optimizations, requiring only about 100 steps on a single GPU. Experimental results demonstrate that EasyVFX produces structurally consistent and visually stunning effects, proving that frequency-aware learning is a key catalyst for democratizing professional-grade VFX.",
+          "abs_url": "https://arxiv.org/abs/2605.22051",
+          "pdf_url": "https://arxiv.org/pdf/2605.22051v1",
+          "html_url": "https://arxiv.org/html/2605.22051v1",
+          "figures": [
+            "https://arxiv.org/html/2605.22051v1/x2.png",
+            "https://arxiv.org/html/2605.22051v1/x3.png",
+            "https://arxiv.org/html/2605.22051v1/x4.png",
+            "https://arxiv.org/html/2605.22051v1/x5.png"
+          ],
+          "code_url": null,
+          "project_url": "https://easy-vfx.github.io/",
+          "code_links": [],
+          "project_links": [
+            "https://easy-vfx.github.io/"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": null,
+          "comments": "Accepted by SIGGRAPH 2026. Project page: https://easy-vfx.github.io/",
+          "submitted": "2026-05-21T06:38:22Z",
+          "updated": "2026-05-21T06:38:22Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "EasyVFX：频率驱动解耦，实现资源高效的 VFX 生成",
+          "abstract_zh": "由于空间纹理和时间动态的复杂耦合，生成高保真视觉效果 (VFX) 通常需要大量数据集和令人望而却步的计算能力。在本文中，我们介绍了 EasyVFX，这是一个资源高效的框架，可以在严格的约束下实现逼真的 VFX 合成。我们的核心理念在于频域分解：我们观察到，通过将代表复杂空间外观的高频分量与封装全局运动动力学的低频分量解耦，可以显着降低视觉特效的复杂性。这种谱解缠结将高维学习问题转化为可管理的子任务，从而降低优化障碍并减少数据依赖性。基于这一见解，我们提出了一个两阶段的培训范例。首先，我们设计了一个频率感知混合专家（Freq-MoE）架构。通过利用软路由机制，我们的模型将专业专家分配到不同的光谱带，使他们能够培养外观和运动动力学的强大先验。这种专业化允许模型以更少的 GPU 资源获取基础 VFX 知识。其次，我们引入了一种由新颖的频率约束损失驱动的测试时训练策略。这使得预先训练的模型能够通过局部优化快速适应特定的、看不见的效果，在单个 GPU 上只需要大约 100 个步骤。实验结果表明，EasyVFX 可产生结构一致且视觉上令人惊叹的效果，证明频率感知学习是专业级 VFX 民主化的关键催化剂。"
+        },
+        {
+          "id": "2605.22144",
+          "rank": 5,
+          "score": 85,
+          "reason_zh": "多智能体分层协作，一句话生成叙事连贯的个性化短剧视频",
+          "tags": [
+            "生成模型",
+            "视频生成"
+          ],
+          "title": "One Sentence, One Drama: Personalized Short-Form Drama Generation via Multi-Agent Systems",
+          "authors": [
+            "Yufei Shi",
+            "Weilong Yan",
+            "Naixuan Huang",
+            "Yucheng Chen",
+            "Chenyu Zhang"
+          ],
+          "abstract": "Existing approaches for digital short-drama production typically rely on one-shot LLM generated scripts and loosely coupled pipelines, which fail to satisfy three key requirements of short-drama generation: (1) narrative pacing, resulting in weak hooks, insufficient escalation, and unattractive endings; (2) spatial consistency, leading to drifting scene layouts and inconsistent character positions across clips; and (3) production-level quality control, requiring extensive manual review and correction across script and visual stages. We present One Sentence, One Drama, a hierarchical multi-agent framework that transforms a user's single-sentence idea into a fully produced short drama through structured intermediate modules and iterative refinement. Our approach is built upon three key components: (1) a multi-agent debate-based story generation module that enforces short-drama pacing and narrative coherence; (2) a 3D-grounded first-frame generation mechanism that establishes a shared spatial reference for consistent character positioning and scene layout across clips; and (3) multi-stage reviewer loops that perform comprehensive error detection and targeted revision across script, visual, and video generation stages. We also introduce scene-level BGM matching and scene transition planning to improve the audience's immersive experience. To systematically evaluate this task, we introduce Short-Drama-Bench, a benchmark that extends standard video quality metrics with short-drama-specific criteria. Experimental results demonstrate that our method significantly outperforms existing pipelines in narrative quality, cross-clip consistency, and overall viewing experience.",
+          "abs_url": "https://arxiv.org/abs/2605.22144",
+          "pdf_url": "https://arxiv.org/pdf/2605.22144v1",
+          "html_url": "https://arxiv.org/html/2605.22144v1",
+          "figures": [
+            "https://arxiv.org/html/2605.22144v1/figures_paper/teaser_final.png",
+            "https://arxiv.org/html/2605.22144v1/figures_paper/pipeline_final_light.png",
+            "https://arxiv.org/html/2605.22144v1/figures_paper/3D_consistent_final.png",
+            "https://arxiv.org/html/2605.22144v1/figures_paper/qualitative1_final.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": null,
+          "submitted": "2026-05-21T08:15:46Z",
+          "updated": "2026-05-21T08:15:46Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "一句话一剧：通过多智能体系统生成个性化短剧",
+          "abstract_zh": "现有的数字短剧制作方法通常依赖于LLM一次性生成的脚本和松散耦合的流程，无法满足短剧生成的三个关键要求：（1）叙事节奏，导致挂钩薄弱、升级不足、结局不吸引人； (2) 空间一致性，导致场景布局漂移和剪辑中角色位置不一致； (3) 制作级质量控制，需要在脚本和视觉阶段进行大量的人工审查和纠正。我们提出了One Sentence, One Drama，一种分层多智能体框架，通过结构化的中间模块和迭代细化，将用户的单句想法转化为完整制作的短剧。我们的方法建立在三个关键组成部分之上：（1）基于多智能体辩论的故事生成模块，可增强短剧节奏和叙事连贯性； (2) 基于 3D 的第一帧生成机制，为跨剪辑的一致角色定位和场景布局建立共享空间参考； (3) 多阶段审阅者循环，在脚本、视觉和视频生成阶段执行全面的错误检测和有针对性的修订。我们还引入场景级BGM匹配和场景转场规划，提升观众的沉浸式体验。为了系统地评估这项任务，我们引入了 Short-Drama-Bench，这是一个用短剧特定标准扩展标准视频质量指标的基准。实验结果表明，我们的方法在叙事质量、跨剪辑一致性和整体观看体验方面显着优于现有的流程。"
+        }
+      ]
+    },
+    {
+      "id": "reconstruction",
+      "name": "3D/4D 重建与生成",
+      "papers": [
+        {
+          "id": "2605.22190",
+          "rank": 1,
+          "score": 95,
+          "reason_zh": "首个无需位姿的前馈4D动态高斯重建，多目视频到动态场景一步到位",
+          "tags": [
+            "3D重建",
+            "4D重建",
+            "feed-forward",
+            "3DGS",
+            "开源"
+          ],
+          "title": "No Pose, No Problem in 4D: Feed-Forward Dynamic Gaussians from Unposed Multi-View Videos",
+          "authors": [
+            "Matteo Balice",
+            "Yanik Kunzi",
+            "Chenyangguang Zhang",
+            "Matteo Matteucci",
+            "Marc Pollefeys"
+          ],
+          "abstract": "Recent feed-forward 3D gaussian splatting methods have made dramatic progress on individual aspects of 3D scene reconstruction, but no existing method jointly addresses dynamic content, multi-view input, and unknown camera poses in a single feed-forward pass. Methods that handle dynamics either require accurate camera poses or accept only monocular input; pose-free multi-view methods address only static scenes; and per-scene optimization methods bridge some of these gaps but at minutes-to-hours cost per scene. We introduce NoPo4D, the first feed-forward system that addresses this empty quadrant. Building on a pretrained geometry backbone and recent 4D Gaussian frameworks, NoPo4D introduces a velocity decomposition that splits Gaussian motion into per-pixel image-plane shifts and depth changes, allowing direct supervision from pseudo ground-truth optical flow on the 2D component. This sidesteps both the differentiable rendering that couples prior posed methods to pose accuracy and the 3D motion ground truth that prior pose-free methods require. The system is rounded out by a bidirectional motion encoder for cross-view and cross-frame feature aggregation, and view-dependent opacity that mitigates cross-view and cross-timestep Gaussian misalignments. On four multi-view dynamic benchmarks, NoPo4D consistently outperforms prior feed-forward baselines, and with an optional post-optimization stage surpasses per-scene optimization methods, while running orders of magnitude faster.",
+          "abs_url": "https://arxiv.org/abs/2605.22190",
+          "pdf_url": "https://arxiv.org/pdf/2605.22190v1",
+          "html_url": "https://arxiv.org/html/2605.22190v1",
+          "figures": [
+            "https://arxiv.org/html/2605.22190v1/x1.png",
+            "https://arxiv.org/html/2605.22190v1/x2.png",
+            "https://arxiv.org/html/2605.22190v1/x3.png",
+            "https://arxiv.org/html/2605.22190v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": "https://bralani.github.io/nopo4d_html/",
+          "code_links": [],
+          "project_links": [
+            "https://bralani.github.io/nopo4d_html/"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": null,
+          "comments": "https://bralani.github.io/nopo4d_html/",
+          "submitted": "2026-05-21T08:57:21Z",
+          "updated": "2026-05-21T08:57:21Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "无姿势，4D 中没有问题：来自未摆姿势的多视图视频的前馈动态高斯",
+          "abstract_zh": "最近的前馈 3D 高斯喷射方法在 3D 场景重建的各个方面取得了巨大进展，但现有的方法还没有在单次前馈过程中联合解决动态内容、多视图输入和未知相机姿势的问题。处理动力学的方法要么需要准确的相机姿势，要么只接受单眼输入；无姿态多视图方法仅适用于静态场景；每个场景的优化方法弥补了其中一些差距，但每个场景的成本为几分钟到几小时。我们推出了 NoPo4D，这是第一个解决这个空象限的前馈系统。 NoPo4D 基于预训练的几何主干和最新的 4D 高斯框架，引入了速度分解，将高斯运动分解为每像素图像平面移位和深度变化，从而允许从 2D 组件上的伪地面实况光流进行直接监督。这回避了将先前的姿势方法与姿势精度结合起来的可微渲染，以及先前的无姿势方法所需的 3D 运动地面实况。该系统由用于跨视图和跨帧特征聚合的双向运动编码器以及可减轻跨视图和跨时间步高斯未对准的视图相关不透明度组成。在四个多视图动态基准测试中，NoPo4D 始终优于先前的前馈基线，并且通过可选的后优化阶段超越了每个场景的优化方法，同时运行速度更快了几个数量级。"
+        },
+        {
+          "id": "2605.21572",
+          "rank": 2,
+          "score": 90,
+          "reason_zh": "统一生成仿真级刚体/软体/铰接3D资产，赋能下游物理仿真任务",
+          "tags": [
+            "3D重建",
+            "生成模型",
+            "开源"
+          ],
+          "title": "PhysX-Omni: Unified Simulation-Ready Physical 3D Generation for Rigid, Deformable, and Articulated Objects",
+          "authors": [
+            "Ziang Cao",
+            "Yinghao Liu",
+            "Haitian Li",
+            "Runmao Yao",
+            "Fangzhou Hong"
+          ],
+          "abstract": "Simulation-ready physical 3D assets have emerged as a promising direction owing to their broad applicability in downstream tasks. However, most existing 3D generation methods either neglect physical properties or are limited to a single asset category, e.g., rigid, deformable, or articulated objects. To address these limitations, we introduce PhysX-Omni, a unified framework for simulation-ready physical 3D generation across diverse asset types. Specifically, we develop a novel and efficient geometry representation tailored for Vision-Language Models, which directly encodes high-resolution 3D structures without compression, significantly improving generation performance. In addition, we construct the first general simulation-ready 3D dataset, PhysXVerse, covering diverse indoor and outdoor categories. Furthermore, to comprehensively and flexibly evaluate both generative and understanding capabilities in the wild, we propose PhysX-Bench, which encompasses six key attributes: geometry, absolute scale, material, affordance, kinematics, and function description. Extensive experiments with conventional metrics and PhysX-Bench show that PhysX-Omni performs strongly in both generation and understanding. Moreover, additional studies further validate the potential of PhysX-Omni for applications in simulation-ready scene generation and robotic policy learning. We believe PhysX-Omni can significantly advance a wide range of downstream applications, particularly in embodied AI and physics-based simulation.",
+          "abs_url": "https://arxiv.org/abs/2605.21572",
+          "pdf_url": "https://arxiv.org/pdf/2605.21572v1",
+          "html_url": "https://arxiv.org/html/2605.21572v1",
+          "figures": [
+            "https://arxiv.org/html/2605.21572v1/x2.png",
+            "https://arxiv.org/html/2605.21572v1/x3.png",
+            "https://arxiv.org/html/2605.21572v1/x4.png",
+            "https://arxiv.org/html/2605.21572v1/x5.png"
+          ],
+          "code_url": null,
+          "project_url": "https://physx-omni.github.io/",
+          "code_links": [],
+          "project_links": [
+            "https://physx-omni.github.io/"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": null,
+          "comments": "Project page: https://physx-omni.github.io/",
+          "submitted": "2026-05-20T17:59:01Z",
+          "updated": "2026-05-20T17:59:01Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV",
+            "cs.RO"
+          ],
+          "title_zh": "PhysX-Omni：针对刚性、可变形和铰接物体的统一仿真就绪物理 3D 生成",
+          "abstract_zh": "由于其在下游任务中的广泛适用性，模拟就绪的物理 3D 资产已成为一个有前途的方向。然而，大多数现有的 3D 生成方法要么忽略物理属性，要么仅限于单一资产类别，例如刚性、可变形或铰接物体。为了解决这些限制，我们引入了 PhysX-Omni，这是一个统一的框架，用于跨不同资产类型进行模拟就绪的物理 3D 生成。具体来说，我们开发了一种专为视觉语言模型定制的新颖高效的几何表示，它无需压缩即可直接编码高分辨率 3D 结构，从而显着提高生成性能。此外，我们构建了第一个通用模拟就绪 3D 数据集 PhysXVerse，涵盖不同的室内和室外类别。此外，为了全面、灵活地评估野外的生成和理解能力，我们提出了 PhysX-Bench，它包含六个关键属性：几何、绝对尺度、材料、可供性、运动学和功能描述。使用传统指标和 PhysX-Bench 进行的大量实验表明，PhysX-Omni 在生成和理解方面都表现出色。此外，其他研究进一步验证了 PhysX-Omni 在模拟就绪场景生成和机器人策略学习中的应用潜力。我们相信 PhysX-Omni 可以显着推进广泛的下游应用，特别是在具体人工智能和基于物理的模拟方面。"
+        },
+        {
+          "id": "2605.22020",
+          "rank": 3,
+          "score": 88,
+          "reason_zh": "优化感知训练让前馈3DGS输出成为测试时逐场景优化的更好起点",
+          "tags": [
+            "3D重建",
+            "3DGS",
+            "feed-forward"
+          ],
+          "title": "ForeSplat: Optimization-Aware Foresight for Feed-Forward 3D Gaussian Splatting",
+          "authors": [
+            "Yuke Li",
+            "Weihang Liu",
+            "Cheng Zhang",
+            "Yuefeng Zhang",
+            "Jiadi Cui"
+          ],
+          "abstract": "Feed-forward 3D Gaussian Splatting (3DGS) models offer fast single-pass reconstruction,but scaling them to match per-scene optimization quality is fundamentally hindered by the scarcity of large-scale 3D annotations.A practical compromise is predict-then-refine,where post-prediction optimization compensates for the limited capacity of the feed-forward network.However,standard feed-forward 3DGS is trained solely for zero-step rendering error,ignoring whether its output constitutes a good initialization for the downstream optimizer.We present ForeSplat,an optimization-aware training framework that equips feed-forward 3DGS models to produce initializations explicitly designed for rapid,effective refinement.By offloading part of the scene-modeling burden to the optimizer,ForeSplat substantially reduces the capacity pressure on the feed-forward model,making high-quality reconstruction feasible even with compact networks.At its core is MetaGrad,a lightweight multi-anchor meta-gradient training rule that bypasses costly higher-order differentiation through the 3DGS optimizer.MetaGrad unrolls a short inner-loop refinement trajectory,samples anchor states,and back-propagates aggregated first-order gradients to the prediction head as a surrogate optimization-aware signal.This fine-tuning adds no inference cost and enables high-quality reconstruction within seconds after a few refinement steps.We instantiate ForeSplat on diverse backbones,including AnySplat,Pi3X,and a distilled variant tailored for edge deployment.Across all tested architectures,a ForeSplat-trained initialization converges in fewer refinement steps and reaches a higher peak reconstruction quality than its vanilla counterpart,even fully converged.The framework consistently bridges the gap between amortized prediction and per-scene optimization,establishing a practical path toward lightweight,high-fidelity 3D reconstruction.",
+          "abs_url": "https://arxiv.org/abs/2605.22020",
+          "pdf_url": "https://arxiv.org/pdf/2605.22020v1",
+          "html_url": "https://arxiv.org/html/2605.22020v1",
+          "figures": [
+            "https://arxiv.org/html/2605.22020v1/x1.png",
+            "https://arxiv.org/html/2605.22020v1/x2.png",
+            "https://arxiv.org/html/2605.22020v1/x3.png",
+            "https://arxiv.org/html/2605.22020v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": null,
+          "submitted": "2026-05-21T05:38:47Z",
+          "updated": "2026-05-21T05:38:47Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "ForeSplat：前馈 3D 高斯分布的优化感知预见",
+          "abstract_zh": "前馈 3D 高斯泼溅 (3DGS) 模型提供快速的单通道重建，但大规模 3D 注释的稀缺性从根本上阻碍了将其缩放以匹配每个场景的优化质量。实际的折衷方案是预测然后优化，其中后预测优化补偿前馈网络的有限容量。然而，标准前馈 3DGS 仅针对零步渲染误差进行训练，忽略其输出是否构成为下游优化器提供良好的初始化。我们提出了 ForeSplat，一种优化感知训练框架，配备前馈 3DGS 模型，以生成明确设计用于快速、有效细化的初始化。通过将部分场景建模负担转移给优化器，ForeSplat 大大降低了前馈模型的容量压力，即使在紧凑的网络中也能实现高质量重建。其核心是 MetaGrad，一种轻量级多锚元梯度训练规则，可以绕过昂贵的通过 3DGS 优化器进行高阶微分。MetaGrad 展开短内循环细化轨迹，对锚点状态进行采样，并将聚合的一阶梯度作为代理优化感知信号反向传播到预测头。这种微调不增加推理成本，并在几个细化步骤后几秒钟内实现高质量重建。我们在不同的骨干网上实例化 ForeSplat，包括 AnySplat、Pi3X 以及为在所有测试的架构中，ForeSplat 训练的初始化以更少的细化步骤收敛，并达到比普通对应物更高的峰值重建质量，甚至完全收敛。该框架一致地弥合了摊销预测和每场景优化之间的差距，建立了一条通往轻量级、高保真 3D 重建的实用路径。"
+        },
+        {
+          "id": "2605.22069",
+          "rank": 4,
+          "score": 86,
+          "reason_zh": "薄板样条变形对齐深度点云，解决稀疏视图3DGS的点稀疏初始化问题",
+          "tags": [
+            "3D重建",
+            "3DGS",
+            "顶会"
+          ],
+          "title": "TWINGS: Thin Plate Splines Warp-aligned Initialization for Sparse-View Gaussian Splatting",
+          "authors": [
+            "Hyeseong Kim",
+            "Geonhui Son",
+            "Deukhee Lee",
+            "Dosik Hwang"
+          ],
+          "abstract": "Novel view synthesis from sparse-view inputs poses a significant challenge in 3D computer vision, particularly for achieving high-quality scene reconstructions with limited viewpoints. We introduce TWINGS, a framework that enhances 3D Gaussian Splatting (3DGS) by directly addressing point sparsity. We employ Thin Plate Splines (TPS), a smooth non-rigid deformation model that minimizes bending energy to estimate a globally coherent warp from control-point correspondences, to align backprojected points from estimated depth with triangulated 3D control points, yielding calibrated backprojected points. By sampling these calibrated points near the control points, TWINGS provides a fast and geometrically accurate initialization for 3DGS, ultimately improving structural detail preservation and color fidelity in reconstructed scenes. Extensive experiments on DTU, LLFF, and Mip-NeRF360 demonstrate that TWINGS consistently outperforms existing methods, delivering detailed and accurate reconstructions under sparse-view scenarios.",
+          "abs_url": "https://arxiv.org/abs/2605.22069",
+          "pdf_url": "https://arxiv.org/pdf/2605.22069v1",
+          "html_url": "https://arxiv.org/html/2605.22069v1",
+          "figures": [
+            "https://arxiv.org/html/2605.22069v1/x1.png",
+            "https://arxiv.org/html/2605.22069v1/figs/fig2.jpg",
+            "https://arxiv.org/html/2605.22069v1/figs/dtu_fig.jpg",
+            "https://arxiv.org/html/2605.22069v1/figs/mipnerf_fig.jpg"
+          ],
+          "code_url": null,
+          "project_url": "https://sandokim.github.io/twings/",
+          "code_links": [],
+          "project_links": [
+            "https://sandokim.github.io/twings/"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": "CVPR",
+          "comments": "Accepted to CVPR 2025, Project page: https://sandokim.github.io/twings/",
+          "submitted": "2026-05-21T07:07:37Z",
+          "updated": "2026-05-21T07:07:37Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV",
+            "cs.LG"
+          ],
+          "title_zh": "TWINGS：稀疏视图高斯泼溅的薄板样条扭曲对齐初始化",
+          "abstract_zh": "来自稀疏视图输入的新颖视图合成对 3D 计算机视觉提出了重大挑战，特别是在以有限视点实现高质量场景重建方面。我们引入了 TWINGS，这是一个通过直接解决点稀疏性来增强 3D 高斯分布 (3DGS) 的框架。我们采用薄板样条 (TPS)，这是一种平滑的非刚性变形模型，可最大限度地减少弯曲能量，以根据控制点对应关系估计全局相干扭曲，将估计深度的反投影点与三角 3D 控制点对齐，从而生成校准的反投影点。通过对控制点附近的这些校准点进行采样，TWINGS 为 3DGS 提供了快速且几何精确的初始化，最终改善了重建场景中的结构细节保留和色彩保真度。在 DTU、LLFF 和 Mip-NeRF360 上进行的大量实验表明，TWINGS 始终优于现有方法，在稀疏视图场景下提供详细且准确的重建。"
+        }
+      ]
+    },
+    {
+      "id": "vla",
+      "name": "自动驾驶与机器人",
+      "papers": [
+        {
+          "id": "2605.22283",
+          "rank": 1,
+          "score": 95,
+          "reason_zh": "为VLA注入持久空间记忆，让机器人推理视野之外的操控动作",
+          "tags": [
+            "VLA",
+            "具身智能",
+            "操控",
+            "顶会"
+          ],
+          "title": "Spatial Memory for Out-of-Vision Manipulation in Vision-Language-Action",
+          "authors": [
+            "Pengteng Li",
+            "Weiyu Guo",
+            "He Zhang",
+            "Tiefu Cai",
+            "Xiao He"
+          ],
+          "abstract": "We introduce SOMA, the Spatial Memory framework for Out-of-Vision Manipulation in Vision-Language-Action (VLA) models. Most existing VLAs implicitly assume that task-relevant objects are always visible, leading to brittle and reactive behaviors when targets fall outside the camera's field of view. SOMA addresses this limitation by equipping VLAs with a persistent spatial memory constructed from multi-view observations acquired via a movable head camera, enabling reasoning beyond the current visual frustum. The framework consists of three components: Spatial Memory Construction, which aggregates angular-wise observations into a unified spatial-semantic representation through scanning; Dynamic Memory Refinement, which maintains global consistency over time; and Contextual Memory Retrieval, which activates instruction-relevant spatial cues during manipulation. We evaluate SOMA on five challenging real-world out-of-vision manipulation tasks, including multi-step and dual-arm scenarios where target objects are initially invisible. Experimental results show that SOMA not only improves task success rates, but also induces qualitatively different manipulation behaviors, with faster target localization, reduced viewpoint search, and near one-shot grasping under partial observability. Additional experiments on RoboCasa GR1 and SimplerEnv further validate the effectiveness of SOMA's memory design under conventional fully observable settings. Code will be released soon.",
+          "abs_url": "https://arxiv.org/abs/2605.22283",
+          "pdf_url": "https://arxiv.org/pdf/2605.22283v1",
+          "html_url": "https://arxiv.org/html/2605.22283v1",
+          "figures": [
+            "https://arxiv.org/html/2605.22283v1/x1.png",
+            "https://arxiv.org/html/2605.22283v1/x2.png",
+            "https://arxiv.org/html/2605.22283v1/x3.png",
+            "https://arxiv.org/html/2605.22283v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": "ICML",
+          "comments": "Accepted by ICML 2026",
+          "submitted": "2026-05-21T10:32:53Z",
+          "updated": "2026-05-21T10:32:53Z",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.RO"
+          ],
+          "title_zh": "视觉-语言-动作中视觉外操作的空间记忆",
+          "abstract_zh": "我们介绍 SOMA，这是一种用于视觉-语言-动作 (VLA) 模型中视觉外操作的空间记忆框架。大多数现有的 VLA 隐含地假设与任务相关的对象始终可见，当目标落在相机视野之外时，会导致脆弱且反应性的行为。 SOMA 通过为 VLA 配备持久空间记忆来解决这一限制，该记忆是通过可移动头部摄像头获取的多视图观察构建的，从而能够超越当前视觉平截头体进行推理。该框架由三个部分组成：空间记忆构建，通过扫描将角度观察聚合成统一的空间语义表示；动态内存细化，随着时间的推移保持全局一致性；上下文记忆检索，在操作过程中激活与指令相关的空间线索。我们在五个具有挑战性的现实世界视觉外操作任务上评估 SOMA，包括目标物体最初不可见的多步和双臂场景。实验结果表明，SOMA 不仅提高了任务成功率，而且还引发了性质不同的操纵行为，具有更快的目标定位、减少了视点搜索以及在部分可观测性下近乎一次性的抓取。 RoboCasa GR1 和 SimplerEnv 上的额外实验进一步验证了 SOMA 内存设计在传统完全可观察设置下的有效性。代码即将发布。"
+        },
+        {
+          "id": "2605.21935",
+          "rank": 2,
+          "score": 91,
+          "reason_zh": "人形机器人3DGS交互场，整合置信度语义维护动态导航场景记忆",
+          "tags": [
+            "机器人",
+            "导航",
+            "3DGS",
+            "顶会"
+          ],
+          "title": "Learning to Evolve: Multi-modal Interactive Fields for Robust Humanoid Navigation in Dynamic Environments",
+          "authors": [
+            "Peifeng Jiang",
+            "Hong Liu",
+            "Jin Jin",
+            "Wenshuai Wang",
+            "Xia Li"
+          ],
+          "abstract": "Safe manipulation-oriented navigation for humanoid robots requires scene memory that remains reliable under locomotion-induced perceptual distortion, environmental changes, and interaction-level geometric safety constraints. Existing semantic mapping and scene-graph systems are difficult to deploy directly in this setting because they often assume stable camera trajectories, static environments, or coarse object geometry. We introduce the Multi-modal Interactive Field (MIF), a humanoid-oriented system that integrates confidence-aware semantic 3D Gaussian Splatting, discrepancy-triggered spatial memory updates, and task-driven geometric reconstruction within a closed-loop perception-adaptation pipeline. MIF couples three fields: an uncertainty-aware 3DGS Appearance Field that suppresses gait-induced blur, a Spatial Field that maintains topological memory, and a Geometry Field that supports Interaction Pose Safety (IPS) before manipulation. A discrepancy detection score is introduced to separate locomotion-induced false-positive changes from persistent changes and updates only locally inconsistent regions. On a Unitree-G1 humanoid in a real dynamic office, MIF improves relocation success in non-static environments from 12% to 94% compared with static scene-graph memory, while reducing semantic memory footprint by 91.4% through feature distillation for practical online operation. Project page and code: https://ziya-jiang.github.io/MIF-homepage/",
+          "abs_url": "https://arxiv.org/abs/2605.21935",
+          "pdf_url": "https://arxiv.org/pdf/2605.21935v1",
+          "html_url": "https://arxiv.org/html/2605.21935v1",
+          "figures": [
+            "https://arxiv.org/html/2605.21935v1/images/RSS_PIPELINE2.png",
+            "https://arxiv.org/html/2605.21935v1/x1.png",
+            "https://arxiv.org/html/2605.21935v1/images/Change.png",
+            "https://arxiv.org/html/2605.21935v1/images/SYSTEM_PIPELINE.png"
+          ],
+          "code_url": null,
+          "project_url": "https://ziya-jiang.github.io/MIF-homepage/",
+          "code_links": [],
+          "project_links": [
+            "https://ziya-jiang.github.io/MIF-homepage/"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": null,
+          "comments": "Accepted by Robotics: Science and Systems 2026",
+          "submitted": "2026-05-21T03:11:43Z",
+          "updated": "2026-05-21T03:11:43Z",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.RO"
+          ],
+          "title_zh": "学习进化：动态环境中稳健的人形导航的多模态交互场",
+          "abstract_zh": "人形机器人以安全操纵为导向的导航需要场景记忆在运动引起的感知失真、环境变化和交互级几何安全约束下保持可靠。现有的语义映射和场景图系统很难在这种情况下直接部署，因为它们通常假设稳定的相机轨迹、静态环境或粗糙的对象几何形状。我们介绍了多模态交互场（MIF），这是一种面向人形的系统，它将置信感知语义 3D 高斯分布、差异触发的空间记忆更新和任务驱动的几何重建集成在闭环感知适应管道中。 MIF 结合了三个字段：抑制步态引起的模糊的不确定性感知 3DGS 外观字段、维持拓扑记忆的空间字段以及在操作前支持交互姿势安全 (IPS) 的几何字段。引入差异检测分数来将运动引起的假阳性变化与持久变化分开，并仅更新局部不一致的区域。在真实动态办公室的 Unitree-G1 人形机器人上，与静态场景图内存相比，MIF 将非静态环境中的重定位成功率从 12% 提高到 94%，同时通过实际在线操作的特征蒸馏将语义内存占用量减少了 91.4%。项目页面及代码：https://ziya-jian.github.io/MIF-homepage/"
+        },
+        {
+          "id": "2605.22812",
+          "rank": 3,
+          "score": 90,
+          "reason_zh": "将手势编码为VLA并行指令模态，消除多相似物体场景的空间歧义",
+          "tags": [
+            "VLA",
+            "具身智能",
+            "操控",
+            "开源"
+          ],
+          "title": "GesVLA: Gesture-Aware Vision-Language-Action Model Embedded Representations",
+          "authors": [
+            "Wenxuan Guo",
+            "Ziyuan Li",
+            "Meng Zhang",
+            "Yichen Liu",
+            "Yimeng Dong"
+          ],
+          "abstract": "Vision-Language-Action (VLA) models have shown strong potential for general-purpose robot manipulation by unifying perception and action. However, existing VLA systems primarily rely on textual instructions and struggle to resolve spatial ambiguity in complex scenes with multiple similar objects. To address this limitation, we introduce gesture as a parallel instruction modality and propose a Gesture-aware Vision-Language-Action model (GesVLA). Our approach encodes gesture features directly into the latent space, enabling them to participate in both high-level reasoning and low-level action generation, and adopts a dual-VLM architecture to achieve tight coupling between gesture representations and action policies. At the data level, we construct a scalable gesture data generation pipeline by rendering hand models onto real-world scene images. This reduces the sim-to-real visual gap while producing rich data with diverse motion patterns and corresponding pointing annotations. In addition, we employ a two-stage training strategy to equip the model with both gesture perception and action prediction capabilities. We evaluate our approach on multiple real-world robotic tasks, including a controlled block manipulation task for validation and more practical scenarios such as product and produce selection. Experimental results show that incorporating gesture consistently improves target grounding accuracy and human-robot interaction efficiency, especially in complex and cluttered environments. Project page: https://gwxuan.github.io/GesVLA/.",
+          "abs_url": "https://arxiv.org/abs/2605.22812",
+          "pdf_url": "https://arxiv.org/pdf/2605.22812v1",
+          "html_url": "https://arxiv.org/html/2605.22812v1",
+          "figures": [
+            "https://arxiv.org/html/2605.22812v1/x1.png",
+            "https://arxiv.org/html/2605.22812v1/x2.png",
+            "https://arxiv.org/html/2605.22812v1/x3.png",
+            "https://arxiv.org/html/2605.22812v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": "https://gwxuan.github.io/GesVLA/",
+          "code_links": [],
+          "project_links": [
+            "https://gwxuan.github.io/GesVLA/"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": null,
+          "comments": "Project page: https://gwxuan.github.io/GesVLA/",
+          "submitted": "2026-05-21T17:57:44Z",
+          "updated": "2026-05-21T17:57:44Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV",
+            "cs.RO"
+          ],
+          "title_zh": "GesVLA：手势感知视觉-语言-动作模型嵌入式表示",
+          "abstract_zh": "视觉-语言-动作（VLA）模型通过统一感知和动作，显示出通用机器人操纵的巨大潜力。然而，现有的 VLA 系统主要依赖于文本指令，很难解决具有多个相似对象的复杂场景中的空间模糊性。为了解决这个限制，我们引入手势作为并行指令模态，并提出了手势感知视觉-语言-动作模型（GesVLA）。我们的方法将手势特征直接编码到潜在空间中，使它们能够参与高级推理和低级动作生成，并采用双 VLM 架构来实现手势表示和动作策略之间的紧密耦合。在数据层面，我们通过将手部模型渲染到现实世界的场景图像上来构建可扩展的手势数据生成管道。这减少了模拟与真实的视觉差距，同时产生具有不同运动模式和相应指向注释的丰富数据。此外，我们采用两阶段训练策略，使模型具备手势感知和动作预测能力。我们评估了我们在多个现实世界机器人任务上的方法，包括用于验证的受控块操作任务以及更实际的场景，例如产品和产品选择。实验结果表明，结合手势可以持续提高目标接地精度和人机交互效率，特别是在复杂和杂乱的环境中。项目页面：https://gwxuan.github.io/GesVLA/。"
+        },
+        {
+          "id": "2605.22272",
+          "rank": 4,
+          "score": 89,
+          "reason_zh": "视频生成先验驱动零样本人形物体交互，无需CAD模型即可灵活操控",
+          "tags": [
+            "机器人",
+            "具身智能",
+            "生成模型",
+            "开源"
+          ],
+          "title": "Imagine2Real: Towards Zero-shot Humanoid-Object Interaction via Video Generative Priors",
+          "authors": [
+            "Jiahe Chen",
+            "ZiRui Wang",
+            "Feiyu Jia",
+            "Xiao Chen",
+            "Xiaojie Niu"
+          ],
+          "abstract": "Whole-body Humanoid-Object Interaction (HOI) is bottlenecked by the scarcity of high-fidelity 3D data. While video generative priors offer a promising alternative, existing methods suffer from \\textit{Representation Misalignment} due to their reliance on geometric priors (e.g., explicit CAD models), and \\textit{Retargeting Complexity} arising from intensive morphing and morphological mismatch. We propose Imagine2Real, a zero-shot HOI framework for flexible, geometry-free interaction. To resolve misalignment, we formulate robot and object motions as unified 4D point trajectories. To overcome retargeting complexity, our Keypoints Tracker tracks only sparse critical points (base, hands, and object), entirely bypassing the error-amplifying retargeting process. To maintain natural gaits despite these sparse signals, we utilize the latent space of a Behavior Foundation Model (BFM) as the tracker's search domain. Using a progressive training strategy, Imagine2Real learns robust behaviors with simple tracking rewards, enabling zero-shot physical deployment within a motion capture(mocap) system.",
+          "abs_url": "https://arxiv.org/abs/2605.22272",
+          "pdf_url": "https://arxiv.org/pdf/2605.22272v1",
+          "html_url": "https://arxiv.org/html/2605.22272v1",
+          "figures": [
+            "https://arxiv.org/html/2605.22272v1/imgs/teaser_v2.png",
+            "https://arxiv.org/html/2605.22272v1/imgs/method_v2.png",
+            "https://arxiv.org/html/2605.22272v1/imgs/result_sim_v2.png",
+            "https://arxiv.org/html/2605.22272v1/imgs/result_real_v1.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": null,
+          "submitted": "2026-05-21T10:15:39Z",
+          "updated": "2026-05-21T10:15:39Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV",
+            "cs.RO"
+          ],
+          "title_zh": "Imagine2Real：通过视频生成先验实现零样本人形物体交互",
+          "abstract_zh": "全身人形物体交互 (HOI) 因缺乏高保真 3D 数据而受到瓶颈。虽然视频生成先验提供了一种有前途的替代方案，但现有方法由于依赖几何先验（例如显式 CAD 模型）而遭受 \\textit{表示错位}，以及由于密集变形和形态不匹配而产生的 \\textit{重定向复杂性}。我们提出 Imagine2Real，一个零样本 HOI 框架，用于灵活、无几何形状的交互。为了解决未对准问题，我们将机器人和物体运动制定为统一的 4D 点轨迹。为了克服重定向的复杂性，我们的关键点跟踪器仅跟踪稀疏的关键点（底座、手和物体），完全绕过错误放大的重定向过程。为了在信号稀疏的情况下保持自然步态，我们利用行为基础模型（BFM）的潜在空间作为跟踪器的搜索域。 Imagine2Real 使用渐进式训练策略，通过简单的跟踪奖励来学习稳健的行为，从而在动作捕捉 (mocap) 系统中实现零镜头物​​理部署。"
+        },
+        {
+          "id": "2605.22816",
+          "rank": 5,
+          "score": 88,
+          "reason_zh": "赋予导航VLM自感知推理能力，显式建模代理-指令-场景关系",
+          "tags": [
+            "VLA",
+            "导航",
+            "具身智能",
+            "顶会"
+          ],
+          "title": "AwareVLN: Reasoning with Self-awareness for Vision-Language Navigation",
+          "authors": [
+            "Wenxuan Guo",
+            "Xiuwei Xu",
+            "Yichen Liu",
+            "Xiangyu Li",
+            "Hang Yin"
+          ],
+          "abstract": "Vision-and-Language Navigation (VLN) requires an agent to ground language instructions to its own movement within a visual environment. While state-of-the-art methods leverage the reasoning capabilities of Vision-Language Models (VLMs) for end-to-end action prediction, they often lack an explicit and explainable understanding of the relationships between the agent, the instruction, and the scene. Conversely, explicitly building a scene map for heuristic planning is intuitively appealing but relies on additional 3D sensors and hinders large-scale vision-language pre-training. To bridge this gap, we propose AwareVLN, a novel framework that equips the navigation model with a self-aware reasoning mechanism, enabling it to understand the agent's state and task progress in a fully end-to-end and data-driven manner. Our approach features two key innovations: (1) a structural reasoning module that fosters spatial and task-oriented self-awareness, and (2) an automatic data engine with progress division for effective training. Extensive experiments on various datasets in Habitat simulator show our AwareVLN significantly outperforms previous state-of-the-art vision-language navigation methods. Project page: https://gwxuan.github.io/AwareVLN/.",
+          "abs_url": "https://arxiv.org/abs/2605.22816",
+          "pdf_url": "https://arxiv.org/pdf/2605.22816v1",
+          "html_url": "https://arxiv.org/html/2605.22816v1",
+          "figures": [
+            "https://arxiv.org/html/2605.22816v1/x2.png",
+            "https://arxiv.org/html/2605.22816v1/x3.png",
+            "https://arxiv.org/html/2605.22816v1/x4.png",
+            "https://arxiv.org/html/2605.22816v1/x5.png"
+          ],
+          "code_url": null,
+          "project_url": "https://gwxuan.github.io/AwareVLN/",
+          "code_links": [],
+          "project_links": [
+            "https://gwxuan.github.io/AwareVLN/"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": "CVPR",
+          "comments": "Accepted to CVPR 2026. Project page: https://gwxuan.github.io/AwareVLN/",
+          "submitted": "2026-05-21T17:58:26Z",
+          "updated": "2026-05-21T17:58:26Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV",
+            "cs.RO"
+          ],
+          "title_zh": "AwareVLN：视觉语言导航的自我意识推理",
+          "abstract_zh": "视觉和语言导航（VLN）要求智能体在视觉环境中将语言指令传达给它自己的运动。虽然最先进的方法利用视觉语言模型 (VLM) 的推理能力进行端到端动作预测，但它们通常缺乏对代理、指令和场景之间关系的明确且可解释的理解。相反，明确构建用于启发式规划的场景地图直观上很有吸引力，但依赖于额外的 3D 传感器并阻碍大规模视觉语言预训练。为了弥补这一差距，我们提出了 AwareVLN，这是一种新颖的框架，为导航模型配备了自我感知推理机制，使其能够以完全端到端和数据驱动的方式了解代理的状态和任务进度。我们的方法有两个关键创新：(1) 结构推理模块，可培养空间和面向任务的自我意识；(2) 具有进度划分的自动数据引擎，可进行有效培训。在栖息地模拟器中对各种数据集进行的广泛实验表明，我们的 AwareVLN 显着优于以前最先进的视觉语言导航方法。项目页面：https://gwxuan.github.io/AwareVLN/。"
+        },
+        {
+          "id": "2605.22671",
+          "rank": 6,
+          "score": 87,
+          "reason_zh": "两阶段行为抽象：从跨环境行为中提炼通用操控表征再实例化",
+          "tags": [
+            "VLA",
+            "具身智能",
+            "操控"
+          ],
+          "title": "From Abstraction to Instantiation: Learning Behavioral Representation for Vision-Language-Action Model",
+          "authors": [
+            "Bing Hu",
+            "Zaijing Li",
+            "Rui Shao",
+            "Junda Chen",
+            "April Hua Liu"
+          ],
+          "abstract": "Vision-Language-Action (VLA) models often suffer from performance degradation under distribution shifts, as they struggle to learn generalized behavior representations across varying environments. While existing approaches attempt to construct behavior representations through action-centric latent variables, they are often limited by short-horizon temporal fragmentation and static execution-alignment, leading to inconsistent behaviors in complex scenarios. To address these limitations, we propose \\textbf{BehaviorVLA}, a framework that facilitates robust manipulation through the learning of a temporally coherent behavioral representations. Our approach features two symmetric components: (1) the \\textbf{Visuomotor Behavior Encoder (VBE)}, which utilizes a causal Mamba-based architecture to aggregate long-horizon trajectory information into a unified behavior representation; and (2) the \\textbf{Phase-conditioned Behavior Decoder (PBD)}, which decodes this representation into precise actions by dynamically aligning task-level priors with real-time execution progress. Experiments on RoboTwin 2.0, LIBERO, and CALVIN demonstrate state-of-the-art success rates of 58\\%, 98\\%, and 4.36 (Avg.Len), respectively. Notably, in real-world sim-to-real transfer, BehaviorVLA matches the performance of OpenVLA-OFT using only 50\\% of the demonstration data, showcasing its superior data efficiency and generalization.",
+          "abs_url": "https://arxiv.org/abs/2605.22671",
+          "pdf_url": "https://arxiv.org/pdf/2605.22671v1",
+          "html_url": "https://arxiv.org/html/2605.22671v1",
+          "figures": [
+            "https://arxiv.org/html/2605.22671v1/x1.png",
+            "https://arxiv.org/html/2605.22671v1/x2.png",
+            "https://arxiv.org/html/2605.22671v1/x3.png",
+            "https://arxiv.org/html/2605.22671v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": null,
+          "submitted": "2026-05-21T16:14:19Z",
+          "updated": "2026-05-21T16:14:19Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "从抽象到实例化：学习视觉-语言-动作模型的行为表示",
+          "abstract_zh": "视觉-语言-动作（VLA）模型在分布变化下常常会出现性能下降的问题，因为它们很难学习不同环境中的广义行为表示。虽然现有的方法试图通过以动作为中心的潜在变量来构建行为表示，但它们通常受到短时域时间碎片和静态执行对齐的限制，导致复杂场景中行为不一致。为了解决这些限制，我们提出了 \\textbf{BehaviorVLA}，这是一个通过学习时间连贯的行为表示来促进鲁棒操作的框架。我们的方法具有两个对称组件：（1）\\textbf{Visuomotor Behaviour Encoder（VBE）}，它利用基于因果 Mamba 的架构将长视野轨迹信息聚合成统一的行为表示； （2）\\textbf{相位条件行为解码器（PBD）}，它通过动态地将任务级先验与实时执行进度对齐来将这种表示解码为精确的动作。 RoboTwin 2.0、LIBERO 和 CALVIN 上的实验表明，最先进的成功率分别为 58\\%、98\\% 和 4.36 (Avg.Len)。值得注意的是，在现实世界的模拟到真实传输中，BehaviorVLA 仅使用 50% 的演示数据即可达到 OpenVLA-OFT 的性能，展示了其卓越的数据效率和泛化能力。"
+        },
+        {
+          "id": "2605.21811",
+          "rank": 7,
+          "score": 86,
+          "reason_zh": "几何一致的流形加速度优化，可证明安全的灵巧手操控运动策略",
+          "tags": [
+            "机器人",
+            "操控"
+          ],
+          "title": "Safe and Steerable Geometric Motion Policies for Robotic Dexterous Manipulation",
+          "authors": [
+            "Albert Wu",
+            "Riccardo Bonalli",
+            "Thomas Lew",
+            "C. Karen Liu"
+          ],
+          "abstract": "Robotic dexterous manipulation requires continuously reconciling objectives and constraints defined on heterogeneous geometric spaces: a robot controlled on a $\\mathbb{R}^7$ configuration manifold may need to track end effector poses on $\\mathrm{SE}(3)$ while satisfying obstacle avoidance margins in $\\mathbb{R}$. We present Safe Pullback Bundle Dynamical Systems (SafePBDS), a geometrically consistent framework that computes optimal, certifiably safe configuration manifold accelerations from objectives and safety requirements on arbitrary task manifolds. SafePBDS builds on prior work that combines predefined task manifold dynamical systems to produce autonomous motion. Its first innovation is a pullback control barrier function construction, which converts task manifold safety conditions into linear constraints on configuration manifold accelerations. The second innovation is a task manifold action interface that allows a high-level policy to inject low dimensional residual motions; zero input recovers the autonomous behavior, while safety is preserved under arbitrary inputs. This lets high-level policies efficiently steer exploration while leaving precise motion to the autonomous behavior. We validate SafePBDS in simulation and on a 23-DOF Franka Panda-Allegro Hand platform. On dexterous grasping, SafePBDS achieves a $92.5\\%$ success rate across 20 household objects and 120 trials. Using the action interface, the method can exclude any one of the four fingers during grasping via a one-dimensional action, achieving $94.4\\%$ 3-finger grasp success across 3 objects and 36 trials. The efficient planning and safety guarantee of SafePBDS also enables the first model-based, fully actuated palm-down in-hand reorientation, exceeding $360^\\circ$ of yaw rotation in both directions under varying object weight and wrist motion. Demo video and details: https://tml.stanford.edu/safe-pbds",
+          "abs_url": "https://arxiv.org/abs/2605.21811",
+          "pdf_url": "https://arxiv.org/pdf/2605.21811v1",
+          "html_url": "https://arxiv.org/html/2605.21811v1",
+          "figures": [
+            "https://arxiv.org/html/2605.21811v1/figures/fig_headline.png",
+            "https://arxiv.org/html/2605.21811v1/x1.png",
+            "https://arxiv.org/html/2605.21811v1/x2.png",
+            "https://arxiv.org/html/2605.21811v1/x3.png"
+          ],
+          "code_url": null,
+          "project_url": "https://tml.stanford.edu/safe-pbds",
+          "code_links": [],
+          "project_links": [
+            "https://tml.stanford.edu/safe-pbds"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": null,
+          "comments": "24 pages, 10 figures, 5 tables. Project page and demo video: https://tml.stanford.edu/safe-pbds",
+          "submitted": "2026-05-20T23:16:01Z",
+          "updated": "2026-05-20T23:16:01Z",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.RO"
+          ],
+          "title_zh": "用于机器人灵巧操作的安全且可操纵的几何运动策略",
+          "abstract_zh": "机器人灵巧操纵需要不断协调异构几何空间上定义的目标和约束：在 $\\mathbb{R}^7$ 配置流形上控制的机器人可能需要跟踪 $\\mathrm{SE}(3)$ 上的末端执行器姿势，同时满足 $\\mathbb{R}$ 中的避障裕度。我们提出了安全回拉束动力系统（SafePBDS），这是一个几何一致的框架，可以根据任意任务流形的目标和安全要求计算最佳的、可证明安全的配置流形加速度。 SafePBDS 建立在先前工作的基础上，结合了预定义的任务流形动力系统来产生自主运动。其第一个创新是回拉控制屏障函数构造，它将任务流形安全条件转换为配置流形加速度的线性约束。第二个创新是任务流形动作接口，允许高层策略注入低维残差运动；零输入恢复自主行为，同时在任意输入下保持安全性。这使得高层策略能够有效地引导探索，同时将精确的运动留给自主行为。我们在模拟和 23 自由度 Franka Panda-Allegro Hand 平台上验证 SafePBDS。在灵巧抓取方面，SafePBDS 在 20 个家用物品和 120 次试验中取得了 92.5\\%$ 的成功率。使用动作接口，该方法可以通过一维动作在抓取过程中排除四个手指中的任何一个，在 3 个物体和 36 次试验中实现 $94.4\\%$ 3 指抓取成功。 SafePBDS 的高效规划和安全保证还实现了第一个基于模型的、完全驱动的手掌向下的手部重新定向，在不同的物体重量和手腕运动下，双向偏航旋转超过 360 美元。演示视频和详细信息：https://tml.stanford.edu/safe-pbds"
+        },
+        {
+          "id": "2605.22123",
+          "rank": 8,
+          "score": 86,
+          "reason_zh": "从少量演示中学习符号化不变奖励，突破机器人视觉奖励的泛化瓶颈",
+          "tags": [
+            "机器人",
+            "操控",
+            "强化学习"
+          ],
+          "title": "Beyond Pixels: Learning Invariant Rewards for Real-World Robotics From a Few Demonstrations",
+          "authors": [
+            "Tengye Xu",
+            "Yangting Sun",
+            "Ziju Shen",
+            "Guanqi Chen",
+            "Zhen Fu"
+          ],
+          "abstract": "Designing reward functions that generalize beyond controlled laboratory settings remains a fundamental challenge in reinforcement learning for robotics. In open-world manipulation problems, a single task can appear in numerous variants through different object instances, positions, and camera viewpoints. Recent vision-based reward models tend to memorize specific pixel distributions and fail to generalize beyond their training conditions. To address this, we propose a framework that learns invariant symbolic reward functions from as few as five demonstrations. The insight is to shift from visual feature-fitting to the discovery of behavioral invariants: task-level properties that remain constant across diverse visual instantiations. The framework has two coupled components: a structural reward formulation that encodes task-level strategies and physical constraints while preserving optimal policy invariance, and a hybrid symbolic-numerical procedure that distills these invariants from demonstrations without online interaction. Experiments on eight Meta-World tasks and three Franka manipulation tasks demonstrate that our method achieves stronger process alignment and policy rollout ranking abilities compared to baselines, accelerating downstream policy learning. Three real-world out-of-distribution experiments further show that the same learned reward generalizes zero-shot to position, viewpoint, and object variations, enabling a single reward representation to be reused across diverse task variants in practice.",
+          "abs_url": "https://arxiv.org/abs/2605.22123",
+          "pdf_url": "https://arxiv.org/pdf/2605.22123v1",
+          "html_url": "https://arxiv.org/html/2605.22123v1",
+          "figures": [
+            "https://arxiv.org/html/2605.22123v1/x1.png",
+            "https://arxiv.org/html/2605.22123v1/x2.png",
+            "https://arxiv.org/html/2605.22123v1/x3.png",
+            "https://arxiv.org/html/2605.22123v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": null,
+          "submitted": "2026-05-21T07:55:35Z",
+          "updated": "2026-05-21T07:55:35Z",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.RO"
+          ],
+          "title_zh": "超越像素：从一些演示中学习现实世界机器人的不变奖励",
+          "abstract_zh": "设计超越受控实验室设置的奖励函数仍然是机器人强化学习的基本挑战。在开放世界操纵问题中，单个任务可以通过不同的对象实例、位置和摄像机视点以多种变体出现。最近基于视觉的奖励模型倾向于记住特定的像素分布，并且无法概括超出其训练条件。为了解决这个问题，我们提出了一个框架，可以从短短五个演示中学习不变的符号奖励函数。洞察力是从视觉特征拟合转向行为不变量的发现：在不同的视觉实例中保持不变的任务级属性。该框架有两个耦合的组成部分：一个结构奖励公式，它对任务级策略和物理约束进行编码，同时保留最佳策略不变性；以及一个混合符号数字程序，可以在没有在线交互的情况下从演示中提取这些不变性。对八个元世界任务和三个弗兰卡操作任务的实验表明，与基线相比，我们的方法实现了更强的流程对齐和策略推出排名能力，从而加速了下游策略学习。三个现实世界的分布外实验进一步表明，相同的学习奖励可以将零样本推广到位置、视角和对象变化，从而使单个奖励表示能够在实践中的不同任务变体中重复使用。"
+        },
+        {
+          "id": "2605.21710",
+          "rank": 9,
+          "score": 85,
+          "reason_zh": "物理约束数据生成，单次双臂演示扩展为多样化鲁棒恢复策略数据集",
+          "tags": [
+            "机器人",
+            "操控",
+            "开源"
+          ],
+          "title": "PGDG: Physically Grounded Data Generation for Robust Bimanual Policy Learning from a Single Demonstration",
+          "authors": [
+            "Cunxi Dai",
+            "Haoran Chang",
+            "Aditya Nisal",
+            "Rahul Kumar",
+            "Guofei Chen"
+          ],
+          "abstract": "Behavior cloning for contact-rich bimanual manipulation remains challenging because diverse demonstrations are expensive to collect, and even small disturbances can push the system into off-manifold states where no recovery supervision is available. We propose PGDG, a data generation framework with zero-shot curation that expands a single demonstration into a compact dataset of physically plausible, successful, and diverse recovery behaviors without additional human labeling. PGDG iterates between a physics-grounded sampler and a dataset curator, where the curator selects informative, non-redundant, and recoverable behaviors to update the sampling distribution toward under-covered recovery modes, and the sampler draws physically plausible rollout candidates from this updated distribution and retains successful trajectories. To further improve data quality, PGDG applies short-horizon sampling-based control to relabel selected risky states with corrective actions. Across four bimanual manipulation tasks, PGDG consistently outperforms spatial-only augmentation in both simulation and zero-shot real-world transfer. On RotateBox-Pitch, success improves from 38% to 93% in simulation and from 35% to 82% in the real world. PGDG also enables effective foundation models fine-tuning such as GR00T, increasing success from 46% to 77%. Additional results are available in our website: https://cunxid.github.io/PGDG/.",
+          "abs_url": "https://arxiv.org/abs/2605.21710",
+          "pdf_url": "https://arxiv.org/pdf/2605.21710v1",
+          "html_url": "https://arxiv.org/html/2605.21710v1",
+          "figures": [
+            "https://arxiv.org/html/2605.21710v1/x1.png",
+            "https://arxiv.org/html/2605.21710v1/x2.png",
+            "https://arxiv.org/html/2605.21710v1/x3.png",
+            "https://arxiv.org/html/2605.21710v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": "https://cunxid.github.io/PGDG/",
+          "code_links": [],
+          "project_links": [
+            "https://cunxid.github.io/PGDG/"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": null,
+          "comments": null,
+          "submitted": "2026-05-20T20:14:24Z",
+          "updated": "2026-05-20T20:14:24Z",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.RO"
+          ],
+          "title_zh": "PGD​​G：通过单个演示生成稳健的双手策略学习的物理基础数据",
+          "abstract_zh": "接触丰富的双手操作的行为克隆仍然具有挑战性，因为收集各种演示的成本很高，而且即使很小的干扰也会使系统进入无法进行恢复监督的脱离流形状态。我们提出了 PGDG，一种具有零样本管理的数据生成框架，可将单个演示扩展为物理上合理、成功且多样化的恢复行为的紧凑数据集，而无需额外的人工标记。 PGD​​G 在基于物理的采样器和数据集管理者之间进行迭代，其中管理者选择信息丰富的、非冗余的和可恢复的行为来将采样分布更新为未覆盖的恢复模式，而采样器从这个更新的分布中绘制物理上合理的推出候选者并保留成功的轨迹。为了进一步提高数据质量，PGDG 采用基于短期抽样的控制，通过纠正措施重新标记选定的风险状态。在四个双手操作任务中，PGDG 在模拟和零样本现实世界转移方面始终优于仅空间增强。在 RotateBox-Pitch 上，模拟成功率从 38% 提高到 93%，现实世界成功率从 35% 提高到 82%。 PGD​​G 还可以实现有效的基础模型微调，例如 GR00T，将成功率从 46% 提高到 77%。其他结果可在我们的网站上找到：https://cunxid.github.io/PGDG/。"
+        },
+        {
+          "id": "2605.22185",
+          "rank": 10,
+          "score": 80,
+          "reason_zh": "融合遥测数据增强MLLM驾驶视频理解，精准感知碰撞等长尾风险事件",
+          "tags": [
+            "自动驾驶",
+            "VLM"
+          ],
+          "title": "Enhancing Multimodal Large Language Models for Safety-Critical Driving Video Analysis",
+          "authors": [
+            "Tomaso Trinci",
+            "Henrique Piñeiro Monteagudo",
+            "Leonardo Taccari"
+          ],
+          "abstract": "Recent advancements in Multimodal Large Language Models (MLLMs) have demonstrated impressive capabilities in general visual understanding. However, their application to safety-critical driving scenarios remains limited by an inability to accurately perceive and reason about rare high-stakes dynamic events, such as collisions or near-collisions. To address this, we introduce a pipeline that enhances MLLM perception by fusing downsampled video frames with synchronized high-frequency telematics data (IMU and GPS) and semantic insights from specialized computer vision models. Our pipeline generates high-quality pseudo-labels, including descriptive captions and question-answer pairs, specifically designed to train MLLMs to identify and describe Safety-Critical Events (SCEs) in real-world driving footage. We show the effectiveness of our approach fine-tuning the open-source QwenVL-2.5 model via DoRA adapters: our experiments demonstrate significant improvements in identifying and explaining safety-critical events, with fewer than 50M trainable parameters and limited computational budget.",
+          "abs_url": "https://arxiv.org/abs/2605.22185",
+          "pdf_url": "https://arxiv.org/pdf/2605.22185v1",
+          "html_url": "https://arxiv.org/html/2605.22185v1",
+          "figures": [
+            "https://arxiv.org/html/2605.22185v1/x1.png",
+            "https://arxiv.org/html/2605.22185v1/x2.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": "Accepted at the 2026 IEEE International Conference on Intelligent Transportation Systems (ITSC 2026)",
+          "submitted": "2026-05-21T08:54:22Z",
+          "updated": "2026-05-21T08:54:22Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV",
+            "cs.LG"
+          ],
+          "title_zh": "增强用于安全关键驾驶视频分析的多模态大语言模型",
+          "abstract_zh": "多模态大语言模型 (MLLM) 的最新进展在一般视觉理解方面展示了令人印象深刻的能力。然而，它们在安全关键驾驶场景中的应用仍然受到限制，因为无法准确感知和推理罕见的高风险动态事件，例如碰撞或接近碰撞。为了解决这个问题，我们引入了一种管道，通过将下采样视频帧与同步高频远程信息处理数据（IMU 和 GPS）以及来自专业计算机视觉模型的语义见解融合来增强 MLLM 感知。我们的管道生成高质量的伪标签，包括描述性标题和问答对，专门用于训练 MLLM 识别和描述现实世界驾驶镜头中的安全关键事件 (SCE)。我们展示了我们通过 DoRA 适配器微调开源 QwenVL-2.5 模型的方法的有效性：我们的实验证明了在识别和解释安全关键事件方面的显着改进，可训练参数少于 50M，计算预算也有限。"
+        }
+      ]
+    },
+    {
+      "id": "vlm",
+      "name": "VLM / LLM",
+      "papers": [
+        {
+          "id": "2605.21642",
+          "rank": 1,
+          "score": 88,
+          "reason_zh": "消融即验证——系统诊断VLM是否真正使用连续思维token进行视觉推理",
+          "tags": [
+            "VLM",
+            "开源"
+          ],
+          "title": "Ablate-to-Validate: Are Vision-Language Models Really Using Continuous Thought Tokens?",
+          "authors": [
+            "Tianyi Zhang",
+            "Mahtab Bigverdi",
+            "Ranjay Krishna"
+          ],
+          "abstract": "Vision-language models (VLMs) are increasingly augmented with continuous or latent non-textual tokens intended to support \"visual thinking.\" Despite improved task accuracy, this alone does not show that models actually use these tokens for reasoning -- gains may arise from confounds such as added context length, special-token anchoring, or training-time regularization. We formalize a diagnostic principle, Ablate-to-Validate, for testing whether latent-token content is genuinely utilized, and instantiate it as the Token Replacement Test (TRT), a standardized suite of content-replacement ablations. TRT holds the prompt, image, token budget, and decoding fixed while replacing intermediate tokens with zero, random, first-repeat, or oracle alternatives, isolating whether performance depends on token content or merely on token presence. As a controlled testbed, we study relative depth reasoning with LLaVA-13B and Qwen2.5-VL-3B, training models to predict and consume continuous or discrete depth spans across multiple frozen encoders (SigLIP2, CLIP, DINOv2) and token budgets. We additionally apply TRT to three off-the-shelf visual-thinking systems (Mirage, Mull-Tokens, CoVT) on BLINK, VSP, and CV-Bench. Across all settings, accuracy gains are a misleading proxy for latent-token reasoning: VLMs retain most improvement even when token content is corrupted or replaced, revealing a persistent gap between having a latent channel and using it as an information bottleneck. We recommend TRT as a standard diagnostic alongside accuracy for any method introducing continuous thought tokens.",
+          "abs_url": "https://arxiv.org/abs/2605.21642",
+          "pdf_url": "https://arxiv.org/pdf/2605.21642v1",
+          "html_url": "https://arxiv.org/html/2605.21642v1",
+          "figures": [],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": null,
+          "submitted": "2026-05-20T18:55:16Z",
+          "updated": "2026-05-20T18:55:16Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "消融验证：视觉语言模型真的使用连续思维标记吗？",
+          "abstract_zh": "视觉语言模型（VLM）越来越多地通过连续或潜在的非文本标记来增强，旨在支持“视觉思维”。尽管提高了任务准确性，但这并不能表明模型实际上使用这些标记进行推理——收益可能来自于混淆，例如增加的上下文长度、特殊标记锚定或训练时间正则化。我们形式化了一个诊断原则，Ablate-to-Validate，用于测试潜在令牌内容是否被真正利用，并将其实例化为令牌替换测试（TRT），这是一套标准化的内容替换消融。 TRT 保持提示、图像、令牌预算和解码固定，同时用零、随机、首次重复或预言替代方案替换中间令牌，从而隔离性能是否取决于令牌内容或仅取决于令牌存在。作为受控测试平台，我们使用 LLaVA-13B 和 Qwen2.5-VL-3B 研究相对深度推理，训练模型来预测和消耗跨多个冻结编码器（SigLIP2、CLIP、DINOv2）和令牌预算的连续或离散深度跨度。我们还将 TRT 应用于 BLINK、VSP 和 CV-Bench 上的三个现成的视觉思维系统（Mirage、Mull-Tokens、CoVT）。在所有设置中，准确性增益都是潜在令牌推理的误导性代理：即使令牌内容被损坏或替换，VLM 仍保留大部分改进，揭示了拥有潜在通道和将其用作信息瓶颈之间的持续差距。我们推荐 TRT 作为标准诊断以及任何引入连续思想标记的方法的准确性。"
+        },
+        {
+          "id": "2605.22819",
+          "rank": 2,
+          "score": 86,
+          "reason_zh": "为视频MLLM注入相机位姿token，让模型理解跨帧共享的空间坐标系",
+          "tags": [
+            "VLM",
+            "开源"
+          ],
+          "title": "Cambrian-P: Pose-Grounded Video Understanding",
+          "authors": [
+            "Jihan Yang",
+            "Zifan Zhao",
+            "Xichen Pan",
+            "Shusheng Yang",
+            "Junyi Zhang"
+          ],
+          "abstract": "Camera pose matters. The position and orientation of each viewpoint define a shared spatial coordinate frame that relates observations across video frames. Yet this signal is largely absent from multimodal LLMs (MLLMs) for video understanding, which process frames as isolated 2D snapshots, instead of the persistent scene humans perceive. We revisit pose as a lightweight supervisory signal and introduce Cambrian-P, a video MLLM augmented with per-frame learnable camera tokens and a pose regression head. With a carefully designed sampling scheme, the model achieves substantial gains of 4.5-6.5% on spatial reasoning benchmarks such as VSI-Bench, generalizes across eight additional spatial and general video QA benchmarks, and, as a byproduct, achieves state of the art streaming pose estimation on ScanNet. Surprisingly, training on pseudo-annotated poses from in-the-wild video further improves general video QA benchmarks, showing pose helps beyond spatial reasoning. Together, these results position camera pose as a fundamental signal for video models that reason about the physical world.",
+          "abs_url": "https://arxiv.org/abs/2605.22819",
+          "pdf_url": "https://arxiv.org/pdf/2605.22819v1",
+          "html_url": "https://arxiv.org/html/2605.22819v1",
+          "figures": [
+            "https://arxiv.org/html/2605.22819v1/x5.png",
+            "https://arxiv.org/html/2605.22819v1/x6.png",
+            "https://arxiv.org/html/2605.22819v1/x7.png",
+            "https://arxiv.org/html/2605.22819v1/x8.png"
+          ],
+          "code_url": null,
+          "project_url": "https://cambrian-mllm.github.io/",
+          "code_links": [],
+          "project_links": [
+            "https://cambrian-mllm.github.io/"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": null,
+          "comments": "Project Page: https://cambrian-mllm.github.io/",
+          "submitted": "2026-05-21T17:59:45Z",
+          "updated": "2026-05-21T17:59:45Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "Cambrian-P：基于姿势的视频理解",
+          "abstract_zh": "相机姿势很重要。每个视点的位置和方向定义了一个共享的空间坐标系，该坐标系将跨视频帧的观察结果联系起来。然而，用于视频理解的多模态 LLM (MLLM) 基本上不存在这种信号，它将帧处理为孤立的 2D 快照，而不是人类感知的持久场景。我们重新审视姿势作为轻量级监督信号，并引入 Cambrian-P，这是一种视频 MLLM，增强了每帧可学习的相机标记和姿势回归头。通过精心设计的采样方案，该模型在 VSI-Bench 等空间推理基准上实现了 4.5-6.5% 的大幅提升，概括了八个额外的空间和通用视频 QA 基准，并且作为副产品，在 ScanNet 上实现了最先进的流式姿态估计。令人惊讶的是，对野外视频中的伪注释姿势进行训练进一步改善了一般视频 QA 基准，表明姿势有助于超越空间推理。总之，这些结果将相机位置作为推理物理世界的视频模型的基本信号。"
+        },
+        {
+          "id": "2605.21931",
+          "rank": 3,
+          "score": 85,
+          "reason_zh": "时序中心的自进化框架，让视频LLM自主生成问答对摆脱人工标注依赖",
+          "tags": [
+            "VLM",
+            "开源"
+          ],
+          "title": "EvoVid: Temporal-Centric Self-Evolution for Video Large Language Models",
+          "authors": [
+            "Shiqi Huang",
+            "Ziyue Wang",
+            "Zhongrong Zuo",
+            "Han Qiu",
+            "Qi She"
+          ],
+          "abstract": "Recent Video Large Language Models (Video-LLMs) have demonstrated strong capabilities in video reasoning through reinforcement learning (RL). However, existing RL pipelines rely heavily on human-annotated tasks and solutions, making them costly to scale and fundamentally constrained by human expertise. Self-evolving frameworks have recently emerged as a promising alternative through autonomous Questioner-Solver self-play. Unfortunately, these approaches are primarily designed for static modalities such as text and images, fundamentally failing to capture the temporal dynamics that are central to video reasoning. In this work, we propose $\\textbf{EvoVid}$, a temporal-centric self-evolving framework that enables Video-LLMs to improve directly from raw, unannotated videos. Specifically, we introduce two complementary temporal-centric rewards: a temporal-aware Questioner reward that encourages temporally dependent question generation through temporal perturbation sensitivity, and a temporal-grounded Solver reward that provides automatic temporal supervision via inherent video segment localization. Extensive experiments across four base models and six benchmarks demonstrate consistent improvements over both base models and existing self-evolving baselines, achieving competitive performance with supervised methods. These results highlight temporal-centric self-evolution as an effective and scalable paradigm for video understanding and reasoning.",
+          "abs_url": "https://arxiv.org/abs/2605.21931",
+          "pdf_url": "https://arxiv.org/pdf/2605.21931v1",
+          "html_url": "https://arxiv.org/html/2605.21931v1",
+          "figures": [
+            "https://arxiv.org/html/2605.21931v1/x1.png",
+            "https://arxiv.org/html/2605.21931v1/x2.png",
+            "https://arxiv.org/html/2605.21931v1/x3.png",
+            "https://arxiv.org/html/2605.21931v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": "https://huangshiqi128.github.io/EvoVid.io/",
+          "code_links": [],
+          "project_links": [
+            "https://huangshiqi128.github.io/EvoVid.io/"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": null,
+          "comments": "Project page: https://huangshiqi128.github.io/EvoVid.io/",
+          "submitted": "2026-05-21T03:00:35Z",
+          "updated": "2026-05-21T03:00:35Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "EvoVid：视频大语言模型的以时间为中心的自我进化",
+          "abstract_zh": "最近的视频大语言模型（Video-LLM）通过强化学习（RL）展示了强大的视频推理能力。然而，现有的强化学习管道严重依赖人工注释的任务和解决方案，这使得它们的扩展成本高昂，并且从根本上受到人类专业知识的限制。最近，通过自主提问者-解决者自我博弈，自我进化框架成为一种有前途的替代方案。不幸的是，这些方法主要是针对静态模式（例如文本和图像）而设计的，从根本上无法捕获视频推理核心的时间动态。在这项工作中，我们提出了 $\\textbf{EvoVid}$，一个以时间为中心的自我进化框架，使视频法学硕士能够直接从原始的、未注释的视频中进行改进。具体来说，我们引入了两种互补的以时间为中心的奖励：一个时间感知的提问者奖励，通过时间扰动敏感性鼓励时间相关的问题生成，以及一个基于时间的求解器奖励，通过固有的视频片段定位提供自动时间监督。跨越四个基本模型和六个基准的广泛实验表明，基本模型和现有的自我进化基线都得到了一致的改进，通过监督方法实现了有竞争力的性能。这些结果凸显了以时间为中心的自我进化作为视频理解和推理的有效且可扩展的范例。"
+        }
+      ]
+    }
+  ]
+}
