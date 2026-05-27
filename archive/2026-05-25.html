@@ -37,7 +37,7 @@
         AI<span class="tab-code">cs.AI</span>
       </button>
     
-    <button class="tab tab-selected" data-cat="__selected__">
+    <button class="tab tab-selected has-selected" data-cat="__selected__">
       Selected<span class="tab-code">精选</span>
     </button>
   </div>
@@ -11794,7 +11794,538 @@
 
 <div id="selected-panel" class="hidden">
   
-  <p class="sel-empty">今日暂无精选内容。</p>
+  
+  
+  <p class="sel-meta">从 261 篇中精选 20 篇</p>
+  
+  <div class="sel-category">
+    <h3 class="sel-cat-name">世界模型&amp;生成模型<span class="sel-cat-count">（5）</span></h3>
+    <ul class="sel-paper-list">
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">1/5</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2605.23878" target="_blank" rel="noopener">LaMo: Self-Supervised Latent Motion Priors for Physical Realism in Video Generation</a></h2>
+            <p class="paper-title-zh">LaMo：视频生成中物理真实感的自监督潜在运动先验</p>
+          </div>
+        </div>
+        <p class="sel-reason">从无标签视频提取运动先验提升物理真实性，即插即用，无需外部监督或模型修改</p>
+        <div class="sel-tags"><span class="sel-tag">世界模型</span><span class="sel-tag">视频生成</span><span class="sel-tag">运动先验</span></div>
+        <div class="paper-meta">
+          <span class="authors">Bo Jiang, Depu Meng, Yihan Hu, Yichen Xie, Tianshuo Xu, Wei Zhan</span>
+        </div>
+        <p class="paper-abstract">Modern video generators produce visually compelling clips but still struggle with physical and motion consistency, limiting their use as reliable world simulators. Existing remedies often rely on external simulators, teacher models, or curated physics-focused data. We explore a complementary self-supervised direction: extracting motion cues from the unlabeled videos already used to train video diffusion models. We propose LaMo, which formulates a latent motion prior over frame-to-frame latent changes conditioned on the current latent and prompt. This prior is exposed through two lightweight readouts: a macro motion drift used during training as a Motion Drift Loss, and a learned micro motion field used during sampling as Motion Prior Guidance. Both components are plug-and-play with existing video diffusion backbones, requiring no architectural or I/O changes. On VideoPhy and VideoPhy2, LaMo improves CogVideoX backbones and outperforms recent physics-aware baselines that use external supervision. On VBench, it preserves overall generation quality while improving motion-related dimensions. These results suggest that unlabeled video contains useful motion supervision for improving physical fidelity in modern video diffusion models.</p>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2605.23878v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2605.23878" target="_blank" rel="noopener">Abs</a>
+          
+          
+          <a class="project" href="https://lamo-ai.github.io/" target="_blank" rel="noopener">Project</a>
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">2/5</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2605.23902" target="_blank" rel="noopener">PiD: Fast and High-Resolution Latent Decoding with Pixel Diffusion</a></h2>
+            <p class="paper-title-zh">PiD：利用像素扩散进行快速高分辨率潜在解码</p>
+          </div>
+        </div>
+        <p class="sel-reason">NVIDIA像素扩散解码器，VAE/SigLIP解码统一为条件扩散，4-8x超分，RTX 5090上&lt;1秒</p>
+        <div class="sel-tags"><span class="sel-tag">像素扩散</span><span class="sel-tag">高分辨率解码</span><span class="sel-tag">加速推理</span></div>
+        <div class="paper-meta">
+          <span class="authors">Yifan Lu, Qi Wu, Jay Zhangjie Wu, Zian Wang, Huan Ling, Sanja Fidler, Xuanchi Ren</span>
+        </div>
+        <p class="paper-abstract">Most practical high-resolution text-to-image systems, including latent diffusion and autoregressive models, perform generation in a compact latent space, and a decoder maps the generated latents back to pixels. Yet the latent-to-pixel decoder is reconstruction-oriented, optimized to invert the encoder rather than synthesize more details, and becomes increasingly costly at megapixel scale. This drawback calls for a more expressive and efficient decoding paradigm. Motivated by recent progress in scalable pixel-space diffusion, we introduce PiD, a Pixel diffusion Decoder that reformulates latent decoding as conditional pixel diffusion, unifying decoding and upsampling into one generative module. By denoising directly in high-resolution pixel space, PiD synthesizes 4x and even 8x upscaled images with low latency. PiD decodes latents of 512 x 512 images into 2048 x 2048 pixels in under 1 second with 13 GB peak memory on a consumer RTX 5090, and as fast as 210 ms on a GB200 GPU.</p>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2605.23902v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2605.23902" target="_blank" rel="noopener">Abs</a>
+          
+          
+          <a class="project" href="https://research.nvidia.com/labs/sil/projects/pid/" target="_blank" rel="noopener">Project</a>
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">3/5</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2605.23903" target="_blank" rel="noopener">Geo-Align: Video Generation Alignment via Metric Geometry Reward</a></h2>
+            <p class="paper-title-zh">Geo-Align：通过度量几何奖励进行视频生成对齐</p>
+          </div>
+        </div>
+        <p class="sel-reason">首个为摄像头控制视频重渲染设计的RL框架，3D度量几何奖励替代合成数据微调</p>
+        <div class="sel-tags"><span class="sel-tag">视频生成</span><span class="sel-tag">RL对齐</span><span class="sel-tag">相机控制</span></div>
+        <div class="paper-meta">
+          <span class="authors">Zizun Li, Haoyu Guo, Runzhe Teng, Chunhua Shen, Tong He</span>
+        </div>
+        <p class="paper-abstract">Camera-controlled video generation has achieved remarkable progress in recent years. However, existing video-to-video re-rendering methods primarily rely on Supervised Fine-Tuning using synthetic datasets. At present, there is an extreme scarcity of synchronized, multi-view real-world video data. Consequently, the prevailing paradigm often exhibits limited generalization when processing out-of-distribution real-world videos, with models struggling to accurately adhere to physical scales and camera trajectories. To bridge this gap, we propose Geo-Align, the first Reinforcement Learning framework specifically designed for camera-controlled video re-rendering. Built upon a pretrained model, we optimize the model through a scale-aware perceptual reward mechanism. Specifically, we introduce a metric 3D estimator to extract precise camera trajectories from generated videos, explicitly penalizing deviations in rotation and translation.</p>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2605.23903v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2605.23903" target="_blank" rel="noopener">Abs</a>
+          
+          
+          
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">4/5</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2605.23845" target="_blank" rel="noopener">Learning a Particle Dynamics Model with Real-world Videos</a></h2>
+            <p class="paper-title-zh">通过真实视频学习粒子动力学模型</p>
+          </div>
+        </div>
+        <p class="sel-reason">CVPR 2026 Findings，从真实视频学习粒子动力学世界模型，结合3D Gaussian Splatting</p>
+        <div class="sel-tags"><span class="sel-tag">世界模型</span><span class="sel-tag">粒子动力学</span><span class="sel-tag">3DGS</span></div>
+        <div class="paper-meta">
+          <span class="authors">Chanho Kim, Suhas V. Sumukh, Li Fuxin</span>
+        </div>
+        <p class="paper-abstract">Data-driven learning approaches for physics simulation, sometimes referred to as world models, have emerged as promising alternatives to traditional physics simulators due to their differentiable nature. Prior work has demonstrated impressive results in predicting the motions of rigid and non-rigid objects in complex scenes involving multiple interacting bodies. However, these models are typically trained in simulated environments because obtaining perfect state information such as complete scene point clouds and point correspondences over time is challenging in real-world settings. In this work, we aim to overcome these limitations by introducing a novel framework for training neural object dynamics models directly from unlabeled real-world videos. Specifically, we propose to learn a particle-based dynamics model compatible with a Gaussian splatting framework, which operates on dense particles derived from Gaussians (i.e., particles with scales and rotations) and predicts their position and rotation changes over time.</p>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2605.23845v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2605.23845" target="_blank" rel="noopener">Abs</a>
+          
+          
+          
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">5/5</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2605.23458" target="_blank" rel="noopener">One-Forcing: Towards Stable One-Step Autoregressive Video Generation</a></h2>
+            <p class="paper-title-zh">One-Forcing：迈向稳定的一步自回归视频生成</p>
+          </div>
+        </div>
+        <p class="sel-reason">一步自回归视频生成，稳定单步推理时序一致性</p>
+        <div class="sel-tags"><span class="sel-tag">视频生成</span><span class="sel-tag">自回归</span><span class="sel-tag">快速推理</span></div>
+        <div class="paper-meta">
+          <span class="authors"></span>
+        </div>
+        <p class="paper-abstract">Recent advances have substantially improved real-time interactive video generation in the autoregressive regime. However, most existing few-step autoregressive video generation methods, often distilled from multi-step diffusion models, still suffer from temporal flickering and distribution shift across frames. In this work, we introduce One-Forcing, a training strategy that adapts autoregressive video generation models for stable one-step generation without requiring multi-step distillation. The key idea is to train the model to generate clean frames directly from noisy inputs by forcing the autoregressive dependency to operate on the clean latent trajectory rather than the noisy one.</p>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2605.23458v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2605.23458" target="_blank" rel="noopener">Abs</a>
+          
+          
+          
+        </div>
+        
+      </li>
+      
+    </ul>
+  </div>
+  
+  <div class="sel-category">
+    <h3 class="sel-cat-name">3D/4D重建<span class="sel-cat-count">（5）</span></h3>
+    <ul class="sel-paper-list">
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">1/5</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2605.23888" target="_blank" rel="noopener">GenRecon: Bridging Generative Priors for Multi-View 3D Scene Reconstruction</a></h2>
+            <p class="paper-title-zh">GenRecon：桥接生成先验以进行多视图3D场景重建</p>
+          </div>
+        </div>
+        <p class="sel-reason">TUM+NVIDIA强强联合，Trellis.2生成先验提升多视图场景重建16%</p>
+        <div class="sel-tags"><span class="sel-tag">场景重建</span><span class="sel-tag">生成先验</span><span class="sel-tag">多视图</span></div>
+        <div class="paper-meta">
+          <span class="authors">Katharina Schmid, Nicolas von Lützow, Jozef Hladký, Angela Dai, Matthias Nießner</span>
+        </div>
+        <p class="paper-abstract">We introduce a new approach to high-fidelity 3D scene reconstruction from multi-view RGB images that tightly couples reconstruction with a strong generative 3D prior. We cast scene reconstruction as conditional 3D generation over a set of spatially-localized, overlapping chunks that together tile the scene, scaling generation to large scene extents. Crucially, we inherit the fidelity and completeness of state-of-the-art generative shape models -- we use Trellis.2 as an example -- which we generalize to the scene level. To this end, we propose a projection-based conditioning mechanism that lifts posed multi-view image features into a coherent 3D representation aligned with the generative model, yielding high-fidelity, multi-view consistent generated geometry. As a result, we obtain high-fidelity results that outperform cutting-edge reconstruction methods by 16%.</p>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2605.23888v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2605.23888" target="_blank" rel="noopener">Abs</a>
+          
+          
+          <a class="project" href="https://kasothaphie.github.io/GenRecon/" target="_blank" rel="noopener">Project</a>
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">2/5</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2605.23889" target="_blank" rel="noopener">HorizonStream: Long-Horizon Attention for Streaming 3D Reconstruction</a></h2>
+            <p class="paper-title-zh">HorizonStream：流式3D重建的长视野注意力</p>
+          </div>
+        </div>
+        <p class="sel-reason">长视野Transformer实现10000+帧流式3D重建，线性时间恒定内存</p>
+        <div class="sel-tags"><span class="sel-tag">流式重建</span><span class="sel-tag">长序列</span><span class="sel-tag">Transformer</span></div>
+        <div class="paper-meta">
+          <span class="authors">Chong Cheng, Peilin Tao, Nanjie Yao, Guanzhi Ding, Xianda Chen, Yuansen Du, Xiaoyang Guo, Wei Yin, Weiqiang Ren, Qian Zhang, Zhengqing Chen, Hao Wang</span>
+        </div>
+        <p class="paper-abstract">Online 3D reconstruction requires estimating camera pose and scene geometry under strict causal and bounded-memory constraints. Existing methods often suffer from drift, jitter, or collapse on long sequences. We trace these failures to a fundamental mismatch. Streaming geometry is inherently temporally heterogeneous, with evidence ranging from short-lived correspondences to persistent global scale. However, current architectures impose uniform and pathological influence patterns. To resolve this, we formalize geometric propagation as an evidence influence kernel and propose HorizonStream, a long-horizon Transformer that explicitly factorizes this kernel. Extensive experiments show that HorizonStream, trained on only 48-frame clips, generalizes stably to sequences exceeding 10,000 frames with constant memory and linear time, achieving state-of-the-art streaming 3D reconstruction performance.</p>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2605.23889v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2605.23889" target="_blank" rel="noopener">Abs</a>
+          
+          
+          <a class="project" href="https://3dagentworld.github.io/horizonstream/" target="_blank" rel="noopener">Project</a>
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">3/5</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2605.23892" target="_blank" rel="noopener">Good Token Hunting: A Hitchhiker&#39;s Guide to Token Selection for Visual Geometry Transformers</a></h2>
+            <p class="paper-title-zh">Good Token Hunting：视觉几何Transformer的Token选择指南</p>
+          </div>
+        </div>
+        <p class="sel-reason">视觉几何Transformer的高效token选择策略，500张图场景加速85%+</p>
+        <div class="sel-tags"><span class="sel-tag">3D重建</span><span class="sel-tag">Token选择</span><span class="sel-tag">加速</span></div>
+        <div class="paper-meta">
+          <span class="authors">Shuhong Zheng, Michael Oechsle, Erik Sandström, Marie-Julie Rakotosaona, Federico Tombari, Igor Gilitschenski</span>
+        </div>
+        <p class="paper-abstract">Visual geometry transformers have become powerful architectures for multi-view 3D reconstruction, enabling joint prediction of multiple 3D attributes in a feed-forward manner. However, their computational cost grows quadratically with the input sequence length due to the global attention layers inside these models. In this work, we address this challenge with a simple yet general strategy: restricting the number of key/value tokens that each query interacts with during global attention. Extensive experiments show that it accelerates visual geometry transformers by over 85% for scenes with 500 images while maintaining, or even improving, baseline performance.</p>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2605.23892v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2605.23892" target="_blank" rel="noopener">Abs</a>
+          
+          <a class="code" href="https://github.com/zsh2000/gotohunt" target="_blank" rel="noopener">Code</a>
+          <a class="project" href="https://zsh2000.github.io/good-token-hunting.github.io" target="_blank" rel="noopener">Project</a>
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">4/5</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2605.23672" target="_blank" rel="noopener">RiGS: Rigid-aware 4D Gaussian Splatting from a Single Monocular Video</a></h2>
+            <p class="paper-title-zh">RiGS：单目视频的刚性感知4D高斯泼溅</p>
+          </div>
+        </div>
+        <p class="sel-reason">单目视频的刚性感知4D高斯泼溅，兼顾长程平滑与短时复杂运动</p>
+        <div class="sel-tags"><span class="sel-tag">4D高斯</span><span class="sel-tag">单目视频</span><span class="sel-tag">动态重建</span></div>
+        <div class="paper-meta">
+          <span class="authors"></span>
+        </div>
+        <p class="paper-abstract">Reconstructing dynamic 3D scenes from monocular videos is a fundamental yet highly challenging task, as real-world motions often involve both long-term smooth transformations and short-term complex deformations. We present RiGS, a rigid-aware 4D Gaussian Splatting framework that models per-Gaussian rigid residuals to capture fine-grained dynamic deformations. RiGS enforces local rigidity through a learnable deformation field parameterized by spatially-varying coefficients, providing strong regularization for under-constrained monocular reconstruction while still allowing non-rigid motions when necessary.</p>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2605.23672v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2605.23672" target="_blank" rel="noopener">Abs</a>
+          
+          
+          
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">5/5</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2605.23287" target="_blank" rel="noopener">LangFlash: Feed-forward 3D Language Gaussian Splatting from Sparse Unposed Images</a></h2>
+            <p class="paper-title-zh">LangFlash：从稀疏无位姿图像前馈3D语言高斯泼溅</p>
+          </div>
+        </div>
+        <p class="sel-reason">从稀疏无位姿图像前馈重建3D语言高斯场，无需测试时优化</p>
+        <div class="sel-tags"><span class="sel-tag">语言高斯</span><span class="sel-tag">前馈网络</span><span class="sel-tag">稀疏视图</span></div>
+        <div class="paper-meta">
+          <span class="authors"></span>
+        </div>
+        <p class="paper-abstract">We present LangFlash, a feed-forward framework for 3D Language Gaussian Splatting that reconstructs 3D scenes parameterized by Gaussian primitives enriched with language-aligned semantic features from sparse unposed images. LangFlash enables open-vocabulary 3D understanding without per-scene optimization, directly producing language-aware 3D representations in a single forward pass.</p>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2605.23287v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2605.23287" target="_blank" rel="noopener">Abs</a>
+          
+          
+          
+        </div>
+        
+      </li>
+      
+    </ul>
+  </div>
+  
+  <div class="sel-category">
+    <h3 class="sel-cat-name">视觉语言动作&amp;机器人<span class="sel-cat-count">（5）</span></h3>
+    <ul class="sel-paper-list">
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">1/5</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2605.23856" target="_blank" rel="noopener">Point Tracking Improves World Action Models</a></h2>
+            <p class="paper-title-zh">点跟踪改进了世界动作模型</p>
+          </div>
+        </div>
+        <p class="sel-reason">将2D点跟踪纳入世界动作模型联合预测，提升长视野/遮挡/屏幕外机器人任务效果</p>
+        <div class="sel-tags"><span class="sel-tag">世界动作模型</span><span class="sel-tag">点跟踪</span><span class="sel-tag">机器人操作</span></div>
+        <div class="paper-meta">
+          <span class="authors">Jiarui Guan, Wenshuai Zhao, Yue Pei, Ziliang Chen, Arno Solin, Juho Kannala</span>
+        </div>
+        <p class="paper-abstract">Robot policy learning benefits from world-action models that capture environment dynamics, but pixel-level prediction entangles dynamics with nuisance factors such as lighting and texture, making learned representations vulnerable to task-irrelevant visual variation. We propose JOPAT, a JOint Pixel-And-Track World-Action Model that predicts latent visual observations, 2D point tracks with visibility, and actions in a single denoising diffusion transformer. The key insight is that tracks provide an explicit representation of motion that captures long-horizon dynamics and remains robust under occlusion or partial out-of-frame motion, offering greater utility than modeling pixel appearance alone. On LIBERO and real-world LeRobot tasks, JOPAT improves over pixel-based baselines, with the largest gains on long-horizon tasks involving occlusion, object interaction, and off-screen motion.</p>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2605.23856v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2605.23856" target="_blank" rel="noopener">Abs</a>
+          
+          
+          
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">2/5</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2605.22896" target="_blank" rel="noopener">Agentic-VLA: Efficient Online Adaptation for Vision-Language-Action Models</a></h2>
+            <p class="paper-title-zh">Agentic-VLA：视觉语言动作模型的高效在线适应</p>
+          </div>
+        </div>
+        <p class="sel-reason">VLA模型的在线高效适应框架，减少灾难性遗忘</p>
+        <div class="sel-tags"><span class="sel-tag">VLA</span><span class="sel-tag">在线适应</span><span class="sel-tag">机器人操作</span></div>
+        <div class="paper-meta">
+          <span class="authors"></span>
+        </div>
+        <p class="paper-abstract">Vision-Language-Action (VLA) models have emerged as a promising paradigm for robotic manipulation by leveraging pre-trained vision-language representations. However, current VLA training methods suffer from catastrophic forgetting when adapting to new robot embodiments or tasks, requiring full retraining. We propose Agentic-VLA, an online adaptation framework that efficiently fine-tunes VLA models using a replay buffer and task-adaptive prompting, enabling fast adaptation to new environments while preserving previously learned skills.</p>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2605.22896v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2605.22896" target="_blank" rel="noopener">Abs</a>
+          
+          
+          
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">3/5</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2605.23863" target="_blank" rel="noopener">Robotic Strawberry Harvesting with Robust Vision and Deep Reinforcement Learning based Sim-to-Real Control</a></h2>
+            <p class="paper-title-zh">具有鲁棒视觉和基于深度强化学习的Sim-to-Real控制的机器人草莓采摘</p>
+          </div>
+        </div>
+        <p class="sel-reason">全栈机器人草莓采摘系统，Sim-to-Real PPO，温室实测96.6%到达+91.3%抓取</p>
+        <div class="sel-tags"><span class="sel-tag">农业机器人</span><span class="sel-tag">Sim-to-Real</span><span class="sel-tag">PPO</span></div>
+        <div class="paper-meta">
+          <span class="authors">Al Bashir, Shao-Yang Chang, Partho Ghose, Prem Raj, Chen-Kang Huang, Azlan Zahid</span>
+        </div>
+        <p class="paper-abstract">This study presents a closed-loop robotic strawberry harvesting system that combines a robust vision module, simulation-trained deep reinforcement learning (DRL) control, and ROS-based real-robot execution. For perception, we propose HRAttnEdge-YOLO26-seg with high-resolution P2 branch, segmentation-path attention, and edge-supervised prototype learning. For control, we train PPO in Isaac Lab for UR10e manipulator. In greenhouse trials, the integrated system harvested 281 strawberries, achieving 96.6% reaching success, 91.3% grasp-and-pull success, and 84.3% overall harvesting success.</p>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2605.23863v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2605.23863" target="_blank" rel="noopener">Abs</a>
+          
+          
+          
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">4/5</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2605.23762" target="_blank" rel="noopener">Direct Dynamic Retargeting for Humanoid Imitation Learning from Videos</a></h2>
+            <p class="paper-title-zh">通过视频进行人形机器人模仿学习的直接动态重定向</p>
+          </div>
+        </div>
+        <p class="sel-reason">直接动态重定向(DDR)，单阶段从单目视频生成高保真动态可行轨迹</p>
+        <div class="sel-tags"><span class="sel-tag">人形机器人</span><span class="sel-tag">模仿学习</span><span class="sel-tag">重定向</span></div>
+        <div class="paper-meta">
+          <span class="authors">Constant Roux, Ludovic De Matteïs, Armand Jordana, Valentin Guillet, Nicolas Mansard, Olivier Stasse, Philippe Souères</span>
+        </div>
+        <p class="paper-abstract">Imitation Learning from monocular video demonstrations provides a scalable approach for teaching complex skills to humanoid robots. However, translating human motion to humanoids requires overcoming significant morphological mismatches. Standard approaches rely on Geometric Retargeting or Indirect Dynamic Retargeting pipelines. We identify that these intermediate kinematic projections introduce a geometric bias, restricting the search space and yielding suboptimal dynamic behaviors. In this paper, we propose Direct Dynamic Retargeting (DDR), a novel single-stage framework that generates high-fidelity, dynamically feasible trajectories directly from expert videos. Our experiments demonstrate that bypassing the geometric bias allows DDR to outperform state-of-the-art baselines in demonstration tracking accuracy.</p>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2605.23762v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2605.23762" target="_blank" rel="noopener">Abs</a>
+          
+          
+          
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">5/5</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2605.23733" target="_blank" rel="noopener">Any2Any: Efficient Cross-Embodiment Transfer for Humanoid Whole-Body Tracking</a></h2>
+            <p class="paper-title-zh">Any2Any：人形全身跟踪的高效跨体迁移</p>
+          </div>
+        </div>
+        <p class="sel-reason">跨人形机器人平台全身跟踪迁移，仅用1%数据+计算实现预训练模型复用</p>
+        <div class="sel-tags"><span class="sel-tag">人形机器人</span><span class="sel-tag">迁移学习</span><span class="sel-tag">全身控制</span></div>
+        <div class="paper-meta">
+          <span class="authors">Ming Yang, Tao Yu, Feng Li, Hua Chen</span>
+        </div>
+        <p class="paper-abstract">Whole-body tracking (WBT) models have become a key foundation for humanoid robots, enabling them to imitate diverse motions with high fidelity. Training such models from scratch requires large-scale data and computation, making rapid deployment on new humanoid platforms costly. To answer this question, we propose Any2Any, a paradigm that efficiently transfers an existing WBT specialist to a new humanoid embodiment with only a small amount of data and compute. Notably, using only 1% of the compute and data required for full training, Any2Any successfully transfers Sonic models pre-trained on Unitree G1 to LimX Oli and LimX Luna.</p>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2605.23733v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2605.23733" target="_blank" rel="noopener">Abs</a>
+          
+          
+          
+        </div>
+        
+      </li>
+      
+    </ul>
+  </div>
+  
+  <div class="sel-category">
+    <h3 class="sel-cat-name">VLM/多模态<span class="sel-cat-count">（5）</span></h3>
+    <ul class="sel-paper-list">
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">1/5</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2605.23897" target="_blank" rel="noopener">ETCHR: Editing To Clarify and Harness Reasoning</a></h2>
+            <p class="paper-title-zh">ETCHR：编辑以澄清和利用推理</p>
+          </div>
+        </div>
+        <p class="sel-reason">推理感知图像编辑器，解耦编辑与理解，Qwen3-VL-8B提升+4.82，Kimi K2.5提升+4.61</p>
+        <div class="sel-tags"><span class="sel-tag">MLLM推理</span><span class="sel-tag">图像编辑</span><span class="sel-tag">视觉推理</span></div>
+        <div class="paper-meta">
+          <span class="authors">Beichen Zhang, Yuhong Liu, Jinsong Li, Yuhang Zang, Jiaqi Wang, Dahua Lin</span>
+        </div>
+        <p class="paper-abstract">Multimodal Large Language Models have advanced visual reasoning, yet a purely textual chain of thought remains a bottleneck for questions that require fine-grained focus or view transformations. We pursue a third option: using a dedicated image editing model and decouple it with an understanding model. We introduce ETCHR (Editing To Clarify and Harness Reasoning), a question-conditioned, reasoning-aware image editor decoupled from the downstream understanding model. Across five task families (fine-grained perception, chart understanding, logic reasoning, jigsaw restoration, and 3D understanding), ETCHR raises average Pass@1 from 55.95 to 60.77 (+4.82) with Qwen3-VL-8B, from 65.08 to 70.55 (+5.47) with Gemini-3.1-Flash-Lite, and from 76.55 to 81.16 (+4.61) with Kimi K2.5.</p>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2605.23897v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2605.23897" target="_blank" rel="noopener">Abs</a>
+          
+          <a class="code" href="https://github.com/InternLM/ETCHR" target="_blank" rel="noopener">Code</a>
+          
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">2/5</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2605.23883" target="_blank" rel="noopener">PGT: Procedurally Generated Tasks for improving visual grounding in MLLMs</a></h2>
+            <p class="paper-title-zh">PGT：改善MLLM视觉基础的程序化生成任务</p>
+          </div>
+        </div>
+        <p class="sel-reason">程序化几何基元数据增强，What&#39;sUp +20%、CV-Bench-2D +13.3%，低成本诊断工具</p>
+        <div class="sel-tags"><span class="sel-tag">MLLM</span><span class="sel-tag">视觉基础</span><span class="sel-tag">数据增强</span></div>
+        <div class="paper-meta">
+          <span class="authors">Rim Assouel, Amir Bar, Michal Drozdzal, Adriana Romero-Soriano</span>
+        </div>
+        <p class="paper-abstract">Despite remarkable progress in Multimodal Large Language Models (MLLMs), these models still struggle with fine-grained understanding tasks. In this work, we propose Procedurally Generated Tasks (PGT), a simple data-driven framework that serves a dual purpose: inducing fine-grained visual understanding and acting as a low-cost diagnostic tool to identify the source of perception failures. By overlaying unambiguous geometric primitives on images, PGT generates additional dense supervision that disentangles visual grounding capability from semantic priors. Extensive experiments show that PGT yields remarkable gains, with up to +20% on What&#39;sUp and +13.3% on CV-Bench-2D.</p>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2605.23883v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2605.23883" target="_blank" rel="noopener">Abs</a>
+          
+          
+          
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">3/5</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2605.23898" target="_blank" rel="noopener">SPACENUM: Revisiting Spatial Numerical Understanding in VLMs</a></h2>
+            <p class="paper-title-zh">SPACENUM：重新审视VLM中的空间数值理解</p>
+          </div>
+        </div>
+        <p class="sel-reason">系统性评估VLM空间数值理解，揭示当前模型严重依赖浅层空间线索</p>
+        <div class="sel-tags"><span class="sel-tag">VLM</span><span class="sel-tag">空间理解</span><span class="sel-tag">评测</span></div>
+        <div class="paper-meta">
+          <span class="authors">Jianshu Zhang, Yijiang Li, Huifeixin Chen, Haoran Lu, Letian Xue, Bingyang Wang, Han Liu</span>
+        </div>
+        <p class="paper-abstract">Vision-Language Models (VLMs) are increasingly deployed in embodied environments, where they need produce numerical outputs such as action magnitudes and spatial coordinates. Although these numbers appear meaningful, it remains unclear whether these numerical outputs are genuinely grounded in spatial perception. Therefore, in this work, we revisit spatial numerical understanding through SpaceNum, a unified framework that captures two complementary settings: numbers as dynamic transitions during spatial exploration, and numbers as static layouts in spatial reasoning. We find that models largely fail to ground numbers in spatial meaning and often perform close to random guess. We show that current VLMs rely heavily on shallow spatial cues, struggle to build stable coordinate-aware representations.</p>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2605.23898v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2605.23898" target="_blank" rel="noopener">Abs</a>
+          
+          
+          <a class="project" href="https://sterzhang.github.io/SpaceNum-Home" target="_blank" rel="noopener">Project</a>
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">4/5</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2605.23655" target="_blank" rel="noopener">CVSearch: Empowering Multimodal LLMs with Cognitive Visual Search for High-Resolution Image Perception</a></h2>
+            <p class="paper-title-zh">CVSearch：认知视觉搜索赋能MLLM高分辨率图像感知</p>
+          </div>
+        </div>
+        <p class="sel-reason">认知视觉搜索赋能MLLM高分辨率图像感知，突破分辨率瓶颈</p>
+        <div class="sel-tags"><span class="sel-tag">MLLM</span><span class="sel-tag">高分辨率</span><span class="sel-tag">视觉搜索</span></div>
+        <div class="paper-meta">
+          <span class="authors"></span>
+        </div>
+        <p class="paper-abstract">High-resolution (HR) image perception presents a key bottleneck for multimodal large language models (MLLMs). While visual search offers a promising solution, existing methods struggle with the trade-off between search efficiency and accuracy. We propose CVSearch, a cognitive visual search framework that mimics human visual search behavior through a multi-scale attention mechanism, enabling MLLMs to efficiently process HR images by adaptively selecting informative regions.</p>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2605.23655v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2605.23655" target="_blank" rel="noopener">Abs</a>
+          
+          
+          
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">5/5</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2605.22882" target="_blank" rel="noopener">GEM-4D: Geometry-Enhanced Video World Models for Robot Manipulation</a></h2>
+            <p class="paper-title-zh">GEM-4D：几何增强的视频世界模型用于机器人操作</p>
+          </div>
+        </div>
+        <p class="sel-reason">几何增强视频世界模型，结合3D几何先验提升机器人操作视频预测的一致性</p>
+        <div class="sel-tags"><span class="sel-tag">世界模型</span><span class="sel-tag">视频预测</span><span class="sel-tag">机器人操作</span></div>
+        <div class="paper-meta">
+          <span class="authors"></span>
+        </div>
+        <p class="paper-abstract">Video world models can generate realistic futures from a single instruction, but they often fail to preserve consistent point-level motion over time. As a result, the generated videos appear plausible but exhibit spatial drift that makes them unreliable for robot policy learning. We propose GEM-4D, a geometry-enhanced video world model that incorporates explicit 3D geometric representations into the video diffusion process, ensuring temporally consistent motion while maintaining high visual quality for robot manipulation tasks.</p>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2605.22882v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2605.22882" target="_blank" rel="noopener">Abs</a>
+          
+          
+          
+        </div>
+        
+      </li>
+      
+    </ul>
+  </div>
+  
   
 </div>
 
@@ -11804,7 +12335,7 @@
     <div class="wrap">
       <span>Categories: cs.CV, cs.RO, cs.AI</span>
       <span class="sep">·</span>
-      <span>Generated 2026-05-27 13:56 UTC</span>
+      <span>Generated 2026-05-27 14:07 UTC</span>
     </div>
   </footer>
 
