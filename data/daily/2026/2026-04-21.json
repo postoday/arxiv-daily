@@ -9694,12 +9694,7 @@
       "code_links": [],
       "project_links": [],
       "html_url": "https://arxiv.org/html/2604.17654v1",
-      "figures": [
-        "https://arxiv.org/html/2604.17654v1/figures/maths/weak_judge_only/combined_pass_at_k.png",
-        "https://arxiv.org/html/2604.17654v1/x1.png",
-        "https://arxiv.org/html/2604.17654v1/figures/rollouts/tree-aime26-19-poly.png",
-        "https://arxiv.org/html/2604.17654v1/figures/rollouts/tree-aime26-19-grpo.png"
-      ],
+      "figures": [],
       "title_zh": "Poly-EPO：训练探索性推理模型",
       "abstract_zh": "探索是从经验中学习的基石：它使智能体能够找到复杂问题的解决方案，推广到新问题，并通过测试时计算来扩展性能。在本文中，我们提出了一个训练后语言模型（LM）的框架，该框架明确鼓励乐观探索并促进探索和利用之间的协同作用。中心思想是训练 LM 生成在奖励函数下总体准确且推理策略具有探索性的响应集。我们首先开发了一个在任意目标函数下使用集合强化学习（集合 RL）来优化 LM 的通用方法，展示了标准 RL 算法如何通过修改优势计算来适应这种设置。然后，我们提出多色探索性策略优化（Poly-EPO），它以明确协同探索和利用的目标实例化了该框架。在一系列推理基准测试中，我们表明 Poly-EPO 提高了泛化能力，如更高的 pass@$k$ 覆盖率所证明的那样，在模型生成中保留了更大的多样性，并通过测试时计算有效地进行扩展。"
     },

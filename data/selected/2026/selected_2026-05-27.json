@@ -1,1092 +1,988 @@
 {
   "date": "2026-05-27",
-  "generated_at": "2026-05-27T06:31:11+00:00",
   "total_candidates": 388,
+  "selected": 20,
   "categories": [
-    "cs.CV",
-    "cs.RO",
-    "cs.AI"
+    {
+      "id": "worldmodel",
+      "name": "世界模型&生成模型",
+      "papers": [
+        {
+          "id": "2605.26525",
+          "rank": 1,
+          "score": 93,
+          "reason_zh": "多镜头长视频外推新范式，递归上下文分配实现分钟级电影感视频生成",
+          "tags": [
+            "视频生成",
+            "长视频",
+            "电影感"
+          ],
+          "arxiv_id": "2605.26525",
+          "title": "ReCA: Multi-Shot Long Video Extrapolation via Recursive Context Allocation",
+          "authors": [
+            "Akide Liu",
+            "Jinbo Xing",
+            "Chaojie Mao",
+            "Ye Li",
+            "Zeyu Zhang",
+            "Yefei He",
+            "Weijie Wang",
+            "Zihan Wang",
+            "Yu Liu",
+            "Gholamreza Haffari",
+            "Bohan Zhuang"
+          ],
+          "abstract": "Minute-scale cinematic video generation is a central challenge for generative video models. Existing paradigms address only fragments of this challenge: single-shot extrapolation preserves an anchor but lacks cinematic structure, while multi-shot storytelling imposes structure yet remains free to invent its visual states rather than continue an observed one. We define Multi-Shot Video Extrapolation (MSVE), a task that extends an observed frame or clip into a sequence of cinematically structured shots while preserving anchor state and advancing narrative intent. This setting operates under the finite per-call generation budget of short-video models. We identify three coupled bottlenecks: (1) global planners over-specify unsupported details from full screenplays; (2) shot-level prompts dilute task-relevant state when carrying the complete story; and (3) temporal chaining turns generated frames into a lossy memory in which identity, scene, object, and action state decay. MSVE reveals that long-video failure is not merely a limitation of context length, but a failure of context allocation. We propose Recursive Context Allocation (ReCA), an inference-time framework that allocates context hierarchically across planning and generation. ReCA recursively decomposes MSVE into context-bounded subproblems, invokes frozen generators at leaf nodes, and propagates structured state updates across time. To evaluate this setting, we further propose MSVE-Bench and NB-Q, a source-grounded protocol with prompts purpose-built for 3 to 5 minute long-video generation, a regime not addressed by existing short-clip benchmarks. Compared to previous methods, ReCA improves average normalized score by 8 to 16 percent over the strongest competing controller and improves multi-shot consistency metrics by 28 to 43 percent. View the project page at https://reca.vmv.re.",
+          "abs_url": "https://arxiv.org/abs/2605.26525",
+          "pdf_url": "https://arxiv.org/pdf/2605.26525v1",
+          "primary_category": "cs.CV",
+          "categories": [
+            "cs.AI",
+            "cs.CV"
+          ],
+          "submitted": "2026-05-26T04:16:56Z",
+          "updated": "2026-05-26T04:16:56Z",
+          "comments": "Project Page: https://reca.vmv.re , Code: https://github.com/ali-vilab/ReCA",
+          "code_links": [
+            "https://github.com/ali-vilab/ReCA"
+          ],
+          "project_links": [
+            "https://reca.vmv.re"
+          ],
+          "title_zh": "ReCA：通过递归上下文分配进行多镜头长视频外推",
+          "abstract_zh": "分钟级电影视频生成是生成视频模型的主要挑战。现有的范式仅解决了这一挑战的一部分：单镜头外推保留了锚点，但缺乏电影结构，而多镜头叙事强加了结构，但仍然可以自由地创造其视觉状态，而不是继续观察到的状态。我们定义了多镜头视频外推（MSVE），这是一项将观察到的帧或剪辑扩展为电影结构镜头序列的任务，同时保留锚定状态并推进叙事意图。此设置在短视频模型的有限每次调用生成预算下运行。我们确定了三个耦合瓶颈：（1）全局规划者过度指定完整剧本中不受支持的细节； （2）在承载完整故事时，镜头级提示淡化了任务相关状态； (3)时间链将生成的帧变成有损记忆，其中身份、场景、对象和动作状态会衰减。 MSVE揭示了长视频失败不仅仅是上下文长度的限制，而是上下文分配的失败。我们提出了递归上下文分配（ReCA），这是一种推理时间框架，可以跨规划和生成分层分配上下文。 ReCA 递归地将 MSVE 分解为上下文限制的子问题，在叶节点调用冻结的生成器，并跨时间传播结构化状态更新。为了评估这一设置，我们进一步提出了 MSVE-Bench 和 NB-Q，这是一种基于源的协议，带有专门为 3 到 5 分钟的长视频生成而构建的提示，这是现有的短剪辑基准未解决的制度。与以前的方法相比，ReCA 比最强的竞争控制器将平均归一化分数提高了 8％ 至 16％，并将多镜头一致性指标提高了 28％ 至 43％。查看项目页面：https://reca.vmv.re。",
+          "html_url": "https://arxiv.org/html/2605.26525v1",
+          "figures": [
+            "https://arxiv.org/html/2605.26525v1/x1.png",
+            "https://arxiv.org/html/2605.26525v1/figs/fig_contextness_triptych.png",
+            "https://arxiv.org/html/2605.26525v1/x2.png",
+            "https://arxiv.org/html/2605.26525v1/x3.png"
+          ]
+        },
+        {
+          "id": "2605.26316",
+          "rank": 2,
+          "score": 91,
+          "reason_zh": "融合3D环境记忆与第一/第三人称姿态控制的物理化自我中心视频生成",
+          "tags": [
+            "视频生成",
+            "第一人称",
+            "姿态控制"
+          ],
+          "arxiv_id": "2605.26316",
+          "title": "E$^3$C: Video Generation with 3D Environmental Memory and Ego-Exo Human Pose Control",
+          "authors": [
+            "Qiao Gu",
+            "Lingni Ma",
+            "Adam W Harley",
+            "Richard Newcombe",
+            "Florian Shkurti",
+            "Julian Straub"
+          ],
+          "abstract": "Controllable and physically grounded egocentric video generation is essential for embodied agents to reason about how their own and others' actions manifest and change the world. Compared to generic video synthesis, egocentric generation is especially challenging: the camera is tightly coupled to the actor, leading to rapid viewpoint changes and frequent self-occlusions; the underlying actions are subtle, articulated, and often only partially visible; and both the people and the scene state must evolve consistently with the specified controls. We present E$^3$C, a controllable video diffusion framework for egocentric generation that builds structured and compact conditions disentangling persistent scene structure from human-driven dynamics. From context frames, E$^3$C constructs a semi-dense point cloud-based 3D memory and augments each point with appearance descriptors from video-VAE features. Rendering this memory into target viewpoints produces conditioning aligned with the target frames. Human dynamics are modeled separately. The observed people in the scene are controlled by skeleton renderings (exo human control), while the camera wearer is specified by their 3D body joints and 6DoF wrist motion (ego human control). To preserve ego human control when the wearer's body parts are invisible, we introduce an ego motion encoder that produces persistent cross-attention tokens. Experiments on Nymeria show that E$^3$C improves visual fidelity, camera-motion accuracy, object consistency, and ego & exo human control over strong baselines, while also enabling intuitive scene editing.",
+          "abs_url": "https://arxiv.org/abs/2605.26316",
+          "pdf_url": "https://arxiv.org/pdf/2605.26316v1",
+          "primary_category": "cs.CV",
+          "categories": [
+            "cs.AI",
+            "cs.CV"
+          ],
+          "submitted": "2026-05-25T20:13:16Z",
+          "updated": "2026-05-25T20:13:16Z",
+          "comments": "Preprint. Project Page: https://e3c-videogen.github.io/",
+          "code_links": [],
+          "project_links": [
+            "https://e3c-videogen.github.io/"
+          ],
+          "title_zh": "E$^3$C：具有 3D 环境记忆和 Ego-Exo 人体姿势控制的视频生成",
+          "abstract_zh": "可控且基于物理的以自我为中心的视频生成对于实体主体推理自己和他人的行为如何体现和改变世界至关重要。与一般的视频合成相比，以自我为中心的生成尤其具有挑战性：摄像机与演员紧密耦合，导致视点快速变化和频繁的自遮挡；潜在的行为是微妙的、明确的，而且通常只是部分可见；人物和场景状态都必须与指定的控制保持一致。我们提出了 E$^3$C，一个用于以自我为中心的生成的可控视频扩散框架，它构建了结构化和紧凑的条件，将持久的场景结构与人类驱动的动态分离。 E$^3$C 根据上下文帧构建基于半密集点云的 3D 内存，并使用来自视频 VAE 特征的外观描述符来增强每个点。将此内存渲染到目标视点会产生与目标帧对齐的条件。人体动力学是单独建模的。场景中被观察的人由骨骼渲染控制（自我人类控制），而相机佩戴者由其 3D 身体关节和 6DoF 手腕运动指定（自我人类控制）。为了在佩戴者的身体部位不可见时保持自我控制，我们引入了一种自我运动编码器，它可以产生持久的交叉注意标记。 Nymeria 上的实验表明，E$^3$C 提高了视觉保真度、摄像机运动准确性、对象一致性以及对强基线的自我和外在人类控制，同时还实现了直观的场景编辑。",
+          "html_url": "https://arxiv.org/html/2605.26316v1",
+          "figures": [
+            "https://arxiv.org/html/2605.26316v1/x1.png",
+            "https://arxiv.org/html/2605.26316v1/x2.png",
+            "https://arxiv.org/html/2605.26316v1/x3.png",
+            "https://arxiv.org/html/2605.26316v1/figures/qual-results/000041/vace/frame_0002.jpg"
+          ]
+        },
+        {
+          "id": "2605.27336",
+          "rank": 3,
+          "score": 88,
+          "reason_zh": "宽度-深度联合剪枝与自适应路由，大幅降低视频DiT推理成本",
+          "tags": [
+            "视频生成",
+            "DiT",
+            "模型压缩"
+          ],
+          "arxiv_id": "2605.27336",
+          "title": "PARE: Pruning and Adaptive Routing for Efficient Video Generation",
+          "authors": [
+            "Yutong Wang",
+            "Yunke Wang",
+            "Tianfan Xue",
+            "Yu Qiao",
+            "Yaohui Wang",
+            "Xinyuan Chen",
+            "Chang Xu"
+          ],
+          "abstract": "Video Diffusion Transformers (DiTs) generate high-quality videos but demand substantial compute due to wide blocks, deep architectures, and iterative sampling. Recent methods reduce cost by compressing width, depth, or sampling steps, but typically commit to a fixed architecture that cannot adapt to individual inputs or denoising stages. We propose PARE (Pruning and Adaptive Routing for Efficient video generation), which jointly compresses width and depth with structure-aware pruning and input-adaptive routing. For width, we observe that attention heads specialize into spatial and temporal roles, and design importance scoring that accounts for this distinction to prevent motion-critical temporal heads from being pruned prematurely. For depth, we train a lightweight router conditioned on denoising timestep and visual content to dynamically select which blocks to execute at each step, enabling per-input compute adaptation rather than static block removal. A progressive pipeline first recovers width-pruned quality via distillation, then jointly optimizes the student and router to decouple the two learning objectives. Experiments on Wan2.1-14B for both image-to-video and text-to-video generation show that PARE substantially reduces per-step computation while preserving quality across VBench dimensions, and composes with step distillation for further acceleration.",
+          "abs_url": "https://arxiv.org/abs/2605.27336",
+          "pdf_url": "https://arxiv.org/pdf/2605.27336v1",
+          "primary_category": "cs.CV",
+          "categories": [
+            "cs.CV"
+          ],
+          "submitted": "2026-05-26T17:43:25Z",
+          "updated": "2026-05-26T17:43:25Z",
+          "comments": null,
+          "code_links": [],
+          "project_links": [],
+          "title_zh": "PARE：修剪和自适应路由以实现高效视频生成",
+          "abstract_zh": "视频扩散变压器 (DiT) 生成高质量视频，但由于宽块、深层架构和迭代采样，需要大量计算。最近的方法通过压缩宽度、深度或采样步骤来降低成本，但通常采用无法适应单独输入或降噪阶段的固定架构。我们提出了 PARE（用于高效视频生成的修剪和自适应路由），它通过结构感知修剪和输入自适应路由联合压缩宽度和深度。对于宽度，我们观察到注意力头专注于空间和时间角色，并设计重要性评分来解释这种区别，以防止运动关键的时间头被过早修剪。对于深度，我们训练一个以去噪时间步长和视觉内容为条件的轻量级路由器，以动态选择在每个步骤执行哪些块，从而实现每个输入的计算适应而不是静态块删除。渐进式管道首先通过蒸馏恢复宽度修剪质量，然后联合优化学生和路由器以解耦两个学习目标。在 Wan2.1-14B 上进行的图像到视频和文本到视频生成的实验表明，PARE 显着减少了每步计算量，同时在 VBench 维度上保持质​​量，并与步骤蒸馏相结合以进一步加速。",
+          "html_url": "https://arxiv.org/html/2605.27336v1",
+          "figures": [
+            "https://arxiv.org/html/2605.27336v1/x1.png",
+            "https://arxiv.org/html/2605.27336v1/x2.png",
+            "https://arxiv.org/html/2605.27336v1/x3.png",
+            "https://arxiv.org/html/2605.27336v1/figures/visual_comp.png"
+          ],
+          "affiliations": [
+            "The University of Sydney",
+            "Shanghai AI Laboratory",
+            "The Chinese University of Hong Kong"
+          ]
+        },
+        {
+          "id": "2605.27235",
+          "rank": 4,
+          "score": 87,
+          "reason_zh": "20B参数分层图像生成与编辑模型，原生支持多层透明内容创作",
+          "tags": [
+            "图像生成",
+            "分层编辑",
+            "大模型"
+          ],
+          "arxiv_id": "2605.27235",
+          "title": "MRT: Masked Region Transformer for Layered Image Generation and Editing at Scale",
+          "authors": [
+            "Zhicong Tang",
+            "Zhao Zhang",
+            "Jingye Chen",
+            "Mohan Zhou",
+            "Yifan Pu",
+            "Yuchi Liu",
+            "Yalong Bai",
+            "Ethan Smith",
+            "Yuhui Yuan"
+          ],
+          "abstract": "Layered image generation and editing is a fundamental capability that enables layer-wise reuse, editing, and composition of generated visual content, analogous to word-level editing in natural language. Despite its importance, this remains an underexplored area at scale. To address this gap, we present MRT, a 20B-parameter masked region diffusion model tailored for multi-layer transparent image generation and editing, trained on over 10M multilingual design samples spanning diverse aspect ratios and textual prompts. To fully leverage this scale, we make two key technical contributions. First, we unify three complementary tasks including text-to-layers, image-to-layers, and layers-to-layers within a shared masked region diffusion framework, where selective token masking enables flexible layer-wise generation and editing. Second, to enable overflow layer generation, we introduce an overflow-aware canvas layer that handles boundary inconsistencies and supports semi-transparent background synthesis, enabling complete editable layers extending beyond visible canvas boundaries. Additionally, we apply diffusion distillation to achieve 8-step, real-time multi-layer generation with minimal quality degradation. Extensive experiments demonstrate that our framework substantially outperforms prior state-of-the-art approaches, including various commercial systems, across all three tasks, establishing a new benchmark for multi-layer transparent image generation. Notably, our model significantly outperforms the concurrent Qwen-Image-Layered model in image-to-layers quality according to user-study results, while achieving 10-100\\times faster inference and reducing activation GPU memory consumption by 50-90\\% during image-to-layer inference.",
+          "abs_url": "https://arxiv.org/abs/2605.27235",
+          "pdf_url": "https://arxiv.org/pdf/2605.27235v1",
+          "primary_category": "cs.CV",
+          "categories": [
+            "cs.CV"
+          ],
+          "submitted": "2026-05-26T16:16:19Z",
+          "updated": "2026-05-26T16:16:19Z",
+          "comments": "CVPR 2026",
+          "code_links": [],
+          "project_links": [],
+          "title_zh": "MRT：用于大规模分层图像生成和编辑的蒙版区域转换器",
+          "abstract_zh": "分层图像生成和编辑是一项基本功能，可以对生成的视觉内容进行分层重用、编辑和组合，类似于自然语言中的字级编辑。尽管它很重要，但它仍然是一个尚未得到充分探索的领域。为了解决这一差距，我们提出了 MRT，这是一种专为多层透明图像生成和编辑而定制的 20B 参数掩模区域扩散模型，经过超过 1000 万个跨越不同长宽比和文本提示的多语言设计样本的训练。为了充分利用这一规模，我们做出了两项关键的技术贡献。首先，我们在共享蒙版区域扩散框架内统一了三个互补任务，包括文本到图层、图像到图层和图层到图层，其中选择性标记蒙版可以实现灵活的分层生成和编辑。其次，为了生成溢出层，我们引入了一个溢出感知画布层，该层可以处理边界不一致并支持半透明背景合成，从而使完整的可编辑层扩展到可见画布边界之外。此外，我们应用扩散蒸馏来实现 8 步实时多层生成，同时将质量下降降至最低。大量的实验表明，我们的框架在所有三项任务中远远优于先前最先进的方法，包括各种商业系统，为多层透明图像生成建立了新的基准。值得注意的是，根据用户研究结果，我们的模型在图像到层质量方面显着优于并发 Qwen-Image-Layered 模型，同时推理速度提高了 10-100 倍，并且在图像到层推理期间将激活 GPU 内存消耗减少了 50-90%。",
+          "html_url": "https://arxiv.org/html/2605.27235v1",
+          "figures": [
+            "https://arxiv.org/html/2605.27235v1/img/statistics/mask-art-data-statistics-v1.png",
+            "https://arxiv.org/html/2605.27235v1/img/overflow/overflow-demo-img.jpg",
+            "https://arxiv.org/html/2605.27235v1/img/framework/MRT-CVPR-v2.jpg",
+            "https://arxiv.org/html/2605.27235v1/x1.png"
+          ]
+        },
+        {
+          "id": "2605.27102",
+          "rank": 5,
+          "score": 85,
+          "reason_zh": "探索潜空间中干净隐变量预测相比速度预测的优势，为流匹配提供新视角",
+          "tags": [
+            "流匹配",
+            "扩散模型",
+            "潜空间"
+          ],
+          "arxiv_id": "2605.27102",
+          "title": "JLT: Clean-Latent Prediction in Latent Diffusion Transformers",
+          "authors": [
+            "Funing Fu",
+            "Tenghui Wang",
+            "Junyong Cen",
+            "Qichao Zhu",
+            "Guanyu Zhou"
+          ],
+          "abstract": "Flow matching with clean-data prediction has shown that regressing the clean point can exploit low-dimensional structure more effectively than predicting an ambient noised quantity. We ask whether this principle remains useful after images are mapped into a learned latent space, where compression has already removed much of the raw pixel variability. We introduce JLT, a 130M latent diffusion Transformer over frozen FLUX.2 VAE codes, and compare clean-latent prediction with a matched velocity-prediction DiT under the same representation, backbone, and training settings. Although the three variables x, epsilon, and v are linearly convertible for a fixed corruption time, a local Gaussian analysis shows that velocity regression inherits an isotropic target-covariance floor and amplifies low-variance latent directions, while clean prediction damps them. On ImageNet 256 x 256, JLT-B/1 obtains FID-50K 2.50 with classifier-free guidance, with a large matched-target gap over velocity prediction. These results suggest that prediction targets in latent diffusion are representation-dependent geometric choices, rather than interchangeable algebraic parameterizations.",
+          "abs_url": "https://arxiv.org/abs/2605.27102",
+          "pdf_url": "https://arxiv.org/pdf/2605.27102v1",
+          "primary_category": "cs.CV",
+          "categories": [
+            "cs.CV",
+            "cs.LG"
+          ],
+          "submitted": "2026-05-26T14:41:58Z",
+          "updated": "2026-05-26T14:41:58Z",
+          "comments": null,
+          "code_links": [],
+          "project_links": [],
+          "title_zh": "JLT：潜在扩散变压器中的清洁潜在预测",
+          "abstract_zh": "与干净数据预测的流匹配表明，回归干净点可以比预测环境噪声量更有效地利用低维结构。我们询问，在图像被映射到学习的潜在空间中之后，这一原理是否仍然有用，其中压缩已经消除了许多原始像素的可变性。我们介绍了 JLT，一种基于冻结 FLUX.2 VAE 代码的 130M 潜在扩散 Transformer，并将干净潜在预测与相同表示、主干和训练设置下匹配的速度预测 DiT 进行比较。尽管三个变量 x、epsilon 和 v 在固定损坏时间内可线性转换，但局部高斯分析表明速度回归继承了各向同性目标协方差底线并放大了低方差潜在方向，而干净的预测会抑制它们。在 ImageNet 256 x 256 上，JLT-B/1 在无分类器指导下获得 FID-50K 2.50，与速度预测相比，匹配目标差距较大。这些结果表明，潜在扩散中的预测目标是依赖于表示的几何选择，而不是可互换的代数参数化。",
+          "html_url": "https://arxiv.org/html/2605.27102v1",
+          "figures": [
+            "https://arxiv.org/html/2605.27102v1/x1.png"
+          ],
+          "affiliations": [
+            "Independent Researcher",
+            "Wuhan University of Technology",
+            "Hangzhou Jiyi Artificial Intelligence Co., Ltd."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reconstruction",
+      "name": "3D/4D重建",
+      "papers": [
+        {
+          "id": "2605.27372",
+          "rank": 1,
+          "score": 92,
+          "reason_zh": "在VGGT前馈重建框架中引入重力对齐坐标系，简化多视点图匹配的旋转自由度",
+          "tags": [
+            "3D重建",
+            "前馈网络",
+            "重力对齐"
+          ],
+          "arxiv_id": "2605.27372",
+          "title": "G3T Up! Gravity Aligned Coordinate Frames Simplify Pointmap Processing",
+          "authors": [
+            "Bharath Raj Nagoor Kani",
+            "Noah Snavely"
+          ],
+          "abstract": "Modern feed-forward 3D reconstruction methods like VGGT predict pixel-aligned pointmaps in camera-centric coordinate frames. However, this choice of coordinate frame is not always optimal. We propose instead to predict pointmaps in upright, gravity-aligned frames that exploit strong structural cues present in many real-world scenes. Unlike camera-centric frames, gravity-aligned frames share a common vertical axis across viewpoints, reducing the rotational degrees of freedom needed to relate pointmaps to one another. To this end, we introduce the Gravity Grounded Geometry Transformer (G3T), fine-tuned from existing models on gravity-aligned 3D data. G3T produces highly accurate gravity-aware predictions, including upright pointmaps and camera-to-gravity poses. We further introduce G3T-Long, a submap-based incremental 3D reconstruction pipeline that leverages the reduced rotational degrees of freedom afforded by upright frames to achieve significantly improved reconstruction accuracy.",
+          "abs_url": "https://arxiv.org/abs/2605.27372",
+          "pdf_url": "https://arxiv.org/pdf/2605.27372v1",
+          "primary_category": "cs.CV",
+          "categories": [
+            "cs.CV"
+          ],
+          "submitted": "2026-05-26T17:59:55Z",
+          "updated": "2026-05-26T17:59:55Z",
+          "comments": "Project Page: https://g3t-paper.github.io/",
+          "code_links": [],
+          "project_links": [
+            "https://g3t-paper.github.io/"
+          ],
+          "title_zh": "G3T 起来！重力对齐坐标系简化了点图处理",
+          "abstract_zh": "现代前馈 3D 重建方法（例如 VGGT）可预测以相机为中心的坐标系中的像素对齐点图。然而，这种坐标系的选择并不总是最佳的。相反，我们建议在直立、重力对齐的框架中预测点图，利用许多现实世界场景中存在的强大结构线索。与以相机为中心的框架不同，重力对齐框架在视点之间共享一个公共垂直轴，从而减少了将点图相互关联所需的旋转自由度。为此，我们引入了重力接地几何变换器 (G3T)，它根据重力对齐 3D 数据的现有模型进行了微调。 G3T 产生高度准确的重力感知预测，包括直立点图和相机到重力姿势。我们进一步介绍了 G3T-Long，一种基于子图的增量 3D 重建管道，它利用直立框架提供的减少的旋转自由度来显着提高重建精度。",
+          "html_url": "https://arxiv.org/html/2605.27372v1",
+          "figures": [
+            "https://arxiv.org/html/2605.27372v1/x1.png",
+            "https://arxiv.org/html/2605.27372v1/x2.png",
+            "https://arxiv.org/html/2605.27372v1/x3.png",
+            "https://arxiv.org/html/2605.27372v1/x4.png"
+          ]
+        },
+        {
+          "id": "2605.27367",
+          "rank": 2,
+          "score": 90,
+          "reason_zh": "全面评估41个空间基础模型，揭示全景注意力与领域对齐的关键作用",
+          "tags": [
+            "评测基准",
+            "空间理解",
+            "泛化分析"
+          ],
+          "arxiv_id": "2605.27367",
+          "title": "SpatialBench: Is Your Spatial Foundation Model an All-Round Player?",
+          "authors": [
+            "Haosong Peng",
+            "Hao Li",
+            "Jiaqi Chen",
+            "Yuhao Pan",
+            "Runmao Yao",
+            "Yalun Dai",
+            "Fushuo Huo",
+            "Fangzhou Hong",
+            "Zhaoxi Chen",
+            "Haozhao Wang",
+            "Dingwen Zhang",
+            "Ziwei Liu",
+            "Wenchao Xu"
+          ],
+          "abstract": "While spatial foundation models have demonstrated impressive performance on standard datasets, a critical question remains: are they truly all-round players capable of generalizing robustly across diverse downstream tasks, arbitrary viewpoints, shifting scene domains, varying input densities, and specific hardware constraints? Answering this overarching question requires a holistic assessment, yet current models are mainly evaluated on specific domains for which they were specifically designed or trained. Such evaluations are intrinsically limited by narrow paradigm coverage, limited scene domains, and arbitrary frame sampling, making it fundamentally difficult to assess their true generalization capabilities. To address this gap, we present SpatialBench, a cross-paradigm, domain-diverse benchmark for spatial foundation models with deterministic sampling. SpatialBench features unprecedented scale and rigorous deterministic design, comprising 19 datasets and 546 scenes across 5 diverse spatial domains. It comprehensively evaluates 41 models across 6 paradigms on 5 task suites under 4 different input density settings. Our extensive evaluation reveals that current models are not yet all-round players, and uncovers crucial insights for future advancement. Specifically, we demonstrate that full-context attention maximizes accuracy while bounded-memory strategies unlock long-sequence scalability. Moreover, our empirical evaluations in challenging embodied and egocentric tasks demonstrate that strict domain alignment and high data quality are far more critical to performance than simple dataset scaling. Furthermore, to address the largest data gap identified in our analysis, we go beyond evaluation by introducing a large-scale dataset, DA-Next-5M, and a strong baseline model, DA-Next, pushing the boundaries of spatial representation learning.",
+          "abs_url": "https://arxiv.org/abs/2605.27367",
+          "pdf_url": "https://arxiv.org/pdf/2605.27367v1",
+          "primary_category": "cs.CV",
+          "categories": [
+            "cs.CV"
+          ],
+          "submitted": "2026-05-26T17:59:20Z",
+          "updated": "2026-05-26T17:59:20Z",
+          "comments": "Project Page: https://ropedia.github.io/SpatialBench/",
+          "code_links": [],
+          "project_links": [
+            "https://ropedia.github.io/SpatialBench/"
+          ],
+          "title_zh": "SpatialBench：您的空间基础模型是全能型选手吗？",
+          "abstract_zh": "虽然空间基础模型在标准数据集上表现出了令人印象深刻的性能，但仍然存在一个关键问题：它们是否真正是全能的参与者，能够在不同的下游任务、任意视点、变化的场景域、不同的输入密度和特定的硬件限制中稳健地泛化？回答这个首要问题需要进行整体评估，但当前的模型主要是在专门设计或训练的特定领域进行评估。此类评估本质上受到狭窄范式覆盖、有限场景域和任意帧采样的限制，因此从根本上很难评估其真正的泛化能力。为了解决这一差距，我们提出了 SpatialBench，这是一个跨范式、跨领域的基准，用于具有确定性采样的空间基础模型。 SpatialBench 具有前所未有的规模和严格的确定性设计，包括 19 个数据集和跨 5 个不同空间域的 546 个场景。它在 4 种不同的输入密度设置下，在 5 个任务套件上全面评估了 6 个范式的 41 个模型。我们的广泛评估表明，当前的模型还不是全能的，并揭示了未来发展的重要见解。具体来说，我们证明全上下文注意力最大限度地提高了准确性，而有限内存策略则解锁了长序列可扩展性。此外，我们对具有挑战性的具体任务和以自我为中心的任务的实证评估表明，严格的域对齐和高数据质量对于性能比简单的数据集缩放更为重要。此外，为了解决我们分析中发现的最大数据差距，我们超越了评估，引入了大规模数据集 DA-Next-5M 和强大的基线模型 DA-Next，突破了空间表示学习的界限。",
+          "html_url": "https://arxiv.org/html/2605.27367v1",
+          "figures": [
+            "https://arxiv.org/html/2605.27367v1/figs/geobench_combined.png",
+            "https://arxiv.org/html/2605.27367v1/x2.png",
+            "https://arxiv.org/html/2605.27367v1/x3.png",
+            "https://arxiv.org/html/2605.27367v1/x4.png"
+          ],
+          "affiliations": [
+            "Hong Kong University of Science and Technology",
+            "Nanyang Technological University",
+            "Northwestern Polytechnical University",
+            "Southeast University",
+            "Huazhong University of Science and Technology"
+          ]
+        },
+        {
+          "id": "2605.26616",
+          "rank": 3,
+          "score": 88,
+          "reason_zh": "高斯-体素双支架混合表示，兼顾NeRF级几何精度与3DGS级渲染速度",
+          "tags": [
+            "高斯泼溅",
+            "表面重建",
+            "混合表示"
+          ],
+          "arxiv_id": "2605.26616",
+          "title": "Gaussian-Voxel Duet: A Dual-Scaffolding Hybrid Representation for Fast and Accurate Monocular Surface Reconstruction",
+          "authors": [
+            "Zhenhua Du",
+            "Zhen Tan",
+            "Haoyu Zhang",
+            "Dewen Hu",
+            "Shuaifeng Zhi",
+            "Peidong Liu"
+          ],
+          "abstract": "While 3D Gaussian Splatting has achieved remarkable success in photorealistic novel view synthesis, its pursuit of fast and high-fidelity 3D reconstruction has long been constrained by a trade-off between geometric accuracy and optimization efficiency. Methods specialized in image rendering converge quickly at the cost of imperfect geometry caused by superfluous primitives overfitting training views, while methods integrating neural signed-distance field (SDF) for better geometry incur prohibitive training costs. In this paper, we attempt to strike a better trade-off by tethering scaffold-anchored Gaussians to a jointly optimized sparse voxel scaffold. This hybrid Gaussian-Voxel representation explicitly confines anchored Gaussians to a narrow band around surfaces defined by voxelized SDFs, which effectively improves representation efficiency and condenses floating Gaussians without sacrificing geometry quality. An implicit surface tethering loss further pulls individual Gaussian primitives closer to SDF-induced surfaces in a mutually regularized manner for improved reconstruction accuracy. Extensive experiments on diverse real-world indoor scenes from ScanNet++, ScanNetv2, and DeepBlending datasets demonstrate that our method achieves state-of-the-art surface reconstruction quality as well as superior novel view synthesis against leading baselines, while maintaining fast training convergence and real-time rendering. Code will be available at https://github.com/duzh11/VoxelGS.",
+          "abs_url": "https://arxiv.org/abs/2605.26616",
+          "pdf_url": "https://arxiv.org/pdf/2605.26616v1",
+          "primary_category": "cs.CV",
+          "categories": [
+            "cs.CV"
+          ],
+          "submitted": "2026-05-26T06:53:47Z",
+          "updated": "2026-05-26T06:53:47Z",
+          "comments": "27 pages, 14 figures",
+          "code_links": [
+            "https://github.com/duzh11/VoxelGS"
+          ],
+          "project_links": [],
+          "title_zh": "高斯-体素二重奏：用于快速准确的单眼表面重建的双支架混合表示",
+          "abstract_zh": "虽然 3D 高斯溅射在逼真的新颖视图合成方面取得了显着的成功，但其对快速、高保真 3D 重建的追求长期以来一直受到几何精度和优化效率之间的权衡的限制。专门用于图像渲染的方法快速收敛，但代价是由于多余的基元过度拟合训练视图而导致几何形状不完美，而集成神经符号距离场（SDF）以获得更好的几何形状的方法会产生高昂的训练成本。在本文中，我们尝试通过将脚手架锚定的高斯模型束缚到联合优化的稀疏体素脚手架上来实现更好的权衡。这种混合高斯-体素表示将锚定高斯明确限制在由体素化 SDF 定义的表面周围的窄带中，这有效地提高了表示效率并在不牺牲几何质量的情况下压缩浮动高斯。隐式表面束缚损失以相互正则化的方式进一步将各个高斯基元拉近 SDF 诱导的表面，以提高重建精度。对来自 ScanNet++、ScanNetv2 和 DeepBlending 数据集的各种真实室内场景进行的大量实验表明，我们的方法实现了最先进的表面重建质量以及针对领先基线的卓越新颖视图合成，同时保持快速训练收敛和实时渲染。代码可在 https://github.com/duzh11/VoxelGS 获取。",
+          "html_url": "https://arxiv.org/html/2605.26616v1",
+          "figures": [
+            "https://arxiv.org/html/2605.26616v1/fig/teaser.jpg",
+            "https://arxiv.org/html/2605.26616v1/fig/pipeline.jpg",
+            "https://arxiv.org/html/2605.26616v1/fig/pcd_error.jpg",
+            "https://arxiv.org/html/2605.26616v1/fig/surface_recon_scannetpp.jpg"
+          ]
+        },
+        {
+          "id": "2605.26629",
+          "rank": 4,
+          "score": 86,
+          "reason_zh": "首个前馈高斯泼溅方法应对低光照场景噪声与颜色偏移挑战",
+          "tags": [
+            "高斯泼溅",
+            "低光照",
+            "前馈重建"
+          ],
+          "arxiv_id": "2605.26629",
+          "title": "DelowlightSplat: Feed-Forward Gaussian Splatting for Lowlight 3D Scene Reconstruction",
+          "authors": [
+            "Fuzhen Jiang",
+            "Zengtian Xie",
+            "Zhuoran Li"
+          ],
+          "abstract": "Novel-view synthesis and 3D reconstruction from sparse posed images are central to robotics and AR/VR. Yet, feed-forward 3D Gaussian reconstruction fails under lowlight due to noise, color shifts, and unreliable correspondence. We propose DelowlightSplat, a lowlight-aware feed-forward Gaussian splatting framework for clean novel-view rendering. We build a controllable multi-view lowlight benchmark by degrading only context views while keeping target views clean. We introduce a lightweight Lowlight Adapter for residual enhancement to improve matchability, and couple it with cost-volume-based multi-view inference to directly predict clean 3D Gaussians. Experiments show that DelowlightSplat significantly outperforms previous feed-forward method and two-stage pipeline under lowlight conditions.",
+          "abs_url": "https://arxiv.org/abs/2605.26629",
+          "pdf_url": "https://arxiv.org/pdf/2605.26629v1",
+          "primary_category": "cs.CV",
+          "categories": [
+            "cs.CV"
+          ],
+          "submitted": "2026-05-26T07:05:10Z",
+          "updated": "2026-05-26T07:05:10Z",
+          "comments": null,
+          "code_links": [],
+          "project_links": [],
+          "title_zh": "DelowlightSplat：用于低光 3D 场景重建的前馈高斯泼溅",
+          "abstract_zh": "从稀疏姿势图像中进行新颖视图合成和 3D 重建是机器人技术和 AR/VR 的核心。然而，由于噪声、色移和不可靠的对应关系，前馈 3D 高斯重建在低光下会失败。我们提出了 DelowlightSplat，一种低光感知的前馈高斯泼溅框架，用于干净的小说视图渲染。我们通过仅降级上下文视图同时保持目标视图干净来构建可控的多视图低光基准。我们引入了一种轻量级低光适配器，用于残差增强，以提高可匹配性，并将其与基于成本体积的多视图推理相结合，以直接预测干净的 3D 高斯。实验表明，在弱光条件下，DelowlightSplat 显着优于之前的前馈方法和两级管道。",
+          "html_url": "https://arxiv.org/html/2605.26629v1",
+          "figures": [
+            "https://arxiv.org/html/2605.26629v1/pipeline.png",
+            "https://arxiv.org/html/2605.26629v1/qualitative.png",
+            "https://arxiv.org/html/2605.26629v1/ablation_3.png"
+          ]
+        },
+        {
+          "id": "2605.26519",
+          "rank": 5,
+          "score": 85,
+          "reason_zh": "相对回归突破全局坐标系依赖，支持长序列流式3D重建",
+          "tags": [
+            "3D重建",
+            "流式重建",
+            "相对回归"
+          ],
+          "arxiv_id": "2605.26519",
+          "title": "$R^3$: 3D Reconstruction via Relative Regression",
+          "authors": [
+            "Congrong Xu",
+            "Huachen Gao",
+            "Xingyu Chen",
+            "Yuliang Xiu",
+            "Jun Gao",
+            "Anpei Chen"
+          ],
+          "abstract": "Recent feed-forward geometry foundation models have demonstrated impressive generalization by recovering depth and poses in a single forward pass. However, these models are typically constrained by a global coordinate frame assumption. This dependency becomes a significant bottleneck for long-context and streaming reconstruction, as it forces the network to maintain an arbitrary temporal origin and handle translation magnitudes that grow unbounded over time. Our solution, which we call $R^3$, employs relative regression. We employ a lightweight MLP to predict confidence-weighted relative constraints. These confidences serve as a unified anchor: weighting losses during training and guiding pose aggregation during inference. $R^3$ supports both full-context offline reconstruction and causal, bounded-memory streaming. Our evaluation in both offline and streaming settings validates the effectiveness of our relative mechanism. Project page: https://kevinxu02.github.io/r3-site",
+          "abs_url": "https://arxiv.org/abs/2605.26519",
+          "pdf_url": "https://arxiv.org/pdf/2605.26519v1",
+          "primary_category": "cs.CV",
+          "categories": [
+            "cs.CV"
+          ],
+          "submitted": "2026-05-26T04:03:38Z",
+          "updated": "2026-05-26T04:03:38Z",
+          "comments": null,
+          "code_links": [],
+          "project_links": [
+            "https://kevinxu02.github.io/r3-site"
+          ],
+          "title_zh": "$R^3$：通过相对回归进行 3D 重建",
+          "abstract_zh": "最近的前馈几何基础模型通过在单次前向传递中恢复深度和姿态，展示了令人印象深刻的泛化能力。然而，这些模型通常受到全局坐标系假设的约束。这种依赖性成为长上下文和流式重建的一个重要瓶颈，因为它迫使网络维持任意时间原点并处理随时间无限增长的翻译幅度。我们的解决方案称为 $R^3$，采用相对回归。我们采用轻量级 MLP 来预测置信加权相对约束。这些置信度充当统一的锚：训练期间的权重损失和推理期间指导姿势聚合。 $R^3$ 支持全上下文离线重建和因果有限内存流。我们在离线和流媒体环境中的评估验证了我们相关机制的有效性。项目页面：https://kevinxu02.github.io/r3-site",
+          "html_url": "https://arxiv.org/html/2605.26519v1",
+          "figures": [
+            "https://arxiv.org/html/2605.26519v1/figures/teaser_new2.png",
+            "https://arxiv.org/html/2605.26519v1/x1.png",
+            "https://arxiv.org/html/2605.26519v1/x2.png",
+            "https://arxiv.org/html/2605.26519v1/x3.png"
+          ],
+          "affiliations": [
+            "University of Michigan",
+            "Westlake University"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vla",
+      "name": "视觉语言动作&机器人",
+      "papers": [
+        {
+          "id": "2605.27284",
+          "rank": 1,
+          "score": 93,
+          "reason_zh": "细粒度指令对齐VLA策略，支持指定执行臂、接近方向等动作级控制",
+          "tags": [
+            "VLA",
+            "指令对齐",
+            "机器人操作"
+          ],
+          "arxiv_id": "2605.27284",
+          "title": "FineVLA: Fine-Grained Instruction Alignment for Steerable Vision-Language-Action Policies",
+          "authors": [
+            "Xintong Hu",
+            "Xuhong Huang",
+            "Jinyu Zhang",
+            "Yutong Yao",
+            "Yuchong Sun",
+            "Qiuyue Wang",
+            "Mingsheng Li",
+            "Sicheng Xie",
+            "Yitao Liu",
+            "Junhao Chen",
+            "Yixuan Chen",
+            "Yingming Zheng",
+            "Shuai Bai",
+            "Tao Yu"
+          ],
+          "abstract": "Vision-Language-Action (VLA) models are increasingly expected to not only complete robot tasks, but also follow human instructions about how those tasks should be executed. However, existing robot datasets usually pair trajectories with coarse goal-level language, leaving execution-critical details such as active arm, approach direction, and contact region unspecified. This limits steerable policy learning and robotic video understanding. We introduce FineVLA, an open framework for action-aligned fine-grained VLA supervision. The framework includes: (1) a data construction tool that unifies 972,247 trajectories across 85K tasks from 10 open-source robot datasets and builds FineVLA-Data, a human-verified dataset of 47,159 fine-grained trajectories; (2) a held-out benchmark with 500 videos, 10,816 atomic facts, and 1,030 VQA questions; (3) a robotics-specialized VLM annotator for scalable fine-grained annotation; and (4) a steerable VLA policy trained with controlled mixtures of fine-grained and raw goal-level instructions. Our experiments yield three findings. First, fine-grained supervision does not sacrifice goal-level success: FG-only improves over Raw-only by +1.4 to +8.1 success-rate points across settings. Second, fine-grained and raw instructions are complementary, following a consistent inverted-U trend peaking at FG:Raw = 1:2 to 1:1. The best mixed setting reaches 86.8%/82.5% in RoboTwin simulation and 62.7/100 in real-world dual-arm manipulation (vs. 49.9 Raw-only). Third, fine-grained supervision improves steerable control: the largest real-world gains appear on pose (+23), color (+18), and approach direction (+18)--factors where goal-level instructions provide no guidance. Overall, fine-grained language should augment goal-level instructions: specifying how to execute alongside what to achieve. Project page: https://finevla.xlang.ai/",
+          "abs_url": "https://arxiv.org/abs/2605.27284",
+          "pdf_url": "https://arxiv.org/pdf/2605.27284v1",
+          "primary_category": "cs.RO",
+          "categories": [
+            "cs.AI",
+            "cs.RO"
+          ],
+          "submitted": "2026-05-26T17:01:10Z",
+          "updated": "2026-05-26T17:01:10Z",
+          "comments": "26 pages, 7 figures, 25 tables",
+          "code_links": [],
+          "project_links": [
+            "https://finevla.xlang.ai/"
+          ],
+          "title_zh": "FineVLA：可操纵视觉-语言-动作策略的细粒度指令对齐",
+          "abstract_zh": "人们越来越期望视觉-语言-动作（VLA）模型不仅能完成机器人任务，还能遵循人类关于如何执行这些任务的指令。然而，现有的机器人数据集通常将轨迹与粗略的目标级语言配对，而未指定执行关键的细节，例如主动臂、接近方向和接触区域。这限制了可引导的策略学习和机器人视频理解。我们推出 FineVLA，这是一个针对行动的细粒度 VLA 监督的开放框架。该框架包括：（1）一个数据构建工具，它统一了来自 10 个开源机器人数据集的 85K 任务中的 972,247 条轨迹，并构建了 FineVLA-Data，这是一个由 47,159 条细粒度轨迹组成的经人工验证的数据集； (2) 一个包含 500 个视频、10,816 个原子事实和 1,030 个 VQA 问题的测试基准； (3) 机器人专用的 VLM 注释器，用于可扩展的细粒度注释； (4) 可操纵的 VLA 策略，通过细粒度和原始目标级指令的受控混合物进行训练。我们的实验产生了三个发现。首先，细粒度的监督不会牺牲目标级别的成功：在所有设置中，仅 FG 比仅原始提高了 +1.4 到 +8.1 的成功率点。其次，细粒度指令和原始指令是互补的，遵循一致的倒 U 趋势，在 FG:Raw = 1:2 到 1:1 处达到峰值。最佳混合设置在 RoboTwin 模拟中达到 86.8%/82.5%，在现实世界双臂操作中达到 62.7/100（相对于仅 Raw 的 49.9）。第三，细粒度的监督改善了可操纵控制：现实世界中最大的增益出现在姿势（+23）、颜色（+18）和接近方向（+18）上——目标级指令不提供指导的因素。总体而言，细粒度的语言应该增强目标级指令：指定如何执行以及要实现的目标。项目页面：https://finevla.xlang.ai/",
+          "html_url": "https://arxiv.org/html/2605.27284v1",
+          "figures": [
+            "https://arxiv.org/html/2605.27284v1/x2.png",
+            "https://arxiv.org/html/2605.27284v1/x3.png",
+            "https://arxiv.org/html/2605.27284v1/x4.png",
+            "https://arxiv.org/html/2605.27284v1/x5.png"
+          ]
+        },
+        {
+          "id": "2605.27038",
+          "rank": 2,
+          "score": 88,
+          "reason_zh": "任务引导的表示纯化，解决VLM自动驾驶中的空间幻觉与几何失真",
+          "tags": [
+            "自动驾驶",
+            "VLM",
+            "空间幻觉"
+          ],
+          "arxiv_id": "2605.27038",
+          "title": "TPS-Drive: Task-Guided Representation Purification for VLM-based Autonomous Driving",
+          "authors": [
+            "Jiaxiang Li",
+            "Yumao Liu",
+            "Ke Ma"
+          ],
+          "abstract": "Vision-Language Models (VLMs) provide a promising foundation for autonomous driving planning, yet bridging semantic reasoning and precise 3D spatial forecasting remains a critical challenge. Existing representation strategies generally follow two paths: text-aligned methods flatten continuous spatial states into symbols, which compromises geometric structure and induces \"spatial hallucinations\"; dense visual methods preserve spatial topology but overwhelm standard tokenizers with redundant background textures, leading to \"representation interference\". To address these limitations, we introduce TPS-Drive, a novel framework centered on Task-Guided Representation Purification that empowers VLMs to Think in Purified Space. At its core, an Agent-Centric Tokenizer utilizes a task-guided vector quantization mechanism supervised by a frozen 3D detection head, which explicitly reallocates limited codebook capacity from pervasive static backgrounds to critical dynamic agents and effectively isolates spatial redundancy. Leveraging this purified spatial vocabulary, TPS-Drive employs a decoupled reasoning pipeline that sequentially performs scene understanding, future forecasting, and action generation. The framework is optimized via a progressive three-stage training paradigm, culminating in reward-driven refinement that surpasses pure imitation learning. Extensive experiments validate our approach: TPS-Drive achieves accurate agent spatial state forecasting and reduces collision rates in open-loop nuScenes evaluations, while establishing new safety records on the rigorous closed-loop NAVSIMv1 and NAVSIMv2 benchmarks.",
+          "abs_url": "https://arxiv.org/abs/2605.27038",
+          "pdf_url": "https://arxiv.org/pdf/2605.27038v1",
+          "primary_category": "cs.RO",
+          "categories": [
+            "cs.RO"
+          ],
+          "submitted": "2026-05-26T13:56:31Z",
+          "updated": "2026-05-26T13:56:31Z",
+          "comments": null,
+          "code_links": [],
+          "project_links": [],
+          "title_zh": "TPS-Drive：基于 VLM 的自动驾驶的任务引导表示纯化",
+          "abstract_zh": "视觉语言模型 (VLM) 为自动驾驶规划提供了有希望的基础，但连接语义推理和精确的 3D 空间预测仍然是一个关键挑战。现有的表示策略一般遵循两条路径：文本对齐方法将连续的空间状态扁平化为符号，这会损害几何结构并诱发“空间幻觉”；密集的视觉方法保留了空间拓扑，但用冗余的背景纹理压倒了标准标记器，导致“表示干扰”。为了解决这些限制，我们引入了 TPS-Drive，这是一种以任务引导表示纯化为中心的新颖框架，使 VLM 能够在纯化空间中进行思考。其核心是，以代理为中心的分词器利用由冻结 3D 检测头监督的任务引导矢量量化机制，该机制将有限的码本容量从普遍的静态背景显式地重新分配给关键的动态代理，并有效地隔离空间冗余。利用这种纯化的空间词汇，TPS-Drive 采用解耦推理管道，依次执行场景理解、未来预测和动作生成。该框架通过渐进的三阶段训练范例进行优化，最终实现超越纯粹模仿学习的奖励驱动的细化。大量实验验证了我们的方法：TPS-Drive 实现了准确的代理空间状态预测，并降低了开环 nuScenes 评估中的碰撞率，同时在严格的闭环 NAVSIMv1 和 NAVSIMv2 基准上建立了新的安全记录。",
+          "html_url": "https://arxiv.org/html/2605.27038v1",
+          "figures": [
+            "https://arxiv.org/html/2605.27038v1/x1.png",
+            "https://arxiv.org/html/2605.27038v1/x2.png",
+            "https://arxiv.org/html/2605.27038v1/x3.png"
+          ],
+          "affiliations": [
+            "The Hong Kong University of Science and Technology (Guangzhou), Guangzhou, China"
+          ]
+        },
+        {
+          "id": "2605.26820",
+          "rank": 3,
+          "score": 87,
+          "reason_zh": "首次在真实世界中系统性研究VLA模型持续学习的能力与遗忘问题",
+          "tags": [
+            "VLA",
+            "持续学习",
+            "灾难性遗忘"
+          ],
+          "arxiv_id": "2605.26820",
+          "title": "Can VLA Models Learn from Real-World Data Continually without Forgetting?",
+          "authors": [
+            "Jiarun Zhu",
+            "Yijun Hong",
+            "Xiaoquan Sun",
+            "Zetian Xu",
+            "Mingqi Yuan",
+            "Zhiyong Wang",
+            "Wenjun Zeng",
+            "Jiayu Chen"
+          ],
+          "abstract": "Vision-language-action (VLA) models provide a promising foundation for general-purpose robotics. However, their successful deployment in real-world scenarios requires the ability to continually acquire new skills while retaining previously learned behaviors. While pioneering research has studied the continual learning of VLA models in narrowly simulated environments, this challenge remains largely unexplored under realistic conditions. To address this limitation, we construct a real-world continual learning dataset comprising four sequential manipulation tasks, spanning rigid-object pick-and-place, contact-rich pressing, and deformable-object folding. Using this dataset, we conduct comprehensive experiments and find that VLA models suffer significant catastrophic forgetting when continually learning from heterogeneous real-world demonstrations. We then systematically evaluate experience replay and uncover key implementation factors that govern its success. In summary, this work provides the first empirical study of real-world continual VLA learning and offers practical guidance for deploying long-lived robot policies.",
+          "abs_url": "https://arxiv.org/abs/2605.26820",
+          "pdf_url": "https://arxiv.org/pdf/2605.26820v1",
+          "primary_category": "cs.RO",
+          "categories": [
+            "cs.RO"
+          ],
+          "submitted": "2026-05-26T10:39:02Z",
+          "updated": "2026-05-26T10:39:02Z",
+          "comments": null,
+          "code_links": [],
+          "project_links": [],
+          "title_zh": "VLA 模型能否持续从现实世界的数据中学习而不会忘记？",
+          "abstract_zh": "视觉-语言-动作（VLA）模型为通用机器人技术提供了有前景的基础。然而，它们在现实场景中的成功部署需要能够不断获得新技能，同时保留以前学到的行为。虽然开创性研究已经研究了 VLA 模型在狭隘模拟环境中的持续学习，但在现实条件下这一挑战在很大程度上仍未得到探索。为了解决这个限制，我们构建了一个真实世界的持续学习数据集，其中包括四个顺序操作任务，涵盖刚性对象拾取和放置、接触丰富的按压和可变形对象折叠。使用这个数据集，我们进行了全面的实验，发现 VLA 模型在不断从异构的现实世界演示中学习时会遭受严重的灾难性遗忘。然后，我们系统地评估体验回放并揭示决定其成功的关键实施因素。总之，这项工作首次对现实世界的持续 VLA 学习进行了实证研究，并为部署长寿命机器人策略提供了实用指导。",
+          "html_url": "https://arxiv.org/html/2605.26820v1",
+          "figures": [
+            "https://arxiv.org/html/2605.26820v1/x1.png",
+            "https://arxiv.org/html/2605.26820v1/x2.png",
+            "https://arxiv.org/html/2605.26820v1/x3.png",
+            "https://arxiv.org/html/2605.26820v1/x4.png"
+          ]
+        },
+        {
+          "id": "2605.26638",
+          "rank": 4,
+          "score": 86,
+          "reason_zh": "全方位仿真到真实操作框架，系统性弥合域差距",
+          "tags": [
+            "Sim2Real",
+            "机器人操作",
+            "域适应"
+          ],
+          "arxiv_id": "2605.26638",
+          "title": "HyperSim: A Holistic Sim-To-Real Framework For Robust Robotic Manipulation",
+          "authors": [
+            "Junyi Dong",
+            "Haotian Luo",
+            "Ziwei Xu",
+            "Shengwei Bian",
+            "Heng Zhang",
+            "Sitong Mao",
+            "Jingyi Guo",
+            "Yang Xu",
+            "Wenhao Chen",
+            "Qiuyu Feng",
+            "Yao Mu",
+            "Ping Luo",
+            "Shunbo Zhou",
+            "Xiaodong Wu"
+          ],
+          "abstract": "Scaling data volume and diversity is critical for generalizing embodied intelligence. While synthetic data generation offers a scalable alternative to expensive physical data acquisition, transferring robotic manipulation policies from simulation to the real world (sim-to-real) remains a formidable challenge due to the domain gap. This paper presents HyperSim, a holistic framework spanning from synthetic data generation to policy training and seamless real-world deployment. To systematically bridge the sim-to-real gap, HyperSim is realized through three core pillars: high-fidelity environment synthesis, adversarial trajectory generation, and sim-and-real co-training. Collectively, these modules address domain discrepancies by enhancing visual fidelity, expanding data coverage, and enforcing domain-invariant representations. We rigorously validate HyperSim through a large-scale empirical study involving 400 real-world task executions across two representative manipulation models. Assessed across three fine-grained metrics, our complete pipeline achieves remarkable sim-to-real success rates of 80% and 95% with ACT and π_{0}, respectively. Furthermore, policies trained on our adversarial trajectories exhibit significantly enhanced robustness against dynamic uncertainties, achieving a 35% higher completion rate under physical perturbations.",
+          "abs_url": "https://arxiv.org/abs/2605.26638",
+          "pdf_url": "https://arxiv.org/pdf/2605.26638v1",
+          "primary_category": "cs.RO",
+          "categories": [
+            "cs.RO"
+          ],
+          "submitted": "2026-05-26T07:19:04Z",
+          "updated": "2026-05-26T07:19:04Z",
+          "comments": "9 pages, 8 figures",
+          "code_links": [],
+          "project_links": [],
+          "title_zh": "HyperSim：用于鲁棒机器人操作的整体模拟到真实框架",
+          "abstract_zh": "扩展数据量和多样性对于泛化体现智能至关重要。虽然合成数据生成为昂贵的物理数据采集提供了可扩展的替代方案，但由于领域差距，将机器人操作策略从模拟转移到现实世界（模拟到真实）仍然是一个艰巨的挑战。本文介绍了 HyperSim，这是一个涵盖从合成数据生成到策略培训和无缝现实部署的整体框架。为了系统地弥合模拟与真实之间的差距，HyperSim 通过三个核心支柱来实现：高保真环境合成、对抗轨迹生成以及模拟与真实协同训练。总的来说，这些模块通过增强视觉保真度、扩大数据覆盖范围和强制执行域不变表示来解决域差异。我们通过大规模实证研究严格验证了 HyperSim，该研究涉及跨两个代表性操纵模型的 400 个现实世界任务执行。通过三个细粒度指标的评估，我们的完整流程在 ACT 和 π_{0} 上分别实现了 80% 和 95% 的模拟到真实成功率。此外，针对我们的对抗性轨迹训练的政策表现出显着增强的针对动态不确定性的鲁棒性，在物理扰动下实现了 35% 的高完成率。",
+          "html_url": "https://arxiv.org/html/2605.26638v1",
+          "figures": [
+            "https://arxiv.org/html/2605.26638v1/figs/FigFramework.jpg",
+            "https://arxiv.org/html/2605.26638v1/figs/FigSpatialRelations.jpg",
+            "https://arxiv.org/html/2605.26638v1/x1.png",
+            "https://arxiv.org/html/2605.26638v1/figs/FigTrajGen.png"
+          ]
+        },
+        {
+          "id": "2605.26478",
+          "rank": 5,
+          "score": 84,
+          "reason_zh": "随机解耦策略梯度，单GPU数小时内完成端到端视觉运动控制训练",
+          "tags": [
+            "视觉RL",
+            "高效训练",
+            "端到端"
+          ],
+          "arxiv_id": "2605.26478",
+          "title": "Efficient On-policy Visual-RL via Stochastic Decoupled Policy Gradient",
+          "authors": [
+            "Haoxiang You",
+            "Yilang Liu",
+            "Davis Zong",
+            "Qian Wang",
+            "Teeratham Vitchutripop",
+            "Qi Wang",
+            "Daniel Rakita",
+            "Ian Abraham"
+          ],
+          "abstract": "We present the stochastic decoupled policy gradient (SDPG), a lightweight visual reinforcement learning (RL) method that trains diverse visuomotor control policies end-to-end within a few hours on a single NVIDIA RTX 4080 GPU. SDPG estimates policy gradients via random perturbations of trajectory rollouts, requiring orders of magnitude fewer batch-rendered environments and substantially reducing compute and memory overhead. On visual MuJoCo benchmarks, SDPG consistently outperforms baseline methods in training time, memory usage, and rewards. Finally, to support future research, we introduce a suite of realistic visual robotics benchmarks spanning dexterous manipulation, challenging locomotion, and demonstrate effective sim-to-real transfer on physical hardware.",
+          "abs_url": "https://arxiv.org/abs/2605.26478",
+          "pdf_url": "https://arxiv.org/pdf/2605.26478v1",
+          "primary_category": "cs.RO",
+          "categories": [
+            "cs.AI",
+            "cs.CV",
+            "cs.LG",
+            "cs.RO",
+            "eess.SY"
+          ],
+          "submitted": "2026-05-26T02:35:08Z",
+          "updated": "2026-05-26T02:35:08Z",
+          "comments": null,
+          "code_links": [],
+          "project_links": [],
+          "title_zh": "通过随机解耦策略梯度实现高效的在策略 Visual-RL",
+          "abstract_zh": "我们提出了随机解耦策略梯度 (SDPG)，这是一种轻量级视觉强化学习 (RL) 方法，可在单个 NVIDIA RTX 4080 GPU 上在几个小时内端到端训练不同的视觉运动控制策略。 SDPG 通过轨迹推出的随机扰动来估计策略梯度，需要的批量渲染环境减少了几个数量级，并大大减少了计算和内存开销。在视觉 MuJoCo 基准上，SDPG 在训练时间、内存使用和奖励方面始终优于基线方法。最后，为了支持未来的研究，我们引入了一套逼真的视觉机器人基准，涵盖灵巧的操作、具有挑战性的运动，并在物理硬件上演示有效的模拟到真实的传输。",
+          "html_url": "https://arxiv.org/html/2605.26478v1",
+          "figures": [
+            "https://arxiv.org/html/2605.26478v1/figures/SDPG_diagram.png",
+            "https://arxiv.org/html/2605.26478v1/figures/preview.png",
+            "https://arxiv.org/html/2605.26478v1/x1.png",
+            "https://arxiv.org/html/2605.26478v1/x2.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vlm",
+      "name": "视觉语言模型",
+      "papers": [
+        {
+          "id": "2605.27365",
+          "rank": 1,
+          "score": 93,
+          "reason_zh": "并行框解码大幅加速VLM定位，1.38亿样本支撑高精度统一检测与基础",
+          "tags": [
+            "视觉定位",
+            "并行解码",
+            "基础模型"
+          ],
+          "arxiv_id": "2605.27365",
+          "title": "LocateAnything: Fast and High-Quality Vision-Language Grounding with Parallel Box Decoding",
+          "authors": [
+            "Shihao Wang",
+            "Shilong Liu",
+            "Yuanguo Kuang",
+            "Xinyu Wei",
+            "Yangzhou Liu",
+            "Zhiqi Li",
+            "Yunze Man",
+            "Guo Chen",
+            "Andrew Tao",
+            "Guilin Liu",
+            "Jan Kautz",
+            "Lei Zhang",
+            "Zhiding Yu"
+          ],
+          "abstract": "Vision-language models (VLMs) commonly formulate visual grounding and detection as a coordinate-token generation problem, serializing each 2D box into multiple 1D tokens that are learned and decoded largely independently. This token-by-token decoding mismatches the coupled structure of box geometry and creates a practical inference bottleneck due to strictly sequential generation. We introduce LocateAnything, a unified generative grounding and detection framework based on Parallel Box Decoding (PBD). By decoding geometric elements such as bounding boxes and points as atomic units in a single step, LocateAnything preserves intra-box geometric coherence and unlocks substantial parallelism. We show that PBD improves both decoding throughput and localization accuracy. We further develop a scalable data engine and curate LocateAnything-Data, a large-scale dataset with more than 138 million training samples, substantially increasing data diversity for high-precision localization. Extensive evaluations show that LocateAnything advances the speed-accuracy frontier, achieving significantly higher decoding throughput while improving high-IoU localization quality across diverse benchmarks. The results highlight the complementary benefits of Parallel Box Decoding and large-scale training data in enabling efficient and precise unified visual grounding and detection.",
+          "abs_url": "https://arxiv.org/abs/2605.27365",
+          "pdf_url": "https://arxiv.org/pdf/2605.27365v1",
+          "primary_category": "cs.CV",
+          "categories": [
+            "cs.AI",
+            "cs.CV",
+            "cs.LG",
+            "cs.RO"
+          ],
+          "submitted": "2026-05-26T17:59:12Z",
+          "updated": "2026-05-26T17:59:12Z",
+          "comments": null,
+          "code_links": [],
+          "project_links": [],
+          "title_zh": "LocateAnything：通过并行盒解码实现快速、高质量的视觉语言基础",
+          "abstract_zh": "视觉语言模型 (VLM) 通常将视觉基础和检测表述为坐标令牌生成问题，将每个 2D 框序列化为多个 1D 令牌，这些令牌在很大程度上独立学习和解码。这种逐个令牌的解码与盒几何形状的耦合结构不匹配，并由于严格的顺序生成而产生了实际的推理瓶颈。我们介绍 LocateAnything，这是一个基于并行盒解码 (PBD) 的统一生成接地和检测框架。通过一步将边界框和点等几何元素解码为原子单元，LocateAnything 保留了框内几何一致性并释放了实质性的并行性。我们表明 PBD 提高了解码吞吐量和定位精度。我们进一步开发了可扩展的数据引擎，并策划了 LocateAnything-Data，这是一个包含超过 1.38 亿个训练样本的大型数据集，大大增加了高精度定位的数据多样性。广泛的评估表明，LocateAnything 推进了速度精度前沿，实现了显着更高的解码吞吐量，同时提高了跨不同基准的高 IoU 定位质量。结果强调了并行盒解码和大规模训练数据在实现高效、精确的统一视觉基础和检测方面的互补优势。",
+          "html_url": "https://arxiv.org/html/2605.27365v1",
+          "figures": [
+            "https://arxiv.org/html/2605.27365v1/x1.png",
+            "https://arxiv.org/html/2605.27365v1/x2.png",
+            "https://arxiv.org/html/2605.27365v1/x3.png",
+            "https://arxiv.org/html/2605.27365v1/x4.png"
+          ]
+        },
+        {
+          "id": "2605.27318",
+          "rank": 2,
+          "score": 89,
+          "reason_zh": "问题引导的几何记忆框架，针对性保留空间推理所需证据",
+          "tags": [
+            "视频推理",
+            "空间记忆",
+            "VLM"
+          ],
+          "arxiv_id": "2605.27318",
+          "title": "Q-GeoMem: Question-Guided Geometric Memory for Video Spatial Reasoning",
+          "authors": [
+            "Xianqiang Gao",
+            "Qizhi Chen",
+            "Delin Qu",
+            "Haoming Song",
+            "Zhigang Wang",
+            "Bin Zhao",
+            "Dong Wang",
+            "Xuelong Li"
+          ],
+          "abstract": "Video spatial reasoning requires accumulating viewpoint-dependent evidence over time while retaining information useful to the question being asked. Existing spatial video-language models improve geometric perception and long-range context modeling, but often treat memory as a generic temporal cache, which can introduce redundant or irrelevant geometry and weaken long-horizon reasoning. We propose \\textbf{\\ours}, a question-guided geometric memory framework for video spatial reasoning. \\ours injects camera-conditioned geometry into visual tokens and maintains two complementary memories: a Fine-Grained Context Bank for recent dense features and camera states, and a Semantic-Geometric Evidence Bank for compact long-range evidence. Each candidate frame is scored by the product of Q-Former-based question relevance and novelty with respect to the retained bank; this score is stored and reused during reading, while a capacity-based replacement rule keeps the bank compact. During reasoning, both memories are read before update and adaptively fused with the current frame representation. Experiments on VSI-Bench and VSTI-Bench show that \\ours achieves state-of-the-art performance among evaluated spatial reasoning models, validating the effectiveness of question-guided geometric memory. Ablations further verify the contribution of the proposed evidence scoring mechanism.",
+          "abs_url": "https://arxiv.org/abs/2605.27318",
+          "pdf_url": "https://arxiv.org/pdf/2605.27318v1",
+          "primary_category": "cs.CV",
+          "categories": [
+            "cs.CV"
+          ],
+          "submitted": "2026-05-26T17:26:29Z",
+          "updated": "2026-05-26T17:26:29Z",
+          "comments": null,
+          "code_links": [],
+          "project_links": [],
+          "title_zh": "Q-GeoMem：用于视频空间推理的问题引导几何记忆",
+          "abstract_zh": "视频空间推理需要随着时间的推移积累视点相关的证据，同时保留对所提出的问题有用的信息。现有的空间视频语言模型改进了几何感知和远程上下文建模，但通常将内存视为通用的时间缓存，这可能会引入冗余或不相关的几何形状并削弱长视野推理。我们提出 \\textbf{\\ours}，一种用于视频空间推理的问题引导几何记忆框架。我们将相机调节的几何形状注入视觉标记中，并维护两个互补的记忆：用于最近密集特征和相机状态的细粒度上下文库，以及用于紧凑远程证据的语义几何证据库。每个候选框架根据基于 Q-Former 的问题相关性和新颖性相对于保留银行的乘积进行评分；该分数在读取过程中被存储和重复使用，而基于容量的替换规则使银行保持紧凑。在推理过程中，两个存储器在更新之前都会被读取，并与当前帧表示自适应地融合。 VSI-Bench 和 VSTI-Bench 上的实验表明，我们的模型在评估的空间推理模型中实现了最先进的性能，验证了问题引导几何记忆的有效性。消融进一步验证了所提出的证据评分机制的贡献。",
+          "html_url": "https://arxiv.org/html/2605.27318v1",
+          "figures": [
+            "https://arxiv.org/html/2605.27318v1/x1.png",
+            "https://arxiv.org/html/2605.27318v1/x2.png",
+            "https://arxiv.org/html/2605.27318v1/x3.png"
+          ]
+        },
+        {
+          "id": "2605.27243",
+          "rank": 3,
+          "score": 87,
+          "reason_zh": "发现VLM中仅4.4-10.2%的注意力头贡献半数检索质量，因果重要性惊人",
+          "tags": [
+            "长上下文",
+            "检索头",
+            "VLM分析"
+          ],
+          "arxiv_id": "2605.27243",
+          "title": "Can Retrieval Heads See Images? Multimodal Retrieval Heads in Long-Context Vision-Language Models",
+          "authors": [
+            "Aaron Branson Cigres Li",
+            "Zhaowei Wang",
+            "Yu Zhao",
+            "Yiming Du",
+            "Haobo Li",
+            "Xiyu Ren",
+            "Ginny Wong",
+            "Simon See",
+            "Lishu Luo",
+            "Haodong Duan",
+            "Pasquale Minervini",
+            "Yangqiu Song"
+          ],
+          "abstract": "Large vision-language models increasingly rely on long-context modeling to reason over documents, hour-level videos, and long-horizon agent trajectories, requiring them to locate relevant evidence across interleaved text and images. Prior work has studied this behavior using retrieval heads in large language models, but its copy-based criterion does not directly apply when evidence appears in images. We introduce a multimodal retrieval head detection method that scores attention from question tokens to textual or visual evidence. With this method, we show that multimodal retrieval heads are sparse, intrinsic, and causally important: only 4.4-10.2% of attention heads account for 50% of the positive retrieval-score mass, and masking the top-5% selected heads drops MMLongBench-Doc from 48.2% to 5.7% and SlideVQA from 71.2% to 8.9%, while random-head masking is far less damaging. Further analysis shows that these heads are partly shared across modalities yet remain dynamic within each modality, with image retrieval heads changing more than text retrieval heads as context length and haystack modality change. Without further training, we find that these heads can also be used directly to rank visually rich documents: on MMDocIR, Qwen3-VL-8B selected-head scoring improves Recall@1 by 7.7/7.4 macro/micro points for page retrieval and 6.3/6.8 points for layout retrieval over the strongest reported baseline.",
+          "abs_url": "https://arxiv.org/abs/2605.27243",
+          "pdf_url": "https://arxiv.org/pdf/2605.27243v1",
+          "primary_category": "cs.CV",
+          "categories": [
+            "cs.CV"
+          ],
+          "submitted": "2026-05-26T16:24:29Z",
+          "updated": "2026-05-26T16:24:29Z",
+          "comments": "Work in Progress",
+          "code_links": [],
+          "project_links": [],
+          "title_zh": "检索头能看到图像吗？长上下文视觉语言模型中的多模态检索头",
+          "abstract_zh": "大型视觉语言模型越来越依赖长上下文建模来对文档、小时级视频和长视野代理轨迹进行推理，要求它们在交错的文本和图像中找到相关证据。先前的工作已经使用大型语言模型中的检索头研究了这种行为，但当证据出现在图像中时，其基于副本的标准并不直接适用。我们引入了一种多模式检索头检测方法，该方法将注意力从问题标记转移到文本或视觉证据。通过这种方法，我们表明多模态检索头是稀疏的、内在的和因果重要的：只有 4.4-10.2% 的注意力头占正检索得分质量的 50%，并且屏蔽前 5% 的选定头会使 MMLongBench-Doc 从 48.2% 下降到 5.7%，将 SlideVQA 从 71.2% 下降到 8.9%，而随机头屏蔽的破坏性要小得多。进一步的分析表明，这些头部在不同模态之间部分共享，但在每种模态内保持动态，随着上下文长度和干草堆模态的变化，图像检索头的变化比文本检索头的变化更大。无需进一步训练，我们发现这些头也可以直接用于对视觉丰富的文档进行排名：在 MMDocIR 上，Qwen3-VL-8B 选择头评分将 Recall@1 页面检索的宏观/微观点提高了 7.7/7.4 点，将布局检索的布局检索点提高了 6.3/6.8 点。",
+          "html_url": "https://arxiv.org/html/2605.27243v1",
+          "figures": []
+        },
+        {
+          "id": "2605.26656",
+          "rank": 4,
+          "score": 86,
+          "reason_zh": "直接对视觉token施加监督信号，突破MLLM仅文本token反向传播的局限",
+          "tags": [
+            "MLLM",
+            "视觉监督",
+            "细粒度理解"
+          ],
+          "arxiv_id": "2605.26656",
+          "title": "DV-SFT: Direct Vision Supervision for Fine-Grained Visual Understanding",
+          "authors": [
+            "Jianfei Zhao",
+            "Feng Zhang",
+            "Xin Sun",
+            "Chong Feng",
+            "Bing Wang",
+            "Zhixing Tan"
+          ],
+          "abstract": "Multimodal large language models are typically trained end-to-end to predict ground-truth answers, yet supervision signals are applied exclusively to text tokens. Visual tokens, the core carriers of visual information, are optimized only implicitly as part of the context, leading to coarse-grained visual understanding. Prior works attempt to supervise visual inputs but inevitably rely on auxiliary components such as additional decoders or forward passes, because visual tokens lack readily interpretable labels. This limits their practical applicability. In this work, we propose \\textbf{D}irect \\textbf{V}ision \\textbf{S}upervised \\textbf{F}ine-\\textbf{T}uning (DV-SFT), which constructs explicit, token-level supervision for visual tokens and trains them through the same next-token prediction objective used for text. Specifically, we exploit the direct vision--text correspondence in OCR-related scenarios and automatically label each visual token with the word in its corresponding image patch. DV-SFT treats the MLLM as a black box, requiring no architectural modifications or additional forward passes. Extensive experiments demonstrate the superiority of direct vision supervision. DV-SFT consistently outperforms standard SFT across three in-domain and four out-of-domain benchmarks. Further analyses show that vision supervision effectively enhances fine-grained visual understanding and achieves higher multimodal alignment efficiency.",
+          "abs_url": "https://arxiv.org/abs/2605.26656",
+          "pdf_url": "https://arxiv.org/pdf/2605.26656v1",
+          "primary_category": "cs.CV",
+          "categories": [
+            "cs.CV"
+          ],
+          "submitted": "2026-05-26T07:41:48Z",
+          "updated": "2026-05-26T07:41:48Z",
+          "comments": "Under Review",
+          "code_links": [],
+          "project_links": [],
+          "title_zh": "DV-SFT：用于细粒度视觉理解的直接视觉监督",
+          "abstract_zh": "多模态大语言模型通常经过端到端训练以预测真实答案，但监督信号仅应用于文本标记。视觉标记是视觉信息的核心载体，仅作为上下文的一部分进行隐式优化，从而导致粗粒度的视觉理解。先前的工作试图监督视觉输入，但不可避免地依赖辅助组件，例如额外的解码器或前向传递，因为视觉标记缺乏易于解释的标签。这限制了它们的实际应用。在这项工作中，我们提出了 \\textbf{D}irect \\textbf{V}ision \\textbf{S}supervised \\textbf{F}ine-\\textbf{T}uning (DV-SFT)，它为视觉标记构建显式的标记级监督，并通过用于文本的相同下一个标记预测目标来训练它们。具体来说，我们利用 OCR 相关场景中的直接视觉-文本对应关系，并使用相应图像块中的单词自动标记每个视觉标记。 DV-SFT 将 MLLM 视为黑匣子，不需要架构修改或额外的前向传递。大量的实验证明了直接视觉监督的优越性。 DV-SFT 在三个域内和四个域外基准测试中始终优于标准 SFT。进一步分析表明，视觉监督有效增强了细粒度的视觉理解，实现了更高的多模态对齐效率。",
+          "html_url": "https://arxiv.org/html/2605.26656v1",
+          "figures": [
+            "https://arxiv.org/html/2605.26656v1/x1.png",
+            "https://arxiv.org/html/2605.26656v1/x2.png",
+            "https://arxiv.org/html/2605.26656v1/figures/Alignment.png",
+            "https://arxiv.org/html/2605.26656v1/figures/ocr_all.png"
+          ],
+          "affiliations": [
+            "School of Computer Science and Technology, Beijing Institute of Technology",
+            "Zhongguancun Academy",
+            "Beihang University",
+            "Zhongguancun Laboratory",
+            "Southeast Academy of Information Technology, Beijing Institute of Technology"
+          ]
+        },
+        {
+          "id": "2605.27310",
+          "rank": 5,
+          "score": 85,
+          "reason_zh": "系统研究跨视角空间推理中视觉思维的作用，发现看到的比想到的更重要",
+          "tags": [
+            "空间推理",
+            "视觉思维",
+            "跨视角"
+          ],
+          "arxiv_id": "2605.27310",
+          "title": "How and What to Imagine? Visual Thinking in Unified Multimodal Models for Cross-View Spatial Reasoning",
+          "authors": [
+            "Qian Yang",
+            "Ankur Sikarwar",
+            "Huy Le",
+            "Le Zhang",
+            "Zhuan Shi",
+            "Perouz Taslakian",
+            "Aishwarya Agrawal"
+          ],
+          "abstract": "Cross-view spatial reasoning remains a weak spot for vision-language models (VLMs): they often reason in language and lose the fine-grained geometry needed for the task. Thinking with images aims to address this by generating an intermediate thinking image, but recent work shows that models often ignore the visual evidence in these traces. We therefore ask how to make visual thinking matter, and what kind of visual thinking works best. We study these questions in unified multimodal models (UMMs), which natively support interleaved image-text generation. For the first question, we propose View Dropout (VDrop), a training-time intervention that hides parts of one input view from the answer span while keeping them visible to the thinking-image tokens. This encourages the model to use the thinking image when answering, instead of relying only on the input views. Once the thinking image is used for answer prediction, we study which type of visual thinking is most effective. We frame this as a learnability-informativeness tradeoff and compare three thinking-image variants: top-down, panoramic, and point-matching renderings. Trained on synthetic scenes and evaluated on five real-world out-of-domain benchmarks, panoramic visual thinking with VDrop is the only configuration that is both informative and learnable, and it achieves the best out-of-domain generalization.",
+          "abs_url": "https://arxiv.org/abs/2605.27310",
+          "pdf_url": "https://arxiv.org/pdf/2605.27310v1",
+          "primary_category": "cs.CV",
+          "categories": [
+            "cs.CV"
+          ],
+          "submitted": "2026-05-26T17:20:05Z",
+          "updated": "2026-05-26T17:20:05Z",
+          "comments": "Preprint",
+          "code_links": [],
+          "project_links": [],
+          "title_zh": "如何想象以及想象什么？用于跨视图空间推理的统一多模态模型中的视觉思维",
+          "abstract_zh": "跨视图空间推理仍然是视觉语言模型（VLM）的一个弱点：它们经常用语言进行推理，并丢失任务所需的细粒度几何形状。用图像思考旨在通过生成中间思维图像来解决这个问题，但最近的研究表明，模型经常忽略这些痕迹中的视觉证据。因此，我们要问如何让视觉思维变得重要，以及哪种视觉思维效果最好。我们在统一多模态模型（UMM）中研究这些问题，该模型本身支持交错图像文本生成。对于第一个问题，我们提出了 View Dropout (VDrop)，这是一种训练时干预，它将部分输入视图从答案范围中隐藏起来，同时保持它们对思维图像标记可见。这鼓励模型在回答时使用思维图像，而不是仅仅依赖输入视图。一旦思维图像被用于答案预测，我们就会研究哪种类型的视觉思维最有效。我们将其视为可学习性与信息性的权衡，并比较了三种思维图像变体：自上而下、全景和点匹配渲染。在合成场景上进行训练并在五个现实世界的域外基准上进行评估，VDrop 的全景视觉思维是唯一既提供信息又可学习的配置，并且它实现了最佳的域外泛化。",
+          "html_url": "https://arxiv.org/html/2605.27310v1",
+          "figures": [
+            "https://arxiv.org/html/2605.27310v1/x1.png",
+            "https://arxiv.org/html/2605.27310v1/x2.png",
+            "https://arxiv.org/html/2605.27310v1/x3.png",
+            "https://arxiv.org/html/2605.27310v1/x4.png"
+          ],
+          "affiliations": [
+            "Mila - Québec AI Institute",
+            "Université de Montréal",
+            "McGill University",
+            "ServiceNow AI Research",
+            "Canada CIFAR AI Chair"
+          ]
+        }
+      ]
+    }
   ],
-  "papers": [
+  "stats": [
     {
-      "arxiv_id": "2605.27038",
-      "title": "TPS-Drive: Task-Guided Representation Purification for VLM-based Autonomous Driving",
-      "authors": [
-        "Jiaxiang Li",
-        "Yumao Liu",
-        "Ke Ma"
-      ],
-      "abstract": "Vision-Language Models (VLMs) provide a promising foundation for autonomous driving planning, yet bridging semantic reasoning and precise 3D spatial forecasting remains a critical challenge. Existing representation strategies generally follow two paths: text-aligned methods flatten continuous spatial states into symbols, which compromises geometric structure and induces \"spatial hallucinations\"; dense visual methods preserve spatial topology but overwhelm standard tokenizers with redundant background textures, leading to \"representation interference\". To address these limitations, we introduce TPS-Drive, a novel framework centered on Task-Guided Representation Purification that empowers VLMs to Think in Purified Space. At its core, an Agent-Centric Tokenizer utilizes a task-guided vector quantization mechanism supervised by a frozen 3D detection head, which explicitly reallocates limited codebook capacity from pervasive static backgrounds to critical dynamic agents and effectively isolates spatial redundancy. Leveraging this purified spatial vocabulary, TPS-Drive employs a decoupled reasoning pipeline that sequentially performs scene understanding, future forecasting, and action generation. The framework is optimized via a progressive three-stage training paradigm, culminating in reward-driven refinement that surpasses pure imitation learning. Extensive experiments validate our approach: TPS-Drive achieves accurate agent spatial state forecasting and reduces collision rates in open-loop nuScenes evaluations, while establishing new safety records on the rigorous closed-loop NAVSIMv1 and NAVSIMv2 benchmarks.",
-      "abs_url": "https://arxiv.org/abs/2605.27038",
-      "pdf_url": "https://arxiv.org/pdf/2605.27038v1",
-      "primary_category": "cs.RO",
-      "categories": [
-        "cs.RO"
-      ],
-      "submitted": "2026-05-26T13:56:31Z",
-      "updated": "2026-05-26T13:56:31Z",
-      "comments": null,
-      "code_links": [],
-      "project_links": [],
-      "title_zh": "TPS-Drive：基于 VLM 的自动驾驶的任务引导表示纯化",
-      "abstract_zh": "视觉语言模型 (VLM) 为自动驾驶规划提供了有希望的基础，但连接语义推理和精确的 3D 空间预测仍然是一个关键挑战。现有的表示策略一般遵循两条路径：文本对齐方法将连续的空间状态扁平化为符号，这会损害几何结构并诱发“空间幻觉”；密集的视觉方法保留了空间拓扑，但用冗余的背景纹理压倒了标准标记器，导致“表示干扰”。为了解决这些限制，我们引入了 TPS-Drive，这是一种以任务引导表示纯化为中心的新颖框架，使 VLM 能够在纯化空间中进行思考。其核心是，以代理为中心的分词器利用由冻结 3D 检测头监督的任务引导矢量量化机制，该机制将有限的码本容量从普遍的静态背景显式地重新分配给关键的动态代理，并有效地隔离空间冗余。利用这种纯化的空间词汇，TPS-Drive 采用解耦推理管道，依次执行场景理解、未来预测和动作生成。该框架通过渐进的三阶段训练范例进行优化，最终实现超越纯粹模仿学习的奖励驱动的细化。大量实验验证了我们的方法：TPS-Drive 实现了准确的代理空间状态预测，并降低了开环 nuScenes 评估中的碰撞率，同时在严格的闭环 NAVSIMv1 和 NAVSIMv2 基准上建立了新的安全记录。",
-      "html_url": "https://arxiv.org/html/2605.27038v1",
-      "figures": [
-        "https://arxiv.org/html/2605.27038v1/x1.png",
-        "https://arxiv.org/html/2605.27038v1/x2.png",
-        "https://arxiv.org/html/2605.27038v1/x3.png"
-      ],
-      "affiliations": [
-        "The Hong Kong University of Science and Technology (Guangzhou), Guangzhou, China"
-      ]
+      "category": "worldmodel",
+      "name": "世界模型&生成模型",
+      "count": 5
     },
     {
-      "arxiv_id": "2605.26543",
-      "title": "PolyFusionAgent: A Multimodal Foundation Model and Autonomous AI Assistant for Polymer Property Prediction and Inverse Design",
-      "authors": [
-        "Manpreet Kaur",
-        "Xingying Zhang",
-        "Qian Liu"
-      ],
-      "abstract": "Polymer discovery is central to fields ranging from energy storage to biomedicine, but it is hindered by an astronomically large chemical design space and fragmented representations of structure, properties, and prior knowledge. This fragmentation leaves many AI models disconnected from physical and experimental reality, restricting their ability to support directly actionable design decisions. Here we introduce PolyFusionAgent, an interactive framework coupling a multimodal polymer foundation model (PolyFusion) with a tool-augmented, literature-grounded design agent (PolyAgent). PolyFusion aligns complementary polymer views including sequence, topology, 3D geometry, and fingerprints across millions of polymers to learn a shared latent space transferable across chemistries and data regimes, improving thermophysical property prediction and enabling property-conditioned generation of chemically valid, structurally novel polymers beyond the reference design space. PolyAgent closes the design loop by linking prediction and inverse design with evidence retrieval from the polymer literature, proposing, evaluating, and contextualizing hypotheses with explicit precedent in one workflow. Together, PolyFusionAgent enables interactive, evidence-linked polymer discovery combining large-scale representation learning, multimodal chemical knowledge, and verifiable scientific reasoning.",
-      "abs_url": "https://arxiv.org/abs/2605.26543",
-      "pdf_url": "https://arxiv.org/pdf/2605.26543v1",
-      "primary_category": "cs.AI",
-      "categories": [
-        "cs.AI",
-        "cs.LG"
-      ],
-      "submitted": "2026-05-26T04:45:11Z",
-      "updated": "2026-05-26T04:45:11Z",
-      "comments": "23 pages, 5 figures, 2 tables; Supplementary material included",
-      "code_links": [],
-      "project_links": [],
-      "title_zh": "PolyFusionAgent：用于聚合物性能预测和逆向设计的多模态基础模型和自主人工智能助手",
-      "abstract_zh": "聚合物的发现是从能源存储到生物医学等领域的核心，但它受到天文数字般巨大的化学设计空间以及结构、性质和先验知识的碎片化表示的阻碍。这种碎片化使得许多人工智能模型与物理和实验现实脱节，限制了它们支持直接可操作的设计决策的能力。在这里，我们介绍 PolyFusionAgent，这是一个将多模态聚合物基础模型 (PolyFusion) 与工具增强、基于文献的设计代理 (PolyAgent) 相结合的交互式框架。 PolyFusion 对齐互补聚合物视图，包括数百万种聚合物的序列、拓扑、3D 几何和指纹，以学习可跨化学和数据体系转移的共享潜在空间，改进热物理性质预测，并能够在参考设计空间之外以属性条件生成化学有效、结构新颖的聚合物。 PolyAgent 通过将预测和逆向设计与聚合物文献中的证据检索联系起来，在一个工作流程中根据明确的先例提出、评估和背景化假设，从而闭合设计循环。 PolyFusionAgent 结合大规模表征学习、多模式化学知识和可验证的科学推理，实现了交互式、有证据关联的聚合物发现。",
-      "html_url": "https://arxiv.org/html/2605.26543v1",
-      "figures": [
-        "https://arxiv.org/html/2605.26543v1/Figs/PP1.png",
-        "https://arxiv.org/html/2605.26543v1/Figs/Picture9.png",
-        "https://arxiv.org/html/2605.26543v1/Figs/pp3.png",
-        "https://arxiv.org/html/2605.26543v1/Figs/PP4.png"
-      ]
+      "category": "reconstruction",
+      "name": "3D/4D重建",
+      "count": 5
     },
     {
-      "arxiv_id": "2605.27134",
-      "title": "Scaling, Benchmarking, and Reasoning of Vision-Language Agents for Mobile GUI Navigation",
-      "authors": [
-        "Heng Qu",
-        "Yike Liu",
-        "Renren Jin",
-        "Wenzong Zhang",
-        "Pengzhi Gao",
-        "Wei Liu",
-        "Jian Luan"
-      ],
-      "abstract": "Vision-Language Models (VLMs) have shown rapid progress in mobile GUI navigation. This paper presents a systematic study of data scaling, benchmarking, and reasoning for VLM-based agents in this domain. To facilitate rigorous evaluation, we introduce HyperTrack, a large-scale dataset with over 16000 real-world tasks across more than 650 Chinese mobile applications, along with GUIEvalKit, an open-source toolkit for unified benchmarking of VLMs on offline GUI navigation tasks. Using HyperTrack, we analyze the effects of training data scale on both supervised and reinforcement-based finetuning. Our results show that reinforcement-based finetuning consistently outperforms supervised finetuning, particularly in out-of-domain settings, highlighting the synergy between data scaling and reinforcement learning. Leveraging GUIEvalKit, we further benchmark state-of-the-art (SOTA) VLMs and analyze how interaction history and reasoning capabilities influence task completion. Together, HyperTrack and GUIEvalKit provide a comprehensive platform for developing and evaluating VLM agents in mobile GUI navigation tasks.",
-      "abs_url": "https://arxiv.org/abs/2605.27134",
-      "pdf_url": "https://arxiv.org/pdf/2605.27134v1",
-      "primary_category": "cs.AI",
-      "categories": [
-        "cs.AI"
-      ],
-      "submitted": "2026-05-26T15:03:56Z",
-      "updated": "2026-05-26T15:03:56Z",
-      "comments": "Accepted at ICML 2026",
-      "code_links": [],
-      "project_links": [],
-      "title_zh": "用于移动 GUI 导航的视觉语言代理的扩展、基准测试和推理",
-      "abstract_zh": "视觉语言模型 (VLM) 在移动 GUI 导航方面取得了快速进展。本文对该领域基于 VLM 的代理的数据扩展、基准测试和推理进行了系统研究。为了促进严格的评估，我们引入了 HyperTrack（一个包含 650 多个中国移动应用程序中 16000 多个实际任务的大型数据集）以及 GUIEvalKit（一个开源工具包，用于在离线 GUI 导航任务上对 VLM 进行统一基准测试）。使用 HyperTrack，我们分析了训练数据规模对监督和基于强化的微调的影响。我们的结果表明，基于强化的微调始终优于监督微调，特别是在域外设置中，突出了数据扩展和强化学习之间的协同作用。利用 GUIEvalKit，我们进一步对最先进的 (SOTA) VLM 进行基准测试，并分析交互历史和推理能力如何影响任务完成。 HyperTrack 和 GUIEvalKit 共同提供了一个综合平台，用于在移动 GUI 导航任务中开发和评估 VLM 代理。",
-      "figures": []
+      "category": "vla",
+      "name": "视觉语言动作&机器人",
+      "count": 5
     },
     {
-      "arxiv_id": "2605.26478",
-      "title": "Efficient On-policy Visual-RL via Stochastic Decoupled Policy Gradient",
-      "authors": [
-        "Haoxiang You",
-        "Yilang Liu",
-        "Davis Zong",
-        "Qian Wang",
-        "Teeratham Vitchutripop",
-        "Qi Wang",
-        "Daniel Rakita",
-        "Ian Abraham"
-      ],
-      "abstract": "We present the stochastic decoupled policy gradient (SDPG), a lightweight visual reinforcement learning (RL) method that trains diverse visuomotor control policies end-to-end within a few hours on a single NVIDIA RTX 4080 GPU. SDPG estimates policy gradients via random perturbations of trajectory rollouts, requiring orders of magnitude fewer batch-rendered environments and substantially reducing compute and memory overhead. On visual MuJoCo benchmarks, SDPG consistently outperforms baseline methods in training time, memory usage, and rewards. Finally, to support future research, we introduce a suite of realistic visual robotics benchmarks spanning dexterous manipulation, challenging locomotion, and demonstrate effective sim-to-real transfer on physical hardware.",
-      "abs_url": "https://arxiv.org/abs/2605.26478",
-      "pdf_url": "https://arxiv.org/pdf/2605.26478v1",
-      "primary_category": "cs.RO",
-      "categories": [
-        "cs.AI",
-        "cs.CV",
-        "cs.LG",
-        "cs.RO",
-        "eess.SY"
-      ],
-      "submitted": "2026-05-26T02:35:08Z",
-      "updated": "2026-05-26T02:35:08Z",
-      "comments": null,
-      "code_links": [],
-      "project_links": [],
-      "title_zh": "通过随机解耦策略梯度实现高效的在策略 Visual-RL",
-      "abstract_zh": "我们提出了随机解耦策略梯度 (SDPG)，这是一种轻量级视觉强化学习 (RL) 方法，可在单个 NVIDIA RTX 4080 GPU 上在几个小时内端到端训练不同的视觉运动控制策略。 SDPG 通过轨迹推出的随机扰动来估计策略梯度，需要的批量渲染环境减少了几个数量级，并大大减少了计算和内存开销。在视觉 MuJoCo 基准上，SDPG 在训练时间、内存使用和奖励方面始终优于基线方法。最后，为了支持未来的研究，我们引入了一套逼真的视觉机器人基准，涵盖灵巧的操作、具有挑战性的运动，并在物理硬件上演示有效的模拟到真实的传输。",
-      "html_url": "https://arxiv.org/html/2605.26478v1",
-      "figures": [
-        "https://arxiv.org/html/2605.26478v1/figures/SDPG_diagram.png",
-        "https://arxiv.org/html/2605.26478v1/figures/preview.png",
-        "https://arxiv.org/html/2605.26478v1/x1.png",
-        "https://arxiv.org/html/2605.26478v1/x2.png"
-      ]
-    },
-    {
-      "arxiv_id": "2605.27129",
-      "title": "YOLO26-RipeLoc Lite: A lightweight architecture for tomato ripeness detection and picking point localization in greenhouse robotic harvesting",
-      "authors": [
-        "Rajmeet Singh",
-        "Manveen Kaur",
-        "Shahpour Alirezaee",
-        "Irfan Hussain"
-      ],
-      "abstract": "In greenhouse tomato production, automated harvesting requires accurate detection of ripe tomatoes, ripeness classification, and precise picking-point localization for robotic end-effectors. This paper proposes YOLO26-RipeLoc Lite, a lightweight deep learning architecture based on YOLO26 for simultaneous detection, ripeness classification, and center-point localization of greenhouse tomatoes. The model introduces three modifications: (1) a Lightweight Feature Pyramid Network (LFPN) with depthwise separable convolutions for efficient multi-scale fusion, (2) a Ripeness-Aware Attention Module (RAAM) with dual pooling and a learnable ripeness bias vector for enhanced color-texture discrimination, and (3) a Compact Detection Head (CDH) with shared convolutions and an integrated center-point regression branch for direct grasp planning. The model is evaluated on a custom dataset of 1,500 images with 6,227 instances (3,566 ripe, 2,661 unripe) from the SILAL greenhouse, Abu Dhabi, UAE. YOLO26-RipeLoc Lite achieves mAP@0.5 of 92.9% (95.2% ripe, 90.6% unripe) with the highest precision (95.2%) among all evaluated architectures using only 2.38M parameters. Post-training BatchNorm pruning at 30% reduces parameters to ~1.8M with negligible accuracy loss. Ablation studies confirm that greenhouse-aware HSV augmentation provides the largest improvement (+2.02 pp mAP@50), backbone freezing achieves peak precision (93.8%), and 3-phase progressive unfreezing yields the best localization quality (mAP@50:95 of 64.6%). Comparisons with YOLOv8n/s, YOLO11n/s, YOLO12n/s, and YOLO26s confirm superior accuracy-efficiency: 2.9 pp higher precision than YOLO12n with 7.0% fewer parameters and integrated center-point localization for robotic end-effector guidance.",
-      "abs_url": "https://arxiv.org/abs/2605.27129",
-      "pdf_url": "https://arxiv.org/pdf/2605.27129v1",
-      "primary_category": "cs.CV",
-      "categories": [
-        "cs.CV",
-        "cs.RO"
-      ],
-      "submitted": "2026-05-26T15:00:24Z",
-      "updated": "2026-05-26T15:00:24Z",
-      "comments": null,
-      "code_links": [],
-      "project_links": [],
-      "title_zh": "YOLO26-RipeLoc Lite：用于温室机器人收获中番茄成熟度检测和采摘点定位的轻量级架构",
-      "abstract_zh": "在温室番茄生产中，自动化收获需要准确检测成熟番茄、成熟度分类以及机器人末端执行器的精确采摘点定位。本文提出了 YOLO26-RipeLoc Lite，这是一种基于 YOLO26 的轻量级深度学习架构，用于温室番茄的同步检测、成熟度分类和中心点定位。该模型引入了三个修改：（1）具有深度可分离卷积的轻量级特征金字塔网络（LFPN），用于高效的多尺度融合；（2）具有双池化和可学习成熟度偏差向量的成熟感知注意模块（RAAM），用于增强颜色纹理辨别；（3）具有共享卷积和集成中心点回归分支的紧凑检测头（CDH），用于直接抓取规划。该模型在来自阿联酋阿布扎比 SILAL 温室的 1,500 张图像的自定义数据集上进行评估，其中包含 6,227 个实例（3,566 个成熟实例，2,661 个未成熟实例）。 YOLO26-RipeLoc Lite 的 mAP@0.5 达到了 92.9%（95.2% 成熟，90.6% 未成熟），在所有评估的架构中仅使用 238 万个参数，精度最高（95.2%）。训练后 BatchNorm 修剪 30% 将参数减少到约 1.8M，精度损失可以忽略不计。消融研究证实，温室感知 HSV 增强提供了最大的改进（+2.02 pp mAP@50），骨干冻结实现了峰值精度（93.8%），并且 3 相渐进解冻产生了最佳定位质量（mAP@50:95 为 64.6%）。与 YOLOv8n/s、YOLO11n/s、YOLO12n/s 和 YOLO26s 的比较证实了卓越的精度效率：比 YOLO12n 精度高 2.9 pp，参数减少 7.0%，并集成了用于机器人末端执行器引导的中心点定位。",
-      "html_url": "https://arxiv.org/html/2605.27129v1",
-      "figures": [
-        "https://arxiv.org/html/2605.27129v1/figures/Fig1.jpeg",
-        "https://arxiv.org/html/2605.27129v1/figures/Fig2.jpg",
-        "https://arxiv.org/html/2605.27129v1/figures/Fig3.jpg",
-        "https://arxiv.org/html/2605.27129v1/figures/Fig4.jpg"
-      ]
-    },
-    {
-      "arxiv_id": "2605.26546",
-      "title": "MobileExplorer: Accelerating On-Device Inference for Mobile GUI Agents via Online Exploration",
-      "authors": [
-        "Runxi Huang",
-        "Liyu Zhang",
-        "Shengzhong Liu",
-        "Xiaomin Ouyang"
-      ],
-      "abstract": "Mobile graphical user interface (GUI) agents enable AI models to autonomously operate smartphones on behalf of users. However, most existing systems focus primarily on optimizing task accuracy and rely on cloud-hosted models for inference, which introduces privacy concerns and network-dependent latency. As a result, fully on-device deployment of mobile GUI agents remains underexplored. We propose MobileExplorer, a new framework that accelerates on-device inference for vision-based mobile GUI agents via online exploration. The key idea is to exploit the long per-step reasoning time of vision-language models (VLMs) by performing lightweight, parallel exploration of UI elements. During model inference, the agent proactively probes semantically relevant UI elements and records these exploration traces as structured memory. To ensure reliable execution in live mobile environments, we design a two-level rollback mechanism that robustly restores the initial UI state when a fast but naive backtracking strategy fails. The collected exploration traces are then summarized into concise contextual hints and injected into the prompt to enhance the subsequent reasoning step. We evaluate MobileExplorer on multiple off-the-shelf devices using the AndroidWorld benchmark, as well as newly designed, more complex tasks and dynamic on-device environments. MobileExplorer reduces the average number of reasoning steps and end-to-end latency by 23\\%, while maintaining or improving task success rates by up to 5\\%. A video demonstration of MobileExplorer performance in the real world is available at https://youtu.be/thK7MJmdlvM .",
-      "abs_url": "https://arxiv.org/abs/2605.26546",
-      "pdf_url": "https://arxiv.org/pdf/2605.26546v1",
-      "primary_category": "cs.AI",
-      "categories": [
-        "cs.AI"
-      ],
-      "submitted": "2026-05-26T04:53:53Z",
-      "updated": "2026-05-26T04:53:53Z",
-      "comments": null,
-      "code_links": [],
-      "project_links": [
-        "https://youtu.be/thK7MJmdlvM"
-      ],
-      "title_zh": "MobileExplorer：通过在线探索加速移动 GUI 代理的设备上推理",
-      "abstract_zh": "移动图形用户界面（GUI）代理使人工智能模型能够代表用户自主操作智能手机。然而，大多数现有系统主要侧重于优化任务准确性，并依赖云托管模型进行推理，这会带来隐私问题和网络相关的延迟。因此，移动 GUI 代理在设备上的完全部署仍未得到充分探索。我们提出了 MobileExplorer，这是一个新框架，可通过在线探索加速基于视觉的移动 GUI 代理的设备上推理。关键思想是通过执行 UI 元素的轻量级并行探索来利用视觉语言模型 (VLM) 较长的每步推理时间。在模型推理过程中，代理主动探测语义相关的 UI 元素，并将这些探索痕迹记录为结构化内存。为了确保实时移动环境中的可靠执行，我们设计了一个两级回滚机制，当快速但幼稚的回溯策略失败时，该机制可以稳健地恢复初始 UI 状态。然后将收集到的探索痕迹总结为简洁的上下文提示，并注入到提示中以增强后续的推理步骤。我们使用 AndroidWorld 基准测试以及新设计的更复杂的任务和动态设备上环境在多个现成设备上评估 MobileExplorer。 MobileExplorer 将平均推理步骤数和端到端延迟减少了 23%，同时将任务成功率保持或提高高达 5%。有关 MobileExplorer 在现实世界中的性能的视频演示，请访问 https://youtu.be/thK7MJmdlvM 。",
-      "html_url": "https://arxiv.org/html/2605.26546v1",
-      "figures": [
-        "https://arxiv.org/html/2605.26546v1/Figures/end_to_end.png",
-        "https://arxiv.org/html/2605.26546v1/Results/motivation_benchmark.png",
-        "https://arxiv.org/html/2605.26546v1/Results/motivation_comparison.png",
-        "https://arxiv.org/html/2605.26546v1/Results/android_steps.png"
-      ]
-    },
-    {
-      "arxiv_id": "2605.27284",
-      "title": "FineVLA: Fine-Grained Instruction Alignment for Steerable Vision-Language-Action Policies",
-      "authors": [
-        "Xintong Hu",
-        "Xuhong Huang",
-        "Jinyu Zhang",
-        "Yutong Yao",
-        "Yuchong Sun",
-        "Qiuyue Wang",
-        "Mingsheng Li",
-        "Sicheng Xie",
-        "Yitao Liu",
-        "Junhao Chen",
-        "Yixuan Chen",
-        "Yingming Zheng",
-        "Shuai Bai",
-        "Tao Yu"
-      ],
-      "abstract": "Vision-Language-Action (VLA) models are increasingly expected to not only complete robot tasks, but also follow human instructions about how those tasks should be executed. However, existing robot datasets usually pair trajectories with coarse goal-level language, leaving execution-critical details such as active arm, approach direction, and contact region unspecified. This limits steerable policy learning and robotic video understanding. We introduce FineVLA, an open framework for action-aligned fine-grained VLA supervision. The framework includes: (1) a data construction tool that unifies 972,247 trajectories across 85K tasks from 10 open-source robot datasets and builds FineVLA-Data, a human-verified dataset of 47,159 fine-grained trajectories; (2) a held-out benchmark with 500 videos, 10,816 atomic facts, and 1,030 VQA questions; (3) a robotics-specialized VLM annotator for scalable fine-grained annotation; and (4) a steerable VLA policy trained with controlled mixtures of fine-grained and raw goal-level instructions. Our experiments yield three findings. First, fine-grained supervision does not sacrifice goal-level success: FG-only improves over Raw-only by +1.4 to +8.1 success-rate points across settings. Second, fine-grained and raw instructions are complementary, following a consistent inverted-U trend peaking at FG:Raw = 1:2 to 1:1. The best mixed setting reaches 86.8%/82.5% in RoboTwin simulation and 62.7/100 in real-world dual-arm manipulation (vs. 49.9 Raw-only). Third, fine-grained supervision improves steerable control: the largest real-world gains appear on pose (+23), color (+18), and approach direction (+18)--factors where goal-level instructions provide no guidance. Overall, fine-grained language should augment goal-level instructions: specifying how to execute alongside what to achieve. Project page: https://finevla.xlang.ai/",
-      "abs_url": "https://arxiv.org/abs/2605.27284",
-      "pdf_url": "https://arxiv.org/pdf/2605.27284v1",
-      "primary_category": "cs.RO",
-      "categories": [
-        "cs.AI",
-        "cs.RO"
-      ],
-      "submitted": "2026-05-26T17:01:10Z",
-      "updated": "2026-05-26T17:01:10Z",
-      "comments": "26 pages, 7 figures, 25 tables",
-      "code_links": [],
-      "project_links": [
-        "https://finevla.xlang.ai/"
-      ],
-      "title_zh": "FineVLA：可操纵视觉-语言-动作策略的细粒度指令对齐",
-      "abstract_zh": "人们越来越期望视觉-语言-动作（VLA）模型不仅能完成机器人任务，还能遵循人类关于如何执行这些任务的指令。然而，现有的机器人数据集通常将轨迹与粗略的目标级语言配对，而未指定执行关键的细节，例如主动臂、接近方向和接触区域。这限制了可引导的策略学习和机器人视频理解。我们推出 FineVLA，这是一个针对行动的细粒度 VLA 监督的开放框架。该框架包括：（1）一个数据构建工具，它统一了来自 10 个开源机器人数据集的 85K 任务中的 972,247 条轨迹，并构建了 FineVLA-Data，这是一个由 47,159 条细粒度轨迹组成的经人工验证的数据集； (2) 一个包含 500 个视频、10,816 个原子事实和 1,030 个 VQA 问题的测试基准； (3) 机器人专用的 VLM 注释器，用于可扩展的细粒度注释； (4) 可操纵的 VLA 策略，通过细粒度和原始目标级指令的受控混合物进行训练。我们的实验产生了三个发现。首先，细粒度的监督不会牺牲目标级别的成功：在所有设置中，仅 FG 比仅原始提高了 +1.4 到 +8.1 的成功率点。其次，细粒度指令和原始指令是互补的，遵循一致的倒 U 趋势，在 FG:Raw = 1:2 到 1:1 处达到峰值。最佳混合设置在 RoboTwin 模拟中达到 86.8%/82.5%，在现实世界双臂操作中达到 62.7/100（相对于仅 Raw 的 49.9）。第三，细粒度的监督改善了可操纵控制：现实世界中最大的增益出现在姿势（+23）、颜色（+18）和接近方向（+18）上——目标级指令不提供指导的因素。总体而言，细粒度的语言应该增强目标级指令：指定如何执行以及要实现的目标。项目页面：https://finevla.xlang.ai/",
-      "html_url": "https://arxiv.org/html/2605.27284v1",
-      "figures": [
-        "https://arxiv.org/html/2605.27284v1/x2.png",
-        "https://arxiv.org/html/2605.27284v1/x3.png",
-        "https://arxiv.org/html/2605.27284v1/x4.png",
-        "https://arxiv.org/html/2605.27284v1/x5.png"
-      ]
-    },
-    {
-      "arxiv_id": "2605.26835",
-      "title": "Helicase: Uncertainty-Guided Supply Chain Knowledge Graph Construction with Autonomous Multi-Agent LLMs",
-      "authors": [
-        "Yunbo Long",
-        "Haolang Zhao",
-        "Ge Zheng",
-        "Alexandra Brintrup"
-      ],
-      "abstract": "LLM-based multi-agent systems have been widely adopted for knowledge retrieval and report generation, synthesizing known information through web search and textual reasoning. However, many critical information tasks in supply chains are not simple one-shot queries: they are structural inference problems requiring multi-hop reasoning across complex, fragmented web resources. Questions such as \\textit{``Which Tesla components use lithium from Australian mines?''} have no answer in any single document; answers must be computationally synthesized through the autonomous construction and analysis of dynamic knowledge graphs assembled from fragmented, heterogeneous sources. Moreover, such discovery processes must be uncertainty-aware: decisions depend not only on answers but on calibrated confidence in their reliability, traceable to source quality and reasoning consistency. To address this capability gap, we propose \\textit{Helicase}, an autonomous multi-agent LLM system for uncertainty-guided supply chain knowledge graph construction. \\textit{Helicase} decomposes high-level supply-chain queries into executable investigation plans, coordinates specialized web-search, reasoning, and coding agents through iterative verification loops, and incrementally constructs query-specific supply chain knowledge graphs with per-fact uncertainty annotations. Its three-layer uncertainty framework tracks uncertainty at the action, trajectory, and memory layers, enabling both structural inference and calibrated confidence assessment. To evaluate autonomous reasoning across the full complexity spectrum, we introduce SCQA (Supply Chain Query Assessment), a benchmark of 80 supply chain queries organized into four quadrants spanning single-hop to multi-hop inference under both high and low data visibility.",
-      "abs_url": "https://arxiv.org/abs/2605.26835",
-      "pdf_url": "https://arxiv.org/pdf/2605.26835v1",
-      "primary_category": "cs.AI",
-      "categories": [
-        "cs.AI"
-      ],
-      "submitted": "2026-05-26T10:53:00Z",
-      "updated": "2026-05-26T10:53:00Z",
-      "comments": null,
-      "code_links": [],
-      "project_links": [],
-      "title_zh": "Helicase：利用自主多代理法学硕士构建不确定性引导的供应链知识图",
-      "abstract_zh": "基于LLM的多智能体系统已广泛用于知识检索和报告生成，通过网络搜索和文本推理来合成已知信息。然而，供应链中的许多关键信息任务并不是简单的一次性查询：它们是结构推理问题，需要跨复杂、碎片化的网络资源进行多跳推理。 \\textit{“哪些特斯拉组件使用来自澳大利亚矿山的锂？”}之类的问题在任何一份文件中都没有答案；答案必须通过自主构建和分析由分散的异构来源组装的动态知识图来计算合成。此外，这样的发现过程必须具有不确定性意识：决策不仅取决于答案，还取决于对其可靠性的校准信心，可追溯到源质量和推理一致性。为了解决这一能力差距，我们提出了 \\textit{Helicase}，这是一种用于不确定性引导的供应链知识图构建的自主多代理 LLM 系统。 \\textit{Helicase} 将高级供应链查询分解为可执行的调查计划，通过迭代验证循环协调专门的网络搜索、推理和编码代理，并使用事实不确定性注释逐步构建特定于查询的供应链知识图。其三层不确定性框架跟踪动作、轨迹和记忆层的不确定性，从而实现结构推理和校准置信度评估。为了评估整个复杂性范围内的自主推理，我们引入了 SCQA（供应链查询评估），这是一个由 80 个供应链查询组成的基准，分为四个象限，在高和低数据可见性下跨越单跳到多跳推理。",
-      "html_url": "https://arxiv.org/html/2605.26835v1",
-      "figures": [
-        "https://arxiv.org/html/2605.26835v1/figs/Problem.png",
-        "https://arxiv.org/html/2605.26835v1/figs/websearch.png",
-        "https://arxiv.org/html/2605.26835v1/figs/case_study_kg.png"
-      ]
-    },
-    {
-      "arxiv_id": "2605.26396",
-      "title": "Advancing Creative Physical Intelligence in Large Multimodal Models",
-      "authors": [
-        "Cheng Qian",
-        "Hyeonjeong Ha",
-        "Jiayu Liu",
-        "Jeonghwan Kim",
-        "Emre Can Acikgoz",
-        "Bingxuan Li",
-        "Kunlun Zhu",
-        "Jiateng Liu",
-        "Aditi Tiwari",
-        "Zhenhailong Wang",
-        "Xiusi Chen",
-        "Mahdi Namazifar",
-        "Heng Ji"
-      ],
-      "abstract": "Large multimodal models (LMMs) have rapidly advanced in perception and reasoning; however, it remains unclear whether these capabilities generalize to discovering visually grounded solutions in open-ended environments, beyond pattern recognition. In such settings, intelligence requires more than answering well-posed questions: it involves identifying how elements in a scene can be repurposed in non-obvious yet physically feasible ways. This form of creative problem-solving is central to human intelligence, but remains largely untested in current benchmarks. To evaluate this ability, we introduce MM-CreativityBench, a benchmark for affordance-grounded creative tool use in visually rich, physically constrained environments. Each instance presents a scenario image with structured views of candidate entities and their parts, enabling fine-grained, interactive evaluation of how models iteratively inspect the scene, identify relevant affordances, and compose visually and physically grounded solutions. Our experiments show that current LMMs often fall short, not due to lack of generative capability, but because they do not sustain grounded exploration. Models often overlook relevant entities, under-examine critical parts, or hallucinate attributes not grounded in the image. Motivated by this failure mode, we propose affordance-grounded alignment, which casts creative tool use as a preference learning problem. Using Direct Preference Optimization, we encourage models to prefer attribute-affordance reasoning grounded in visual evidence over hallucinated alternatives. In addition, we incorporate supervision derived from an affordance knowledge base to guide broader entity exploration and multi-turn planning. Our results show consistent gains in selecting the correct entities and parts, while substantially reducing hallucination and grounding-related errors.",
-      "abs_url": "https://arxiv.org/abs/2605.26396",
-      "pdf_url": "https://arxiv.org/pdf/2605.26396v1",
-      "primary_category": "cs.AI",
-      "categories": [
-        "cs.AI",
-        "cs.CL",
-        "cs.LG"
-      ],
-      "submitted": "2026-05-25T23:59:02Z",
-      "updated": "2026-05-25T23:59:02Z",
-      "comments": "51 Pages, 9 Figures, 7 Tables, Previous Work CreativityBench: arXiv:2605.02910",
-      "code_links": [],
-      "project_links": [],
-      "title_zh": "推进大型多模式模型中的创造性物理智能",
-      "abstract_zh": "大型多模态模型（LMM）在感知和推理方面取得了迅速发展；然而，目前尚不清楚这些能力是否可以推广到在开放环境中发现超越模式识别的基于视觉的解决方案。在这种情况下，智能需要的不仅仅是回答适定的问题：它还涉及识别如何以不明显但物理上可行的方式重新利用场景中的元素。这种创造性解决问题的形式是人类智能的核心，但在当前的基准测试中仍然基本上未经测试。为了评估这种能力，我们引入了 MM-CreativityBench，这是在视觉丰富、物理受限的环境中使用可供性为基础的创意工具的基准。每个实例都呈现一个场景图像，其中包含候选实体及其部件的结构化视图，从而能够对模型如何迭代检查场景、识别相关可供性以及构建基于视觉和物理的解决方案进行细粒度的交互式评估。我们的实验表明，当前的 LMM 经常达不到要求，不是因为缺乏生成能力，而是因为它们不支持接地探索。模型经常忽略相关实体、未充分检查关键部分或产生不以图像为基础的属性。受这种失败模式的启发，我们提出了基于可供性的对齐，它将创造性工具的使用视为偏好学习问题。使用直接偏好优化，我们鼓励模型更喜欢基于视觉证据的属性可供性推理，而不是幻觉的替代方案。此外，我们还结合了源自可供性知识库的监督，以指导更广泛的实体探索和多轮规划。我们的结果表明，在选择正确的实体和零件方面取得了一致的成果，同时大大减少了幻觉和接地相关的错误。",
-      "html_url": "https://arxiv.org/html/2605.26396v1",
-      "figures": [
-        "https://arxiv.org/html/2605.26396v1/figures/intro_new.png",
-        "https://arxiv.org/html/2605.26396v1/figures/images/relative_mllm_gpt4.1_wtl_default_vs_cot_sample25.png",
-        "https://arxiv.org/html/2605.26396v1/figures/method.png",
-        "https://arxiv.org/html/2605.26396v1/figures/images/fig_difficulty_scatter_gold_last1.png"
-      ],
-      "affiliations": [
-        "Amazon"
-      ]
-    },
-    {
-      "arxiv_id": "2605.27068",
-      "title": "QUACK: Questioning, Understanding, and Auditing Communicated Knowledge in Multimodal Social Deduction Agents",
-      "authors": [
-        "Ye Yuan",
-        "Rui Song",
-        "Weien Li",
-        "Zeyu Li",
-        "Haochen Liu",
-        "Xiangyu Kong",
-        "Changjiang Han",
-        "Yonghan Yang",
-        "Zichen Zhao",
-        "Zixuan Dong",
-        "Fuyuan Lyu",
-        "Bowei He",
-        "Haolun Wu",
-        "Jikun Kang",
-        "Xue Liu"
-      ],
-      "abstract": "Social deduction games have become a popular testbed for probing reasoning, deception, coordination, and belief modeling in Large Language Model (LLM) agents. However, most environments are scored only by game outcomes such as win rates and largely remain to text-only interaction, making it difficult to tell whether an agent's language is actually grounded in what it perceived and did, or to identify the failure modes underlying its behavior. To address this gap, we introduce QUACK, an open-source environment and evaluation framework for auditing the grounding of agent language in multimodal social reasoning. QUACK evaluates agents at three levels: game outcomes, behavioral trajectories, and utterance-level consistency. Its core Statement Verification Pipeline reconstructs each agent's ground-truth trajectory from engine logs and checks every discussion claim against it, automatically flagging spatial hallucination, unsupported accusation, deception collapse, and language-action inconsistency. Evaluating three frontier VLMs in both homogeneous and cross-model adversarial settings, we find that even the strongest agent hallucinates 15.1% of its verifiable spatial claims and makes over half of its accusations without grounded evidence. We release the full engine, evaluation framework, toolkit, and logs at https://github.com/AAAAA-Academia-Attractions/QUACK.",
-      "abs_url": "https://arxiv.org/abs/2605.27068",
-      "pdf_url": "https://arxiv.org/pdf/2605.27068v1",
-      "primary_category": "cs.CL",
-      "categories": [
-        "cs.AI",
-        "cs.CL",
-        "cs.MA"
-      ],
-      "submitted": "2026-05-26T14:19:08Z",
-      "updated": "2026-05-26T14:19:08Z",
-      "comments": null,
-      "code_links": [
-        "https://github.com/AAAAA-Academia-Attractions/QUACK"
-      ],
-      "project_links": [],
-      "title_zh": "QUACK：质疑、理解和审核多模态社会演绎代理中的交流知识",
-      "abstract_zh": "社交演绎游戏已成为大型语言模型 (LLM) 代理中探索推理、欺骗、协调和信念建模的流行测试平台。然而，大多数环境仅根据胜率等游戏结果进行评分，并且很大程度上仍然是纯文本交互，这使得很难判断代理的语言是否真正基于其感知和行为，或识别其行为背后的失败模式。为了解决这一差距，我们引入了 QUACK，这是一个开源环境和评估框架，用于审核代理语言在多模态社会推理中的基础。 QUACK 从三个层面评估智能体：游戏结果、行为轨迹和话语层面的一致性。其核心声明验证管道从引擎日志中重建每个代理的真实轨迹，并检查每个针对它的讨论主张，自动标记空间幻觉、未经支持的指控、欺骗崩溃和语言动作不一致。在同质和跨模型对抗环境中评估三个前沿 VLM，我们发现即使是最强大的智能体也会产生 15.1% 的可验证空间主张的幻觉，并且超过一半的指控是在没有确凿证据的情况下提出的。我们在 https://github.com/AAAAA-Academia-Attractions/QUACK 发布了完整的引擎、评估框架、工具包和日志。",
-      "html_url": "https://arxiv.org/html/2605.27068v1",
-      "figures": [
-        "https://arxiv.org/html/2605.27068v1/x1.png"
-      ],
-      "affiliations": [
-        "McGill University",
-        "Mila - Quebec AI Institute",
-        "University of Cambridge",
-        "MBZUAI - Mohamed bin Zayed University of Artificial Intelligence",
-        "University of Toronto"
-      ]
-    },
-    {
-      "arxiv_id": "2605.26621",
-      "title": "MedVol-R1: Reward-Driven Evidence Grounding for Volumetric Reasoning Segmentation",
-      "authors": [
-        "Zichun Wang",
-        "Hairong Shi",
-        "Bingzheng Wei",
-        "Yan Xu",
-        "Zihua Wang"
-      ],
-      "abstract": "Volumetric Reasoning Segmentation (VRS) aims to segment a target region in a 3D medical scan from a free-form clinical query, where the referent is often implicit and requires both medical knowledge and volume-grounded reasoning. Existing methods typically rely on specialized segmentation tokens to connect language with mask decoding, but this coupling collapses the decision process into opaque latent representations, limiting interpretability and generalization to diverse narrative expressions. In this paper, we present MedVol-R1, a reinforcement learning-based framework for VRS that explicitly decouples evidence grounding from volumetric delineation: the LVLM grounds clinical reasoning to a verifiable 2D evidence anchor (key axial slice and 2D bounding boxes), which is then propagated into a coherent 3D mask by a frozen MedSAM2 module. We train MedVol-R1 with cold-start supervised fine-tuning followed by GRPO, guided by a multi-component reward that encourages informative evidence selection, accurate 2D spatial grounding, and cross-slice volumetric coherence, without requiring costly chain-of-thought annotations. Experiments on CT-ORG, AbdomenCT-1K, and KiTS23 from the M3D-Seg benchmark demonstrate that MedVol-R1 consistently outperforms strong baselines and achieves state-of-the-art performance, with reinforcement learning providing clear gains over pure supervised fine-tuning.",
-      "abs_url": "https://arxiv.org/abs/2605.26621",
-      "pdf_url": "https://arxiv.org/pdf/2605.26621v1",
-      "primary_category": "cs.CV",
-      "categories": [
-        "cs.AI",
-        "cs.CV"
-      ],
-      "submitted": "2026-05-26T06:59:19Z",
-      "updated": "2026-05-26T06:59:19Z",
-      "comments": null,
-      "code_links": [],
-      "project_links": [],
-      "title_zh": "MedVol-R1：体积推理分割的奖励驱动证据基础",
-      "abstract_zh": "体积推理分割 (VRS) 旨在从自由形式的临床查询中分割 3D 医学扫描中的目标区域，其中所指对象通常是隐式的，需要医学知识和基于体积的推理。现有的方法通常依赖于专门的分段标记来将语言与掩码解码连接起来，但这种耦合将决策过程压缩为不透明的潜在表示，限制了对不同叙事表达的可解释性和泛化。在本文中，我们提出了 MedVol-R1，一种基于强化学习的 VRS 框架，它明确地将证据基础与体积描绘分离：LVLM 将临床推理基础到可验证的 2D 证据锚点（关键轴向切片和 2D 边界框），然后通过冻结的 MedSAM2 模块将其传播到连贯的 3D 掩模中。我们通过冷启动监督微调来训练 MedVol-R1，然后进行 GRPO，以鼓励信息证据选择、准确的 2D 空间基础和跨切片体积一致性的多成分奖励为指导，而不需要昂贵的思想链注释。 M3D-Seg 基准测试中的 CT-ORG、AbdomenCT-1K 和 KiTS23 上的实验表明，MedVol-R1 始终优于强大的基线并实现了最先进的性能，强化学习比纯粹的监督微调提供了明显的收益。",
-      "html_url": "https://arxiv.org/html/2605.26621v1",
-      "figures": [
-        "https://arxiv.org/html/2605.26621v1/x1.png",
-        "https://arxiv.org/html/2605.26621v1/x2.png"
-      ]
-    },
-    {
-      "arxiv_id": "2605.26292",
-      "title": "Evi-Steer: Learning to Steer Biomedical Vision-Language Models through Efficient and Generalizable Evidential Tuning",
-      "authors": [
-        "Taha Koleilat",
-        "Hassan Rivaz",
-        "Yiming Xiao"
-      ],
-      "abstract": "Parameter-efficient adaptation of vision-language foundation models is crucial for precise multimodal understanding of biomedical images, yet existing methods remain deterministic and often struggle under domain shift or ambiguous image-text alignment. This limitation is particularly critical in the clinic, where models should remain robust in low-data regimes and domain shifts. We present Evi-Steer, an evidential cross-modal low-dimensional steering framework for BiomedCLIP that enables uncertainty-aware parameter-efficient fine-tuning while updating only 0.11% of total model parameters. Our approach performs lightweight low-dimensional token updates in both vision and text encoders while simultaneously estimating epistemic uncertainty. These uncertainty estimates update gate residuals, allowing the model to adapt conservatively when evidence is weak. Furthermore, we introduce cross-modal confidence fusion based on Dempster-Shafer theory, enabling visual adaptation to be conditioned on textual confidence and suppressing conflicting or uncertain cross-modal updates. We conduct a comprehensive evaluation on 15 biomedical imaging datasets spanning 8 organs and 8 imaging modalities under few-shot learning and domain generalization settings. Evi-Steer consistently outperforms state-of-the-art methods under few-shot learning and domain shift settings, demonstrating a practical and robust pathway for deploying vision-language models in real-world clinical settings. Code is available at https://github.com/HealthX-Lab/Evi-Steer.",
-      "abs_url": "https://arxiv.org/abs/2605.26292",
-      "pdf_url": "https://arxiv.org/pdf/2605.26292v1",
-      "primary_category": "cs.CV",
-      "categories": [
-        "cs.CL",
-        "cs.CV"
-      ],
-      "submitted": "2026-05-25T19:30:22Z",
-      "updated": "2026-05-25T19:30:22Z",
-      "comments": "MICCAI 2026 Early Accept; Project Page: https://tahakoleilat.github.io/Evi-Steer",
-      "code_links": [
-        "https://github.com/HealthX-Lab/Evi-Steer"
-      ],
-      "project_links": [
-        "https://tahakoleilat.github.io/Evi-Steer"
-      ],
-      "title_zh": "Evi-Steer：学习通过高效且可推广的证据调整来引导生物医学视觉语言模型",
-      "abstract_zh": "视觉语言基础模型的参数高效适应对于生物医学图像的精确多模态理解至关重要，但现有方法仍然是确定性的，并且经常在域转移或模糊的图像文本对齐情况下陷入困境。这种限制在临床中尤其重要，模型应在低数据状态和领域转移中保持稳健。我们提出了 Evi-Steer，这是一种用于 BiomedCLIP 的证据性跨模态低维转向框架，它能够实现不确定性感知的参数高效微调，同时仅更新总模型参数的 0.11%。我们的方法在视觉和文本编码器中执行轻量级低维标记更新，同时估计认知不确定性。这些不确定性估计会更新门残差，使模型能够在证据薄弱时保守地进行调整。此外，我们引入了基于 Dempster-Shafer 理论的跨模态置信度融合，使视觉适应能够以文本置信度为条件，并抑制冲突或不确定的跨模态更新。我们在少样本学习和领域泛化设置下对涵盖 8 个器官和 8 种成像模式的 15 个生物医学成像数据集进行了全面评估。 Evi-Steer 在几次学习和领域转移设置下始终优于最先进的方法，展示了在现实临床环境中部署视觉语言模型的实用且强大的途径。代码可在 https://github.com/HealthX-Lab/Evi-Steer 获取。",
-      "html_url": "https://arxiv.org/html/2605.26292v1",
-      "figures": [
-        "https://arxiv.org/html/2605.26292v1/figures/method.png",
-        "https://arxiv.org/html/2605.26292v1/figures/layers_dimension_plot.png"
-      ]
-    },
-    {
-      "arxiv_id": "2605.26239",
-      "title": "Sentinel: Embodied Cooperative Spatial Reasoning and Planning",
-      "authors": [
-        "Xiangye Lin",
-        "Hongxin Zhang",
-        "Ruxi Deng",
-        "Qinhong Zhou",
-        "Chuang Gan"
-      ],
-      "abstract": "In this work, we study Cooperative Spatial Intelligence, the ability of decentralized embodied agents to coordinate effectively under dynamic environmental constraints across city-scale outdoor domains. We introduce Sentinel Challenge, a benchmark where multiple decentralized embodied agents must communicate in natural language to agree on a mutually safe and convenient meeting point within large, city-scale outdoor environments. Each agent must then navigate safely while avoiding dynamic sentinels patrolling the area, using a tool that provides coarse spatial information. To address this, we propose CoSaR (Cooperative Spatial Reasoning and Planning), a framework that bridges the high-level communication and planning abilities of foundation models with the precision of classical spatial navigation algorithms. CoSaR enables agents to exchange situational updates, reason over evolving spatial constraints, and collaboratively replan trajectories. Evaluated across 14 city-level scenes with 3-5 agents, CoSaR consistently leads to faster gathering, shorter path lengths, and improved safety. Our results demonstrate that integrating dynamic communication with spatial reasoning is essential for robust multi-agent cooperation. By formalizing this new setting and providing a scalable benchmark, we aim to build a foundation for advancing cooperative spatial intelligence in embodied multi-agent systems. Code and challenge are available at https://github.com/UMass-Embodied-AGI/Sentinel.",
-      "abs_url": "https://arxiv.org/abs/2605.26239",
-      "pdf_url": "https://arxiv.org/pdf/2605.26239v1",
-      "primary_category": "cs.CV",
-      "categories": [
-        "cs.CV",
-        "cs.MA"
-      ],
-      "submitted": "2026-05-25T18:04:41Z",
-      "updated": "2026-05-25T18:04:41Z",
-      "comments": "The first two authors contributed equally",
-      "code_links": [
-        "https://github.com/UMass-Embodied-AGI/Sentinel"
-      ],
-      "project_links": [],
-      "title_zh": "Sentinel：体现合作空间推理和规划",
-      "abstract_zh": "在这项工作中，我们研究了合作空间智能，即分散的实体在跨城市规模的室外领域的动态环境约束下有效协调的能力。我们引入了哨兵挑战（Sentinel Challenge），这是一个基准，多个去中心化的实体必须以自然语言进行交流，以在大型城市规模的户外环境中就相互安全且方便的会面点达成一致。然后，每个代理必须使用提供粗略空间信息的工具安全导航，同时避免动态哨兵在该区域巡逻。为了解决这个问题，我们提出了 CoSaR（协作空间推理和规划），这是一个框架，它将基础模型的高级通信和规划能力与经典空间导航算法的精度联系起来。 CoSaR 使代理能够交换情境更新、对不断变化的空间约束进行推理以及协作地重新规划轨迹。 CoSaR 通过 3-5 名代理对 14 个城市级场景进行评估，始终能够实现更快的聚集、更短的路径长度和更高的安全性。我们的结果表明，将动态通信与空间推理相结合对于稳健的多智能体合作至关重要。通过形式化这一新设置并提供可扩展的基准，我们的目标是为在具体多智能体系统中推进协作空间智能奠定基础。代码和挑战可在 https://github.com/UMass-Embodied-AGI/Sentinel 获取。",
-      "html_url": "https://arxiv.org/html/2605.26239v1",
-      "figures": [
-        "https://arxiv.org/html/2605.26239v1/x1.png",
-        "https://arxiv.org/html/2605.26239v1/x2.png",
-        "https://arxiv.org/html/2605.26239v1/x3.png",
-        "https://arxiv.org/html/2605.26239v1/x4.png"
-      ],
-      "affiliations": [
-        "University of Massachusetts Amherst",
-        "University of Illinois Urbana-Champaign"
-      ]
-    },
-    {
-      "arxiv_id": "2605.27071",
-      "title": "Traceable Knowledge Graph Reasoning Enables LLM-Assisted Decision Support for Industrial VOCs in the Steel Industry",
-      "authors": [
-        "Changqing Su",
-        "Yu Ding",
-        "Zuhong Lin",
-        "Hongyu Liu",
-        "Xi He",
-        "Zheng Zeng",
-        "Liqing Li"
-      ],
-      "abstract": "Key knowledge for steel-industry volatile organic compounds (VOCs) governance is scattered across unstructured scientific literature, making it difficult to integrate process, pollutant, and control-technology evidence and increasing the risk of hallucination when general large language models (LLMs) answer low-frequency industrial questions. Here we developed Chat-ISV, a knowledge graph (KG) enhanced multi-agent Q&A system that parses a curated steel-industry VOCs literature corpus, constructs a Neo4j KG with 27180 nodes and 81779 semantic edges, and combines prompt-constrained extraction, chunk-centered topology optimization, multi-agent routing, source-backtracking retrieval, local literature retrieval, open-domain knowledge access, and interactive subgraph visualization. Benchmark tests and 400 expert blind evaluations showed that topology optimization reduced isolated nodes from 57% to 4.08% and that Chat-ISV achieved high factual reliability, with 96.93% precision, 72.63% recall, an F1-score of 0.830, and a mean score of 1.69/2.00. By converting fragmented environmental-engineering literature into traceable, queryable, and decision-support-oriented knowledge, Chat-ISV establishes a scalable environmental-informatics paradigm for reliable LLM deployment and intelligent pollution-control decision support in specialized industrial domains.",
-      "abs_url": "https://arxiv.org/abs/2605.27071",
-      "pdf_url": "https://arxiv.org/pdf/2605.27071v1",
-      "primary_category": "cs.AI",
-      "categories": [
-        "cs.AI"
-      ],
-      "submitted": "2026-05-26T14:21:23Z",
-      "updated": "2026-05-26T14:21:23Z",
-      "comments": null,
-      "code_links": [],
-      "project_links": [],
-      "title_zh": "可追溯的知识图推理为钢铁行业工业VOC提供法学硕士辅助决策支持",
-      "abstract_zh": "钢铁行业挥发性有机化合物（VOC）治理的关键知识分散在非结构化科学文献中，这使得整合过程、污染物和控制技术证据变得困难，并且在一般大语言模型（LLM）回答低频工业问题时增加了产生幻觉的风险。在这里，我们开发了Chat-ISV，一个知识图（KG）增强的多智能体问答系统，它解析精选的钢铁行业VOCs文献语料库，构建具有27180个节点和81779条语义边的Neo4j KG，并结合提示约束提取、以块为中心的拓扑优化、多智能体路由、源回溯检索、本地文献检索、开放域知识访问和交互式子图可视化。基准测试和 400 名专家盲评估表明，拓扑优化将孤立节点从 57% 减少到 4.08%，Chat-ISV 实现了较高的事实可靠性，准确率达 96.93%，召回率达 72.63%，F1 得分为 0.830，平均得分为 1.69/2.00。通过将碎片化的环境工程文献转化为可追溯​​、可查询和面向决策支持的知识，Chat-ISV 建立了一个可扩展的环境信息学范式，用于专业工业领域可靠的法学硕士部署和智能污染控制决策支持。",
-      "html_url": "https://arxiv.org/html/2605.27071v1",
-      "figures": [
-        "https://arxiv.org/html/2605.27071v1/x1.png",
-        "https://arxiv.org/html/2605.27071v1/x2.png",
-        "https://arxiv.org/html/2605.27071v1/x3.png",
-        "https://arxiv.org/html/2605.27071v1/x4.png"
-      ]
-    },
-    {
-      "arxiv_id": "2605.26533",
-      "title": "A Hybrid Vision-Language Architecture for Automated Defect Reasoning and Report Generation in Industrial Inspection",
-      "authors": [
-        "Malikussaid",
-        "Imad Gohar"
-      ],
-      "abstract": "Automated industrial inspection requires both precise defect localization and structured maintenance report generation; in current practice these tasks are handled separately, with linguistic interpretation left to human experts. This paper describes a decoupled, edge-deployable pipeline for wind turbine blade inspection built from three components that each handle a distinct sub-task. The Eyes a YOLO26-x-obb oriented bounding-box detector localizes defects at dataset-native resolution. The Bridge a deterministic, parameter-free encoding module maps each detected bounding box to grid-referenced spatial tokens embedded in a structured prompt. The Brain a 4-bit quantized Qwen-2.5-1.5B model adapted with Quantized Low-Rank Adaptation (QLoRA) on 947 synthetically generated maintenance reports generates a structured JSON report from that prompt. Retrieval-Augmented Fine-Tuning (RAFT) further grounds each recommendation in indexed maintenance procedures. Five ablation experiments, scored by BLEU-4, ROUGE-L, Hallucination Rate (HR), and an LLM-as-a-Judge rubric, compare the pipeline against a monolithic vision-language model (VLM) baseline and against partial configurations in which one component is removed. The complete system achieves BLEU-4 0.41, HR=4%, and Expert Score = 8.6/10 compared with 0.07, 65%, and 3.3/10 for the zero-shot VLM baseline. The QLoRA-adapted 1.5B model generates higher-quality reports than a 671B-parameter generalist API model given identical detection evidence, at 47 tokens per second on a single T4-class GPU. The results show that purpose-built decoupled architecture with a small domain-specific training corpus outperforms a generalist end-to-end model on this structured generation task.",
-      "abs_url": "https://arxiv.org/abs/2605.26533",
-      "pdf_url": "https://arxiv.org/pdf/2605.26533v1",
-      "primary_category": "cs.CV",
-      "categories": [
-        "cs.AI",
-        "cs.CL",
-        "cs.CV",
-        "cs.LG"
-      ],
-      "submitted": "2026-05-26T04:27:38Z",
-      "updated": "2026-05-26T04:27:38Z",
-      "comments": "23 pages, 6 figures, 9 equations, and 6 tables",
-      "code_links": [],
-      "project_links": [],
-      "title_zh": "用于工业检测中自动缺陷推理和报告生成的混合视觉语言架构",
-      "abstract_zh": "自动化工业检测既需要精确的缺陷定位，又需要生成结构化的维护报告；在目前的实践中，这些任务是分开处理的，语言解释留给人类专家。本文描述了一种用于风力涡轮机叶片检查的解耦、可边缘部署的管道，该管道由三个组件组成，每个组件处理不同的子任务。 The Eyes 是一个面向 YOLO26-x-obb 的边界框检测器，以数据集本机分辨率定位缺陷。 Bridge 是一个确定性、无参数的编码模块，将每个检测到的边界框映射到嵌入结构化提示中的网格引用的空间标记。 Brain 是一个 4 位量化 Qwen-2.5-1.5B 模型，在 947 个综合生成的维护报告上采用量化低阶适应 (QLoRA)，根据该提示生成结构化 JSON 报告。检索增强微调 (RAFT) 进一步将每个建议纳入索引维护程序。五项消融实验，根据 BLEU-4、ROUGE-L、幻觉率 (HR) 和法学硕士评判评分标准进行评分，将管道与整体视觉语言模型 (VLM) 基线以及删除一个组件的部分配置进行比较。整个系统达到 BLEU-4 0.41、HR=4% 和 Expert Score = 8.6/10，而零样本 VLM 基线的得分为 0.07、65% 和 3.3/10。在相同的检测证据下，采用 QLoRA 的 1.5B 模型可以在单个 T4 级 GPU 上以每秒 47 个令牌的速度生成比 671B 参数通用 API 模型更高质量的报告。结果表明，在这种结构化生成任务上，具有小型特定领域训练语料库的专用解耦架构优于通用端到端模型。",
-      "html_url": "https://arxiv.org/html/2605.26533v1",
-      "figures": [
-        "https://arxiv.org/html/2605.26533v1/fig1_architecture.png",
-        "https://arxiv.org/html/2605.26533v1/fig2_recall_comparison.png",
-        "https://arxiv.org/html/2605.26533v1/fig3_bridge_ablation.png",
-        "https://arxiv.org/html/2605.26533v1/fig4_training_curves.png"
-      ]
-    },
-    {
-      "arxiv_id": "2605.26256",
-      "title": "Personalizing Embodied Multimodal Large Language Model Agents over Long-term User Interactions",
-      "authors": [
-        "Jeongeun Lee",
-        "Chanyoung Park",
-        "Dongha Lee"
-      ],
-      "abstract": "Multimodal large language model (MLLM)-based embodied agents have shown strong potential for solving complex tasks in physical environments. However, personalized assistance requires more than following generic instruction or recognizing object categories. In real-world scenarios, the intended target is often specified only implicitly through prior interactions, requiring agents to leverage personalized context accumulated over time. In this work, we propose POLAR, a multiomodal memory-augmented framework for personalized embodied agents over long-term user interactions. POLAR organizes prior interactions into a multimodal knowledge graph that captures semantic memory for personalized context and visual concepts, and episodic memory for embodied experiences such as agent trajectories. To execute embodied tasks, POLAR retrieves relevant memories to interpret the current request and guide task execution. We evaluate POLAR across multiple MLLM backbones and diverse evaluation scenarios to study the role of memory in long-term personalization. Results show that the proposed memory mechanism consistently improves performance by enabling more effective use of information accumulated over prior interactions. The gains are especially pronounced when the agents are required to reason across multiple interactions, perform multi-hop inference, or tracking updates in user-specific context over time.",
-      "abs_url": "https://arxiv.org/abs/2605.26256",
-      "pdf_url": "https://arxiv.org/pdf/2605.26256v1",
-      "primary_category": "cs.AI",
-      "categories": [
-        "cs.AI"
-      ],
-      "submitted": "2026-05-25T18:27:27Z",
-      "updated": "2026-05-25T18:27:27Z",
-      "comments": null,
-      "code_links": [],
-      "project_links": [],
-      "title_zh": "通过长期用户交互个性化体现多模态大语言模型代理",
-      "abstract_zh": "基于多模态大语言模型（MLLM）的实体代理在解决物理环境中的复杂任务方面表现出了强大的潜力。然而，个性化帮助需要的不仅仅是遵循通用指令或识别对象类别。在现实场景中，预期目标通常仅通过先前的交互隐式指定，要求代理利用随着时间的推移积累的个性化上下文。在这项工作中，我们提出了 POLAR，这是一种多模态记忆增强框架，用于在长期用户交互中实现个性化的具体代理。 POLAR 将先前的交互组织成多模态知识图，该图捕获个性化上下文和视觉概念的语义记忆，以及代理轨迹等具体体验的情景记忆。为了执行具体任务，POLAR 检索相关内存来解释当前请求并指导任务执行。我们跨多个 MLLM 主干和不同的评估场景评估 POLAR，以研究记忆在长期个性化中的作用。结果表明，所提出的记忆机制通过更有效地利用先前交互中积累的信息来持续提高性能。当代理需要跨多个交互进行推理、执行多跳推理或跟踪用户特定上下文中随时间的更新时，收益尤其明显。",
-      "html_url": "https://arxiv.org/html/2605.26256v1",
-      "figures": [
-        "https://arxiv.org/html/2605.26256v1/fig/scenario_v2.png",
-        "https://arxiv.org/html/2605.26256v1/x1.png",
-        "https://arxiv.org/html/2605.26256v1/x2.png",
-        "https://arxiv.org/html/2605.26256v1/x3.png"
-      ],
-      "affiliations": [
-        "Yonsei University",
-        "KAIST"
-      ]
-    },
-    {
-      "arxiv_id": "2605.27178",
-      "title": "FoundObj: Self-supervised Foundation Models as Rewards for Label-free 3D Object Segmentation",
-      "authors": [
-        "Zihui Zhang",
-        "Zhixuan Sun",
-        "Yafei Yang",
-        "Jinxi Li",
-        "Jiahao Chen",
-        "Bo Yang"
-      ],
-      "abstract": "We address the challenging task of 3D object segmentation in complex scene point clouds without relying on any scene-level human annotations during training. Existing methods are typically constrained to identifying simple objects, primarily due to insufficient object priors in the learning process. In this paper, we present FoundObj, a novel framework featuring a superpoint-based object discovery agent that incrementally merges suitable neighboring superpoints, guided by our innovative semantic and geometric reward modules. These modules synergistically leverage semantic and geometric priors from self-supervised 2D/3D foundation models, providing complementary feedback to the object discovery agent and enabling robust identification of multi-class objects through reinforcement learning. Extensive experiments on diverse benchmarks demonstrate that our approach consistently outperforms existing baselines. Notably, our method exhibits strong generalization in zero-shot and long-tail scenarios, underscoring its potential for scalable, label-free 3D object segmentation.",
-      "abs_url": "https://arxiv.org/abs/2605.27178",
-      "pdf_url": "https://arxiv.org/pdf/2605.27178v1",
-      "primary_category": "cs.CV",
-      "categories": [
-        "cs.AI",
-        "cs.CV",
-        "cs.LG",
-        "cs.RO"
-      ],
-      "submitted": "2026-05-26T15:32:32Z",
-      "updated": "2026-05-26T15:32:32Z",
-      "comments": "ICML 2026. Zihui and Zhixuan are co-first authors. Code and data are available at: https://github.com/vLAR-group/FoundObj",
-      "code_links": [
-        "https://github.com/vLAR-group/FoundObj"
-      ],
-      "project_links": [],
-      "title_zh": "FoundObj：自监督基础模型作为无标签 3D 对象分割的奖励",
-      "abstract_zh": "我们解决了复杂场景点云中 3D 对象分割的挑战性任务，在训练期间不依赖任何场景级人类注释。现有方法通常仅限于识别简单对象，这主要是由于学习过程中对象先验不足。在本文中，我们提出了 FoundObj，这是一种新颖的框架，具有基于超点的对象发现代理，在我们创新的语义和几何奖励模块的指导下，逐步合并合适的相邻超点。这些模块协同利用来自自监督 2D/3D 基础模型的语义和几何先验，为对象发现代理提供补充反馈，并通过强化学习实现多类对象的稳健识别。对不同基准的广泛实验表明，我们的方法始终优于现有基准。值得注意的是，我们的方法在零样本和长尾场景中表现出很强的泛化能力，强调了其可扩展、无标签 3D 对象分割的潜力。",
-      "html_url": "https://arxiv.org/html/2605.27178v1",
-      "figures": [
-        "https://arxiv.org/html/2605.27178v1/x1.png",
-        "https://arxiv.org/html/2605.27178v1/x2.png",
-        "https://arxiv.org/html/2605.27178v1/x3.png",
-        "https://arxiv.org/html/2605.27178v1/x4.png"
-      ]
-    },
-    {
-      "arxiv_id": "2605.26933",
-      "title": "Leveraging Text-to-Image Diffusion Models for Unsupervised Visual Object Tracking",
-      "authors": [
-        "Zhengbo Zhang",
-        "Zhigang Tu",
-        "Junsong Yuan",
-        "De Wen Soh",
-        "Bo Du"
-      ],
-      "abstract": "Unsupervised visual object tracking is a challenging task that requires following arbitrary targets in videos without training on ground-truth annotations. Despite considerable progress, existing state-of-the-art unsupervised trackers often struggle in scenarios that demand fine-grained understanding of semantic and visual structural information within video frames. Text-to-image diffusion models are well known for their ability to generate images that accurately reflect the semantics and structures described in the input prompt, demonstrating a strong grasp of visual semantics and structures. Building on this capability, we approach the unsupervised tracking from a new perspective by exploiting the rich semantic knowledge encoded in pretrained text-to-image diffusion models. To adapt the diffusion models, which are originally developed for image generation, to the tracking task, we reinterpret the models as a bridge between text and image modalities. This connection is realized through the cross-attention mechanism: when both text and an image are input into the models, they highlight the regions of the image that are semantically aligned with the text in the cross-attention maps. We therefore learn a prompt that represents the tracking target and activates its corresponding region in the cross-attention map for each frame, which enables object tracking with the diffusion model. Specifically, our method Diff-Tracking is composed of two main components: an initial prompt learner and an online prompt updater. The initial prompt learner generates a prompt that captures the target object in the first frame, allowing the diffusion model to identify the target. The online prompt updater refines the prompt based on motion information, enabling consistent tracking across video frames. We evaluate our approach on six challenging tracking datasets demonstrate the effectiveness of our approach.",
-      "abs_url": "https://arxiv.org/abs/2605.26933",
-      "pdf_url": "https://arxiv.org/pdf/2605.26933v1",
-      "primary_category": "cs.CV",
-      "categories": [
-        "cs.CV"
-      ],
-      "submitted": "2026-05-26T12:26:56Z",
-      "updated": "2026-05-26T12:26:56Z",
-      "comments": "Accepted by IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2026",
-      "code_links": [],
-      "project_links": [],
-      "title_zh": "利用文本到图像扩散模型进行无监督视觉对象跟踪",
-      "abstract_zh": "无监督视觉对象跟踪是一项具有挑战性的任务，需要跟踪视频中的任意目标，而无需接受地面实况注释的训练。尽管取得了相当大的进步，但现有最先进的无监督跟踪器在需要对视频帧内的语义和视觉结构信息进行细粒度理解的场景中常常举步维艰。文本到图像的扩散模型以其生成能够准确反映输入提示中描述的语义和结构的图像的能力而闻名，展示了对视觉语义和结构的强大掌握。在此功能的基础上，我们通过利用预训练的文本到图像扩散模型中编码的丰富语义知识，从新的角度来实现无监督跟踪。为了使最初为图像生成而开发的扩散模型适应跟踪任务，我们将模型重新解释为文本和图像模态之间的桥梁。这种连接是通过交叉注意机制实现的：当文本和图像都输入到模型中时，它们会突出显示在交叉注意图中与文本在语义上对齐的图像区域。因此，我们学习了一个代表跟踪目标的提示，并在每一帧的交叉注意力图中激活其相应区域，这使得能够使用扩散模型进行对象跟踪。具体来说，我们的方法 Diff-Tracking 由两个主要组件组成：初始提示学习器和在线提示更新器。初始提示学习器生成捕获第一帧中的目标对象的提示，从而允许扩散模型识别目标。在线提示更新器根据运动信息细化提示，从而实现跨视频帧的一致跟踪。我们在六个具有挑战性的跟踪数据集上评估我们的方法，证明了我们方法的有效性。",
-      "html_url": "https://arxiv.org/html/2605.26933v1",
-      "figures": [
-        "https://arxiv.org/html/2605.26933v1/x1.png",
-        "https://arxiv.org/html/2605.26933v1/x2.png",
-        "https://arxiv.org/html/2605.26933v1/x3.png",
-        "https://arxiv.org/html/2605.26933v1/x4.png"
-      ]
-    },
-    {
-      "arxiv_id": "2605.26680",
-      "title": "DynFrame: Adaptive Reasoning-Driven Multimodal Framework with Dynamic Frame Augmentation for Complex Video Understanding",
-      "authors": [
-        "Peng Zhang",
-        "Guanghao Zhang",
-        "Wanggui He",
-        "Longxiang Zhang",
-        "Mushui Liu",
-        "Yan Xia",
-        "Zhenhao Peng",
-        "Weilong Dai",
-        "Jinlong Liu",
-        "Haobing Tang",
-        "Le Zhang",
-        "Hao Jiang",
-        "Pipei Huang"
-      ],
-      "abstract": "Recent video multimodal large language models (MLLMs) increasingly couple step-by-step reasoning with on-demand visual evidence retrieval, allowing models to revisit relevant video segments during inference. However, two structural gaps remain in existing thinking-with-video systems. (i) Sampling density is not a learnable decision: existing methods may let the model decide where to look, but the per-window frame rate is largely fixed. As a result, fine-grained evidence is often recovered through repeated retrieval calls, which increases inference context length and training difficulty. (ii) Retrieval and answer generation are usually optimized with a single trajectory-level advantage, so the \"where to look\" tokens and the \"how to answer\" tokens receive the same credit even when one is correct and the other is not. To address these gaps, we present DynFrame, a framework that emits the temporal window and the sampling density as native tokens within a single autoregressive pass. This learnable span-density retrieval enables acquiring multi-granularity evidence with a single retrieval step. Based on the above tokenized retrieval interface, we further introduce Segment-Decoupled GRPO (SD-GRPO), which splits each rollout at the retrieval boundary and assigns role-specific token-level advantages, separately crediting the sampling decision and the answer. Trained on the curated DM-CoT-74k and DM-RL-45k, DynFrame-4B is competitive with strong 7B-8B baselines across six benchmarks (NExT-GQA, Charades-STA, ActivityNet-MR, Video-MME, MLVU, LVBench), and DynFrame-8B sets new state-of-the-art on most metrics. Code is available at https://github.com/zhangguanghao523/DynFrame.",
-      "abs_url": "https://arxiv.org/abs/2605.26680",
-      "pdf_url": "https://arxiv.org/pdf/2605.26680v1",
-      "primary_category": "cs.CV",
-      "categories": [
-        "cs.AI",
-        "cs.CV"
-      ],
-      "submitted": "2026-05-26T08:16:16Z",
-      "updated": "2026-05-26T08:16:16Z",
-      "comments": null,
-      "code_links": [
-        "https://github.com/zhangguanghao523/DynFrame"
-      ],
-      "project_links": [],
-      "title_zh": "DynFrame：自适应推理驱动的多模态框架，具有动态帧增强功能，可实现复杂视频理解",
-      "abstract_zh": "最近的视频多模态大语言模型（MLLM）越来越多地将分步推理与按需视觉证据检索结合起来，允许模型在推理过程中重新访问相关视频片段。然而，现有的视频思维系统仍然存在两个结构性差距。 (i) 采样密度不是一个可学习的决定：现有方法可以让模型决定看哪里，但每个窗口的帧速率很大程度上是固定的。因此，细粒度的证据通常通过重复的检索调用来恢复，这增加了推理上下文的长度和训练难度。 (ii) 检索和答案生成通常通过单一轨迹级优势进行优化，因此“在哪里看”标记和“如何回答”标记即使一个正确而另一个不正确时也会获得相同的信用。为了解决这些差距，我们提出了 DynFrame，这是一个框架，它在单个自回归过程中将时间窗口和采样密度作为本机标记发出。这种可学习的跨密度检索能够通过单个检索步骤获取多粒度证据。基于上述标记化检索接口，我们进一步引入了分段解耦GRPO（SD-GRPO），它在检索边界处分割每个rollout并分配特定于角色的标记级优势，分别记入采样决策和答案。 DynFrame-4B 在精心策划的 DM-CoT-74k 和 DM-RL-45k 上进行训练，在六个基准测试（NExT-GQA、Charades-STA、ActivityNet-MR、Video-MME、MLVU、LVBench）上与强大的 7B-8B 基线竞争，而 DynFrame-8B 在大多数指标上设置了新的最先进技术。代码可在 https://github.com/zhangguanghao523/DynFrame 获取。",
-      "html_url": "https://arxiv.org/html/2605.26680v1",
-      "figures": [
-        "https://arxiv.org/html/2605.26680v1/images/teaser1.jpg",
-        "https://arxiv.org/html/2605.26680v1/images/fra1.png",
-        "https://arxiv.org/html/2605.26680v1/images/datapipeline_hignres.jpg",
-        "https://arxiv.org/html/2605.26680v1/images/sample_reward_seaborn.png"
-      ],
-      "affiliations": [
-        "Zhejiang University",
-        "Alibaba Group"
-      ]
-    },
-    {
-      "arxiv_id": "2605.26348",
-      "title": "RCSP: Risk-Sensitive Conjectural Scenario Planning for Safe Dynamic Robot Navigation",
-      "authors": [
-        "Zhengye Han",
-        "Quanyan Zhu"
-      ],
-      "abstract": "Mobile robots can fail before they collide: a velocity that is safe now may commit the robot to a passage that moving obstacles will soon close. We study this predictive near-miss commitment problem and propose Risk-Sensitive Conjectural Scenario Planning (RCSP), a planning layer that evaluates candidate commands against plausible short-horizon obstacle futures. RCSP maintains a lightweight belief over local motion conjectures, samples future interactions, penalizes high-risk tails, and executes through a local safety check. In controlled MuJoCo bottleneck tasks, the RCSP planner reaches the goal without collisions and yields higher secondary safety and path-quality point estimates than a non-adaptive predictor, with additional latency. In ROS2/Gazebo, adding the local safety layer to a standard Nav2 stack reduces dynamic near-miss failures. On official DynaBARN/Jackal transfer, tuned DWA and TEB remain stronger on strict benchmark success, revealing the boundary of the approach. These simulation results position RCSP as a predictive-risk module that complements existing navigation stacks in dynamic bottleneck regimes.",
-      "abs_url": "https://arxiv.org/abs/2605.26348",
-      "pdf_url": "https://arxiv.org/pdf/2605.26348v1",
-      "primary_category": "cs.RO",
-      "categories": [
-        "cs.RO"
-      ],
-      "submitted": "2026-05-25T21:47:36Z",
-      "updated": "2026-05-25T21:47:36Z",
-      "comments": null,
-      "code_links": [],
-      "project_links": [],
-      "title_zh": "RCSP：安全动态机器人导航的风险敏感推测场景规划",
-      "abstract_zh": "移动机器人在碰撞之前可能会失败：现在安全的速度可能会使机器人进入移动障碍物很快就会关闭的通道。我们研究了这种预测性的近乎失败的承诺问题，并提出了风险敏感推测情景规划（RCSP），这是一个规划层，用于针对可能的短期障碍未来评估候选命令。 RCSP 对局部运动猜想保持轻量级信念，对未来的交互进行采样，惩罚高风险尾部，并通过局部安全检查执行。在受控 MuJoCo 瓶颈任务中，RCSP 规划器在没有碰撞的情况下达到目标，并且比非自适应预测器产生更高的二级安全性和路径质量点估计，但具有额外的延迟。在 ROS2/Gazebo 中，将本地安全层添加到标准 Nav2 堆栈中可以减少动态的未遂故障。在官方 DynaBARN/Jackal 传输中，经过调整的 DWA 和 TEB 在严格的基准测试成功方面仍然更强，揭示了该方法的边界。这些模拟结果将 RCSP 定位为预测风险模块，可补充动态瓶颈状态下的现有导航堆栈。",
-      "html_url": "https://arxiv.org/html/2605.26348v1",
-      "figures": [
-        "https://arxiv.org/html/2605.26348v1/figures/figure1_task_bottleneck.png",
-        "https://arxiv.org/html/2605.26348v1/figures/rcsp_method_overview.png",
-        "https://arxiv.org/html/2605.26348v1/x1.png",
-        "https://arxiv.org/html/2605.26348v1/x2.png"
-      ]
-    },
-    {
-      "arxiv_id": "2605.26155",
-      "title": "When Does Adaptive Guidance Help? Belief-Aware Privileged Distillation for Autonomous Driving Under Partial Observability",
-      "authors": [
-        "Mehmet Haklidir"
-      ],
-      "abstract": "Guided Soft Actor-Critic (GSAC) distills knowledge from a privileged full-state teacher to a partial-observation student for autonomous driving, but uses a fixed distillation coefficient lambda regardless of the agent's uncertainty. We present Belief-Aware GSAC (BA-GSAC), which modulates lambda via ensemble disagreement, and use it as a testbed for a systematic empirical study asking: when does adaptive guidance actually help? Evaluating five strategies (fixed lambda in {0.01, 0.1}, adaptive, linear decay, and vanilla SAC) across three POMDP difficulty levels on Highway-Env, we find that preliminary single-seed runs suggest benefits under mild and moderate partial observability, but under severe occlusion (evaluated with 3 seeds for all methods) the adaptive coefficient collapses to lambda_min within about 3K steps. We trace this to an observability blindness phenomenon: because the ensemble predicts partial observations, it achieves low disagreement even under heavy occlusion, modeling what is visible but unable to detect what is missing. We diagnose the root cause and propose an architectural fix (training the ensemble on full-state predictions using the guiding actor's privileged access); while not validated here, we show that even with current limitations, the warmup phase provides measurable stabilization (CV=13.3% vs. 29.8% for constant lambda=0.01). In fact, a simple deterministic linear decay schedule achieves the best severe-POMDP performance across all metrics (mean 116.5, CV=8.9%), suggesting that the scheduling effect, not the ensemble, drives the stability benefit. These findings provide practical guidance for designing uncertainty-aware teacher-student frameworks and highlight ensemble prediction targets as an important design choice.",
-      "abs_url": "https://arxiv.org/abs/2605.26155",
-      "pdf_url": "https://arxiv.org/pdf/2605.26155v1",
-      "primary_category": "cs.RO",
-      "categories": [
-        "cs.AI",
-        "cs.LG",
-        "cs.RO"
-      ],
-      "submitted": "2026-05-24T04:41:30Z",
-      "updated": "2026-05-24T04:41:30Z",
-      "comments": "9 pages, 3 figures, 7 tables. Accepted at CVPR 2026 Workshop on Autonomous Driving (WAD)",
-      "code_links": [],
-      "project_links": [],
-      "title_zh": "自适应指导何时有帮助？部分可观测性下自动驾驶的信念感知特权蒸馏",
-      "abstract_zh": "Guided Soft Actor-Critic (GSAC) 将知识从享有特权的全州教师中提炼给部分观察学生以进行自动驾驶，但无论智能体的不确定性如何，都使用固定的提炼系数 lambda。我们提出了信念感知 GSAC (BA-GSAC)，它通过整体分歧来调节 lambda，并将其用作系统实证研究的测试平台，询问：自适应指导何时真正有帮助？在 Highway-Env 上的三个 POMDP 难度级别上评估五种策略（{0.01, 0.1} 中的固定 lambda、自适应、线性衰减和普通 SAC），我们发现初步的单种子运行表明在轻度和中度部分可观察性下有好处，但在严重遮挡下（所有方法均使用 3 个种子进行评估），自适应系数在大约 3K 步内崩溃至 lambda_min。我们将其追溯到可观测性失明现象：因为集成预测了部分观测，即使在严重遮挡的情况下，它也能实现较低的分歧，对可见的内容进行建模，但无法检测丢失的内容。我们诊断根本原因并提出架构修复方案（使用引导参与者的特权访问来训练整体进行全状态预测）；虽然此处未进行验证，但我们表明，即使存在电流限制，预热阶段也能提供可测量的稳定性（CV=13.3% 与恒定 lambda=0.01 时的 29.8%）。事实上，一个简单的确定性线性衰减调度在所有指标上都实现了最佳的严重 POMDP 性能（平均值 116.5，CV=8.9%），这表明调度效应（而不是整体）驱动了稳定性收益。这些发现为设计不确定性感知的师生框架提供了实用指导，并强调集成预测目标作为重要的设计选择。",
-      "html_url": "https://arxiv.org/html/2605.26155v1",
-      "figures": [
-        "https://arxiv.org/html/2605.26155v1/fig/fig3_uncertainty_grid.png",
-        "https://arxiv.org/html/2605.26155v1/fig/fig2_guidance_dynamics_grid.png",
-        "https://arxiv.org/html/2605.26155v1/fig/fig1_learning_curves.png"
-      ]
-    },
-    {
-      "arxiv_id": "2605.27336",
-      "title": "PARE: Pruning and Adaptive Routing for Efficient Video Generation",
-      "authors": [
-        "Yutong Wang",
-        "Yunke Wang",
-        "Tianfan Xue",
-        "Yu Qiao",
-        "Yaohui Wang",
-        "Xinyuan Chen",
-        "Chang Xu"
-      ],
-      "abstract": "Video Diffusion Transformers (DiTs) generate high-quality videos but demand substantial compute due to wide blocks, deep architectures, and iterative sampling. Recent methods reduce cost by compressing width, depth, or sampling steps, but typically commit to a fixed architecture that cannot adapt to individual inputs or denoising stages. We propose PARE (Pruning and Adaptive Routing for Efficient video generation), which jointly compresses width and depth with structure-aware pruning and input-adaptive routing. For width, we observe that attention heads specialize into spatial and temporal roles, and design importance scoring that accounts for this distinction to prevent motion-critical temporal heads from being pruned prematurely. For depth, we train a lightweight router conditioned on denoising timestep and visual content to dynamically select which blocks to execute at each step, enabling per-input compute adaptation rather than static block removal. A progressive pipeline first recovers width-pruned quality via distillation, then jointly optimizes the student and router to decouple the two learning objectives. Experiments on Wan2.1-14B for both image-to-video and text-to-video generation show that PARE substantially reduces per-step computation while preserving quality across VBench dimensions, and composes with step distillation for further acceleration.",
-      "abs_url": "https://arxiv.org/abs/2605.27336",
-      "pdf_url": "https://arxiv.org/pdf/2605.27336v1",
-      "primary_category": "cs.CV",
-      "categories": [
-        "cs.CV"
-      ],
-      "submitted": "2026-05-26T17:43:25Z",
-      "updated": "2026-05-26T17:43:25Z",
-      "comments": null,
-      "code_links": [],
-      "project_links": [],
-      "title_zh": "PARE：修剪和自适应路由以实现高效视频生成",
-      "abstract_zh": "视频扩散变压器 (DiT) 生成高质量视频，但由于宽块、深层架构和迭代采样，需要大量计算。最近的方法通过压缩宽度、深度或采样步骤来降低成本，但通常采用无法适应单独输入或降噪阶段的固定架构。我们提出了 PARE（用于高效视频生成的修剪和自适应路由），它通过结构感知修剪和输入自适应路由联合压缩宽度和深度。对于宽度，我们观察到注意力头专注于空间和时间角色，并设计重要性评分来解释这种区别，以防止运动关键的时间头被过早修剪。对于深度，我们训练一个以去噪时间步长和视觉内容为条件的轻量级路由器，以动态选择在每个步骤执行哪些块，从而实现每个输入的计算适应而不是静态块删除。渐进式管道首先通过蒸馏恢复宽度修剪质量，然后联合优化学生和路由器以解耦两个学习目标。在 Wan2.1-14B 上进行的图像到视频和文本到视频生成的实验表明，PARE 显着减少了每步计算量，同时在 VBench 维度上保持质​​量，并与步骤蒸馏相结合以进一步加速。",
-      "html_url": "https://arxiv.org/html/2605.27336v1",
-      "figures": [
-        "https://arxiv.org/html/2605.27336v1/x1.png",
-        "https://arxiv.org/html/2605.27336v1/x2.png",
-        "https://arxiv.org/html/2605.27336v1/x3.png",
-        "https://arxiv.org/html/2605.27336v1/figures/visual_comp.png"
-      ],
-      "affiliations": [
-        "The University of Sydney",
-        "Shanghai AI Laboratory",
-        "The Chinese University of Hong Kong"
-      ]
-    },
-    {
-      "arxiv_id": "2605.27046",
-      "title": "Learning to Balance Motor Thermal Safety and Quadrupedal Locomotion Performance with Residual Policy",
-      "authors": [
-        "Yuhang Wan",
-        "Weixian Lin",
-        "Letian Qian",
-        "Yiqi Zou",
-        "Weiwei Wu",
-        "Shengwei Wu",
-        "Chuanlin Zhao",
-        "Xin Luo"
-      ],
-      "abstract": "Motor thermal management is often overlooked in the context of electrically-actuated robots, particularly legged robots, but motor overheating is a key factor that limits long-duration locomotion especially under payload conditions. This paper integrates a whole-body thermal model of a quadruped robot into the reinforcement learning pipeline to update motor temperatures, and proposes a two-stage training framework for motor thermal management. In this framework, a nominal policy is first pre-trained as a locomotion baseline capable of traversing diverse terrains. A residual policy is then trained on top of the nominal policy to provide corrective actions based on the robot's thermal state, ensuring high performance under low-temperature conditions and preventing motor overheating under high-temperature conditions. Simulation results demonstrate that the proposed policy achieves an effective balance between motor thermal safety and locomotion performance. Real-world experiments on a Unitree A1 quadruped robot further validate the approach: under a 3 kg payload, the robot achieves stable locomotion across multiple terrains for over 13 minutes, while the nominal policy alone leads to motor overheating in about 5 minutes.",
-      "abs_url": "https://arxiv.org/abs/2605.27046",
-      "pdf_url": "https://arxiv.org/pdf/2605.27046v1",
-      "primary_category": "cs.RO",
-      "categories": [
-        "cs.RO"
-      ],
-      "submitted": "2026-05-26T14:00:10Z",
-      "updated": "2026-05-26T14:00:10Z",
-      "comments": null,
-      "code_links": [],
-      "project_links": [],
-      "title_zh": "学习通过剩余策略来平衡电机热安全和四足运动性能",
-      "abstract_zh": "在电动机器人（尤其是腿式机器人）的背景下，电机热管理经常被忽视，但电机过热是限制长时间运动的关键因素，尤其是在有效负载条件下。本文将四足机器人的全身热模型集成到强化学习管道中以更新电机温度，并提出了电机热管理的两阶段训练框架。在此框架中，首先将名义策略预训练为能够穿越不同地形的运动基线。然后在名义策略之上训练剩余策略，以根据机器人的热状态提供纠正措施，确保低温条件下的高性能并防止高温条件下电机过热。仿真结果表明，所提出的策略实现了电机热安全和运动性能之间的有效平衡。在 Unitree A1 四足机器人上进行的真实实验进一步验证了该方法：在 3 公斤有效载荷下，机器人在多个地形上实现了超过 13 分钟的稳定运动，而仅名义策略会在大约 5 分钟内导致电机过热。",
-      "html_url": "https://arxiv.org/html/2605.27046v1",
-      "figures": [
-        "https://arxiv.org/html/2605.27046v1/fig2.png",
-        "https://arxiv.org/html/2605.27046v1/fig3.png",
-        "https://arxiv.org/html/2605.27046v1/x1.png",
-        "https://arxiv.org/html/2605.27046v1/x2.png"
-      ]
-    },
-    {
-      "arxiv_id": "2605.27310",
-      "title": "How and What to Imagine? Visual Thinking in Unified Multimodal Models for Cross-View Spatial Reasoning",
-      "authors": [
-        "Qian Yang",
-        "Ankur Sikarwar",
-        "Huy Le",
-        "Le Zhang",
-        "Zhuan Shi",
-        "Perouz Taslakian",
-        "Aishwarya Agrawal"
-      ],
-      "abstract": "Cross-view spatial reasoning remains a weak spot for vision-language models (VLMs): they often reason in language and lose the fine-grained geometry needed for the task. Thinking with images aims to address this by generating an intermediate thinking image, but recent work shows that models often ignore the visual evidence in these traces. We therefore ask how to make visual thinking matter, and what kind of visual thinking works best. We study these questions in unified multimodal models (UMMs), which natively support interleaved image-text generation. For the first question, we propose View Dropout (VDrop), a training-time intervention that hides parts of one input view from the answer span while keeping them visible to the thinking-image tokens. This encourages the model to use the thinking image when answering, instead of relying only on the input views. Once the thinking image is used for answer prediction, we study which type of visual thinking is most effective. We frame this as a learnability-informativeness tradeoff and compare three thinking-image variants: top-down, panoramic, and point-matching renderings. Trained on synthetic scenes and evaluated on five real-world out-of-domain benchmarks, panoramic visual thinking with VDrop is the only configuration that is both informative and learnable, and it achieves the best out-of-domain generalization.",
-      "abs_url": "https://arxiv.org/abs/2605.27310",
-      "pdf_url": "https://arxiv.org/pdf/2605.27310v1",
-      "primary_category": "cs.CV",
-      "categories": [
-        "cs.CV"
-      ],
-      "submitted": "2026-05-26T17:20:05Z",
-      "updated": "2026-05-26T17:20:05Z",
-      "comments": "Preprint",
-      "code_links": [],
-      "project_links": [],
-      "title_zh": "如何想象以及想象什么？用于跨视图空间推理的统一多模态模型中的视觉思维",
-      "abstract_zh": "跨视图空间推理仍然是视觉语言模型（VLM）的一个弱点：它们经常用语言进行推理，并丢失任务所需的细粒度几何形状。用图像思考旨在通过生成中间思维图像来解决这个问题，但最近的研究表明，模型经常忽略这些痕迹中的视觉证据。因此，我们要问如何让视觉思维变得重要，以及哪种视觉思维效果最好。我们在统一多模态模型（UMM）中研究这些问题，该模型本身支持交错图像文本生成。对于第一个问题，我们提出了 View Dropout (VDrop)，这是一种训练时干预，它将部分输入视图从答案范围中隐藏起来，同时保持它们对思维图像标记可见。这鼓励模型在回答时使用思维图像，而不是仅仅依赖输入视图。一旦思维图像被用于答案预测，我们就会研究哪种类型的视觉思维最有效。我们将其视为可学习性与信息性的权衡，并比较了三种思维图像变体：自上而下、全景和点匹配渲染。在合成场景上进行训练并在五个现实世界的域外基准上进行评估，VDrop 的全景视觉思维是唯一既提供信息又可学习的配置，并且它实现了最佳的域外泛化。",
-      "html_url": "https://arxiv.org/html/2605.27310v1",
-      "figures": [
-        "https://arxiv.org/html/2605.27310v1/x1.png",
-        "https://arxiv.org/html/2605.27310v1/x2.png",
-        "https://arxiv.org/html/2605.27310v1/x3.png",
-        "https://arxiv.org/html/2605.27310v1/x4.png"
-      ],
-      "affiliations": [
-        "Mila - Québec AI Institute",
-        "Université de Montréal",
-        "McGill University",
-        "ServiceNow AI Research",
-        "Canada CIFAR AI Chair"
-      ]
-    },
-    {
-      "arxiv_id": "2605.27154",
-      "title": "Touch-R1: Reinforcing Touch Reasoning in MLLMs",
-      "authors": [
-        "Yingxin Lai",
-        "Yafei Zhou",
-        "Fucai Zhu",
-        "Siyu Zhu",
-        "Weihao Yuan"
-      ],
-      "abstract": "While rule-based reinforcement learning has recently catalyzed explicit reasoning in multimodal models, tactile reasoning remains largely underexplored. Existing tactile-language models primarily rely on supervised or contrastive objectives, which limits their capacity to ground predictions in physical evidence or rectify misleading visual priors. Tactile reasoning introduces two modality-specific challenges: the ordinal nature of physical attributes (e.g., hardness, roughness) and the cross-sensor distribution shifts inherent in optical tactile hardware. In this work, we introduce TouchReason-1M, a large-scale multimodal dataset comprising over 1M synchronized tactile pairs across four distinct sensors, and TouchReason-Bench, a rigorous framework for evaluating tactile perception and visual-tactile conflict resolution. Building upon these, we propose Touch-R1, a tactile reasoning MLLM based on Qwen2.5-VL-7B. Touch-R1 is trained via a tactile-grounded GRPO objective that combines ordinal-aware accuracy, cross-sensor physical consistency, structured-format control, and an input-side tactile grounding objective. Specifically, the tactile-use reward assigns credit only when authentic tactile inputs yield superior correctness relative to counterfactual controls where the tactile stream is removed, shuffled, or noise-masked. On TouchReason-Bench, Touch-R1-7B outperforms Octopi-13B by 18.4\\% and GPT-4o by 24.7\\% on average. Its structured reasoning traces reveal emergent behaviors of probing, comparison, and revision, demonstrating that R1-style reasoning can be effectively grounded in physical contact.",
-      "abs_url": "https://arxiv.org/abs/2605.27154",
-      "pdf_url": "https://arxiv.org/pdf/2605.27154v1",
-      "primary_category": "cs.CV",
-      "categories": [
-        "cs.CV"
-      ],
-      "submitted": "2026-05-26T15:14:56Z",
-      "updated": "2026-05-26T15:14:56Z",
-      "comments": "Our code and data will be made public on the https://laiyingxin2.github.io/Projects",
-      "code_links": [],
-      "project_links": [
-        "https://laiyingxin2.github.io/Projects"
-      ],
-      "title_zh": "Touch-R1：强化 MLLM 中的触摸推理",
-      "abstract_zh": "虽然基于规则的强化学习最近促进了多模态模型中的显式推理，但触觉推理在很大程度上仍未得到充分探索。现有的触觉语言模型主要依赖于监督或对比目标，这限制了它们根据物理证据进行预测或纠正误导性视觉先验的能力。触觉推理引入了两个特定于模态的挑战：物理属性（例如硬度、粗糙度）的顺序性质和光学触觉硬件固有的跨传感器分布变化。在这项工作中，我们介绍了 TouchReason-1M（一个大规模多模态数据集，包含四个不同传感器上超过 100 万个同步触觉对）和 TouchReason-Bench（一个用于评估触觉感知和视觉触觉冲突解决的严格框架）。在此基础上，我们提出了 Touch-R1，一种基于 Qwen2.5-VL-7B 的触觉推理 MLLM。 Touch-R1 通过触觉接地 GRPO 目标进行训练，该目标结合了序数感知准确性、跨传感器物理一致性、结构化格式控制和输入侧触觉接地目标。具体来说，只有当真实的触觉输入相对于触觉流被删除、打乱或噪声屏蔽的反事实控制产生更高的正确性时，触觉使用奖励才会分配信用。在 TouchReason-Bench 上，Touch-R1-7B 的平均性能优于 Octopi-13B 18.4%，平均优于 GPT-4o 24.7%。其结构化推理痕迹揭示了探究、比较和修正的涌现行为，表明 R1 式推理可以有效地建立在身体接触的基础上。",
-      "html_url": "https://arxiv.org/html/2605.27154v1",
-      "figures": [
-        "https://arxiv.org/html/2605.27154v1/x1.png",
-        "https://arxiv.org/html/2605.27154v1/x2.png",
-        "https://arxiv.org/html/2605.27154v1/x3.png",
-        "https://arxiv.org/html/2605.27154v1/x4.png"
-      ],
-      "affiliations": [
-        "Xiamen University",
-        "Great Bay University",
-        "Fudan University",
-        "Nanjing University"
-      ]
-    },
-    {
-      "arxiv_id": "2605.27074",
-      "title": "IPIBench: Evaluating Interactive Proactive Intelligence of MLLMs under Continuous Streams",
-      "authors": [
-        "Jinzhao Li",
-        "Yinuo Chen",
-        "Wenxuan Song",
-        "Yijia Lei",
-        "Yichi Zhang",
-        "Honglei Yan",
-        "Panwang Pan",
-        "Miao Liu"
-      ],
-      "abstract": "Recent multimodal large language models (MLLMs) achieve strong performance on reactive question answering, but real-world streaming assistants require proactive reasoning over continuous visual inputs. Existing benchmarks mainly study reactive or proactive interactions in isolated single-turn settings, overlooking dynamic multi-turn scenarios where users may add, modify, or cancel proactive requests alongside interleaved reactive queries. To address this gap, we introduce IPIBench, the first benchmark for evaluating Interactive Proactive Intelligence of MLLMs under streaming video settings. IPIBench covers proactive monitoring, proactive task management, and interleaved reactive-proactive requests. Evaluations on representative MLLMs reveal two major limitations: unstable proactive triggering and weak coordination between reactive and proactive behaviors. We further propose IPI-Agent, a training-free agentic framework with an interaction-control policy and a temporal-gating mechanism for stabilizing proactive triggering and coordinating multi-turn interactions. Experiments show that IPI-Agent consistently improves existing MLLMs across all benchmark settings.",
-      "abs_url": "https://arxiv.org/abs/2605.27074",
-      "pdf_url": "https://arxiv.org/pdf/2605.27074v1",
-      "primary_category": "cs.CV",
-      "categories": [
-        "cs.CV"
-      ],
-      "submitted": "2026-05-26T14:23:25Z",
-      "updated": "2026-05-26T14:23:25Z",
-      "comments": null,
-      "code_links": [],
-      "project_links": [],
-      "title_zh": "IPIBench：评估连续流下 MLLM 的交互式主动智能",
-      "abstract_zh": "最近的多模态大语言模型（MLLM）在反应式问答方面取得了出色的性能，但现实世界的流媒体助手需要对连续视觉输入进行主动推理。现有的基准主要研究孤立的单轮设置中的被动或主动交互，忽略了动态多轮场景，在动态多轮场景中，用户可以添加、修改或取消主动请求以及交错的被动查询。为了弥补这一差距，我们推出了 IPIBench，这是第一个在流视频设置下评估 MLLM 交互式主动智能的基准。 IPIBench 涵盖主动监控、主动任务管理和交错的反应-主动请求。对代表性 MLLM 的评估揭示了两个主要局限性：不稳定的主动触发以及反应性和主动性行为之间的协调性较弱。我们进一步提出了IPI-Agent，一种无需训练的代理框架，具有交互控制策略和时间门控机制，用于稳定主动触发和协调多轮交互。实验表明，IPI-Agent 在所有基准设置上持续改进现有 MLLM。",
-      "html_url": "https://arxiv.org/html/2605.27074v1",
-      "figures": [
-        "https://arxiv.org/html/2605.27074v1/x1.png",
-        "https://arxiv.org/html/2605.27074v1/fig/bench.png",
-        "https://arxiv.org/html/2605.27074v1/x2.png"
-      ],
-      "affiliations": [
-        "College of AI, Tsinghua University",
-        "ByteDance"
-      ]
-    },
-    {
-      "arxiv_id": "2605.26974",
-      "title": "Trust, Geometry, and Rules: A Credibility-Aware Reinforcement Learning Framework for Safe USV Navigation under Uncertainty",
-      "authors": [
-        "Yuhang Zhang",
-        "Shuqi Chai",
-        "Yukang Zhang",
-        "Liusha Yang",
-        "Mingchuan Zhang",
-        "Wei Wang",
-        "Qingjiang Shi",
-        "Quanbo Ge"
-      ],
-      "abstract": "Autonomous navigation of Unmanned Surface Vehicles (USVs) that is safe and compliant with the International Regulations for Preventing Collisions at Sea (COLREGs) remains a formidable challenge in dynamic maritime environments, particularly when perception systems exhibit miscalibrated uncertainty. Existing Reinforcement Learning (RL)-based methods often falter because state-estimation errors induce unreliable belief states that mislead the value function, while discrete traffic rules introduce discontinuity in the learning objective. To address these challenges, we propose a framework integrating credibility-aware learning, geometric safety shielding, and continuous rule-aware embedding. First, Credibility-Weighted Value Learning (CW-VL) introduces a dynamic trust factor derived from the discrepancy between filter-estimated covariance and empirical error statistics to modulate the critic's heteroscedastic loss, preventing policy overfitting to noisy samples. Second, the Covariance-Inflated Velocity Obstacle (CI-VO) maps position-estimation uncertainty into set-wise angular margins, forming a conservative geometric shield that overrides hazardous exploratory actions. Third, Risk-Aware COLREGs Duty Embedding relaxes binary encounter duties into continuous rule-aware signals, providing smooth sector-transition information and suppressing oscillation from sparse rule rewards. Simulated encounter studies demonstrate improved training robustness against perceptual inconsistency and superior collision avoidance and COLREGs compliance over baselines.",
-      "abs_url": "https://arxiv.org/abs/2605.26974",
-      "pdf_url": "https://arxiv.org/pdf/2605.26974v1",
-      "primary_category": "cs.RO",
-      "categories": [
-        "cs.RO"
-      ],
-      "submitted": "2026-05-26T12:59:43Z",
-      "updated": "2026-05-26T12:59:43Z",
-      "comments": null,
-      "code_links": [],
-      "project_links": [],
-      "title_zh": "信任、几何和规则：不确定性下 USV 安全导航的可信度感知强化学习框架",
-      "abstract_zh": "在动态海洋环境中，安全且符合国际海上避碰规则 (COLREG) 的无人水面车辆 (USV) 自主导航仍然是一个巨大的挑战，特别是当感知系统表现出错误校准的不确定性时。现有的基于强化学习 (RL) 的方法经常会出现问题，因为状态估计误差会导致不可靠的信念状态，从而误导价值函数，而离散的交通规则会导致学习目标的不连续性。为了应对这些挑战，我们提出了一个集成可信度感知学习、几何安全屏蔽和连续规则感知嵌入的框架。首先，可信度加权值学习（CW-VL）引入了一个动态信任因子，该信任因子源自过滤器估计协方差和经验误差统计之间的差异，以调节批评者的异方差损失，防止策略过度拟合噪声样本。其次，协方差膨胀速度障碍（CI-VO）将位置估计不确定性映射到设定的角度裕度中，形成一个保守的几何屏蔽，覆盖危险的探索行为。第三，风险感知 COLREG 职责嵌入将二进制遭遇职责放松为连续的规则感知信号，提供平滑的扇区转换信息并抑制稀疏规则奖励的振荡。模拟遭遇研究表明，与基线相比，针对感知不一致的训练鲁棒性得到了提高，碰撞避免和 COLREG 合规性也得到了提高。",
-      "html_url": "https://arxiv.org/html/2605.26974v1",
-      "figures": [
-        "https://arxiv.org/html/2605.26974v1/x1.png",
-        "https://arxiv.org/html/2605.26974v1/x2.png",
-        "https://arxiv.org/html/2605.26974v1/x3.png",
-        "https://arxiv.org/html/2605.26974v1/x4.png"
-      ]
-    },
-    {
-      "arxiv_id": "2605.26831",
-      "title": "OSMa-Bench++: Toward Open-Ended Benchmarking of Semantic Mapping for Manipulation with Prompt-Generated Synthetic Scenes",
-      "authors": [
-        "Regina Kurkova",
-        "Maxim Popov",
-        "Sergey Kolyubin"
-      ],
-      "abstract": "Semantic mapping methods are increasingly used as intermediate scene representations for downstream robotic reasoning and manipulation, yet their evaluation is still largely tied to fixed benchmark datasets with limited coverage of manipulation-relevant corner cases. In this work, we extend OSMa-Bench toward controllable benchmarking with prompt-generated synthetic indoor scenes. Our pipeline automatically generates scene descriptions, synthesizes corresponding environments with SceneSmith, and adapts the resulting assets into an OSMa-Bench-compatible simulation format. This adaptation requires a nontrivial intermediate layer, including semantic normalization, material and texture repair, shader fallback policies, floor handling, navigation setup, and controlled lighting configuration. A key advantage of the proposed setup is that the original scene-generation prompt is known in advance and can therefore serve as an auxiliary semantic specification of the intended scene. We use this property to extend the VQA component of OSMa-Bench with a prompt-grounded question category. The resulting framework supports targeted stress-testing of semantic scene representations under conditions such as clutter, small objects, partial occlusions, and lighting variation, and makes benchmarking more extensible and better aligned with downstream manipulation requirements. Our code is available at https://github.com/be2rlab/OSMa-Bench-v2.",
-      "abs_url": "https://arxiv.org/abs/2605.26831",
-      "pdf_url": "https://arxiv.org/pdf/2605.26831v1",
-      "primary_category": "cs.CV",
-      "categories": [
-        "cs.CV",
-        "cs.RO"
-      ],
-      "submitted": "2026-05-26T10:51:36Z",
-      "updated": "2026-05-26T10:51:36Z",
-      "comments": "Code: https://github.com/be2rlab/OSMa-Bench-v2",
-      "code_links": [
-        "https://github.com/be2rlab/OSMa-Bench-v2"
-      ],
-      "project_links": [],
-      "title_zh": "OSMa-Bench++：针对即时生成的合成场景进行操作的语义映射的开放式基准测试",
-      "abstract_zh": "语义映射方法越来越多地用作下游机器人推理和操作的中间场景表示，但它们的评估仍然很大程度上依赖于固定的基准数据集，而与操作相关的极端情况的覆盖范围有限。在这项工作中，我们将 OSMa-Bench 扩展到通过即时生成的合成室内场景进行可控基准测试。我们的管道自动生成场景描述，使用 SceneSmith 合成相应的环境，并将生成的资源调整为 OSMa-Bench 兼容的模拟格式。这种适应需要一个重要的中间层，包括语义标准化、材质和纹理修复、着色器后备策略、地板处理、导航设置和受控照明配置。所提出的设置的一个关键优点是，原始场景生成提示是预先已知的，因此可以作为预期场景的辅助语义规范。我们使用此属性通过基于提示的问题类别来扩展 OSMa-Bench 的 VQA 组件。由此产生的框架支持在杂乱、小物体、部分遮挡和光照变化等条件下对语义场景表示进行有针对性的压力测试，并使基准测试更具可扩展性并更好地符合下游操作要求。我们的代码可在 https://github.com/be2rlab/OSMa-Bench-v2 获取。",
-      "html_url": "https://arxiv.org/html/2605.26831v1",
-      "figures": [
-        "https://arxiv.org/html/2605.26831v1/x1.png",
-        "https://arxiv.org/html/2605.26831v1/x2.png"
-      ]
-    },
-    {
-      "arxiv_id": "2605.26520",
-      "title": "InterSketch: An Interleaved Reasoning Model with Self-correcting Visual Sketch and Stepwise Reward",
-      "authors": [
-        "Zhiwei Ning",
-        "Wenwen Tong",
-        "Xiangli Kong",
-        "Shengnan Ma",
-        "Ziyi Shang",
-        "Jingcheng Ni",
-        "Tao Hu",
-        "Yong Xien Chng",
-        "Jixuan Ying",
-        "Zehuan Wu",
-        "Hanming Deng",
-        "Jie Yang",
-        "Yuanjie Zheng",
-        "Wei Liu",
-        "Lewei Lu"
-      ],
-      "abstract": "While vision-language models (VLMs) have exhibited multi-turn visual reasoning capabilities, their reasoning trajectories remain relatively shallow and are dominated by a text-centric paradigm, limiting their applicability to complex visual challenges. In contrast, human-like thought typically involves long-horizon reasoning with an interleaved visual-textual chain-of-thought (VT-CoT). To bridge this gap, we introduce InterSketch, an interleaved reasoning model to enhance the VT-CoT capability via self-correcting and stepwise reward mechanisms. InterSketch dynamically generates intermediate visual sketches using external tools and interleaves them with textual reasoning, enabling effective perception and logical reasoning over long-horizon visual understanding tasks. Specifically, in the first cold-start stage, we propose a synthesized high-quality interleaved VT-CoT dataset and include a reflection mechanism to enable the model's capability in multi-turn interleaved reasoning and self-correction. In the subsequent reinforcement learning (RL) stage, we design a stepwise reward mechanism to mitigate the sparsity of reward signals inherent in end-only supervision over long-horizon reasoning. Extensive experiments on visual reasoning benchmarks demonstrate the effectiveness of InterSketch, even outperforming proprietary models such as Gemini-3-Pro.",
-      "abs_url": "https://arxiv.org/abs/2605.26520",
-      "pdf_url": "https://arxiv.org/pdf/2605.26520v1",
-      "primary_category": "cs.CV",
-      "categories": [
-        "cs.AI",
-        "cs.CV"
-      ],
-      "submitted": "2026-05-26T04:07:49Z",
-      "updated": "2026-05-26T04:07:49Z",
-      "comments": null,
-      "code_links": [],
-      "project_links": [],
-      "title_zh": "InterSketch：具有自我修正视觉草图和逐步奖励的交错推理模型",
-      "abstract_zh": "虽然视觉语言模型（VLM）已经表现出多轮视觉推理能力，但它们的推理轨迹仍然相对较浅，并且以文本为中心的范式占主导地位，限制了它们对复杂视觉挑战的适用性。相比之下，类人思维通常涉及具有交错的视觉文本思维链（VT-CoT）的长视野推理。为了弥补这一差距，我们引入了 InterSketch，这是一种交错推理模型，通过自我纠正和逐步奖励机制来增强 VT-CoT 能力。 InterSketch 使用外部工具动态生成中间视觉草图，并将其与文本推理交织在一起，从而在长视野视觉理解任务中实现有效的感知和逻辑推理。具体来说，在第一个冷启动阶段，我们提出了一个合成的高质量交错 VT-CoT 数据集，并包含反射机制以使模型具有多轮交错推理和自我校正的能力。在随后的强化学习（RL）阶段，我们设计了一种逐步奖励机制，以减轻长期推理的仅限最终监督中固有的奖励信号的稀疏性。视觉推理基准的大量实验证明了 InterSketch 的有效性，甚至优于 Gemini-3-Pro 等专有模型。",
-      "html_url": "https://arxiv.org/html/2605.26520v1",
-      "figures": [
-        "https://arxiv.org/html/2605.26520v1/x2.png",
-        "https://arxiv.org/html/2605.26520v1/x3.png",
-        "https://arxiv.org/html/2605.26520v1/x4.png",
-        "https://arxiv.org/html/2605.26520v1/x5.png"
-      ],
-      "affiliations": [
-        "Shanghai Jiao Tong University",
-        "SenseTime Research",
-        "Shandong Normal University"
-      ]
-    },
-    {
-      "arxiv_id": "2605.26501",
-      "title": "Unveiling the Fragility of Vision-Language Models: Multi-Modal Adversarial Synergy via Texture-Constrained Perturbations and Cross-Modal Optimization",
-      "authors": [
-        "Xiang Fang",
-        "Wanlong Fang",
-        "Changshuo Wang"
-      ],
-      "abstract": "Large Vision-Language Models (LVLMs) have transformed multi-modal understanding, excelling in tasks like image captioning and visual question answering by integrating visual and textual inputs. However, their robustness against adversarial attacks, particularly those exploiting both modalities, remains underexplored, posing risks to critical applications like autonomous driving and content moderation. Existing attacks focus on single modalities or require impractical white-box access, limiting their real-world relevance. In this paper, we introduce Multi-Modal Adversarial Synergy, a groundbreaking framework that crafts universal, black-box multi-modal attacks against LVLMs. MMAS simultaneously generates a texture scale-constrained universal adversarial perturbation for images and a learnable prompt perturbation for text, optimized jointly using only model queries. The image perturbation leverages wavelet-based texture constraints to ensure imperceptibility and robustness across diverse visual inputs. The text perturbation, constrained by an L-norm in the embedding space, maintains semantic coherence while steering outputs toward a target. A novel cross-modal regularization term aligns the perturbations' gradient directions, enhancing their synergistic impact and transferability across tasks and models. Extensive experiments show the strong universal adversarial capabilities of our proposed attack with prevalent LVLMs.",
-      "abs_url": "https://arxiv.org/abs/2605.26501",
-      "pdf_url": "https://arxiv.org/pdf/2605.26501v1",
-      "primary_category": "cs.CV",
-      "categories": [
-        "cs.AI",
-        "cs.CV"
-      ],
-      "submitted": "2026-05-26T03:28:28Z",
-      "updated": "2026-05-26T03:28:28Z",
-      "comments": "Publish in AAAI 2026",
-      "code_links": [],
-      "project_links": [],
-      "title_zh": "揭示视觉语言模型的脆弱性：通过纹理约束扰动和跨模态优化实现多模态对抗协同",
-      "abstract_zh": "大视觉语言模型 (LVLM) 改变了多模态理解，通过集成视觉和文本输入，在图像字幕和视觉问答等任务中表现出色。然而，它们针对对抗性攻击（特别是利用这两种模式的攻击）的鲁棒性仍未得到充分研究，这给自动驾驶和内容审核等关键应用带来了风险。现有的攻击集中于单一模式或需要不切实际的白盒访问，限制了它们在现实世界中的相关性。在本文中，我们介绍了多模态对抗协同，这是一个突破性的框架，可以针对 LVLM 进行通用的黑盒多模态攻击。 MMAS 同时生成图像的纹理尺度受限的通用对抗性扰动和文本的可学习提示扰动，仅使用模型查询进行联合优化。图像扰动利用基于小波的纹理约束来确保不同视觉输入的不可察觉性和鲁棒性。文本扰动受到嵌入空间中 L 范数的约束，在将输出转向目标的同时保持语义连贯性。一种新颖的跨模态正则化项对齐扰动的梯度方向，增强其协同影响以及跨任务和模型的可转移性。大量实验表明，我们提出的针对流行 LVLM 的攻击具有强大的通用对抗能力。",
-      "html_url": "https://arxiv.org/html/2605.26501v1",
-      "figures": [
-        "https://arxiv.org/html/2605.26501v1/x1.png",
-        "https://arxiv.org/html/2605.26501v1/vis.png",
-        "https://arxiv.org/html/2605.26501v1/COCO_train2014_000000001072.jpg",
-        "https://arxiv.org/html/2605.26501v1/photo_57.jpg"
-      ]
+      "category": "vlm",
+      "name": "视觉语言模型",
+      "count": 5
     }
   ]
 }
