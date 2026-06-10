@@ -1,0 +1,896 @@
+{
+  "date": "2026-06-10",
+  "total_candidates": 126,
+  "categories": [
+    {
+      "id": "worldmodel",
+      "name": "世界模型&视频/场景生成模型",
+      "papers": [
+        {
+          "id": "2606.10656",
+          "rank": 1,
+          "score": 92,
+          "reason_zh": "自监督前馈4DGS预测未来驾驶场景，无需位姿先验即可外推动态演化",
+          "tags": [
+            "世界模型",
+            "自动驾驶",
+            "4D重建",
+            "3DGS",
+            "feed-forward"
+          ],
+          "title": "Envision4D: Envisioning Visual Futures via Feed-forward 4D Gaussian Splatting for Autonomous Driving",
+          "authors": [
+            "Qi Song",
+            "Yifei He",
+            "Chi Zhang",
+            "Zheng Fu",
+            "Xuhe Zhao",
+            "Mengmeng Yang",
+            "Kun Jiang",
+            "Rui Huang",
+            "Diange Yang"
+          ],
+          "abstract": "Forecasting the future evolution of dynamic scenes is crucial in autonomous driving. However, existing feed-forward paradigms are primarily designed for interpolation. When extended to future extrapolation, they suffer from ghosting artifacts under large displacements and are constrained by simplified motion assumptions or strict future priors. To overcome these challenges, we propose Envision4D, a fully self-supervised feed-forward framework for pose-free future extrapolation. Specifically, we introduce a Future Pose Prediction module that infers future camera parameters via an iterative denoising process. Furthermore, to capture non-linear dynamics, we propose In-layer Temporal Attention and employ Conditioned Motion Lifting, which transforms the highly uncertain extrapolation process into robust relational mappings. Finally, a Progressive Training Strategy is utilized to stabilize unsupervised motion learning against error accumulation. Extensive experiments demonstrate that Envision4D achieves state-of-the-art performance, significantly outperforming existing methods in future view synthesis.",
+          "abs_url": "https://arxiv.org/abs/2606.10656",
+          "pdf_url": "https://arxiv.org/pdf/2606.10656v1",
+          "html_url": "https://arxiv.org/html/2606.10656v1",
+          "figures": [
+            "https://arxiv.org/html/2606.10656v1/x2.png",
+            "https://arxiv.org/html/2606.10656v1/x3.png",
+            "https://arxiv.org/html/2606.10656v1/x4.png",
+            "https://arxiv.org/html/2606.10656v1/x5.png"
+          ],
+          "code_url": null,
+          "project_url": "https://maggiesong7.github.io/research/Envision4D/",
+          "code_links": [],
+          "project_links": [
+            "https://maggiesong7.github.io/research/Envision4D/"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": null,
+          "comments": "Project Page: https://maggiesong7.github.io/research/Envision4D/",
+          "submitted": "2026-06-09T10:04:38Z",
+          "updated": "2026-06-09T10:04:38Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "Envision4D：通过前馈 4D 高斯分布设想自动驾驶的视觉未来",
+          "abstract_zh": "预测动态场景的未来演变对于自动驾驶至关重要。然而，现有的前馈范例主要是为插值而设计的。当扩展到未来的外推时，它们会在大位移下遭受重影伪影，并受到简化的运动假设或严格的未来先验的约束。为了克服这些挑战，我们提出了 Envision4D，一个完全自我监督的前馈框架，用于无姿态的未来外推。具体来说，我们引入了未来姿势预测模块，该模块通过迭代去噪过程推断未来的相机参数。此外，为了捕获非线性动态，我们提出了层内时间注意力并采用条件运动提升，将高度不确定的外推过程转换为鲁棒的关系映射。最后，利用渐进训练策略来稳定无监督运动学习以防止错误累积。大量实验表明，Envision4D 实现了最先进的性能，在未来视图合成中显着优于现有方法。"
+        },
+        {
+          "id": "2606.11187",
+          "rank": 2,
+          "score": 90,
+          "reason_zh": "多块预测框架加速世界模型训练与推理，显式注入未来动态信号解决收敛慢",
+          "tags": [
+            "世界模型",
+            "生成模型",
+            "开源"
+          ],
+          "title": "Next Forcing: Causal World Modeling with Multi-Chunk Prediction",
+          "authors": [
+            "Gangwei Xu",
+            "Qihang Zhang",
+            "Jiaming Zhou",
+            "Xing Zhu",
+            "Yujun Shen",
+            "Xin Yang",
+            "Yinghao Xu"
+          ],
+          "abstract": "Autoregressive video generation has emerged as a powerful paradigm for World Action Models (WAMs). However, existing approaches suffer from slow training convergence and limited converged accuracy, particularly at high frame rates, as the training supervision is confined to the current chunk without explicit signals about future dynamics; they also suffer from slow inference due to iterative video denoising. In this paper, we present Next Forcing, a multi-chunk prediction (MCP) framework for causal world modeling that enables faster training, higher accuracy, and accelerated inference. Inspired by multi-token prediction in large language models, Next Forcing introduces an MCP training objective that augments the main model with lightweight auxiliary MCP modules to simultaneously denoise video chunks at multiple future temporal horizons (next$^1$, next$^2$, next$^3$ chunks). These MCP modules form a causal chain across prediction depths, where intermediate features fused from multiple layers of the main model are leveraged to predict future dynamics, allowing near-future predictions to inform farther-future ones and providing dense multi-scale temporal supervision back to the main model. During training, the MCP modules significantly accelerate convergence and improve converged accuracy, especially at high frame rates: at 50 fps, Next Forcing achieves a 93.1% relative improvement over LingBot-VA at 5k training steps and 2.3x faster convergence, and establishes new state-of-the-art results on the RoboTwin benchmark (94.1/93.5% on Clean/Random). At inference, the MCP modules can be retained to predict the next video chunk in parallel with the current one, achieving 2x inference acceleration. Next Forcing also demonstrates significant improvements on PhyWorld, a benchmark evaluating adherence to physical laws in video generation, and over 50% FVD reduction on general video pretraining.",
+          "abs_url": "https://arxiv.org/abs/2606.11187",
+          "pdf_url": "https://arxiv.org/pdf/2606.11187v1",
+          "html_url": "https://arxiv.org/html/2606.11187v1",
+          "figures": [
+            "https://arxiv.org/html/2606.11187v1/x1.png",
+            "https://arxiv.org/html/2606.11187v1/x2.png",
+            "https://arxiv.org/html/2606.11187v1/x3.png",
+            "https://arxiv.org/html/2606.11187v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": "https://gangweix.github.io/next-forcing/",
+          "code_links": [],
+          "project_links": [
+            "https://gangweix.github.io/next-forcing/"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": null,
+          "comments": "Project page: https://gangweix.github.io/next-forcing/",
+          "submitted": "2026-06-09T17:59:22Z",
+          "updated": "2026-06-09T17:59:22Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "下一个强迫：具有多块预测的因果世界建模",
+          "abstract_zh": "自回归视频生成已成为世界行动模型 (WAM) 的强大范例。然而，现有方法存在训练收敛速度慢和收敛精度有限的问题，特别是在高帧速率下，因为训练监督仅限于当前块，没有关于未来动态的明确信号；由于迭代视频去噪，它们还面临推理缓慢的问题。在本文中，我们提出了 Next Forcing，这是一种用于因果世界建模的多块预测 (MCP) 框架，可实现更快的训练、更高的准确性和加速的推理。受大型语言模型中多标记预测的启发，Next Forcing 引入了 MCP 训练目标，该目标通过轻量级辅助 MCP 模块增强主模型，以同时对多个未来时间范围内的视频块（next$^1$、next$^2$、next$^3$ 块）进行去噪。这些 MCP 模块形成了跨预测深度的因果链，其中利用主模型多层融合的中间特征来预测未来动态，允许近期预测为更远未来的预测提供信息，并向主模型提供密集的多尺度时间监督。在训练过程中，MCP 模块显着加速收敛并提高收敛精度，尤其是在高帧速率下：在 50 fps 下，Next Forcing 在 5k 训练步数下比 LingBot-VA 实现了 93.1% 的相对改进，收敛速度提高了 2.3 倍，并在 RoboTwin 基准上建立了新的最先进结果（在 Clean/Random 上为 94.1/93.5%）。在推理时，可以保留 MCP 模块来与当前视频块并行预测下一个视频块，从而实现 2 倍的推理加速。 Next Forcing 还展示了 PhyWorld（评估视频生成中物理定律遵守情况的基准）的显着改进，以及一般视频预训练的 FVD 减少了 50% 以上。"
+        },
+        {
+          "id": "2606.09967",
+          "rank": 3,
+          "score": 88,
+          "reason_zh": "从卫星图直接生成3DGS城市场景，平方公里级秒出，阿里天地图出品",
+          "tags": [
+            "世界模型",
+            "生成模型",
+            "3DGS",
+            "3D重建"
+          ],
+          "title": "ABot-Earth 0.5: Generative 3D Earth Model",
+          "authors": [
+            "Ming Qian",
+            "Tianjian Ouyang",
+            "Mingchao Sun",
+            "Zijian Wang",
+            "Jincheng Xiong",
+            "Jiarong Han",
+            "Yongchang Zhang",
+            "Jiawei Zhang",
+            "Xu Wang",
+            "Yu Liu",
+            "Luyang Tang",
+            "Fei Yu",
+            "Zengye Ge",
+            "Mengmeng Du",
+            "Yuan Liu",
+            "Nianfei Fan",
+            "Song Wang",
+            "Yingliang Peng",
+            "Chunxue Jia",
+            "Yang Liu",
+            "Shiying Zeng",
+            "Haozhe Shi",
+            "Junnan Lai",
+            "Hongyu Pan",
+            "Zheng Wu",
+            "Ning Guo",
+            "Mu Xu",
+            "Hang Zhang"
+          ],
+          "abstract": "We present ABot-Earth 0.5, a generative 3D framework designed to synthesize vast, seamless 3D environments from ubiquitous, geospatially referenced satellite imagery. To achieve this, we propose a novel generative model formulated directly with the 3D Gaussian Splatting (3DGS) representation. The model is trained on a diverse corpus of existing real-world urban reconstructions, learning to generate realistic geometry and textures. At inference, it synthesizes novel 3D scenes conditioned solely on satellite imagery at a scalable rate of under 10 minutes per square kilometer, while demonstrating exceptional realism. The framework is designed for accessibility, with integrated hierarchical level-of-detail (LOD) structures that permit real-time, interactive visualization on web-based map engines. This high-fidelity simulation sandbox effectively mitigates the sim-to-real domain gap, enabling critical downstream Embodied AI applications like closed-loop UAV navigation. By providing an ultra-low-cost and high-efficiency solution, ABot-Earth 0.5 significantly lowers the technical and financial barriers to large-scale 3D reconstruction and empowers the future of global digital earth visualization.",
+          "abs_url": "https://arxiv.org/abs/2606.09967",
+          "pdf_url": "https://arxiv.org/pdf/2606.09967v1",
+          "html_url": "https://arxiv.org/html/2606.09967v1",
+          "figures": [
+            "https://arxiv.org/html/2606.09967v1/figure/fig_teaser.jpg",
+            "https://arxiv.org/html/2606.09967v1/figure/fig_data_pipeline.jpg",
+            "https://arxiv.org/html/2606.09967v1/figure/fig_data_sources.jpg",
+            "https://arxiv.org/html/2606.09967v1/sections/CutBlock.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": "From Amap-cvlab, Alibaba. Official page: https://abot-earth.amap.com/",
+          "submitted": "2026-06-08T17:58:02Z",
+          "updated": "2026-06-08T17:58:02Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "ABot-Earth 0.5：生成 3D 地球模型",
+          "abstract_zh": "我们推出了 ABot-Earth 0.5，这是一个生成 3D 框架，旨在从无处不在的地理空间参考卫星图像合成巨大、无缝的 3D 环境。为了实现这一目标，我们提出了一种直接使用 3D 高斯分布 (3DGS) 表示形式制定的新颖生成模型。该模型在现有现实世界城市重建的多样化语料库上进行训练，学习生成逼真的几何形状和纹理。据推断，它仅以卫星图像为条件，以每平方公里 10 分钟以下的可扩展速率合成新颖的 3D 场景，同时展现出非凡的真实感。该框架专为可访问性而设计，具有集成的分层详细级别 (LOD) 结构，允许在基于 Web 的地图引擎上进行实时、交互式可视化。这种高保真模拟沙箱有效地缩小了模拟与真实域之间的差距，从而支持闭环无人机导航等关键的下游嵌入式人工智能应用。 ABot-Earth 0.5通过提供超低成本、高效率的解决方案，大幅降低大规模3D重建的技术和资金门槛，赋能全球数字地球可视化的未来。"
+        },
+        {
+          "id": "2606.10363",
+          "rank": 4,
+          "score": 85,
+          "reason_zh": "层级记忆门控世界动作模型，边界触发记忆更新解决长程操控遗忘问题",
+          "tags": [
+            "世界模型",
+            "机器人",
+            "操控",
+            "VLA"
+          ],
+          "title": "HiMem-WAM: Hierarchical Memory-Gated World Action Models for Robotic Manipulation",
+          "authors": [
+            "Xiaoquan Sun",
+            "Ruijian Zhang",
+            "Chen Cao",
+            "Yihan Sun",
+            "Jiahui Chen",
+            "Zetian Xu",
+            "Bo Chen",
+            "Haijier Chen",
+            "Zhen Yang",
+            "Jiarun Zhu",
+            "Yijun Hong",
+            "JingZhe Xu",
+            "Jingrui Pang",
+            "Mingqi Yuan",
+            "Jiayu Chen"
+          ],
+          "abstract": "World Action Models (WAMs) have emerged as a new powerful paradigm for embodied intelligence, learning action-relevant visual dynamics that significantly enhance generalization and robustness. However, existing WAMs still struggle with task-relevant memory in long-horizon robotic manipulation. To address this, we present HiMem-WAM, a Hierarchical Memory-Gated WAM that integrates motion-centric latent actions, high-level skill latents, and boundary-triggered memory updates. Specifically, we develop a hierarchical latent action framework that jointly learns low-level motion and high-level skill latents, providing structured temporal abstraction. Meanwhile, a boundary-aware memory gate writes compact task states at predicted skill transitions, enabling causal inference without test-time generation of future video or optical flow estimation. Evaluated on LIBERO, LIBERO-PLUS, RMBench and real-world tasks, HiMem-WAM shows that hierarchical latents improve robustness under deployment perturbations, and the memory module substantially benefits memory-dependent long-horizon manipulation.",
+          "abs_url": "https://arxiv.org/abs/2606.10363",
+          "pdf_url": "https://arxiv.org/pdf/2606.10363v1",
+          "html_url": "https://arxiv.org/html/2606.10363v1",
+          "figures": [
+            "https://arxiv.org/html/2606.10363v1/pictures/overview.png",
+            "https://arxiv.org/html/2606.10363v1/pictures/wamvsours.png",
+            "https://arxiv.org/html/2606.10363v1/pictures/real_world.png",
+            "https://arxiv.org/html/2606.10363v1/pictures/visual.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": null,
+          "submitted": "2026-06-09T03:22:34Z",
+          "updated": "2026-06-09T03:22:34Z",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.RO"
+          ],
+          "title_zh": "HiMem-WAM：用于机器人操作的分层内存门控世界动作模型",
+          "abstract_zh": "世界行动模型（WAM）已成为体现智能的新强大范式，学习与行动相关的视觉动态，可显着增强泛化性和鲁棒性。然而，现有的 WAM 仍然难以解决长视距机器人操作中的任务相关记忆问题。为了解决这个问题，我们提出了 HiMem-WAM，这是一种分层内存门控 WAM，集成了以运动为中心的潜在动作、高级技能潜在和边界触发的内存更新。具体来说，我们开发了一个分层潜在动作框架，共同学习低级运动和高级技能潜在，提供结构化的时间抽象。同时，边界感知内存门在预测的技能转换时写入紧凑的任务状态，从而无需在测试时生成未来视频或光流估计即可进行因果推理。在 LIBERO、LIBERO-PLUS、RMBench 和实际任务上进行评估后，HiMem-WAM 表明分层潜在模型提高了部署扰动下的鲁棒性，并且内存模块大大有利于依赖于内存的长范围操作。"
+        },
+        {
+          "id": "2606.10040",
+          "rank": 5,
+          "score": 82,
+          "reason_zh": "1B参数世界动作模型实现毫秒级未来想象，兼顾控制效果与推理效率",
+          "tags": [
+            "世界模型",
+            "机器人",
+            "VLA"
+          ],
+          "title": "Efficient-WAM: A 1B-Parameter World-Action Model with Low-Cost Future Imagination",
+          "authors": [
+            "Jiajun Li",
+            "Tiecheng Guo",
+            "Yifan Ye",
+            "Rongyu Zhang",
+            "Xiaowei Chi",
+            "Qianpu Sun",
+            "Ying Li",
+            "Yunfan Lou",
+            "Yan Huang",
+            "Zhihe Lu",
+            "Meng Guo",
+            "Shanghang Zhang"
+          ],
+          "abstract": "World-Action Models (WAMs) have emerged as a promising paradigm for embodied control by coupling future visual prediction with action generation. However, most existing WAMs rely on photorealistic future prediction, which incurs high inference latency and makes real-time robot deployment difficult. This motivates a more efficient WAM design that preserves the control benefits of future visual prediction while reducing its inference cost. We introduce Efficient-WAM, a World-Action Model that reduces the cost of future imagination while preserving its control benefit. Efficient-WAM improves inference efficiency via a compact video expert transferred from WAN-2.2-5B, token-sparse video latents, and asymmetric video-action denoising that allocates fewer sampling steps to video than to actions. Instead of optimizing the future branch for visual fidelity, Efficient-WAM treats future video prediction as a compact guidance signal for action generation. Comprehensive experiments on RoboTwin 2.0 and real-world manipulation tasks show that Efficient-WAM maintains strong action performance despite visibly coarse future predictions. While maintaining competitive control capabilities, our 1B-parameter model can reduce per-chunk latency to around 100 ms during physical deployment, achieving a 30x speedup over existing WAMs.",
+          "abs_url": "https://arxiv.org/abs/2606.10040",
+          "pdf_url": "https://arxiv.org/pdf/2606.10040v1",
+          "html_url": "https://arxiv.org/html/2606.10040v1",
+          "figures": [
+            "https://arxiv.org/html/2606.10040v1/x1.png",
+            "https://arxiv.org/html/2606.10040v1/x2.png",
+            "https://arxiv.org/html/2606.10040v1/figure/result_real.png",
+            "https://arxiv.org/html/2606.10040v1/x3.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": null,
+          "submitted": "2026-06-08T18:14:08Z",
+          "updated": "2026-06-08T18:14:08Z",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.RO"
+          ],
+          "title_zh": "Efficient-WAM：具有低成本未来想象力的 1B 参数世界行动模型",
+          "abstract_zh": "通过将未来视觉预测与动作生成相结合，世界动作模型（WAM）已成为一种有前景的体现控制范式。然而，大多数现有的 WAM 依赖于逼真的未来预测，这会导致较高的推理延迟，并使实时机器人部署变得困难。这激发了更高效的 WAM 设计，保留未来视觉预测的控制优势，同时降低其推理成本。我们引入了 Efficient-WAM，这是一种世界行动模型，可以降低未来想象的成本，同时保留其控制优势。 Efficient-WAM 通过从 WAN-2.2-5B 传输的紧凑视频专家、令牌稀疏视频潜伏以及为视频分配比动作更少的采样步骤的非对称视频动作去噪来提高推理效率。 Efficient-WAM 不是为了视觉保真度而优化未来分支，而是将未来视频预测视为用于动作生成的紧凑指导信号。对 RoboTwin 2.0 和现实世界操作任务的综合实验表明，尽管未来预测明显粗糙，Efficient-WAM 仍保持强大的动作性能。在保持有竞争力的控制能力的同时，我们的 1B 参数模型可以在物理部署期间将每个块的延迟减少到 100 毫秒左右，实现比现有 WAM 提高 30 倍的速度。"
+        },
+        {
+          "id": "2606.11129",
+          "rank": 6,
+          "score": 80,
+          "reason_zh": "世界模型三铁人三项基准：物理忠实性+几何一致性+交互保真度，阿里达摩院",
+          "tags": [
+            "世界模型",
+            "数据集",
+            "开源"
+          ],
+          "title": "WorldOlympiad: Can Your World Model Survive a Triathlon?",
+          "authors": [
+            "Yuke Zhao",
+            "Wangbo Zhao",
+            "Weijie Wang",
+            "Zeyu Zhang",
+            "Dakai An",
+            "Akide Liu",
+            "Yinghao Yu",
+            "Jiasheng Tang",
+            "Fan Wang",
+            "Wei Wang",
+            "Bohan Zhuang"
+          ],
+          "abstract": "We introduce WorldOlympiad, a benchmark for diagnosing video-based world models across physical faithfulness, geometric consistency, and interaction fidelity. While existing benchmarks often focus on visual quality, semantic alignment, or short-term temporal coherence, they provide limited insight into whether generated videos obey physical rules, preserve coherent 3D structure, and sustain controllable interactions over long horizons. To address this gap, WorldOlympiad decomposes world-model evaluation into three complementary dimensions. The physical track uses object segmentation and MLLM-as-judge to assess whether generated videos follow interpretable rules in mechanics, thermal phenomena, and material properties. The geometry track reconstructs generated videos with Gaussian splatting and evaluates structural consistency, cross-view coherence, and camera-trajectory alignment. The interaction track assesses whether generated rollouts follow complex action prompts and maintain smooth, coherent transitions across consecutive video chunks. WorldOlympiad further covers three major downstream scenarios, including gaming, robotics, and general real-world videos, capturing diverse challenges from interactive control and embodied manipulation to open-domain motion and camera dynamics. Together, these tracks and scenarios form a scalable and interpretable evaluation suite that exposes failure modes beyond generic video quality. Experiments on state-of-the-art models reveal substantial gaps in physical reasoning, 3D consistency, and long-horizon interaction, underscoring the need for more structured evaluation protocols for generative world models.",
+          "abs_url": "https://arxiv.org/abs/2606.11129",
+          "pdf_url": "https://arxiv.org/pdf/2606.11129v1",
+          "html_url": "https://arxiv.org/html/2606.11129v1",
+          "figures": [
+            "https://arxiv.org/html/2606.11129v1/x1.png",
+            "https://arxiv.org/html/2606.11129v1/x2.png",
+            "https://arxiv.org/html/2606.11129v1/x3.png",
+            "https://arxiv.org/html/2606.11129v1/x4.png"
+          ],
+          "code_url": "https://github.com/alibaba-damo-academy/WorldOlympiad",
+          "project_url": "https://alibaba-damo-academy.github.io/WorldOlympiad/",
+          "code_links": [
+            "https://github.com/alibaba-damo-academy/WorldOlympiad"
+          ],
+          "project_links": [
+            "https://alibaba-damo-academy.github.io/WorldOlympiad/"
+          ],
+          "has_code": true,
+          "has_project": true,
+          "venue": null,
+          "comments": "Project Page: https://alibaba-damo-academy.github.io/WorldOlympiad/, Code: https://github.com/alibaba-damo-academy/WorldOlympiad",
+          "submitted": "2026-06-09T17:24:36Z",
+          "updated": "2026-06-09T17:24:36Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "世界奥林匹克：你的世界模特能在铁人三项比赛中幸存吗？",
+          "abstract_zh": "我们推出了 WorldOlympiad，这是一个用于诊断基于视频的世界模型的物理忠实度、几何一致性和交互保真度的基准。虽然现有的基准通常侧重于视觉质量、语义对齐或短期时间一致性，但它们对生成的视频是否遵守物理规则、保持连贯的 3D 结构以及在长期范围内维持可控交互的洞察力有限。为了解决这一差距，世界奥林匹克竞赛将世界模式评估分解为三个互补的维度。物理轨道使用对象分割和 MLLM 作为判断来评估生成的视频是否遵循力学、热现象和材料属性方面的可解释规则。几何轨道使用高斯分布重建生成的视频，并评估结构一致性、跨视图一致性和相机轨迹对齐。交互轨道评估生成的推出是否遵循复杂的动作提示，并在连续视频块之间保持平滑、连贯的过渡。 WorldOlympiad进一步涵盖了三个主要下游场景，包括游戏、机器人和一般现实世界视频，捕捉从交互控制和具体操作到开放域运动和相机动力学的各种挑战。这些轨道和场景共同构成了一个可扩展且可解释的评估套件，可揭示超出通用视频质量的故障模式。对最先进模型的实验揭示了物理推理、3D 一致性和长视野交互方面的巨大差距，强调了生成世界模型需要更结构化的评估协议。"
+        }
+      ]
+    },
+    {
+      "id": "reconstruction",
+      "name": "3D/4D 重建与生成",
+      "papers": [
+        {
+          "id": "2606.10645",
+          "rank": 1,
+          "score": 85,
+          "reason_zh": "从单目机器人视频解耦重建可交互3DGS数字孪生，建模接触交互与位姿突变",
+          "tags": [
+            "3D重建",
+            "3DGS",
+            "机器人"
+          ],
+          "title": "ManiSplat: Manipulation Trajectory Synthesis from Monocular Video via Decoupled 3D Gaussian Splatting",
+          "authors": [
+            "Wenhao Hu",
+            "Haonan Zhou",
+            "Liu Liu",
+            "Yun Du",
+            "Xinjie Wang",
+            "Ziang Li",
+            "Zhizhong Su",
+            "Gaoang Wang"
+          ],
+          "abstract": "Reconstructing dynamic and interactive 3D scenes from real-world observations remains a fundamental challenge in computer vision and robotics. While recent advances in 3D Gaussian Splatting have enabled high-fidelity static reconstruction, extending it to interactive environments with articulated robots and manipulable objects remains difficult due to complex contact interactions and abrupt pose changes. To address these challenges, we introduce ManiSplat, a unified framework that reconstructs controllable and decoupled Gaussian digital twins directly from monocular ego-view robotic videos. Our method introduces a Graph-Structured Disentangled Representation that separates the robot, objects, and background into independently optimizable Gaussian subfields organized within a scene graph. To ensure stability, we propose a Task-Oriented Spatio-Temporal Alignment module that leverages the inherent logic of manipulation tasks-alternating between Motion and Skill phases-to construct accurate pseudo-ground-truth trajectories. Finally, a joint photometric-geometric optimization ensures the reconstructed scenes are temporally coherent, physically consistent, and simulation-ready. Extensive experiments demonstrate that our approach reconstructs interaction-driven dynamic scenes with high fidelity and controllability, effectively supporting downstream robotic tasks and policy learning.",
+          "abs_url": "https://arxiv.org/abs/2606.10645",
+          "pdf_url": "https://arxiv.org/pdf/2606.10645v1",
+          "html_url": "https://arxiv.org/html/2606.10645v1",
+          "figures": [
+            "https://arxiv.org/html/2606.10645v1/x1.png",
+            "https://arxiv.org/html/2606.10645v1/x2.png",
+            "https://arxiv.org/html/2606.10645v1/x3.png",
+            "https://arxiv.org/html/2606.10645v1/fig/comparison_real.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": null,
+          "submitted": "2026-06-09T09:55:58Z",
+          "updated": "2026-06-09T09:55:58Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "ManiSplat：通过解耦 3D 高斯泼溅从单目视频合成操纵轨迹",
+          "abstract_zh": "从现实世界的观察中重建动态和交互式 3D 场景仍然是计算机视觉和机器人技术中的一个基本挑战。虽然 3D 高斯溅射的最新进展已经实现了高保真静态重建，但由于复杂的接触交互和突然的姿态变化，将其扩展到具有铰接式机器人和可操纵物体的交互式环境仍然很困难。为了应对这些挑战，我们引入了 ManiSplat，这是一个统一的框架，可以直接从单目自我视图机器人视频重建可控且解耦的高斯数字孪生。我们的方法引入了图结构解缠表示，将机器人、物体和背景分离成在场景图中组织的独立可优化的高斯子域。为了确保稳定性，我们提出了一种面向任务的时空对齐模块，该模块利用操作任务的固有逻辑（在运动和技能阶段之间交替）来构建准确的伪地面实况轨迹。最后，联合光度-几何优化可确保重建的场景在时间上一致、物理上一致且可进行模拟。大量实验表明，我们的方法以高保真度和可控性重建了交互驱动的动态场景，有效支持下游机器人任务和策略学习。"
+        },
+        {
+          "id": "2606.10988",
+          "rank": 2,
+          "score": 82,
+          "reason_zh": "前馈式3D物体动画生成，零推理优化即可为任意3D模型添加运动",
+          "tags": [
+            "3D重建",
+            "feed-forward",
+            "生成模型"
+          ],
+          "title": "AnimaSpark: A Feed-Forward Method for Animating Arbitrary 3D Objects",
+          "authors": [
+            "Yiming Zhao",
+            "Haoyu Sun",
+            "Aoyu Wang"
+          ],
+          "abstract": "While recent advancements in generative AI have substantially accelerated static 3D model creation workflows, the synthesis of category-agnostic 3D animations remains a significant bottleneck in 3D asset production. Current methods for category-agnostic animation generation exhibit critical limitations in inference speed, motion quality, and adherence to textual prompts, thereby leaving the process dependent on labor-intensive manual artistry. To address these challenges, this paper introduces AnimaSpark, a novel pipeline for category-agnostic 3D animation generation. Our approach is motivated by the key insight that for many fundamental motions in the 3D world, the corresponding joint transformations can often be effectively modeled within a two-dimensional subspace. The pipeline begins by rendering a rigged static 3D model into multi-layered image representations of its mesh and skeleton, which are subsequently fed into a video generation model. We then employ a keypoint tracking algorithm on the generated video to capture the motion of the skeletal joints projected onto the camera's viewing plane. In the final stage, we distill the planar translations and rotations from these tracked keypoints and lift them from the 2D domain into 3D space to animate the character. Comprehensive evaluations reveal that our method achieves superior performance over existing state-of-the-art techniques across key metrics, including text-motion alignment, quality of motion, and computational efficiency.",
+          "abs_url": "https://arxiv.org/abs/2606.10988",
+          "pdf_url": "https://arxiv.org/pdf/2606.10988v1",
+          "html_url": "https://arxiv.org/html/2606.10988v1",
+          "figures": [
+            "https://arxiv.org/html/2606.10988v1/x1.png",
+            "https://arxiv.org/html/2606.10988v1/x2.png",
+            "https://arxiv.org/html/2606.10988v1/x3.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": null,
+          "submitted": "2026-06-09T15:25:39Z",
+          "updated": "2026-06-09T15:25:39Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV",
+            "cs.GR"
+          ],
+          "title_zh": "AnimaSpark：用于任意 3D 对象动画的前馈方法",
+          "abstract_zh": "虽然生成式 AI 的最新进展极大地加速了静态 3D 模型创建工作流程，但与类别无关的 3D 动画的合成仍然是 3D 资产制作中的一个重大瓶颈。目前与类别无关的动画生成方法在推理速度、运动质量和遵守文本提示方面表现出严重的局限性，从而使该过程依赖于劳动密集型的手工艺术。为了应对这些挑战，本文介绍了 AnimaSpark，这是一种用于生成与类别无关的 3D 动画的新颖管道。我们的方法源于这样一个关键见解：对于 3D 世界中的许多基本运动，通常可以在二维子空间内有效地建模相应的联合变换。该管道首先将装配好的静态 3D 模型渲染为其网格和骨架的多层图像表示，随后将其输入视频生成模型。然后，我们对生成的视频采用关键点跟踪算法来捕获投影到相机观察平面上的骨骼关节的运动。在最后阶段，我们从这些跟踪的关键点中提取平面平移和旋转，并将它们从 2D 域提升到 3D 空间以对角色进行动画处理。综合评估表明，我们的方法在关键指标上实现了优于现有最先进技术的性能，包括文本运动对齐、运动质量和计算效率。"
+        },
+        {
+          "id": "2606.10478",
+          "rank": 3,
+          "score": 80,
+          "reason_zh": "VLM代码合成新范式做3D重建：用可执行Blender代码替代隐式/显式表示",
+          "tags": [
+            "3D重建",
+            "VLM"
+          ],
+          "title": "3D-CoS: A New 3D Reconstruction Paradigm Based on VLM Code Synthesis",
+          "authors": [
+            "Yuhao Wang",
+            "Puyi Wang",
+            "Linjie Li",
+            "Zhengyuan Yang",
+            "Kevin Qinghong Lin",
+            "Yu Cheng"
+          ],
+          "abstract": "Most recent 3D reconstruction and editing systems operate on implicit and explicit representations such as NeRF, point clouds, or meshes. While these representations enable high-fidelity rendering, they are fundamentally low-level and hard to control programmatically. In contrast, we propose and systematically evaluate a new 3D reconstruction paradigm, 3D Code Synthesis (3D-CoS), where 3D assets are constructed as executable Blender code, a programmatic and interpretable medium. To assess how well current VLMs can use code to represent 3D objects, we evaluate representative open-source and closed-source VLMs in code-based reconstruction under a unified protocol. We further introduce a suite of structured code-synthesis workflows, including blueprint-based planning, Retrieval-Augmented Generation (RAG) over Blender API documentation, few-shot geometric demonstrations, and a component-level Agent workflow for part-wise code generation. To demonstrate the unique advantages of this representation, we further evaluate localized text-driven modifications and compare our code-based edits with a point-cloud-based 3D editing baseline. Our study shows that code as a 3D representation offers strong controllability and locality, yielding stronger edit fidelity and better preservation of unedited regions in our targeted editing evaluation. Our work also analyzes the potential of this paradigm, delineates the current capability frontier of VLMs for programmatic 3D modeling, and highlights code synthesis as a promising direction for editable 3D reconstruction.",
+          "abs_url": "https://arxiv.org/abs/2606.10478",
+          "pdf_url": "https://arxiv.org/pdf/2606.10478v1",
+          "html_url": "https://arxiv.org/html/2606.10478v1",
+          "figures": [
+            "https://arxiv.org/html/2606.10478v1/x1.png",
+            "https://arxiv.org/html/2606.10478v1/x2.png",
+            "https://arxiv.org/html/2606.10478v1/x3.png",
+            "https://arxiv.org/html/2606.10478v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": "Preprint. 24 pages, 11 figures",
+          "submitted": "2026-06-09T06:46:29Z",
+          "updated": "2026-06-09T06:46:29Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "3D-CoS：基于VLM代码合成的新3D重建范式",
+          "abstract_zh": "大多数最新的 3D 重建和编辑系统都在隐式和显式表示上运行，例如 NeRF、点云或网格。虽然这些表示可以实现高保真渲染，但它们从根本上来说是低级的，并且难以以编程方式控制。相比之下，我们提出并系统地评估了一种新的 3D 重建范例，即 3D 代码合成 (3D-CoS)，其中 3D 资产被构建为可执行的 Blender 代码，这是一种编程和可解释的介质。为了评估当前 VLM 使用代码表示 3D 对象的能力，我们在统一协议下评估基于代码的重建中代表性的开源和闭源 VLM。我们进一步介绍了一套结构化代码合成工作流程，包括基于蓝图的规划、基于 Blender API 文档的检索增强生成 (RAG)、少量几何演示以及用于部分代码生成的组件级代理工作流程。为了展示这种表示的独特优势，我们进一步评估本地化文本驱动的修改，并将基于代码的编辑与基于点云的 3D 编辑基线进行比较。我们的研究表明，作为 3D 表示的代码提供了强大的可控性和局部性，在我们的目标编辑评估中产生更强的编辑保真度和更好地保存未编辑区域。我们的工作还分析了这种范例的潜力，描绘了用于程序化 3D 建模的 VLM 当前的能力前沿，并强调代码合成是可编辑 3D 重建的一个有前途的方向。"
+        }
+      ]
+    },
+    {
+      "id": "vla",
+      "name": "自动驾驶与机器人",
+      "papers": [
+        {
+          "id": "2606.10025",
+          "rank": 1,
+          "score": 92,
+          "reason_zh": "层级子目标策略框架解耦3D目标预测与本体执行，RSS 2026收录",
+          "tags": [
+            "VLA",
+            "机器人",
+            "操控",
+            "顶会",
+            "开源"
+          ],
+          "title": "GHOST: Hierarchical Sub-Goal Policies for Generalizing Robot Manipulation",
+          "authors": [
+            "Sriram Krishna",
+            "Ben Eisner",
+            "Haotian Zhan",
+            "Ying Yuan",
+            "Haoyu Zhen",
+            "Chuang Gan",
+            "Shubham Tulsiani",
+            "David Held"
+          ],
+          "abstract": "We present GHOST, a framework for learning visuomotor manipulation policies that generalize beyond the training distribution. GHOST factorizes control into (i) a high-level policy that predicts the next sub-goal as a distribution over 3D end-effector poses from multi-view RGB-D observations, and (ii) a low-level goal-conditioned controller that executes embodiment-specific actions. To condition image-based policies on 3D goals, we introduce a simple spatial interface that projects predicted goals into the image plane and represents them as end-effector heatmaps. Across a suite of manipulation tasks, this hierarchical factorization consistently improves performance and robustness compared to a flat Diffusion Policy.\n  Further, we show that this hierarchical interface also makes it easy to incorporate human demonstrations without relying on (noisy) action retargeting. As sub-goals are largely embodiment-agnostic, we train the high-level policy on human video to specify how learned skills should be applied and composed, while keeping the low-level policy trained purely on robot data. This hierarchy enables adaptation to novel objects and task variations using a small number of human demonstrations.",
+          "abs_url": "https://arxiv.org/abs/2606.10025",
+          "pdf_url": "https://arxiv.org/pdf/2606.10025v1",
+          "html_url": "https://arxiv.org/html/2606.10025v1",
+          "figures": [
+            "https://arxiv.org/html/2606.10025v1/x1.png",
+            "https://arxiv.org/html/2606.10025v1/x2.png",
+            "https://arxiv.org/html/2606.10025v1/figs/aloha_gripper.png",
+            "https://arxiv.org/html/2606.10025v1/figs/hand_gripper.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": "RSS",
+          "comments": "Accepted at RSS 2026",
+          "submitted": "2026-06-08T18:08:01Z",
+          "updated": "2026-06-08T18:08:01Z",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.CV",
+            "cs.LG",
+            "cs.RO"
+          ],
+          "title_zh": "GHOST：泛化机器人操作的分层子目标策略",
+          "abstract_zh": "我们提出了 GHOST，一个用于学习视觉运动操纵策略的框架，该策略可以推广到训练分布之外。 GHOST 将控制分解为 (i) 高级策略，该策略将下一个子目标预测为来自多视图 RGB-D 观察的 3D 末端执行器姿势的分布，以及 (ii) 执行特定于实施例的操作的低级目标条件控制器。为了根据 3D 目标调节基于图像的策略，我们引入了一个简单的空间接口，将预测目标投影到图像平面并将其表示为末端执行器热图。在一系列操作任务中，与平面扩散策略相比，这种分层分解持续提高了性能和稳健性。\n  此外，我们还表明，这种分层界面还可以轻松地合并人类演示，而无需依赖（嘈杂的）动作重定向。由于子目标在很大程度上与具体实施方式无关，因此我们在人类视频上训练高级策略，以指定如何应用和组合所学到的技能，同时保持低级策略纯粹在机器人数据上进行训练。这种层次结构可以通过少量的人类演示来适应新的物体和任务变化。"
+        },
+        {
+          "id": "2605.29662",
+          "rank": 2,
+          "score": 88,
+          "reason_zh": "即插即用VLA视觉token剪枝框架，利用深层注意力一致性保护关键信息",
+          "tags": [
+            "VLA",
+            "机器人",
+            "操控"
+          ],
+          "title": "SAFE-Pruner: Semantic Attention-Guided Future-Aware Token Pruning for Efficient Vision-Language-Action Manipulation",
+          "authors": [
+            "Shilin Ma",
+            "Chubin Zhang",
+            "Changyuan Wang",
+            "Yuji Wang",
+            "Yue Wu",
+            "Zixuan Wang",
+            "Jingqi Tian",
+            "Zheng Zhu",
+            "Yansong Tang"
+          ],
+          "abstract": "Real-time inference of vision-language-action (VLA) models is essential for robotic control. While visual token pruning has shown strong potential for accelerating inference, most existing methods mainly base pruning decisions on shallow-layer cues and risk discarding visual information required by deep layers. To address this issue, we propose SAFE-Pruner, a plug-and-play pruning framework that incorporates attention cues of future layers into pruning decisions. Specifically, we identify semantic attention consistency, the tendency that VLA models concentrate their attention probability mass on the same semantic entity across execution steps. Based on this observation, we design a forward-looking strategy to forecast the token saliency in deep layers, which prevents the premature removal of critical tokens and leads to more stable acceleration. We further introduce an adaptive subtask division strategy to detect abrupt attention shifts, thereby improving forecasting accuracy and pruning reliability. Extensive experiments in simulation and real-world settings demonstrate that our method achieves up to 1.89x speedup with a minimal degradation in success rate of less than 1.7%, while outperforming state-of-the-art methods by up to 1.9%.",
+          "abs_url": "https://arxiv.org/abs/2605.29662",
+          "pdf_url": "https://arxiv.org/pdf/2605.29662v1",
+          "html_url": "https://arxiv.org/html/2605.29662v1",
+          "figures": [
+            "https://arxiv.org/html/2605.29662v1/x1.png",
+            "https://arxiv.org/html/2605.29662v1/x2.png",
+            "https://arxiv.org/html/2605.29662v1/x3.png",
+            "https://arxiv.org/html/2605.29662v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": null,
+          "submitted": "2026-05-28T09:23:08Z",
+          "updated": "2026-05-28T09:23:08Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV",
+            "cs.RO"
+          ],
+          "title_zh": "SAFE-Pruner：语义注意力引导的未来感知令牌修剪，用于高效的视觉-语言-动作操作",
+          "abstract_zh": "视觉-语言-动作（VLA）模型的实时推理对于机器人控制至关重要。虽然视觉标记修剪显示出加速推理的强大潜力，但大多数现有方法主要基于浅层线索进行修剪决策，并且存在丢弃深层所需视觉信息的风险。为了解决这个问题，我们提出了 SAFE-Pruner，这是一种即插即用的剪枝框架，它将未来层的注意力线索纳入剪枝决策中。具体来说，我们识别了语义注意力一致性，即 VLA 模型将其注意力概率质量集中在跨执行步骤的同一语义实体上的趋势。基于这一观察，我们设计了一种前瞻性策略来预测深层的令牌显着性，这可以防止过早删除关键令牌并导致更稳定的加速。我们进一步引入自适应子任务划分策略来检测突然的注意力转移，从而提高预测准确性和修剪可靠性。在模拟和现实环境中进行的大量实验表明，我们的方法实现了高达 1.89 倍的加速，成功率下降最小，不到 1.7%，同时比最先进的方法高出高达 1.9%。"
+        },
+        {
+          "id": "2606.10340",
+          "rank": 3,
+          "score": 86,
+          "reason_zh": "全模态运动生成通才人形控制：脑部推理+小脑跟踪的分层架构，清华",
+          "tags": [
+            "VLA",
+            "机器人",
+            "具身智能",
+            "开源"
+          ],
+          "title": "OMG: Omni-Modal Motion Generation for Generalist Humanoid Control",
+          "authors": [
+            "Siqiao Huang",
+            "Kun-Ying Lee",
+            "Dongming Qiao",
+            "Guanqi He",
+            "Zhenyu Wang",
+            "Yitang Li",
+            "Shaoting Zhu",
+            "Hang Zhao"
+          ],
+          "abstract": "Humanoid whole-body control has made significant progress in recent years, yet existing approaches remain limited to few-skill policies with heavy reward engineering, or motion trackers that are difficult to extend to new input modalities. We argue that the key to general-purpose humanoid control is to build a scalable brain, a module capable of reasoning with diverse conditioning modalities, atop a reactive motion tracking cerebellum, mirroring the hierarchical structure of biological motor systems. Two challenges arise in realizing this vision: acquiring a vast amount of high-quality data to achieve general purpose control, and equipping the generator with the capability to condition on compositional, extensible multi-modal inputs. We present OMG, which addresses these challenges with a meticulous data curation, filtering and labeling pipeline, as well as a diffusion-based motion generation backbone that conditions on language, audio, and human reference motions. Extensive experiments validate OMG as an omni-modal whole-body controller exhibiting state-of-the-art performance, model scaling behavior and efficient adaptation to new distributions and modalities, marking a concrete step toward foundation models for humanoid robots.",
+          "abs_url": "https://arxiv.org/abs/2606.10340",
+          "pdf_url": "https://arxiv.org/pdf/2606.10340v1",
+          "html_url": "https://arxiv.org/html/2606.10340v1",
+          "figures": [
+            "https://arxiv.org/html/2606.10340v1/x1.png",
+            "https://arxiv.org/html/2606.10340v1/x2.png",
+            "https://arxiv.org/html/2606.10340v1/x3.png",
+            "https://arxiv.org/html/2606.10340v1/figs/omg_fig4.png"
+          ],
+          "code_url": null,
+          "project_url": "https://tsinghua-mars-lab.github.io/OMG/",
+          "code_links": [],
+          "project_links": [
+            "https://tsinghua-mars-lab.github.io/OMG/"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": null,
+          "comments": "Project Page: https://tsinghua-mars-lab.github.io/OMG/",
+          "submitted": "2026-06-09T02:46:14Z",
+          "updated": "2026-06-09T02:46:14Z",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.RO"
+          ],
+          "title_zh": "OMG：用于通用人形控制的全模态运动生成",
+          "abstract_zh": "近年来，人形全身控制取得了重大进展，但现有方法仍然仅限于具有大量奖励工程的少量技能策略，或难以扩展到新输入模式的运动跟踪器。我们认为，通用人形控制的关键是构建一个可扩展的大脑，一个能够以不同的调节模式进行推理的模块，位于反应性运动跟踪小脑之上，反映生物运动系统的层次结构。实现这一愿景面临两个挑战：获取大量高质量数据以实现通用控制，并为生成器配备以组合的、可扩展的多模式输入为条件的能力。我们推出了 OMG，它通过细致的数据管理、过滤和标记管道以及以语言、音频和人类参考运动为条件的基于扩散的运动生成主干来应对这些挑战。大量实验验证 OMG 作为全模式全身控制器，展现出最先进的性能、模型缩放行为以及对新分布和模式的高效适应，标志着向人形机器人基础模型迈出了具体的一步。"
+        },
+        {
+          "id": "2606.10305",
+          "rank": 4,
+          "score": 84,
+          "reason_zh": "多任务阶段感知奖励模型驱动VLA自提升，无需逐任务奖励标注",
+          "tags": [
+            "VLA",
+            "机器人",
+            "操控",
+            "强化学习",
+            "开源"
+          ],
+          "title": "SARM2: Multi-Task Stage Aware Reward Modeling for Self Improving Robotic Manipulation",
+          "authors": [
+            "Qianzhong Chen",
+            "Hau Zheng",
+            "Justin Yu",
+            "Suning Huang",
+            "Jiankai Sun",
+            "Ken Goldberg",
+            "Chuan Wen",
+            "Pieter Abbeel",
+            "Yide Shentu",
+            "Philipp Wu",
+            "Mac Schwager"
+          ],
+          "abstract": "Fine-tuning vision-language-action (VLA) policies for long-horizon manipulation still relies heavily on behavior cloning, which requires costly high-quality demonstrations and keeps policies near the demonstration distribution. Reward models can reduce this dependence by reweighting demonstrations and providing dense supervision for on-robot reinforcement learning (RL), but they must be dense, accurate, and general. Existing methods fall short: task-specific stage-aware models are accurate but require per-task annotations, while general vision-language-model (VLM) reward models are broadly applicable but too coarse for fine-grained long-horizon progress. We introduce RM, a multi-task stage-aware reward model that combines an action-primitive-based stage estimator with a multi-gate Mixture-of-Experts (MMoE) value head to produce dense per-step rewards across manipulation tasks. Building on RM, we further propose SPIRAL (Self-Policy Improvement via Reward-Aligned Learning), an on-policy reward-guided framework that improves VLA policies from cheap autonomous rollouts. On a 10-task benchmark, RM reduces value-estimation MSE by 80% over the strongest baselines; when used in SPIRAL, it improves task success from around 50% to near-perfect performance on Folding Shorts (58% to 100%) and Cleaning Whiteboard (50% to 90%), showing that high-quality dense rewards are key to a stable robot data flywheel. Project website: https://qianzhong-chen.github.io/sarm2.github.io/.",
+          "abs_url": "https://arxiv.org/abs/2606.10305",
+          "pdf_url": "https://arxiv.org/pdf/2606.10305v1",
+          "html_url": "https://arxiv.org/html/2606.10305v1",
+          "figures": [
+            "https://arxiv.org/html/2606.10305v1/x1.png",
+            "https://arxiv.org/html/2606.10305v1/x2.png",
+            "https://arxiv.org/html/2606.10305v1/x3.png",
+            "https://arxiv.org/html/2606.10305v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": "https://qianzhong-chen.github.io/sarm2.github.io/",
+          "code_links": [],
+          "project_links": [
+            "https://qianzhong-chen.github.io/sarm2.github.io/"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": null,
+          "comments": null,
+          "submitted": "2026-06-09T01:46:23Z",
+          "updated": "2026-06-09T01:46:23Z",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.RO"
+          ],
+          "title_zh": "SARM2：用于自我改进机器人操作的多任务阶段感知奖励建模",
+          "abstract_zh": "用于长视野操纵的微调视觉-语言-动作（VLA）策略仍然在很大程度上依赖于行为克隆，这需要昂贵的高质量演示并使策略保持在演示分布附近。奖励模型可以通过重新加权演示并为机器人强化学习（RL）提供密集监督来减少这种依赖性，但它们必须是密集、准确和通用的。现有方法存在不足：特定于任务的阶段感知模型是准确的，但需要每个任务的注释，而通用视觉语言模型（VLM）奖励模型广泛适用，但对于细粒度的长期进展来说过于粗糙。我们引入 RM，一种多任务阶段感知奖励模型，它将基于动作原语的阶段估计器与多门专家混合 (MMoE) 值头相结合，在操作任务中产生密集的每步奖励。在 RM 的基础上，我们进一步提出了 SPIRAL（通过奖励调整学习进行自我策略改进），这是一种基于策略的奖励引导框架，可以通过廉价的自主部署来改进 VLA 策略。在 10 项任务基准上，RM 使价值估计 MSE 比最强基准降低了 80%；当在 SPIRAL 中使用时，它在折叠短裤（58% 到 100%）和清洁白板（50% 到 90%）上的任务成功率从大约 50% 提高到近乎完美，这表明高质量的密集奖励是稳定的机器人数据飞轮的关键。项目网站：https://qianzhong-chen.github.io/sarm2.github.io/。"
+        },
+        {
+          "id": "2606.10568",
+          "rank": 5,
+          "score": 82,
+          "reason_zh": "空间感知动作验证器：测试时评估候选动作几何差异与任务影响，防抓取失败",
+          "tags": [
+            "VLA",
+            "机器人",
+            "操控"
+          ],
+          "title": "VeriSpace: Spatially Grounded Action Verification for Vision-Language-Action Models",
+          "authors": [
+            "Guiyu Zhao",
+            "Longteng Guo",
+            "Junyou Zhu",
+            "Jun Fu",
+            "Yanghong Mei",
+            "Bin Cao",
+            "Jie Jiang",
+            "Xingjian He",
+            "Jing Liu"
+          ],
+          "abstract": "Vision-language-action (VLA) models have shown strong promise for robotic manipulation, but their reliability at test time remains limited by one-shot action prediction, where even small action errors can cause grasp failure, collision, or incorrect task progression. A natural alternative is to equip VLA systems with test-time verification, allowing multiple candidate actions to be proposed and evaluated before execution. However, reliable action verification is challenging because it requires not only distinguishing subtle geometric differences between candidate actions, but also assessing whether an action makes meaningful progress toward the task goal. We present VeriSpace, a 3D-aware action verifier for test-time action selection in VLA systems. VeriSpace evaluates candidate actions through two key components: Dual-Path 3D-Injected Scene Encoding, which constructs a scene representation that jointly preserves visual semantics and explicit 3D geometry, and Spatially-Grounded Action Reasoning, which evaluates each action by reasoning over task-relevant spatial relations, geometric validity, and expected goal progress. Together, these components enable more reliable discrimination between subtle yet outcome-critical action candidates while remaining fully compatible with existing VLA policies. Experiments on public benchmarks and real-world robotic manipulation tasks show that VeriSpace consistently improves decision reliability over both underlying VLA policies and prior verification-based methods, yielding substantial gains in both in-distribution and out-of-distribution settings.",
+          "abs_url": "https://arxiv.org/abs/2606.10568",
+          "pdf_url": "https://arxiv.org/pdf/2606.10568v1",
+          "html_url": "https://arxiv.org/html/2606.10568v1",
+          "figures": [
+            "https://arxiv.org/html/2606.10568v1/x1.png",
+            "https://arxiv.org/html/2606.10568v1/x2.png",
+            "https://arxiv.org/html/2606.10568v1/x3.png",
+            "https://arxiv.org/html/2606.10568v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": "Submit to ACM MM",
+          "submitted": "2026-06-09T08:31:59Z",
+          "updated": "2026-06-09T08:31:59Z",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.RO"
+          ],
+          "title_zh": "VeriSpace：视觉-语言-动作模型的空间接地动作验证",
+          "abstract_zh": "视觉-语言-动作（VLA）模型在机器人操作方面显示出了强大的前景，但它们在测试时的可靠性仍然受到一次性动作预测的限制，即使很小的动作错误也可能导致抓取失败、碰撞或不正确的任务进展。一个自然的替代方案是为 VLA 系统配备测试时验证，允许在执行之前提出和评估多个候选操作。然而，可靠的动作验证具有挑战性，因为它不仅需要区分候选动作之间细微的几何差异，还需要评估动作是否在实现任务目标方面取得了有意义的进展。我们推出了 VeriSpace，一种 3D 感知动作验证器，用于 VLA 系统中的测试时动作选择。 VeriSpace 通过两个关键组件评估候选动作：双路径 3D 注入场景编码，它构建共同保留视觉语义和显式 3D 几何的场景表示；以及空间接地动作推理，它通过对任务相关的空间关系、几何有效性和预期目标进度进行推理来评估每个动作。这些组件共同实现了对微妙但结果关键的行动候选者之间更可靠的区分，同时保持与现有 VLA 政策的完全兼容。对公共基准和现实世界机器人操作任务的实验表明，VeriSpace 持续提高了基础 VLA 策略和先前基于验证的方法的决策可靠性，在分布内和分布外设置中产生了显着的收益。"
+        },
+        {
+          "id": "2606.10495",
+          "rank": 6,
+          "score": 80,
+          "reason_zh": "驱动VLA内在社会特征到动作头对齐，不标注即可实现安全社交导航",
+          "tags": [
+            "VLA",
+            "自动驾驶",
+            "导航"
+          ],
+          "title": "Act on What You See: Unlocking Safe Social Navigation in Vision-Language-Action Models",
+          "authors": [
+            "Qingzi Wang",
+            "Xiyang Wu",
+            "Guangyao Shi",
+            "Dianwei Chen",
+            "Xianfeng Yang",
+            "Dinesh Manocha"
+          ],
+          "abstract": "Safe social navigation requires robots to distinguish people from ordinary obstacles and to react before danger becomes imminent. We show that pretrained Vision-Language-Action (VLA) models already encode pedestrian-object distinctions and future collision signals in their internal representations, but behavior cloning fails to translate these signals into socially appropriate actions. To address this mismatch, we propose SALSA, a two-stage annotation-free post-training framework: (1) social behavioral alignment bridges intermediate-layer social features to the action head and trains on counterfactual human-object scene pairs to break visual saliency shortcuts; (2) temporal safety alignment provides automatically generated future-risk supervision to enable anticipatory collision avoidance. On SCAND and real-world deployment, SALSA reduces near-collisions by 86.4% and improves social counterfactual accuracy from 53% to 93%, demonstrating that safer social navigation can be achieved by teaching VLA policies to act on representations they already possess. These results show that pretrained VLA policies can be adapted for safer social navigation by better aligning their latent representations with action generation.",
+          "abs_url": "https://arxiv.org/abs/2606.10495",
+          "pdf_url": "https://arxiv.org/pdf/2606.10495v1",
+          "html_url": "https://arxiv.org/html/2606.10495v1",
+          "figures": [
+            "https://arxiv.org/html/2606.10495v1/figures/method_overview2.png",
+            "https://arxiv.org/html/2606.10495v1/Frame19.png",
+            "https://arxiv.org/html/2606.10495v1/Frame21.png",
+            "https://arxiv.org/html/2606.10495v1/Frame20.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": null,
+          "submitted": "2026-06-09T07:18:01Z",
+          "updated": "2026-06-09T07:18:01Z",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.RO"
+          ],
+          "title_zh": "根据您所看到的采取行动：在视觉-语言-行动模型中解锁安全的社交导航",
+          "abstract_zh": "安全的社交导航要求机器人能够区分人类和普通障碍物，并在危险迫近之前做出反应。我们表明，预训练的视觉-语言-动作（VLA）模型已经在其内部表示中编码了行人-物体区别和未来碰撞信号，但行为克隆无法将这些信号转化为适合社会的动作。为了解决这种不匹配问题，我们提出了 SALSA，这是一种两阶段的无注释后训练框架：（1）社交行为对齐将中间层社交特征与动作头联系起来，并在反事实的人-物体场景对上进行训练，以打破视觉显着性捷径； (2) 时间安全对齐提供自动生成的未来风险监督，以实现预期碰撞避免。在 SCAND 和现实世界部署中，SALSA 将近似碰撞减少了 86.4%，并将社交反事实准确性从 53% 提高到 93%，这表明通过教导 VLA 策略根据其已有的表示采取行动，可以实现更安全的社交导航。这些结果表明，预训练的 VLA 策略可以通过更好地将其潜在表示与动作生成保持一致，从而实现更安全的社交导航。"
+        }
+      ]
+    },
+    {
+      "id": "vlm",
+      "name": "VLM / LLM",
+      "papers": [
+        {
+          "id": "2606.10651",
+          "rank": 1,
+          "score": 85,
+          "reason_zh": "快手30B MoE多模态基础模型，首个将DeepSeek稀疏注意力适配GQA架构处理小时级视频",
+          "tags": [
+            "VLM",
+            "开源"
+          ],
+          "title": "Kwai Keye-VL-2.0 Technical Report",
+          "authors": [
+            "Kwai Keye Team",
+            "Bin Wen",
+            "Changyi Liu",
+            "Chengru Song",
+            "Chongling Rao",
+            "Guowang Zhang",
+            "Han Li",
+            "Haonan Fan",
+            "Hengrui Ju",
+            "Jiankang Chen",
+            "Jiapeng Chen",
+            "Jiawei Yuan",
+            "Kaixuan Yang",
+            "Kaiyu Jiang",
+            "Kun Gai",
+            "Lingzhi Zhou",
+            "Na Nie",
+            "Sen Na",
+            "Tianke Zhang",
+            "Tingting Gao",
+            "Xuanyu Zheng",
+            "Yulong Chen",
+            "Fan Yang",
+            "Haixuan Gao",
+            "Lele Yang",
+            "Mingqiao Liu",
+            "Muxi Diao",
+            "Qi Zhang",
+            "Qile Su",
+            "Wei Chen",
+            "Wentao Hong",
+            "Xingyu Lu",
+            "Yancheng Long",
+            "Yankai Yang",
+            "Yingxin Li",
+            "Yiyang Fan",
+            "Yu Xia",
+            "Yuzhe Chen",
+            "Ziliang Lai",
+            "Chuan Yi",
+            "Haonan Jia",
+            "Tianming Liang",
+            "Weixin Xu",
+            "Xiaoxiao Ma",
+            "Yang Tian",
+            "Yufei Han",
+            "Feng Han",
+            "Hang Li",
+            "Jing Wang",
+            "Jinghui Jia",
+            "Junmin Chen",
+            "Junyu Shi",
+            "Ruilin Zhang"
+          ],
+          "abstract": "We introduce Kwai Keye-VL-2.0-30B-A3B, an open-source Mixture-of-Experts (MoE) multimodal foundation model designed to advance long-video understanding and agentic intelligence. To address the challenges of ultra-long contexts, information redundancy, and prohibitive computational costs inherent in hour-level videos, Keye-VL-2.0 is the first to adapt DeepSeek Sparse Attention (DSA) to GQA-based multimodal architectures, enabling lossless 256K context processing while capturing critical frames and long-range temporal dependencies. This architecture is underpinned by a highly optimized training and inference infrastructure, including scalable video I/O, heterogeneous ViT-LM parallelism, and custom DSA kernels that significantly maximize throughput and minimize computational overhead. Furthermore, to overcome the algorithmic dilemma of catastrophic forgetting during multi-task alignment, we introduce Cross-Modal Multi-Teacher On-Policy Distillation (MOPD) paired with Context-RL and Video-RL. By distilling dense token-level teacher feedback from on-policy rollouts back into the MoE backbone, which activates only 3B parameters, Keye-VL-2.0 natively empowers advanced agent collaboration across Code, Tool, and Search scenarios with multimodal self-correction. Extensive evaluations across video understanding, temporal grounding, reasoning, STEM, and agent benchmarks demonstrate that Keye-VL-2.0-30B-A3B achieves state-of-the-art performance among models of similar scale, particularly excelling in fine-grained temporal localization on TimeLens and long-video comprehension on Video-MME-v2 and LongVideoBench. We release our model checkpoints to accelerate community progress toward scalable and robust multimodal agentic applications.",
+          "abs_url": "https://arxiv.org/abs/2606.10651",
+          "pdf_url": "https://arxiv.org/pdf/2606.10651v1",
+          "html_url": "https://arxiv.org/html/2606.10651v1",
+          "figures": [
+            "https://arxiv.org/html/2606.10651v1/x2.png",
+            "https://arxiv.org/html/2606.10651v1/x3.png",
+            "https://arxiv.org/html/2606.10651v1/x4.png",
+            "https://arxiv.org/html/2606.10651v1/x5.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": "31 pages, 11 figures",
+          "submitted": "2026-06-09T09:58:08Z",
+          "updated": "2026-06-09T09:58:08Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "快手-VL-2.0技术报告",
+          "abstract_zh": "我们推出了 Kwai Keye-VL-2.0-30B-A3B，这是一种开源专家混合 (MoE) 多模态基础模型，旨在促进长视频理解和代理智能。为了解决小时级视频固有的超长上下文、信息冗余和计算成本过高的挑战，Keye-VL-2.0 率先将 DeepSeek 稀疏注意力 (DSA) 应用于基于 GQA 的多模态架构，实现无损 256K 上下文处理，同时捕获关键帧和长范围时间依赖性。该架构以高度优化的训练和推理基础设施为基础，包括可扩展视频 I/O、异构 ViT-LM 并行性和自定义 DSA 内核，可显着最大化吞吐量并最小化计算开销。此外，为了克服多任务对齐过程中灾难性遗忘的算法困境，我们引入了与 Context-RL 和 Video-RL 配对的跨模态多教师 On-Policy Distillation (MOPD)。通过将政策部署中密集的代币级教师反馈提炼回 MoE 主干网（仅激活 3B 参数），Keye-VL-2.0 本身就可以通过多模式自我校正实现跨代码、工具和搜索场景的高级代理协作。对视频理解、时间基础、推理、STEM 和智能体基准测试的广泛评估表明，Keye-VL-2.0-30B-A3B 在类似规模的模型中实现了最先进的性能，特别是在 TimeLens 上的细粒度时间定位以及 Video-MME-v2 和 LongVideoBench 上的长视频理解方面表现出色。我们发布模型检查点，以加速社区朝着可扩展且强大的多模式代理应用程序迈进。"
+        }
+      ]
+    }
+  ],
+  "total_selected": 16
+}
