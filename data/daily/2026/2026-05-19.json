@@ -12002,12 +12002,7 @@
       "title_zh": "PEIRA：通过视图间回归器对齐学习预测编码器",
       "abstract_zh": "非对比自监督学习 (SSL) 是预测表示学习的有效框架，但流行的（并且在实践中有效的）方法，如 SimSiam、BYOL、I-JEPA 或 DINO，依赖于一种自我蒸馏的形式来训练师生网络，但人们仍然知之甚少，因为它们通常不会最小化明确定义的目标。我们使用正则化线性回归器来分析联合嵌入预测架构（JEPA）的一种变体的动力学，以预测数据的两个视图的学习表示，并充分表征其稳定性：非塌陷的稳定平衡与领先的非线性规范相关子空间一致，而塌陷的平衡也可能是稳定的吸引子。受此结果的启发，我们引入了 PEIRA，这是一种非对比 SSL 方法，具有通过最优线性回归量的轨迹定义的明确目标。我们证明，其唯一稳定的平衡是非平凡的全局最小化，并恢复相同的规范相关子空间，并通过正则化选择有效维度。 ImageNet-1K 和 CIFAR-10 上的实验表明 PEIRA 与 VICReg 和 LeJEPA 基线具有竞争力，定性实证结果支持了该理论。",
       "html_url": "https://arxiv.org/html/2605.17671v1",
-      "figures": [
-        "https://arxiv.org/html/2605.17671v1/best_runs_peira_3__peira_comp__reg_sweep__runs_3__alignment.png",
-        "https://arxiv.org/html/2605.17671v1/best_runs_peira_3__peira_comp__reg_sweep__runs_3__spectrum.png",
-        "https://arxiv.org/html/2605.17671v1/best_runs_peira_3__peira_comp__reg_sweep__runs_3__both.png",
-        "https://arxiv.org/html/2605.17671v1/x1.png"
-      ]
+      "figures": []
     },
     {
       "arxiv_id": "2605.17669",
