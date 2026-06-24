@@ -1,0 +1,26 @@
+{
+  "date": "2026-06-23",
+  "total_candidates": 0,
+  "categories": [
+    {
+      "id": "worldmodel",
+      "name": "世界模型&视频/场景生成模型",
+      "papers": []
+    },
+    {
+      "id": "reconstruction",
+      "name": "3D/4D 重建与生成",
+      "papers": []
+    },
+    {
+      "id": "vla",
+      "name": "自动驾驶与机器人",
+      "papers": []
+    },
+    {
+      "id": "vlm",
+      "name": "VLM / LLM",
+      "papers": []
+    }
+  ]
+}
