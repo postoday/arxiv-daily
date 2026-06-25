@@ -1,0 +1,680 @@
+{
+  "date": "2026-06-24",
+  "total_candidates": 122,
+  "categories": [
+    {
+      "id": "worldmodel",
+      "name": "世界模型&视频/场景生成模型",
+      "papers": [
+        {
+          "id": "2606.24876",
+          "title": "FLAT: Feedforward Latent Triangle Splatting for Geometrically Accurate Scene Generation",
+          "title_zh": "FLAT：前馈潜在三角形喷射，用于生成几何精确的场景",
+          "authors": [
+            "Orest Kupyn",
+            "Goutam Bhat",
+            "Philipp Henzler",
+            "Fabian Manhardt",
+            "Christian Rupprecht"
+          ],
+          "abstract": "Generating explorable 3D scenes from a single image requires strong generative priors and accurate geometric representations suitable for downstream use. Current video diffusion models offer high-quality generation and implicitly encode multi-view geometric structure in latent space. However, existing feedforward latent scene decoders typically output volumetric 3D Gaussians that lack a well-defined surface, limiting their use in simulation or standard graphics pipelines. This motivates decoding surface-aligned primitives that are not only renderable but also closer to explicit geometric assets. We ask whether compressed video diffusion latents can be mapped directly to explicit surface primitives in a single pass. To this end, we introduce FLAT and, for the first time, show that triangle splats can be decoded directly from video diffusion latents. Compared with decoding 3D Gaussians, predicting flat primitives is notoriously more challenging due to high sensitivity to primitive orientations, oftentimes leading to poor gradient flow. FLAT solves with two key ingredients: a ray-centered rotation parameterization for triangle regression and a novel product window function that improves gradient flow during differentiable triangle rendering. On standard benchmarks, FLAT achieves significantly better geometric accuracy while maintaining competitive visual quality compared to state-of-the-art feedforward baselines. We further show that a lightweight test-time refinement step converts the predicted triangle soup into a fully opaque, game-engine-ready representation that supports real-time rendering. By evaluating 3DGS, 2DGS, and triangle splatting variants under an identical training setup, we provide the first systematic analysis of representation tradeoffs in feedforward scene generation. The project page is available at https://flat-splat.github.io",
+          "abstract_zh": "从单个图像生成可探索的 3D 场景需要强大的生成先验和适合下游使用的准确几何表示。当前的视频扩散模型提供高质量的生成并在潜在空间中隐式编码多视图几何结构。然而，现有的前馈潜在场景解码器通常输出缺乏明确定义表面的体积 3D 高斯，限制了它们在模拟或标准图形管道中的使用。这促使解码表面对齐的图元，这些图元不仅可渲染，而且更接近显式几何资产。我们询问压缩视频扩散潜伏是否可以在单次传递中直接映射到显式表面基元。为此，我们引入了 FLAT，并首次证明三角形图可以直接从视频扩散潜伏中解码。与解码 3D 高斯分布相比，由于对基元方向高度敏感，预测平坦基元更具挑战性，通常会导致梯度流较差。 FLAT 使用两个关键要素进行求解：用于三角形回归的以光线为中心的旋转参数化，以及改进可微三角形渲染期间的梯度流的新颖的乘积窗口函数。在标准基准测试中，与最先进的前馈基线相比，FLAT 实现了明显更好的几何精度，同时保持了有竞争力的视觉质量。我们进一步表明，轻量级测试时细化步骤将预测的三角形汤转换为完全不透明、支持实时渲染的游戏引擎就绪表示。通过在相同的训练设置下评估 3DGS、2DGS 和三角形喷射变体，我们首次对前馈场景生成中的表示权衡进行系统分析。项目页面位于 https://flat-splat.github.io",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "submitted": "2026-06-23T17:53:41Z",
+          "updated": "2026-06-23T17:53:41Z",
+          "has_code": false,
+          "has_project": true,
+          "code_links": [],
+          "project_links": [
+            "https://flat-splat.github.io"
+          ],
+          "code_url": null,
+          "project_url": "https://flat-splat.github.io",
+          "abs_url": "https://arxiv.org/abs/2606.24876",
+          "pdf_url": "https://arxiv.org/pdf/2606.24876v1",
+          "html_url": "https://arxiv.org/html/2606.24876v1",
+          "figures": [
+            "https://arxiv.org/html/2606.24876v1/images/main_page.png",
+            "https://arxiv.org/html/2606.24876v1/x1.png",
+            "https://arxiv.org/html/2606.24876v1/images/window_function.png",
+            "https://arxiv.org/html/2606.24876v1/images/geo_quality.png"
+          ],
+          "venue": null,
+          "comments": null,
+          "rank": 1,
+          "score": 92,
+          "reason_zh": "从视频扩散潜空间解码表面三角形面片，前馈式单图生成几何精确的可探索3D场景",
+          "tags": [
+            "生成模型",
+            "3D重建",
+            "feed-forward",
+            "世界模型"
+          ],
+          "arxiv_id": "2606.24876"
+        },
+        {
+          "id": "2606.24152",
+          "title": "Autonomous Video Generation with Counterfactual Controllability for Self-Evolving World Models",
+          "title_zh": "具有反事实可控性的自主视频生成，用于自我演化的世界模型",
+          "authors": [
+            "Xin Wang",
+            "Wenxuan Liu",
+            "Tongtong Feng",
+            "Wenwu Zhu"
+          ],
+          "abstract": "Existing literature claims that video generation essentially is world modelling. On the one hand, the claim is productive because it pushes generative AI beyond static images and toward temporally extended physical scenes. On the other hand, this claim dangerously relies on the belief that scaling visual prediction alone will automatically yield physical agents. We prefer a more accurate statement: video generation models learn a partial, implicit spatiotemporal world model, but not a fully grounded or controllable one. The reason is as follows: a model may generate a plausible video of a drone crossing a forest or a robot arm manipulating a cup, yet still fail to know which variables are controllable, which constraints belong to a particular body and which futures remain valid under intervention. The frontier in essence is not predictive realism alone, instead it emphasizes a self-evolving generative nature that requires the decisive criterion to be counterfactual controllability: the capability of asking what would happen under an action, to test whether the generated future can survive embodiment constraints and to feed the resulting action knowledge back into future imagination (generation). Therefore, in this paper we present a new perspective, i.e., autonomous video generation with counterfactual controllability is one promising way to realize self-evolving world models.",
+          "abstract_zh": "现有文献声称视频生成本质上是世界建模。一方面，这种说法是富有成效的，因为它推动生成式人工智能超越静态图像，走向时间延伸的物理场景。另一方面，这种说法危险地依赖于这样一种信念，即仅扩展视觉预测就会自动产生物理代理。我们更喜欢一种更准确的说法：视频生成模型学习部分的、隐式的时空世界模型，但不是完全接地或可控的模型。原因如下：模型可能会生成无人机穿越森林或机器人手臂操纵杯子的合理视频，但仍然无法知道哪些变量是可控的，哪些约束属于特定主体，以及哪些未来在干预下仍然有效。本质上，前沿不仅仅是预测现实主义，相反，它强调自我进化的生成性，需要反事实可控性作为决定性标准：询问在行动下会发生什么的能力，测试生成的未来是否能够在具体约束下生存，并将由此产生的行动知识反馈到未来的想象（生成）中。因此，在本文中，我们提出了一个新的视角，即具有反事实可控性的自主视频生成是实现自我进化世界模型的一种有前途的方法。",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV",
+            "cs.LG"
+          ],
+          "submitted": "2026-06-23T05:19:47Z",
+          "updated": "2026-06-23T05:19:47Z",
+          "has_code": false,
+          "has_project": false,
+          "code_links": [],
+          "project_links": [],
+          "code_url": null,
+          "project_url": null,
+          "abs_url": "https://arxiv.org/abs/2606.24152",
+          "pdf_url": "https://arxiv.org/pdf/2606.24152v1",
+          "html_url": "https://arxiv.org/html/2606.24152v1",
+          "figures": [
+            "https://arxiv.org/html/2606.24152v1/x1.png"
+          ],
+          "venue": null,
+          "comments": "5 pages, 1 figure",
+          "rank": 2,
+          "score": 88,
+          "reason_zh": "指出视频生成≠世界模型，提出反事实可控视频生成框架让世界模型自演进",
+          "tags": [
+            "世界模型",
+            "生成模型"
+          ],
+          "arxiv_id": "2606.24152"
+        },
+        {
+          "id": "2606.24101",
+          "title": "NavWM: A Unified Navigation World Model for Foresight-Driven Planning",
+          "title_zh": "NavWM：用于前瞻性驱动规划的统一导航世界模型",
+          "authors": [
+            "Yanghong Mei",
+            "Longteng Guo",
+            "Ming-Ming Yu",
+            "Guiyu Zhao",
+            "Xingjian He"
+          ],
+          "abstract": "Conventional visual navigation policies often struggle with myopic decision-making and mode collapse in complex environments. While world models offer a promising alternative, existing paradigms typically isolate perception, generation, and control, failing to capture their shared spatio-temporal dynamics. In this paper, we propose NavWM, a unified navigation world model that seamlessly integrates latent world reasoning, multimodal action prediction, and controllable visual generation. At its core, NavWM leverages latent world tokens to distill geometric and semantic priors, endowing the agent with robust structural understanding. To overcome the limitations of deterministic policies, we introduce an anchor-based multimodal trajectory forecasting framework that generates a diverse action space. This inherent diversity explicitly empowers the generative world model to act as a robust closed-loop planner, utilizing visual foresight to evaluate and select the optimal path. Extensive experiments across diverse robotics datasets demonstrate that NavWM significantly advances the state-of-the-art, delivering remarkable improvements in both high-fidelity future state generation and zero-shot navigation success.",
+          "abstract_zh": "传统的视觉导航策略常常面临复杂环境中短视决策和模式崩溃的问题。虽然世界模型提供了一个有前途的替代方案，但现有的范式通常将感知、生成和控制隔离开来，无法捕捉它们共享的时空动态。在本文中，我们提出了 NavWM，一种统一的导航世界模型，无缝集成了潜在世界推理、多模态动作预测和可控视觉生成。 NavWM 的核心是利用潜在世界标记来提取几何和语义先验，从而赋予代理强大的结构理解能力。为了克服确定性策略的局限性，我们引入了基于锚的多模态轨迹预测框架，该框架可生成多样化的行动空间。这种固有的多样性明确地使生成世界模型能够充当强大的闭环规划器，利用视觉远见来评估和选择最佳路径。跨不同机器人数据集的广泛实验表明，NavWM 显着推进了最先进的技术，在高保真未来状态生成和零样本导航成功方面都取得了显着改进。",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV",
+            "cs.RO"
+          ],
+          "submitted": "2026-06-23T03:30:20Z",
+          "updated": "2026-06-23T03:30:20Z",
+          "has_code": false,
+          "has_project": false,
+          "code_links": [],
+          "project_links": [],
+          "code_url": null,
+          "project_url": null,
+          "abs_url": "https://arxiv.org/abs/2606.24101",
+          "pdf_url": "https://arxiv.org/pdf/2606.24101v1",
+          "html_url": "https://arxiv.org/html/2606.24101v1",
+          "figures": [
+            "https://arxiv.org/html/2606.24101v1/x1.png",
+            "https://arxiv.org/html/2606.24101v1/x2.png",
+            "https://arxiv.org/html/2606.24101v1/x3.png",
+            "https://arxiv.org/html/2606.24101v1/x4.png"
+          ],
+          "venue": "ECCV",
+          "comments": "13 pages, 5 figures, accepted to ECCV 2026",
+          "rank": 3,
+          "score": 87,
+          "reason_zh": "统一导航世界模型：潜空间推理+多模态动作预测+可控视觉生成三合一，ECCV 2026",
+          "tags": [
+            "世界模型",
+            "导航",
+            "生成模型",
+            "顶会"
+          ],
+          "arxiv_id": "2606.24101"
+        },
+        {
+          "id": "2606.24301",
+          "title": "MM-TRELLIS: Point-Cloud Guided Multi-Modal 3D Vehicle Generation in Autonomous Driving",
+          "title_zh": "MM-TRELLIS：自动驾驶中点云引导的多模态 3D 车辆生成",
+          "authors": [
+            "Hongli Xiao",
+            "Youjian Zhang",
+            "Yucai Bai",
+            "Chaoyue Wang",
+            "Yaohui Jin"
+          ],
+          "abstract": "Recovering realistic 3D vehicle models from autonomous driving scenes is crucial for synthesizing training data and building simulation environment. However, most existing vehicle generation methods fail to fully exploit multimodal sensors i.e. multi-view images and LiDAR point clouds) and rely on neural rendering based reconstruction, leading to low-quality mesh. Recently, native 3D generative models have made significant progress, yet they are not built for arbitrary multi-view inputs and often struggle with in-the-wild driving images. In this work, we present MM-TRELLIS, a multi-modal version of TRELLIS for in-the-wild 3D vehicle generation that integrates LiDAR and image sensors from autonomous driving datasets into native 3D generative models. Specifically, multi-view images are cycled as conditioning inputs, while LiDAR point clouds provide test-time guidance to ensure geometric accuracy and cross-view consistency. During denoising, we first align the guidance point cloud with the model priors, then enforce consistency between the generated geometry and the guidance point cloud. Finally, we introduce a voxel filtering strategy based on the opacity of 3D Gaussian Splatting to suppress floaters and produce clean meshes. Comprehensive experiments on Waymo dataset demonstrate our method outperforms existing methods in high-fidelity 3D vehicle generation. Code is available at https://github.com/HongliXiao/MM-TRELLIS.",
+          "abstract_zh": "从自动驾驶场景中恢复真实的 3D 车辆模型对于合成训练数据和构建模拟环境至关重要。然而，大多数现有的车辆生成方法无法充分利用多模态传感器（即多视图图像和激光雷达点云），而是依赖基于神经渲染的重建，导致网格质量低下。最近，原生 3D 生成模型取得了重大进展，但它们并不是为任意多视图输入而构建的，并且经常难以处理野外驾驶图像。在这项工作中，我们提出了 MM-TRELLIS，这是一种用于野外 3D 车辆生成的 TRELLIS 多模态版本，它将来自自动驾驶数据集的 LiDAR 和图像传感器集成到原生 3D 生成模型中。具体来说，多视图图像循环作为条件输入，而 LiDAR 点云提供测试时指导，以确保几何精度和跨视图一致性。在去噪过程中，我们首先将引导点云与模型先验对齐，然后强制生成的几何图形和引导点云之间的一致性。最后，我们引入了一种基于 3D 高斯泼溅不透明度的体素过滤策略，以抑制漂浮物并生成干净的网格。 Waymo 数据集上的综合实验表明，我们的方法在高保真 3D 车辆生成方面优于现有方法。代码可在 https://github.com/hongliXiao/MM-TRELLIS 获取。",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "submitted": "2026-06-23T08:31:39Z",
+          "updated": "2026-06-23T08:31:39Z",
+          "has_code": true,
+          "has_project": false,
+          "code_links": [
+            "https://github.com/HongliXiao/MM-TRELLIS"
+          ],
+          "project_links": [],
+          "code_url": "https://github.com/HongliXiao/MM-TRELLIS",
+          "project_url": null,
+          "abs_url": "https://arxiv.org/abs/2606.24301",
+          "pdf_url": "https://arxiv.org/pdf/2606.24301v1",
+          "html_url": "https://arxiv.org/html/2606.24301v1",
+          "figures": [
+            "https://arxiv.org/html/2606.24301v1/figs/1.teaser_img.png",
+            "https://arxiv.org/html/2606.24301v1/figs/2.pipe.png",
+            "https://arxiv.org/html/2606.24301v1/figs/3.nvs_compare.png",
+            "https://arxiv.org/html/2606.24301v1/figs/4.geo_comp.png"
+          ],
+          "venue": null,
+          "comments": null,
+          "rank": 5,
+          "score": 83,
+          "reason_zh": "多模态3D车辆生成：融合多视图图像与LiDAR点云，直接输出仿真就绪的3D车辆Mesh",
+          "tags": [
+            "生成模型",
+            "自动驾驶",
+            "闭环仿真",
+            "开源"
+          ],
+          "arxiv_id": "2606.24301"
+        },
+        {
+          "id": "2606.24257",
+          "title": "3DCarGen: Scalable 3D Car Generation via 3D-consistent Multi-view Synthesis",
+          "title_zh": "3DCarGen：通过 3D 一致的多视图合成生成可扩展的 3D 汽车",
+          "authors": [
+            "Hongli Xiao",
+            "Youjian Zhang",
+            "Yaohui Jin",
+            "Xiaoguang Ren",
+            "Wenjing Yang"
+          ],
+          "abstract": "High-quality 3D vehicle assets are essential for autonomous driving simulation. Although multi-view diffusion-based paradigms enable controllable single-image reconstruction, they typically produce limited viewpoints and exhibit cross-view geometric inconsistencies, thereby reducing reconstruction fidelity in real-world scenarios. In this work, we introduce 3DCarGen, a scalable single-view 3D car generation framework designed for real-world images by synthesizing an arbitrary number of 3D-consistent multi-view images. Specifically, given a single image as input, we first synthesize a set of images from fixed viewpoints. These images are then fed into a feed-forward reconstruction model, resulting in a coarse 3D representation based on 3D Gaussian Splatting. Conditioned on this explicit 3D prior, our multi-view diffusion model generates 3D-consistent images from arbitrary camera viewpoints. We further extend a fast mesh reconstruction algorithm by incorporating color-normal joint optimization to recover detailed and coherent 3D vehicle models from the synthesized dense views. Extensive experiments on synthetic and real-world datasets demonstrate that our approach achieves robust geometric consistency and reconstruction fidelity compared to existing methods. Code and models will be released.",
+          "abstract_zh": "高质量的3D车辆资产对于自动驾驶模拟至关重要。尽管基于多视图扩散的范例能够实现可控的单图像重建，但它们通常会产生有限的视点并表现出跨视图几何不一致，从而降低了现实场景中的重建保真度。在这项工作中，我们介绍了 3DCarGen，这是一种可扩展的单视图 3D 汽车生成框架，通过合成任意数量的 3D 一致的多视图图像来设计真实世界图像。具体来说，给定单个图像作为输入，我们首先从固定的视点合成一组图像。然后将这些图像输入前馈重建模型，从而产生基于 3D 高斯分布的粗略 3D 表示。以这种显式 3D 先验为条件，我们的多视图扩散模型可以从任意相机视点生成 3D 一致的图像。我们通过结合颜色法线联合优化进一步扩展了快速网格重建算法，以从合成的密集视图中恢复详细且连贯的 3D 车辆模型。对合成数据集和真实数据集的大量实验表明，与现有方法相比，我们的方法实现了稳健的几何一致性和重建保真度。代码和模型将被发布。",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "submitted": "2026-06-23T07:44:14Z",
+          "updated": "2026-06-23T07:44:14Z",
+          "has_code": false,
+          "has_project": false,
+          "code_links": [],
+          "project_links": [],
+          "code_url": null,
+          "project_url": null,
+          "abs_url": "https://arxiv.org/abs/2606.24257",
+          "pdf_url": "https://arxiv.org/pdf/2606.24257v1",
+          "html_url": "https://arxiv.org/html/2606.24257v1",
+          "figures": [
+            "https://arxiv.org/html/2606.24257v1/figs/2issues_of_MVDiffusion.png",
+            "https://arxiv.org/html/2606.24257v1/figs/pipeline.png",
+            "https://arxiv.org/html/2606.24257v1/figs/nvs_qualitative.png",
+            "https://arxiv.org/html/2606.24257v1/figs/mesh_qualitative.png"
+          ],
+          "venue": null,
+          "comments": null,
+          "rank": 7,
+          "score": 78,
+          "reason_zh": "单视图3D车辆生成：合成任意数量几何一致多视图，再重建为高质量3D资产",
+          "tags": [
+            "生成模型",
+            "自动驾驶",
+            "闭环仿真"
+          ],
+          "arxiv_id": "2606.24257"
+        },
+        {
+          "id": "2606.24829",
+          "title": "GeoT2V-Bench: Benchmarking 3D Consistency in Text-to-Video Models via 3D Reconstruction",
+          "title_zh": "GeoT2V-Bench：通过 3D 重建对文本到视频模型的 3D 一致性进行基准测试",
+          "authors": [
+            "Chenrui Fan",
+            "Paolo Favaro"
+          ],
+          "abstract": "Camera-prompted text-to-video (T2V) models are increasingly used to synthesize virtual camera captures, such as orbiting objects or moving through static scenes. For these outputs, visual plausibility is insufficient: the generated frames should also provide coherent multi-view evidence for a single static 3D scene. We introduce GeoT2V-Bench, a reconstruction-based diagnostic benchmark for evaluating whether camera-prompted T2V clips can support explicit rigid 3D reconstruction. Our pipeline estimates per-frame camera intrinsics and poses with VGGT-style geometry estimation, fits DeformableGS, derives a static MedianGS proxy by temporal-median aggregation, and renders this proxy along the estimated camera path. Instead of producing a pass/fail label or a single scalar score, GeoT2V-Bench reports a continuous reconstruction profile covering apparent image motion, estimated trajectory behavior, MedianGS static rendering error, static-render flow agreement, and the gap between flexible and static fits. On a fair-format four-seed evaluation with 3,840 completed reconstructions from 12 open-weight model configurations and 80 GeCo-Eval static-scene prompts, we find that visible motion, static rendering error, flow agreement, and flexible-vs-static behavior often disagree. GeoT2V-Bench therefore captures complementary failure modes that emerge when generated videos are tested as global static-scene acquisitions.",
+          "abstract_zh": "相机提示的文本到视频 (T2V) 模型越来越多地用于合成虚拟相机捕获的图像，例如绕轨道运行的物体或在静态场景中移动。对于这些输出，视觉可信度是不够的：生成的帧还应该为单个静态 3D 场景提供连贯的多视图证据。我们推出了 GeoT2V-Bench，这是一种基于重建的诊断基准，用于评估相机提示的 T2V 剪辑是否可以支持显式刚性 3D 重建。我们的管道估计每帧相机的内在特征，并使用 VGGT 风格的几何估计来估计姿势，适合 DeformableGS，通过时间中值聚合导出静态 MedianGS 代理，并沿着估计的相机路径渲染该代理。 GeoT2V-Bench 不是生成通过/失败标签或单个标量分数，而是报告连续重建轮廓，涵盖明显图像运动、估计轨迹行为、MedianGS 静态渲染误差、静态渲染流协议以及灵活和静态拟合之间的差距。在公平格式四种子评估中，根据 12 个开放权重模型配置和 80 个 GeCo-Eval 静态场景提示完成了 3,840 个重建，我们发现可见运动、静态渲染错误、流程一致性以及灵活与静态行为常常不一致。因此，GeoT2V-Bench 捕获了当生成的视频作为全局静态场景采集进行测试时出现的补充故障模式。",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "submitted": "2026-06-23T17:12:21Z",
+          "updated": "2026-06-23T17:12:21Z",
+          "has_code": false,
+          "has_project": false,
+          "code_links": [],
+          "project_links": [],
+          "code_url": null,
+          "project_url": null,
+          "abs_url": "https://arxiv.org/abs/2606.24829",
+          "pdf_url": "https://arxiv.org/pdf/2606.24829v1",
+          "html_url": null,
+          "figures": [],
+          "venue": null,
+          "comments": "36 pages, 17 figures, 18 tables",
+          "rank": 9,
+          "score": 68,
+          "reason_zh": "用3D重建反哺T2V评测：GeoT2V-Bench衡量相机提示视频的多视图几何一致性",
+          "tags": [
+            "生成模型",
+            "3D重建",
+            "数据集"
+          ],
+          "arxiv_id": "2606.24829"
+        }
+      ]
+    },
+    {
+      "id": "reconstruction",
+      "name": "3D/4D 重建与生成",
+      "papers": [
+        {
+          "id": "2606.24628",
+          "title": "ArtiTwinSplat: Interactable Digital Twin Reconstruction via Gaussian Splatting from RGB-D videos",
+          "title_zh": "ArtiTwinSplat：通过 RGB-D 视频的高斯分布进行交互式数字孪生重建",
+          "authors": [
+            "Pranjal Mishra",
+            "René Zurbrügg",
+            "Max Wilder-Smith",
+            "Marco Hutter",
+            "Marc Pollefeys"
+          ],
+          "abstract": "Deploying robots in unstructured real-world environments needs accurate, interactive models of the objects. Constructing these models at scale remains a critical bottleneck for robotic system integration. We present ArtiTwinSplat, a framework that automatically constructs articulated, photo-realistic digital twins of objects directly from RGB-D videos, requiring no CAD models, simulation assets, or manual annotations. Our method is built on 3D Gaussian Splatting that preserve geometric fidelity and photometric realism, coupled with an unsupervised articulation discovery pipeline that recovers part structure and joint kinematics from observed motion alone. With tracking and optimization stages our method provides stable, queryable digital twins that support real-time rendering, viewpoint control, and interactive manipulation. Unlike prior methods confined to simulation, ArtiTwinSplat operates directly on real-world observations and produces twins that are immediately usable by downstream robot planning and learning systems. This method offers a practical, scalable pathway toward digital twin construction, lowering the integration barrier for articulated object manipulation in embodied AI and human-robot collaboration contexts.",
+          "abstract_zh": "在非结构化的现实环境中部署机器人需要准确的交互式对象模型。大规模构建这些模型仍然是机器人系统集成的关键瓶颈。我们推出了 ArtiTwinSplat，这是一个框架，可以直接从 RGB-D 视频中自动构建铰接的、逼真的数字孪生对象，无需 CAD 模型、模拟资产或手动注释。我们的方法建立在 3D 高斯溅射的基础上，可保留几何保真度和光度真实感，再加上无监督的关节发现管道，可仅从观察到的运动中恢复零件结构和关节运动学。通过跟踪和优化阶段，我们的方法提供了稳定、可查询的数字孪生，支持实时渲染、视点控制和交互式操作。与之前仅限于模拟的方法不同，ArtiTwinSplat 直接对现实世界的观察进行操作，并生成可立即供下游机器人规划和学习系统使用的双胞胎。该方法为数字孪生构建提供了一条实用、可扩展的途径，降低了具体人工智能和人机协作环境中铰接式对象操作的集成障碍。",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV",
+            "cs.RO"
+          ],
+          "submitted": "2026-06-23T14:24:07Z",
+          "updated": "2026-06-23T14:24:07Z",
+          "has_code": false,
+          "has_project": false,
+          "code_links": [],
+          "project_links": [],
+          "code_url": null,
+          "project_url": null,
+          "abs_url": "https://arxiv.org/abs/2606.24628",
+          "pdf_url": "https://arxiv.org/pdf/2606.24628v1",
+          "html_url": "https://arxiv.org/html/2606.24628v1",
+          "figures": [
+            "https://arxiv.org/html/2606.24628v1/artitwinsplat_pipeline.png",
+            "https://arxiv.org/html/2606.24628v1/img/eval_real/eval_qual/scene1/frame_0001/gt_rgb.png",
+            "https://arxiv.org/html/2606.24628v1/img/eval_real/eval_qual/scene1/frame_0001/pred_rgb.png",
+            "https://arxiv.org/html/2606.24628v1/img/eval_real/eval_qual/scene1/frame_0001/depth.png"
+          ],
+          "venue": "ICRA",
+          "comments": "Presented at the ICRA 2026 Workshop on Advances and Challenges in AI-Driven Automation and Robotic System Integration with Digital Twins, Vienna, June 2026",
+          "rank": 1,
+          "score": 88,
+          "reason_zh": "从RGB-D视频自动构建铰接物体数字孪生，无需CAD或标注，无监督发现关节参数，ICRA 2026",
+          "tags": [
+            "3D重建",
+            "3DGS",
+            "机器人",
+            "具身智能",
+            "顶会"
+          ],
+          "arxiv_id": "2606.24628"
+        },
+        {
+          "id": "2606.24796",
+          "title": "Pocket-SLAM: Rendering-Area-Aware Pruning for Memory-Efficient 3DGS-SLAM",
+          "title_zh": "Pocket-SLAM：渲染区域感知修剪，实现内存高效的 3DGS-SLAM",
+          "authors": [
+            "Leshu Li",
+            "Jie Peng",
+            "Yang Zhao"
+          ],
+          "abstract": "3D Gaussian Splatting (3DGS) has garnered significant attention in Simultaneous Localization and Mapping (SLAM) due to its advances in capturing fine-grained geometry features and synthesizing novel views. For SLAM in large-scale scenes, such as autonomous driving, 3DGS-SLAM faces a critical limitation: memory consumption increases continuously over time as Gaussian points accumulate, leading to poor memory efficiency and limiting its applicability. In this work, we propose a rendering-area-aware pruning strategy that selectively removes Gaussians based on their contribution to the effective rendering area, rather than solely relying on Gaussian-level heuristics such as opacity or gradient magnitude. This perspective directly targets the sources of memory redundancy, effectively reducing the peak memory footprint of 3DGS-SLAM during runtime. Evaluations on the EuRoC and KITTI datasets demonstrate that our method consistently outperforms existing pruning approaches in large-scale outdoor scenes, achieving over 60% memory reduction and more than 2 times FPS improvement while preserving localization and mapping accuracy. These results highlight rendering-area-aware pruning as a promising direction for scaling 3DGS-SLAM to real-world autonomous driving scenarios. Our code is publicly available at https://github.com/UMN-ZhaoLab/Pocket-SLAM.git.",
+          "abstract_zh": "3D 高斯分布 (3DGS) 由于其在捕获细粒度几何特征和合成新颖视图方面的进步而在同步定位与建图 (SLAM) 领域引起了广泛关注。对于自动驾驶等大规模场景中的SLAM，3DGS-SLAM面临着一个关键的限制：随着高斯点的积累，内存消耗随着时间的推移不断增加，导致内存效率较差，限制了其适用性。在这项工作中，我们提出了一种渲染区域感知修剪策略，该策略根据高斯对有效渲染区域的贡献选择性地删除高斯，而不是仅仅依赖高斯级启发式方法，例如不透明度或梯度幅度。这一视角直接针对内存冗余的来源，有效减少了 3DGS-SLAM 在运行时的峰值内存占用。对 EuRoC 和 KITTI 数据集的评估表明，我们的方法在大规模户外场景中始终优于现有的修剪方法，在保持定位和映射精度的同时，实现了超过 60% 的内存减少和超过 2 倍的 FPS 改进。这些结果凸显了渲染区域感知修剪是将 3DGS-SLAM 扩展到现实世界自动驾驶场景的一个有前途的方向。我们的代码可在 https://github.com/UMN-ZhaoLab/Pocket-SLAM.git 上公开获取。",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "submitted": "2026-06-23T16:48:58Z",
+          "updated": "2026-06-23T16:48:58Z",
+          "has_code": true,
+          "has_project": false,
+          "code_links": [
+            "https://github.com/UMN-ZhaoLab/Pocket-SLAM.git"
+          ],
+          "project_links": [],
+          "code_url": "https://github.com/UMN-ZhaoLab/Pocket-SLAM.git",
+          "project_url": null,
+          "abs_url": "https://arxiv.org/abs/2606.24796",
+          "pdf_url": "https://arxiv.org/pdf/2606.24796v1",
+          "html_url": "https://arxiv.org/html/2606.24796v1",
+          "figures": [
+            "https://arxiv.org/html/2606.24796v1/x1.png",
+            "https://arxiv.org/html/2606.24796v1/x2.png",
+            "https://arxiv.org/html/2606.24796v1/x3.png",
+            "https://arxiv.org/html/2606.24796v1/x4.png"
+          ],
+          "venue": "ICRA",
+          "comments": "2026 IEEE International Conference on Robotics and Automation(ICRA)",
+          "rank": 2,
+          "score": 86,
+          "reason_zh": "渲染区域感知剪枝策略，按有效渲染贡献选择性移除高斯点，大幅降低3DGS-SLAM内存消耗",
+          "tags": [
+            "3DGS",
+            "3D重建",
+            "自动驾驶",
+            "开源",
+            "顶会"
+          ],
+          "arxiv_id": "2606.24796"
+        },
+        {
+          "id": "2606.24232",
+          "title": "FiCA: Feed-forward instant Gaussian Codec Avatars from a Single Portrait Image",
+          "title_zh": "FiCA：来自单个肖像图像的前馈即时高斯编解码器头像",
+          "authors": [
+            "Kim Youwang",
+            "Zhengyu Yang",
+            "Liuhao Ge",
+            "Yu Rong",
+            "Timur Bagautdinov"
+          ],
+          "abstract": "We introduce FiCA, a Feed-forward, instant Gaussian Codec Avatar generation pipeline that creates lifelike avatars from a single portrait image. Generating a photorealistic and drivable avatar from just a single image is significantly challenging due to the limited visual information available to accurately infer the 3D appearance and geometry of human heads. To address this, we develop a novel system that combines human-centric vision foundation models with a diffusion model. This system is designed to fully exploit partial visual observations to generate lifelike human avatars. Our proposed diffusion model learns a generative mapping from these partial observations to complete and authentic 3D mesh reconstruction. Additionally, we introduce a feed-forward mesh refinement network that enhances the fidelity and identity preservation of the generated avatars, eliminating the need for person-specific test-time optimization. By leveraging a universal prior model that decodes a generated mesh into a set of 3D Gaussians, we generate a photorealistic 3D Gaussian avatar, capable of being driven with novel expressions in real-time. Our experiments demonstrate that the avatars generated by our feed-forward approach faithfully represent diverse identities and surpass the visual quality of avatars produced by recent competing methods.",
+          "abstract_zh": "我们推出 FiCA，一种前馈、即时高斯编解码器头像生成管道，可从单个肖像图像创建栩栩如生的头像。由于可用于准确推断人体头部 3D 外观和几何形状的视觉信息有限，仅从单个图像生成逼真且可驾驶的化身极具挑战性。为了解决这个问题，我们开发了一种新颖的系统，它将以人为中心的视觉基础模型与扩散模型结合起来。该系统旨在充分利用部分视觉观察来生成栩栩如生的人类化身。我们提出的扩散模型从这些部分观察中学习生成映射，以实现完整且真实的 3D 网格重建。此外，我们引入了前馈网格细化网络，该网络增强了生成的化身的保真度和身份保留，从而消除了针对特定人员的测试时间优化的需要。通过利用将生成的网格解码为一组 3D 高斯的通用先验模型，我们生成了逼真的 3D 高斯化身，能够实时用新颖的表达方式驱动。我们的实验表明，我们的前馈方法生成的头像忠实地代表了不同的身份，并且超越了最近竞争方法生成的头像的视觉质量。",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV",
+            "cs.GR"
+          ],
+          "submitted": "2026-06-23T07:22:17Z",
+          "updated": "2026-06-23T07:22:17Z",
+          "has_code": false,
+          "has_project": true,
+          "code_links": [],
+          "project_links": [
+            "https://kim-youwang.github.io/FiCA"
+          ],
+          "code_url": null,
+          "project_url": "https://kim-youwang.github.io/FiCA",
+          "abs_url": "https://arxiv.org/abs/2606.24232",
+          "pdf_url": "https://arxiv.org/pdf/2606.24232v1",
+          "html_url": "https://arxiv.org/html/2606.24232v1",
+          "figures": [
+            "https://arxiv.org/html/2606.24232v1/x2.png",
+            "https://arxiv.org/html/2606.24232v1/x3.png",
+            "https://arxiv.org/html/2606.24232v1/x4.png",
+            "https://arxiv.org/html/2606.24232v1/x5.png"
+          ],
+          "venue": null,
+          "comments": "Project page: https://kim-youwang.github.io/FiCA",
+          "rank": 3,
+          "score": 84,
+          "reason_zh": "单张人像前馈式生成可驱动高斯头像，结合人头视觉基础模型与扩散先验补全不可见区域",
+          "tags": [
+            "3D重建",
+            "3DGS",
+            "feed-forward",
+            "生成模型"
+          ],
+          "arxiv_id": "2606.24232"
+        },
+        {
+          "id": "2606.24457",
+          "title": "Lite Any Stereo V2: Faster and Stronger Efficient Zero-Shot Stereo Matching",
+          "title_zh": "Lite Any Stereo V2：更快、更强、更高效的零射击立体匹配",
+          "authors": [
+            "Junpeng Jing",
+            "Ronglai Zuo",
+            "Zhelun Shen",
+            "Shangchen Zhou",
+            "Rolandos Alexandros Potamias"
+          ],
+          "abstract": "Recent advances in stereo matching have achieved remarkable accuracy, but often rely on large models, heavy computation, or additional foundation-model priors, making them difficult to deploy on resource-constrained platforms. In contrast, efficient stereo models offer faster inference but are commonly considered less capable of strong zero-shot generalization. In this paper, we challenge this assumption by introducing Lite Any Stereo V2 (LAS2), an ultra-fast model series designed for efficient zero-shot stereo matching. LAS2 is developed from both architecture and training perspectives. Architecturally, we revisit efficient stereo design under practical deployment settings and propose a 2D-only cost aggregation framework, optimized for real inference latency rather than theoretical MACs alone. For training, we develop a three-stage strategy that combines synthetic supervision, self-distillation, and real-world knowledge distillation. To improve the reliability of real-world pseudo supervision, we further introduce pseudo-label filtering and an error-clamping operation, enabling smoother synthetic-to-real transfer. We instantiate LAS2 as a family of models, including feed-forward variants for different efficiency budgets and an iterative variant for higher accuracy. Extensive experiments show that LAS2 achieves state-of-the-art accuracy among efficient stereo methods while maintaining significantly lower latency. Specifically, LAS2-H achieves stronger overall zero-shot performance than the iterative method Fast-FoundationStereo, with 1.8x and 2.7x faster inference on H200 and Orin, respectively. The project page, demos, and code are available at https://tomtomtommi.github.io/LiteAnyStereoV2/.",
+          "abstract_zh": "立体匹配的最新进展已经取得了显着的准确性，但通常依赖于大型模型、繁重的计算或额外的基础模型先验，使得它们难以部署在资源受限的平台上。相比之下，高效的立体模型提供更快的推理速度，但通常被认为不太能够实现强大的零样本泛化。在本文中，我们通过引入 Lite Any Stereo V2 (LAS2) 来挑战这一假设，这是一个专为高效零样本立体匹配而设计的超快速模型系列。 LAS2是从架构和培训两个角度开发的。在架构上，我们重新审视了实际部署设置下的高效立体设计，并提出了纯 2D 成本聚合框架，针对实际推理延迟而不是仅针对理论 MAC 进行了优化。对于训练，我们制定了一个三阶段策略，结合了综合监督、自我蒸馏和现实世界知识蒸馏。为了提高现实世界伪监督的可靠性，我们进一步引入伪标签过滤和错误钳位操作，从而实现更平滑的合成到真实的传输。我们将 LAS2 实例化为一系列模型，包括用于不同效率预算的前馈变体和用于更高准确度的迭代变体。大量实验表明，LAS2 在高效立体方法中实现了最先进的精度，同时保持了显着较低的延迟。具体而言，LAS2-H 实现了比迭代方法 Fast-FoundationStereo 更强的整体零样本性能，在 H200 和 Orin 上的推理速度分别快了 1.8 倍和 2.7 倍。项目页面、演示和代码可从 https://tomtomtommi.github.io/LiteAnyStereoV2/ 获取。",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "submitted": "2026-06-23T11:45:09Z",
+          "updated": "2026-06-23T11:45:09Z",
+          "has_code": false,
+          "has_project": true,
+          "code_links": [],
+          "project_links": [
+            "https://tomtomtommi.github.io/LiteAnyStereoV2/"
+          ],
+          "code_url": null,
+          "project_url": "https://tomtomtommi.github.io/LiteAnyStereoV2/",
+          "abs_url": "https://arxiv.org/abs/2606.24457",
+          "pdf_url": "https://arxiv.org/pdf/2606.24457v1",
+          "html_url": "https://arxiv.org/html/2606.24457v1",
+          "figures": [
+            "https://arxiv.org/html/2606.24457v1/x1.png",
+            "https://arxiv.org/html/2606.24457v1/x2.png",
+            "https://arxiv.org/html/2606.24457v1/x3.png",
+            "https://arxiv.org/html/2606.24457v1/x4.png"
+          ],
+          "venue": null,
+          "comments": null,
+          "rank": 4,
+          "score": 80,
+          "reason_zh": "超高效零样本立体匹配LAS2：架构精简+训练策略革新，在边缘设备上挑战大模型精度",
+          "tags": [
+            "深度估计",
+            "feed-forward",
+            "开源"
+          ],
+          "arxiv_id": "2606.24457"
+        },
+        {
+          "id": "2606.24144",
+          "title": "Geometry-Aware Style Transfer in 3D Gaussian Splatting",
+          "title_zh": "3D 高斯泼溅中的几何感知样式迁移",
+          "authors": [
+            "Min Hyeok Bang",
+            "Jun Hyeong Kim",
+            "Seung-Wook Kim",
+            "Se-Ho Lee"
+          ],
+          "abstract": "In this paper, we present a novel geometry-aware style transfer framework for 3D Gaussian splatting (3DGS) that simultaneously transfers appearance attributes and geometric structures. Unlike prior works that primarily focus on color-based stylization and often overlook structural adaptation, our method explicitly incorporates geometry adaptation through a decoupled optimization scheme that alternately updates color and geometry parameters. This strategy alleviates potential interference between color and geometry updates, leading to stable and consistent scene-level geometry transformation. The decoupled optimization is enabled by the proposed geometry-aware contrastive feature matching (GCFM). GCFM integrates RGB, depth, and edge cues into a contrastive objective and is employed in both optimization phases to effectively transfer structural characteristics from style images to Gaussian primitives. Extensive experiments show that our approach achieves superior performance in both qualitative fidelity and quantitative metrics, significantly outperforming existing 3DGS-based stylization methods. Our code is available at \\href{https://github.com/oweixx/gast}{https://github.com/oweixx/gast}.",
+          "abstract_zh": "在本文中，我们提出了一种新颖的用于 3D 高斯分布 (3DGS) 的几何感知样式传输框架，可同时传输外观属性和几何结构。与主要关注基于颜色的风格化并经常忽视结构适应的先前工作不同，我们的方法通过交替更新颜色和几何参数的解耦优化方案明确地结合了几何适应。该策略减轻了颜色和几何更新之间的潜在干扰，从而实现稳定且一致的场景级几何变换。解耦优化是通过所提出的几何感知对比特征匹配（GCFM）来实现的。 GCFM 将 RGB、深度和边缘线索集成到对比目标中，并在两个优化阶段中使用，以有效地将结构特征从风格图像转移到高斯基元。大量实验表明，我们的方法在定性保真度和定量指标方面均实现了卓越的性能，显着优于现有的基于 3DGS 的风格化方法。我们的代码可在 \\href{https://github.com/oweixx/gast}{https://github.com/oweixx/gast} 获取。",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "submitted": "2026-06-23T04:53:56Z",
+          "updated": "2026-06-23T04:53:56Z",
+          "has_code": true,
+          "has_project": false,
+          "code_links": [
+            "https://github.com/oweixx/gast"
+          ],
+          "project_links": [],
+          "code_url": "https://github.com/oweixx/gast",
+          "project_url": null,
+          "abs_url": "https://arxiv.org/abs/2606.24144",
+          "pdf_url": "https://arxiv.org/pdf/2606.24144v1",
+          "html_url": "https://arxiv.org/html/2606.24144v1",
+          "figures": [
+            "https://arxiv.org/html/2606.24144v1/figures/comparison_new_version3.jpg",
+            "https://arxiv.org/html/2606.24144v1/figures/framework.jpg",
+            "https://arxiv.org/html/2606.24144v1/figures/bilevel_new_version.jpeg",
+            "https://arxiv.org/html/2606.24144v1/figures/contrast_new_version28.jpeg"
+          ],
+          "venue": "ECCV",
+          "comments": "14 pages, 7 figures, accepted at ECCV 2026",
+          "rank": 5,
+          "score": 78,
+          "reason_zh": "解耦颜色与几何交替优化，首次在3DGS上同时迁移外观风格与几何结构，ECCV 2026",
+          "tags": [
+            "3DGS",
+            "3D重建",
+            "顶会"
+          ],
+          "arxiv_id": "2606.24144"
+        }
+      ]
+    },
+    {
+      "id": "vla",
+      "name": "自动驾驶与机器人",
+      "papers": [
+        {
+          "id": "2606.24742",
+          "title": "World Value Models for Robotic Manipulation",
+          "title_zh": "机器人操作的世界价值模型",
+          "authors": [
+            "Zhihao Wang",
+            "Jianxiong Li",
+            "Yu Cui",
+            "Yuan Gao",
+            "Xianyuan Zhan"
+          ],
+          "abstract": "Generalist value models play a pivotal role in scaling robotic policy learning from large-scale, mixed-quality data. Mathematically, accurate value estimation demands deep temporal understanding, requiring models to both ground the current belief using historical context and plan over future outcomes. However, most existing robotic value models are built on Vision-Language Model (VLM) backbones that are pretrained primarily on static or temporally sparse visual observations, lacking the requisite temporal modeling capabilities for value estimation. Unlike VLMs, world models naturally excel at temporal modeling and future planning, making them ideal foundations for learning generalizable value functions. Driven by this insight, we marry world models with value estimation to construct a new generalist robotic value model, World Value Model (WVM), that offers accurate task progressions to assess data quality. On standard benchmarks, WVM delivers state-of-the-art (SOTA) Value-Order Correlation (VOC) results. Complementing standard evaluation suites that contains only expert data, we further introduce Suboptimal-Value-Bench, a multi-embodiment benchmark consisting of 800 suboptimal trajectories with high-fidelity, human-labeled frame annotations. Our evaluations show that WVM maintains its SOTA performance on Suboptimal-Value-Bench, establishing its robustness in handling both expert and suboptimal data. When deployed for policy learning, WVM improves manipulation performance across various policy extraction approaches in both simulated and real-world deployment, providing robust guidance for learning from mixed-quality data.",
+          "abstract_zh": "通才价值模型在从大规模、混合质量的数据中扩展机器人策略学习方面发挥着关键作用。从数学上讲，准确的价值估计需要深入的时间理解，需要模型既利用历史背景来建立当前的信念，又对未来的结果进行规划。然而，大多数现有的机器人价值模型都是建立在视觉语言模型（VLM）主干上的，这些主干主要是根据静态或时间稀疏视觉观察进行预训练的，缺乏价值估计所需的时间建模功能。与 VLM 不同，世界模型自然擅长时间建模和未来规划，这使它们成为学习可推广价值函数的理想基础。在这种洞察力的驱动下，我们将世界模型与价值估计相结合，构建了一个新的通用机器人价值模型，即世界价值模型（WVM），它提供了准确的任务进展来评估数据质量。在标准基准上，WVM 提供最先进的 (SOTA) 值顺序相关性 (VOC) 结果。为了补充仅包含专家数据的标准评估套件，我们进一步引入了 Suboptimal-Value-Bench，这是一个多实施基准，由 800 个次优轨迹组成，具有高保真、人工标记的帧注释。我们的评估表明，WVM 在次优值基准上保持了 SOTA 性能，确立了其在处理专家数据和次优数据方面的稳健性。当部署用于策略学习时，WVM 可以提高模拟和实际部署中各种策略提取方法的操作性能，为从混合质量数据中学习提供强大的指导。",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.RO"
+          ],
+          "submitted": "2026-06-23T16:07:48Z",
+          "updated": "2026-06-23T16:07:48Z",
+          "has_code": false,
+          "has_project": false,
+          "code_links": [],
+          "project_links": [],
+          "code_url": null,
+          "project_url": null,
+          "abs_url": "https://arxiv.org/abs/2606.24742",
+          "pdf_url": "https://arxiv.org/pdf/2606.24742v1",
+          "html_url": null,
+          "figures": [],
+          "venue": null,
+          "comments": "preprint",
+          "rank": 1,
+          "score": 90,
+          "reason_zh": "用世界模型替代VLM做机器人价值估计：天然具备时序理解与未来预测，超越静态VLM",
+          "tags": [
+            "VLA",
+            "世界模型",
+            "机器人",
+            "操控",
+            "强化学习"
+          ],
+          "arxiv_id": "2606.24742"
+        },
+        {
+          "id": "2606.24051",
+          "title": "DriveStack-VLA: Render-Teacher Alignment for BEV-Based DeepStack Vision-Language-Action Model",
+          "title_zh": "DriveStack-VLA：基于 BEV 的 DeepStack 视觉-语言-动作模型的渲染-教师对齐",
+          "authors": [
+            "Jingke Wang",
+            "Zhenru Zhao",
+            "Shuangming Lei",
+            "Hao Su",
+            "Yuehao Huang"
+          ],
+          "abstract": "Vision-Language-Action driving models convert a pretrained Vision-Language Model into a driving policy, allowing them to use world knowledge and follow language guidances. However, existing VLA driving models still lack driving-oriented spatial intelligence: their policies are mainly grounded on perspective image tokens and language priors, while precise motion planning requires metric geometry, top-down scene structure, and attention to safety-critical perceptual cues. This limitation makes current models vulnerable to weak visual geometry modeling and perceptual coverage in expert demonstrations. In this paper, we present DriveStack-VLA, a framework built upon a large VLM backbone. To strengthen the spatial grounding of VLA driving, we develop dual visual modeling components. We inject a Bird-Eye-View representation into the Large Language Model decoder through a DeepStack-style connection, and propose Render-Teacher Alignment to align the perceptual focus of real images with that of rasterized images. Furthermore, to bridge the gap in multimodal trajectory selection, we introduce a head-based self-critique module that ranks sampled trajectories and conditionally refines the best one. DriveStack-VLA achieves 91.6 PDMS on NAVSIMv1, 91.0 EPDMS on NAVSIMv2 (with the human penalty filter enabled), and a driving score of 79.49 with a success rate of 56.36\\% on the closed-loop Bench2Drive. More visualizations are available on our project page: https://anonymous.4open.science/w/drivestack-vla/.",
+          "abstract_zh": "视觉-语言-行动驾驶模型将预训练的视觉-语言模型转换为驾驶策略，使它们能够使用世界知识并遵循语言指导。然而，现有的VLA驾驶模型仍然缺乏面向驾驶的空间智能：它们的策略主要基于透视图像标记和语言先验，而精确的运动规划需要度量几何、自上而下的场景结构以及对安全关键感知线索的关注。这种限制使得当前模型容易受到弱视觉几何建模和专家演示中感知覆盖的影响。在本文中，我们介绍了 DriveStack-VLA，这是一个构建在大型 VLM 主干上的框架。为了加强VLA驾驶的空间基础，我们开发了双视觉建模组件。我们通过 DeepStack 式的连接将鸟瞰图表示注入到大型语言模型解码器中，并提出渲染教师对齐来将真实图像的感知焦点与光栅化图像的感知焦点对齐。此外，为了弥补多模态轨迹选择方面的差距，我们引入了一种基于头部的自我批评模块，该模块对采样轨迹进行排序并有条件地细化最佳轨迹。 DriveStack-VLA 在 NAVSIMv1 上获得 91.6 PDMS，在 NAVSIMv2 上获得 91.0 EPDMS（启用人工惩罚过滤器），在闭环 Bench2Drive 上获得 79.49 的驾驶分数，成功率为 56.36%。我们的项目页面上提供了更多可视化效果：https://anonymous.4open.science/w/drivestack-vla/。",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "submitted": "2026-06-23T01:40:54Z",
+          "updated": "2026-06-23T01:40:54Z",
+          "has_code": false,
+          "has_project": true,
+          "code_links": [],
+          "project_links": [
+            "https://anonymous.4open.science/w/drivestack-vla/"
+          ],
+          "code_url": null,
+          "project_url": "https://anonymous.4open.science/w/drivestack-vla/",
+          "abs_url": "https://arxiv.org/abs/2606.24051",
+          "pdf_url": "https://arxiv.org/pdf/2606.24051v1",
+          "html_url": "https://arxiv.org/html/2606.24051v1",
+          "figures": [
+            "https://arxiv.org/html/2606.24051v1/x1.png",
+            "https://arxiv.org/html/2606.24051v1/x2.png",
+            "https://arxiv.org/html/2606.24051v1/x3.png",
+            "https://arxiv.org/html/2606.24051v1/x4.png"
+          ],
+          "venue": null,
+          "comments": null,
+          "rank": 2,
+          "score": 88,
+          "reason_zh": "BEV-VLA驾驶模型：渲染-教师对齐注入空间几何先验，补齐现有VLA的空间感知短板",
+          "tags": [
+            "VLA",
+            "自动驾驶"
+          ],
+          "arxiv_id": "2606.24051"
+        },
+        {
+          "id": "2606.24448",
+          "title": "Supervise What Survives: Geometry-Guided VLA Adaptation from Synthetic Robot Videos",
+          "title_zh": "监督幸存的东西：来自合成机器人视频的几何引导 VLA 适应",
+          "authors": [
+            "Danze Chen",
+            "Yanzhe Chen",
+            "Qiming Huang",
+            "Zhijun Cao",
+            "Chen Gao"
+          ],
+          "abstract": "Vision-Language-Action (VLA) models require large-scale video-action pairs, yet real teleoperation remains scarce. While generated robot videos offer a scalable alternative, existing methods treat them as real robot data by recovering pseudo-actions from synthesized pixels. We argue that deriving low-level control from generated visuals is a mismatched abstraction. A video captures only \\emph{geometry}: the spatial trajectory representing the \\emph{where} of a task. A real demonstration captures \\emph{control}: the exact motor commands representing the \\emph{how}. Human-to-robot video generation preserves these unequally: the visible geometry survives the generation process, while the underlying control signals are lost. This \\textbf{Asymmetric Preservation Principle} dictates a clean rule: this surviving geometry should solely supervise visual perception, leaving control to real demonstrations. Following this principle, we propose \\textbf{GRA} (\\textbf{G}eometry-guided \\textbf{R}epresentation \\textbf{A}lignment), which extracts the geometric content as future 2D end-effector waypoints, computed from the source human video through pose estimation, retargeting, simulation, and calibrated projection, and routes them to the VLA vision backbone via an auxiliary 2D head. The action head is trained on real demonstrations only. During fine-tuning, the waypoint loss persists as a \\textbf{spatial representation anchor} that prevents the backbone from losing its geometric grounding. On real-robot tasks, GRA outperforms pseudo-action baselines under matched data budgets and narrows the gap to policies trained with substantially more real demonstrations, suggesting that correctly routed geometry bridges generated videos to robot policies more reliably than recovered actions.",
+          "abstract_zh": "视觉-语言-动作（VLA）模型需要大规模的视频-动作对，但真正的远程操作仍然很少。虽然生成的机器人视频提供了可扩展的替代方案，但现有方法通过从合成像素恢复伪动作将它们视为真实的机器人数据。我们认为从生成的视觉效果中获得低级控制是一种不匹配的抽象。视频仅捕获 \\emph{geometry}：表示任务的 \\emph{where} 的空间轨迹。真实的演示捕获了 \\emph{control}：代表 \\emph{how} 的精确电机命令。人机视频生成保留了这些不平等：可见几何形状在生成过程中幸存下来，而底层控制信号却丢失了。这个\\textbf{不对称保存原则}规定了一个明确的规则：这种幸存的几何体应该只监督视觉感知，将控制权留给真实的演示。遵循这一原则，我们提出 \\textbf{GRA} （\\textbf{G}eometry-guided \\textbf{R}representation \\textbf{A}lignment），它将几何内容提取为未来的 2D 末端效应器路径点，通过姿势估计、重定向、模拟和校准投影从源人类视频中计算出来，并通过辅助 2D 头将它们路由到 VLA 视觉主干。行动负责人仅接受过真实演示的培训。在微调过程中，路径点损失作为 \\textbf{空间表示锚} 持续存在，以防止骨干网失去其几何基础。在真实的机器人任务中，GRA 在匹配的数据预算下优于伪动作基线，并缩小了与经过更多真实演示训练的策略的差距，这表明正确路由的几何结构比恢复的动作更可靠地连接生成的视频和机器人策略。",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.RO"
+          ],
+          "submitted": "2026-06-23T11:35:13Z",
+          "updated": "2026-06-23T11:35:13Z",
+          "has_code": false,
+          "has_project": false,
+          "code_links": [],
+          "project_links": [],
+          "code_url": null,
+          "project_url": null,
+          "abs_url": "https://arxiv.org/abs/2606.24448",
+          "pdf_url": "https://arxiv.org/pdf/2606.24448v1",
+          "html_url": "https://arxiv.org/html/2606.24448v1",
+          "figures": [
+            "https://arxiv.org/html/2606.24448v1/x1.png",
+            "https://arxiv.org/html/2606.24448v1/x2.png",
+            "https://arxiv.org/html/2606.24448v1/x3.png",
+            "https://arxiv.org/html/2606.24448v1/x4.png"
+          ],
+          "venue": null,
+          "comments": "14 pages, 5 figures",
+          "rank": 3,
+          "score": 86,
+          "reason_zh": "从合成机器人视频中蒸馏几何轨迹而非伪动作，适配VLA微调，突破虚实动作表示鸿沟",
+          "tags": [
+            "VLA",
+            "机器人",
+            "操控",
+            "生成模型"
+          ],
+          "arxiv_id": "2606.24448"
+        }
+      ]
+    },
+    {
+      "id": "vlm",
+      "name": "VLM / LLM",
+      "papers": []
+    }
+  ]
+}
