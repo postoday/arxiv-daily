@@ -37,7 +37,7 @@
         AI<span class="tab-code">cs.AI</span>
       </button>
     
-    <button class="tab tab-selected" data-cat="__selected__">
+    <button class="tab tab-selected has-selected" data-cat="__selected__">
       Selected<span class="tab-code">精选</span>
     </button>
   </div>
@@ -14850,7 +14850,450 @@
 
 <div id="selected-panel" class="hidden">
   
-  <p class="sel-empty">今日暂无精选内容。</p>
+  
+  
+  <p class="sel-meta">从 141 篇中精选 10 篇</p>
+  
+  <div class="sel-category">
+    <h3 class="sel-cat-name">世界模型&amp;视频/场景生成模型<span class="sel-cat-count">（4）</span></h3>
+    <ul class="sel-paper-list">
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">1/4</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2606.25473" target="_blank" rel="noopener">Causal-rCM: A Unified Teacher-Forcing and Self-Forcing Open Recipe for Autoregressive Diffusion Distillation in Streaming Video Generation and Interactive World Models</a></h2>
+            <p class="paper-title-zh">Causal-rCM：流视频生成和交互式世界模型中自回归扩散蒸馏的统一教师强制和自强制开放方法</p>
+          </div>
+        </div>
+        <p class="sel-reason">将rCM蒸馏框架扩展到自回归视频扩散，统一流式视频生成与交互式世界模型</p>
+        <div class="sel-tags"><span class="sel-tag">世界模型</span><span class="sel-tag">生成模型</span><span class="sel-tag">视频生成</span></div>
+        <div class="paper-meta">
+          <span class="authors">Kaiwen Zheng, Guande He, Min Zhao, Jintao Zhang, Huayu Chen</span>
+        </div>
+        <p class="paper-abstract">具有因果扩散变压器的自回归视频扩散已成为实时流视频生成和动作条件交互式世界模型的主要范例。在这项工作中，我们将 rCM（一种先进的扩散蒸馏框架）扩展到自回归视频扩散。 rCM的核心理念在于正向散度和反向散度之间的互补性，分别以扩散蒸馏中的一致性模型（CM）和分布匹配蒸馏（DMD）为代表。这种哲学自然地延续到自回归环境中，其中教师强制（TF）提供了离线的、前向发散的因果训练范式，而自我强制（SF）对应于策略上的、反向发散的细化。
+  我们的贡献是：（1）通过广泛的实验，我们表明教师强制 CM 目前是自强制 DMD 作为初始化策略的最佳补充（2）我们提出了第一个用于自回归视频扩散的基于教师强制的连续时间 CM（例如 sCM/MeanFlow），由我们的自定义掩码 FlashAttention-2 JVP 内核启用，与离散时间 CM 相比，实现了 10$\times$ 更快的收敛速度(dCM) (3) 我们引入 Causal-rCM，这是一种领先的、统一的、可扩展的算法基础设施开放配方，用于扩散蒸馏和因果训练 (4) 我们仅使用合成数据进行训练，在逐帧和逐块设置中实现了最先进的流视频生成性能。
+  值得注意的是，我们精炼的 2 步因果 Wan2.1-1.3B 模型仅用 1 或 2 个采样步骤即可获得 84.63 的 VBench-T2V 分数。我们进一步将 Causal-rCM 应用到 Cosmos 3 中，Cosmos 3 是一种先进的全模态世界基础模型，用于物理 AI，具有动作条件生成功能，从而实现交互式世界模型。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Autoregressive video diffusion with causal diffusion transformers has emerged as a major paradigm for real-time streaming video generation and action-conditioned interactive world models. In this work, we extend rCM, an advanced diffusion distillation framework, to autoregressive video diffusion. The core philosophy of rCM lies in the complementarity between forward and reverse divergences, represented by consistency models (CMs) and distribution matching distillation (DMD), respectively, in diffusion distillation. This philosophy naturally carries over to the autoregressive setting, where teacher-forcing (TF) provides an offline, forward-divergence causal training paradigm, while self-forcing (SF) corresponds to an on-policy, reverse-divergence refinement.
+  Our contributions are: (1) through extensive experiments, we show that teacher-forcing CM is currently the best complement to self-forcing DMD as an initialization strategy (2) we present the first implementation of teacher-forcing-based continuous-time CMs (e.g., sCM/MeanFlow) for autoregressive video diffusion, enabled by our custom-mask FlashAttention-2 JVP kernel, achieving 10$\times$ faster convergence compared to discrete-time CMs (dCMs) (3) we introduce Causal-rCM, a leading, unified, and scalable algorithm-infrastructure open recipe for diffusion distillation and causal training (4) we achieve state-of-the-art streaming video generation performance in both frame-wise and chunk-wise settings, using only synthetic data for training.
+  Notably, our distilled 2-step causal Wan2.1-1.3B model achieves a VBench-T2V score of 84.63 with only 1 or 2 sampling steps. We further apply Causal-rCM to Cosmos 3, an advanced omnimodal world foundation model for physical AI with action-conditioned generation capability, enabling an interactive world model.</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2606.25473v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2606.25473" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2606.25473v1" target="_blank" rel="noopener">HTML</a>
+          
+          
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2606.25473v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.25473v1/x1.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2606.25473v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.25473v1/x2.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2606.25473v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.25473v1/x3.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2606.25473v1/x4.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.25473v1/x4.png" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">2/4</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2606.26087" target="_blank" rel="noopener">MVTrack4Gen: Multi-View Point Tracking as Geometric Supervision for 4D Video Generation</a></h2>
+            <p class="paper-title-zh">MVTrack4Gen：多视点跟踪作为 4D 视频生成的几何监督</p>
+          </div>
+        </div>
+        <p class="sel-reason">用多视角点跟踪提供几何监督，无需显式3D重建即可提升4D视频生成一致性</p>
+        <div class="sel-tags"><span class="sel-tag">4D重建</span><span class="sel-tag">生成模型</span><span class="sel-tag">视频生成</span></div>
+        <div class="paper-meta">
+          <span class="authors">JoungBin Lee, Jaewoo Jung, Jongmin Lee, Tongmin Kim, Hyunsung Kim</span>
+        </div>
+        <p class="paper-abstract">沿着目标相机轨迹从单眼参考视频合成新视角视频需要相对于参考视频的几何一致性和运动保真度。基于显式 3D 表示的现有方法受到现成重建模块精度的限制，这些模块通常会为单目视频中的动态对象产生不准确的几何形状。相比之下，仅使用相机调节的方法可以实现较高的视觉质量，但通常难以保持几何和运动的一致性。在这项工作中，我们介绍了MVTrack4Gen（用于新视图生成的多视点跟踪），这是一种运动感知训练框架，它利用多视点跟踪作为仅相机调节的新视图视频扩散模型的附加几何和运动监督信号。我们的主要发现是，特定的注意力层编码了强对应线索，其中查询特征关注跨视图和随时间变化的几何对应位置的关键特征，并且这些对应关系的未对准导致运动不一致。基于这一观察，我们将这些特征路由到辅助多视图跟踪头中，并与点跟踪目标联合训练扩散模型。通过显式强化这些运动感知对应关系，MVTrack4Gen 改进了现有模型，以更好地跟踪参考视图中的运动并保持跨视图几何一致性。在不同的基准测试中，我们的方法实现了最先进的几何一致性和具有竞争力的相机精度。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Synthesizing a novel-view video from a monocular reference video along a target camera trajectory requires both geometric consistency and motion fidelity with respect to the reference video. Existing methods based on explicit 3D representations are limited by the accuracy of off-the-shelf reconstruction modules, which often produce inaccurate geometry for dynamic objects in monocular videos. In contrast, camera-conditioning-only methods can achieve high visual quality but often struggle to preserve geometric and motion consistency. In this work, we introduce MVTrack4Gen (Multi-View point Tracking for Novel-View Generation), a motion-aware training framework that leverages multi-view point tracking as an additional geometric and motion supervision signal for camera-conditioning-only novel-view video diffusion models. Our key finding is that specific attention layers encode strong correspondence cues, where query features attend to key features at geometrically corresponding locations across views and over time, and the misalignment of these correspondences causes motion inconsistency. Based on this observation, we route these features into an auxiliary multi-view tracking head and jointly train the diffusion model with a point-tracking objective. By explicitly strengthening these motion-aware correspondences, MVTrack4Gen improves existing models to better follow the motion in the reference view and maintain cross-view geometric consistency. Across diverse benchmarks, our method achieves state-of-the-art geometric consistency and competitive camera accuracy.</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2606.26087v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2606.26087" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2606.26087v1" target="_blank" rel="noopener">HTML</a>
+          
+          <a class="project" href="https://cvlab-kaist.github.io/MVTrack4Gen/" target="_blank" rel="noopener">Project</a>
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2606.26087v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.26087v1/x1.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2606.26087v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.26087v1/x2.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2606.26087v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.26087v1/x3.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2606.26087v1/x4.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.26087v1/x4.png" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">3/4</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2606.26025" target="_blank" rel="noopener">In-Context World Modeling for Robotic Control</a></h2>
+            <p class="paper-title-zh">机器人控制的上下文世界建模</p>
+          </div>
+        </div>
+        <p class="sel-reason">将系统辨识建模为上下文适应问题，让VLA在新环境中自动推断世界动态</p>
+        <div class="sel-tags"><span class="sel-tag">世界模型</span><span class="sel-tag">VLA</span><span class="sel-tag">具身智能</span></div>
+        <div class="paper-meta">
+          <span class="authors">Siyin Wang, Junhao Shi, Senyu Fei, Zhaoyang Fu, Li Ji</span>
+        </div>
+        <p class="paper-abstract">现代视觉-语言-动作（VLA）模型通常无法推广到新颖的设置，例如改变的相机视角或机器人形态，因为它们通常仅以当前观察和语言指令为条件。通过忽略底层系统配置作为变量，这些模型隐式地假设训练期间遇到的固定执行上下文，从而需要针对任何新环境进行数据密集型微调。在这项工作中，我们引入了上下文世界建模（ICWM），这是一个将系统识别视为上下文适应问题的框架。 ICWM 使机器人策略能够从自我生成的、与任务无关的交互的简短历史记录中自主推断出基本的系统变量。与使用演示来指定要执行的任务的传统情境学习不同，ICWM 利用情境窗口来了解系统的运行方式。通过在任务执行之前处理这些交互，该模型隐式地捕获当前系统的世界动态，从而无需更新参数即可适应新的配置。模拟和现实机器人平台上的大量实验表明，ICWM 在新颖的相机视点上显着优于标准 VLA 基线。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Modern Vision-Language-Action (VLA) models often fail to generalize to novel setups, such as altered camera viewpoints or robot morphologies, because they are typically conditioned only on current observations and language instructions. By ignoring the underlying system configuration as a variable, these models implicitly assume a fixed execution context encountered during training, necessitating data-intensive fine-tuning for any new environment. In this work, we introduce In-Context World Modeling (ICWM), a framework that treats system identification as an in-context adaptation problem. ICWM enables robot policies to autonomously infer essential system variables from a short history of self-generated, task-agnostic interactions. Unlike traditional In-Context Learning that uses demonstrations to specify what task to perform, ICWM leverages the context window to understand how the system operates. By processing these interactions before task execution, the model implicitly captures the world dynamics of the current system, enabling adaptation to novel configurations without parameter updates. Extensive experiments in simulation and on real-world robot platforms demonstrate that ICWM significantly outperforms standard VLA baselines on novel camera viewpoints.</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2606.26025v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2606.26025" target="_blank" rel="noopener">Abs</a>
+          
+          
+          
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">4/4</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2606.25040" target="_blank" rel="noopener">Chorus II: Cross-Request Sparsity Reuse for Efficient Image-to-Video Generation</a></h2>
+            <p class="paper-title-zh">Chorus II：跨请求稀疏性重用以实现高效的图像到视频生成</p>
+          </div>
+        </div>
+        <p class="sel-reason">利用跨请求稀疏注意力模式复用，大幅降低图像到视频生成的在线推理成本</p>
+        <div class="sel-tags"><span class="sel-tag">生成模型</span><span class="sel-tag">视频生成</span></div>
+        <div class="paper-meta">
+          <span class="authors">Hao Liu, Chenghuan Huang, Hao Liu, Xing Cai, Chen Li</span>
+        </div>
+        <p class="paper-abstract">为图像到视频生成提供扩散模型的计算成本很高，这给大规模部署带来了重大挑战。真实的 I2V 工作负载通常包含类似的请求，例如重复的效果模板、相关主题和重复的镜头布局。现有的交叉请求加速方法主要通过特征重用来利用这种冗余。我们观察到，类似的 I2V 请求也共享高度一致的稀疏注意力模式，使得历史稀疏掩码能够充当请求条件先验，几乎没有在线掩码预测开销。我们提出了一个以\textbf{稀疏性重用}为中心的跨请求重用框架，其中\textbf{特征重用}作为由轻量级\textbf{指导增强}保护的可选扩展。我们的稀疏性重用是作为共享稀疏掩码重用来实现的，它重用来自类似历史请求的高质量稀疏掩码，以避免每个请求的在线掩码预测。可选的特征重用将下采样计算应用于高度冗余的时空区域，减轻边界伪影，同时保持效率增益。指导增强增强了重复使用后的图像/文本调节，减轻了语义漂移和条件遵守问题。实验表明，默认的稀疏性重用配置可以保持生成质量，并具有 \textbf{2.16$\times$} 加速。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Serving diffusion models for image-to-video generation is computationally expensive, posing significant challenges for large-scale deployment. Real I2V workloads often contain similar requests, such as repeated effect templates, related subjects, and recurring shot layouts. Existing cross-request acceleration methods mainly exploit this redundancy through feature reuse. We observe that similar I2V requests also share highly consistent sparse attention patterns, enabling historical sparse masks to serve as request-conditioned priors with almost no online mask-prediction overhead. We propose a cross-request reuse framework centered on \textbf{sparsity reuse}, with \textbf{feature reuse} as an optional extension safeguarded by a lightweight \textbf{guidance enhancement}. Our sparsity reuse is implemented as shared sparse mask reuse, which reuses high-quality sparse masks from similar historical requests to avoid per-request online mask prediction. Optional feature reuse applies downsampled computation to highly redundant spatiotemporal regions, mitigating boundary artifacts while preserving efficiency gains. Guidance enhancement reinforces image/text conditioning after reuse, mitigating semantic drift and condition-adherence issues. Experiments show that default sparsity reuse configuration preserves generation quality with a \textbf{2.16$\times$} speedup.</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2606.25040v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2606.25040" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2606.25040v1" target="_blank" rel="noopener">HTML</a>
+          
+          
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2606.25040v1/fig/visual_result.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.25040v1/fig/visual_result.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2606.25040v1/fig/feature_trajectory.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.25040v1/fig/feature_trajectory.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2606.25040v1/fig/main_paper.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.25040v1/fig/main_paper.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2606.25040v1/fig/shared_mask_ob.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.25040v1/fig/shared_mask_ob.png" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+    </ul>
+  </div>
+  
+  <div class="sel-category">
+    <h3 class="sel-cat-name">3D/4D 重建与生成<span class="sel-cat-count">（4）</span></h3>
+    <ul class="sel-paper-list">
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">1/4</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2606.25430" target="_blank" rel="noopener">PRISM: Feed-Forward Single-Image 3D Reconstruction via Geometric Warp-Residual Modeling</a></h2>
+            <p class="paper-title-zh">PRISM：通过几何扭曲残差建模进行前馈单图像 3D 重建</p>
+          </div>
+        </div>
+        <p class="sel-reason">发现几何前向warping已覆盖大部分新视角，仅需编码残差，实现前馈式单图3D重建</p>
+        <div class="sel-tags"><span class="sel-tag">3D重建</span><span class="sel-tag">feed-forward</span><span class="sel-tag">开源</span></div>
+        <div class="paper-meta">
+          <span class="authors">Zhijie Zheng, Xinhao Xiang, Jiawei Zhang</span>
+        </div>
+        <p class="paper-abstract">从单个图像重建 3D 场景是计算机视觉领域的一项基本挑战，在虚拟现实、机器人技术和内容创建领域有着广泛的应用。最近的方法通过利用摄像机控制的视频扩散模型实现了出色的性能，但依赖于迭代扩散采样，这极大地限制了它们的实际部署。我们观察到，仅几何前向扭曲就可以直接从输入图像覆盖目标视图的大部分，只留下紧凑的残差供编码器纠正。受这一观察的启发，我们提出了 PRISM，这是一种前馈框架，它将多视图潜在预测分解为无参数几何先验和学习残差校正，推理时不需要扩散采样。为了能够从纯合成训练数据中进行泛化，我们设计了一种两阶段训练策略，结合了用于几何泛化的潜在监督蒸馏和用于外观质量优化的感知微调。对三个基准的大量实验表明，与基于扩散的方法相比，PRISM 实现了有竞争力的重建质量，同时将推理时间大幅缩短至每个场景仅 36 秒。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Reconstructing 3D scenes from a single image is a fundamental challenge in computer vision, with broad applications in virtual reality, robotics, and content creation. Recent methods achieve outstanding performance by leveraging camera-controlled video diffusion models, but rely on iterative diffusion sampling, which greatly limits their practical deployment. We observe that geometric forward warping alone can cover the majority of a target view directly from the input image, with only a compact residual left for the encoder to correct. Motivated by this observation, we propose PRISM, a feed-forward framework that decomposes multi-view latent prediction into a parameter-free geometric prior and a learned residual correction, with no diffusion sampling required at inference. To enable generalization from purely synthetic training data, we devise a two-stage training strategy combining latents supervised distillation for geometric generalization and perceptual fine-tuning for appearance quality optimization. Extensive experiments on three benchmarks demonstrate that PRISM achieves competitive reconstruction quality compared with diffusion-based methods, while reducing inference time dramatically to only 36 seconds per scene.</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2606.25430v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2606.25430" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2606.25430v1" target="_blank" rel="noopener">HTML</a>
+          
+          
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2606.25430v1/sec/imgs/FIG2-Structure_Comparison.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.25430v1/sec/imgs/FIG2-Structure_Comparison.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2606.25430v1/sec/imgs/FIG3-PRISM_Framework.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.25430v1/sec/imgs/FIG3-PRISM_Framework.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2606.25430v1/sec/imgs/FIG7-Training_pipeline.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.25430v1/sec/imgs/FIG7-Training_pipeline.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2606.25430v1/sec/imgs/FIG4-LYRA-Visual.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.25430v1/sec/imgs/FIG4-LYRA-Visual.png" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">2/4</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2606.26007" target="_blank" rel="noopener">From Sparse and Imperfect 2D Anchors to Consistent 3D Gaussian Street Scenes: Support-Aware Appearance</a></h2>
+            <p class="paper-title-zh">从稀疏且不完美的 2D 锚点到一致的 3D 高斯街道场景：支持感知外观</p>
+          </div>
+        </div>
+        <p class="sel-reason">提出教师-参考外观残差蒸馏，从稀疏不完美2D锚点重建一致3DGS街景</p>
+        <div class="sel-tags"><span class="sel-tag">3D重建</span><span class="sel-tag">3DGS</span><span class="sel-tag">自动驾驶</span></div>
+        <div class="paper-meta">
+          <span class="authors">Long Cao, Zhongquan Wang, Jie Li, Yuhan Chen, Kefei Qian</span>
+        </div>
+        <p class="paper-abstract">图像先验可以合成 3D 高斯街道场景的目标条件，但独立编辑的视图无法定义连贯的 3D 目标。直接拟合可以传播特定于视图的噪声，而现有管道不能联合处理不完美的稀疏锚点和标准光栅化器部署。为了解决这一差距，引入了与教师相关的外观残留蒸馏来进行外观烘焙。用于频率分解、置信度估计和原始级别提升的结构化空间由教师锚点和原始渲染之间的残差形成。直接优化信号由渲染器空间匹配提供，而基元分配由支持感知的高斯空间聚合进行正则化。通过置信门控的粗到精优化，允许支持的细节并抑制不支持的噪声，之后将所有残差烘焙为固定几何球谐系数。教师和辅助培训模块在推理时被丢弃。对 Waymo 街道资产、坦克和寺庙场景以及多个目标条件的评估显示，与基于编辑的基线相比，目标对齐、内容保留、伪影抑制和跨视图一致性具有良好的整体平衡。消融证实了主要成分的有效性。代码将在 https://github.com/Cagares/Baking-for-3D-Gaussian 发布。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Image priors can synthesize target conditions for 3D Gaussian street scenes, but independently edited views do not define a coherent 3D target. Direct fitting can propagate view-specific noise, while existing pipelines do not jointly handle imperfect sparse anchors and standard-rasterizer deployment. To address this gap, teacher-relative appearance residual distillation is introduced for appearance baking. A structured space for frequency decomposition, confidence estimation, and primitive-level lifting is formed by residuals between teacher anchors and original renders. The direct optimization signal is supplied by renderer-space matching, while primitive assignment is regularized by support-aware Gaussian-space aggregation. Supported detail is admitted and unsupported noise is suppressed through confidence-gated coarse-to-fine optimization, after which all residuals are baked into fixed-geometry spherical-harmonic coefficients. The teacher and auxiliary training modules are discarded at inference. Evaluation across Waymo street assets, Tanks and Temples scenes, and multiple target conditions shows a favorable overall balance of target alignment, content preservation, artifact suppression, and cross-view consistency over editing-based baselines. Ablations confirm the effectiveness of the main components. Code will be released at https://github.com/Cagares/Baking-for-3D-Gaussian.</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2606.26007v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2606.26007" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2606.26007v1" target="_blank" rel="noopener">HTML</a>
+          <a class="code" href="https://github.com/Cagares/Baking-for-3D-Gaussian" target="_blank" rel="noopener">Code</a>
+          
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2606.26007v1/pipline1_final_0621.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.26007v1/pipline1_final_0621.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2606.26007v1/baseaware_clipds_cvdelta_pareto.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.26007v1/baseaware_clipds_cvdelta_pareto.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2606.26007v1/fig2_1172_sunset_teacher_full.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.26007v1/fig2_1172_sunset_teacher_full.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2606.26007v1/fig2_1172_sunset_style_full.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.26007v1/fig2_1172_sunset_style_full.png" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">3/4</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2606.25300" target="_blank" rel="noopener">HiFiVe: High-Fidelity Vehicle Generation Leveraging Auto-Regressive 2D Generative Priors</a></h2>
+            <p class="paper-title-zh">HiFiVe：利用自回归 2D 生成先验的高保真车辆生成</p>
+          </div>
+        </div>
+        <p class="sel-reason">免训练框架，用3D几何约束锚定2D生成先验，实现高保真3D车辆资产生成</p>
+        <div class="sel-tags"><span class="sel-tag">3D重建</span><span class="sel-tag">生成模型</span><span class="sel-tag">自动驾驶</span></div>
+        <div class="paper-meta">
+          <span class="authors">Hongli Xiao, Youjian Zhang, Qi Zheng, Zhaohui Hu, Yaohui Jin</span>
+        </div>
+        <p class="paper-abstract">现有的 3D 车辆生成方法常常存在几何保真度低和纹理模糊的问题，阻碍了其下游应用。虽然最近的工作采用多视图扩散模型来实现高保真纹理，但它们通常受到固定视点、有限分辨率以及依赖昂贵的微调来实现跨视图一致性的限制。在本文中，我们提出了 HiFiVe，这是一种免训练框架，通过施加 3D 几何约束来锚定 2D 生成先验，通过联合纹理和几何增强来进行高保真车辆建模。具体来说，我们提出了一种自回归纹理细化管道，可以从任意视点逐步合成高分辨率纹理。为了确保跨视图一致性，粗略几何体充当同步先验，通过基于深度的扭曲和多视图纹理融合在先前合成的帧上调节每个生成步骤。此外，利用车辆固有的对称性来减轻误差累积。最后，通过使用从增强纹理估计的法线贴图细化网格几何形状来恢复高频表面细节。对合成和现实世界车辆数据集的大量实验表明，与最先进的基线相比，我们的方法显着提高了几何细节和纹理质量。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Existing 3D vehicle generation methods often suffer from low geometric fidelity and blurry textures, hindering their downstream applications. While recent works adopt multi-view diffusion models for high-fidelity texture, they are often constrained by fixed viewpoints, limited resolution, and a reliance on costly fine-tuning to achieve cross-view consistency. In this paper, we propose HiFiVe, a training-free framework for high-fidelity vehicle modeling through joint texture and geometry enhancement by imposing 3D geometric constraints to anchor 2D generative priors. Specifically, we propose an auto-regressive texture refinement pipeline that progressively synthesizes high-resolution textures from arbitrary viewpoints. To ensure cross-view consistency, the coarse geometry serves as a synchronization prior, conditioning each generation step on previously synthesized frames via depth-based warping and multi-view texture fusion. Moreover, the inherent symmetry of vehicles is exploited to mitigate error accumulation. Finally, high-frequency surface details are recovered by refining the mesh geometry using normal maps estimated from the enhanced textures. Extensive experiments on synthetic and real-world vehicle datasets demonstrate that our method significantly improves both geometric detail and texture quality compared to state-of-the-art baselines.</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2606.25300v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2606.25300" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2606.25300v1" target="_blank" rel="noopener">HTML</a>
+          
+          
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2606.25300v1/figs/pipe.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.25300v1/figs/pipe.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2606.25300v1/figs/trajectory.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.25300v1/figs/trajectory.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2606.25300v1/figs/mv_comp_with_TRELLIS.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.25300v1/figs/mv_comp_with_TRELLIS.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2606.25300v1/figs/tex_comp.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.25300v1/figs/tex_comp.png" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">4/4</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2606.25437" target="_blank" rel="noopener">LinStereo: Linear-Complexity Global Attention for Multi-Scale Iterative Stereo Matching</a></h2>
+            <p class="paper-title-zh">LinStereo：多尺度迭代立体匹配的线性复杂性全局注意力</p>
+          </div>
+        </div>
+        <p class="sel-reason">提出位置感知线性注意力替代局部循环，以线性代价实现全局聚合立体匹配</p>
+        <div class="sel-tags"><span class="sel-tag">深度估计</span><span class="sel-tag">3D重建</span></div>
+        <div class="paper-meta">
+          <span class="authors">Yiran Wang, Oliver Turner, Viorela Ila</span>
+        </div>
+        <p class="paper-abstract">现有的基于视觉基础模型（VFM）的迭代立体管道未充分利用三种信息路径：多尺度主干特征被折叠为单级相关性，几何先验在初始化时保持未利用状态，上下文仅在本地传播。这些差距在光度线索退化的情况下扩大，使得水下场景成为严格的泛化测试。为了解决这个问题，我们提出了基于 Depth Anything V3 的 LinStereo，其核心是位置感知线性注意（PALA）模块，该模块以线性成本用全局聚合取代局部递归，将可靠的估计从良好匹配的区域传播到退化区域，同时保留视差结构。 PALA 通过两个使能组件发挥作用：分层语义成本量 (HSCV)，它提供来自 VFM 特征层次结构的比例对齐相关性；深度优先初始化 (DPI)，将单目深度转换为度量校准的热启动。 LinStereo 在标准基准测试和强大的跨域泛化上实现了最先进的精度，特别是在水下场景中，严重的光度退化使得立体匹配特别具有挑战性，实现了最佳的整体精度，并且一致的增益 AbsRel 在 TartanAir-UW 上降低了 28%，在 SQUID（真实水下数据集）上降低了 26%。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Existing Vision Foundation Model (VFM)-based iterative stereo pipelines under-exploit three information pathways: multi-scale backbone features are collapsed into single-level correlations, geometric priors remain untapped at initialization, and context propagates only locally. These gaps widen under degraded photometric cues, making underwater scenes a stringent generalization test. To address this, we propose LinStereo, built upon Depth Anything V3, whose core is a Position-Aware Linear Attention (PALA) module that replaces local recurrence with global aggregation at linear cost, propagating reliable estimates from well-matched regions into degraded areas while preserving disparity structure. PALA is made effective by two enabling components: Hierarchical Semantic Cost Volumes (HSCV), which supply scale-aligned correlations from the VFM feature hierarchy, and a Depth Prior Initialization (DPI) that converts monocular depth into a metrically calibrated warm start. LinStereo achieves state-of-the-art-level accuracy on standard benchmarks and strong cross-domain generalization, particularly on underwater scene where severe photometric degradation makes stereo matching particularly challenging, attaining the best overall accuracy with consistent gains 28% lower AbsRel on TartanAir-UW, 26% on SQUID, a real-world underwater dataset).</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2606.25437v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2606.25437" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2606.25437v1" target="_blank" rel="noopener">HTML</a>
+          
+          
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2606.25437v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.25437v1/x1.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2606.25437v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.25437v1/x2.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2606.25437v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.25437v1/x3.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2606.25437v1/x4.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.25437v1/x4.png" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+    </ul>
+  </div>
+  
+  <div class="sel-category">
+    <h3 class="sel-cat-name">自动驾驶与机器人<span class="sel-cat-count">（2）</span></h3>
+    <ul class="sel-paper-list">
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">1/2</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2606.25215" target="_blank" rel="noopener">Reflective VLA: In-Context Action Consequences Make VLAs Generalize</a></h2>
+            <p class="paper-title-zh">反思性 VLA：上下文中的行动后果使 VLA 泛化</p>
+          </div>
+        </div>
+        <p class="sel-reason">让VLA预测动作后果作为上下文反思信号，无需微调即可泛化到新机器人形态</p>
+        <div class="sel-tags"><span class="sel-tag">VLA</span><span class="sel-tag">具身智能</span><span class="sel-tag">操控</span><span class="sel-tag">开源</span></div>
+        <div class="paper-meta">
+          <span class="authors">Qing Lian, Kent Yu, Lei Zhang</span>
+        </div>
+        <p class="paper-abstract">大多数视觉-语言-动作（VLA）模型是反应性的：它们根据当前的指令和观察来预测下一个动作，隐含地假设当前的观察完全指定了与动作相关的状态。然而，在具体化控制中，具体实施例的因素（例如相机到机器人的几何形状、机器人校准或系统驱动偏差）通常很难从单次观察中识别出来。因此，反应性策略总体上无法可靠地消除这些因素的歧义，过度适应训练环境并且在部署时泛化性较差。我们提出了 Reflective VLA，它将每个决策都建立在观察-行动-结果三元组的背景下。每个三元组不仅记录机器人观察和执行的内容，还记录场景随后如何变化，公开从动作到观察到的效果的特定于部署的映射。从架构上来说，反射式 VLA 在共同关注下通过 VLM 路由所有观察模式，因此行动专家直接对过去的三元组和当前的观察进行推理。块因果掩码可实现无泄漏的并行多帧训练，并支持 KV 缓存实时推理。在标准 LIBERO 和 SimplerEnv-Bridge 上，反射 VLA 保留了强大的分布性能。在 LIBERO-Plus 和更难的 LIBERO-Plus-Hard 上的分布转移下，与匹配的反应基线相比，平均成功率提高了 5.4 和 4.2 个百分点。与仅历史基线相匹配的消融进一步表明，行动后果（而不是单独的额外上下文长度）是跨环境泛化的关键。项目页面：https://lianqing11.github.io/reflective-vla-page/</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Most vision-language-action (VLA) models are reactive: they predict the next action from the current instruction and observation, implicitly assuming that the current observation fully specifies the action-relevant state. In embodied control, however, embodiment-specific factors such as camera-to-robot geometry, robot calibration, or systematic actuation bias are often hard to identify from a single observation. As a result, reactive policies cannot reliably disambiguate these factors in general, overfitting to training environments and generalizing poorly at deployment. We propose Reflective VLA, which conditions each decision on a context of observation-action-consequence triplets. Each triplet records not only what the robot observed and executed, but also how the scene changed afterward, exposing the deployment-specific mapping from actions to observed effects. Architecturally, Reflective VLA routes all observation modalities through the VLM under shared attention, so the action expert reasons directly over past triplets and the current observation. A block-causal mask enables parallel multi-frame training without leakage and supports KV-cached real-time inference. On standard LIBERO and SimplerEnv-Bridge, Reflective VLA preserves strong in-distribution performance. Under distribution shift on LIBERO-Plus and the harder LIBERO-Plus-Hard, it improves average success rate by 5.4 and 4.2 percentage points over a matched reactive baseline. Ablations with a matched history-only baseline further show that action consequences -- rather than additional context length alone -- are the key to cross-environment generalization. Project page: https://lianqing11.github.io/reflective-vla-page/</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2606.25215v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2606.25215" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2606.25215v1" target="_blank" rel="noopener">HTML</a>
+          
+          <a class="project" href="https://lianqing11.github.io/reflective-vla-page/" target="_blank" rel="noopener">Project</a>
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2606.25215v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.25215v1/x1.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2606.25215v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.25215v1/x2.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2606.25215v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.25215v1/x3.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2606.25215v1/x4.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.25215v1/x4.png" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">2/2</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2606.25736" target="_blank" rel="noopener">UniTeD: Unified Temporal Diffusion for Joint Perception and Planning in Autonomous Driving</a></h2>
+            <p class="paper-title-zh">United：用于自动驾驶联合感知和规划的统一时间扩散</p>
+          </div>
+        </div>
+        <p class="sel-reason">统一时序扩散框架联合建模感知与规划，双向迭代去噪消除感知误差传导</p>
+        <div class="sel-tags"><span class="sel-tag">自动驾驶</span><span class="sel-tag">端到端</span><span class="sel-tag">顶会</span></div>
+        <div class="paper-meta">
+          <span class="authors">Bo Zhao, Xinting Zhao, Naifan Li, Erkang Cheng, Haibin Ling</span>
+        </div>
+        <p class="paper-abstract">扩散模型在端到端自动驾驶中的多模式规划方面显示出强大的潜力。然而，大多数现有方法将扩散限制在规划模块中，以来自单独的判别感知网络的固定输出为条件。这种解耦设计将感知错误传播给规划器，增加了优化难度并降低了鲁棒性。为了克服这些限制，我们提出了 UniTeD，一个统一的时间扩散框架，通过在共享生成空间中的迭代去噪来联合建模感知和规划。通过实现双向信息交换，该框架促进了任务之间的相互细化，并通过噪声条件多任务训练提高了鲁棒性。我们通过合并时间上下文进一步将这种统一的扩散范式扩展到流设置。引入时间转换模块（TTM）来解决历史帧和当前帧之间的噪声水平不匹配问题。此外，我们提出了一种锚点刷新策略（ARS），以减轻在基于稀疏扩散的端到端驱动框架中常见的训练推理分布偏移。没有花里胡哨的东西，UnitTeD 在多个基准上实现了最先进的性能，超越了最近的有区别的端到端方法和基于扩散的规划方法。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Diffusion models have shown strong potential for multi-modal planning in end-to-end autonomous driving. However, most existing methods confine diffusion to the planning module, conditioning on fixed outputs from separate discriminative perception networks. This decoupled design propagates perception errors to the planner, increasing optimization difficulty and reducing robustness. To overcome these limitations, we propose UniTeD, a Unified Temporal Diffusion framework that jointly models perception and planning through iterative denoising in a shared generative space. By enabling bidirectional information exchange, the framework facilitates mutual refinement between tasks and improves robustness via noise-conditioned multi-task training. We further extend this unified diffusion paradigm to a streaming setting by incorporating temporal context. A Temporal Transition Module (TTM) is introduced to resolve the noise-level mismatch between historical and current frames. In addition, we propose an Anchor Refresh Strategy (ARS) to alleviate the training-inference distribution shift commonly observed in sparse diffusion-based end-to-end driving frameworks. Without bells and whistles, UniTeD achieves state-of-the-art performance across multiple benchmarks, surpassing both recent discriminative end-to-end methods and diffusion-based planning approaches.</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2606.25736v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2606.25736" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2606.25736v1" target="_blank" rel="noopener">HTML</a>
+          
+          
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2606.25736v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.25736v1/x1.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2606.25736v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.25736v1/x2.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2606.25736v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.25736v1/x3.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2606.25736v1/x4.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.25736v1/x4.png" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+    </ul>
+  </div>
+  
+  <div class="sel-category">
+    <h3 class="sel-cat-name">VLM / LLM<span class="sel-cat-count">（0）</span></h3>
+    <ul class="sel-paper-list">
+      
+    </ul>
+  </div>
+  
   
 </div>
 
@@ -14860,7 +15303,7 @@
     <div class="wrap">
       <span>Categories: cs.CV, cs.RO, cs.AI</span>
       <span class="sep">·</span>
-      <span>Generated 2026-06-25 09:21 UTC</span>
+      <span>Generated 2026-06-26 07:30 UTC</span>
     </div>
   </footer>
 
