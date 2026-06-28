@@ -37,7 +37,7 @@
         AI<span class="tab-code">cs.AI</span>
       </button>
     
-    <button class="tab tab-selected" data-cat="__selected__">
+    <button class="tab tab-selected has-selected" data-cat="__selected__">
       Selected<span class="tab-code">精选</span>
     </button>
   </div>
@@ -14856,7 +14856,434 @@
 
 <div id="selected-panel" class="hidden">
   
-  <p class="sel-empty">今日暂无精选内容。</p>
+  
+  
+  <p class="sel-meta">从 10 篇中精选 10 篇</p>
+  
+  <div class="sel-category">
+    <h3 class="sel-cat-name">世界模型&amp;视频/场景生成模型<span class="sel-cat-count">（6）</span></h3>
+    <ul class="sel-paper-list">
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">1/6</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2606.27364" target="_blank" rel="noopener">PhysiFormer: Learning to Simulate Mechanics in World Space</a></h2>
+            <p class="paper-title-zh">PhysiFormer：学习模拟世界空间中的力学</p>
+          </div>
+        </div>
+        <p class="sel-reason">扩散Transformer直接在3D世界坐标预测网格顶点轨迹，无需刚性/因果归纳偏置即实现SOTA物理仿真</p>
+        <div class="sel-tags"><span class="sel-tag">世界模型</span><span class="sel-tag">生成模型</span><span class="sel-tag">3D重建</span></div>
+        <div class="paper-meta">
+          <span class="authors">Yiming Chen, Yushi Lan, Andrea Vedaldi</span>
+        </div>
+        <p class="paper-abstract">我们推出了 PhysiFormer，一种用于物理上合理的 3D 物体运动的扩散变换器。与在依赖于视图的像素空间中运行的视频世界模型不同，PhysiFormer 将对象表示为以世界坐标表示的 3D 网格。给定初始顶点位置和速度，以及物体材料类型（刚性或弹性），模型会对未来的顶点轨迹进行采样。虽然相关的神经物理方法建立在特定的潜在空间上或明确地强制刚性和因果关系，但 PhysiFormer 表明，通过将顶点轨迹预测直接在世界坐标中作为单个去噪扩散过程，可以在没有任何此类归纳偏差的情况下获得出色的结果。概率公式捕捉了学习动态中的不确定性，从初始条件实现了多种可能的未来，使得该框架对于具有未观察到的不确定性的应用可能有用。该模型的特点是注意力随时间、空间和对象分解以提高效率，从而无需显式对象编码即可实现排列不变的多对象推理。 PhysiFormer 经过超过 100k 条模拟轨迹的训练，生成刚性和弹性力学，并推广到混合材料设置、看不见的现实世界几何形状和更大的对象数量。它在轨迹精度、刚性保持和基于动量的物理一致性方面大大优于自回归基线。我们的结果将坐标空间扩散定位为机器人、图形和物理设计的视图不变、几何感知世界建模的一个有希望的一步。可视化、代码和模型可在 https://yimingc9.github.io/phyformer 获取。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>We present PhysiFormer, a diffusion transformer for physically-plausible 3D object motion. Unlike video world models that operate in view-dependent pixel space, PhysiFormer represents objects as 3D meshes expressed in world coordinates. Given the initial vertex positions and velocities, as well as object material type, rigid or elastic, the model samples future vertex trajectories. While related neural physics approaches build on ad-hoc latent spaces or explicitly enforce rigidity and causality, PhysiFormer shows that excellent results can be obtained without any such inductive biases, by casting vertex trajectory prediction as a single denoising diffusion process directly in world coordinates. The probabilistic formulation captures uncertainty in the learned dynamics, enabling diverse plausible futures from initial conditions, making this framework potentially useful for applications with unobserved uncertainty. The model features attention factorised over time, space, and objects for efficiency, enabling permutation-invariant multi-object reasoning without needing explicit object encoding. Trained on over 100k simulated trajectories, PhysiFormer generates rigid and elastic mechanics, and generalises to mixed-material settings, unseen real-world geometries, and larger object counts. It substantially outperforms autoregressive baselines in trajectory accuracy, rigidity preservation, and momentum-based physical consistency. Our results position coordinate-space diffusion as a promising step toward view-invariant, geometry-aware world modelling for robotics, graphics, and physical design. Visualisations, code, and models are available at https://yimingc9.github.io/physiformer.</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2606.27364v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2606.27364" target="_blank" rel="noopener">Abs</a>
+          
+          
+          <a class="project" href="https://yimingc9.github.io/physiformer" target="_blank" rel="noopener">Project</a>
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">2/6</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2606.26217" target="_blank" rel="noopener">Fast LeWorldModel</a></h2>
+            <p class="paper-title-zh">快速LeWorld模型</p>
+          </div>
+        </div>
+        <p class="sel-reason">将世界模型的自回归rollout替换为动作前缀并行预测，大幅降低视觉规划的计算开销</p>
+        <div class="sel-tags"><span class="sel-tag">世界模型</span><span class="sel-tag">具身智能</span></div>
+        <div class="paper-meta">
+          <span class="authors">Yuntian Gao, Xiangyu Xu</span>
+        </div>
+        <p class="paper-abstract">联合嵌入预测架构 (JEPA)，包括最近的 LeWorldModel (LeWM)，已成为免重建视觉世界模型的有前途的基础。然而，对于视觉规划，LeWM 通过重复应用局部一步潜在转换模型来评估候选动作序列。这种自回归的推出使得规划的计算成本很高，并且随着视野的增长，预测的轨迹会受到累积的潜在误差的影响。我们提出了 Fast LeWorldModel (Fast-LeWM)，这是一种快速潜在世界模型，用动作前缀预测取代重复的局部推出。给定当前潜在和候选动作序列，Fast-LeWM 对其前缀进行编码，并预测并行执行这些前缀后达到的未来潜在。通过将动作作为基本预测单元的前缀，Fast-LeWM 直接对多个层面上不同程度累积的动作效果进行建模。这种前缀级监督迫使模型学习状态如何在不同动作前缀下持续演化，而不是仅仅拟合一步状态转换。在规划过程中，预测器可以使用编码动作序列中的最后一个前缀标记来评估相应的未来潜在状态，而无需显式滚动每个中间想象状态。在多个任务中，Fast-LeWM 比 LeWM 提高了平均成功率，同时大幅减少了规划时间，实现了更低的开环潜在损失，随着部署范围的增加，开环潜在损失的增长速度明显减慢。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Joint-Embedding Predictive Architectures (JEPAs), including recent LeWorldModel (LeWM), have become a promising foundation for reconstruction-free visual world models. For visual planning, however, LeWM evaluates candidate action sequences by repeatedly applying a local one-step latent transition model. This autoregressive rollout makes planning computationally expensive and exposes the predicted trajectory to accumulated latent errors as the horizon grows. We propose Fast LeWorldModel (Fast-LeWM), a fast latent world model that replaces repeated local rollout with action-prefix prediction. Given the current latent and a candidate action sequence, Fast-LeWM encodes its prefixes and predicts the future latents reached after executing those prefixes in parallel. By making action prefixes the basic prediction unit, Fast-LeWM directly models action effects accumulated to different extents over multiple horizons. This prefix-level supervision forces the model to learn how states continuously evolve under different action prefixes, rather than only fitting one-step state transitions. During planning, the predictor can use the last prefix token from the encoded action sequence to evaluate the corresponding future latent without explicitly rolling through each intermediate imagined state. Across multiple tasks, Fast-LeWM improves average success over LeWM while substantially reducing planning time, achieving lower open-loop latent loss whose growth becomes significantly slower as the rollout horizon increases.</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2606.26217v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2606.26217" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2606.26217v1" target="_blank" rel="noopener">HTML</a>
+          
+          
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2606.26217v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.26217v1/x1.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2606.26217v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.26217v1/x2.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2606.26217v1/figs/open_loop_loss_compare_all_tasks.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.26217v1/figs/open_loop_loss_compare_all_tasks.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2606.26217v1/figs/quality.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.26217v1/figs/quality.png" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">3/6</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2606.26410" target="_blank" rel="noopener">Neural Voxel Dynamics: Learning Implicit 3D Physics via Volumetric Feature Advection</a></h2>
+            <p class="paper-title-zh">神经体素动力学：通过体积特征平流学习隐式 3D 物理</p>
+          </div>
+        </div>
+        <p class="sel-reason">将2D视频预测提升到3D体素隐空间，通过体积特征平流学习动作条件的隐式3D物理</p>
+        <div class="sel-tags"><span class="sel-tag">世界模型</span><span class="sel-tag">3D重建</span><span class="sel-tag">生成模型</span></div>
+        <div class="paper-meta">
+          <span class="authors">Zican Wang, Niloy Mitra</span>
+        </div>
+        <p class="paper-abstract">我们提出了一个自监督框架，用于直接从视频衍生的监督信号中学习隐式 3D 物理动力学。虽然当前的生成视频模型实现了高视觉保真度，但它们缺乏 3D 几何基础，通常会导致物理不一致并无法保持对象的持久性。我们通过将预测瓶颈从 2D 图像空间转移到“提升的”3D 体积潜在空间来解决这个问题。我们的方法将视频联合嵌入预测架构（V-JEPA）中的语义特征投影到体素化网格中，以单目深度先验为基础。这种提升使得体积特征平流能够学习动作条件转移算子，该算子将物理视为时空状态平流问题，即学习隐式 3D 物理。与依赖显式经典模拟器进行训练和/或推理的最先进的混合模型不同，我们的架构在高维 V-JEPA 特征中隐式跟踪材料状态。这允许在单个统一管道内紧急模拟异质现象（例如流体流动中的刚体运动）。我们的模型仅通过端到端视频衍生信号加动作条件进行监督，无需访问物理引擎内部状态、标签或代理模型，在多个基准（CLEVERER、PhysInOne、PhysGaia）上表现出良好的长期结构稳定性和物理合理性。我们相信这项工作为通用动态世界模型开辟了一条可扩展的途径，该模型仅通过单眼视频的被动观察来内化物理世界的 3D 不变量。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>We present a self-supervised framework for learning implicit 3D physical dynamics directly from video-derived supervisory signals. While current generative video models achieve high visual fidelity, they lack a 3D geometric foundation, often resulting in physical inconsistencies and a failure to maintain object permanence. We address this by shifting the predictive bottleneck from 2D image space to a `lifted&#39; 3D Volumetric Latent Space. Our method unprojects semantic features from a Video Joint-Embedding Predictive Architecture (V-JEPA) into a voxelized grid, grounded by monocular depth priors. This lifting enables a Volumetric Feature Advection to learn an action-conditioned transition operator that treats physics as a spatio-temporal state advection problem, i.e., learn implicit 3D physics. Unlike state-of-the-art hybrid models that rely on explicit classical simulators for training and/or inference, our architecture tracks material states implicitly within high-dimensional V-JEPA features. This allows for the emergent simulation of heterogeneous phenomena (e.g., rigid body motion in fluid flow) within a single, unified pipeline. Supervised solely via end-to-end video-derived signal plus action conditions, without access to physics engine internal states, labels, or surrogate models, our model demonstrates good long-term structural stability and physical plausibility on multiple benchmarks (CLEVERER, PhysInOne, PhysGaia). We believe that this work opens a scalable pathway toward general-purpose dynamic world models that internalize the 3D invariants of the physical world solely through passive observation of monocular videos.</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2606.26410v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2606.26410" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2606.26410v1" target="_blank" rel="noopener">HTML</a>
+          
+          
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2606.26410v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.26410v1/x1.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2606.26410v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.26410v1/x2.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2606.26410v1/figures/2dflow/flow_gt_006.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.26410v1/figures/2dflow/flow_gt_006.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2606.26410v1/figures/2dflow/flow_op_006.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.26410v1/figures/2dflow/flow_op_006.png" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">4/6</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2606.27345" target="_blank" rel="noopener">RayPE: Ray-Space Positional Encoding for 3D-Aware Video Generation</a></h2>
+            <p class="paper-title-zh">RayPE：用于 3D 感知视频生成的光线空间位置编码</p>
+          </div>
+        </div>
+        <p class="sel-reason">将Plücker射线坐标注入自注意力实现3D感知视频生成，注意力分解为内容项+几何项</p>
+        <div class="sel-tags"><span class="sel-tag">生成模型</span><span class="sel-tag">3D重建</span></div>
+        <div class="paper-meta">
+          <span class="authors">Minghao Yin, Jiahao Lu, Wenbo Hu, Wang Zhao, Shan Ying, Kai Han</span>
+        </div>
+        <p class="paper-abstract">现代视频扩散变压器通过 RoPE 将其标记定位在 (u,v,t) 轴上——这是对摄像机采样网格的描述，但没有提及场景的 3D 结构。我们观察到，两条相机光线之间的几何关系是由 Plucker 倒积捕获的，它在两条光线中是双线性的——与 Transformer 注意力中的点积相同的代数形式。基于这个类比，我们提出了 RayPE，这是一种位置编码扩展，它将每个令牌的 6D Plucker 坐标添加到自注意力的查询和密钥中，并采用查询/密钥翻转安排，在该安排下，对称身份配置与倒数乘积完全一致。注入是相加的，产生的注意力分数分解为一个内容项、一个几何项以及两个内容和几何交叉项——我们的实验发现所有这些都是单独必要的。为了使编码在具有异构相机平移尺度（SfM、深度 SLAM、度量）的视频数据中保持稳定，我们进一步将光线方向与矩幅解耦，通过学习的对数幅值函数对编码进行门控，并应用 RMSNorm 将其与 QKNorm 归一化内容分支对齐。完整模块向预训练视频 DiT 添加了不到 0.1% 的参数，从预训练权重开始进行零初始化，并提高了四个数据集训练混合物上的相机可控性、跨帧 3D 一致性和整体视频质量。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Modern video diffusion transformers position their tokens through RoPE on the (u,v,t) axes -- a description of the camera&#39;s sampling grid that says nothing about the 3D structure of the scene. We observe that the geometric relation between two camera rays is captured by the Plucker reciprocal product, which is bilinear in the two rays -- the same algebraic form as the dot product in Transformer attention. Building on this analogy, we propose RayPE, a positional-encoding extension that injects per-token 6D Plucker coordinates additively into the queries and keys of self-attention, with a query/key flip arrangement under which the symmetric identity configuration coincides exactly with the reciprocal product. The injection is additive, the resulting attention score decomposes into a content term, a geometry term, and two content and geometry cross-terms -- all of which our experiments find individually necessary. To make the encoding stable across video data with heterogeneous camera-translation scales (SfM, deep SLAM, metric), we further decouple ray direction from moment magnitude, gate the encoding by a learned function of the log-magnitude, and apply RMSNorm to align it with the QKNorm-normalized content branch. The full module adds less than 0.1% parameters to a pretrained video DiT, is zero-initialized to start from the pretrained weights, and improves camera controllability, cross-frame 3D consistency, and overall video quality on a four-dataset training mixture.</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2606.27345v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2606.27345" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2606.27345v1" target="_blank" rel="noopener">HTML</a>
+          
+          
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2606.27345v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.27345v1/x2.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2606.27345v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.27345v1/x3.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2606.27345v1/x4.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.27345v1/x4.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2606.27345v1/x5.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.27345v1/x5.png" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">5/6</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2606.27123" target="_blank" rel="noopener">Proposal-Conditioned Latent Diffusion for Closed-Loop Traffic Scenario Generation</a></h2>
+            <p class="paper-title-zh">用于闭环流量场景生成的提案条件潜在扩散</p>
+          </div>
+        </div>
+        <p class="sel-reason">基于场景上下文和提案先验的隐扩散模型实现高效闭环交通场景生成，大幅降低单步推理耗时</p>
+        <div class="sel-tags"><span class="sel-tag">闭环仿真</span><span class="sel-tag">自动驾驶</span><span class="sel-tag">生成模型</span></div>
+        <div class="paper-meta">
+          <span class="authors">Shubham Vaijanath Phoolari, Aleyna Kara, Christoph Lauer, Steven Peters</span>
+        </div>
+        <p class="paper-abstract">闭环交通模拟仍然具有挑战性，因为它必须生成在整个部署过程中场景一致且可控的交互式多智能体行为。先前基于扩散的方法实现了很强的现实性，但其计算成本可能会阻碍自动车辆规划和仿真的时间受限的重新规划循环中的部署。我们提出了一个基于扩散的场景生成框架，以实例为中心的场景上下文和多模式提议先验为条件，并提供可选的测试时指导来塑造安全关键行为。紧凑的动作潜在表示和基于建议的初始化提高了采样效率并减少了每步运行时间，而无需重新训练。 Waymo 开放运动数据集上的实验证明了跨不同交互场景的真实性、安全性和可控性之间的良好平衡，同时表明测试时指导可以在竞争目标之间进行系统权衡。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Closed-loop traffic simulation remains challenging because it must generate interactive multi-agent behaviors that are scene-consistent and controllable throughout rollout. Prior diffusion-based approaches achieve strong realism, but their computational cost can hinder deployment in time-constrained replanning loops for autonomous vehicle planning and simulation. We present a diffusion-based scenario generation framework conditioned on instance-centric scene context and multimodal proposal priors, with optional test-time guidance for shaping safety-critical behaviors. A compact action-latent representation and proposal-based initialization improve sampling efficiency and reduce per-step runtime without retraining. Experiments on the Waymo Open Motion Dataset demonstrate a favorable balance among realism, safety, and controllability across diverse interactive scenarios, while showing that test-time guidance enables systematic trade-offs among competing objectives.</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2606.27123v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2606.27123" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2606.27123v1" target="_blank" rel="noopener">HTML</a>
+          
+          
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2606.27123v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.27123v1/x1.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2606.27123v1/SIMPL_DIFF_3_2.jpg" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.27123v1/SIMPL_DIFF_3_2.jpg" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2606.27123v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.27123v1/x2.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2606.27123v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.27123v1/x3.png" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">6/6</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2606.26916" target="_blank" rel="noopener">PhysRAG: Enhancing Physics-Awareness in Video Generation via Retrieval-Augmented Generation</a></h2>
+            <p class="paper-title-zh">PhysRAG：通过检索增强生成增强视频生成中的物理意识</p>
+          </div>
+        </div>
+        <p class="sel-reason">用检索增强生成注入物理知识到视频扩散模型，构建物理视频数据库提升物理规律遵循度</p>
+        <div class="sel-tags"><span class="sel-tag">生成模型</span><span class="sel-tag">世界模型</span><span class="sel-tag">开源</span></div>
+        <div class="paper-meta">
+          <span class="authors">Kexu Cheng, Zicheng Liu, Mingju Gao, Chunhe Song, Hao Tang</span>
+        </div>
+        <p class="paper-abstract">由于难以捕捉不同的物理现象（例如热动力学、力学和光学），开发物理感知视频生成模型仍然是一个重大挑战。在这项工作中，我们介绍了 PhysRAG，这是一种新颖的管道，可通过检索增强生成 (RAG) 增强视频生成中的物理意识。为了解决高质量数据有限的问题，我们基于 WISA-80K 数据集设计了一个两级数据过滤管道，从而生成了一组精选的 7K 高质量视频用于训练。此外，我们构建了一个物理视频数据库，并开发了一种使用可学习查询将物理知识注入视频传播模型的机制。我们的方法在视觉质量和物理规则合规性方面实现了最先进的性能，在 PhyGenBench 和 VBench 等基准测试中超越了现有模型。我们进行了广泛的消融研究，以验证关键组件的有效性，包括数据过滤管道、RAG 机制和物理信息提取方法。为了促进未来的研究，我们的代码、数据和模型已准备好在 https://github.com/sediment1024/PhysRAG 上发布。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Developing physically aware video generation models remains a significant challenge due to the difficulty in capturing diverse physical phenomena, such as thermal dynamics, mechanics, and optics. In this work, we introduce PhysRAG, a novel pipeline that enhances physical awareness in video generation through Retrieval-Augmented Generation (RAG). To address the issue of limited high-quality data, we design a two-stage data filtering pipeline based on the WISA-80K dataset, resulting in a curated set of 7K high-quality videos for training. Furthermore, we construct a physical video database and develop a mechanism to inject physical knowledge into a video diffusion model using learnable queries. Our method achieves state-of-the-art performance in both visual quality and physical rule compliance, surpassing existing models in benchmarks such as PhyGenBench and VBench. We conduct extensive ablation studies to validate the effectiveness of our key components, including the data filtering pipeline, RAG mechanism, and method for physical information extraction. To facilitate future research, our code, data, and models are prepared for release at https://github.com/sediment1024/PhysRAG.</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2606.26916v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2606.26916" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2606.26916v1" target="_blank" rel="noopener">HTML</a>
+          <a class="code" href="https://github.com/sediment1024/PhysRAG" target="_blank" rel="noopener">Code</a>
+          
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2606.26916v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.26916v1/x1.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2606.26916v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.26916v1/x2.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2606.26916v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.26916v1/x3.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2606.26916v1/x4.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.26916v1/x4.png" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+    </ul>
+  </div>
+  
+  <div class="sel-category">
+    <h3 class="sel-cat-name">3D/4D 重建与生成<span class="sel-cat-count">（3）</span></h3>
+    <ul class="sel-paper-list">
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">1/3</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2606.27223" target="_blank" rel="noopener">SatSplatDiff: Geometry-preserving generative refinement for high-fidelity satellite Gaussian Splatting</a></h2>
+            <p class="paper-title-zh">SatSplatDiff：高保真卫星高斯散射的几何保留生成细化</p>
+          </div>
+        </div>
+        <p class="sel-reason">用预训练生成先验迭代精修卫星3DGS渲染图，引入跨视图注意力保持几何一致性</p>
+        <div class="sel-tags"><span class="sel-tag">3DGS</span><span class="sel-tag">3D重建</span><span class="sel-tag">生成模型</span><span class="sel-tag">开源</span></div>
+        <div class="paper-meta">
+          <span class="authors">Jiyong Kim, Shuang Song, Ronjgun Qin</span>
+        </div>
+        <p class="paper-abstract">高斯溅射最近被探索用于卫星 3D 重建，展示了表示辐射多样化卫星场景的灵活性和效率。然而，卫星图像的顶部视点有限，导致对建筑立面的监管不足，导致表面出现孔洞，视觉保真度下降。最近研究了生成细化，它利用预训练的生成先验来迭代细化和更新用作监督目标的渲染图像，以提高高斯渲染图像的视觉保真度。然而，由于这些模型独立地细化每个视图，因此生成的图像可能会产生幻觉并破坏照片一致性，从而导致几何退化。为了解决这些限制，我们提出了 SatSplatDiff，其目的是最大限度地减少生成细化中普遍存在的几何退化。基于我们之前的工作 SatSplat 中建立的摄影测量 DSM 初始化和基于 2DGS 的阴影投射，我们首先引入单目深度监督和多尺度几何细化，以建立几何精确且规则化的表面表示。然后，我们应用阴影引导的生成细化，其中几何计算的阴影图引导高斯保持与底层几何的一致性，提高视觉保真度，同时减少几何退化。对 IARPA2016 和 DFC2019 数据集的广泛评估展示了最先进的性能，与现有基线相比，几何 MAE 降低了高达 18%，视觉保真度 (FID-CLIP) 提高了 28-45%。我们的方法提供高达 5 倍的分辨率增强，同时具有最小的幻觉和传感器一致的外观，展示了无缝的跨图块一致性和大规模重建的强大可扩展性。源代码可在 https://github.com/GDAOSU/SatSplatDiff 获取</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Gaussian Splatting has been recently explored for satellite 3D reconstruction, demonstrating flexibility and efficiency in representing radiometrically diverse satellite scenes. However, the limited top viewpoint of satellite imagery results in insufficient supervision on building facades, leaving surface holes and degraded visual fidelity. Generative refinement, which leverages pretrained generative priors to iteratively refine and update the rendered images used as supervision targets, has recently been investigated to improve the visual fidelity of Gaussian-rendered images. However, since these models refine each view independently, the resulting images can generate hallucinations and break photo-consistency, leading to geometric degradation. To address these limitations, we propose SatSplatDiff, which aims to minimize geometric degradation prevalent in generative refinement. Building on photogrammetric DSM initialization and 2DGS-based shadow casting established in our prior work SatSplat, we first introduce monocular depth supervision and multi-scale geometric refinement to establish a geometrically accurate and well-regularized surface representation. We then apply shadow-guided generative refinement, where geometrically calculated shadow maps guide the Gaussians to maintain consistency with the underlying geometry, improving visual fidelity while reducing geometric degradation. Extensive evaluations on the IARPA2016 and DFC2019 datasets demonstrate state-of-the-art performance, reducing geometric MAE by up to 18% and improving visual fidelity (FID-CLIP) by 28-45% over existing baselines. Our method delivers up to 5x resolution enhancement with minimal hallucination and sensor-consistent appearance, demonstrating seamless cross-tile consistency and strong scalability for large-scale reconstruction. Source code is available at https://github.com/GDAOSU/SatSplatDiff</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2606.27223v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2606.27223" target="_blank" rel="noopener">Abs</a>
+          
+          <a class="code" href="https://github.com/GDAOSU/SatSplatDiff" target="_blank" rel="noopener">Code</a>
+          
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">2/3</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2606.27071" target="_blank" rel="noopener">PanoImager: Geometry-Guided Novel View Synthesis and Reconstruction from Sparse Panoramic Views</a></h2>
+            <p class="paper-title-zh">PanoImager：几何引导的新颖视图合成和稀疏全景重建</p>
+          </div>
+        </div>
+        <p class="sel-reason">无SfM初始化：前馈位姿/深度先验+几何条件扩散视图补全+深度引导3DGS优化的稀疏全景重建</p>
+        <div class="sel-tags"><span class="sel-tag">3D重建</span><span class="sel-tag">3DGS</span><span class="sel-tag">feed-forward</span></div>
+        <div class="paper-meta">
+          <span class="authors">Zhisong Xu, Takeshi Oishi</span>
+        </div>
+        <p class="paper-abstract">全景传感提供了广泛的视场覆盖范围，但在旋转主导的弱视差运动下，稀疏全景图的 3D 重建仍然具有挑战性。在这种情况下，SfM/SLAM 初始化通常是病态且不可靠的。我们提出了 PanoImager，一个无 SfM 的框架，它结合了前馈姿势/深度先验、几何条件扩散视图完成和深度引导 3DGS 优化。仅给定一些全景图像，PanoImager 将它们分解为局部透视图，合成辅助观察结果以丰富稀疏证据，并稳定高斯优化以提高跨视图一致性。多个基准测试的实验表明，在极度稀疏的情况下稳定性得到了提高，这表明当 SfM/SLAM 初始化失败时，PanoImager 可以作为地图细化的离线/后台组件。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Panoramic sensing offers wide field-of-view coverage, yet 3D reconstruction from sparse panoramas remains challenging under rotation-dominant, weak-parallax motion. In such regimes, SfM/SLAM initialization is often ill-conditioned and unreliable. We present PanoImager, an SfM-free framework that combines feed-forward pose/depth priors, geometry-conditioned diffusion view completion, and depth-guided 3DGS optimization. Given only a few panoramic images, PanoImager decomposes them into local perspective views, synthesizes auxiliary observations to enrich sparse evidence, and stabilizes Gaussian optimization for improved cross-view consistency. Experiments on multiple benchmarks show improved stability under extreme sparsity, suggesting PanoImager as an offline/background component for map refinement when SfM/SLAM fails to initialize.</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2606.27071v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2606.27071" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2606.27071v1" target="_blank" rel="noopener">HTML</a>
+          
+          
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2606.27071v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.27071v1/x1.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2606.27071v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.27071v1/x2.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2606.27071v1/Interpolation.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.27071v1/Interpolation.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2606.27071v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.27071v1/x3.png" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">3/3</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2606.27088" target="_blank" rel="noopener">SubdivAR: Autoregressive Next-Scale Prediction for Neural Mesh Subdivision</a></h2>
+            <p class="paper-title-zh">SubdivAR：神经网格细分的自回归下一尺度预测</p>
+          </div>
+        </div>
+        <p class="sel-reason">自回归网格表示将细分建模为下一尺度预测，混合拓扑感知Transformer兼顾全局语义与局部几何</p>
+        <div class="sel-tags"><span class="sel-tag">3D重建</span><span class="sel-tag">生成模型</span></div>
+        <div class="paper-meta">
+          <span class="authors">Huipeng Guo, Zikai Song, Hang Long, Jielei Zhang, Wenbing Li, Junkai Lin, Tianhao Zhao, Jinshen Zhang, Tianle Guo, Wei Yang</span>
+        </div>
+        <p class="paper-abstract">网格细分是将粗糙的可编辑网格转换为高分辨率表面的基本操作，在数字资产创建中具有广泛的应用。经典的基于规则的方案依赖于固定的局部细化规则，并且经常产生过度平滑的表面。最近的神经细分方法改进了细节合成，但仍然受到局部建模的限制并且表现出有限的通用性。我们提出了 SubdivAR，一种基于我们提出的网格自回归表示（MAR）的神经网格细分框架。 MAR 将不同细分级别的网格排列成有序的尺度序列，将细分重新表示为自回归的下一个尺度预测。为了支持这个公式，我们引入了一种混合拓扑感知变压器，它将全局语义注意力与拓扑约束的局部特征聚合相结合。 SubdivAR 采用下一代坐标预测范例，在每个细化阶段对顶点偏移进行回归，以保留细分拓扑，同时恢复细粒度的几何细节。为了实现可靠的学习，我们构建了 FII-40K，这是一个包含近 40,000 个高质量网格的精选数据集，具有多级细分监督。实验表明，SubdivAR 的性能优于最先进的基线，豪斯多夫距离和倒角距离分别减少了 18.8% 和 14.2%，并且在复杂的开放表面几何形状上表现出强大的鲁棒性。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Mesh subdivision is a fundamental operation for converting coarse, editable meshes into high-resolution surfaces, with broad applications in digital asset creation. Classical rule-based schemes rely on fixed local refinement rules and often produce over-smoothed surfaces. Recent neural subdivision methods improve detail synthesis, but remain constrained by local modeling and exhibit limited generalizability. We present SubdivAR, a neural mesh subdivision framework based on our proposed Mesh Autoregressive Representation (MAR). MAR arranges meshes at different subdivision levels into an ordered scale sequence, reformulating subdivision as autoregressive next-scale prediction. To support this formulation, we introduce a Hybrid Topology-Aware Transformer that combines global semantic attention with topology-constrained local feature aggregation. SubdivAR adopts a next-scale coordinate prediction paradigm, regressing vertex offsets at each refinement stage to preserve subdivision topology while recovering fine-grained geometric details. To enable reliable learning, we construct FII-40K, a curated dataset of nearly 40,000 high-quality meshes with multi-level subdivision supervision. Experiments show that SubdivAR outperforms state-of-the-art baselines, reducing Hausdorff Distance and Chamfer Distance by 18.8% and 14.2%, respectively, and demonstrates strong robustness on complex open-surface geometries.</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2606.27088v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2606.27088" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2606.27088v1" target="_blank" rel="noopener">HTML</a>
+          
+          
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2606.27088v1/figure/teazer2-1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.27088v1/figure/teazer2-1.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2606.27088v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.27088v1/x1.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2606.27088v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.27088v1/x2.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2606.27088v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.27088v1/x3.png" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+    </ul>
+  </div>
+  
+  <div class="sel-category">
+    <h3 class="sel-cat-name">自动驾驶与机器人<span class="sel-cat-count">（1）</span></h3>
+    <ul class="sel-paper-list">
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">1/1</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2606.27295" target="_blank" rel="noopener">LA4VLA: Learning to Act without Seeing via Language-Action Pretraining</a></h2>
+            <p class="paper-title-zh">LA4VLA：通过语言-动作预训练学习在看不到的情况下采取行动</p>
+          </div>
+        </div>
+        <p class="sel-reason">语言-动作预训练解耦视觉监督，让VLA先学会语言条件的动作先验，减少对场景视觉捷径的依赖</p>
+        <div class="sel-tags"><span class="sel-tag">VLA</span><span class="sel-tag">操控</span><span class="sel-tag">开源</span></div>
+        <div class="paper-meta">
+          <span class="authors">Tao Lin, Yuxin Du, Yiran Mao, Zewei Ye, Yilei Zhong, Bing Cheng, Yiming Wang, Jiting Liu, Yang Tian, Junchi Yan, Feiran Wu, Zenan Meng, Hu Wei, Yuqian Fu, Gen Li, Bo Zhao</span>
+        </div>
+        <p class="paper-abstract">视觉-语言-动作（VLA）模型通常通过将视觉观察和语言指令联合映射到动作来对机器人演示进行预训练。然而，密集的视觉动作监督可以主导相对稀疏的语言动作信号。因此，策略可能依赖于视觉快捷方式，而不是学习语言如何影响动作执行，从而使它们对视觉变化敏感。为了解决这个限制，我们提出了 LA4VLA，一种语言动作预训练框架，使策略能够在没有视觉观察的情况下获取语言条件动作先验。这些先验捕获了跨任务和场景共享的可重用操作技能，减少了对特定场景视觉线索的依赖。具体来说，LA4VLA 将专家演示轨迹分解为原子动作片段，并将每个片段与相应的低级动作描述配对。这会产生 LA4-33K，这是一个 33K 语言动作 (LA) 片段的数据集，完全源自现有演示，无需额外收集机器人数据。我们进一步开发了 LA4VLA-1B，一种轻量级 1B 参数 VLA 模型，并研究了将语言动作监督纳入 VLA 学习的三种范式：仅 LA 预训练、顺序 LA 到 VLA 预训练和混合 LA-VLA 预训练。在模拟和现实世界任务中，LA 预训练策略始终优于匹配的 VLA 预训练策略，而 LA 和 VLA 监督的结合可以带来进一步的收益。特别是，混合 LA-VLA 预训练使 LA4VLA-1B 在模拟和现实任务中的平均成功率比无预训练基线分别提高了 17.8 和 45.0 个百分点。这些结果表明 LA4VLA 是一种有效且互补的预训练策略，可用于构建更强大、更稳健的 VLA 策略。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Vision-Language-Action (VLA) models are commonly pretrained on robot demonstrations by jointly mapping visual observations and language instructions to actions. However, dense visual-action supervision can dominate the comparatively sparse language-action signal. As a result, policies may rely on visual shortcuts rather than learn how language conditions action execution, making them sensitive to visual variations. To address this limitation, we propose LA4VLA, a language-action pretraining framework that enables policies to acquire language-conditioned action priors without visual observations. These priors capture reusable manipulation skills shared across tasks and scenes, reducing reliance on scene-specific visual cues. Specifically, LA4VLA decomposes expert demonstration trajectories into atomic action segments and pairs each segment with a corresponding low-level action description. This yields LA4-33K, a dataset of 33K Language-Action (LA) episodes derived entirely from existing demonstrations without additional robot data collection. We further develop LA4VLA-1B, a lightweight 1B-parameter VLA model, and investigate three paradigms for incorporating language-action supervision into VLA learning: LA-only pretraining, sequential LA-to-VLA pretraining, and mixed LA-VLA pretraining. Across simulation and real-world tasks, LA-pretrained policies consistently outperform matched VLA-pretrained counterparts, while combining LA and VLA supervision leads to further gains. In particular, mixed LA-VLA pretraining improves the average success rate of LA4VLA-1B over the no-pretraining baseline by up to 17.8 and 45.0 percentage points in simulation and real-world tasks, respectively. These results establish LA4VLA as an effective and complementary pretraining strategy for building stronger and more robust VLA policies.</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2606.27295v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2606.27295" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2606.27295v1" target="_blank" rel="noopener">HTML</a>
+          <a class="code" href="https://github.com/MINT-SJTU/LA4VLA" target="_blank" rel="noopener">Code</a>
+          
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2606.27295v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.27295v1/x1.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2606.27295v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.27295v1/x2.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2606.27295v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.27295v1/x3.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2606.27295v1/x4.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2606.27295v1/x4.png" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+    </ul>
+  </div>
+  
+  <div class="sel-category">
+    <h3 class="sel-cat-name">VLM / LLM<span class="sel-cat-count">（0）</span></h3>
+    <ul class="sel-paper-list">
+      
+    </ul>
+  </div>
+  
   
 </div>
 
@@ -14866,7 +15293,7 @@
     <div class="wrap">
       <span>Categories: cs.CV, cs.RO, cs.AI</span>
       <span class="sep">·</span>
-      <span>Generated 2026-06-26 13:16 UTC</span>
+      <span>Generated 2026-06-28 13:01 UTC</span>
     </div>
   </footer>
 
