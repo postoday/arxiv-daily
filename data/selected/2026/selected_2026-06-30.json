@@ -1,0 +1,810 @@
+{
+  "date": "2026-06-30",
+  "total_candidates": 280,
+  "selected_count": 17,
+  "categories": [
+    {
+      "id": "worldmodel",
+      "name": "世界模型&视频/场景生成模型",
+      "papers": [
+        {
+          "id": "2606.30534",
+          "rank": 1,
+          "score": 90,
+          "reason_zh": "多模态世界基础模型，统一下一状态预测实现理解与行动",
+          "tags": [
+            "世界模型",
+            "生成模型",
+            "开源"
+          ],
+          "title": "Orca: The World is in Your Mind",
+          "title_zh": "逆戟鲸：世界在你心中",
+          "authors": [
+            "Yihao Wang",
+            "Yuheng Ji",
+            "Mingyu Cao",
+            "Yanqing Shen",
+            "Runze Xiao"
+          ],
+          "abstract": "We introduce Orca, an initial instantiation of a general world foundation model. Orca learns a unified world latent space from multimodal world signals and exposes it through multimodal readout interfaces. Rather than optimizing isolated next-token, next-frame, or next-action prediction, we are centered on Next-State-Prediction modeling, offering a unified state-transition modeling route toward understanding, predicting, and acting upon the world. Orca learns through two complementary paradigms: unconscious learning captures dense natural state transitions from continuous videos, and conscious learning models sparse meaningful state transitions by language-described events and VQA supervision. For pre-training, we construct a large-scale world-learning inventory data, including 125K hours of video data and 160M event annotations. After pre-training, Orca learns a unified world latent space. To examine whether the learned latent supports downstream, we evaluate it by three representative downstream readouts: text generation, image prediction, and embodied action generation. Orca's backbone is frozen, and only the lightweight modality-specific decoders are trainable. Experiments show the scalability of the proposed paradigm and verify that stronger world latent enables stronger downstream readouts. Orca outperforms similar-sized specialized baselines. These results show that Orca, as a general world foundation model, presents a promising approach to understanding, predicting, and acting upon the world. Finally, we discuss the current limitations, aiming to provide useful insights and inspiration for the community.",
+          "abstract_zh": "我们介绍 Orca，它是通用世界基础模型的初始实例。 Orca 从多模态世界信号中学习统一的世界潜在空间，并通过多模态读出接口将其公开。我们不是优化孤立的下一令牌、下一帧或下一动作预测，而是以下一状态预测建模为中心，提供统一的状态转换建模路线来理解、预测和对世界采取行动。 Orca 通过两种互补的范式进行学习：无意识学习从连续视频中捕获密集的自然状态转换，有意识学习通过语言描述的事件和 VQA 监督来建模稀疏的有意义的状态转换。对于预训练，我们构建了大规模的世界学习库存数据，包括 125K 小时的视频数据和 160M 事件注释。经过预训练，Orca 学习了一个统一的世界潜在空间。为了检查学习到的潜在变量是否支持下游，我们通过三个代表性的下游读数来评估它：文本生成、图像预测和具体动作生成。 Orca 的骨干网被冻结，只有轻量级特定于模态的解码器是可训练的。实验证明了所提出的范例的可扩展性，并验证了更强的世界潜在能力可以实现更强的下游读数。 Orca 的性能优于类似大小的专业基线。这些结果表明，Orca 作为通用世界基础模型，为理解、预测和对世界采取行动提供了一种有前途的方法。最后，我们讨论当前的局限性，旨在为社区提供有用的见解和启发。",
+          "submitted": "2026-06-29T16:36:10Z",
+          "updated": "2026-06-29T16:36:10Z",
+          "abs_url": "https://arxiv.org/abs/2606.30534",
+          "pdf_url": "https://arxiv.org/pdf/2606.30534v1",
+          "html_url": "https://arxiv.org/html/2606.30534v1",
+          "figures": [
+            "https://arxiv.org/html/2606.30534v1/x1.png",
+            "https://arxiv.org/html/2606.30534v1/x2.png",
+            "https://arxiv.org/html/2606.30534v1/x3.png",
+            "https://arxiv.org/html/2606.30534v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": "https://orca-wm.github.io/",
+          "code_links": [],
+          "project_links": [
+            "https://orca-wm.github.io/"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": null,
+          "comments": "Project page: https://orca-wm.github.io/",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ]
+        },
+        {
+          "id": "2606.30292",
+          "rank": 2,
+          "score": 90,
+          "reason_zh": "消费级GPU实时可控世界模型，适配键盘鼠标交互与低算力部署",
+          "tags": [
+            "世界模型",
+            "生成模型",
+            "闭环仿真",
+            "开源"
+          ],
+          "title": "DreamForge-World 0.1 Preview: A Low-Compute Real-Time Controllable World Model",
+          "title_zh": "DreamForge-World 0.1 预览：低计算实时可控世界模型",
+          "authors": [
+            "Daniyel Ayupov",
+            "Artur Markov-Tsoy"
+          ],
+          "abstract": "We present DreamForge-World 0.1 Preview, a preview foundational world model for real-time interactive world simulation. The system adapts the LongLive 1 autoregressive video stack, itself derived from Wan2.1-T2V-1.3B, with a residual action pathway inspired by the Matrix-Game family. DreamForge-World 0.1 Preview focuses on a complementary axis to frontier-scale world simulators: low-compute adaptation, consumer-GPU runtime, and broad interactive capability coverage. It supports live keyboard and mouse control, multimodal initialization, mid-stream reprompting, dual-view operation, and minute-scale interactive rollouts at native 480p resolution, reaching up to 14 to 15 FPS FPS on a single RTX 4090 with a low memory footprint. By leveraging open video backbones and applying targeted adaptation runs, we build the preview system with high cost-efficiency. DF-World 0.1 Preview is not yet a memory-complete or frontier-quality world simulator, but demonstrates a practical low-compute route toward real-time controllable world-model previews on consumer GPUs.",
+          "abstract_zh": "我们推出 DreamForge-World 0.1 Preview，这是一个用于实时交互式世界模拟的预览基础世界模型。该系统采用了 LongLive 1 自回归视频堆栈，该堆栈本身源自 Wan2.1-T2V-1.3B，并具有受 Matrix-Game 系列启发的剩余动作路径。 DreamForge-World 0.1 预览版重点关注前沿规模世界模拟器的补充轴：低计算适应、消费者 GPU 运行时和广泛的交互功能覆盖。它支持实时键盘和鼠标控制、多模式初始化、中流重新提示、双视图操作以及原生 480p 分辨率下的分钟级交互式推出，在单个 RTX 4090 上达到高达 14 至 15 FPS FPS，内存占用较低。通过利用开放的视频骨干网并应用有针对性的适配运行，我们构建了高成本效益的预览系统。 DF-World 0.1 Preview 还不是一个内存完整或前沿质量的世界模拟器，但展示了一种在消费类 GPU 上实现实时可控世界模型预览的实用低计算路线。",
+          "submitted": "2026-06-29T13:35:44Z",
+          "updated": "2026-06-29T13:35:44Z",
+          "abs_url": "https://arxiv.org/abs/2606.30292",
+          "pdf_url": "https://arxiv.org/pdf/2606.30292v1",
+          "html_url": "https://arxiv.org/html/2606.30292v1",
+          "figures": [
+            "https://arxiv.org/html/2606.30292v1/banner_final.png",
+            "https://arxiv.org/html/2606.30292v1/grid_5x6-tpv.png",
+            "https://arxiv.org/html/2606.30292v1/grid_5x6-fpv.png",
+            "https://arxiv.org/html/2606.30292v1/reprompt_tsunami.png"
+          ],
+          "code_url": null,
+          "project_url": "https://trydreamforge.com/",
+          "code_links": [],
+          "project_links": [
+            "https://trydreamforge.com/"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": null,
+          "comments": "Project page: https://trydreamforge.com/",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV",
+            "cs.LG"
+          ]
+        },
+        {
+          "id": "2606.29501",
+          "rank": 3,
+          "score": 88,
+          "reason_zh": "动作条件世界模型预训练，迁移机器人动力学先验至下游任务",
+          "tags": [
+            "世界模型",
+            "生成模型",
+            "具身智能",
+            "操控",
+            "顶会"
+          ],
+          "title": "Learning Transferable Dynamics Priors from Action to World Modeling",
+          "title_zh": "学习从行动到世界建模的可迁移动力学先验",
+          "authors": [
+            "Ze Huang",
+            "Jiahui Zhang",
+            "Hairuo Liu",
+            "Chenxi Zhang",
+            "Ran Cheng"
+          ],
+          "abstract": "We study action-conditioned world modeling as a scalable way to learn transferable dynamics priors for robot learning. By pretraining a model to predict how actions drive visual scene evolution, the resulting world model captures reusable interaction dynamics beyond appearance-level video generation. Concretely, we pretrain a multi-view interactive base diffusion world model, A2World, on large-scale robot manipulation data with real action annotations. We validate the learned dynamics priors from two complementary perspectives. First, we adapt A2World into a task- or scene-specialized real-world simulator, A2World-sim, whose long-horizon rollouts support simulator-based policy evaluation and scalable what-if analysis by replacing real-robot rollouts with world model rollouts. Second, starting from the same pretrained weights, we adapt A2World into a video-action joint prediction model, A2World-policy, that predicts actions under visual and instruction conditioning. Experiments across simulation benchmarks and real-robot settings demonstrate that action-conditioned world model pretraining yields transferable dynamics priors that benefit both simulator-centric and policy-centric robot learning.",
+          "abstract_zh": "我们研究动作条件世界建模作为一种可扩展的方式来学习机器人学习的可转移动力学先验。通过预训练模型来预测动作如何驱动视觉场景演化，生成的世界模型捕获了超越外观级视频生成的可重用交互动态。具体来说，我们在带有真实动作注释的大规模机器人操作数据上预训练了多视图交互式基础扩散世界模型 A2World。我们从两个互补的角度验证了学习到的动力学先验。首先，我们将 A2World 改编成任务或场景专用的现实世界模拟器 A2World-sim，其长期部署通过用世界模型部署替换真实机器人部署来支持基于模拟器的策略评估和可扩展的假设分析。其次，从相同的预训练权重开始，我们将 A2World 改编成视频动作联合预测模型 A2World-policy，该模型可以预测视觉和指令条件下的动作。跨模拟基准和真实机器人设置的实验表明，动作条件世界模型预训练产生可转移的动态先验，这有利于以模拟器为中心和以策略为中心的机器人学习。",
+          "submitted": "2026-06-28T17:01:55Z",
+          "updated": "2026-06-28T17:01:55Z",
+          "abs_url": "https://arxiv.org/abs/2606.29501",
+          "pdf_url": "https://arxiv.org/pdf/2606.29501v1",
+          "html_url": "https://arxiv.org/html/2606.29501v1",
+          "figures": [
+            "https://arxiv.org/html/2606.29501v1/x2.png",
+            "https://arxiv.org/html/2606.29501v1/x3.png",
+            "https://arxiv.org/html/2606.29501v1/x4.png",
+            "https://arxiv.org/html/2606.29501v1/x5.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": "ECCV",
+          "comments": "ECCV 2026 Accepted",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.RO"
+          ]
+        },
+        {
+          "id": "2606.28804",
+          "rank": 4,
+          "score": 87,
+          "reason_zh": "视觉与参数空间协同，实现长时程具身世界模型一致生成",
+          "tags": [
+            "世界模型",
+            "闭环仿真",
+            "具身智能",
+            "VLA",
+            "顶会"
+          ],
+          "title": "ViPSim: Collaborating Visual and Parameter Spaces for Consistent Long-Horizon Embodied World Models",
+          "title_zh": "ViPSim：协作视觉和参数空间以实现一致的长视野具体世界模型",
+          "authors": [
+            "Longyu Chen",
+            "Heng Li",
+            "Wei Yang",
+            "Manqi Zhao",
+            "Dongsheng Jiang"
+          ],
+          "abstract": "Embodied World Models (EWMs) have emerged as a scalable and risk-free paradigm for advancing embodied intelligence, enabling the safety-critical evaluation of Vision-Language-Action systems. However, their reliability as evaluation benchmarks and foundational simulators is often hindered by the representation gap between low-dimensional actions and high-dimensional video synthesis. This gap results in a lack of geometric correspondence, manifesting as accumulated trajectory drift and inconsistent robot-object interactions during long-horizon rollouts. To bridge this gap, we propose ViPSim, a framework that achieves consistent long-horizon generation through the synergistic collaboration of Visual and Parameter Spaces. We define the Visual Space as a domain of explicit spatial priors, integrating pixel-aligned projections of end-effector pose, camera perspectives, depth-informed scene geometry, and robotic morphological masks to provide dense structural grounding. Concurrently, the Parameter Space serves as a domain of numerical drivers, injecting raw action sequences and camera matrices to provide precise motion guidance. By unifying these two spaces, ViPSim ensures that the generated states are simultaneously anchored by geometric boundaries and steered by numerical commands. Extensive experiments demonstrate that ViPSim is backbone-agnostic and significantly enhances trajectory consistency. Notably, our approach exhibits emergent capabilities in generating complex interactions with deformable objects (e.g., cloth folding) and maintains robust performance in out-of-distribution and cross-embodiment scenarios, providing a high-fidelity foundation for the automated evaluation and predictive control of embodied agents.",
+          "abstract_zh": "具身世界模型 (EWM) 已成为一种可扩展且无风险的范式，用于推进具身智能，从而实现视觉-语言-行动系统的安全关键评估。然而，它们作为评估基准和基础模拟器的可靠性常常受到低维动作和高维视频合成之间的表示差距的阻碍。这种差距导致缺乏几何对应，表现为在长范围推出期间累积的轨迹漂移和不一致的机器人-物体交互。为了弥补这一差距，我们提出了 ViPSim，这是一个通过视觉和参数空间的协同协作实现一致的长视野生成的框架。我们将视觉空间定义为一个明确的空间先验域，集成了末端执行器姿势的像素对齐投影、相机视角、深度信息场景几何和机器人形态掩模，以提供密集的结构基础。同时，参数空间充当数值驱动器的域，注入原始动作序列和相机矩阵以提供精确的运动引导。通过统一这两个空间，ViPSim 确保生成的状态同时由几何边界锚定并由数字命令引导。大量实验表明，ViPSim 与主干网无关，并且显着增强了轨迹一致性。值得注意的是，我们的方法展现了与可变形物体（例如布料折叠）生成复杂交互的新兴能力，并在分布外和跨实体场景中保持稳健的性能，为实体代理的自动评估和预测控制提供了高保真基础。",
+          "submitted": "2026-06-27T08:18:09Z",
+          "updated": "2026-06-27T08:18:09Z",
+          "abs_url": "https://arxiv.org/abs/2606.28804",
+          "pdf_url": "https://arxiv.org/pdf/2606.28804v1",
+          "html_url": "https://arxiv.org/html/2606.28804v1",
+          "figures": [
+            "https://arxiv.org/html/2606.28804v1/intro.png",
+            "https://arxiv.org/html/2606.28804v1/ARgeneration.png",
+            "https://arxiv.org/html/2606.28804v1/pipeline.png",
+            "https://arxiv.org/html/2606.28804v1/res1.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": "RSS",
+          "comments": "Accepted to Robotics: Science and Systems (RSS) 2026",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV",
+            "cs.RO"
+          ]
+        },
+        {
+          "id": "2606.30045",
+          "rank": 6,
+          "score": 85,
+          "reason_zh": "神经隐式场景解耦状态转移与渲染，实现交互式世界探索",
+          "tags": [
+            "世界模型",
+            "生成模型",
+            "NeRF",
+            "顶会"
+          ],
+          "title": "Walking in the Implicit: Interactive World Exploration via Neural Scene Representation",
+          "title_zh": "行走在隐含之中：通过神经场景表示进行交互式世界探索",
+          "authors": [
+            "Zhiqi Li",
+            "Chengrui Dong",
+            "Zhenhua Du",
+            "Hangning Zhou",
+            "Cong Qiu"
+          ],
+          "abstract": "Interactive video generation systems for camera-controlled world exploration roll out growing sequences of latent video frames, entangling state transition with high-frequency observation synthesis. We propose Walking in the Implicit, a scene-centric paradigm that changes the rollout variable from frame latents to a fixed-length, renderable implicit state, termed Neural Implicit Scene (NIS). This factorizes interactive generation into stochastic transition of a compact scene state and deterministic pose-conditioned rendering given the sampled state. We instantiate this paradigm as NeuWorld: a transformer VAE learns locally anchored NIS from sparse posed frames, and a diffusion transformer evolves NIS conditioned on future camera trajectories and geometry-aware retrieved history. By reusing the VAE encoder as a unified conditioner, NeuWorld maps camera, reference-image, and history cues into the same NIS modality, avoiding external heterogeneous encoders. Trained from scratch on public posed-view data without pretrained video backbones or auxiliary 3D reconstructors, NeuWorld achieves strong long-horizon consistency with favorable inference efficiency.",
+          "abstract_zh": "用于摄像机控制的世界探索的交互式视频生成系统推出了不断增长的潜在视频帧序列，将状态转换与高频观察合成纠缠在一起。我们提出了“Walking in the Implicit”，这是一种以场景为中心的范例，它将推出变量从潜在帧更改为固定长度、可渲染的隐式状态，称为神经隐式场景（NIS）。这将交互生成分解为紧凑场景状态的随机转换和给定采样状态的确定性姿势条件渲染。我们将这种范式实例化为 NeuWorld：变压器 VAE 从稀疏姿势帧中学习本地锚定的 NIS，而扩散变压器根据未来的相机轨迹和几何感知的检索历史来演化 NIS。通过重复使用 VAE 编码器作为统一调节器，NeuWorld 将相机、参考图像和历史线索映射到相同的 NIS 模态中，避免了外部异构编码器。 NeuWorld 在公共姿势视图数据上从头开始训练，无需预先训练的视频主干或辅助 3D 重建器，实现了强大的长视野一致性和良好的推理效率。",
+          "submitted": "2026-06-29T09:37:33Z",
+          "updated": "2026-06-29T09:37:33Z",
+          "abs_url": "https://arxiv.org/abs/2606.30045",
+          "pdf_url": "https://arxiv.org/pdf/2606.30045v1",
+          "html_url": "https://arxiv.org/html/2606.30045v1",
+          "figures": [
+            "https://arxiv.org/html/2606.30045v1/x1.png",
+            "https://arxiv.org/html/2606.30045v1/x2.png",
+            "https://arxiv.org/html/2606.30045v1/x3.png",
+            "https://arxiv.org/html/2606.30045v1/figs/partial_nis_qualitative_evidence.jpg"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": "ECCV",
+          "comments": "ECCV 2026",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reconstruction",
+      "name": "3D/4D 重建与生成",
+      "papers": [
+        {
+          "id": "2606.30545",
+          "rank": 1,
+          "score": 90,
+          "reason_zh": "双目先验引导稀疏视图3DGS，克服尺度歧义",
+          "tags": [
+            "3DGS",
+            "3D重建",
+            "顶会"
+          ],
+          "title": "StereoGS: Sparse-View 3D Gaussian Splatting via Stereo Priors",
+          "title_zh": "StereoGS：通过立体先验进行稀疏视图 3D 高斯泼溅",
+          "authors": [
+            "Wenhao Yuan",
+            "Yiyuan Ge",
+            "Deli Cai"
+          ],
+          "abstract": "3D Gaussian Splatting (3DGS) has achieved remarkable success in real-time novel view synthesis, yet it suffers from severe overfitting under sparse-view settings due to insufficient geometric constraints. While recent methods introduce monocular depth priors to mitigate this, they inherently struggle with scale ambiguity and cross-view inconsistency, leading to defective geometry. In this paper, we propose StereoGS, a novel sparse-view 3DGS framework that integrates stereo priors to establish reliable binocular consistency. Unlike scale-agnostic monocular constraints, StereoGS introduces a Stereo Depth Regularization by constructing virtual stereo pairs during optimization and leveraging a foundation stereo model to enforce absolute scale and binocular-consistent structures. To further suppress overfitting and eliminate redundant primitives, we design a Gradient-Aware Opacity Decay strategy that dynamically penalizes Gaussians based on their relative opacity gradient magnitudes. Combined with a Consistency-Aware Dense Initialization using zero-shot multi-view depth estimation, StereoGS effectively anchors primitives to accurate scene surfaces. Extensive experiments on LLFF, DTU, Mip-NeRF360, and Blender datasets demonstrate that StereoGS achieves state-of-the-art performance in sparse-view settings without incurring any additional inference overhead. Project Page: https://stringerywh00.github.io/StereoGS_project_page/",
+          "abstract_zh": "3D高斯分布（3DGS）在实时新颖视图合成方面取得了显着的成功，但由于几何约束不足，在稀疏视图设置下出现了严重的过拟合。虽然最近的方法引入了单目深度先验来缓解这一问题，但它们本质上与尺度模糊和交叉视图不一致作斗争，导致几何形状有缺陷。在本文中，我们提出了 StereoGS，这是一种新颖的稀疏视图 3DGS 框架，它集成了立体先验以建立可靠的双眼一致性。与尺度无关的单目约束不同，StereoGS 通过在优化过程中构建虚拟立体对并利用基础立体模型来强制执行绝对尺度和双目一致的结构，从而引入了立体深度正则化。为了进一步抑制过度拟合并消除冗余图元，我们设计了一种梯度感知不透明度衰减策略，该策略根据高斯的相对不透明度梯度大小动态惩罚高斯。与使用零镜头多视图深度估计的一致性感知密集初始化相结合，StereoGS 可以有效地将图元锚定到准确的场景表面。对 LLFF、DTU、Mip-NeRF360 和 Blender 数据集的大量实验表明，StereoGS 在稀疏视图设置中实现了最先进的性能，而不会产生任何额外的推理开销。项目页面：https://stringerywh00.github.io/StereoGS_project_page/",
+          "submitted": "2026-06-29T16:45:57Z",
+          "updated": "2026-06-29T16:45:57Z",
+          "abs_url": "https://arxiv.org/abs/2606.30545",
+          "pdf_url": "https://arxiv.org/pdf/2606.30545v1",
+          "html_url": "https://arxiv.org/html/2606.30545v1",
+          "figures": [
+            "https://arxiv.org/html/2606.30545v1/x1.png",
+            "https://arxiv.org/html/2606.30545v1/x2.png",
+            "https://arxiv.org/html/2606.30545v1/x3.png",
+            "https://arxiv.org/html/2606.30545v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": "https://stringerywh00.github.io/StereoGS_project_page/",
+          "code_links": [],
+          "project_links": [
+            "https://stringerywh00.github.io/StereoGS_project_page/"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": "ECCV",
+          "comments": "15 pages, 6 figures, accepted to ECCV 2026, project page: https://stringerywh00.github.io/StereoGS_project_page/",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ]
+        },
+        {
+          "id": "2606.30047",
+          "rank": 2,
+          "score": 90,
+          "reason_zh": "前馈式全景3D度量重建网络，含万级场景混合数据集Realsee3D",
+          "tags": [
+            "3D重建",
+            "feed-forward",
+            "深度估计",
+            "数据集"
+          ],
+          "title": "Argus: Metric Panoramic 3D Reconstruction for Indoor Scenes",
+          "title_zh": "Argus：室内场景的公制全景 3D 重建",
+          "authors": [
+            "Xi Li",
+            "Linyuan Li",
+            "Yan Wu",
+            "Tong Rao",
+            "Kai Zhang"
+          ],
+          "abstract": "Metric feed-forward 3D reconstruction for panoramic data remains under-explored due to the lack of large-scale panoramic RGB-D training data.\n  We present Realsee3D, a hybrid dataset of 10K indoor scenes (1K real, 9K synthetic) with 299K panoramic viewpoints and precise metric annotations,\n  and Argus, a feed-forward network trained on it for metric panoramic 3D reconstruction.\n  In the sparse unordered capture setting of Realsee3D,\n  a poorly chosen coordinate anchor can cause global pose drift.\n  Argus addresses this with a learned covisibility module that selects the geometrically optimal reference view to anchor the metric world frame.\n  To further improve multi-task learning,\n  we decompose the bidirectional pixel-to-world mapping into interpretable sub-steps with per-step supervision and cross-coordinate joint constraints,\n  reinforcing geometric consistency across prediction branches.\n  On the Realsee3D benchmark,\n  Argus achieves state-of-the-art metric performance in camera pose estimation, depth estimation, and point cloud reconstruction.\n  Project page: https://argus-paper.realsee.ai.",
+          "abstract_zh": "由于缺乏大规模全景 RGB-D 训练数据，全景数据的度量前馈 3D 重建仍未得到充分探索。\n  我们提出了 Realsee3D，一个包含 10K 室内场景（1K 真实，9K 合成）的混合数据集，具有 299K 全景视点和精确的度量注释，\n  Argus，一个前馈网络，在其上进行训练，用于度量全景 3D 重建。\n  在Realsee3D的稀疏无序捕获设置中，\n  选择不当的坐标锚点可能会导致全局姿态漂移。\n  Argus 通过学习共视性模块解决了这个问题，该模块选择几何最佳参考视图来锚定度量世界框架。\n  为了进一步提高多任务学习，\n  我们将双向像素到世界的映射分解为可解释的子步骤，并具有每步监督和跨坐标联合约束，\n  加强预测分支之间的几何一致性。\n  在 Realsee3D 基准测试中，\n  Argus 在相机姿态估计、深度估计和点云重建方面实现了最先进的度量性能。\n  项目页面：https://argus-paper.realsee.ai。",
+          "submitted": "2026-06-29T09:39:17Z",
+          "updated": "2026-06-29T09:39:17Z",
+          "abs_url": "https://arxiv.org/abs/2606.30047",
+          "pdf_url": "https://arxiv.org/pdf/2606.30047v1",
+          "html_url": "https://arxiv.org/html/2606.30047v1",
+          "figures": [
+            "https://arxiv.org/html/2606.30047v1/x1.png",
+            "https://arxiv.org/html/2606.30047v1/x2.png",
+            "https://arxiv.org/html/2606.30047v1/x3.png",
+            "https://arxiv.org/html/2606.30047v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": "https://argus-paper.realsee.ai",
+          "code_links": [],
+          "project_links": [
+            "https://argus-paper.realsee.ai"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": null,
+          "comments": null,
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ]
+        },
+        {
+          "id": "2606.29794",
+          "rank": 3,
+          "score": 89,
+          "reason_zh": "基于HEALPix球面光栅化统一透视鱼眼全景相机的3DGS重建框架",
+          "tags": [
+            "3DGS",
+            "3D重建",
+            "顶会"
+          ],
+          "title": "UniTriSplat: A Unified 3D Gaussian Splatting Framework with Uniform Spherical Rasterization for Universal Cameras",
+          "title_zh": "UniTriSplat：适用于通用相机的统一 3D 高斯泼溅框架，具有均匀球面光栅化",
+          "authors": [
+            "Yipeng Zhu",
+            "Huajian Huang",
+            "Tristan Braud",
+            "Sai-Kit Yeung"
+          ],
+          "abstract": "Existing 3D Gaussian Splatting (3DGS) frameworks rely on camera-specific rasterization, suffering from inconsistent solid-angle sampling and degraded performance across heterogeneous camera models (e.g., perspective, fisheye, omnidirectional). To address this limitation, we propose UniTriSplat, a unified 3DGS framework for universal cameras that reformulates Gaussian splatting on the unit sphere via HEALPix discretization. Leveraging the equal-area property of HEALPix, we construct a spherical sampling grid aligned with the angular resolution of input images. We derive the forward rendering and gradient propagation of Gaussians directly in the spherical radian domain, yielding uniform optimization behavior from narrow-FoV images to full 360-degree panoramas. To enhance perceptual reconstruction quality, we additionally introduce a HEALPix-aware SSIM loss that respects spherical neighborhood structure. Extensive experiments across diverse camera models demonstrate that UniTriSplat consistently improves cross-camera generalization while preserving geometric fidelity and rendering quality.",
+          "abstract_zh": "现有的 3D 高斯溅射 (3DGS) 框架依赖于特定于相机的光栅化，存在立体角采样不一致以及异构相机模型（例如透视、鱼眼、全向）性能下降的问题。为了解决这个限制，我们提出了 UniTriSplat，这是一个用于通用相机的统一 3DGS 框架，它通过 HEALPix 离散化重新表述了单位球体上的高斯分布。利用 HEALPix 的等面积特性，我们构造了一个与输入图像的角分辨率对齐的球形采样网格。我们直接在球面弧度域中导出高斯的前向渲染和梯度传播，从而产生从窄视场图像到完整 360 度全景图的统一优化行为。为了提高感知重建质量，我们还引入了一种尊重球形邻域结构的 HEALPix 感知 SSIM 损失。跨不同相机模型的大量实验表明，UniTriSplat 持续改进跨相机泛化，同时保持几何保真度和渲染质量。",
+          "submitted": "2026-06-29T05:14:48Z",
+          "updated": "2026-06-29T05:14:48Z",
+          "abs_url": "https://arxiv.org/abs/2606.29794",
+          "pdf_url": "https://arxiv.org/pdf/2606.29794v1",
+          "html_url": "https://arxiv.org/html/2606.29794v1",
+          "figures": [
+            "https://arxiv.org/html/2606.29794v1/small/crossmodel.png",
+            "https://arxiv.org/html/2606.29794v1/small/Pipeline.png",
+            "https://arxiv.org/html/2606.29794v1/small/Rasterization.png",
+            "https://arxiv.org/html/2606.29794v1/small/FOV_V2.png"
+          ],
+          "code_url": null,
+          "project_url": "https://yipengzhu0809.github.io/UniTriSplat/",
+          "code_links": [],
+          "project_links": [
+            "https://yipengzhu0809.github.io/UniTriSplat/"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": "ECCV",
+          "comments": "32 pages, 14 figures, 6 tables. Project page: https://yipengzhu0809.github.io/UniTriSplat/ . UniTriSplat was accepted to ECCV 2026",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ]
+        },
+        {
+          "id": "2606.30436",
+          "rank": 4,
+          "score": 88,
+          "reason_zh": "单目3DGS-SLAM达公里级，联合优化位姿与内存",
+          "tags": [
+            "3DGS",
+            "3D重建"
+          ],
+          "title": "Robust and Efficient Monocular 3D Gaussian SLAM for Kilometer-Scale Outdoor Scenes",
+          "title_zh": "适用于公里级户外场景的稳健高效单目 3D 高斯 SLAM",
+          "authors": [
+            "Sicheng Yu",
+            "Dongxu Shen",
+            "Beizhen Zhao",
+            "Guanzhi Ding",
+            "Hao Wang"
+          ],
+          "abstract": "Scaling monocular 3D Gaussian Splatting (3DGS) SLAM to kilometer-level outdoor environments poses two tightly coupled challenges: fragile long-term pose tracking and excessive memory overhead during large-scale mapping. In this paper, we propose KiloGS-SLAM, a highly efficient and robust monocular 3DGS-SLAM system that jointly addresses both bottlenecks. Since high-fidelity scene reconstruction fundamentally relies on drift-free camera poses, we first introduce a motion-adaptive hybrid tracking module. This module features a condition-triggered three-tier solving pipeline. It dynamically switches between Essential matrix and PnP models to handle geometric degeneracies. An on-demand foundation model can also be activated to rescue the trajectory from catastrophic drift. To ensure the system can sustain these long trajectories without memory exhaustion, we subsequently design a lifecycle-managed Gaussian mapping strategy. By integrating probabilistic initialization with chunk-based multi-view densification and pruning, this full-pipeline optimization effectively reduces primitive redundancy while preserving high-frequency details. Together, the robust tracking guarantees the geometric foundation required for accurate mapping, while the memory-efficient lifecycle-managed mapping enables large-scale operation. Extensive experiments across three challenging outdoor datasets demonstrate that our approach achieves state-of-the-art tracking accuracy and rendering quality, successfully scaling to sequences of over 10,000 frames on a single GPU.",
+          "abstract_zh": "将单目 3D 高斯溅射 (3DGS) SLAM 扩展到千米级室外环境会带来两个紧密耦合的挑战：脆弱的长期姿态跟踪和大规模测绘期间过多的内存开销。在本文中，我们提出了 KiloGS-SLAM，这是一种高效且强大的单目 3DGS-SLAM 系统，可以共同解决这两个瓶颈。由于高保真场景重建从根本上依赖于无漂移的相机姿势，因此我们首先引入运动自适应混合跟踪模块。该模块具有条件触发的三层求解管道。它在基本矩阵和 PnP 模型之间动态切换以处理几何简并性。还可以激活按需基础模型，以挽救轨迹免受灾难性漂移的影响。为了确保系统能够维持这些长轨迹而不会耗尽内存，我们随后设计了一种生命周期管理的高斯映射策略。通过将概率初始化与基于块的多视图致密化和修剪相结合，这种全管道优化有效地减少了原始冗余，同时保留了高频细节。总之，强大的跟踪保证了精确映射所需的几何基础，而内存高效的生命周期管理映射则支持大规模操作。在三个具有挑战性的户外数据集上进行的大量实验表明，我们的方法实现了最先进的跟踪精度和渲染质量，在单个 GPU 上成功扩展到超过 10,000 帧的序列。",
+          "submitted": "2026-06-29T15:12:18Z",
+          "updated": "2026-06-29T15:12:18Z",
+          "abs_url": "https://arxiv.org/abs/2606.30436",
+          "pdf_url": "https://arxiv.org/pdf/2606.30436v1",
+          "html_url": "https://arxiv.org/html/2606.30436v1",
+          "figures": [
+            "https://arxiv.org/html/2606.30436v1/x2.png",
+            "https://arxiv.org/html/2606.30436v1/x3.png",
+            "https://arxiv.org/html/2606.30436v1/x4.png",
+            "https://arxiv.org/html/2606.30436v1/x5.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": null,
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ]
+        },
+        {
+          "id": "2606.28622",
+          "rank": 7,
+          "score": 85,
+          "reason_zh": "首创Mesh光栅化可微渲染流水线，实现大规模真实场景端到端3D重建",
+          "tags": [
+            "3D重建",
+            "feed-forward",
+            "开源"
+          ],
+          "title": "Meshtryoshka: Differentiable Rendering of Real-World Scenes via Mesh Rasterization",
+          "title_zh": "Meshtryoshka：通过网格光栅化对现实世界场景进行可微分渲染",
+          "authors": [
+            "David Charatan",
+            "Daniel Xu",
+            "Richard Szeliski",
+            "George Kopanas",
+            "Vincent Sitzmann"
+          ],
+          "abstract": "Differentiable rendering has emerged as a powerful approach for 3D reconstruction and novel view synthesis. State-of-the-art differentiable rendering methods combine a variety of custom representations of 3D geometry and appearance with specialized renderers. However, most downstream tasks in computer graphics rely on 3D meshes. While prior work has attempted differentiable rendering with mesh representations, these approaches are limited to object-centric scenes and fail to reconstruct large-scale, unbounded scenes. In this work, we introduce Meshtryoshka, a novel mesh differentiable rendering framework that combines an off-the-shelf triangle rasterizer with a 3D representation that consists of nested mesh shells which resemble a matryoshka doll. In every forward pass, the mesh shells are extracted anew from a 3D signed distance function via iso-surface extraction, and the opacities for each vertex are computed as a function of signed distance. Each mesh shell is then rasterized independently, and the final image is created via alpha compositing. Crucially, mesh vertex positions are updated only indirectly via gradients that flow through the opacity values into the signed distance function, and hence, our method is compatible with off-the-shelf mesh renderers that need not be differentiable with respect to vertex positions. On object-centric scenes, our method performs competitively with surface-based differentiable rendering techniques. Our differentiable mesh rendering method scales to unbounded, real-world 3D scenes, where it yields high-quality novel view synthesis results approaching those of state-of-the-art, non-mesh methods. Our method suggests that it may be possible to solve the differentiable rendering problem without relying on specialized renderers, only using conventional tools from the computer graphics toolbox.",
+          "abstract_zh": "可微分渲染已成为 3D 重建和新颖视图合成的强大方法。最先进的可微分渲染方法将 3D 几何和外观的各种自定义表示与专用渲染器相结合。然而，计算机图形学中的大多数下游任务都依赖于 3D 网格。虽然之前的工作已经尝试使用网格表示进行可微分渲染，但这些方法仅限于以对象为中心的场景，并且无法重建大规模、无界的场景。在这项工作中，我们介绍了 Meshtryoshka，这是一种新颖的网格可微分渲染框架，它将现成的三角形光栅器与由类似于俄罗斯套娃的嵌套网格壳组成的 3D 表示相结合。在每次前向传递中，都会通过等值面提取从 3D 带符号距离函数中重新提取网格壳，并且每个顶点的不透明度作为带符号距离的函数进行计算。然后，每个网格壳被独立地光栅化，并通过 Alpha 合成创建最终图像。至关重要的是，网格顶点位置仅通过梯度间接更新，梯度通过不透明度值流入有符号距离函数，因此，我们的方法与现成的网格渲染器兼容，无需根据顶点位置进行微分。在以对象为中心的场景中，我们的方法与基于表面的可微渲染技术具有竞争力。我们的可微分网格渲染方法可扩展到无界的真实 3D 场景，产生接近最先进的非网格方法的高质量新颖视图合成结果。我们的方法表明，无需依赖专门的渲染器，仅使用计算机图形工具箱中的常规工具即可解决可微渲染问题。",
+          "submitted": "2026-06-26T21:44:36Z",
+          "updated": "2026-06-26T21:44:36Z",
+          "abs_url": "https://arxiv.org/abs/2606.28622",
+          "pdf_url": "https://arxiv.org/pdf/2606.28622v1",
+          "html_url": "https://arxiv.org/html/2606.28622v1",
+          "figures": [
+            "https://arxiv.org/html/2606.28622v1/x1.png",
+            "https://arxiv.org/html/2606.28622v1/x2.png",
+            "https://arxiv.org/html/2606.28622v1/x3.png",
+            "https://arxiv.org/html/2606.28622v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": "https://danielxu9393.github.io/meshtryoshka-website/",
+          "code_links": [],
+          "project_links": [
+            "https://danielxu9393.github.io/meshtryoshka-website/"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": null,
+          "comments": "Daniel Xu and David Charatan contributed equally; author order decided by coin flip. Project website: https://danielxu9393.github.io/meshtryoshka-website/",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV",
+            "cs.GR"
+          ]
+        },
+        {
+          "id": "2606.30014",
+          "rank": 8,
+          "score": 83,
+          "reason_zh": "壳体监督高斯泼溅约束表面几何，实现城市场景物理级重建",
+          "tags": [
+            "3D重建",
+            "3DGS",
+            "具身智能"
+          ],
+          "title": "Shell-Supervised Gaussian Splatting for Urban Real-to-Sim Reconstruction",
+          "title_zh": "用于城市实数到模拟重建的壳监督高斯泼溅",
+          "authors": [
+            "Yuan Yang",
+            "Peijun Lu",
+            "Fangzhou Lu",
+            "Sai Fan",
+            "Siqi Yan"
+          ],
+          "abstract": "Real-to-sim reconstruction for embodied AI requires geometry that is useful for collision reasoning, navigation, and agent-environment interaction, not only photorealistic novel-view synthesis. However, close-range urban facades are difficult for video-to-3D reconstruction: glass, reflections, repeated windows, and weak texture can produce visually plausible renderings with unstable surface geometry. We introduce shell-supervised Gaussian Splatting, a reconstruction-stage framework that uses an external facade structural shell as lightweight geometric supervision for video-driven Gaussian reconstruction. The method aligns an exterior shell to the video reconstruction frame, renders per-view depth, camera-space normal, and valid-mask maps, and applies these cues through mask-gated losses during Gaussian optimization. This design preserves RGB-driven appearance while regularizing only visible shell-supported facade regions. Experiments on anonymized close-range urban facade scenes show improved facade orientation and visible-surface point-cloud consistency over photo-only, monocular-cue, and surface-oriented Gaussian baselines, while maintaining comparable held-out rendering quality.",
+          "abstract_zh": "嵌入式人工智能的实到模拟重建需要对碰撞推理、导航和智能体与环境交互有用的几何结构，而不仅仅是逼真的小说视图合成。然而，近距离的城市立面很难进行视频到 3D 重建：玻璃、反射、重复的窗户和弱纹理可以产生具有不稳定表面几何形状的视觉上合理的渲染。我们引入了壳监督高斯泼溅，这是一种重建阶段框架，它使用外部立面结构壳作为视频驱动高斯重建的轻量级几何监督。该方法将外壳与视频重建帧对齐，渲染每个视图的深度、相机空间法线和有效掩模图，并在高斯优化期间通过掩模门控损失应用这些线索。此设计保留了 RGB 驱动的外观，同时仅规范可见的外壳支持的立面区域。对匿名近距离城市立面场景的实验表明，与仅照片、单目提示和面向表面的高斯基线相比，立面方向和可见表面点云一致性得到了改善，同时保持了可比的保留渲染质量。",
+          "submitted": "2026-06-29T09:19:24Z",
+          "updated": "2026-06-29T09:19:24Z",
+          "abs_url": "https://arxiv.org/abs/2606.30014",
+          "pdf_url": "https://arxiv.org/pdf/2606.30014v1",
+          "html_url": "https://arxiv.org/html/2606.30014v1",
+          "figures": [
+            "https://arxiv.org/html/2606.30014v1/x1.png",
+            "https://arxiv.org/html/2606.30014v1/fig2_shell_supervision_primary.png",
+            "https://arxiv.org/html/2606.30014v1/fig3_qualitative_strip.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": "10 pages main paper, 2 pages supplementary material",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ]
+        },
+        {
+          "id": "2606.30352",
+          "rank": 9,
+          "score": 82,
+          "reason_zh": "单张全景图前馈式3D重建，直接输出可渲染3DGS",
+          "tags": [
+            "feed-forward",
+            "3D重建",
+            "3DGS"
+          ],
+          "title": "FastPano3D: Feed-Forward Indoor Panoramic 3D Reconstruction from a Single Image",
+          "title_zh": "FastPano3D：从单个图像进行前馈室内全景 3D 重建",
+          "authors": [
+            "Jianqiang Li",
+            "Liumei Zhang",
+            "Wenjia Guo",
+            "Tianlong Feng",
+            "Yongzhi Liao"
+          ],
+          "abstract": "Recent advances in 3D scene reconstruction have highlighted the intricate trade-offs among rendering quality, inference efficiency, and data dependency. To address the challenge of rapidly reconstructing detailed 3D indoor scenes from minimal input, we introduce FastPano3D, an end-to-end framework that directly generates renderable 3D Gaussian representations from a single panoramic image. Unlike perspective-based methods, panoramic images inherently suffer from equirectangular projection distortions and spatially non-uniform feature distributions, making direct feed-forward Gaussian generation particularly challenging. In contrast to existing Gaussian Splatting based methods that rely on multi-view supervision or per-scene optimization, FastPano3D employs a lightweight feature encoder, adaptive Gaussian sampling, and a point-cloud-guided refinement strategy to achieve efficient and accurate scene generation without any test-time optimization. Our approach reconstructs high-fidelity 3D scenes within seconds, achieving up to 156 times faster inference than prior state-of-the-art methods such as Pano2Room, while using only half the parameters. Extensive experiments demonstrate that FastPano3D delivers rendering quality comparable to NeRF- and 3DGS-based reconstructions, establishing a new benchmark for rapid, single-view 3D scene inference.",
+          "abstract_zh": "3D 场景重建的最新进展凸显了渲染质量、推理效率和数据依赖性之间复杂的权衡。为了解决从最少的输入快速重建详细 3D 室内场景的挑战，我们引入了 FastPano3D，这是一个端到端框架，可以直接从单个全景图像生成可渲染的 3D 高斯表示。与基于透视的方法不同，全景图像本质上受到等距柱状投影失真和空间不均匀特征分布的影响，使得直接前馈高斯生成特别具有挑战性。与依赖于多视图监督或每个场景优化的现有高斯泼溅方法相比，FastPano3D 采用轻量级特征编码器、自适应高斯采样和点云引导细化策略来实现高效、准确的场景生成，而无需任何测试时优化。我们的方法可在几秒钟内重建高保真 3D 场景，推理速度比 Pano2Room 等现有最先进方法快 156 倍，同时仅使用一半的参数。大量实验表明，FastPano3D 提供的渲染质量可与基于 NeRF 和 3DGS 的重建相媲美，为快速、单视图 3D 场景推理建立了新基准。",
+          "submitted": "2026-06-29T14:23:12Z",
+          "updated": "2026-06-29T14:23:12Z",
+          "abs_url": "https://arxiv.org/abs/2606.30352",
+          "pdf_url": "https://arxiv.org/pdf/2606.30352v1",
+          "html_url": "https://arxiv.org/html/2606.30352v1",
+          "figures": [
+            "https://arxiv.org/html/2606.30352v1/x1.png",
+            "https://arxiv.org/html/2606.30352v1/x2.png",
+            "https://arxiv.org/html/2606.30352v1/x3.png",
+            "https://arxiv.org/html/2606.30352v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": "Preprint. Under review. 20 pages, 9 figures",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ]
+        },
+        {
+          "id": "2606.29513",
+          "rank": 10,
+          "score": 82,
+          "reason_zh": "前馈式实例结构化3D token化，无位姿多视图直接重建场景",
+          "tags": [
+            "3D重建",
+            "feed-forward",
+            "开源"
+          ],
+          "title": "Scenes as Objects, Not Primitives: Instance-Structured 3D Tokenization from Unposed Views",
+          "title_zh": "场景作为对象，而不是基元：来自未呈现视图的实例结构 3D 标记化",
+          "authors": [
+            "Mijin Yoo",
+            "In Cho",
+            "Subin Jeon",
+            "Jiwoo Lee",
+            "Eunbyung Park"
+          ],
+          "abstract": "A 3D scene is understood through its objects, not the primitives that compose them. Yet feed-forward reconstruction methods output dense, unstructured sets of points or Gaussians, leaving object-level structure to be recovered after the fact. We propose a feed-forward framework that decomposes a scene into instance-structured 3D token groups directly from unposed multi-view images -- compact object-centric units from which reconstruction, segmentation, and manipulation all follow. Each token group pairs an instance token capturing entity-level identity with anchor tokens that encode local geometry and appearance, which are decoded into a set of 3D Gaussians. This two-level factorization decouples object identity from local appearance, making object instances a native interface of the representation rather than a derived product. The token groups are learned through differentiable rendering with joint reconstruction and segmentation supervision, requiring no 3D annotations. Our feed-forward model surpasses per-scene optimization baselines in class-agnostic instance segmentation while remaining competitive in novel view synthesis. Beyond these metrics, the same token groups directly unlock instance-level scene editing -- removing, translating, or inserting objects by operating on their groups -- as well as efficient open-vocabulary 3D instance retrieval, where retrieval complexity scales with the number of instances rather than primitives.",
+          "abstract_zh": "3D 场景是通过其对象来理解的，而不是组成它们的图元。然而，前馈重建方法输出密集的、非结构化的点集或高斯分布，从而使对象级结构在事后恢复。我们提出了一个前馈框架，该框架直接从未摆出的多视图图像将场景分解为实例结构的 3D 标记组——以对象为中心的紧凑单元，从中进行重建、分割和操作。每个令牌组将捕获实体级身份的实例令牌与编码局部几何和外观的锚令牌配对，这些锚令牌被解码为一组 3D 高斯。这种两级分解将对象身份与局部外观解耦，使对象实例成为表示的本机接口而不是派生产品。标记组是通过可微分渲染以及联合重建和分割监督来学习的，不需要 3D 注释。我们的前馈模型在与类无关的实例分割中超越了每个场景的优化基线，同时在新颖的视图合成中保持竞争力。除了这些指标之外，相同的令牌组还可以直接解锁实例级场景编辑（通过对其组进行操作来删除、翻译或插入对象）以及高效的开放词汇 3D 实例检索，其中检索复杂性随实例数量而不是基元数量而变化。",
+          "submitted": "2026-06-28T17:21:45Z",
+          "updated": "2026-06-28T17:21:45Z",
+          "abs_url": "https://arxiv.org/abs/2606.29513",
+          "pdf_url": "https://arxiv.org/pdf/2606.29513v1",
+          "html_url": "https://arxiv.org/html/2606.29513v1",
+          "figures": [
+            "https://arxiv.org/html/2606.29513v1/x1.png",
+            "https://arxiv.org/html/2606.29513v1/x2.png",
+            "https://arxiv.org/html/2606.29513v1/x3.png",
+            "https://arxiv.org/html/2606.29513v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": "https://yoomimi.github.io/instok3d",
+          "code_links": [],
+          "project_links": [
+            "https://yoomimi.github.io/instok3d"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": null,
+          "comments": "Project page: https://yoomimi.github.io/instok3d",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV",
+            "cs.GR"
+          ]
+        },
+        {
+          "id": "2606.28828",
+          "rank": 18,
+          "score": 78,
+          "reason_zh": "结合动态3DGS与3D基础模型，单目视频一致性4D重建",
+          "tags": [
+            "4D重建",
+            "3DGS",
+            "feed-forward"
+          ],
+          "title": "Ground4D: Consistency-Aware 4D Reconstruction from Monocular Video",
+          "title_zh": "Ground4D：单目视频的一致性感知 4D 重建",
+          "authors": [
+            "Qing Zhao",
+            "Weijian Deng",
+            "Pengxu Wei",
+            "Liang Lin"
+          ],
+          "abstract": "Learning a 4D scene representation from a single monocular video that supports dynamic novel-view synthesis while maintaining faithful geometry over time remains challenging. Dynamic Gaussian Splatting achieves strong rendering performance through photometric optimization, yet does not explicitly enforce multi-view geometric consistency. In contrast, 3D foundation models recover coherent scene geometry and camera motion, but their point-based outputs are not designed for photorealistic rendering. We propose Ground4D, a geometry-grounded framework built on two stages. First, we perform geometry initialization via 3D foundation models, leveraging VGGT in a training-free manner to reconstruct multi-view-consistent 3D geometry and camera poses from monocular video. The recovered geometry provides a structured and reliable initialization for dynamic Gaussian representations. Second, we conduct geometry-consistency-aware refinement via dynamic Gaussian Splatting, optimizing the representation through differentiable rendering while maintaining multi-view geometric consistency across both observed and synthesized viewpoints. Furthermore, Ground4D inherently models the continuous 4D dynamics of the scene, naturally supporting rendering at arbitrary timestamps. By integrating foundation-level geometric priors into dynamic Gaussian optimization, Ground4D achieves stronger reconstruction fidelity and rendering performance, underscoring the role of geometry-grounded constraints in robust 4D scene modeling.",
+          "abstract_zh": "从单个单目视频中学习 4D 场景表示，支持动态小说视图合成，同时随着时间的推移保持忠实的几何形状仍然具有挑战性。动态高斯泼溅通过光度优化实现了强大的渲染性能，但没有明确强制多视图几何一致性。相比之下，3D 基础模型可以恢复连贯的场景几何形状和相机运动，但其基于点的输出并不是为照片级真实感渲染而设计的。我们提出了 Ground4D，一个建立在两个阶段上的基于几何的框架。首先，我们通过 3D 基础模型执行几何初始化，以免训练的方式利用 VGGT 从单目视频重建多视图一致的 3D 几何和相机姿势。恢复的几何形状为动态高斯表示提供了结构化且可靠的初始化。其次，我们通过动态高斯泼溅进行几何一致性感知细化，通过可微分渲染优化表示，同时保持观察和合成视点的多视图几何一致性。此外，Ground4D 本质上对场景的连续 4D 动态进行建模，自然支持任意时间戳的渲染。通过将基础级几何先验集成到动态高斯优化中，Ground4D 实现了更强的重建保真度和渲染性能，强调了基于几何的约束在稳健的 4D 场景建模中的作用。",
+          "submitted": "2026-06-27T09:27:42Z",
+          "updated": "2026-06-27T09:27:42Z",
+          "abs_url": "https://arxiv.org/abs/2606.28828",
+          "pdf_url": "https://arxiv.org/pdf/2606.28828v1",
+          "html_url": "https://arxiv.org/html/2606.28828v1",
+          "figures": [
+            "https://arxiv.org/html/2606.28828v1/x1.png",
+            "https://arxiv.org/html/2606.28828v1/x2.png",
+            "https://arxiv.org/html/2606.28828v1/x3.png",
+            "https://arxiv.org/html/2606.28828v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": null,
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vla",
+      "name": "自动驾驶与机器人",
+      "papers": [
+        {
+          "id": "2606.30552",
+          "rank": 1,
+          "score": 88,
+          "reason_zh": "2.6B VLA模型，密集具身思维链实现跨平台迁移",
+          "tags": [
+            "VLA",
+            "具身智能",
+            "操控",
+            "开源"
+          ],
+          "title": "Training Vision-Language-Action Models with Dense Embodied Chain-of-Thought Supervision",
+          "title_zh": "利用密集体现思想链监督训练视觉-语言-动作模型",
+          "authors": [
+            "Haoyang Li",
+            "Guanlin Li",
+            "Youhe Feng",
+            "Chen Zhao",
+            "Zhuoran Wang"
+          ],
+          "abstract": "Cross-embodiment transfer in vision-language-action (VLA) models remains challenging because low-level state and action spaces differ fundamentally across robot platforms. We observe that the high-level cognitive process underlying manipulation, including scene perception, object identification, task planning, and sub-task decomposition, is largely shared across embodiments. Based on this observation, we present ZR-0, a 2.6 billion parameter end-to-end VLA model that uses dense Embodied Chain-of-Thought (ECoT) supervision to align cross-embodiment representations within the vision-language model (VLM). ZR-0 adopts a dual-stream architecture: a pre-trained VLM (System 2) generates structured ECoT reasoning during training, while a Diffusion Transformer-based action expert (System 1) produces continuous action chunks via flow matching. The two components are coupled through cross-attention, with an attention mask that restricts the action expert to input prompt features only, enabling ECoT generation to be entirely skipped at inference without any performance loss. ZR-0 is pre-trained on ProcCorpus-60M, a large-scale dataset comprising approximately 60 million frames (approximately 1,000 hours) from over 400K trajectories, with dense ECoT annotations covering 96.8% of all frames. We evaluate ZR-0 on three simulation benchmarks spanning single-arm (LIBERO), bimanual (RoboTwin 2.0), and humanoid (RoboCasa GR-1 Tabletop) embodiments, as well as real-world experiments on the xArm platform, demonstrating strong performance across all settings. Code and model checkpoints are available at https://github.com/RUCKBReasoning/ZR-0.",
+          "abstract_zh": "视觉-语言-动作（VLA）模型中的跨实体迁移仍然具有挑战性，因为不同机器人平台的低级状态和动作空间存在根本差异。我们观察到，操作背后的高级认知过程，包括场景感知、对象识别、任务规划和子任务分解，在很大程度上是跨实施例共享的。基于这一观察，我们提出了 ZR-0，这是一个 26 亿参数的端到端 VLA 模型，它使用密集的体现思想链 (ECoT) 监督来对齐视觉语言模型 (VLM) 内的跨体现表示。 ZR-0采用双流架构：预训练的VLM（系统2）在训练过程中生成结构化的ECOT推理，而基于Diffusion Transformer的动作专家（系统1）通过流匹配生成连续的动作块。这两个组件通过交叉注意力耦合，注意力掩码限制动作专家仅输入提示特征，从而在推理时完全跳过 ECoT 生成，而不会造成任何性能损失。 ZR-0 在 ProcCorpus-60M 上进行了预训练，ProcCorpus-60M 是一个大型数据集，包含来自超过 40 万个轨迹的约 6000 万帧（约 1,000 小时），密集的 ECoT 注释覆盖了所有帧的 96.8%。我们在涵盖单臂 (LIBERO)、双手 (RoboTwin 2.0) 和人形 (RoboCasa GR-1 Tabletop) 实施例的三个模拟基准以及 xArm 平台上的真实实验中评估 ZR-0，在所有设置下展示了强大的性能。代码和模型检查点可在 https://github.com/RUCKBreasoning/ZR-0 上找到。",
+          "submitted": "2026-06-29T16:48:48Z",
+          "updated": "2026-06-29T16:48:48Z",
+          "abs_url": "https://arxiv.org/abs/2606.30552",
+          "pdf_url": "https://arxiv.org/pdf/2606.30552v1",
+          "html_url": "https://arxiv.org/html/2606.30552v1",
+          "figures": [
+            "https://arxiv.org/html/2606.30552v1/x1.png",
+            "https://arxiv.org/html/2606.30552v1/x2.png"
+          ],
+          "code_url": "https://github.com/RUCKBReasoning/ZR-0",
+          "project_url": null,
+          "code_links": [
+            "https://github.com/RUCKBReasoning/ZR-0"
+          ],
+          "project_links": [],
+          "has_code": true,
+          "has_project": false,
+          "venue": null,
+          "comments": null,
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV",
+            "cs.RO"
+          ]
+        },
+        {
+          "id": "2606.30421",
+          "rank": 2,
+          "score": 86,
+          "reason_zh": "4D占用世界模型驱动因果感知端到端自动驾驶",
+          "tags": [
+            "VLA",
+            "自动驾驶",
+            "世界模型",
+            "顶会"
+          ],
+          "title": "OWMDrive: Causality-Aware End-to-End Autonomous Driving via 4D Occupancy World Model",
+          "title_zh": "OWMDrive：通过 4D 占用世界模型实现因果感知的端到端自动驾驶",
+          "authors": [
+            "Junjie Cheng",
+            "Ruiqi Song",
+            "Ye Wu",
+            "Nanxing Zeng",
+            "Ximiao Li"
+          ],
+          "abstract": "Autonomous driving systems are steadily moving toward end-to-end paradigms to mitigate the limited adaptability of rule-based pipelines in complex traffic environments. However, most existing learning-based methods still make decisions from static representations of the current scene, without explicit future rollouts or modeling of the temporal causal dynamics in traffic interactions. This limitation often results in unstable or overly conservative planning under high-uncertainty conditions, such as occlusions and unexpected events. To overcome these challenges, we introduce OWMDrive, a generative end-to-end driving framework built upon an Occupancy World Model for multi-step 3D occupancy forecasting, which serves as a conditional prior to guide diffusion-based planning. Conditioned on both current observations and predicted future states, the planner iteratively refines trajectory candidates to generate a reinforced driving trajectory. By explicitly modeling scene evolution over future horizons, OWMDrive captures key spatiotemporal causal dependencies, which leads to more foresighted and robust trajectory generation. Extensive experiments demonstrate that OWMDrive significantly improves planning reliability and safety, especially in challenging and partially observable driving scenarios.",
+          "abstract_zh": "自动驾驶系统正在稳步向端到端范式迈进，以减轻基于规则的管道在复杂交通环境中的有限适应性。然而，大多数现有的基于学习的方法仍然根据当前场景的静态表示做出决策，而没有明确的未来推出或对交通交互中的时间因果动态进行建模。这种限制通常会导致在高不确定性条件下（例如遮挡和意外事件）规划不稳定或过于保守。为了克服这些挑战，我们引入了 OWMDrive，这是一个基于占用世界模型构建的生成式端到端驱动框架，用于多步骤 3D 占用预测，可作为指导基于扩散的规划的先决条件。根据当前观察和预测的未来状态，规划器迭代地细化候选轨迹以生成强化的驾驶轨迹。通过对未来范围内的场景演变进行显式建模，OWMDrive 捕获了关键的时空因果依赖性，从而生成更具前瞻性和稳健的轨迹。大量实验表明，OWMDrive 显着提高了规划的可靠性和安全性，特别是在具有挑战性和部分可观察的驾驶场景中。",
+          "submitted": "2026-06-29T15:05:41Z",
+          "updated": "2026-06-29T15:05:41Z",
+          "abs_url": "https://arxiv.org/abs/2606.30421",
+          "pdf_url": "https://arxiv.org/pdf/2606.30421v1",
+          "html_url": "https://arxiv.org/html/2606.30421v1",
+          "figures": [
+            "https://arxiv.org/html/2606.30421v1/fig/compare_1.png",
+            "https://arxiv.org/html/2606.30421v1/x1.png",
+            "https://arxiv.org/html/2606.30421v1/x2.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": "IROS",
+          "comments": "International Conference on Intelligent Robots and Systems (IROS), 2026",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ]
+        },
+        {
+          "id": "2606.30613",
+          "rank": 4,
+          "score": 80,
+          "reason_zh": "训练无关神经符号操控系统，关键点锚定实现顺序规划",
+          "tags": [
+            "VLA",
+            "操控",
+            "机器人"
+          ],
+          "title": "Sequential Planning via Anchored Robotic Keypoints",
+          "title_zh": "通过锚定机器人关键点进行顺序规划",
+          "authors": [
+            "Bryce Grant",
+            "Aryeh Rothenberg",
+            "Logan Senning",
+            "Zonghe Chua",
+            "Zach Patterson"
+          ],
+          "abstract": "We present Sequential Planning via Anchored Robotic Keypoints, SPARK, a training-free neurosymbolic manipulation system that reaches 43.7% on six LIBERO-PRO position \\& task cells, more than doubling CaP-Agent0 and Vision-Language-Action (VLA) baselines. CaP-Agent0, a multi-turn code-generation agent, achieves 18.2% by re-querying an LLM at every turn, but its restart-from-scratch solution proves costly against minor policy failures. Perception is the layer that fails most under position and task changes so SPARK spends its computation there. A single Gemini call composes the plan as a typed behavior tree (BT) of composable primitives, each already containing the low-level control (motion, grasping, depth geometry) a code-generation agent would otherwise regenerate on every trial. The rest of the budget goes to perception: a second Gemini call proposes three alternative text prompts per object, SAM3 evaluates each, and we keep the prompt$\\to$label pair with the most confident detection and a recovery loop then retries a failed primitive against freshly detected objects, with no new LLM call. The alternative prompts add +27.7 points on the spatial suite and +10.0 on the object suite, with the recovery loop adding +5.0 overall. SPARK runs the same primitives on three robot families (UR10e, Franka FR3, bimanual Franka) across nine unique tasks at twenty trials each, averaging 68%. Since the detector, planner, and controller modules sit behind the typed plan, they swap independently without training, and each primitive's checkable post-condition traces a failure to the corresponding module or a kinematic limit. Every trial logs a verified, labeled trajectory, so a training-free planner that already beats VLAs can supply the data those policies need without teleoperation. Project page: https://cwru-aism.github.io/spark-page/",
+          "abstract_zh": "我们通过锚定机器人关键点 SPARK 提出顺序规划，这是一种无需训练的神经符号操纵系统，在 6 个 LIBERO-PRO 位置和任务单元上达到 43.7%，是 CaP-Agent0 和视觉-语言-动作 (VLA) 基线的两倍多。 CaP-Agent0 是一种多轮代码生成代理，通过每次重新查询 LLM 实现 18.2%，但事实证明，其从头开始的解决方案对于较小的策略失败来说成本高昂。感知层是在位置和任务变化时最失败的层，因此 SPARK 在那里进行计算。单个 Gemini 调用将计划组成为可组合基元的类型化行为树 (BT)，每个基元都已包含低级控制（运动、抓取、深度几何），否则代码生成代理将在每次试验中重新生成。预算的其余部分用于感知：第二个 Gemini 调用为每个对象提出了三个替代文本提示，SAM3 对每个提示进行评估，并且我们保留具有最置信度检测和恢复循环的提示$\\to$label 对，然后针对新检测到的对象重试失败的原语，无需新的 LLM 调用。替代提示在空间套件上添加 +27.7 点，在对象套件上添加 +10.0 点，恢复循环总体上添加 +5.0 点。 SPARK 在三个机器人系列（UR10e、Franka FR3、双手 Franka）上运行相同的原语，完成九个独特的任务，每个任务进行 20 次试验，平均率为 68%。由于检测器、规划器和控制器模块位于键入的规划后面，因此它们无需训练即可独立交换，并且每个原语的可检查后置条件都会跟踪相应模块或运动学极限的故障。每次试验都会记录一条经过验证、标记的轨迹，因此无需培训、已经击败 VLA 的规划器就可以提供这些策略所需的数据，而无需远程操作。项目页面：https://cwru-aism.github.io/spark-page/",
+          "submitted": "2026-06-29T17:48:01Z",
+          "updated": "2026-06-29T17:48:01Z",
+          "abs_url": "https://arxiv.org/abs/2606.30613",
+          "pdf_url": "https://arxiv.org/pdf/2606.30613v1",
+          "html_url": "https://arxiv.org/html/2606.30613v1",
+          "figures": [
+            "https://arxiv.org/html/2606.30613v1/x1.png",
+            "https://arxiv.org/html/2606.30613v1/final_fig/fig_task_grid.png",
+            "https://arxiv.org/html/2606.30613v1/final_fig/fig_setup_ur10e.png",
+            "https://arxiv.org/html/2606.30613v1/final_fig/fig_setup_fr3.png"
+          ],
+          "code_url": null,
+          "project_url": "https://cwru-aism.github.io/spark-page/",
+          "code_links": [],
+          "project_links": [
+            "https://cwru-aism.github.io/spark-page/"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": null,
+          "comments": "29 pages, 14 figures",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.RO"
+          ]
+        }
+      ]
+    }
+  ]
+}
