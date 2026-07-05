@@ -13,4 +13,5 @@ data/               — raw JSON per day (papers + metadata)
 index.html          — homepage (latest day)
 archive/            — per-day archive pages
 assets/             — CSS and JS
+blogs/              — generated blog index, category pages, and copied blog detail HTML
 ```
