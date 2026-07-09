@@ -1,0 +1,694 @@
+{
+  "date": "2026-07-08",
+  "total_candidates": 112,
+  "categories": [
+    {
+      "id": "worldmodel",
+      "name": "世界模型&视频/场景生成模型",
+      "papers": [
+        {
+          "id": "2607.06559",
+          "rank": 1,
+          "score": 94,
+          "reason_zh": "RGB-D-Flow三模态联合扩散，统一预测未来帧/深度/光流，闭环驱动机器人操作",
+          "tags": [
+            "世界模型",
+            "生成模型",
+            "具身智能",
+            "开源"
+          ],
+          "title": "RynnWorld-4D: 4D Embodied World Models for Robotic Manipulation",
+          "authors": [
+            "Haoyu Zhao",
+            "Xingyue Zhao",
+            "Siteng Huang",
+            "Xin Li",
+            "Deli Zhao"
+          ],
+          "abstract": "Robotic manipulation in the open world requires not only recognizing what a scene looks like, but also anticipating how its 3D structure moves under interaction. We argue that synchronized RGB, depth, and optical flow, namely RGB-DF, provide a physically grounded representation that captures the underlying 4D dynamics of a scene. Compared to 2D pixel videos, this multi-modal synergy aligns visual appearance with geometric structure and temporal motion, creating a representation space significantly closer to the low-level end-effector actions demanded by robotic systems, thereby narrowing the gap between world prediction and policy learning. Building on this insight, we introduce RynnWorld-4D, a generative model that co-produces future RGB frames, depth maps, and optical flow from a single RGB-D image and a language instruction within one unified diffusion process. This 4D world model features a tri-branch architecture that integrates cross-modal attention with frame-wise 3D RoPE, ensuring that appearance, geometry, and motion evolve consistently. To supply training data at scale, we curate Rynn4DDataset 1.0, a massive dataset of over 254.4 million frames across egocentric human and robotic manipulation videos with high-quality pseudo-labels for depth and optical flow. We further propose RynnWorld-4D-Policy, an inverse dynamics head that consumes the internal 4D representations of RynnWorld-4D in a single forward pass, bypassing expensive multi-step denoising, to output robot actions in a closed-loop manner. Experiments show that RynnWorld-4D produces temporally and spatially coherent 4D predictions, and that RynnWorld-4D-Policy achieves state-of-the-art performance on real-world dexterous bimanual manipulation tasks, particularly excelling in tasks demanding spatial precision and temporal coordination.",
+          "abs_url": "https://arxiv.org/abs/2607.06559",
+          "pdf_url": "https://arxiv.org/pdf/2607.06559v1",
+          "html_url": "https://arxiv.org/html/2607.06559v1",
+          "figures": [
+            "https://arxiv.org/html/2607.06559v1/x3.png",
+            "https://arxiv.org/html/2607.06559v1/x4.png",
+            "https://arxiv.org/html/2607.06559v1/x5.png",
+            "https://arxiv.org/html/2607.06559v1/x6.png"
+          ],
+          "code_url": "https://github.com/alibaba-damo-academy/RynnWorld-4D",
+          "project_url": "https://alibaba-damo-academy.github.io/RynnWorld-4D.github.io",
+          "code_links": [
+            "https://github.com/alibaba-damo-academy/RynnWorld-4D"
+          ],
+          "project_links": [
+            "https://alibaba-damo-academy.github.io/RynnWorld-4D.github.io"
+          ],
+          "has_code": true,
+          "has_project": true,
+          "venue": null,
+          "comments": "Project Page: https://alibaba-damo-academy.github.io/RynnWorld-4D.github.io, Github: https://github.com/alibaba-damo-academy/RynnWorld-4D",
+          "submitted": "2026-07-07T17:58:15Z",
+          "updated": "2026-07-07T17:58:15Z",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.RO"
+          ],
+          "title_zh": "RynnWorld-4D：机器人操作的 4D 体现世界模型",
+          "abstract_zh": "开放世界中的机器人操纵不仅需要识别场景的外观，还需要预测其 3D 结构在交互下如何移动。我们认为同步的 RGB、深度和光流（即 RGB-DF）提供了一种物理基础的表示，可以捕获场景的底层 4D 动态。与 2D 像素视频相比，这种多模态协同将视觉外观与几何结构和时间运动结合起来，创建一个明显更接近机器人系统所需的低级末端执行器动作的表示空间，从而缩小世界预测和政策学习之间的差距。基于这一见解，我们引入了 RynnWorld-4D，这是一种生成模型，可在一个统一的扩散过程中从单个 RGB-D 图像和语言指令共同生成未来的 RGB 帧、深度图和光流。该 4D 世界模型采用三分支架构，将跨模式注意力与逐帧 3D RoPE 集成在一起，确保外观、几何形状和运动一致发展。为了大规模提供训练数据，我们策划了 Rynn4DDataset 1.0，这是一个包含超过 2.544 亿帧的海量数据集，涵盖以自我为中心的人类和机器人操作视频，并具有用于深度和光流的高质量伪标签。我们进一步提出了 RynnWorld-4D-Policy，这是一种逆动力学头，它在一次前向传递中消耗 RynnWorld-4D 的内部 4D 表示，绕过昂贵的多步去噪，以闭环方式输出机器人动作。实验表明，RynnWorld-4D 可以产生时间和空间相干的 4D 预测，并且 RynnWorld-4D-Policy 在现实世界灵巧双手操作任务中实现了最先进的性能，特别是在需要空间精度和时间协调的任务中表现出色。"
+        },
+        {
+          "id": "2607.06558",
+          "rank": 2,
+          "score": 92,
+          "reason_zh": "用世界模型替代真实机器人遥操作，手部姿态驱动合成动作数据，零样本Sim2Real",
+          "tags": [
+            "世界模型",
+            "生成模型",
+            "具身智能",
+            "开源"
+          ],
+          "title": "RynnWorld-Teleop: An Action-Conditioned World Model for Digital Teleoperation",
+          "authors": [
+            "Haoyu Zhao",
+            "Xingyue Zhao",
+            "Hangyu Li",
+            "Biao Gong",
+            "Kehan Li"
+          ],
+          "abstract": "Scaling robot learning requires massive, diverse trajectory data, yet collection is currently bottlenecked by physical teleoperation, where every demonstration binds operator time to specific hardware and workspaces. We introduce digital teleoperation, a paradigm that decouples data collection from physical constraints by replacing the real robot with a generative world model. In this framework, an operator's hand-pose stream drives a robot-centric generative world model to synthesize high-fidelity egocentric videos from a single reference image. The recorded pose stream serves as an embodiment-agnostic action label transferable to any target robot via standard retargeting, yielding complete state-action trajectories for imitation learning independent of physical hardware. We instantiate this paradigm in RynnWorld-Teleop, a system that integrates depth-aware skeletal conditioning, progressive human-to-robot training on a video Diffusion Transformer, and streaming autoregressive distillation. This pipeline compresses the generative process into a single-pass inference, enabling 40+ FPS, real-time interactive generation on a single H100 GPU. Policies trained exclusively on RynnWorld-Teleop-generated data achieve effective zero-shot Sim2Real transfer across dexterous and diverse bimanual tasks. Moreover, augmenting real-world datasets with our digitally teleoperated data consistently improves success rates, demonstrating that RynnWorld-Teleop serves as a high-fidelity, scalable data engine for the next generation of robotic agents.",
+          "abs_url": "https://arxiv.org/abs/2607.06558",
+          "pdf_url": "https://arxiv.org/pdf/2607.06558v1",
+          "html_url": "https://arxiv.org/html/2607.06558v1",
+          "figures": [
+            "https://arxiv.org/html/2607.06558v1/x3.png",
+            "https://arxiv.org/html/2607.06558v1/x4.png",
+            "https://arxiv.org/html/2607.06558v1/x5.png",
+            "https://arxiv.org/html/2607.06558v1/x6.png"
+          ],
+          "code_url": "https://github.com/alibaba-damo-academy/RynnWorld-Teleop",
+          "project_url": "https://alibaba-damo-academy.github.io/RynnWorld-Teleop.github.io",
+          "code_links": [
+            "https://github.com/alibaba-damo-academy/RynnWorld-Teleop"
+          ],
+          "project_links": [
+            "https://alibaba-damo-academy.github.io/RynnWorld-Teleop.github.io"
+          ],
+          "has_code": true,
+          "has_project": true,
+          "venue": null,
+          "comments": "Project Page: https://alibaba-damo-academy.github.io/RynnWorld-Teleop.github.io, Github: https://github.com/alibaba-damo-academy/RynnWorld-Teleop",
+          "submitted": "2026-07-07T17:58:11Z",
+          "updated": "2026-07-07T17:58:11Z",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.RO"
+          ],
+          "title_zh": "RynnWorld-Teleop：数字远程操作的动作条件世界模型",
+          "abstract_zh": "扩展机器人学习需要大量、多样化的轨迹数据，但收集目前受到物理远程操作的瓶颈，每次演示都将操作员的时间绑定到特定的硬件和工作空间。我们引入了数字远程操作，这是一种通过用生成世界模型替换真实机器人来将数据收集与物理约束分离的范例。在此框架中，操作员的手势流驱动以机器人为中心的生成世界模型，以从单个参考图像合成高保真自我中心视频。记录的姿势流充当与实施例无关的动作标签，可通过标准重定向转移到任何目标机器人，从而产生独立于物理硬件的模仿学习的完整状态动作轨迹。我们在 RynnWorld-Teleop 中实例化了这一范例，该系统集成了深度感知骨骼调节、视频扩散变压器上的渐进式人机训练以及流式自回归蒸馏。该管道将​​生成过程压缩为单通道推理，从而在单个 H100 GPU 上实现 40+ FPS 的实时交互生成。专门针对 RynnWorld-Teleop 生成的数据进行训练的策略可实现跨灵巧且多样化的双手任务的有效零样本 Sim2Real 传输。此外，使用我们的数字远程操作数据增强现实世界数据集可以持续提高成功率，这表明 RynnWorld-Teleop 可以作为下一代机器人代理的高保真、可扩展的数据引擎。"
+        },
+        {
+          "id": "2607.06291",
+          "rank": 3,
+          "score": 90,
+          "reason_zh": "全栈开源交互式视频世界生成框架，支持实时导航/战斗/魔法等自由交互",
+          "tags": [
+            "世界模型",
+            "生成模型",
+            "开源"
+          ],
+          "title": "AlayaWorld: Long-Horizon and Playable Video World Generation",
+          "authors": [
+            "AlayaWorld Team",
+            "Kaipeng Zhang",
+            "Chuanhao Li",
+            "Yifan Zhan",
+            "Yongtao Ge"
+          ],
+          "abstract": "Game worlds have traditionally been built through labor-intensive production pipelines, making them costly to develop, difficult to customization, and expensive to modify after deployment. Recent advances in video world models offer a fundamentally different paradigm. Rather than explicitly authoring every component of a virtual environment, these models autoregressively synthesize future observations conditioned on the current world state and user interactions, enabling playable worlds to be generated online. Trained on both gameplay recordings and real-world videos, they can capture diverse visual appearances and physical dynamics, opening new opportunities for interactive applications beyond gaming, including embodied intelligence. In this paper, we present \\textbf{AlayaWorld}, a full-stack open-source framework for building interactive generative worlds. AlayaWorld enables open-ended real-time interaction, allowing users to freely navigate and perform diverse actions such as combat, spell casting, and monster summoning. The framework unifies the complete development-from data preparation model architecture, model training, inference acceleration, and deployment-within a modular and extensible architecture. Alongside the framework, we release reproducible pipelines, reference implementations, evaluation tools, and comprehensive documentation, establishing a practical foundation for future research and real-time applications of generative world models.",
+          "abs_url": "https://arxiv.org/abs/2607.06291",
+          "pdf_url": "https://arxiv.org/pdf/2607.06291v1",
+          "html_url": "https://arxiv.org/html/2607.06291v1",
+          "figures": [
+            "https://arxiv.org/html/2607.06291v1/x1.png",
+            "https://arxiv.org/html/2607.06291v1/figures/fig3.jpg",
+            "https://arxiv.org/html/2607.06291v1/figures/action.jpg",
+            "https://arxiv.org/html/2607.06291v1/figures/fig6.jpg"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": "Authors are listed alphabetically by the first name and their role. See the contribution section for details",
+          "submitted": "2026-07-07T13:59:57Z",
+          "updated": "2026-07-07T13:59:57Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV",
+            "cs.HC"
+          ],
+          "title_zh": "阿赖耶世界：长视可玩的视频世界生成",
+          "abstract_zh": "游戏世界传统上是通过劳动密集型生产管道构建的，这使得它们的开发成本高昂，难以定制，并且部署后修改成本高昂。视频世界模型的最新进展提供了一种根本不同的范式。这些模型不是明确地创作虚拟环境的每个组件，而是根据当前世界状态和用户交互自动回归综合未来的观察结果，从而能够在线生成可玩的世界。经过游戏录制和真实视频的训练，它们可以捕捉不同的视觉外观和物理动态，为游戏之外的交互式应用（包括体现智能）开辟了新的机会。在本文中，我们提出了 \\textbf{AlayaWorld}，一个用于构建交互式生成世界的全栈开源框架。阿赖耶世界支持开放式实时交互，允许用户自由导航并执行战斗、施法、召唤怪物等多种动作。该框架将整个开发过程——从数据准备模型架构、模型训练、推理加速到部署——统一在一个模块化和可扩展的架构中。除了该框架之外，我们还发布了可复制的管道、参考实现、评估工具和全面的文档，为生成世界模型的未来研究和实时应用奠定了实践基础。"
+        },
+        {
+          "id": "2607.06216",
+          "rank": 4,
+          "score": 88,
+          "reason_zh": "首个NPU实时交互世界模型，3D原生数据引擎+渐进蒸馏，50FPS无需高端GPU",
+          "tags": [
+            "世界模型",
+            "生成模型",
+            "开源"
+          ],
+          "title": "MoWorld: A Flash World Model",
+          "authors": [
+            "Team Moxin",
+            "Deyi Ji",
+            "Tianrun Chen",
+            "Xin Zhang",
+            "Jiale Yang"
+          ],
+          "abstract": "The future of World Models depends not only on scaling model capability, but also on scaling practicality and inference efficiency. High-frame-rate inference enables responsive perception, planning, and control in real-world autonomous systems. To this end, we present MoWorld, a cost-effective yet high-performance Flash World Model with an end-to-end framework spanning data generation, pre-training, distillation, and efficient inference, enabling up to 50 FPS real-time interaction with cinematic visual quality without the need of high-end GPUs. To enable large-scale real-world deployment, MoWorld jointly optimizes model capability and cost throughout the entire development pipeline. Specifically, unlike existing approaches that primarily rely on large-scale video corpora, MoWorld is built upon a scalable 3D-native data engine accumulated from our large-scale 3D vision and generative modeling pipeline, enabling the efficient construction of geometrically consistent training data across diverse real-world and synthetic environments. Based on this foundation, a curriculum cross-frame pre-training strategy for stable and scalable World Model learning, an efficient denoising-step distillation algorithm to reduce diffusion training cost, and a mixed-precision parallel inference framework for low-cost real-time deployment. MoWorld is the first real-time interactive World Model built on the Neural Processing Unit (NPU) and can achieves up to 50 FPS in such the devices, enabling practical and efficient deployment at scale. Comprehensive evaluations demonstrate that MoWorld achieves leading performance; notably, its average inference cost is only 30\\%-50\\% of that of existing World Models, providing a practical foundation for large-scale real-world applications of World Models. We also demonstrate diverse applications of MoWorld.",
+          "abs_url": "https://arxiv.org/abs/2607.06216",
+          "pdf_url": "https://arxiv.org/pdf/2607.06216v1",
+          "html_url": "https://arxiv.org/html/2607.06216v1",
+          "figures": [
+            "https://arxiv.org/html/2607.06216v1/x1.png",
+            "https://arxiv.org/html/2607.06216v1/x2.png",
+            "https://arxiv.org/html/2607.06216v1/figs/pngs/pretrain.png",
+            "https://arxiv.org/html/2607.06216v1/figs/pngs/distillation.png"
+          ],
+          "code_url": null,
+          "project_url": "https://moxin-tech.github.io/moworld/",
+          "code_links": [],
+          "project_links": [
+            "https://moxin-tech.github.io/moworld/"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": null,
+          "comments": "Project Page: https://moxin-tech.github.io/moworld/",
+          "submitted": "2026-07-07T12:41:19Z",
+          "updated": "2026-07-07T12:41:19Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "MoWorld：Flash 世界模型",
+          "abstract_zh": "世界模型的未来不仅取决于扩展模型的能力，还取决于扩展的实用性和推理效率。高帧率推理可在现实世界的自主系统中实现响应式感知、规划和控制。为此，我们推出了MoWorld，这是一种经济高效且高性能的Flash世界模型，具有涵盖数据生成、预训练、蒸馏和高效推理的端到端框架，无需高端GPU即可实现高达50 FPS和电影视觉质量的实时交互。为了实现大规模的现实部署，MoWorld 在整个开发流程中共同优化模型能力和成本。具体来说，与主要依赖于大规模视频语料库的现有方法不同，MoWorld 建立在从我们的大规模 3D 视觉和生成建模管道中积累的可扩展 3D 原生数据引擎之上，从而能够在不同的现实世界和合成环境中高​​效构建几何一致的训练数据。在此基础上，提出了用于稳定且可扩展的世界模型学习的课程跨框架预训练策略、用于降低扩散训练成本的高效去噪步骤蒸馏算法以及用于低成本实时部署的混合精度并行推理框架。 MoWorld是第一个基于神经处理单元（NPU）构建的实时交互式世界模型，在此类设备中可以实现高达50 FPS的速度，从而实现大规模实用且高效的部署。综合评价显示MoWorld业绩领先；值得注意的是，其平均推理成本仅为现有世界模型的30%-50%，为世界模型的大规模实际应用提供了实用基础。我们还展示了MoWorld的多种应用。"
+        },
+        {
+          "id": "2607.06516",
+          "rank": 5,
+          "score": 85,
+          "reason_zh": "点云骨架解耦前背景+自回归生成，实现视觉逼真的闭环自动驾驶仿真",
+          "tags": [
+            "闭环仿真",
+            "生成模型",
+            "自动驾驶",
+            "开源"
+          ],
+          "title": "Point as Skeleton: Accumulated Point Cloud Enhanced Autoregressive Generation for Closed-Loop Autonomous Driving Simulation",
+          "authors": [
+            "Songbur Wong",
+            "Xiaosong Jia",
+            "Junqi You",
+            "Bo Zhang",
+            "Pei Xu"
+          ],
+          "abstract": "Evaluating end-to-end autonomous driving (E2E-AD) remains challenging, as existing driving simulation methods often trade off closed-loop interactivity (e.g., CARLA) and real-world visual fidelity (e.g., nuScenes). We present \\textbf{\\emph{Point as Skeleton}}, a generative sensor simulation framework for state-updated autoregressive driving video generation, in which an autoregressive generator synthesizes visual observations from step-wise updated ego states, actor states, scene maps, and point-cloud skeleton conditions. To support closed-loop rollout, we introduce Reset-and-Roll, which adapts rolling diffusion inference to simulation by preventing future-conditioned latent states from being committed across simulation steps. To stabilize error accumulation during step-wise autoregressive rollout, we introduce point-cloud skeletons that decouple foreground and background assets and project them into camera-view painted-point and template-depth conditions, providing appearance and geometric cues. We further implement a nuPlan-based renderer-level closed-loop generative interface for evaluating generation under ego deviations from the original log. Experiments on nuScenes and nuPlan show that \\textit{Point as Skeleton} improves autoregressive generation quality during closed-loop rollout, demonstrating its potential for visually faithful closed-loop driving simulation. The code is available at https://github.com/krauwu/point-as-skeleton.",
+          "abs_url": "https://arxiv.org/abs/2607.06516",
+          "pdf_url": "https://arxiv.org/pdf/2607.06516v1",
+          "html_url": "https://arxiv.org/html/2607.06516v1",
+          "figures": [
+            "https://arxiv.org/html/2607.06516v1/x1.png",
+            "https://arxiv.org/html/2607.06516v1/x2.png",
+            "https://arxiv.org/html/2607.06516v1/x3.png",
+            "https://arxiv.org/html/2607.06516v1/x4.png"
+          ],
+          "code_url": "https://github.com/krauwu/point-as-skeleton",
+          "project_url": null,
+          "code_links": [
+            "https://github.com/krauwu/point-as-skeleton"
+          ],
+          "project_links": [],
+          "has_code": true,
+          "has_project": false,
+          "venue": null,
+          "comments": null,
+          "submitted": "2026-07-07T17:20:51Z",
+          "updated": "2026-07-07T17:20:51Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "点作为骨架：用于闭环自动驾驶仿真的累积点云增强自回归生成",
+          "abstract_zh": "评估端到端自动驾驶 (E2E-AD) 仍然具有挑战性，因为现有的驾驶模拟方法通常会权衡闭环交互性（例如 CARLA）和现实世界的视觉保真度（例如 nuScenes）。我们提出了 \\textbf{\\emph{Point as Skeleton}}，这是一种用于状态更新自回归驾驶视频生成的生成传感器模拟框架，其中自回归生成器综合了逐步更新的自我状态、演员状态、场景地图和点云骨架条件的视觉观察结果。为了支持闭环推出，我们引入了 Reset-and-Roll，它通过防止跨模拟步骤提交未来条件的潜在状态来使滚动扩散推理适应模拟。为了稳定逐步自回归推出过程中的误差积累，我们引入了点云骨架，该骨架将前景和背景资产解耦，并将它们投影到相机视图绘制点和模板深度条件中，提供外观和几何线索。我们进一步实现了一个基于 nuPlan 的渲染器级闭环生成接口，用于评估与原始日志的自我偏差下的生成。 nuScenes 和 nuPlan 上的实验表明 \\textit{Point as Skeleton} 提高了闭环推出期间的自回归生成质量，展示了其在视觉上忠实的闭环驾驶模拟方面的潜力。代码可在 https://github.com/krauwu/point-as-sculpture 获取。"
+        },
+        {
+          "id": "2607.05765",
+          "rank": 6,
+          "score": 83,
+          "reason_zh": "从RGB-D序列构建交互式神经仿真环境，生成千万级导航训练样本",
+          "tags": [
+            "闭环仿真",
+            "生成模型",
+            "具身智能",
+            "3DGS"
+          ],
+          "title": "Image2Sim: Scaling Embodied Navigation via Generative Neural Simulator",
+          "authors": [
+            "Zihan Wang",
+            "Seungjun Lee",
+            "Yinghao Xu",
+            "Gim Hee Lee"
+          ],
+          "abstract": "Embodied navigation aims to build agents that interpret multimodal goals, reason in 3D space, and reach target destinations reliably in the real world. However, progress remains constrained by the lack of scalable, high-fidelity, and physically grounded interactive environments. Although real-world scanned datasets offer visual realism, they are limited by scale. In contrast, synthetic simulators scale more easily but often exhibit large sim-to-real gaps. We introduce Image2Sim, a real-time neural simulation framework that constructs high-quality interactive environments from posed RGB-D image sequences. The central idea is to decouple 3D spatial anchoring from photorealistic observation synthesis. For scene construction, Image2Sim uses a feed-forward feature Gaussian model that lifts posed RGB-D observations into a 3D feature-Gaussian representation in a single pass. For rendering, we propose a Geometry-Aware One-Step Pixel Flow model that transforms sparse and noisy Gaussian projections into high-quality panoramic RGB-D observations. Image2Sim also serves as a fully automated embodied data engine that generates high-fidelity observations, executable actions, and diverse navigation instructions at scale. It converts large collections of videos and images into nearly 20K interactive scenes and synthesizes more than 10 million navigation training samples. Navigation models trained entirely in these neural environments achieve strong improvements on major benchmarks and transfer effectively to real-world zero-shot settings. These results suggest that scalable neural simulation can serve as a practical training substrate for embodied navigation at scale.",
+          "abs_url": "https://arxiv.org/abs/2607.05765",
+          "pdf_url": "https://arxiv.org/pdf/2607.05765v1",
+          "html_url": "https://arxiv.org/html/2607.05765v1",
+          "figures": [
+            "https://arxiv.org/html/2607.05765v1/x1.png",
+            "https://arxiv.org/html/2607.05765v1/x2.png",
+            "https://arxiv.org/html/2607.05765v1/x3.png",
+            "https://arxiv.org/html/2607.05765v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": null,
+          "submitted": "2026-07-07T02:42:41Z",
+          "updated": "2026-07-07T02:42:41Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV",
+            "cs.RO"
+          ],
+          "title_zh": "Image2Sim：通过生成神经模拟器缩放体现导航",
+          "abstract_zh": "具身导航旨在构建能够解释多模式目标、在 3D 空间中进行推理并在现实世界中可靠地到达目标目的地的代理。然而，由于缺乏可扩展、高保真和物理接地的交互环境，进展仍然受到限制。尽管现实世界的扫描数据集提供了视觉真实感，但它们受到规模的限制。相比之下，合成模拟器更容易扩展，但通常会表现出较大的模拟与真实差距。我们介绍了 Image2Sim，这是一个实时神经模拟框架，可以根据摆好的 RGB-D 图像序列构建高质量的交互式环境。中心思想是将 3D 空间锚定与真实感观察合成分离。对于场景构建，Image2Sim 使用前馈特征高斯模型，将 RGB-D 观察结果一次性提升为 3D 特征高斯表示。对于渲染，我们提出了一种几何感知一步像素流模型，将稀疏且嘈杂的高斯投影转换为高质量的全景 RGB-D 观测结果。 Image2Sim 还充当全自动体现数据引擎，可大规模生成高保真观察结果、可执行操作和各种导航指令。它将大量视频和图像转换为近2万个交互场景，并合成了超过1000万个导航训练样本。完全在这些神经环境中训练的导航模型在主要基准上取得了显着的改进，并有效地转移到现实世界的零样本设置。这些结果表明，可扩展的神经模拟可以作为大规模实体导航的实用训练基础。"
+        }
+      ]
+    },
+    {
+      "id": "reconstruction",
+      "name": "3D/4D 重建与生成",
+      "papers": [
+        {
+          "id": "2607.05801",
+          "rank": 1,
+          "score": 82,
+          "reason_zh": "解耦轨迹-相机刚体几何学习，分离自车运动与多相机拓扑，5项AD基准SOTA",
+          "tags": [
+            "3D重建",
+            "深度估计",
+            "自动驾驶"
+          ],
+          "title": "TRIG: Trajectory-Rig Decoupled Metric Geometry Learning",
+          "authors": [
+            "Lizhou Liao",
+            "Wentao Xu",
+            "Handong Wang",
+            "Lirong Yang",
+            "Shuai Yang"
+          ],
+          "abstract": "Vision-centric autonomous driving requires accurate metric geometry and ego-motion estimation from synchronized multi-camera observations. Recent visual geometry models show strong performance in pose estimation, depth prediction, and 3D reconstruction, but are not tailored to rigid multi-camera driving systems. They often encode camera poses as entangled representations, in which time-varying ego-motion and static camera-rig geometry are jointly modeled, limiting the utilization of vehicle-side geometric priors. We propose Trajectory-Rig Decoupled Metric Geometry Learning (TRIG), a geometry perception framework for autonomous driving. TRIG factorizes camera poses into ego-trajectory and camera-rig components, enabling separate modeling of ego-motion and static multi-camera topology. We introduce decoupled pose encoding and supervision, which separately constrain trajectory evolution and rig geometry for metric-consistent learning. Moreover, sparse Temporal--Spatial attention separates cross-camera interaction from temporal aggregation, reducing global attention cost while preserving geometric reasoning. Experiments on five autonomous driving benchmarks show that TRIG achieves state-of-the-art performance in pose estimation, metric depth prediction, and 3D reconstruction.",
+          "abs_url": "https://arxiv.org/abs/2607.05801",
+          "pdf_url": "https://arxiv.org/pdf/2607.05801v1",
+          "html_url": "https://arxiv.org/html/2607.05801v1",
+          "figures": [
+            "https://arxiv.org/html/2607.05801v1/Figures/weighted_rank_radar.png",
+            "https://arxiv.org/html/2607.05801v1/Figures/pipeline.png",
+            "https://arxiv.org/html/2607.05801v1/Figures/Qualitative_Results.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": "9 pages, 3 figures, 8 tables",
+          "submitted": "2026-07-07T03:55:13Z",
+          "updated": "2026-07-07T03:55:13Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV",
+            "cs.RO"
+          ],
+          "title_zh": "TRIG：轨迹装备解耦度量几何学习",
+          "abstract_zh": "以视觉为中心的自动驾驶需要通过同步的多摄像头观察进行精确的度量几何和自我运动估计。最近的视觉几何模型在姿态估计、深度预测和 3D 重建方面表现出强大的性能，但并不适合刚性的多摄像头驱动系统。他们经常将相机姿势编码为纠缠表示，其中时变自我运动和静态相机装备几何形状被联合建模，限制了车辆端几何先验的利用。我们提出了 Trajectory-Rig 解耦度量几何学习（TRIG），这是一种用于自动驾驶的几何感知框架。 TRIG 将相机姿势分解为自我轨迹和相机装备组件，从而实现自我运动和静态多相机拓扑的单独建模。我们引入了解耦的姿态编码和监督，它们分别约束轨迹演化和装备几何形状，以实现度量一致的学习。此外，稀疏时空注意力将跨摄像机交互与时间聚合分开，在保留几何推理的同时降低了全局注意力成本。五个自动驾驶基准测试的实验表明，TRIG 在姿态估计、度量深度预测和 3D 重建方面实现了最先进的性能。"
+        },
+        {
+          "id": "2607.05543",
+          "rank": 2,
+          "score": 83,
+          "reason_zh": "高斯证据记忆框架，视觉几何预测转为语义占用证据，跨房间长期建图",
+          "tags": [
+            "3D重建",
+            "具身智能",
+            "开源"
+          ],
+          "title": "GEM-Occ: From Visual Geometry Evidence to Embodied Semantic Occupancy Memory",
+          "authors": [
+            "Hu Zhu",
+            "Bohan Li",
+            "Xianda Guo",
+            "Hongsi Liu",
+            "Baorui Peng"
+          ],
+          "abstract": "Semantic occupancy provides a structured spatial memory for embodied indoor agents by jointly representing occupied regions, observed free space, unknown areas, and object semantics. However, existing indoor occupancy benchmarks and methods mainly focus on single-view prediction or room-level online perception, leaving long-horizon semantic mapping across connected indoor spaces underexplored. We introduce HIOcc, a hierarchical indoor occupancy benchmark that unifies ScanNet, ScanNet++, and Matterport3D under a common sparse semantic occupancy format while preserving their native observation geometries, including perspective RGB-D frames and pano-centric observation groups. HIOcc supports three complementary evaluation regimes: local semantic occupancy prediction, room-level online occupancy mapping, and building-level mapping across connected panoramic environments. We further propose GEM-Occ, a Gaussian Evidence Memory framework for semantic occupancy mapping. Rather than using pointmaps as persistent map states, GEM-Occ treats local visual geometry predictions as transient evidence, converts them into semantic Gaussian occupancy evidence and free-space ray evidence, and fuses them into a persistent hierarchical memory through visibility- and uncertainty-aware causal updates. The memory is organized into local caches, room-level submaps, and a building-level graph, and can be queried at any time through Gaussian-to-occupancy splatting. Experiments on HIOcc show that GEM-Occ improves local occupancy prediction, online map stability, free-space reasoning, revisit consistency, and building-level scalability over prior indoor occupancy and Gaussian-based mapping baselines.",
+          "abs_url": "https://arxiv.org/abs/2607.05543",
+          "pdf_url": "https://arxiv.org/pdf/2607.05543v1",
+          "html_url": "https://arxiv.org/html/2607.05543v1",
+          "figures": [
+            "https://arxiv.org/html/2607.05543v1/x1.png",
+            "https://arxiv.org/html/2607.05543v1/x2.png",
+            "https://arxiv.org/html/2607.05543v1/x3.png",
+            "https://arxiv.org/html/2607.05543v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": "https://zhuhu00.top/GEM-Occ/",
+          "code_links": [],
+          "project_links": [
+            "https://zhuhu00.top/GEM-Occ/"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": null,
+          "comments": "19 pages, 6 figures. Project page: https://zhuhu00.top/GEM-Occ/",
+          "submitted": "2026-07-06T18:26:27Z",
+          "updated": "2026-07-06T18:26:27Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV",
+            "cs.RO"
+          ],
+          "title_zh": "GEM-Occ：从视觉几何证据到具体语义占用记忆",
+          "abstract_zh": "语义占用通过联合表示占用区域、观察到的自由空间、未知区域和对象语义，为具体的室内代理提供结构化的空间记忆。然而，现有的室内占用基准和方法主要侧重于单视图预测或房间级在线感知，而跨互联室内空间的长视野语义映射尚未得到充分探索。我们引入了 HIOcc，这是一种分层室内占用基准，它将 ScanNet、ScanNet++ 和 Matterport3D 统一在通用的稀疏语义占用格式下，同时保留其原生观察几何形状，包括透视 RGB-D 框架和全景中心观察组。 HIOcc 支持三种互补的评估机制：本地语义占用预测、房间级在线占用映射以及跨连接全景环境的建筑物级映射。我们进一步提出了 GEM-Occ，一种用于语义占用映射的高斯证据记忆框架。 GEM-Occ 没有使用点图作为持久地图状态，而是将局部视觉几何预测视为瞬态证据，将其转换为语义高斯占用证据和自由空间射线证据，并通过可见性和不确定性感知因果更新将它们融合到持久分层内存中。内存被组织成本地缓存、房间级子图和建筑物级图，并且可以通过高斯到占用splatting随时查询。 HIOcc 上的实验表明，与先前的室内占用率和基于高斯的映射基线相比，GEM-Occ 改进了本地占用率预测、在线地图稳定性、自由空间推理、重访一致性和建筑级可扩展性。"
+        },
+        {
+          "id": "2607.05493",
+          "rank": 3,
+          "score": 81,
+          "reason_zh": "统一3D点云定位与度量对话，支持物体/部件级空间推理和物理尺寸问答",
+          "tags": [
+            "3D重建",
+            "VLM",
+            "顶会"
+          ],
+          "title": "Ground3D-LMM: Fine-Grained 3D Point Grounding and Spatial Reasoning with LMM",
+          "authors": [
+            "Amol Harsh",
+            "Zongyan Han",
+            "Jean Lahoud",
+            "Ye Liu",
+            "Rao Muhammad Anwer"
+          ],
+          "abstract": "Natural-language queries about 3D environments become actionable when responses are verifiable and metric. Verifiability requires explicit grounding to the referred 3D region, while metric answers report physical measurements in real-world units (e.g., size, thickness, clearance, and distance). Existing 3D large multimodal models (LMMs) approaches remain limited: conversational systems typically respond without explicit 3D grounding, while 3D grounding models are not designed for interactive, metric-aware dialogue. In this paper, we present Ground3D-LMM, a unified model that takes a point cloud and an optional RGB image as input and supports 3D spatial conversation with (i) point-grounded responses and (ii) metric numeric outputs at both object and part granularity, including multi-object queries. To evaluate this intersection of grounding and measurement, we define the 3D Grounded Measurement task, which requires predicting the referred 3D region and the corresponding metric quantities in real-world units. We introduce a large-scale dataset built on ScanNet and ScanNet++ datasets with dense object and part annotations and roughly 2.5M question-answer pairs spanning eight tasks, along with a manually verified test set. Extensive experiments on multiple datasets and tasks show that our proposed Ground3D-LMM model provides a strong baseline for grounded, metric-aware 3D conversational understanding. Our dataset and model are publicly available.",
+          "abs_url": "https://arxiv.org/abs/2607.05493",
+          "pdf_url": "https://arxiv.org/pdf/2607.05493v1",
+          "html_url": "https://arxiv.org/html/2607.05493v1",
+          "figures": [
+            "https://arxiv.org/html/2607.05493v1/x2.png",
+            "https://arxiv.org/html/2607.05493v1/x3.png",
+            "https://arxiv.org/html/2607.05493v1/x4.png",
+            "https://arxiv.org/html/2607.05493v1/x5.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": "ECCV",
+          "comments": "ECCV 2026",
+          "submitted": "2026-07-06T18:00:00Z",
+          "updated": "2026-07-06T18:00:00Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "Ground3D-LMM：使用 LMM 进行细粒度 3D 点接地和空间推理",
+          "abstract_zh": "当响应可验证且可衡量时，有关 3D 环境的自然语言查询就变得可行。可验证性需要明确地基于所涉及的 3D 区域，而公制答案则以现实世界单位报告物理测量结果（例如尺寸、厚度、间隙和距离）。现有的 3D 大型多模态模型 (LMM) 方法仍然有限：对话系统通常在没有明确的 3D 基础的情况下做出响应，而 3D 基础模型并不是为交互式、度量感知的对话而设计的。在本文中，我们提出了 Ground3D-LMM，这是一个统一模型，它采用点云和可选的 RGB 图像作为输入，并支持 3D 空间对话，其中 (i) 点接地响应和 (ii) 对象和部分粒度的度量数值输出，包括多对象查询。为了评估接地和测量的交集，我们定义了 3D 接地测量任务，该任务需要预测所涉及的 3D 区域和现实世界单位中的相应度量量。我们引入了一个基于 ScanNet 和 ScanNet++ 数据集构建的大型数据集，其中包含密集的对象和零件注释以及跨越八个任务的大约 250 万个问答对，以及手动验证的测试集。对多个数据集和任务的广泛实验表明，我们提出的 Ground3D-LMM 模型为有根据的、度量感知的 3D 对话理解提供了强大的基线。我们的数据集和模型是公开的。"
+        },
+        {
+          "id": "2607.05906",
+          "rank": 4,
+          "score": 80,
+          "reason_zh": "多模态3DGS预训练框架，图文语义对齐+显著性引导掩码，提升下游迁移",
+          "tags": [
+            "3DGS",
+            "3D重建",
+            "生成模型"
+          ],
+          "title": "GaussFusion: Towards Multimodal 3D Gaussian Pretraining",
+          "authors": [
+            "Zhixuan You",
+            "Jihua Zhu",
+            "Yiding Sun",
+            "Zihao Guo",
+            "Haozhe Cheng"
+          ],
+          "abstract": "3D Gaussian Splatting provides an explicit representation that jointly models geometry and appearance, serving as a scalable foundation for 3D representation learning. Existing pre-training methods for Gaussian representations, such as masked Gaussian reconstruction, primarily capture local structures but offer limited semantic supervision. In this paper, we propose GaussFusion, a multimodal pre-training framework for 3D Gaussian representations. GaussFusion integrates image and text supervision into masked Gaussian modeling through cross-modal semantic alignment, enabling the Gaussian encoder to learn both visual and language-level semantic information during pre-training. To better adapt masked modeling to the non-uniform distribution of Gaussian primitives, we further propose Gaussian Salience-guided Multi-scale Hole Masking (GSHM). GSHM constructs spatially continuous masked regions based on Gaussian salience. By applying hole masks at multiple scales, GSHM encourages the encoder to capture both fine-grained local patterns and broader structural dependencies. Extensive experiments on downstream tasks demonstrate that GaussFusion improves the transferability of Gaussian representations. Notably, GaussFusion outperforms Gaussian-MAE on ModelNet40 and ScanObjectNN (PB-T50-RS) by 0.61\\% and 3.85\\%, respectively.",
+          "abs_url": "https://arxiv.org/abs/2607.05906",
+          "pdf_url": "https://arxiv.org/pdf/2607.05906v1",
+          "html_url": "https://arxiv.org/html/2607.05906v1",
+          "figures": [
+            "https://arxiv.org/html/2607.05906v1/Figure_1.png",
+            "https://arxiv.org/html/2607.05906v1/Figure_2.png",
+            "https://arxiv.org/html/2607.05906v1/Figure_3.png",
+            "https://arxiv.org/html/2607.05906v1/Figure_4.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": "32 pages, 6 figures, 6 tables",
+          "submitted": "2026-07-07T07:01:46Z",
+          "updated": "2026-07-07T07:01:46Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "GaussFusion：迈向多模态 3D 高斯预训练",
+          "abstract_zh": "3D Gaussian Splatting 提供了联合建模几何和外观的显式表示，作为 3D 表示学习的可扩展基础。现有的高斯表示预训练方法（例如掩模高斯重建）主要捕获局部结构，但提供有限的语义监督。在本文中，我们提出了 GaussFusion，一种用于 3D 高斯表示的多模态预训练框架。 GaussFusion通过跨模态语义对齐将图像和文本监督集成到掩模高斯建模中，使高斯编码器能够在预训练期间学习视觉和语言级语义信息。为了更好地使掩模建模适应高斯基元的非均匀分布，我们进一步提出了高斯显着性引导的多尺度孔掩模（GSHM）。 GSHM 基于高斯显着性构建空间连续的掩模区域。通过在多个尺度上应用孔掩模，GSHM 鼓励编码器捕获细粒度的局部模式和更广泛的结构依赖性。对下游任务的大量实验表明，GaussFusion 提高了高斯表示的可转移性。值得注意的是，GaussFusion 在 ModelNet40 和 ScanObjectNN (PB-T50-RS) 上的性能分别优于 Gaussian-MAE 0.61% 和 3.85%。"
+        }
+      ]
+    },
+    {
+      "id": "vla",
+      "name": "自动驾驶与机器人",
+      "papers": [
+        {
+          "id": "2607.06564",
+          "rank": 1,
+          "score": 88,
+          "reason_zh": "为VLA注入显式3D点云推理和时序动作建模，MetaWorld/RLBench双榜SOTA",
+          "tags": [
+            "VLA",
+            "具身智能",
+            "操控"
+          ],
+          "title": "Lift3D-VLA: Lifting VLA Models to 3D Geometry and Dynamics-Aware Manipulation",
+          "authors": [
+            "Jiaming Liu",
+            "Qingpo Wuwu",
+            "Nuowei Han",
+            "Hao Chen",
+            "Zhuoyang Liu"
+          ],
+          "abstract": "Recently, Vision-Language-Action (VLA) models have demonstrated strong generalization across diverse tasks. However, effective robotic manipulation in physical environments fundamentally requires geometric understanding and spatial reasoning. While some VLA approaches attempt to incorporate 3D information, they are constrained by limited data availability and geometric information loss in current 3D encoding pipelines, and fail to jointly capture 3D geometry and temporally structured actions in dynamic environments. To address these limitations, we introduce Lift3D-VLA, a unified VLA framework that equips models with explicit 3D point cloud reasoning and enables temporally coherent action generation. First, building upon our previous work Lift3D, an enhanced 2D model-lifting strategy is proposed to geometrically align 3D points with pretrained 2D positional embeddings. This design enables direct point-cloud encoding within the VLA vision encoder while minimizing spatial information loss. Based on explicit 3D inputs, we propose Geometry-Centric Masked Autoencoding (GC-MAE), a dual-objective self-supervised framework that reconstructs the current point cloud while predicting its future geometric evolution. This formulation allows the 2D vision encoder to internalize both 3D structure and physical dynamics. To fully exploit 3D representations, we further design layer-wise temporal action modeling, which leverages multiple layers of the LLM to collaboratively predict action chunks, enabling temporally consistent predictions. Across 22 simulated tasks and 8 real-world manipulation tasks, Lift3D-VLA achieves 10.8% and 11.1% higher mean success rates on MetaWorld and RLBench than the best-performing prior VLA methods, and outperforms the strongest real-world baseline by 4 percentage points, while exhibiting stronger generalization to out-of-distribution perturbations.",
+          "abs_url": "https://arxiv.org/abs/2607.06564",
+          "pdf_url": "https://arxiv.org/pdf/2607.06564v1",
+          "html_url": "https://arxiv.org/html/2607.06564v1",
+          "figures": [
+            "https://arxiv.org/html/2607.06564v1/x1.png",
+            "https://arxiv.org/html/2607.06564v1/x2.png",
+            "https://arxiv.org/html/2607.06564v1/x3.png",
+            "https://arxiv.org/html/2607.06564v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": "https://lift3dvla.github.io/",
+          "code_links": [],
+          "project_links": [
+            "https://lift3dvla.github.io/"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": null,
+          "comments": "14 pages, 7 figures. Project website: https://lift3dvla.github.io/",
+          "submitted": "2026-07-07T17:59:47Z",
+          "updated": "2026-07-07T17:59:47Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV",
+            "cs.RO"
+          ],
+          "title_zh": "Lift3D-VLA：将 VLA 模型提升为 3D 几何和动力学感知操作",
+          "abstract_zh": "最近，视觉-语言-动作（VLA）模型在不同的任务中表现出了很强的泛化能力。然而，在物理环境中有效的机器人操作从根本上需要几何理解和空间推理。虽然一些 VLA 方法尝试合并 3D 信息，但它们受到当前 3D 编码管道中有限的数据可用性和几何信息丢失的限制，并且无法在动态环境中联合捕获 3D 几何和时间结构化动作。为了解决这些限制，我们引入了 Lift3D-VLA，这是一个统一的 VLA 框架，为模型配备显式 3D 点云推理，并支持时间连贯的动作生成。首先，在我们之前的工作 Lift3D 的基础上，提出了一种增强的 2D 模型提升策略，用于将 3D 点与预训练的 2D 位置嵌入进行几何对齐。该设计可在 VLA 视觉编码器内进行直接点云编码，同时最大限度地减少空间信息损失。基于显式 3D 输入，我们提出了以几何为中心的掩模自动编码（GC-MAE），这是一种双目标自监督框架，可以重建当前点云，同时预测其未来的几何演化。该公式允许 2D 视觉编码器内化 3D 结构和物理动力学。为了充分利用 3D 表示，我们进一步设计了分层时间动作建模，它利用 LLM 的多个层来协作预测动作块，从而实现时间一致的预测。在 22 个模拟任务和 8 个现实世界操作任务中，Lift3D-VLA 在 MetaWorld 和 RLBench 上的平均成功率比之前表现最好的 VLA 方法高出 10.8% 和 11.1%，并且比最强的现实世界基线高 4 个百分点，同时对分布外扰动表现出更强的泛化能力。"
+        },
+        {
+          "id": "2607.06403",
+          "rank": 2,
+          "score": 86,
+          "reason_zh": "VLA 2.0：60k小时预训练+全身自由度+预测动力学，跨具身移动操控",
+          "tags": [
+            "VLA",
+            "具身智能",
+            "操控",
+            "开源"
+          ],
+          "title": "From Foundation to Application: Improving VLA Models in Practice",
+          "authors": [
+            "Wei Wu",
+            "Fangjing Wang",
+            "Fan Lu",
+            "He Sun",
+            "Shi Liu"
+          ],
+          "abstract": "Despite recent progress of VLA foundation models, the disparity between laboratory conditions and real-world applications continues to impede their practical implementation. To bridge this gap, we present LingBot-VLA 2.0, which advances LingBot-VLA through improvements in three functional domains. (1) Generalization across tasks and embodiments. Compared to the previous version, we revamp the data processing pipeline and curate around 60,000 hours of data for pretraining, including 50,000 hours of robot trajectories spanning 20 robot configurations and 10,000 hours of egocentric human videos. (2) Expanded action space in addition to dual-arm hardware platforms. In particular, our system accommodates degrees of freedom for the heads, waists, mobile bases, and dexterous hands, thereby empowering the robots to tackle more complex tasks in practical scenarios. (3) Predictive dynamics modeling for improved temporal reasoning. Specifically, we formulate future prediction as a proxy task, facilitated by a video representation model for semantic priors and a depth estimation model for geometric cues. Evaluations on the GM-100 benchmark, conducted in a generalist setting, validate the beneficial impact of these proposed modifications. Furthermore, benefiting from the expanded pretraining data that covers whole-body degrees of freedom, LingBot-VLA-2.0 demonstrates strong cross-embodiment long-horizon mobile manipulation capability across the two robotic platforms.",
+          "abs_url": "https://arxiv.org/abs/2607.06403",
+          "pdf_url": "https://arxiv.org/pdf/2607.06403v1",
+          "html_url": "https://arxiv.org/html/2607.06403v1",
+          "figures": [
+            "https://arxiv.org/html/2607.06403v1/x1.png",
+            "https://arxiv.org/html/2607.06403v1/x2.png",
+            "https://arxiv.org/html/2607.06403v1/x3.png",
+            "https://arxiv.org/html/2607.06403v1/x4.png"
+          ],
+          "code_url": "https://github.com/robbyant/lingbot-vla-v2",
+          "project_url": "https://technology.robbyant.com/lingbot-vla-v2",
+          "code_links": [
+            "https://github.com/robbyant/lingbot-vla-v2"
+          ],
+          "project_links": [
+            "https://technology.robbyant.com/lingbot-vla-v2"
+          ],
+          "has_code": true,
+          "has_project": true,
+          "venue": null,
+          "comments": "Website: https://technology.robbyant.com/lingbot-vla-v2, Github: https://github.com/robbyant/lingbot-vla-v2, Checkpoints: https://huggingface.co/collections/robbyant/lingbot-vla-v2",
+          "submitted": "2026-07-07T15:33:12Z",
+          "updated": "2026-07-07T15:33:12Z",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.RO"
+          ],
+          "title_zh": "从基础到应用：在实践中改进VLA模型",
+          "abstract_zh": "尽管 VLA 基础模型最近取得了进展，但实验室条件和实际应用之间的差异仍然阻碍了其实际实施。为了弥补这一差距，我们推出了 LingBot-VLA 2.0，它通过三个功能领域的改进改进了 LingBot-VLA。 (1)跨任务和实施例的概括。与之前的版本相比，我们改进了数据处理流程，并整理了约 60,000 小时的数据用于预训练，其中包括 50,000 小时跨越 20 种机器人配置的机器人轨迹和 10,000 小时以自我为中心的人类视频。 （2）除了双臂硬件平台外，还拓展了动作空间。特别是，我们的系统提供了头部、腰部、移动底座和灵巧手的自由度，从而使机器人能够在实际场景中处理更复杂的任务。 (3) 用于改进时间推理的预测动力学建模。具体来说，我们将未来预测制定为代理任务，并通过用于语义先验的视频表示模型和用于几何线索的深度估计模型来促进。在通才环境中进行的 GM-100 基准评估验证了这些拟议修改的有益影响。此外，受益于覆盖全身自由度的扩展预训练数据，LingBot-VLA-2.0在两个机器人平台上展示了​​强大的跨体长视距移动操控能力。"
+        },
+        {
+          "id": "2607.06018",
+          "rank": 3,
+          "score": 84,
+          "reason_zh": "LLM分层规划+VLM评估引导视频生成，任务对齐的未来模拟训练机器人策略",
+          "tags": [
+            "VLA",
+            "生成模型",
+            "具身智能",
+            "开源",
+            "顶会"
+          ],
+          "title": "RoboTALES: Learning Reasoning-Guided Robot Policies via Task-Aligned Simulated Futures",
+          "authors": [
+            "Hanan Gani",
+            "Tejal Kulkarni",
+            "Madhoolika Chodavarapu",
+            "Nicklas Hansen",
+            "Manmohan Chandraker"
+          ],
+          "abstract": "Pretrained video generative models are promising backbones for visuomotor control, but their imagined futures often drift from task intent and are not reliably action-conditional. As a result, these models can be difficult to use for planning or policy extraction. To address these limitations, we propose RoboTALES, a single-stage framework that learns task-aligned simulated futures and uses them to train robot policies. Our approach introduces two key innovations: (1) a hierarchical LLM-based planner that breaks complex tasks into a sequence of subgoals to guide the model's imagination; and (2) a VLM-based critic that evaluates these ``imagined'' futures and uses reward-based feedback to keep the model's internal representations focused on the goal. By anchoring the video generator in abstract reasoning, we produce temporally consistent rollouts and more coherent actions. We evaluate RoboTALES on diverse manipulation tasks from RoboCasa and LIBERO10, and show that our method consistently outperforms existing methods, especially in long-horizon tasks. Our code and models are publicly available at https://github.com/hananshafi/RoboTALES.",
+          "abs_url": "https://arxiv.org/abs/2607.06018",
+          "pdf_url": "https://arxiv.org/pdf/2607.06018v1",
+          "html_url": "https://arxiv.org/html/2607.06018v1",
+          "figures": [
+            "https://arxiv.org/html/2607.06018v1/x1.png",
+            "https://arxiv.org/html/2607.06018v1/x2.png",
+            "https://arxiv.org/html/2607.06018v1/x3.png",
+            "https://arxiv.org/html/2607.06018v1/figs/planner_effect_selected_tasks.png"
+          ],
+          "code_url": "https://github.com/hananshafi/RoboTALES",
+          "project_url": null,
+          "code_links": [
+            "https://github.com/hananshafi/RoboTALES"
+          ],
+          "project_links": [],
+          "has_code": true,
+          "has_project": false,
+          "venue": "ECCV",
+          "comments": "Accepted at ECCV 2026",
+          "submitted": "2026-07-07T08:58:29Z",
+          "updated": "2026-07-07T08:58:29Z",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.RO"
+          ],
+          "title_zh": "RoboTALES：通过任务对齐的模拟未来学习推理引导的机器人策略",
+          "abstract_zh": "预训练的视频生成模型是视觉运动控制的有前途的支柱，但它们想象的未来往往偏离任务意图，并且不可靠地以动作为条件。因此，这些模型可能难以用于规划或政策提取。为了解决这些限制，我们提出了 RoboTALES，这是一个单阶段框架，可以学习与任务一致的模拟未来，并使用它们来训练机器人策略。我们的方法引入了两个关键创新：（1）基于 LLM 的分层规划器，将复杂的任务分解为一系列子目标，以指导模型的想象力； (2) 基于 VLM 的批评家，评估这些“想象的”未来，并使用基于奖励的反馈来保持模型的内部表征专注于目标。通过将视频生成器锚定在抽象推理中，我们可以产生时间一致的滚动和更连贯的动作。我们在 RoboCasa 和 LIBERO10 的各种操作任务上评估了 RoboTALES，并表明我们的方法始终优于现有方法，尤其是在长期任务中。我们的代码和模型可在 https://github.com/hananshafi/RoboTALES 上公开获取。"
+        }
+      ]
+    },
+    {
+      "id": "vlm",
+      "name": "VLM / LLM",
+      "papers": [
+        {
+          "id": "2607.05716",
+          "rank": 1,
+          "score": 80,
+          "reason_zh": "场景图思维范式：图对齐两阶段后训练，强化MLLM结构化视觉推理",
+          "tags": [
+            "VLM",
+            "开源",
+            "顶会"
+          ],
+          "title": "Scene Graph Thinking: Reinforcing Structured Visual Reasoning for Multimodal Large Language Models",
+          "authors": [
+            "Zhiwei Yang",
+            "Yuanchen Wu",
+            "Nan Zhang",
+            "Yucong Meng",
+            "Ke Yan"
+          ],
+          "abstract": "Multimodal Large Language Models (MLLMs) have demonstrated strong perception and reasoning capabilities. However, most existing models focus on isolated objects and neglect structured relationships for efficient target navigation, limiting their performance on visually intensive tasks. To address this challenge, we introduce Scene Graph Thinking (SaGe), a novel paradigm that enables fine-grained and structured visual reasoning through explicit scene-graph representations. Specifically, we first introduce an automated data engine that converts flat image-text corpora into structured scene graphs, where hierarchical entities constitute the nodes and diverse visual relations define the edges. Building upon this, we construct 120K high-quality training data by sampling reasoning traces from scene graphs. Then, two-stage graph-aligned post-training paradigms are introduced, where supervised fine-tuning internalizes MLLMs with structured reasoning, and subsequent reinforcement fine-tuning proposes node-as-proxy graph rewards to consolidate efficient graph exploration. With curated data and graph-aligned training, our approach achieves significant improvements across eight multimodal benchmarks, demonstrating strong effectiveness on fine-grained perception and reasoning tasks. Code is available at https://github.com/zwyang6/SaGe.",
+          "abs_url": "https://arxiv.org/abs/2607.05716",
+          "pdf_url": "https://arxiv.org/pdf/2607.05716v1",
+          "html_url": "https://arxiv.org/html/2607.05716v1",
+          "figures": [
+            "https://arxiv.org/html/2607.05716v1/x1.png",
+            "https://arxiv.org/html/2607.05716v1/x2.png",
+            "https://arxiv.org/html/2607.05716v1/x3.png",
+            "https://arxiv.org/html/2607.05716v1/x4.png"
+          ],
+          "code_url": "https://github.com/zwyang6/SaGe",
+          "project_url": null,
+          "code_links": [
+            "https://github.com/zwyang6/SaGe"
+          ],
+          "project_links": [],
+          "has_code": true,
+          "has_project": false,
+          "venue": "ICML",
+          "comments": "ICML 2026",
+          "submitted": "2026-07-07T01:00:51Z",
+          "updated": "2026-07-07T01:00:51Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "场景图思维：强化多模态大语言模型的结构化视觉推理",
+          "abstract_zh": "多模态大语言模型（MLLM）表现出强大的感知和推理能力。然而，大多数现有模型都专注于孤立的对象，而忽略了有效目标导航的结构化关系，限制了它们在视觉密集型任务上的性能。为了应对这一挑战，我们引入了场景图思维（SaGe），这是一种新颖的范例，可以通过显式的场景图表示实现细粒度和结构化的视觉推理。具体来说，我们首先引入一个自动化数据引擎，它将平面图像文本语料库转换为结构化场景图，其中分层实体构成节点，不同的视觉关系定义边缘。在此基础上，我们通过从场景图中采样推理轨迹来构建 120K 高质量训练数据。然后，引入了两阶段图对齐的后训练范例，其中监督微调通过结构化推理将 MLLM 内部化，随后的强化微调提出了节点作为代理图奖励，以巩固高效的图探索。通过精心策划的数据和图形对齐的训练，我们的方法在八个多模式基准上取得了显着的改进，在细粒度感知和推理任务上展示了强大的有效性。代码可在 https://github.com/zwyang6/SaGe 获取。"
+        }
+      ]
+    }
+  ]
+}
