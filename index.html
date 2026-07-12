@@ -38,7 +38,7 @@
         AI<span class="tab-code">cs.AI</span>
       </button>
     
-    <button class="tab tab-selected" data-cat="__selected__">
+    <button class="tab tab-selected has-selected" data-cat="__selected__">
       Selected<span class="tab-code">精选</span>
     </button>
   </div>
@@ -11731,7 +11731,332 @@
 
 <div id="selected-panel" class="hidden">
   
-  <p class="sel-empty">今日暂无精选内容。</p>
+  
+  
+  <p class="sel-meta">从 83 篇中精选 7 篇</p>
+  
+  <div class="sel-category">
+    <h3 class="sel-cat-name">世界模型&amp;视频/场景生成模型<span class="sel-cat-count">（1）</span></h3>
+    <ul class="sel-paper-list">
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">1/1</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2607.08766" target="_blank" rel="noopener">OPSD-V: On-Policy Self-Distillation for Post-Training Few-Step Autoregressive Video Generators</a></h2>
+            <p class="paper-title-zh">OPSD-V：用于训练后少步自回归视频生成器的策略自蒸馏</p>
+          </div>
+        </div>
+        <p class="sel-reason">提出On-Policy自蒸馏范式，用真实长视频做轨迹级监督，缓解自回归视频生成的长程退化</p>
+        <div class="sel-tags"><span class="sel-tag">生成模型</span><span class="sel-tag">世界模型</span></div>
+        <div class="paper-meta">
+          <span class="authors">Hongyu Liu, Chun Wang, Feng Gao, Xuanhua He, Yue Ma, Ziyu Wan, Yong Zhang, Xiaoming Wei, Qifeng Chen</span>
+        </div>
+        <p class="paper-abstract">我们提出了 OPSD-V，一种用于训练后少步自回归（AR）视频扩散模型的策略自蒸馏范例。现有的几步 AR 视频生成器可以生成低延迟的长视频，但在长时间自回归部署过程中仍然会遇到错误积累和运动动态减弱的问题。 OPSD-V 减少了长期退化，同时保留了原始的几步推理路径。关键思想是在训练期间引入真实的长视频数据作为时间上下文，并用它来提供密集的轨迹级监督。具体来说，学生遵循精确的推理时间推出，根据其自己之前生成的 KV 缓存生成每个块。同时，教师在与学生访问的相同去噪状态下进行评估，但使用更干净的 AR 一致时间缓存，其中较旧的历史可以被真实视频上下文替换。这在策略 AR 缓存动态下提供了密集的去噪级别校正目标，而无需更改采样器、去噪步骤数或推理时间缓存机制。我们将 OPSD-V 应用于代表性的几步 AR 视频模型，包括 Self-Forcing 和 LongLive。实验表明视觉质量、运动动力学和 VBenchLong 分数得到持续改善。一项由 10 名参与者参与比较 20 个视频对的用户研究表明，在 66.0% 的总体偏好判断中，OPSD-V 优于基本模型（82.5% 不包括平局）。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>We propose OPSD-V, an on-policy self-distillation paradigm for post-training few-step autoregressive (AR) video diffusion models. Existing few-step AR video generators can produce long videos with low latency, but still suffer from error accumulation and weakened motion dynamics during long autoregressive rollout. OPSD-V reduces long-horizon degradation while preserving the original few-step inference path. The key idea is to introduce real long-video data as temporal context during training and use it to provide dense trajectory-level supervision. Specifically, the student follows the exact inference-time rollout, generating each chunk conditioned on its own previously generated KV cache. In parallel, the teacher is evaluated at the same student-visited denoising states, but uses a cleaner AR-consistent temporal cache in which older history can be replaced by real-video context. This provides dense denoising-level corrective targets under on-policy AR cache dynamics, without changing the sampler, number of denoising steps, or inference-time cache mechanism. We apply OPSD-V to representative few-step AR video models, including Self-Forcing and LongLive. Experiments show consistent improvements in visual quality, motion dynamics, and VBenchLong scores. A user study with 10 participants comparing 20 video pairs shows that OPSD-V is preferred over the base models in 66.0% of overall-preference judgments (82.5% excluding ties).</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2607.08766v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2607.08766" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2607.08766v1" target="_blank" rel="noopener">HTML</a>
+          <a class="code" href="https://github.com/MeiGen-AI/OPSD-V" target="_blank" rel="noopener">Code</a>
+          <a class="project" href="https://meigen-ai.github.io/OPSD-V" target="_blank" rel="noopener">Project</a>
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2607.08766v1/fig/teaser.jpg" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.08766v1/fig/teaser.jpg" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2607.08766v1/fig/intro.jpg" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.08766v1/fig/intro.jpg" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2607.08766v1/fig/pipeline.jpg" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.08766v1/fig/pipeline.jpg" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2607.08766v1/fig/results_all.jpg" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.08766v1/fig/results_all.jpg" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+    </ul>
+  </div>
+  
+  <div class="sel-category">
+    <h3 class="sel-cat-name">3D/4D 重建与生成<span class="sel-cat-count">（3）</span></h3>
+    <ul class="sel-paper-list">
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">1/3</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2607.08771" target="_blank" rel="noopener">ZipDepth: Bringing Lightweight Zero-Shot Monocular Depth Anywhere, on Any Device</a></h2>
+            <p class="paper-title-zh">ZipDepth：在任何设备上随时随地带来轻量级零镜头单目深度</p>
+          </div>
+        </div>
+        <p class="sel-reason">6.1M参数的轻量单目深度估计网络，通过知识蒸馏逼近基础模型精度，ECCV 2026</p>
+        <div class="sel-tags"><span class="sel-tag">深度估计</span><span class="sel-tag">顶会</span></div>
+        <div class="paper-meta">
+          <span class="authors">Fabio Tosi, Luca Bartolomei, Matteo Poggi, Stefano Mattoccia</span>
+        </div>
+        <p class="paper-abstract">通过基础模型实现强大的零样本泛化，单目深度估计取得了显着进展，但它们的计算需求使它们远远超出了嵌入式和移动平台的能力范围。轻量级的替代方案是存在的，但几乎完全是在单域、自我监督的范式中开发的，在域转移的情况下悄然失败。我们提出了 ZipDepth，这是一种紧凑的单目深度网络，它通过将高效的可重参数化编码器-解码器与从大型多域训练集的基础模型中提取的大规模知识相结合来弥补这一差距。 ZipDepth 仅包含 610 万个参数，从服务器 GPU 到功率受限设备均以实时速率运行，在五个基准测试中的轻量级模型中实现了零样本精度和部署效率之间的最佳权衡，向具有 50 倍以上参数的基础模型的精度迈出了重要一步。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Monocular depth estimation has seen remarkable progress through foundation models achieving robust zero-shot generalization, yet their computational demands place them far beyond the reach of embedded and mobile platforms. Lightweight alternatives exist, but have been developed almost exclusively within single-domain, self-supervised paradigms, failing silently under domain shift. We present ZipDepth, a compact monocular depth network that bridges this gap by combining an efficient reparameterizable encoder-decoder with large-scale knowledge distillation from a foundation model over a large multi-domain training set. Comprising just 6.1M parameters, ZipDepth runs at real-time rates from server GPUs to power-constrained devices, achieving the best trade-off between zero-shot accuracy and deployment efficiency among lightweight models across five benchmarks, taking a significant step towards the accuracy of foundation models with 50x more parameters.</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2607.08771v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2607.08771" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2607.08771v1" target="_blank" rel="noopener">HTML</a>
+          <a class="code" href="https://github.com/fabiotosi92/ZipDepth" target="_blank" rel="noopener">Code</a>
+          <a class="project" href="https://zipdepth.github.io/" target="_blank" rel="noopener">Project</a>
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2607.08771v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.08771v1/x1.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2607.08771v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.08771v1/x2.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2607.08771v1/images/benchmarks/nyuv2/rgb/rgb_0689.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.08771v1/images/benchmarks/nyuv2/rgb/rgb_0689.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2607.08771v1/images/benchmarks/nyuv2/DA-V2-Large/024_bathroom_0026_0689.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.08771v1/images/benchmarks/nyuv2/DA-V2-Large/024_bathroom_0026_0689.png" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">2/3</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2607.08398" target="_blank" rel="noopener">HoloTetSphere: Unified TetSphere Mesh Reconstruction for Physical Simulations</a></h2>
+            <p class="paper-title-zh">HoloTetSphere：用于物理模拟的统一 TetSphere 网格重建</p>
+          </div>
+        </div>
+        <p class="sel-reason">端到端拓扑自适应四面体网格重建，绕过传统四面体化步骤直通物理仿真，ECCV 2026</p>
+        <div class="sel-tags"><span class="sel-tag">3D重建</span><span class="sel-tag">顶会</span></div>
+        <div class="paper-meta">
+          <span class="authors">YaQiao Dai, Renjiao Yi, Zhirui Gao, Wei Chen, Kai Xu, Chenyang Zhu</span>
+        </div>
+        <p class="paper-abstract">用于物理就绪 3D 重建的标准管道依赖于解耦的两阶段范例：提取表面几何形状，然后进行容易出错的四面体化过程。虽然最近的拉格朗日方法（例如 TetSphere Splatting）试图通过直接优化体积基元来绕过这个问题，但它们的同胚约束阻止了拓扑自适应优化。因此，它们产生不相交的四面体而不是单个连接的网格，从而使结构不适合进一步的物理模拟。为了解决这个问题，我们提出了一种拓扑自适应框架，通过端到端拓扑和几何优化来重建整体四面体网格。首先，通过将高斯球与四面体元素耦合并利用边缘连接，我们估计可微元素修剪的连续不透明场。接下来，联合最小化网格平滑能量和多视图高斯渲染误差驱动交替几何细化，同时保持拓扑自适应性。因此，我们的方法有效地构建了一个统一且拓扑连贯的四面体网格。大量的实验表明，我们的方法通过实现卓越的几何精度并生成连贯的单连接四面体网格，从而有效地绕过容易出错的传统四面体化步骤来重建表面网格，并简化下游物理模拟，从而优于最先进的技术。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Standard pipelines for physics-ready 3D reconstruction rely on a decoupled two-stage paradigm: extracting surface geometry followed by an error-prone tetrahedralization process. While recent Lagrangian methods like TetSphere Splatting attempt to bypass this by directly optimizing volumetric primitives, their homeomorphic constraints prevent topology-adaptive optimization. Consequently, they produce disjoint tetrahedra rather than a single connected mesh, rendering the structures unsuitable for further physical simulations. To address this, we propose a topology-adaptive framework for holistic tetrahedral mesh reconstruction through end-to-end topological and geometric optimization. First, by coupling Gaussian spheres to tetrahedral elements and leveraging edge connections, we estimate a continuous opacity field for differentiable element pruning. Next, jointly minimizing mesh smoothing energy and multi-view Gaussian rendering error drives alternating geometric refinement while preserving topological adaptivity. Consequently, our approach effectively constructs a unified and topologically coherent tetrahedral mesh. Extensive experiments demonstrate that our method outperforms state-of-the-art techniques by achieving superior geometric accuracy and producing coherent, single-connected tetrahedral meshes, thereby effectively bypassing the error-prone conventional tetrahedralization step for reconstructed surface meshes and streamlining downstream physical simulation.</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2607.08398v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2607.08398" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2607.08398v1" target="_blank" rel="noopener">HTML</a>
+          
+          
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2607.08398v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.08398v1/x2.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2607.08398v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.08398v1/x3.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2607.08398v1/x4.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.08398v1/x4.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2607.08398v1/figs/vis-deformation.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.08398v1/figs/vis-deformation.png" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">3/3</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2607.08769" target="_blank" rel="noopener">Geometry and Gradient-based Partitioning for Panoramic Outdoor Reconstruction</a></h2>
+            <p class="paper-title-zh">用于室外全景重建的几何和梯度分区</p>
+          </div>
+        </div>
+        <p class="sel-reason">提出几何-梯度分区策略，实现大规模全景3DGS的高效块并行重建与渲染</p>
+        <div class="sel-tags"><span class="sel-tag">3DGS</span><span class="sel-tag">3D重建</span></div>
+        <div class="paper-meta">
+          <span class="authors">Weijian Chen, Weibo Yao, Yuhang Zhang, Xiaolin Tang, Guo Wang, Weijun Zhang, Xitong Gao, Yihao Chen, Hongde Qin, Lu Qi</span>
+        </div>
+        <p class="paper-abstract">将 3D 高斯溅射 (3DGS) 扩展到大型户外场景的数据采集和计算成本都很高。采用等距柱状投影 (ERP) 的全景图像可以通过其完整的 360^{\circ}$ 视野减少捕获工作，但由此产生的无所不在的可见性使依赖于本地相机平截头体的现有分区策略失效，导致逐块优化退化为全局训练。因此，我们提出了 PanoLOG，这是一个两阶段从粗到细的框架，配备了专为大规模全景 3DGS 重建而定制的基于几何和梯度的分区策略。在全局粗略阶段，PanoLOG 利用天空球建模和全景单目深度监督来实现可靠的几何形状，而在细化阶段，G$^2$PS 通过视差驱动的不确定性构建自适应包围体，并通过基于梯度的重要性评分分配摄像机。此外，我们构建了 Pano360，这是用于室外场景重建的大规模全景数据集的第一个基准。大量实验表明，G$^2$PS 实现了最先进的渲染质量，同时保持可扩展、块并行训练。我们的模型、训练代码和数据集是公开的。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Scaling 3D Gaussian Splatting (3DGS) to large outdoor scenes is costly in both data acquisition and computation. Adopting panoramic images with equirectangular projection (ERP) can reduce capture effort via their full $360^{\circ}$ field of view, yet the resulting omnipresent visibility invalidates existing partitioning strategies that rely on local camera frustums, causing block-wise optimization to degenerate into global training. Thus, we propose PanoLOG, a two-stage coarse-to-fine framework equipped with a Geometry and Gradient-based Partitioning Strategy tailored for large-scale panoramic 3DGS reconstruction. In the global coarse stage, PanoLOG leverages sky-sphere modeling and panoramic monocular depth supervision for reliable geometry, while in the refinement stage, G$^2$PS builds adaptive bounding volumes via parallax-driven uncertainty and assigns cameras via gradient-based importance scoring. Furthermore, we construct Pano360, the first benchmark on large-scale panoramic dataset for outdoor scene reconstruction. Extensive experiments demonstrate that G$^2$PS achieves state-of-the-art rendering quality while maintaining scalable, block-parallel training. Our models, training code, and dataset are publicly available.</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2607.08769v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2607.08769" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2607.08769v1" target="_blank" rel="noopener">HTML</a>
+          
+          <a class="project" href="https://insta360-research-team.github.io/GGPS-Website" target="_blank" rel="noopener">Project</a>
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2607.08769v1/figures/PanoLOG_our_img/teaser_01.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.08769v1/figures/PanoLOG_our_img/teaser_01.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2607.08769v1/figures/PanoLOG_our_img/pipeline_v3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.08769v1/figures/PanoLOG_our_img/pipeline_v3.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2607.08769v1/figures/PanoLOG_our_img/fig3_507.jpeg" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.08769v1/figures/PanoLOG_our_img/fig3_507.jpeg" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2607.08769v1/figures/PanoLOG_our_img/abl_v3.jpeg" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.08769v1/figures/PanoLOG_our_img/abl_v3.jpeg" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+    </ul>
+  </div>
+  
+  <div class="sel-category">
+    <h3 class="sel-cat-name">自动驾驶与机器人<span class="sel-cat-count">（2）</span></h3>
+    <ul class="sel-paper-list">
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">1/2</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2607.08639" target="_blank" rel="noopener">Native Video-Action Pretraining for Generalizable Robot Control</a></h2>
+            <p class="paper-title-zh">用于通用机器人控制的本机视频动作预训练</p>
+          </div>
+        </div>
+        <p class="sel-reason">从零为具身设计的视频-动作基础模型，语义视觉动作分词器+因果预训练+稀疏MoE实现闭环控制</p>
+        <div class="sel-tags"><span class="sel-tag">VLA</span><span class="sel-tag">具身智能</span><span class="sel-tag">机器人</span></div>
+        <div class="paper-meta">
+          <span class="authors">Qihang Zhang, Lin Li, Luyao Zhang, Shuai Yang, Yiming Luo, Shuaiting Li, Ruilin Wang, Junke Wang, Jiahao Shao, Gangwei Xu, Jiaming Zhou, Yishu Shen, Yudong Jin, Fangyi Xu, Shuailei Ma, Jiaqi Liao, Guanxing Lu, Zifan Shi, Yongkun Wen, Yujie Zhao, Weixuan Tang, Xinyang Wang, Chaojian Li, Jiapeng Zhu, Ka Leong Cheng, Nan Xue, Xing Zhu, Yujun Shen, Yinghao Xu</span>
+        </div>
+        <p class="paper-abstract">视频动作模型的出现为机器人控制提供了一条有前途的道路。尽管如此，我们认为重新利用为数字内容创建而设计的视频生成模型本质上不足以适应物理环境。为了弥补这一差距，我们提出了 LingBot-VA 2.0，这是一个从头开始构建的视频动作基础模型，用于实施。四个核心设计原则展示了其从 LingBot-VA 的演变。 (1) 与传统的以重建为重点的 VAE 不同，我们引入了语义视觉动作标记器，它将视觉表示与语义和动作结合起来，提高后续策略学习中的指令遵循和动作精度。 (2)考虑到时间动态的严格因果性质，我们采用因果预训练范式，从头开始训练，以避免在适应双向架构时经常发生的灾难性遗忘。 (3) 为了满足高频推理的需求，我们的模型采用稀疏 MoE 主干，在不影响效率的情况下扩展模型容量。 (4) 通过增强的异步推理方案实现实时闭环控制，该方案与动作执行并行地预测未来的潜在因素，同时通过学习的前向动力学将每次推出重新基于最新的观察。现实世界的部署验证了 LingBot-VA 2.0 作为一个强大的基础模型，其跨复杂操作任务的几次泛化就证明了这一点。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>The advent of video-action models offers a promising path for robot control. Nevertheless, we argue that repurposing video generative models designed for digital content creation is inherently inadequate for physical environments. To bridge this gap, we present LingBot-VA 2.0, a video-action foundation model built from the ground up for embodiment. Four core design principles showcase its evolution from LingBot-VA. (1) Departing from traditional reconstruction-focused VAEs, we introduce a semantic visual-action tokenizer, which aligns visual representations with both semantics and actions, improving instruction following and action precision in subsequent policy learning. (2) Given the strictly causal nature of temporal dynamics, we adopt a causal pretraining paradigm, training from scratch to circumvent the catastrophic forgetting that frequently occurs when adapting bidirectional architectures. (3) To meet the demands of high-frequency inference, our model employs a sparse MoE backbone, expanding model capacity without compromising efficiency. (4) Real-time closed-loop control is realized through an enhanced asynchronous inference scheme, which predicts future latents in parallel with action execution while re-grounding each rollout on the latest observation via learned forward dynamics. Real-world deployment validates LingBot-VA 2.0 as a robust foundation model, as evidenced by its few-shot generalization across complex manipulation tasks.</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2607.08639v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2607.08639" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2607.08639v1" target="_blank" rel="noopener">HTML</a>
+          
+          
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2607.08639v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.08639v1/x1.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2607.08639v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.08639v1/x2.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2607.08639v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.08639v1/x3.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2607.08639v1/x4.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.08639v1/x4.png" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">2/2</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2607.08575" target="_blank" rel="noopener">FabriVLA: A Lightweight Vision-Language-Action Model for Precise Multi-Task Manipulation</a></h2>
+            <p class="paper-title-zh">FabriVLA：用于精确多任务操作的轻量级视觉-语言-动作模型</p>
+          </div>
+        </div>
+        <p class="sel-reason">基于InternVL3.5的1B级轻量VLA，流匹配动作头在Meta-World MT50达到90%成功率</p>
+        <div class="sel-tags"><span class="sel-tag">VLA</span><span class="sel-tag">操控</span></div>
+        <div class="paper-meta">
+          <span class="authors">Shiyuan Yang, Borong Zhang, Jizheng Zhang, Zhijia Tao, Junfei Guo, Donglai Ran, Xu Bian, Qingbiao Li</span>
+        </div>
+        <p class="paper-abstract">我们推出了 FabriVLA，这是一种用于精确多任务操作的轻量级视觉-语言-动作模型。 FabriVLA 将 InternVL3.5 视觉语言主干与流匹配动作头相结合，具有跨动作令牌的门控自注意力和浅 VLM 层融合，以丰富空间上下文。该模型通过预训练 VLM 和随机初始化动作头的单阶段联合优化进行训练。在涵盖 50 个不同操作任务的 Meta-World MT50 基准上，FabriVLA 实现了 90.0% 的层平均成功率，这表明基于 1B 规模 VLM 构建的紧凑型 VLA 可以在不依赖数十亿参数 VLA 主干的情况下实现强大的性能。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>We present FabriVLA, a lightweight Vision-Language-Action model for Precise Multi-Task Manipulation. FabriVLA combines an InternVL3.5 vision-language backbone with a flow-matching action head featuring gated self-attention across action tokens and shallow VLM layer fusion for enriched spatial context. The model is trained via single stage joint optimization from a pretrained VLM and randomly initialized action head. On the Meta-World MT50 benchmark spanning 50 diverse manipulation tasks, FabriVLA achieves a tier-average success rate of 90.0%, demonstrating that a compact VLA built on a 1B scale VLM can achieve strong performance without relying on multi billion parameter VLA backbones.</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2607.08575v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2607.08575" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2607.08575v1" target="_blank" rel="noopener">HTML</a>
+          
+          
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2607.08575v1/Figures/metaworld_camera_corner2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.08575v1/Figures/metaworld_camera_corner2.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2607.08575v1/Figures/metaworld_camera_gripperPOV.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.08575v1/Figures/metaworld_camera_gripperPOV.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2607.08575v1/Figures/metaworld_camera_topview.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.08575v1/Figures/metaworld_camera_topview.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2607.08575v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.08575v1/x1.png" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+    </ul>
+  </div>
+  
+  <div class="sel-category">
+    <h3 class="sel-cat-name">VLM / LLM<span class="sel-cat-count">（1）</span></h3>
+    <ul class="sel-paper-list">
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">1/1</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2607.08434" target="_blank" rel="noopener">DeltaV: Thinking with Visual State Updates in Unified Large Multimodal Models</a></h2>
+            <p class="paper-title-zh">DeltaV：在统一大型多模态模型中考虑视觉状态更新</p>
+          </div>
+        </div>
+        <p class="sel-reason">提出增量视觉状态更新替代全图生成，Token节省55%且多模态推理提升3.3%</p>
+        <div class="sel-tags"><span class="sel-tag">VLM</span><span class="sel-tag">开源</span></div>
+        <div class="paper-meta">
+          <span class="authors">Pengjie Wang, Linger Deng, Zujia Zhang, Shaojie Zhang, Zhenbo Luo, Pei Fu, Jian Luan, Xiang Bai, Yuliang Liu</span>
+        </div>
+        <p class="paper-abstract">当前的统一大型多模态模型 (ULMM) 通过文本推理和中间视觉状态支持交错多模态推理，但通常将每个视觉状态生成为完整图像。这种全图像生成范式引入了大量的视觉标记冗余，并削弱了对稀疏但推理关键的状态转换的监督。我们提出了 DeltaV，一种用视觉更新代替全图像生成的 ULMM。以历史视觉状态为条件，DeltaV 增量预测紧凑的更新标记，捕获推理步骤中的视觉变化，避免对未更改的内容进行重复建模。为了使每次更新的令牌预算与视觉变化的幅度保持一致，DeltaV 引入了时间相似性 (TSIM) 路由器，一旦边际重建增益低于阈值，该路由器就会停止分配令牌。为了支持更加多样化和泛化的推理，我们进一步构建了 StructCoT，这是一个大规模交错多模态推理数据集，包含 105 万个样本，涵盖 44 个任务域。实验表明，视觉更新范式在不影响重建保真度的情况下平均减少了新生成的视觉标记 55.6%，并且与全图像生成相比，将多模态推理提高了 3.3%。使用 StructCoT 和大规模多模态数据进行训练后，DeltaV-2B 在域内多模态推理评估方面进一步优于更大的开源模型 8.4%，并在外部多模态推理和理解基准方面超出同等规模的 Qwen3-VL-2B 5.9%。代码、模型和StructCoT将在https://github.com/Pengjie-W/DeltaV发布。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Current Unified Large Multimodal Models (ULMMs) support interleaved multimodal reasoning through textual reasoning and intermediate visual states, but typically generate each visual state as a full image. This full-image generation paradigm introduces substantial visual-token redundancy and dilutes supervision on sparse yet reasoning-critical state transitions. We propose DeltaV, a ULMM that replaces full-image generation with visual updates. Conditioned on historical visual states, DeltaV incrementally predicts compact update tokens that capture the visual changes across reasoning steps, avoiding repeated modeling of unchanged content. To align the token budget of each update with the magnitude of visual change, DeltaV introduces a temporal similarity (TSIM) Router, which stops allocating tokens once the marginal reconstruction gain falls below a threshold. To support more diverse and generalizable reasoning, we further construct StructCoT, a large-scale interleaved multimodal reasoning dataset with 1.05M samples spanning 44 task domains. Experiments show that the visual-update paradigm reduces newly generated visual tokens by 55.6\% on average without compromising reconstruction fidelity, and improves multimodal reasoning by 3.3\% over full-image generation. Trained with StructCoT and large-scale multimodal data, DeltaV-2B further outperforms substantially larger open-source models by 8.4\% on in-domain multimodal reasoning evaluations and surpasses the comparable-scale Qwen3-VL-2B by 5.9\% on external multimodal reasoning and understanding benchmarks. Code, models, and StructCoT will be released at https://github.com/Pengjie-W/DeltaV.</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2607.08434v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2607.08434" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2607.08434v1" target="_blank" rel="noopener">HTML</a>
+          <a class="code" href="https://github.com/Pengjie-W/DeltaV" target="_blank" rel="noopener">Code</a>
+          
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2607.08434v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.08434v1/x1.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2607.08434v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.08434v1/x2.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2607.08434v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.08434v1/x3.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2607.08434v1/x4.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.08434v1/x4.png" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+    </ul>
+  </div>
+  
   
 </div>
 
@@ -11741,7 +12066,7 @@
     <div class="wrap">
       <span>Categories: cs.CV, cs.RO, cs.AI</span>
       <span class="sep">·</span>
-      <span>Generated 2026-07-12 07:36 UTC</span>
+      <span>Generated 2026-07-12 08:06 UTC</span>
     </div>
   </footer>
 
