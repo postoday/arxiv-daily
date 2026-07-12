@@ -38,7 +38,7 @@
         AI<span class="tab-code">cs.AI</span>
       </button>
     
-    <button class="tab tab-selected" data-cat="__selected__">
+    <button class="tab tab-selected has-selected" data-cat="__selected__">
       Selected<span class="tab-code">精选</span>
     </button>
   </div>
@@ -10989,7 +10989,402 @@
 
 <div id="selected-panel" class="hidden">
   
-  <p class="sel-empty">今日暂无精选内容。</p>
+  
+  
+  <p class="sel-meta">从 93 篇中精选 9 篇</p>
+  
+  <div class="sel-category">
+    <h3 class="sel-cat-name">世界模型&amp;视频/场景生成模型<span class="sel-cat-count">（4）</span></h3>
+    <ul class="sel-paper-list">
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">1/4</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2607.07534" target="_blank" rel="noopener">Infinite Worlds with Versatile Interactions</a></h2>
+            <p class="paper-title-zh">无限世界与多样化互动</p>
+          </div>
+        </div>
+        <p class="sel-reason">可交互世界模型升级，实现无限交互时长+60fps实时响应+agentic harness</p>
+        <div class="sel-tags"><span class="sel-tag">世界模型</span><span class="sel-tag">生成模型</span><span class="sel-tag">开源</span><span class="sel-tag">具身智能</span></div>
+        <div class="paper-meta">
+          <span class="authors">Zelin Gao, Qiuyu Wang, Jiapeng Zhu, Jingye Chen, Zichen Liu</span>
+        </div>
+        <p class="paper-abstract">我们推出 LingBot-World 2.0（也称为 LingBot-World-Infinity），这是 LingBot-World 的高级迭代，具有四个不同的升级。 (1) 我们的模型实现了无限的交互范围，同时保持一致的输出质量，受益于精心设计的因果预训练范例。 (2) 通过从基本模型中提取实时变体，我们的系统保证了快速响应时间，足以驱动 60 fps 的 720p 视频流。 (3) 与之前的版本相比，本次更新引入了高度多样化的交互元素，包括更广泛的动作（例如攻击、射箭、施法、射击）以及更丰富的文本驱动事件。 (4) 我们率先在世界建模领域集成代理控制，其中飞行员代理的任务是规划和执行角色行为，而导演代理则负责随着场景的进展合成新颖的环境元素。此外，为了促进共享体验，我们开发了一个界面，允许多个玩家同时沉浸在这个生动的世界模拟器中。我们将主要 14B 模型与轻量级 1.3B 模型配对，后者支持在单个 GPU 上轻松部署。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>We present LingBot-World 2.0 (also known as LingBot-World-Infinity), an advanced iteration of LingBot-World featuring four distinct upgrades. (1) Our model achieves an unbounded interaction horizon while maintaining consistent output quality, benefiting from a carefully crafted causal pretraining paradigm. (2) Through distilling a real-time variant from the base model, our system guarantees rapid response time, sufficient to drive 720p video streams at 60 fps. (3) Compared to the previous version, this update introduces highly diverse interactive elements, comprising a broader spectrum of actions (e.g., attacking, archery, spell-casting, and shooting) alongside a richer variety of text-driven events. (4) We pioneer the integration of an agentic harness within the domain of world modeling, wherein a pilot agent is tasked with planning and executing character behaviors, while a director agent is responsible for synthesizing novel environmental elements as the scene progresses. Additionally, to facilitate a shared experience, we develop an interface that permits multiple players to simultaneously immerse themselves in this vivid world simulator. We pair our primary 14B model with a lightweight 1.3B counterpart, which supports effortless deployment on a single GPU.</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2607.07534v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2607.07534" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2607.07534v1" target="_blank" rel="noopener">HTML</a>
+          <a class="code" href="https://github.com/robbyant/lingbot-world-v2" target="_blank" rel="noopener">Code</a>
+          <a class="project" href="https://technology.robbyant.com/lingbot-world-v2" target="_blank" rel="noopener">Project</a>
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2607.07534v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.07534v1/x1.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2607.07534v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.07534v1/x2.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2607.07534v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.07534v1/x3.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2607.07534v1/x4.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.07534v1/x4.png" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">2/4</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2607.07459" target="_blank" rel="noopener">EmbodiedGen V2: An Agentic, Simulation-Ready 3D World Engine for Embodied AI</a></h2>
+            <p class="paper-title-zh">EmbodiedGen V2：用于 Embodied AI 的代理、模拟就绪 3D 世界引擎</p>
+          </div>
+        </div>
+        <p class="sel-reason">统一sim-ready表示的3D世界引擎，打通资产生成到策略训练的闭环仿真管线</p>
+        <div class="sel-tags"><span class="sel-tag">世界模型</span><span class="sel-tag">闭环仿真</span><span class="sel-tag">具身智能</span></div>
+        <div class="paper-meta">
+          <span class="authors">Xinjie Wang, Liu Liu, Taojun Ding, Andrew Choi, Chaodong Huang</span>
+        </div>
+        <p class="paper-abstract">我们推出了 EmbodiedGen V2，这是一种生成式 3D 世界引擎，用于构建可执行的模拟就绪环境以实现具体智能。 Sim-ready 3D 资产生成发展迅速，但将此类资产组装到策略就绪任务环境中仍然主要是手动的，限制了可扩展的闭环学习。 EmbodiedGen V2 通过统一的模拟就绪表示解决了这一差距，该表示将跨模拟器资产、交互可供性、任务驱动的世界、大规模多房间场景和状态 Vibe 编码连接到生成、可编辑和可重用的模拟管道中。生成的环境支持操纵、导航、移动操纵、跨模拟器部署和具体策略训练。在评估中，资产管道实现了 96.5% 的人类接受度和 98.6% 的碰撞成功率，并且 83.3% 的任务驱动世界无需手动修改即可直接用于下游模拟。生成环境的在线强化学习进一步将模拟成功率从 9.7% 提高到 79.8%，并转移到真实机器人，任务成功率从 21.7% 提高到 75.0%。这些结果将 EmbodiedGen V2 确立为可扩展的模拟基础设施，用于培训、评估和部署具体政策。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>We present EmbodiedGen V2, a generative 3D world engine for building executable sim-ready environments for embodied intelligence. Sim-ready 3D asset generation has advanced rapidly, yet assembling such assets into policy-ready task environments remains largely manual, limiting scalable closed-loop learning. EmbodiedGen V2 addresses this gap through a unified sim-ready representation that connects cross-simulator assets, interaction affordances, task-driven worlds, large-scale multi-room scenes, and stateful Vibe Coding into a generative, editable, and reusable simulation pipeline. The generated environments support manipulation, navigation, mobile manipulation, cross-simulator deployment, and embodied policy training. In evaluation, the asset pipeline achieves 96.5% human acceptance and 98.6% collision success, and 83.3% of task-driven worlds are directly usable for downstream simulation without manual modification. Online reinforcement learning with generated environments further improves simulation success from 9.7% to 79.8%, and transfers to real robots with task success increasing from 21.7% to 75.0%. These results establish EmbodiedGen V2 as scalable simulation infrastructure for training, evaluating, and deploying embodied policies.</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2607.07459v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2607.07459" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2607.07459v1" target="_blank" rel="noopener">HTML</a>
+          
+          
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2607.07459v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.07459v1/x2.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2607.07459v1/figure/heatmap_grid_2x6.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.07459v1/figure/heatmap_grid_2x6.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2607.07459v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.07459v1/x3.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2607.07459v1/x4.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.07459v1/x4.png" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">3/4</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2607.07675" target="_blank" rel="noopener">Scaling Mixture-of-Experts Video Pretraining for Embodied Intelligence</a></h2>
+            <p class="paper-title-zh">扩展体现智能的专家混合视频预训练</p>
+          </div>
+        </div>
+        <p class="sel-reason">面向具身智能的MoE视频预训练范式，兼顾建模能力与推理效率</p>
+        <div class="sel-tags"><span class="sel-tag">世界模型</span><span class="sel-tag">生成模型</span><span class="sel-tag">具身智能</span></div>
+        <div class="paper-meta">
+          <span class="authors">Shuailei Ma, Jiaqi Liao, Xinyang Wang, Jingjing Wang, Chaoran Feng</span>
+        </div>
+        <p class="paper-abstract">尽管机器人控制最近前景广阔，但视频生成模型由于主要关注内容创建而遭受领域不匹配的困扰。例如，他们的设计本质上优先考虑视觉保真度和创造力，而不是计算效率和物理真实感。在这项工作中，我们提出了 LingBot-Video，这是一种专门为体现智能量身定制的基于 DiT 的视频预训练范例。从架构的角度来看，我们采用混合专家（MoE）而不是密集的框架来实现建模能力和推理效率之间的更好权衡，并设法从头开始扩展。从数据角度来看，我们构建了一个数据分析引擎，通过广泛的面向机器人的镜头增强标准互联网视频，包括操纵、导航和以自我为中心的视角，以使基本模型具备对行为和世界动态的内在理解。从训练的角度来看，我们开发了一个多维度的奖励系统，以强化身体理性和任务完成的一致性，超越美学、提示跟随和动作一致性等标准标准。综合评估验证了其作为视频基础模型的性能和效率。我们将 LingBot-Video 作为首个大型开源 MoE 视频基础模型贡献给社区，这是连接数字创造力和物理驱动的开创性努力。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Despite the recent promise in robot control, video generative models suffer from a domain mismatch due to their primary focus on content creation. For example, their design inherently prioritizes visual fidelity and creativity over computational efficiency and physical realism. In this work, we present LingBot-Video, a DiT-based video pretraining paradigm specifically tailored for embodied intelligence. From the architecture perspective, we adopt the Mixture-of-Experts (MoE), instead of dense, framework to achieve a better trade-off between modeling capacity and inference efficiency, and manage to scale it up from scratch. From the data perspective, we construct a data profiling engine that augments standard internet videos with extensive robot-oriented footage, encompassing manipulation, navigation, and egocentric perspectives, to equip the base model with an intrinsic understanding of actions and world dynamics. From the training perspective, we develop a multi-dimensional reward system to enforce the alignment regarding physical rationality and task completion, going beyond standard criteria such as aesthetics, prompt-following, and motion consistency. Comprehensive evaluations validate its performance and efficiency as a video foundation model. We contribute LingBot-Video as the inaugural large-scale, open-source MoE video foundation model to the community, in a pioneering effort to bridge digital creativity and physical actuation.</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2607.07675v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2607.07675" target="_blank" rel="noopener">Abs</a>
+          
+          
+          <a class="project" href="https://technology.robbyant.com/lingbot-video" target="_blank" rel="noopener">Project</a>
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">4/4</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2607.06838" target="_blank" rel="noopener">WildCity: A Real-World City-Scale Testbed for Rendering, Simulation, and Spatial Intelligence</a></h2>
+            <p class="paper-title-zh">WildCity：用于渲染、模拟和空间智能的真实城市规模测试平台</p>
+          </div>
+        </div>
+        <p class="sel-reason">自动驾驶采集的城市级多模态数据集，支撑城市场景重建与空间智能评测</p>
+        <div class="sel-tags"><span class="sel-tag">世界模型</span><span class="sel-tag">数据集</span><span class="sel-tag">自动驾驶</span><span class="sel-tag">顶会</span></div>
+        <div class="paper-meta">
+          <span class="authors">Xiangyu Han, Mengyu Yang, Jiaqi Li, Bowen Chang, Ziyu Chen</span>
+        </div>
+        <p class="paper-abstract">人类可以在一个陌生的城市中航行，并逐渐形成一个跨越数十平方公里的连贯的空间心理地图。人工智能能否构建同等规模的空间表征？尽管最近的基础模型具有先进的场景重建和体现智能，但扩展到整个城市仍然是一个开放的挑战，这主要是由于缺乏城市规模的数据。为了弥补这一差距，我们引入了 WildCity，这是一个由穿越复杂城市环境的自主车队收集的真实世界多模式数据集。我们的数据集包括 18 条轨迹，每条平均长度为 83.7 公里，并保留了野外感知的核心挑战，例如动态物体、光照变化和不完美的相机姿势。我们进一步建立了适合城市的重建基线，并将重建的环境转换为闭环模拟器。除了数据集和基线之外，我们还系统地分析了模拟就绪城市数字孪生之路上的关键挑战：可扩展性、外推法和不确定性。最终，WildCity 的目标不仅是促进城市规模渲染方面的进步，而且更广泛地追求能够以与人类认知相当的规模跨空间感知、记忆和推理的人工智能。项目页面：https://han-xiangyu.github.io/Wild-City/</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Humans can navigate an unfamiliar city and gradually form a coherent spatial mental map spanning tens of square kilometers. Can AI build spatial representations at a comparable scale? Although recent foundation models have advanced scene reconstruction and embodied intelligence, scaling to entire cities remains an open challenge, primarily due to the lack of city-scale data. To bridge the gap, we introduce WildCity, a real-world multimodal dataset collected by autonomous fleets traversing complex urban environments. Our dataset includes 18 trajectories, each averaging 83.7 kilometers in length, and preserves the core challenges of in-the-wild perception, e.g., dynamic objects, lighting variations, and imperfect camera poses. We further establish an urban-tailored reconstruction baseline and convert the reconstructed environments into a closed-loop simulator. Beyond the dataset and baseline, we systematically analyze the key challenges on the path to simulation-ready urban digital twins: scalability, extrapolation, and uncertainty. Ultimately, WildCity aims to catalyze progress not only in city-scale rendering, but more broadly in the pursuit of AI that can perceive, remember, and reason across space at a scale comparable to human cognition. Project page: https://han-xiangyu.github.io/Wild-City/</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2607.06838v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2607.06838" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2607.06838v1" target="_blank" rel="noopener">HTML</a>
+          
+          <a class="project" href="https://han-xiangyu.github.io/Wild-City/" target="_blank" rel="noopener">Project</a>
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2607.06838v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.06838v1/x2.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2607.06838v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.06838v1/x3.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2607.06838v1/x4.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.06838v1/x4.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2607.06838v1/x5.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.06838v1/x5.png" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+    </ul>
+  </div>
+  
+  <div class="sel-category">
+    <h3 class="sel-cat-name">3D/4D 重建与生成<span class="sel-cat-count">（2）</span></h3>
+    <ul class="sel-paper-list">
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">1/2</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2607.07168" target="_blank" rel="noopener">NoDrift3R: Raymap-Guided Coupling for Drift-Robust Unposed Feed-Forward 3D Reconstruction</a></h2>
+            <p class="paper-title-zh">NoDrift3R：用于漂移鲁棒的未设置前馈 3D 重建的光线图引导耦合</p>
+          </div>
+        </div>
+        <p class="sel-reason">Raymap引导的位姿-几何耦合优化，解决feed-forward 3DGS长序列漂移瓶颈</p>
+        <div class="sel-tags"><span class="sel-tag">3D重建</span><span class="sel-tag">3DGS</span><span class="sel-tag">feed-forward</span><span class="sel-tag">顶会</span></div>
+        <div class="paper-meta">
+          <span class="authors">Xiangyu Sun, Liu Liu, Seungkwon Yang, Jingbing Han, Seungtae Nam</span>
+        </div>
+        <p class="paper-abstract">无姿态前馈 3D 高斯泼溅 (3DGS) 最近已成为快速场景重建的强大范例。然而，由于累积的相机位姿估计漂移，其性能在长图像序列中显着下降，这会将误差传播到几何建模中并严重限制渲染保真度。在这项工作中，我们重新审视长序列瓶颈，并将位姿漂移确定为限制重建质量的主要因素。此外，虽然基于 SfM 的伪地面真值姿势会引入传感器噪声，但由于几何和姿势的纠缠优化，纯粹基于渲染的监督通常会导致优化不稳定和局部最小值。为了应对这些挑战，我们提出了一种协同无姿态框架，通过光线图引导耦合模块（RGC）显式耦合几何和外观。具体来说，我们将高斯中心锚定到光线贴图引发的几何体，并在统一的目标下联合优化 RGB 重建、光线贴图一致性和相机正则化，产生双向反馈循环：更强的几何体改善渲染，外观监督反过来细化几何体和姿势。为了进一步稳定宽时间范围内的学习，我们引入了双频视点调度策略，该策略将由易到难的区间扩展与短区间对的重放相结合。跨域内和跨域数据集的广泛实验表明，渲染和姿态估计都取得了一致的收益，并且长序列的鲁棒性显着提高。消融研究验证了我们的核心见解：明确设计的几何外观协同作用是可扩展且稳定的无漂移前馈 3D 重建的关键。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Pose-Free Feed-forward 3D Gaussian Splatting (3DGS) has recently emerged as a powerful paradigm for fast scene reconstruction. However, its performance degrades significantly in long image sequences due to cumulative camera pose estimation drift, which propagates errors into geometric modeling and severely limits rendering fidelity. In this work, we revisit the long-sequence bottleneck and identify pose drift as the primary factor restricting reconstruction quality. Furthermore, while SfM-based pseudo ground-truth poses introduce sensor noise, purely rendering-based supervision often leads to optimization instability and local minima due to the entangled optimization of geometry and pose. To address the challenges, we propose a synergistic pose-free framework that explicitly couples geometry and appearance via a Raymap-Guided Coupling Module (RGC). Concretely, we anchor Gaussian centers to raymap-induced geometry and jointly optimize RGB reconstruction, raymap consistency, and camera regularization under a unified objective, yielding a bidirectional feedback loop: stronger geometry improves rendering, and appearance supervision in turn refines geometry and pose. To further stabilize learning across wide temporal ranges, we introduce a Dual-Frequency Viewpoint Scheduling strategy that combines easy-to-hard interval expansion with replay of short-interval pairs. Extensive experiments across in-domain and cross-domain datasets show consistent gains in both rendering and pose estimation, with notably improved robustness on long sequences. Ablation studies validate our central insight: explicitly designed geometry-appearance synergy is the key to scalable and drift-robust pose-free feed-forward 3D reconstruction.</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2607.07168v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2607.07168" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2607.07168v1" target="_blank" rel="noopener">HTML</a>
+          
+          
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2607.07168v1/figures/problem.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.07168v1/figures/problem.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2607.07168v1/figures/problem_formulation_epark.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.07168v1/figures/problem_formulation_epark.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2607.07168v1/figures/pipeline.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.07168v1/figures/pipeline.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2607.07168v1/figures/dl3dv_pose_vis.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.07168v1/figures/dl3dv_pose_vis.png" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">2/2</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2607.07452" target="_blank" rel="noopener">GeoGS-SLAM: Geometry-Only Gaussian Splatting for Dense Monocular SLAM</a></h2>
+            <p class="paper-title-zh">GeoGS-SLAM：用于密集单目 SLAM 的仅几何高斯泼溅</p>
+          </div>
+        </div>
+        <p class="sel-reason">舍弃外观建模的纯几何3DGS-SLAM，更契合机器人导航对几何精度的高要求</p>
+        <div class="sel-tags"><span class="sel-tag">3D重建</span><span class="sel-tag">3DGS</span><span class="sel-tag">SLAM</span></div>
+        <div class="paper-meta">
+          <span class="authors">Lipu Zhou, Yaoyun Kang, Junxiang Pang, Shengkai Sun, Tingting Bao</span>
+        </div>
+        <p class="paper-abstract">密集视觉 SLAM 是机器人技术中的一个基本问题。 3DGS 的最新进展证明了其在密集 SLAM 方面的潜力。现有的 3DGS 框架侧重于外观和几何建模。然而，场景几何对于 SLAM 来说通常比​​新颖的视图合成更重要，因为下游机器人任务（例如导航和避障）主要依赖于精确的空间几何而不是真实感渲染。这一观察提出了一个自然的问题：3DGS 在没有场景外观建模的情况下执行 3D 重建是否可行？受此启发，我们提出了仅几何高斯分布（GeoGS），它直接重建场景几何形状，并进一步提出了 GeoGS-SLAM，这是一种基于这种表示的密集视觉 SLAM 系统。具体来说，GeoGS 仅保留空间参数，将每个基元参数的数量减少 80% 以上。与现有的 3DGS 方法相比，GeoGS 仅专注于几何重建，这显着减少了高斯基元的数量，加速了几何收敛，并增强了对光照变化的鲁棒性。此外，我们提出了一个有效的训练框架，通过单视图和多视图几何和光度监督来优化高斯基元，并通过局部平面驱动的初始化加速几何收敛，从而更好地将基元与局部结构对齐。此外，我们引入了一种用于闭环的地图更新策略，该策略全局变换高斯地图以将其与校正后的姿态估计对齐，从而防止现有方法中因每视点姿态校正不一致而导致的地图撕裂。对合成和现实世界基准的大量实验表明，我们的方法在在线映射效率和几何重建质量方面优于 SOTA 方法。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Dense visual SLAM is a fundamental problem in robotics. Recent advances in 3DGS have demonstrated its potential for dense SLAM. Existing 3DGS frameworks focus on both appearance and geometry modeling. However, scene geometry is typically more critical for SLAM than novel view synthesis because downstream robotic tasks, such as navigation and obstacle avoidance, rely primarily on accurate spatial geometry rather than photorealistic rendering. This observation raises a natural question: Is it feasible for 3DGS to perform 3D reconstruction without scene appearance modeling? Motivated by this, we propose Geometry-only Gaussian Splatting (GeoGS), which directly reconstructs scene geometry, and further present GeoGS-SLAM, a dense visual SLAM system built upon this representation. Specifically, GeoGS retains only spatial parameters to reduce the number of per-primitive parameters by over 80%. In contrast to existing 3DGS methods, GeoGS focuses solely on geometric reconstruction, which significantly reduces the number of Gaussian primitives, accelerates geometric convergence, and enhances robustness to illumination variations. In addition, we present an effective training framework that optimizes the Gaussian primitives via single-view and multi-view geometric and photometric supervision, and speeds up geometry convergence with a local-plane driven initialization that better aligns primitives with local structures. Furthermore, we introduce a map update strategy for loop closure that globally transforms the Gaussian map to align it with the corrected pose estimates, thereby preventing map tearing caused by inconsistent per-viewpoint pose corrections in existing methods. Extensive experiments on synthetic and real-world benchmarks demonstrate that our method outperforms SOTA methods in terms of online mapping efficiency and geometric reconstruction quality.</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2607.07452v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2607.07452" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2607.07452v1" target="_blank" rel="noopener">HTML</a>
+          
+          
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2607.07452v1/Figure/geogs_vis_v10.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.07452v1/Figure/geogs_vis_v10.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2607.07452v1/Figure/geogs_mapping_v5.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.07452v1/Figure/geogs_mapping_v5.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2607.07452v1/Figure/geogs_primitive_v3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.07452v1/Figure/geogs_primitive_v3.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2607.07452v1/Figure/multi-view_loss_v3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.07452v1/Figure/multi-view_loss_v3.png" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+    </ul>
+  </div>
+  
+  <div class="sel-category">
+    <h3 class="sel-cat-name">自动驾驶与机器人<span class="sel-cat-count">（3）</span></h3>
+    <ul class="sel-paper-list">
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">1/3</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2607.07608" target="_blank" rel="noopener">Dual Latent Memory in Vision-Language-Action Models for Robotic Manipulation</a></h2>
+            <p class="paper-title-zh">机器人操作视觉-语言-动作模型中的双重潜在记忆</p>
+          </div>
+        </div>
+        <p class="sel-reason">将历史经验编码为隐空间记忆token直入VLA推理流，突破Markov假设局限</p>
+        <div class="sel-tags"><span class="sel-tag">VLA</span><span class="sel-tag">具身智能</span><span class="sel-tag">操控</span><span class="sel-tag">开源</span></div>
+        <div class="paper-meta">
+          <span class="authors">Hongyu Qu, Jianzhe Gao, Xiaobin Hu, Shaohuan Yang, Xinlei Yu</span>
+        </div>
+        <p class="paper-abstract">主流视觉-语言-动作（VLA）模型主要根据马尔可夫假设下的当前观察来预测动作，因此难以应对长期的、时间相关的任务。现有的记忆增强 VLA 要么扩大观察窗口，要么从记忆库中检索历史作为辅助策略侧上下文。然而，它们将记忆留在了 VLA 推理的原生潜在嵌入空间之外，从而阻止了历史经验与多模态推理和行动形成的流畅交织。为此，我们引入了 LaMem-VLA，这是一种潜在记忆原生框架，它将历史经验重构为潜在记忆标记，并直接将它们与 VLA 推理交织在一起。 LaMem-VLA 的核心引入了四个协调组成部分：（i）一个策展人，将历史经验组织成两个互补的短期和长期记忆库； (ii) 搜寻者使用多模态认知查询两个金库以检索上下文相关证据； (iii) 将检索到的证据重建为紧凑的短期和长期潜在记忆标记的冷凝器； (iv) 编织器将这些内存标记与当前观察和指令一起注入到一个连续的嵌入序列中。通过完全在同一个连续潜在空间中表示、检索和消费历史经验，LaMem-VLA 使记忆能够直接参与 VLA 推理并在有界上下文下指导动作生成。在 SimplerEnv 和 LIBERO 上进行的大量实验证明了我们的 LaMem-VLA 的优越性。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Mainstream Vision-Language-Action (VLA) models predict actions primarily from the current observation under a Markovian assumption, thus struggling with long-horizon, temporally dependent tasks. Existing memory-augmented VLAs either expand the observation window or retrieve history from the memory bank as auxiliary policy-side context. However, they leave memory outside the native latent embedding space of VLA reasoning, preventing historical experience from being fluidly interleaved with multimodal reasoning and action formation. To this end, we introduce LaMem-VLA, a latent-memory-native framework that reconstructs historical experience into latent memory tokens and directly interweaves them with VLA reasoning. At its core, LaMem-VLA introduces four coordinated components: (i) a curator that organizes historical experience into two complementary short-term and long-term memory vaults; (ii) a seeker that queries both vaults using the multimodal cognition to retrieve context-relevant evidence; (iii) a condenser that reconstructs the retrieved evidence into compact short-term and long-term latent memory tokens; and (iv) a weaver that injects these memory tokens with the current observation and instruction into one continuous embedding sequence. By representing, retrieving, and consuming historical experience entirely in the same continuous latent space, LaMem-VLA enables memory to directly participate in VLA reasoning and guide action generation under a bounded context. Extensive experiments on SimplerEnv and LIBERO demonstrate the superiority of our LaMem-VLA.</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2607.07608v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2607.07608" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2607.07608v1" target="_blank" rel="noopener">HTML</a>
+          <a class="code" href="https://github.com/quhongyu/LaMem-VLA" target="_blank" rel="noopener">Code</a>
+          
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2607.07608v1/figs/motivation.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.07608v1/figs/motivation.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2607.07608v1/figs/overview.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.07608v1/figs/overview.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2607.07608v1/figs/table6.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.07608v1/figs/table6.png" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">2/3</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2607.06678" target="_blank" rel="noopener">NativeMEM: Native Memory Compression for Long-Horizon Robotic Manipulation</a></h2>
+            <p class="paper-title-zh">NativeMEM：用于长视野机器人操作的本机内存压缩</p>
+          </div>
+        </div>
+        <p class="sel-reason">复用VLA自身视觉编码器压缩历史帧为单token，长程操控几乎无延迟开销</p>
+        <div class="sel-tags"><span class="sel-tag">VLA</span><span class="sel-tag">具身智能</span><span class="sel-tag">操控</span></div>
+        <div class="paper-meta">
+          <span class="authors">Ziye Wang, Modi Shi, Chaojun Ni, Jiazhi Yang, Mengdi Li</span>
+        </div>
+        <p class="paper-abstract">预训练的视觉-语言-动作 (VLA) 模型如何在不牺牲效率的情况下通过高频更新保留长期视觉历史？现有方法依赖于外部内存管理，这限制了内存范围或预训练策略的反应性。为此，我们提出了 NativeMEM，一种具有长期、实时更新内存的 VLA 策略。其核心是一种高效的内存编码方案，即本机内存压缩，它重新利用 VLA 自己的视觉编码器，将每个摄像机视图中的每个历史帧压缩为单个令牌。这些内存令牌附加到输入序列中，使预训练的 VLA 能够以可忽略的延迟开销参与长期历史记录，既不需要外部规划器，也不需要新初始化的内存模块。为了使内存标记与预训练策略保持一致，我们首先在内存需求数据上的冻结 VLA 的监督下开发通用内存标记器，然后解冻 VLA 以进行特定于任务的微调。 NativeMEM 始终优于以前的方法，将模拟成功率从 32.4% 提高到 84.0%，将真实机器人的成功率提高到 98.7%，同时保持较低的推理延迟和 GPU 内存使用率。值得注意的是，NativeMEM 仅使用 20% 的训练数据就获得了与现有技术竞争的结果，展现了高数据效率。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>How can pretrained Vision-Language-Action (VLA) models retain long-horizon visual histories with high-frequency updates without sacrificing efficiency? Existing approaches rely on external memory management, which restrains either the memory horizon or the reactiveness of pretrained policies. To this end, we present NativeMEM, a VLA policy that features long-term and real-time updated memory. At its core is an efficient memory encoding scheme, Native Memory Compression, which repurposes the VLA&#39;s own vision encoder to compress each historical frame from each camera view into a single token. Appended to the input sequence, these memory tokens enable the pretrained VLA to attend over long-term history with negligible latency overhead, requiring neither an external planner nor a freshly initialized memory module. To align the memory tokens with the pretrained policy, we first develop a generic memory tokenizer under the supervision of a frozen VLA on memory-demanding data, and then unfreeze the VLA for task-specific fine-tuning. NativeMEM consistently outperforms prior methods, boosting success rates from 32.4% to 84.0% in simulation and up to 98.7% on real robots, while maintaining low inference latency and GPU memory usage. Notably, NativeMEM exhibits high data efficiency by achieving competitive results with prior arts using only 20% of the training data.</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2607.06678v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2607.06678" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2607.06678v1" target="_blank" rel="noopener">HTML</a>
+          
+          
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2607.06678v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.06678v1/x1.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2607.06678v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.06678v1/x2.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2607.06678v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.06678v1/x3.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2607.06678v1/x4.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.06678v1/x4.png" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">3/3</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2607.06990" target="_blank" rel="noopener">A Closed-Loop Multi-Agent Framework for Robust Multi-Robot Manipulation</a></h2>
+            <p class="paper-title-zh">用于鲁棒多机器人操作的闭环多智能体框架</p>
+          </div>
+        </div>
+        <p class="sel-reason">RSS 2026，分层闭环LLM框架将多机器人长程任务落地到物理操作执行</p>
+        <div class="sel-tags"><span class="sel-tag">机器人</span><span class="sel-tag">具身智能</span><span class="sel-tag">顶会</span></div>
+        <div class="paper-meta">
+          <span class="authors">Yi-Xiang He, Lan Wei, Haoming Cen, Jian-Jian Jiang, Zhuohao Li</span>
+        </div>
+        <p class="paper-abstract">多机器人系统提供长期任务所需的并行性和冗余性，而大型语言模型 (LLM) 提供推理功能，将这些目标分解为可行的计划。然而，在物理多机器人执行中有效地建立这种高级推理仍然是一个开放的挑战。现有的基于法学硕士的方法主要分为两类：单机器人方法实现了强大的接触丰富的操作，但缺乏跨多个工作空间的任务所需的协调机制。当前的多机器人框架侧重于高层规划，通常将操纵视为理想化的原语，无法考虑现实世界执行的不确定性。为了解决这个问题，我们提出了一个基于 LLM 的分层闭环代理框架，以确保稳健的多机器人操作。我们的系统由三个专门的代理组成：规划代理将指令分解为分配的子任务，每个机器人的操纵代理通过自适应工具的使用执行操作，验证代理通过监视物理结果和反馈语义更正来关闭循环。广泛的现实世界实验表明，我们的框架实现了卓越的成功率，确保了从单一到跨工作空间操作的强大适应性，并为不同的操作任务提供了一种通用的方法。</p>
+        
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Multi-robot systems provide the parallelism and redundancy necessary for long-horizon tasks, while Large Language Models (LLMs) offer the reasoning capabilities to decompose these objectives into actionable plans. However, effectively grounding this high-level reasoning in physical multi-robot execution remains an open challenge. Existing LLM-based approaches fall mainly into two categories: Single-robot methods achieve robust contact-rich manipulation but lack the coordination mechanisms required for tasks spanning multiple workspaces. Current multi-robot frameworks focus on high-level planning, often treating manipulation as an idealized primitive that fails to account for real-world execution uncertainties. To address this, we propose a hierarchical closed-loop agentic LLM-based framework to ensure robust multi-robot manipulation. Our system consists of three specialized agents: the Planning Agent decomposes instructions into allocated sub-tasks, the Manipulation Agent for each robot executes actions via adaptive tool use, and the Verification Agent closes the loop by monitoring physical outcomes and feeding back semantic corrections. Extensive real-world experiments demonstrate that our framework achieves superior success rates, ensures robust adaptability ranging from single to cross workspace manipulation, and offers a generalizable approach for diverse manipulation tasks.</p>
+        </details>
+        
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2607.06990v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2607.06990" target="_blank" rel="noopener">Abs</a>
+          <a class="html" href="https://arxiv.org/html/2607.06990v1" target="_blank" rel="noopener">HTML</a>
+          
+          
+        </div>
+        
+        <div class="paper-figures">
+          
+            <a href="https://arxiv.org/html/2607.06990v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.06990v1/x2.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2607.06990v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.06990v1/x3.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2607.06990v1/x4.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.06990v1/x4.png" loading="lazy" alt="Figure"></a>
+          
+            <a href="https://arxiv.org/html/2607.06990v1/x5.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.06990v1/x5.png" loading="lazy" alt="Figure"></a>
+          
+        </div>
+        
+      </li>
+      
+    </ul>
+  </div>
+  
+  <div class="sel-category">
+    <h3 class="sel-cat-name">VLM / LLM<span class="sel-cat-count">（0）</span></h3>
+    <ul class="sel-paper-list">
+      
+    </ul>
+  </div>
+  
   
 </div>
 
@@ -10999,7 +11394,7 @@
     <div class="wrap">
       <span>Categories: cs.CV, cs.RO, cs.AI</span>
       <span class="sep">·</span>
-      <span>Generated 2026-07-10 09:27 UTC</span>
+      <span>Generated 2026-07-12 07:36 UTC</span>
     </div>
   </footer>
 
