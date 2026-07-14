@@ -518,56 +518,9 @@
           ],
           "title_zh": "GeoTrace：视频大语言模型的几何感知轨迹标记压缩",
           "abstract_zh": "尽管视频大语言模型（Video LLM）在视频理解方面表现出了强大的性能，但其效率仍然受到大量视觉标记的限制。现有的视频令牌压缩方法通常依赖于逐帧显着性或启发式令牌合并，这可能会过度关注局部显着区域并产生模糊的融合特征。为了解决这些问题，我们提出了 GeoTrace，这是一种免训练的时空令牌压缩框架，可将视频证据分解为精确的骨架令牌和可追踪的残留事件令牌。具体来说，上下文最远点锚定（CFPA）保留了显着的、上下文一致的和高覆盖率的骨架令牌，而轨迹约束残余压缩（TCRC）通过一对一的时间轨迹和约束的近流形压缩来压缩残余令牌，从而产生具有减少模糊性的可追踪事件令牌。我们在四个视频理解基准的四个视频法学硕士上评估了 GeoTrace，结果证明了其在不同模型架构和场景中的有效性和泛化性。在 LLaVA-OneVision 上，仅保留 10\\% 的视觉标记，GeoTrace 实现了\\(12.99\\times\\) TFLOPs 减少，同时保留了 99.1\\% 的普通性能。总体而言，GeoTrace 提供了紧凑且可追踪的令牌表示，以实现高效且稳健的视频 LLM 推理。代码可在 \\href{https://github.com/guohuan-xie/GeoTrace.git}{\\texttt{Code}} 获取。"
-        },
-        {
-          "id": "2607.08839",
-          "rank": 3,
-          "score": 80,
-          "reason_zh": "探针混合利用特权模态训练MLLM，模态互补监督而非互换输入",
-          "tags": [
-            "VLM",
-            "开源"
-          ],
-          "title": "Mixture of Probes: Learning from Privileged Modalities in Multimodal LLMs Through Probing",
-          "authors": [
-            "Dominick Reilly",
-            "Qiyu Wu",
-            "Hiromi Wakaki",
-            "Srijan Das",
-            "Yuki Mistufuji"
-          ],
-          "abstract": "Multimodal Large Language Models (MLLMs) are typically designed under the assumption that all modalities available during training will also be accessible at inference. However, many real-world settings violate this assumption, requiring models to operate under a privileged modality setting, where auxiliary modalities are available only during training. While these modalities contain valuable information, existing MLLMs largely fail to leverage them effectively, as they treat modalities as interchangeable inputs rather than sources of complementary supervision. We propose Mixture of Probes (MoP), a novel framework that disentangles modality-specific and modality-general signals within the MLLM, allowing the model to preserve modality-dependent structure while learning transferable representations across modalities. At its core, MoP achieves this through a structured probing mechanism that extracts and organizes information from intermediate representations of a shared modality encoder, rather than relying only on final-layer alignment as done in existing MLLMs. To support this disentanglement, we further introduce MoP Cross-modal Training (MoP-X), a training strategy for MoP centered around a probe disentanglement loss that prevents probe collapse and encourages cross-modal learning. We evaluate MoP across two domains spanning eight tasks and four modalities under a comprehensive evaluation protocol tailored to the privileged modality setting, where each modality is independently treated as the sole input at inference time. MoP consistently outperforms strong MLLM baselines, achieving up to 65% relative improvement, demonstrating that auxiliary modalities, even when unavailable at inference, can provide substantial gains when effectively leveraged during training. Code, model checkpoints, and evaluation protocols will be made available at https://github.com/Sony/MoP.",
-          "abs_url": "https://arxiv.org/abs/2607.08839",
-          "pdf_url": "https://arxiv.org/pdf/2607.08839v1",
-          "html_url": "https://arxiv.org/html/2607.08839v1",
-          "figures": [
-            "https://arxiv.org/html/2607.08839v1/x1.png",
-            "https://arxiv.org/html/2607.08839v1/x2.png",
-            "https://arxiv.org/html/2607.08839v1/x3.png",
-            "https://arxiv.org/html/2607.08839v1/x4.png"
-          ],
-          "code_url": "https://github.com/Sony/MoP",
-          "project_url": null,
-          "code_links": [
-            "https://github.com/Sony/MoP"
-          ],
-          "project_links": [],
-          "has_code": true,
-          "has_project": false,
-          "venue": null,
-          "comments": "Preprint (16 pages)",
-          "submitted": "2026-07-09T18:00:47Z",
-          "updated": "2026-07-09T18:00:47Z",
-          "primary_category": "cs.CV",
-          "all_categories": [
-            "cs.CV",
-            "cs.LG"
-          ],
-          "title_zh": "探索的混合：通过探索从多模式法学硕士中的特权模式中学习",
-          "abstract_zh": "多模态大语言模型（MLLM）通常是在这样的假设下设计的：训练期间可用的所有模态也可以在推理时访问。然而，许多现实世界的设置违反了这一假设，要求模型在特权模式设置下运行，其中辅助模式仅在训练期间可用。虽然这些模式包含有价值的信息，但现有的 MLLM 基本上无法有效利用它们，因为它们将模式视为可互换的输入，而不是补充监管的来源。我们提出了探针混合（MoP），这是一种新颖的框架，可以在 MLLM 中解开模态特定信号和模态通用信号，使模型能够保留模态相关的结构，同时学习跨模态的可转移表示。 MoP 的核心是通过结构化探测机制来实现这一目标，该机制从共享模态编码器的中间表示中提取和组织信息，而不是像现有 MLLM 那样仅依赖于最终层对齐。为了支持这种解开，我们进一步引入了 MoP 跨模态训练（MoP-X），这是一种以探针解开损失为中心的 MoP 训练策略，可防止探针崩溃并鼓励跨模态学习。我们在针对特权模态设置量身定制的综合评估协议下评估跨越八个任务和四种模态的两个领域的 MoP，其中每种模态在推理时都被独立地视为唯一输入。 MoP 始终优于强大的 MLLM 基线，实现了高达 65% 的相对改进，这表明辅助模式即使在推理时不可用，在训练期间有效利用时也可以提供实质性收益。代码、模型检查点和评估协议将在 https://github.com/Sony/MoP 上提供。"
         }
       ]
     }
   ],
-  "total_selected": 12
+  "total_selected": 11
 }
