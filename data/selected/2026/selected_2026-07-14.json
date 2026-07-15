@@ -1,0 +1,591 @@
+{
+  "date": "2026-07-14",
+  "total_candidates": 224,
+  "categories": [
+    {
+      "id": "worldmodel",
+      "name": "世界模型&视频/场景生成模型",
+      "papers": [
+        {
+          "id": "2607.11836",
+          "rank": 1,
+          "score": 92,
+          "reason_zh": "循环一致反向预测纠正自回归误差，实现60秒长视频世界模型",
+          "tags": [
+            "世界模型",
+            "生成模型",
+            "顶会"
+          ],
+          "title": "Cycle-World: Mitigating Error Accumulation in Long-term Video World Models via Reverse-Prediction Cycle Consistency",
+          "authors": [
+            "Zihan Su",
+            "Teng Hu",
+            "Jiangning Zhang",
+            "Ruiyan Wang",
+            "Ran Yi",
+            "Lizhuang Ma",
+            "Dacheng Tao"
+          ],
+          "abstract": "Autoregressive diffusion models have enabled high-quality video generation, yet their sequential nature inherently suffers from error accumulation. In long-horizon video synthesis, minor prediction deviations compound over time, inevitably leading to unconstrained generative drift, structural collapse, and severe visual degradation. To address this, we propose Cycle-World, a novel framework designed for stable and temporally consistent long-video generation. Our approach tackles error drift by enforcing strict temporal reversibility across both the training and inference phases. Theoretically, we demonstrate that forward generative drift can be strictly bottlenecked by a cycle-consistency objective. During training, we integrate an efficient reverse-prediction model to implicitly embed causal constraints into the forward generator, compelling it to produce reversible sequences that tightly adhere to the natural video manifold. At inference time, we repurpose this frozen reverse model as a runtime corrector. Through gradient-based cycle guidance, it iteratively refines the generated latent representations, actively suppressing accumulated errors before they are committed to the historical context. Extensive experiments on the VBench benchmark demonstrate that Cycle-World's dual-phase synergy significantly mitigates error drift, achieving state-of-the-art overall generation quality and long-horizon temporal consistency in 60-second synthesis.",
+          "abs_url": "https://arxiv.org/abs/2607.11836",
+          "pdf_url": "https://arxiv.org/pdf/2607.11836v1",
+          "html_url": "https://arxiv.org/html/2607.11836v1",
+          "figures": [
+            "https://arxiv.org/html/2607.11836v1/x1.png",
+            "https://arxiv.org/html/2607.11836v1/x2.png",
+            "https://arxiv.org/html/2607.11836v1/x3.png",
+            "https://arxiv.org/html/2607.11836v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": "Accepted by ECCV 2026",
+          "submitted": "2026-07-13T17:27:13Z",
+          "updated": "2026-07-13T17:27:13Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "Cycle-World：通过反向预测循环一致性减轻长期视频世界模型中的误差累积",
+          "abstract_zh": "自回归扩散模型已经实现了高质量的视频生成，但其顺序性质本质上会受到错误累积的影响。在长视域视频合成中，微小的预测偏差随着时间的推移而复合，不可避免地导致不受约束的生成漂移、结构崩溃和严重的视觉退化。为了解决这个问题，我们提出了 Cycle-World，这是一种专为稳定且时间一致的长视频生成而设计的新颖框架。我们的方法通过在训练和推理阶段强制执行严格的时间可逆性来解决错误漂移。从理论上讲，我们证明前向生成漂移可以受到循环一致性目标的严格限制。在训练过程中，我们集成了一个高效的反向预测模型，将因果约束隐式嵌入到前向生成器中，迫使其生成紧密贴合自然视频流形的可逆序列。在推理时，我们将这个冻结的反向模型重新用作运行时校正器。通过基于梯度的循环指导，它迭代地细化生成的潜在表示，在将累积的错误提交到历史背景之前主动抑制它们。 VBench 基准测试的大量实验表明，Cycle-World 的双相协同作用可显着减轻误差漂移，在 60 秒合成中实现最先进的整体生成质量和长范围时间一致性。"
+        },
+        {
+          "id": "2607.11673",
+          "rank": 2,
+          "score": 90,
+          "reason_zh": "统一空间生成基元+全景视频重建，多模态输入生成可探索3D世界",
+          "tags": [
+            "世界模型",
+            "3DGS",
+            "生成模型",
+            "3D重建"
+          ],
+          "title": "ABot-3DWorld 0: A Universal World Model to Explore Any 3D Space",
+          "authors": [
+            "Mingchao Sun",
+            "Luyang Tang",
+            "Yu Liu",
+            "Xu Yan",
+            "Zhan Li",
+            "Yunwei Zhang",
+            "Fei Yu",
+            "Zengye Ge",
+            "Yumin Liu",
+            "Jiacheng Zhang",
+            "Yongchang Zhang",
+            "Jiawei Zhang",
+            "Zhicheng Liu",
+            "Zhongxu Sun",
+            "Tianjian Ouyang",
+            "Wenzheng Chen",
+            "Shixing Yang",
+            "Nianfei Fan",
+            "Guodong Sun",
+            "Huan Li",
+            "Zheng Zhou",
+            "Yongze Li",
+            "Yingliang Peng",
+            "Mengmeng Du",
+            "Yuan Liu",
+            "Haozhe Shi",
+            "Chunnuo Gong",
+            "Chengzhen Yu",
+            "Chunxue Jia",
+            "Yang Liu",
+            "Shiying Zeng",
+            "Junnan Lai",
+            "Hang Zhang",
+            "Ning Guo",
+            "Baoquan Chen",
+            "Mu Xu",
+            "Hongyu Pan"
+          ],
+          "abstract": "We present ABot-3DWorld 0, a universal multimodal 3D world model that turns text, image, and video inputs into high-fidelity, explorable 3D worlds. At the heart of our framework is a unified Spatial Generative Primitive (SGP), a compact tuple of a high-quality panorama and a spatial point cloud that delivers an efficient description of any 3D space. Multimodal inputs are first lifted into this primitive; a 3D-consistent panoramic video generator then explores the primitive along a planned trajectory; finally, our panoramic video reconstruction engine converts the generated video into a clean, photorealistic 3D Gaussian Splatting (3DGS) world. This pipeline covers two regimes: rich inputs (multi-view sets, casual video) are lifted into the SGP through a geometry-rigorous recovery that mirrors the observed scene, while a single image or sentence is completed generatively into a creative world. The result is one low-barrier engine for general 3D content creation that further anchors generated worlds to geographic points of interest, enabling map-native spatial exploration at consumer scale. Experiments show that ABot-3DWorld 0 sets the state of the art among open-source methods and demonstrates stronger scene fidelity than Marble under rich multimodal inputs.",
+          "abs_url": "https://arxiv.org/abs/2607.11673",
+          "pdf_url": "https://arxiv.org/pdf/2607.11673v1",
+          "html_url": null,
+          "figures": [],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": "Official Page: https://abot-world.amap.com/plaza",
+          "submitted": "2026-07-13T15:14:48Z",
+          "updated": "2026-07-13T15:14:48Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "ABot-3DWorld 0：探索任何 3D 空间的通用世界模型",
+          "abstract_zh": "我们推出了 ABot-3DWorld 0，这是一种通用的多模式 3D 世界模型，可将文本、图像和视频输入转换为高保真、可探索的 3D 世界。我们框架的核心是统一的空间生成基元 (SGP)，它是高质量全景图和空间点云的紧凑元组，可提供对任何 3D 空间的有效描述。多模式输入首先被提升到这个原语中；然后，3D 一致的全景视频生成器沿着计划的轨迹探索图元；最后，我们的全景视频重建引擎将生成的视频转换为干净、逼真的 3D 高斯泼溅 (3DGS) 世界。该管道涵盖两种机制：丰富的输入（多视图集、休闲视频）通过反映观察到的场景的几何严格恢复被提升到 SGP，而单个图像或句子则生成地完成到创意世界中。结果是一种用于通用 3D 内容创建的低门槛引擎，可进一步将生成的世界锚定到感兴趣的地理点，从而实现消费者规模的地图原生空间探索。实验表明，ABot-3DWorld 0 树立了开源方法的最先进水平，并在丰富的多模态输入下表现出比 Marble 更强的场景保真度。"
+        },
+        {
+          "id": "2607.10781",
+          "rank": 3,
+          "score": 85,
+          "reason_zh": "免训练！可微能量函数注入采样过程，实现驾驶世界模型可控生成",
+          "tags": [
+            "世界模型",
+            "生成模型",
+            "自动驾驶",
+            "闭环仿真"
+          ],
+          "title": "Is Energy Guidance All You Need? Training-Free Norm Injection for Driving World Models",
+          "authors": [
+            "Xiyan Su",
+            "Frank Diermeyer",
+            "Markus Lienkamp"
+          ],
+          "abstract": "Driving world models built on large video-diffusion backbones generate realistic scenes but are hard to control: enforcing a traffic norm typically means retraining the backbone or conditioning it on hand-built layouts. We ask whether controllability requires training at all. Our experiment shows that a rectified-flow driving world model, which jointly generates future video and a planned ego trajectory, can have its planned trajectory steered entirely at sampling time by differentiable energy functions that encode driving norms, without knowledge-specific retraining of the diffusion backbone. Concretely, we demonstrate that a world model built on Open-Sora 2.0 MM-DiT backbone can be steered to brake at a counterfactual target by injecting energy guidance at sampling time. However, we find that the generated video does not yet follow the steered trajectory through the backbone's joint self-attention and identify the cross-stream coupling as a crucial requirement for end-to-end-controllable rollouts.",
+          "abs_url": "https://arxiv.org/abs/2607.10781",
+          "pdf_url": "https://arxiv.org/pdf/2607.10781v1",
+          "html_url": "https://arxiv.org/html/2607.10781v1",
+          "figures": [
+            "https://arxiv.org/html/2607.10781v1/x1.png",
+            "https://arxiv.org/html/2607.10781v1/x2.png",
+            "https://arxiv.org/html/2607.10781v1/x3.png",
+            "https://arxiv.org/html/2607.10781v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": "Accepted to Robotics: Science and Systems 2026 Robot World Models Workshop",
+          "submitted": "2026-07-12T14:17:42Z",
+          "updated": "2026-07-12T14:17:42Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV",
+            "cs.RO"
+          ],
+          "title_zh": "您需要的是能量指导吗？用于驾驶世界模型的免培训规范注入",
+          "abstract_zh": "基于大型视频扩散骨干网构建的驾驶世界模型会生成逼真的场景，但难以控制：执行流量规范通常意味着重新训练骨干网或将其调整为手工构建的布局。我们询问可控性是否需要培训。我们的实验表明，联合生成未来视频和计划自我轨迹的整流流驾驶世界模型可以在采样时通过编码驾驶规范的可微能量函数完全控制其计划轨迹，而无需对扩散主干进行特定知识的再训练。具体来说，我们证明了基于 Open-Sora 2.0 MM-DiT 主干网络构建的世界模型可以通过在采样时注入能量引导来控制反事实目标制动。然而，我们发现生成的视频尚未通过骨干网络的联合自注意力遵循引导轨迹，并将跨流耦合视为端到端可控推出的关键要求。"
+        }
+      ]
+    },
+    {
+      "id": "reconstruction",
+      "name": "3D/4D 重建与生成",
+      "papers": [
+        {
+          "id": "2607.10995",
+          "rank": 1,
+          "score": 88,
+          "reason_zh": "非对称架构解耦几何与外观，800×加速前馈式3DGS长序列建模",
+          "tags": [
+            "3DGS",
+            "feed-forward",
+            "3D重建"
+          ],
+          "title": "AsySplat: Efficient Asymmetric 3D Gaussian Splatting for Long-Sequence Scene Modeling",
+          "authors": [
+            "Yingji Zhong",
+            "Dave Zhenyu Chen",
+            "Fuzhao Ou",
+            "Youyu Chen",
+            "Zhihao Li",
+            "Lanqing Hong",
+            "Dan Xu"
+          ],
+          "abstract": "Recent generalizable 3D Gaussian Splatting models have advanced long-sequence novel view synthesis (NVS), but at the cost of substantial redundant computation. We identify that the redundancy can be mitigated based on two observations: (i) high-precision geometry is not strictly required for high-quality NVS; (ii) appearance learning is generally easier than geometry recovery. Motivated by these insights, we propose an asymmetric architecture that decouples geometry and appearance modeling. The geometry branch processes coarse-grained tokens with most of the parameters for multi-view reconstruction, while the appearance branch operates on fine-grained tokens to capture details using significantly fewer parameters. The two branches interact through bilateral connections, enabling mutual guidance for their respective tasks. This task-aware asymmetry reduces the computational redundancy and allocates the computation more judiciously, thereby increasing parameter efficiency and enabling smaller models to achieve strong performance. On 32-view 960P inputs, our model matches optimization-based methods while delivering nearly 800x speedup, and surpasses the zero-shot performance of state-of-the-art generalizable models with markedly fewer parameters and reduced training/inference overhead, achieving an overall efficiency improvement.",
+          "abs_url": "https://arxiv.org/abs/2607.10995",
+          "pdf_url": "https://arxiv.org/pdf/2607.10995v1",
+          "html_url": "https://arxiv.org/html/2607.10995v1",
+          "figures": [
+            "https://arxiv.org/html/2607.10995v1/x1.png",
+            "https://arxiv.org/html/2607.10995v1/x2.png",
+            "https://arxiv.org/html/2607.10995v1/x3.png",
+            "https://arxiv.org/html/2607.10995v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": "https://zhongyingji.github.io/asysplat/",
+          "code_links": [],
+          "project_links": [
+            "https://zhongyingji.github.io/asysplat/"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": null,
+          "comments": "The project page is at https://zhongyingji.github.io/asysplat/",
+          "submitted": "2026-07-13T01:39:19Z",
+          "updated": "2026-07-13T01:39:19Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "AsySplat：用于长序列场景建模的高效非对称 3D 高斯分布",
+          "abstract_zh": "最近的可推广 3D 高斯 Splatting 模型具有先进的长序列新颖视图合成 (NVS)，但代价是大量冗余计算。我们认为，基于两个观察结果可以减轻冗余：(i) 高质量 NVS 并不严格要求高精度几何结构； (ii) 外观学习通常比几何恢复更容易。受这些见解的启发，我们提出了一种将几何和外观建模解耦的非对称架构。几何分支使用大多数参数处理粗粒度标记以进行多视图重建，而外观分支对细粒度标记进行操作，以使用更少的参数来捕获细节。两个部门通过双边联系进行互动，能够相互指导各自的任务。这种任务感知的不对称性减少了计算冗余并更明智地分配计算，从而提高了参数效率并使较小的模型能够实现强大的性能。在 32 视图 960P 输入上，我们的模型匹配基于优化的方法，同时提供近 800 倍的加速，并超越了最先进的可推广模型的零样本性能，参数显着减少，训练/推理开销减少，实现了整体效率的提高。"
+        },
+        {
+          "id": "2607.10792",
+          "rank": 2,
+          "score": 86,
+          "reason_zh": "DINOv3语义对应引导多属性3D一致性监督，稀疏视图重建提升4.5dB PSNR",
+          "tags": [
+            "3DGS",
+            "3D重建",
+            "顶会"
+          ],
+          "title": "MAC-Splat: Multi-Attribute Consistency for High-Fidelity Sparse-View Reconstruction",
+          "authors": [
+            "Jinqian Yang",
+            "Yichen Wu",
+            "Wanhua Li",
+            "Haokun Lin",
+            "Renzhen Wang",
+            "Xiangchu Feng",
+            "Xixi Jia"
+          ],
+          "abstract": "Reconstructing high-fidelity 3D scenes from sparse-views remains a central problem in generalizable neural rendering. Existing generalizable 3D Gaussian Splatting (3DGS) methods often exhibit geometric artifacts in sparse-view settings, since supervision based solely on 2D photometric losses cannot resolve depth and correspondence ambiguities. To address this issue, we propose MAC-Splat, a training framework built around direct 3D consistency supervision. MAC-Splat builds on the MASt3R geometric backbone and a frozen DINOv3 encoder to obtain semantically informed 2D correspondences, which serve as geometric anchors for 3D supervision. Using these anchors, we define the Multi-Attribute Consistency (MAC) loss. This objective jointly regularizes the 3D attributes of matched Gaussians, including their position, shape, and appearance, by enforcing agreement in a common world coordinate frame. The formulation is robust to outliers and respects the geometry of covariance matrices, which leads to stable training under sparse-view conditions. Experiments on ScanNet++ show that MAC-Splat outperforms strong baselines, with particularly large gains under different overlap regimes. In particular, it improves average PSNR over Splatt3R by more than 4.5 dB, reduces LPIPS, and maintains performance as the camera pose gap increases. These results indicate that a direct, multi-attribute 3D consistency objective, when combined with high-quality correspondences, is effective for addressing the ill-posed sparse-view reconstruction problem.",
+          "abs_url": "https://arxiv.org/abs/2607.10792",
+          "pdf_url": "https://arxiv.org/pdf/2607.10792v1",
+          "html_url": "https://arxiv.org/html/2607.10792v1",
+          "figures": [
+            "https://arxiv.org/html/2607.10792v1/x1.png",
+            "https://arxiv.org/html/2607.10792v1/x2.png",
+            "https://arxiv.org/html/2607.10792v1/x3.png",
+            "https://arxiv.org/html/2607.10792v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": "Accepted to the European Conference on Computer Vision (ECCV 2026)",
+          "submitted": "2026-07-12T14:50:08Z",
+          "updated": "2026-07-12T14:50:08Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "MAC-Splat：高保真稀疏视图重建的多属性一致性",
+          "abstract_zh": "从稀疏视图重建高保真 3D 场景仍然是通用神经渲染中的核心问题。现有的可推广 3D 高斯分布 (3DGS) 方法经常在稀疏视图设置中表现出几何伪影，因为仅基于 2D 光度损失的监督无法解决深度和对应模糊性。为了解决这个问题，我们提出了 MAC-Splat，这是一个围绕直接 3D 一致性监督构建的训练框架。 MAC-Splat 基于 MASt3R 几何骨干和冻结的 DINOv3 编码器构建，以获得语义上的 2D 对应关系，这些对应关系可用作 3D 监督的几何锚点。使用这些锚点，我们定义了多属性一致性（MAC）损失。该目标通过在公共世界坐标系中强制达成一致，共同规范匹配高斯的 3D 属性，包括它们的位置、形状和外观。该公式对异常值具有鲁棒性，并且尊重协方差矩阵的几何形状，这导致在稀疏视图条件下进行稳定的训练。 ScanNet++ 上的实验表明，MAC-Splat 的性能优于强基线，在不同重叠机制下具有特别大的增益。特别是，与 Splatt3R 相比，它的平均 PSNR 提高了 4.5 dB 以上，降低了 LPIPS，并在相机姿态间隙增加时保持了性能。这些结果表明，直接的多属性 3D 一致性目标与高质量对应相结合，可以有效解决不适定的稀疏视图重建问题。"
+        },
+        {
+          "id": "2607.11285",
+          "rank": 3,
+          "score": 82,
+          "reason_zh": "重要性引导MCMC高斯分配，统一SfM到3DGS端到端重建流水线",
+          "tags": [
+            "3DGS",
+            "3D重建",
+            "开源"
+          ],
+          "title": "SalientGS: Unified SfM-to-3DGS with Importance-Guided MCMC Gaussian Allocation",
+          "authors": [
+            "Tianyu Xiong",
+            "Rui Li",
+            "Suning Ge",
+            "Jiaqi Yang"
+          ],
+          "abstract": "Reconstructing 3D scenes from unordered images remains bottlenecked by expensive Structure-from-Motion (SfM) preprocessing and frozen pose interfaces. We present SalientGS, a unified SfM-to-3D Gaussian Splatting (3DGS) pipeline. Its central contribution is importance-guided Markov Chain Monte Carlo (MCMC) Gaussian allocation, which aggregates multi-view residuals into per-Gaussian underfit and redundancy signals. These signals define a smooth importance-weighted sampling distribution that biases both birth and relocation toward underfit regions. This reallocates capacity from well-fit areas without altering the underlying stochastic gradient Langevin dynamics (SGLD). SalientGS achieves end-to-end reconstruction in 15 minutes with state-of-the-art perceptual quality. The supplementary material provides dedicated sections for Per-Scene Qualitative Comparisons and Per-Image Learned Perceptual Image Patch Similarity (LPIPS) Analysis, including failure cases. Code and evaluation scripts are available at https://github.com/Six-Bit-TX/SalientGS.",
+          "abs_url": "https://arxiv.org/abs/2607.11285",
+          "pdf_url": "https://arxiv.org/pdf/2607.11285v1",
+          "html_url": "https://arxiv.org/html/2607.11285v1",
+          "figures": [
+            "https://arxiv.org/html/2607.11285v1/x1.png",
+            "https://arxiv.org/html/2607.11285v1/x2.png",
+            "https://arxiv.org/html/2607.11285v1/x3.png",
+            "https://arxiv.org/html/2607.11285v1/x4.png"
+          ],
+          "code_url": "https://github.com/Six-Bit-TX/SalientGS",
+          "project_url": null,
+          "code_links": [
+            "https://github.com/Six-Bit-TX/SalientGS"
+          ],
+          "project_links": [],
+          "has_code": true,
+          "has_project": false,
+          "venue": null,
+          "comments": "Accepted",
+          "submitted": "2026-07-13T09:06:49Z",
+          "updated": "2026-07-13T09:06:49Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "SalientGS：具有重要性引导的 MCMC 高斯分配的统一 SfM 到 3DGS",
+          "abstract_zh": "从无序图像重建 3D 场景仍然受到昂贵的运动结构 (SfM) 预处理和冻结姿势接口的瓶颈。我们推出了 SalientGS，一个统一的 SfM 到 3D 高斯分布 (3DGS) 管道。其核心贡献是重要性引导的马尔可夫链蒙特卡罗 (MCMC) 高斯分配，它将多视图残差聚合成每高斯欠拟合和冗余信号。这些信号定义了一个平滑的重要性加权抽样分布，该分布使出生和搬迁偏向不适合的地区。这可以从合适的区域重新分配容量，而不会改变潜在的随机梯度朗之万动力学（SGLD）。 SalientGS 在 15 分钟内实现了端到端重建，具有最先进的感知质量。补充材料提供了针对每场景定性比较和每图像学习感知图像补丁相似性 (LPIPS) 分析的专用部分，包括失败案例。代码和评估脚本可在 https://github.com/Six-Bit-TX/SalientGS 获取。"
+        }
+      ]
+    },
+    {
+      "id": "vla",
+      "name": "自动驾驶与机器人",
+      "papers": [
+        {
+          "id": "2607.09701",
+          "rank": 1,
+          "score": 92,
+          "reason_zh": "世界模型增强VLA，9600h自我中心视频预训练，40+灵巧操控全栈开源",
+          "tags": [
+            "VLA",
+            "具身智能",
+            "操控",
+            "世界模型",
+            "开源"
+          ],
+          "title": "EgoSteer: A Full-Stack System Towards Steerable Dexterous Manipulation from Egocentric Videos",
+          "authors": [
+            "Yifan Zhong",
+            "Zhang Chen",
+            "Tianrui Guan",
+            "Fanlian Zeng",
+            "Yuyao Ye",
+            "Tianjia He",
+            "Ka Nam Lui",
+            "Jiayi Li",
+            "Tingrui Zhang",
+            "Ruilin Yan",
+            "Xinhao Ji",
+            "Guangyu Zhao",
+            "Wenjie Lou",
+            "Jiayuan Zhang",
+            "Yuanpei Chen",
+            "Yaodong Yang"
+          ],
+          "abstract": "Steerability is a defining capability of generalist robot policies, yet remains largely absent in dexterous-hand systems for lack of large-scale, language-aligned, and action-accurate demonstration data. To address this bottleneck, we present a full-stack system that scales dexterous VLA pre-training from egocentric human videos and enables data-efficient real-robot post-training. It integrates EgoSmith, a data pipeline that curates in-the-wild egocentric videos into 9.6K hours of high-quality pre-training data with 9x higher throughput and better accuracy than prior SOTA; a unified robot stack for teleoperation and human-in-the-loop correction; and EgoSteer, a world-model-enhanced VLA trained on optimized infrastructure. Human-data pre-training equips EgoSteer with language-guided manipulation priors, which are grounded through robot post-training and improved by DAgger refinement. Empirically, EgoSteer robustly executes free-form instructions across 40+ diverse tasks, demonstrating failure recovery, dexterity, and generalization. The pre-trained model also few-shot adapts to complex long-horizon tasks, including box folding, on two embodiments with 75+% success. We open-source the system, data, and model at https://egosteer.github.io/.",
+          "abs_url": "https://arxiv.org/abs/2607.09701",
+          "pdf_url": "https://arxiv.org/pdf/2607.09701v1",
+          "html_url": "https://arxiv.org/html/2607.09701v1",
+          "figures": [
+            "https://arxiv.org/html/2607.09701v1/x1.png",
+            "https://arxiv.org/html/2607.09701v1/x2.png",
+            "https://arxiv.org/html/2607.09701v1/x3.png",
+            "https://arxiv.org/html/2607.09701v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": "https://egosteer.github.io/",
+          "code_links": [],
+          "project_links": [
+            "https://egosteer.github.io/"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": null,
+          "comments": null,
+          "submitted": "2026-06-21T16:16:02Z",
+          "updated": "2026-06-21T16:16:02Z",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.RO"
+          ],
+          "title_zh": "EgoSteer：从以自我为中心的视频实现可操纵灵巧操纵的全栈系统",
+          "abstract_zh": "可操纵性是通用机器人策略的一项决定性能力，但由于缺乏大规模、语言一致且动作准确的演示数据，在灵巧手系统中仍然基本上不存在。为了解决这个瓶颈，我们提出了一个全栈系统，可以扩展以自我为中心的人类视频的灵巧 VLA 预训练，并实现数据高效的真实机器人后期训练。它集成了 EgoSmith，这是一个数据管道，可将野外的以自我为中心的视频整理为 9600 小时的高质量预训练数据，吞吐量比之前的 SOTA 高出 9 倍，准确性也更高；用于远程操作和人机在环校正的统一机器人堆栈； EgoSteer，一个经过优化基础设施训练的世界模型增强型 VLA。人类数据预训练为 EgoSteer 配备了语言引导的操作先验，这些先验通过机器人后训练奠定基础，并通过 DAgger 细化进行改进。根据经验，EgoSteer 在 40 多个不同任务中稳健地执行自由格式指令，展示了故障恢复、灵活性和泛化能力。预训练模型还可以通过少量样本适应复杂的长期任务，包括盒子折叠，在两个实施例中成功率达到 75% 以上。我们在 https://egosteer.github.io/ 开源系统、数据和模型。"
+        },
+        {
+          "id": "2607.11884",
+          "rank": 2,
+          "score": 90,
+          "reason_zh": "多帧跨坐标系扩散去噪，Shuran Song组双臂移动操控VLA",
+          "tags": [
+            "VLA",
+            "操控",
+            "具身智能"
+          ],
+          "title": "Mixture of Frames Policy: Multi-Frame Action Denoising for Bimanual Mobile Manipulation",
+          "authors": [
+            "Dian Wang",
+            "Jisang Park",
+            "Xiaomeng Xu",
+            "Han Zhang",
+            "Shuran Song",
+            "Jeannette Bohg"
+          ],
+          "abstract": "Robotic manipulation is inherently multi-frame: local actions may be simple in an end-effector frame, while transport, upright-object handling, and whole-body coordination are better represented in a base-aligned frame. However, modern diffusion-based visuomotor policies typically commit to a single predefined action frame, forcing one denoiser to model action distributions that are often unnecessarily complex in that frame. We propose Mixture of Frames Policy (MoF), a diffusion policy that performs synchronized action denoising across multiple coordinate frames. MoF maintains a single canonical diffusion state, re-expresses it in several task-relevant frames, applies frame-specialized denoisers, and fuses their noise predictions back in the canonical frame. To make this possible for intermediate noisy diffusion states, we introduce a column-based 6D rotation representation within an SE(3) action parameterization that supports exact, differentiable frame transformations without requiring noisy rotations to lie on the SO(3) manifold. Across nine simulated bimanual manipulation tasks, we show that the best action frame is task-dependent and that MoF improves over oracle frame selection and standard Mixture-of-Experts (MoE) baselines. We further evaluate MoF on two real-world bimanual mobile manipulation tasks, demonstrating that it outperforms all constituent single-frame baselines. Project homepage: https://mofpo.github.io",
+          "abs_url": "https://arxiv.org/abs/2607.11884",
+          "pdf_url": "https://arxiv.org/pdf/2607.11884v1",
+          "html_url": "https://arxiv.org/html/2607.11884v1",
+          "figures": [
+            "https://arxiv.org/html/2607.11884v1/img_arxiv/teaser_arxiv.jpg",
+            "https://arxiv.org/html/2607.11884v1/img_arxiv/architecture_arxiv.jpg",
+            "https://arxiv.org/html/2607.11884v1/x1.png",
+            "https://arxiv.org/html/2607.11884v1/x2.png"
+          ],
+          "code_url": null,
+          "project_url": "https://mofpo.github.io",
+          "code_links": [],
+          "project_links": [
+            "https://mofpo.github.io"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": null,
+          "comments": null,
+          "submitted": "2026-07-13T17:59:40Z",
+          "updated": "2026-07-13T17:59:40Z",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.RO"
+          ],
+          "title_zh": "混合帧策略：双手移动操作的多帧动作去噪",
+          "abstract_zh": "机器人操纵本质上是多框架的：在末端执行器框架中局部动作可能很简单，而运输、直立物体处理和全身协调在基础对齐框架中可以更好地表示。然而，现代基于扩散的视觉运动策略通常致力于单个预定义的动作框架，迫使一个降噪器对该框架中通常不必要的复杂的动作分布进行建模。我们提出混合帧策略（MoF），这是一种跨多个坐标帧执行同步动作去噪的扩散策略。 MoF 维护单个规范扩散状态，在几个与任务相关的帧中重新表达它，应用帧专用降噪器，并将其噪声预测融合回规范框架中。为了使中间噪声扩散状态成为可能，我们在 SE(3) 动作参数化中引入了基于列的 6D 旋转表示，它支持精确、可微的框架变换，而不需要噪声旋转位于 SO(3) 流形上。在九个模拟双手操作任务中，我们表明最佳动作框架是依赖于任务的，并且 MoF 比预言框架选择和标准专家混合 (MoE) 基线有所改进。我们进一步在两个现实世界的双手移动操作任务上评估 MoF，证明它优于所有组成的单帧基线。项目主页：https://mofpo.github.io"
+        },
+        {
+          "id": "2607.11638",
+          "rank": 3,
+          "score": 85,
+          "reason_zh": "方向感知VLA+CoT推理恢复，城市级视觉语言导航跨平台迁移",
+          "tags": [
+            "VLA",
+            "导航",
+            "具身智能",
+            "顶会"
+          ],
+          "title": "DA-Nav: Direction-Aware City-Scale Vision-Language Navigation",
+          "authors": [
+            "Ye Yuan",
+            "Kehan Chen",
+            "Xinqiang Yu",
+            "Wentao Xu",
+            "Heng Wang",
+            "Libo Huang",
+            "Chuanguang Yang",
+            "Yan Huang",
+            "Jiawei He",
+            "Zhulin An"
+          ],
+          "abstract": "City-scale outdoor navigation is currently hindered by the heavy reliance on dense maps or costly navigation supervision. In this work, we introduce a novel paradigm for leveraging directional instructions from commercial navigation tools (e.g., Google Maps). To bridge the gap between commercial instructions and executable navigation actions, while mitigating long-horizon error accumulation through robust trajectory recovery, we propose DA-Nav, a Direction-Aware vision-language Navigation framework that reformulates navigation as a discrete spatial grounding problem on the egocentric 2D image plane. To achieve trajectory recovery, DA-Nav employs a Chain-of-Thought (CoT) reasoning process encompassing deviation assessment, action prediction, and target grid selection. We further introduce ReDA, a dataset that provides direction-aware instructions and recovery trajectories to enhance spatial grounding and support CoT recovery reasoning. Extensive experiments in CARLA demonstrate that DA-Nav achieves a high success rate of 56.16% in unseen urban environments, outperforming existing State-of-The-Art (SoTA) methods while maintaining a substantially stronger recovery capability. Furthermore, without fine-tuning, DA-Nav seamlessly adapts to both quadruped and humanoid robots, enabling stable kilometer-scale closed-loop outdoor navigation in complex real world environments.",
+          "abs_url": "https://arxiv.org/abs/2607.11638",
+          "pdf_url": "https://arxiv.org/pdf/2607.11638v1",
+          "html_url": "https://arxiv.org/html/2607.11638v1",
+          "figures": [
+            "https://arxiv.org/html/2607.11638v1/teaser_v3.png",
+            "https://arxiv.org/html/2607.11638v1/model_v2.png",
+            "https://arxiv.org/html/2607.11638v1/project.png",
+            "https://arxiv.org/html/2607.11638v1/closedloopv3.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": "9 pages, 8 figures. Submitted to IEEE Robotics and Automation Letters (RA-L)",
+          "submitted": "2026-07-13T14:54:28Z",
+          "updated": "2026-07-13T14:54:28Z",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.RO"
+          ],
+          "title_zh": "DA-Nav：方向感知城市规模视觉语言导航",
+          "abstract_zh": "目前，城市规模的户外导航因严重依赖密集地图或昂贵的导航监管而受到阻碍。在这项工作中，我们引入了一种利用商业导航工具（例如谷歌地图）的方向指令的新颖范例。为了弥合商业指令和可执行导航操作之间的差距，同时通过稳健的轨迹恢复来减轻长视野误差累积，我们提出了 DA-Nav，一种方向感知视觉语言导航框架，它将导航重新表述为以自我为中心的 2D 图像平面上的离散空间接地问题。为了实现轨迹恢复，DA-Nav 采用了思想链 (CoT) 推理过程，包括偏差评估、动作预测和目标网格选择。我们进一步介绍了 ReDA，这是一个提供方向感知指令和恢复轨迹的数据集，以增强空间基础并支持 CoT 恢复推理。 CARLA 的大量实验表明，DA-Nav 在看不见的城市环境中实现了 56.16% 的高成功率，优于现有的最先进 (SoTA) 方法，同时保持了更强的恢复能力。此外，无需微调，DA-Nav 即可无缝适应四足机器人和人形机器人，从而在复杂的现实环境中实现稳定的公里级闭环户外导航。"
+        },
+        {
+          "id": "2607.10336",
+          "rank": 4,
+          "score": 82,
+          "reason_zh": "语义MoE解耦交互/几何/意图三路规划，实现端到端自驾决策",
+          "tags": [
+            "VLA",
+            "自动驾驶"
+          ],
+          "title": "PrismAD: Decoupled Planning via Semantic Mixture-of-Planners for End-to-End Autonomous Driving",
+          "authors": [
+            "Kang Ding",
+            "Zhigui Lin",
+            "Hongsong Wang",
+            "Jie Gui",
+            "Qi Liu",
+            "Zhe Wang",
+            "Luqi Tang",
+            "Lei He"
+          ],
+          "abstract": "This letter presents PrismAD, a decoupled end-to-end autonomous driving framework based on a Semantic Mixture-of-Planners. Existing planners usually aggregate heterogeneous scene tokens into a coupled representation space, forcing a single planning branch to jointly model agent interaction, road geometry, and driving intention. Such coupling may weaken factor-specific reasoning and obscure the contribution of different planning cues. To address this limitation, PrismAD partitions scene tokens into interaction, geometry, and intent groups, and assigns them to independent planning experts with the same architecture but separate parameters. Each expert learns a specialized motion-planning representation, while a semantics-aware router adaptively aggregates expert predictions with separate routing weights for motion prediction and ego planning. Sparse top-$K$ activation with noisy gating is further introduced to improve routing robustness and reduce unnecessary expert computation. Extensive experiments on the nuScenes open-loop dataset and NeuroNCAP closed-loop benchmark demonstrate that PrismAD exhibits competitive performance. Our code will be released soon.",
+          "abs_url": "https://arxiv.org/abs/2607.10336",
+          "pdf_url": "https://arxiv.org/pdf/2607.10336v1",
+          "html_url": "https://arxiv.org/html/2607.10336v1",
+          "figures": [
+            "https://arxiv.org/html/2607.10336v1/images/intro_fixed.png",
+            "https://arxiv.org/html/2607.10336v1/images/diffusiondrive_tsne.png",
+            "https://arxiv.org/html/2607.10336v1/images/moe_tsne_by_expert.png",
+            "https://arxiv.org/html/2607.10336v1/images/overview.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": "8 pages,5 figures",
+          "submitted": "2026-07-11T14:36:40Z",
+          "updated": "2026-07-11T14:36:40Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV",
+            "cs.RO"
+          ],
+          "title_zh": "PrismAD：通过规划器语义混合实现端到端自动驾驶的解耦规划",
+          "abstract_zh": "这封信介绍了 PrismAD，一个基于语义混合规划器的解耦端到端自动驾驶框架。现有的规划器通常将异构场景标记聚合到耦合的表示空间中，迫使单个规划分支对代理交互、道路几何形状和驾驶意图进行联合建模。这种耦合可能会削弱特定因素的推理并掩盖不同规划线索的贡献。为了解决这一限制，PrismAD 将场景标记划分为交互、几何和意图组，并将它们分配给具有相同架构但不同参数的独立规划专家。每个专家都学习专门的运动规划表示，而语义感知路由器自适应地将专家预测与运动预测和自我规划的单独路由权重聚合。进一步引入带有噪声门控的稀疏 top-$K$ 激活，以提高路由鲁棒性并减少不必要的专家计算。 nuScenes 开环数据集和 NeuroNCAP 闭环基准的大量实验表明，PrismAD 表现出有竞争力的性能。我们的代码很快就会发布。"
+        }
+      ]
+    },
+    {
+      "id": "vlm",
+      "name": "VLM / LLM",
+      "papers": [
+        {
+          "id": "2607.10640",
+          "rank": 1,
+          "score": 82,
+          "reason_zh": "谱热流保守视觉Token压缩，ICML 2026，VLM推理效率新范式",
+          "tags": [
+            "VLM",
+            "开源",
+            "顶会"
+          ],
+          "title": "Spectral Heat Flow for Conservative Token Condensation in Vision-Language Models",
+          "authors": [
+            "Zhaoyang Li",
+            "Yanjun Li",
+            "Wangkai Li",
+            "Yujia Chen",
+            "Tianzhu Zhang"
+          ],
+          "abstract": "Vision-Language Models (VLMs) are costly at inference time because they must process long sequences of visual tokens. Existing token pruning methods often degrade under high compression by blindly discarding information, breaking spatial structure or collapsing diversity. We propose SpecFlow, a training-free framework that shifts the paradigm from destructive pruning to conservative condensation, strictly enforcing spatial coverage and statistical conservation to ensure stability. Treating visual tokens as nodes in a $k$NN graph, SpecFlow (i) computes a stable importance field via spectral heat flow to preserve structural coherence, (ii) allocates budgets via adaptive spatial partitioning to guarantee coverage, and (iii) aggregates discarded information into coreset sinks to maintain statistical conservation. The method is plug-and-play, requires no fine-tuning, and is compatible with FlashAttention. Experiments confirm that our SpecFlow outperforms SOTA methods across tasks, VLM architectures, and pruning ratios. Notably, LLaVA-1.5 with SpecFlow retains 95.6\\% of original performance despite pruning 88.9\\% of visual tokens, offering an exceptional efficiency-accuracy balance. Code is available at https://github.com/Lzy-dot/SpecFlow",
+          "abs_url": "https://arxiv.org/abs/2607.10640",
+          "pdf_url": "https://arxiv.org/pdf/2607.10640v1",
+          "html_url": "https://arxiv.org/html/2607.10640v1",
+          "figures": [
+            "https://arxiv.org/html/2607.10640v1/x1.png",
+            "https://arxiv.org/html/2607.10640v1/x2.png",
+            "https://arxiv.org/html/2607.10640v1/x3.png",
+            "https://arxiv.org/html/2607.10640v1/x4.png"
+          ],
+          "code_url": "https://github.com/Lzy-dot/SpecFlow",
+          "project_url": null,
+          "code_links": [
+            "https://github.com/Lzy-dot/SpecFlow"
+          ],
+          "project_links": [],
+          "has_code": true,
+          "has_project": false,
+          "venue": null,
+          "comments": "Accepted by ICML 2026",
+          "submitted": "2026-07-12T08:12:45Z",
+          "updated": "2026-07-12T08:12:45Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "视觉语言模型中保守令牌凝聚的光谱热流",
+          "abstract_zh": "视觉语言模型 (VLM) 在推理时的成本很高，因为它们必须处理长序列的视觉标记。现有的令牌修剪方法通常会在高压缩下因盲目丢弃信息、破坏空间结构或破坏多样性而退化。我们提出了 SpecFlow，一个免训练的框架，将范式从破坏性修剪转变为保守压缩，严格执行空间覆盖和统计保存以确保稳定性。将视觉标记视为 $k$NN 图中的节点，SpecFlow (i) 通过光谱热流计算稳定的重要性字段以保持结构一致性，(ii) 通过自适应空间分区分配预算以保证覆盖范围，以及 (iii) 将丢弃的信息聚合到核心集接收器中以保持统计守恒。该方法即插即用，无需微调，并且兼容FlashAttention。实验证实，我们的 SpecFlow 在任务、VLM 架构和剪枝率方面优于 SOTA 方法。值得注意的是，尽管修剪了 88.9% 的视觉标记，但带有 SpecFlow 的 LLaVA-1.5 仍保留了 95.6% 的原始性能，提供了卓越的效率与准确性平衡。代码可在 https://github.com/Lzy-dot/SpecFlow 获取"
+        }
+      ]
+    }
+  ]
+}
