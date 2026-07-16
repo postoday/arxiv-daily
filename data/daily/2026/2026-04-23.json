@@ -1209,12 +1209,7 @@
       "abstract_zh": "模拟器评估的成本是基于模拟的推理（SBI）的关键实际瓶颈。在具有共享全局参数和可交换站点级参数和观测值的分层设置中，可以利用这种结构来提高模拟效率。现有的分层 SBI 方法对后验进行因式分解，但仍然在每个训练样本的多个站点上进行模拟；相反，我们探索似然分解（LF）来从单点模拟中进行训练。在 LF 采样中，我们学习模拟器的每个站点神经代理，然后组装合成的多站点观察结果以摊销完整分层后验的推理。在此基础上，我们提出了后验估计的标记化流匹配（TFMPE），这是一种标记化流匹配方法，通过似然分解支持函数值观察。为了实现系统评估，我们引入了分层 SBI 基准。我们在此基准以及现实传染病和计算流体动力学模型上验证 TFMPE，找到校准良好的后验，同时降低计算成本。",
       "title_zh": "用于基于分层模拟的推理的标记化流匹配",
       "html_url": "https://arxiv.org/html/2604.20723v1",
-      "figures": [
-        "https://arxiv.org/html/2604.20723v1/assets/lc2st.png",
-        "https://arxiv.org/html/2604.20723v1/assets/seir_comparative_pairplot.png",
-        "https://arxiv.org/html/2604.20723v1/assets/seir_comparative_seir_ppc.png",
-        "https://arxiv.org/html/2604.20723v1/assets/tarp.png"
-      ]
+      "figures": []
     },
     {
       "arxiv_id": "2604.20721",
