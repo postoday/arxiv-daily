@@ -1,0 +1,481 @@
+{
+  "date": "2026-07-16",
+  "total_candidates": 113,
+  "categories": [
+    {
+      "id": "worldmodel",
+      "name": "世界模型&视频/场景生成模型",
+      "papers": [
+        {
+          "id": "2607.14005",
+          "rank": 1,
+          "score": 94,
+          "reason_zh": "多视角多模态驾驶世界模型，支持交互式物体操控与分钟级连续推演",
+          "tags": [
+            "世界模型",
+            "自动驾驶",
+            "生成模型"
+          ],
+          "title": "M$^\\text{4}$World: A Multi-view Multimodal Driving World Model for Interactive Object Manipulation and Minute-long Streaming",
+          "authors": [
+            "Ke Cheng",
+            "Hanqiao Ye",
+            "Lei Shi",
+            "Yahui Liu",
+            "Yunhan Shen"
+          ],
+          "abstract": "Driving-world generation has emerged as a core capability for scalable autonomous-driving simulation, yet existing methods remain limited in object-level controllability and long-horizon stability. We present M$^\\text{4}$World, a Multi-view and Multimodal generative driving world model that synthesizes future surround-view video streams and synchronized LiDAR scans while supporting interactive object Manipulation and stable Minute-long streaming. Fine-grained object manipulation is realized through a flexible conditioning interface that supports explicit control over both the spatial layout and visual appearance of individual objects. Stable minute-long streaming, on the other hand, is achieved through a multi-stage training framework that enables online causal generation in only four denoising steps while maintaining coherent world dynamics throughout extended rollouts. Building on these components, we introduce an efficient few-clip post-training as well as a suite of visual reference-conditioned generation models, preserving general generation ability while allowing rare-case customization for long-tail controllability. To assess controllability beyond realism, we further introduce an automated VLM-based judging pipeline that evaluates scene-level condition adherence, view-wise object controllability, and cross-view object consistency. Comprehensive experiments show that M$^\\text{4}$World consistently delivers high generation quality, precise controllability, and stable minute-long streaming. Together with downstream long-tail augmentation and scene editing, these results demonstrate the potential of M$^\\text{4}$World for controllable, scalable driving simulation.",
+          "abs_url": "https://arxiv.org/abs/2607.14005",
+          "pdf_url": "https://arxiv.org/pdf/2607.14005v1",
+          "html_url": "https://arxiv.org/html/2607.14005v1",
+          "figures": [
+            "https://arxiv.org/html/2607.14005v1/x1.png",
+            "https://arxiv.org/html/2607.14005v1/x2.png",
+            "https://arxiv.org/html/2607.14005v1/x3.png",
+            "https://arxiv.org/html/2607.14005v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": "24 pages, 13 figures",
+          "submitted": "2026-07-15T16:36:33Z",
+          "updated": "2026-07-15T16:36:33Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV",
+            "cs.RO"
+          ],
+          "title_zh": "M$^\\text{4}$World：用于交互式对象操作和一分钟流媒体的多视图多模态驾驶世界模型",
+          "abstract_zh": "驾驶世界生成已成为可扩展自动驾驶模拟的核心功能，但现有方法在对象级可控性和长期稳定性方面仍然有限。我们提出了 M$^\\text{4}$World，一种多视图和多模式生成驾驶世界模型，它合成未来的环视视频流和同步 LiDAR 扫描，同时支持交互式对象操作和稳定的一分钟长流。细粒度的对象操作是通过灵活的条件接口实现的，该接口支持对单个对象的空间布局和视觉外观的显式控制。另一方面，稳定的一分钟长的流媒体是通过多阶段训练框架实现的，该框架只需四个去噪步骤即可实现在线因果生成，同时在整个扩展过程中保持连贯的世界动态。在这些组件的基础上，我们引入了高效的少剪辑后训练以及一套视觉参考条件生成模型，保留了一般生成能力，同时允许对长尾可控性进行罕见情况的定制。为了评估超越现实的可控性，我们进一步引入了基于 VLM 的自动化判断管道，用于评估场景级条件遵守情况、视图对象可控性和跨视图对象一致性。综合实验表明，M$^\\text{4}$World 始终如一地提供高生成质量、精确的可控性和稳定的一分钟长的流媒体。与下游长尾增强和场景编辑一起，这些结果证明了 M$^\\text{4}$World 在可控、可扩展的驾驶模拟方面的潜力。"
+        },
+        {
+          "id": "2607.14088",
+          "rank": 2,
+          "score": 90,
+          "reason_zh": "用视频基础模型表征替代3D-VAE潜空间，开创新一代视频生成编码范式",
+          "tags": [
+            "生成模型",
+            "开源"
+          ],
+          "title": "VideoRAE: Taming Video Foundation Models for Generative Modeling via Representation Autoencoders",
+          "authors": [
+            "Zhihao Xie",
+            "Junfeng Wu",
+            "Xinting Hu",
+            "Junchao Huang",
+            "Li Jiang"
+          ],
+          "abstract": "Video generative models commonly rely on latent spaces learned by 3D Variational Autoencoders (3D-VAEs). However, conventional 3D-VAEs are mainly optimized for pixel-level reconstruction, which can limit the semantic and spatio-temporal structure captured by their latents. Meanwhile, Video Foundation Models (VFMs) such as V-JEPA 2 and VideoMAEv2 show strong video understanding capabilities, yet whether their frozen representations can be transformed into compact, reconstruction-capable, and generation-friendly video latents remains largely unexplored. We answer this question with VideoRAE, a representation autoencoder that leverages multi-scale hierarchical features from a frozen video foundation encoder and compresses them with a lightweight 1D self-attention projector. VideoRAE supports both continuous latents for Diffusion Transformers and discrete tokens for autoregressive models via multi-codebook high-dimensional quantization. During decoding, a local-and-global representation alignment objective with the frozen VFM teacher improves semantic preservation and enables training without KL regularization. Experiments show that VideoRAE achieves strong reconstruction in both continuous and discrete regimes. On UCF-101, it obtains state-of-the-art class-to-video gFVDs of 40 and 93 with AR and DiT generators, respectively, while converging approximately 5x faster than competing autoencoder baselines. In a controlled 2B-scale text-to-video study, replacing LTX-VAE with VideoRAE leads to faster convergence under comparable settings. These results validate frozen VFM representations as versatile and generation-friendly video latents. The model and code will be released on https://zhxie0117.github.io/VideoRAE.",
+          "abs_url": "https://arxiv.org/abs/2607.14088",
+          "pdf_url": "https://arxiv.org/pdf/2607.14088v1",
+          "html_url": "https://arxiv.org/html/2607.14088v1",
+          "figures": [
+            "https://arxiv.org/html/2607.14088v1/x1.png",
+            "https://arxiv.org/html/2607.14088v1/x2.png",
+            "https://arxiv.org/html/2607.14088v1/vis2.png",
+            "https://arxiv.org/html/2607.14088v1/dvis.png"
+          ],
+          "code_url": null,
+          "project_url": "https://zhxie0117.github.io/VideoRAE",
+          "code_links": [],
+          "project_links": [
+            "https://zhxie0117.github.io/VideoRAE"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": null,
+          "comments": "Home page: https://zhxie0117.github.io/VideoRAE",
+          "submitted": "2026-07-15T17:59:23Z",
+          "updated": "2026-07-15T17:59:23Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "VideoRAE：通过表示自动编码器驯服视频基础模型以进行生成建模",
+          "abstract_zh": "视频生成模型通常依赖于 3D 变分自动编码器 (3D-VAE) 学习的潜在空间。然而，传统的 3D-VAE 主要针对像素级重建进行优化，这会限制其潜在特征捕获的语义和时空结构。与此同时，V-JEPA 2 和 VideoMAEv2 等视频基础模型 (VFM) 显示出强大的视频理解能力，但它们的冻结表示是否可以转换为紧凑、可重建且易于生成的视频潜在特征仍然很大程度上尚未被探索。我们用 VideoRAE 来回答这个问题，VideoRAE 是一种表示自动编码器，它利用冻结视频基础编码器的多尺度分层特征，并使用轻量级一维自注意力投影仪对其进行压缩。 VideoRAE 通过多码本高维量化支持扩散变压器的连续潜伏和自回归模型的离散标记。在解码过程中，与冻结的 VFM 教师的局部和全局表示对齐目标改善了语义保留，并且无需 KL 正则化即可进行训练。实验表明，VideoRAE 在连续和离散状态下都实现了强大的重建。在 UCF-101 上，它通过 AR 和 DiT 生成器分别获得了最先进的类到视频 gFVD 为 40 和 93，同时收敛速度比竞争自动编码器基线快约 5 倍。在受控的 2B 规模文本到视频研究中，用 VideoRAE 替换 LTX-VAE 可以在可比较的设置下实现更快的收敛。这些结果验证了冻结的 VFM 表示是多功能且易于生成的视频潜伏。模型和代码将在https://zhxie0117.github.io/VideoRAE上发布。"
+        },
+        {
+          "id": "2607.13410",
+          "rank": 3,
+          "score": 85,
+          "reason_zh": "解耦自车动力学与世界模型，实现零样本跨底盘适配的驾驶世界模型",
+          "tags": [
+            "世界模型",
+            "自动驾驶",
+            "强化学习"
+          ],
+          "title": "Ego-Dynamics-Augmented World Model for Autonomous Driving with Zero-Shot Cross-Chassis Adaptation",
+          "authors": [
+            "Zhidong Wang",
+            "Jingsong Liang",
+            "Zirui Li",
+            "Zhan Chen",
+            "Han Yu"
+          ],
+          "abstract": "World model (WM)-based reinforcement learning enables sample-efficient end-to-end autonomous driving learning by imagining long-horizon trajectories in latent space. However, most driving WMs operate on bird's-eye-view (BEV) representations that are inherently egocentric: the transition between consecutive frames entangles the ego vehicle's own motion with scene dynamics. As a result, the WM devotes significant capacity to recovering ego-motion from warped observations, at the cost of scene modeling fidelity and imagination accuracy. This work proposes DynaDreamer, a dynamics-augmented Dreamer-style reinforcement learning method to address this problem by augmenting the WM with an explicit ego-dynamics prior. A physics-informed ego-dynamics encoder-decoder extracts the ego-state history into a compact and identifiable context, which modulates a causal Transformer WM to condition both its prior and posterior latents. During imagination, the ego-dynamics predictor propagates this context forward to keep the ego-dynamics prior synchronized with the rollout. An information-theoretic analysis shows that conditioning on this context reduces both the predictive entropy of the observation transition and the prior--posterior Kullback--Leibler divergence, confining the WM's modeling burden to the scene dynamics beyond ego-motion. An additional benefit is zero-shot cross-chassis adaptation: the ego-dynamics context depends on identifiable chassis parameters, so that a vehicle with previously unseen dynamic characteristics can adapt the WM to the new chassis without retraining. Experiments demonstrate that DynaDreamer improves task success rates over the strongest baseline by 28% and 61% in urban and highway driving scenarios, respectively, with the advantage rising to 73% when extrapolating to unseen chassis.",
+          "abs_url": "https://arxiv.org/abs/2607.13410",
+          "pdf_url": "https://arxiv.org/pdf/2607.13410v1",
+          "html_url": "https://arxiv.org/html/2607.13410v1",
+          "figures": [
+            "https://arxiv.org/html/2607.13410v1/x1.png",
+            "https://arxiv.org/html/2607.13410v1/x2.png",
+            "https://arxiv.org/html/2607.13410v1/x3.png",
+            "https://arxiv.org/html/2607.13410v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": "13 pages, 13 figures",
+          "submitted": "2026-07-15T03:20:53Z",
+          "updated": "2026-07-15T03:20:53Z",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.RO"
+          ],
+          "title_zh": "具有零镜头跨底盘适应的自动驾驶自我动力学增强世界模型",
+          "abstract_zh": "基于世界模型 (WM) 的强化学习通过想象潜在空间中的长视野轨迹，实现样本高效的端到端自动驾驶学习。然而，大多数驾驶 WM 都是在鸟瞰图 (BEV) 表示上运行，这些表示本质上是以自我为中心的：连续帧之间的过渡将自我车辆自身的运动与场景动态纠缠在一起。因此，WM 投入了大量的能力来从扭曲的观察中恢复自我运动，但代价是场景建模的保真度和想象的准确性。这项工作提出了 DynaDreamer，这是一种动力学增强的 Dreamer 式强化学习方法，通过使用明确的自我动力学先验增强 WM 来解决这个问题。一个基于物理的自我动力学编码器-解码器将自我状态历史提取到一个紧凑且可识别的上下文中，该上下文调节因果 Transformer WM 以调节其先验和后验潜伏。在想象过程中，自我动态预测器会向前传播此上下文，以保持自我动态与推出同步。信息论分析表明，对这种背景的调节减少了观察转变的预测熵和先验-后验 Kullback-Leibler 散度，将 WM 的建模负担限制在自我运动之外的场景动态。另一个好处是零射击跨底盘适应：自我动力学环境取决于可识别的底盘参数，因此具有以前未见过的动态特性的车辆可以使 WM 适应新的底盘，而无需重新训练。实验表明，在城市和高速公路驾驶场景中，DynaDreamer 在最强基线上的任务成功率分别提高了 28% 和 61%，当外推到看不见的底盘时，优势上升到 73%。"
+        },
+        {
+          "id": "2607.13539",
+          "rank": 6,
+          "score": 75,
+          "reason_zh": "VLM驱动的渐进式3D室内场景推理生成，支持交互式编辑与重规划",
+          "tags": [
+            "生成模型",
+            "VLM"
+          ],
+          "title": "ThinkBLOX: 3D Indoor Scene Generation with Progressive Reasoning",
+          "authors": [
+            "Yuan Xiao",
+            "Can Wang",
+            "Xiangyu Kong",
+            "Jing Liao"
+          ],
+          "abstract": "While traditional graphics methods often synthesize 3D indoor scenes autoregressively or hierarchically, recent vision-language model (VLM)-based generators predominantly adopt a one-shot paradigm where the full layout is planned at once. This one-shot approach often requires global re-optimization or complete reconstruction during interactive editing (e.g., inserting or moving objects) and can lead to physically or semantically poorly organized arrangements. To address these challenges, we propose ThinkBLOX, a VLM-based progressive reasoning framework that iteratively designs and refines 3D scenes. ThinkBLOX treats layout generation as a state-conditioned, step-by-step reasoningand-action process. To power this, we construct the ThinkBLOX-Data-200K dataset, containing 224,757 procedural placement pairs annotated with multi-view scene context, explicit Chain-of-Thought (CoT) rationales, and structured JSON layouts. Through supervised fine-tuning (SFT) on this dataset, the VLM learns to bridge the reasoning-action gap under incremental updates. Furthermore, recognizing that scene synthesis is inherently a multisolution task where SFT suffers from reward conflict, we introduce Tier-Decoupled GDPO. This reinforcement learning scheme organizes heterogeneous rewards into distinct tiers, stabilizing policy optimization across physical validity, semantic plausibility, and reasoning-action consistency. Extensive experiments show that ThinkBLOX significantly outperforms recent one-shot and iterative baselines in physical plausibility, semantic alignment, and interactive editability. Additionally, we show that it supports diverse applications, including both global and local generation and rearrangement of 3D scenes.",
+          "abs_url": "https://arxiv.org/abs/2607.13539",
+          "pdf_url": "https://arxiv.org/pdf/2607.13539v1",
+          "html_url": "https://arxiv.org/html/2607.13539v1",
+          "figures": [
+            "https://arxiv.org/html/2607.13539v1/x1.png",
+            "https://arxiv.org/html/2607.13539v1/x2.png",
+            "https://arxiv.org/html/2607.13539v1/x3.png",
+            "https://arxiv.org/html/2607.13539v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": "20 pages",
+          "submitted": "2026-07-15T07:42:47Z",
+          "updated": "2026-07-15T07:42:47Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV",
+            "cs.GR"
+          ],
+          "title_zh": "ThinkBLOX：使用渐进式推理生成 3D 室内场景",
+          "abstract_zh": "虽然传统的图形方法通常以自回归或分层方式合成 3D 室内场景，但最近基于视觉语言模型 (VLM) 的生成器主要采用一次性范例，即一次规划完整布局。这种一次性方法通常需要在交互式编辑（例如，插入或移动对象）期间进行全局重新优化或完全重建，并且可能导致物理或语义上组织不良的安排。为了应对这些挑战，我们提出了 ThinkBLOX，这是一种基于 VLM 的渐进推理框架，可以迭代地设计和细化 3D 场景。 ThinkBLOX 将布局生成视为一个以状态为条件的、逐步推理和操作的过程。为此，我们构建了 ThinkBLOX-Data-200K 数据集，其中包含 224,757 个程序放置对，并用多视图场景上下文、明确的思想链 (CoT) 基本原理和结构化 JSON 布局进行注释。通过对此数据集进行监督微调 (SFT)，VLM 学会在增量更新下弥合推理与动作之间的差距。此外，认识到场景合成本质上是一个多解决方案任务，SFT 会遭受奖励冲突，因此我们引入了分层解耦 GDPO。这种强化学习方案将异构奖励组织成不同的层，从而在物理有效性、语义合理性和推理-行动一致性方面稳定策略优化。大量实验表明，ThinkBLOX 在物理合理性、语义对齐和交互式可编辑性方面显着优于最近的一次性和迭代基线。此外，我们还表明它支持多种应用，包括全局和本地生成以及 3D 场景的重新排列。"
+        }
+      ]
+    },
+    {
+      "id": "reconstruction",
+      "name": "3D/4D 重建与生成",
+      "papers": [
+        {
+          "id": "2607.13563",
+          "rank": 2,
+          "score": 85,
+          "reason_zh": "扩散模型原生生成三角网格，八叉树顶点+时空插值拓扑解耦生成",
+          "tags": [
+            "3D重建",
+            "生成模型"
+          ],
+          "title": "Nexus: Native Mesh Generation with Diffusion",
+          "authors": [
+            "Hanxiao Wang",
+            "Ying-Tian Liu",
+            "Yuan-Chen Guo",
+            "Qi-Yuan Feng",
+            "Zi-Xin Zou"
+          ],
+          "abstract": "Generating high-quality triangle meshes is essential for film, gaming, and interactive 3D applications. Mainstream methods rely on mesh serialization and autoregressive processes, which stuggles in effective inference and is sensitive to error accumulation. In this paper, we present Nexus, a diffusion method that achieves holistic mesh generation via decoupled vertex and topology generation. First, we view mesh vertices as sparse voxels organized as an octree and adopt a diffusion model to generate the vertices in a coarse-to-fine manner. Second, for topology modeling, we propose Spacetime Interval, as an extension of Spacetime Distance to encode arbitrary edge and face topology into continuous per-vertex embeddings. It allows for a global and efficient recovery of complex topology. We then employ a diffusion model to generate the continuous embeddings on the generated vertices. Extensive experiments on the Objaverse and Toys4K datasets and in-the-wild images demonstrate that our method outperforms state-of-the-art autoregressive and two-stage baselines, effectively circumventing the inherent limitations of sequential mesh modeling. A blind user study from 3D practitioners confirms strong perceptual preference for our results.",
+          "abs_url": "https://arxiv.org/abs/2607.13563",
+          "pdf_url": "https://arxiv.org/pdf/2607.13563v1",
+          "html_url": "https://arxiv.org/html/2607.13563v1",
+          "figures": [
+            "https://arxiv.org/html/2607.13563v1/figures/teaser7.png",
+            "https://arxiv.org/html/2607.13563v1/x1.png",
+            "https://arxiv.org/html/2607.13563v1/x2.png",
+            "https://arxiv.org/html/2607.13563v1/x3.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": null,
+          "submitted": "2026-07-15T08:04:46Z",
+          "updated": "2026-07-15T08:04:46Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "Nexus：带有扩散的原生网格生成",
+          "abstract_zh": "生成高质量的三角形网格对于电影、游戏和交互式 3D 应用程序至关重要。主流方法依赖于网格序列化和自回归过程，这会阻碍有效的推理，并且对错误累积敏感。在本文中，我们提出了 Nexus，这是一种通过解耦顶点和拓扑生成实现整体网格生成的扩散方法。首先，我们将网格顶点视为组织为八叉树的稀疏体素，并采用扩散模型以从粗到细的方式生成顶点。其次，对于拓扑建模，我们提出时空间隔，作为时空距离的扩展，将任意边和面拓扑编码为连续的每顶点嵌入。它允许对复杂拓扑进行全局且高效的恢复。然后，我们采用扩散模型在生成的顶点上生成连续嵌入。对 Objaverse 和 Toys4K 数据集以及野外图像进行的大量实验表明，我们的方法优于最先进的自回归和两阶段基线，有效地规避了顺序网格建模的固有局限性。 3D 从业者的一项盲用户研究证实了对我们结果的强烈感知偏好。"
+        },
+        {
+          "id": "2607.13586",
+          "rank": 4,
+          "score": 82,
+          "reason_zh": "自动为3D资产注入统一物理语义，实现仿真就绪的刚体资产规模化构建",
+          "tags": [
+            "3D重建",
+            "具身智能",
+            "开源"
+          ],
+          "title": "UniPhysGen: Unified Physical Grounding for Simulation-Ready 3D Assets",
+          "authors": [
+            "Xian Li",
+            "Rong Wei",
+            "Lujie Yang",
+            "Haolin Huang",
+            "Junyuan Fang"
+          ],
+          "abstract": "Physically grounded 3D assets are increasingly important for embodied AI and robotic simulation. However, most existing 3D assets lack unified physical semantics, including articulation semantics and intrinsic physical properties, required for realistic interaction. Current approaches either treat these semantics independently or rely on canonicalized object structures, limiting robustness across heterogeneous 3D assets. We present UniPhys, a scalable framework for automatically transforming raw 3D assets into simulation-ready assets with unified physical semantics. Based on UniPhys, we construct UniPhys-40K, a large-scale physically grounded dataset, together with UniPhys-Bench, a carefully verified benchmark for unified physical grounding evaluation. We further introduce UniPhysGen, a unified physical grounding model that jointly reasons over articulation semantics and intrinsic physical properties. UniPhysGen incorporates geometry-robust articulation grounding to mitigate geometric shortcut bias under heterogeneous part decompositions. Extensive experiments demonstrate state-of-the-art performance across articulation grounding and intrinsic physical property estimation tasks, while the resulting assets can be directly deployed in robotic simulation environments for realistic physical interaction. Our code and dataset will be available at https://github.com/breezexian/UniPhysGen.",
+          "abs_url": "https://arxiv.org/abs/2607.13586",
+          "pdf_url": "https://arxiv.org/pdf/2607.13586v1",
+          "html_url": "https://arxiv.org/html/2607.13586v1",
+          "figures": [
+            "https://arxiv.org/html/2607.13586v1/x1.png",
+            "https://arxiv.org/html/2607.13586v1/x2.png",
+            "https://arxiv.org/html/2607.13586v1/x3.png",
+            "https://arxiv.org/html/2607.13586v1/x4.png"
+          ],
+          "code_url": "https://github.com/breezexian/UniPhysGen",
+          "project_url": null,
+          "code_links": [
+            "https://github.com/breezexian/UniPhysGen"
+          ],
+          "project_links": [],
+          "has_code": true,
+          "has_project": false,
+          "venue": null,
+          "comments": "39 pages, 12 figures",
+          "submitted": "2026-07-15T08:27:07Z",
+          "updated": "2026-07-15T08:27:07Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "UniPhysGen：模拟就绪 3D 资产的统一物理接地",
+          "abstract_zh": "物理接地的 3D 资产对于实体 AI 和机器人模拟越来越重要。然而，大多数现有的 3D 资产缺乏真实交互所需的统一物理语义，包括清晰度语义和内在物理属性。当前的方法要么独立处理这些语义，要么依赖规范化的对象结构，从而限制了异构 3D 资产的稳健性。我们推出了 UniPhys，这是一个可扩展的框架，用于自动将原始 3D 资产转换为具有统一物理语义的模拟就绪资产。基于UniPhys，我们构建了大规模物理接地数据集UniPhys-40K，以及经过仔细验证的统一物理接地评估基准UniPhys-Bench。我们进一步介绍了 UniPhysGen，这是一个统一的物理基础模型，可以对发音语义和内在物理属性进行联合推理。 UniPhysGen 结合了几何稳健的关节基础，以减轻异构零件分解下的几何捷径偏差。大量的实验证明了在关节接地和内在物理属性估计任务方面的最先进的性能，而所得的资产可以直接部署在机器人模拟环境中以实现真实的物理交互。我们的代码和数据集将在 https://github.com/breezexian/UniPhysGen 上提供。"
+        },
+        {
+          "id": "2607.13318",
+          "rank": 11,
+          "score": 66,
+          "reason_zh": "将专家流程推理引入程序化材质生成，超越图结构直接合成",
+          "tags": [
+            "生成模型",
+            "顶会"
+          ],
+          "title": "Reflecting Process Expertise in Procedural Material Generation",
+          "authors": [
+            "Kunal Gupta",
+            "Gaurav Joshi",
+            "Yen-Ru Chen",
+            "Seemandhar Jain",
+            "Ishit Mehta"
+          ],
+          "abstract": "Procedural material creation underpins applications in digital content creation, visual effects, and 3D asset design. Achieving high-quality results requires more than reproducing node graphs -- it demands understanding the process by which experts construct materials. We formulate procedural material generation as retrieval-time process reasoning over expert demonstrations, elevating process to a first-class representation beyond graph-only synthesis. Concretely, we represent expert workflows as process traces: textual records of construction steps, parameters, and design intent. To instantiate this idea, we use a pretrained LLM-based ProcessSynthesizer to synthesize a process trace aligned with a user's intent and a pretrained LLM-based Compiler to ground the process trace into an executable Blender material graph. Because procedural expertise is most naturally conveyed through demonstrations, we leverage tutorial videos as a source of process knowledge and extract textual, LLM-compatible traces using automated video analysis tools. In an expert study with five Blender artists (avg. 7.5 years of experience), materials generated by reflecting expert demonstrations were found to produce workflows requiring fewer edits, and more closely match professional design strategies than methods operating solely on static artifacts. A user study with 150 participants further shows that our approach achieves superior generation and editing performance compared to prior procedural systems. All code, models, and data will be available at https://materialapprentice.github.io",
+          "abs_url": "https://arxiv.org/abs/2607.13318",
+          "pdf_url": "https://arxiv.org/pdf/2607.13318v1",
+          "html_url": "https://arxiv.org/html/2607.13318v1",
+          "figures": [
+            "https://arxiv.org/html/2607.13318v1/x1.png",
+            "https://arxiv.org/html/2607.13318v1/x2.png",
+            "https://arxiv.org/html/2607.13318v1/assets/text_based_gen.jpg",
+            "https://arxiv.org/html/2607.13318v1/assets/img_based_gen.jpg"
+          ],
+          "code_url": null,
+          "project_url": "https://materialapprentice.github.io",
+          "code_links": [],
+          "project_links": [
+            "https://materialapprentice.github.io"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": "Accepted to ECCV 2026. Project page: https://materialapprentice.github.io",
+          "comments": "Accepted to ECCV 2026. Project page: https://materialapprentice.github.io",
+          "submitted": "2026-07-14T22:59:32Z",
+          "updated": "2026-07-14T22:59:32Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "在程序材料生成中体现流程专业知识",
+          "abstract_zh": "程序材质创建支撑着数字内容创建、视觉效果和 3D 资产设计中的应用。获得高质量的结果需要的不仅仅是复制节点图——它还需要了解专家构建材料的过程。我们将程序材料生成制定为对专家演示的检索时过程推理，将过程提升为超越仅图形合成的一流表示。具体来说，我们将专家工作流程表示为过程跟踪：构建步骤、参数和设计意图的文本记录。为了实例化这个想法，我们使用预训练的基于 LLM 的 ProcessSynthesizer 来合成与用户意图一致的流程跟踪，并使用预训练的基于 LLM 的编译器将流程跟踪转化为可执行的 Blender 材质图。由于程序专业知识最自然地通过演示来传达，因此我们利用教程视频作为流程知识的来源，并使用自动视频分析工具提取文本、LLM 兼容的跟踪。在对五位 Blender 艺术家（平均经验 7.5 年）进行的专家研究中，发现通过反映专家演示生成的材料可以产生需要更少编辑的工作流程，并且比仅在静态工件上操作的方法更符合专业设计策略。一项涉及 150 名参与者的用户研究进一步表明，与之前的程序系统相比，我们的方法实现了卓越的生成和编辑性能。所有代码、模型和数据均可在 https://materialapprentice.github.io 上获取"
+        }
+      ]
+    },
+    {
+      "id": "vla",
+      "name": "自动驾驶与机器人",
+      "papers": [
+        {
+          "id": "2607.13960",
+          "rank": 1,
+          "score": 92,
+          "reason_zh": "以行动为中心的世界动作模型，训练用未来视频监督但推理仅输出动作",
+          "tags": [
+            "VLA",
+            "具身智能",
+            "世界模型"
+          ],
+          "title": "GigaWorld-Policy-0.5: A Faster and Stronger WAM Empowered by AutoResearch",
+          "authors": [
+            "GigaWorld Team",
+            "Angen Ye",
+            "Angyuan Ma",
+            "Boyuan Wang",
+            "Chaojun Ni"
+          ],
+          "abstract": "World Action Models (WAMs) improve robot policy learning by jointly modeling actions and future visual observations, using future scene evolution as dense supervision for physically grounded action generation. However, a common design in existing WAMs is to explicitly generate future videos at inference time, incurring substantial computational overhead and hindering real-time closed-loop deployment. GigaWorld-Policy addresses this issue with an action-centered formulation, where future visual dynamics are used during training while action-only decoding is used at inference time. Building upon this framework, we present GigaWorld-Policy-0.5, an enhanced action-centered WAM designed for more efficient robot control. During pretraining, GigaWorld-Policy-0.5 adopts a mixed Action-Conditioned World Modeling (AC-WM) and WAM training strategy. This strengthens the coupling between visual dynamics and robot actions and improves the transferability of action representations for downstream policy learning. For efficient inference, GigaWorld-Policy-0.5 introduces a Mixture-of-Transformers architecture that separates visual dynamics modeling and action generation into specialized experts, reducing active computation during action-only inference and achieving 85 ms inference latency on a local RTX 4090 setup. In addition, we employ an agent-based AutoResearch pipeline to systematically search training configurations, enabling more efficient identification of optimal experimental setups while reducing the time and manual intervention required for hyperparameter tuning. Experiments and ablations show that GigaWorld-Policy-0.5 preserves the training benefits of future visual dynamics while improving inference efficiency for robot control.",
+          "abs_url": "https://arxiv.org/abs/2607.13960",
+          "pdf_url": "https://arxiv.org/pdf/2607.13960v1",
+          "html_url": "https://arxiv.org/html/2607.13960v1",
+          "figures": [
+            "https://arxiv.org/html/2607.13960v1/x1.png",
+            "https://arxiv.org/html/2607.13960v1/x2.png",
+            "https://arxiv.org/html/2607.13960v1/x3.png",
+            "https://arxiv.org/html/2607.13960v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": "https://open-gigaai.github.io/giga-world-policy/",
+          "code_links": [],
+          "project_links": [
+            "https://open-gigaai.github.io/giga-world-policy/"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": null,
+          "comments": "project page: https://open-gigaai.github.io/giga-world-policy/",
+          "submitted": "2026-07-15T15:46:42Z",
+          "updated": "2026-07-15T15:46:42Z",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.RO"
+          ],
+          "title_zh": "GigaWorld-Policy-0.5：由 AutoResearch 提供支持的更快更强的 WAM",
+          "abstract_zh": "世界动作模型（WAM）通过联合建模动作和未来视觉观察来改进机器人策略学习，使用未来场景演化作为物理基础动作生成的密集监督。然而，现有 WAM 的常见设计是在推理时显式生成未来视频，这会产生大量计算开销并阻碍实时闭环部署。 GigaWorld-Policy 通过以动作为中心的公式解决了这个问题，其中在训练期间使用未来的视觉动态，而在推理时使用仅动作解码。在此框架的基础上，我们推出了 GigaWorld-Policy-0.5，这是一种增强的以动作为中心的 WAM，旨在实现更高效的机器人控制。在预训练过程中，GigaWorld-Policy-0.5采用混合动作条件世界建模（AC-WM）和WAM训练策略。这加强了视觉动力学和机器人动作之间的耦合，并提高了下游策略学习的动作表示的可转移性。为了实现高效推理，GigaWorld-Policy-0.5 引入了 Mixture-of-Transformers 架构，将视觉动态建模和动作生成分离给专门的专家，减少仅动作推理期间的主动计算，并在本地 RTX 4090 设置上实现 85 毫秒的推理延迟。此外，我们采用基于代理的自动研究管道来系统地搜索训练配置，从而能够更有效地识别最佳实验设置，同时减少超参数调整所需的时间和手动干预。实验和消融表明，GigaWorld-Policy-0.5 保留了未来视觉动态的训练优势，同时提高了机器人控制的推理效率。"
+        },
+        {
+          "id": "2607.13429",
+          "rank": 2,
+          "score": 88,
+          "reason_zh": "表征锚定+语言-动作对齐，解决VLA微调的灾难性遗忘与模态错位",
+          "tags": [
+            "VLA",
+            "开源",
+            "具身智能"
+          ],
+          "title": "Generalizable VLA Finetuning via Representation Anchoring and Language-Action Alignment",
+          "authors": [
+            "Dwip Dalal",
+            "Shivansh Patel",
+            "Chahit Jain",
+            "Jeonghwan Kim",
+            "Utkarsh Mishra"
+          ],
+          "abstract": "Finetuning a pretrained vision-language model (VLM) on robot demonstrations via behavior cloning (BC) has become the standard recipe for vision-language-action (VLA) policies. However, BC finetuning progressively overwrites the pretrained representations that support visual and semantic generalization. Co-training on web image-text data, a common remedy, does not prevent this; it applies language and action losses to separate observations, leaving VLAs with language-action misalignment that standard manipulation benchmarks do not expose. We propose Anchor-Align, which augments BC with two objectives: Vision-Language Anchoring distills layer-wise representations from a frozen VLM copy to prevent this drift, while Language-Action Alignment converts each action target into a discrete motion-direction label and jointly trains language and action prediction on the same robot observation. On a physical xArm7 robot, across two widely used VLA architectures, Anchor-Align improves real-robot success on both (28% to 54% and 37% to 60%). At scale in simulation, we demonstrate consistent improvements on OOD perturbations, perceptual robustness, and long-horizon control across LIBERO-PRO, LIBERO-Plus, and CALVIN, respectively, suggesting that preserving pretrained representations and effective action learning are not fundamentally at odds. Project page: anchoralignvla.github.io",
+          "abs_url": "https://arxiv.org/abs/2607.13429",
+          "pdf_url": "https://arxiv.org/pdf/2607.13429v1",
+          "html_url": "https://arxiv.org/html/2607.13429v1",
+          "figures": [
+            "https://arxiv.org/html/2607.13429v1/x1.png",
+            "https://arxiv.org/html/2607.13429v1/x2.png",
+            "https://arxiv.org/html/2607.13429v1/x3.png",
+            "https://arxiv.org/html/2607.13429v1/x4.png"
+          ],
+          "code_url": "https://github.com/dwipddalal/Anchor-Align",
+          "project_url": null,
+          "code_links": [
+            "https://github.com/dwipddalal/Anchor-Align"
+          ],
+          "project_links": [],
+          "has_code": true,
+          "has_project": false,
+          "venue": null,
+          "comments": "Code: https://github.com/dwipddalal/Anchor-Align",
+          "submitted": "2026-07-15T04:13:54Z",
+          "updated": "2026-07-15T04:13:54Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV",
+            "cs.RO"
+          ],
+          "title_zh": "通过表征锚定和语言动作对齐进行泛化 VLA 微调",
+          "abstract_zh": "通过行为克隆 (BC) 微调机器人演示上的预训练视觉语言模型 (VLM) 已成为视觉语言动作 (VLA) 策略的标准配方。然而，BC 微调逐渐覆盖支持视觉和语义泛化的预训练表示。对网络图像文本数据进行联合训练是一种常见的补救措施，但并不能阻止这种情况发生；它将语言和动作损失应用于单独的观察，使 VLA 具有标准操作基准不会暴露的语言与动作不一致的情况。我们提出了 Anchor-Align，它通过两个目标增强 BC：视觉语言锚定从冻结的 VLM 副本中提取分层表示以防止这种漂移，而语言动作对齐将每个动作目标转换为离散的运动方向标签，并在同一机器人观察上联合训练语言和动作预测。在物理 xArm7 机器人上，跨越两种广泛使用的 VLA 架构，Anchor-Align 提高了这两种架构的实际机器人成功率（28% 至 54% 和 37% 至 60%）。在模拟规模上，我们分别证明了 LIBERO-PRO、LIBERO-Plus 和 CALVIN 在 OOD 扰动、感知稳健性和长视野控制方面的一致改进，这表明保留预训练表示和有效的动作学习并不存在根本冲突。项目页面：anchoralignvla.github.io"
+        },
+        {
+          "id": "2607.13926",
+          "rank": 3,
+          "score": 85,
+          "reason_zh": "语义与空间流解耦的VLA架构，专治自动驾驶中语义-物理鸿沟",
+          "tags": [
+            "VLA",
+            "自动驾驶"
+          ],
+          "title": "S-squared-VLA: Decoupling Semantic and Spatial Streams in Vision-Language-Action Models for Autonomous Driving",
+          "authors": [
+            "Jianguo Yu",
+            "Rukang Wang",
+            "Duanfeng Chu",
+            "Chen Wang",
+            "Renju Feng"
+          ],
+          "abstract": "Vision-Language Models (VLMs) have demonstrated remarkable potential for high-level reasoning in autonomous driving, yet they fundamentally struggle to generate precise, low-level control actions. This limitation is rooted in a semantic-physical gap caused by the inherent mismatch between discrete language tokens and continuous trajectory planning. While Vision-Language-Action (VLA) architectures attempt to bridge this gap by unifying perception and control into a single policy, this entanglement creates a new bottleneck. Standard VLAs experience a severe spatial representation collapse, which irreversibly degrades the fine-grained spatial and geometric priors essential for safe, boundary-aware navigation. To address this limitation, we propose the S-squared-VLA, which explicitly decouples the semantic and spatial streams in Vision-Language-Action models. The semantic stream leverages hierarchical bridging to extract multi-scale VLM features for robust intent reasoning. In parallel, an independent spatial stream bypasses the autoregressive language bottleneck, directly preserving uncompressed spatial features from the visual encoder. By integrating auxiliary perception supervision, this stream explicitly equips the model with rich spatial and geometric priors. Finally, a dual-stream planning adapter fuses high-level semantic intent with precise spatial constraints via cascaded attention mechanisms. Evaluations on the NAVSIM closed-loop benchmark show that S-squared-VLA achieves a Predictive Driver Model Score (PDMS) of 87.1, establishing a new state-of-the-art for VLA models under a purely supervised fine-tuning (SFT) setting. By mitigating the spatial representation collapse of traditional VLMs, our framework significantly outperforms baselines, achieving the highest No Collision (NC) rate of 98.4 among all evaluated methods.",
+          "abs_url": "https://arxiv.org/abs/2607.13926",
+          "pdf_url": "https://arxiv.org/pdf/2607.13926v1",
+          "html_url": "https://arxiv.org/html/2607.13926v1",
+          "figures": [
+            "https://arxiv.org/html/2607.13926v1/x1.png",
+            "https://arxiv.org/html/2607.13926v1/x2.png",
+            "https://arxiv.org/html/2607.13926v1/x3.png",
+            "https://arxiv.org/html/2607.13926v1/transfuser-ours.jpg"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": null,
+          "submitted": "2026-07-15T15:07:02Z",
+          "updated": "2026-07-15T15:07:02Z",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.RO"
+          ],
+          "title_zh": "S-squared-VLA：自动驾驶视觉-语言-动作模型中语义流和空间流的解耦",
+          "abstract_zh": "视觉语言模型 (VLM) 在自动驾驶的高级推理方面表现出了巨大的潜力，但它们从根本上难以生成精确的低级控制动作。这种限制的根源在于离散语言标记和连续轨迹规划之间固有的不匹配造成的语义-物理差距。虽然视觉-语言-行动（VLA）架构试图通过将感知和控制统一到单个策略中来弥合这一差距，但这种纠缠造成了新的瓶颈。标准 VLA 经历了严重的空间表示崩溃，这不可逆转地降低了安全、边界感知导航所必需的细粒度空间和几何先验。为了解决这个限制，我们提出了 S-squared-VLA，它明确地解耦了视觉-语言-动作模型中的语义和空间流。语义流利用分层桥接来提取多尺度 VLM 特征，以进行稳健的意图推理。同时，独立的空间流绕过自回归语言瓶颈，直接保留来自视觉编码器的未压缩空间特征。通过集成辅助感知监督，该流明确地为模型配备了丰富的空间和几何先验。最后，双流规划适配器通过级联注意机制将高级语义意图与精确的空间约束融合在一起。 NAVSIM 闭环基准评估表明，S-squared-VLA 的预测驾驶员模型得分 (PDMS) 达到 87.1，为纯监督微调 (SFT) 设置下的 VLA 模型建立了新的最先进水平。通过缓解传统 VLM 的空间表示崩溃，我们的框架显着优于基线，在所有评估方法中实现了最高的无冲突 (NC) 率 98.4。"
+        }
+      ]
+    }
+  ]
+}
