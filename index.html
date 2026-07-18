@@ -16,7 +16,7 @@
           <a class="site-nav-link " href="blogs/">Blogs</a>
         </nav>
       </div>
-      <div class="header-meta">Updated 2026-07-18 14:32 UTC</div>
+      <div class="header-meta">Updated 2026-07-18 14:44 UTC</div>
     </div>
   </header>
 
@@ -46,7 +46,7 @@
       <button class="tab " data-cat="cs.AI">
         AI<span class="tab-code">cs.AI</span>
       </button>
-    <button class="tab tab-selected" data-cat="__selected__">
+    <button class="tab tab-selected has-selected" data-cat="__selected__">
       Selected<span class="tab-code">精选</span>
     </button>
   </div>
@@ -9093,13 +9093,331 @@
 </ul>
 
 <div id="selected-panel" class="hidden">
-  <p class="sel-empty">今日暂无精选内容。</p>
+  <div class="selected-head">
+    <h2>Curated Papers <span>from 114 submissions</span></h2>
+    <span>10 selected</span>
+  </div>
+  <div class="sel-category">
+    <h3 class="sel-cat-name">世界模型&amp;视频/场景生成模型<span class="sel-cat-count">（3）</span></h3>
+    <ul class="sel-paper-list">
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">1</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2607.15065" target="_blank" rel="noopener">DriftWorld: Fast World Modeling through Drifting</a></h2>
+<p class="paper-title-zh">DriftWorld：通过漂移进行快速世界建模</p>          </div>
+        </div>
+        <p class="sel-reason">用漂移过程替代扩散去噪构建动作条件世界模型，推理速度大幅提升</p>
+        <div class="sel-tags"><span class="sel-tag">世界模型</span><span class="sel-tag">生成模型</span><span class="sel-tag">机器人</span><span class="sel-tag">开源</span></div>
+        <div class="paper-meta">
+          <span class="authors">Susie Lu, Haonan Chen, Weirui Ye, Yilun Du</span>
+        </div>
+        <div class="abstract-box">
+          <p class="paper-abstract">预测世界模型使机器人能够通过想象其行为的结果来进行计划，但它们的控制价值取决于快速生成许多部署。这给基于扩散的世界模型带来了瓶颈：多步采样使得每次部署都变得昂贵，限制了推理时的大规模动作搜索。我们介绍 DriftWorld，一个基于漂移生成模型的动作条件世界模型。 DriftWorld 不是在推理时迭代去噪，而是在训练期间学习动作条件漂移，使其能够以 30+ fps 的单次正向传递从当前观察生成未来帧和候选动作序列，这比基于扩散的基线平均快 17 倍。我们在标准的基于视觉的机器人操作基准上评估 DriftWorld，包括 Bridge-V2、RT-1、语言表、Push-T 和 Robomimic。通过生成准确且快速的推出，DriftWorld 实现了最先进的决策性能，并且推理时间比基于扩散的世界模型基线少得多。除了在线控制之外，DriftWorld 还可以用作离线模拟器，用于对现实世界的机器人策略进行排名，基于推出的分数与地面实况的相关性高达 0.99。这些结果表明，漂移模型非常适合机器人世界建模，其中快速、高质量的想象力直接支持规划和政策评估。</p>
+          <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
+        </div>
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Predictive world models enable robots to plan by imagining the outcomes of their actions, but their value for control hinges on generating many rollouts quickly. This creates a bottleneck for diffusion-based world models: multistep sampling makes each rollout expensive, limiting large-scale action search at inference time. We introduce DriftWorld, an action-conditioned world model based on drifting generative models. Rather than denoising iteratively at inference, DriftWorld learns an action-conditioned drift during training, allowing it to generate future frames from the current observation and a candidate action sequence in a single forward pass at 30+ fps, which is 17x faster on average than diffusion based baselines. We evaluate DriftWorld on standard vision-based robotic manipulation benchmarks, including Bridge-V2, RT-1, Language Table, Push-T, and Robomimic. By producing rollouts that are both accurate and fast, DriftWorld achieves state-of-the-art decision-making performance with far less inference time than diffusion-based world model baselines. Beyond online control, DriftWorld can also serve as an offline simulator for ranking real-world robot policies, with rollout-based scores correlating with ground truth at up to 0.99. These results show that drifting models are a strong fit for robot world modeling, where fast, high-quality imagination directly supports planning and policy evaluation.</p>
+        </details>
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2607.15065v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2607.15065" target="_blank" rel="noopener">Abs</a>
+<a class="html" href="https://arxiv.org/html/2607.15065v1" target="_blank" rel="noopener">HTML</a><a class="project" href="https://susie-lu.github.io/driftworld/" target="_blank" rel="noopener">Project</a>        </div>
+        <div class="paper-figures">
+            <a href="https://arxiv.org/html/2607.15065v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.15065v1/x1.png" loading="lazy" alt="Figure"></a>
+            <a href="https://arxiv.org/html/2607.15065v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.15065v1/x2.png" loading="lazy" alt="Figure"></a>
+            <a href="https://arxiv.org/html/2607.15065v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.15065v1/x3.png" loading="lazy" alt="Figure"></a>
+            <a href="https://arxiv.org/html/2607.15065v1/x4.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.15065v1/x4.png" loading="lazy" alt="Figure"></a>
+        </div>
+      </li>
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">2</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2607.15038" target="_blank" rel="noopener">Video = World + Event Stream</a></h2>
+<p class="paper-title-zh">视频 = 世界 + 事件流</p>          </div>
+        </div>
+        <p class="sel-reason">提出「视频=世界+事件流」统一框架，实现原生流式交互视频生成</p>
+        <div class="sel-tags"><span class="sel-tag">生成模型</span><span class="sel-tag">世界模型</span></div>
+        <div class="paper-meta">
+          <span class="authors">Lianghua Huang, Zhi-Fan Wu, Yupeng Shi, Wei Wang, Mengyang Feng</span>
+        </div>
+        <div class="abstract-box">
+          <p class="paper-abstract">我们推出了 Wan-Streamer v0.3，它在单一组织视图下重新构建了我们的原生流媒体交互模型：视频是一个世界加上一个事件流。世界是视频展开的持续上下文，包括环境、场景、主体、环境声学条件、语音特征和其他相对稳定的条件。事件流是该世界中随时间变化的一切，包括场景或环境变化、主体行为、语音和其他声音。这产生了针对大量真实视频的通用预训练任务：给定一个世界和传入输入，预测世界如何实时移动、变化和响应。由此产生的能力可以专门用于一系列广泛的实时下游任务。我们在实时全双工视听交互上实例化它，其中事件流是代理的语音和自由形式的行为。从功能上讲，该模型的多模态理解过程类似于视觉-语言-动作：它将多模态用户输入映射到语言形式的语音和行为动作。 Wan-Streamer v0.3 保留了 v0.2 的操作点：25 FPS 的 640x368 视频、160 毫秒的流媒体单元、大约 200 毫秒的模型端响应延迟以及在 350 毫秒的双向网络预算下大约 550 毫秒的总交互延迟。</p>
+          <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
+        </div>
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>We present Wan-Streamer v0.3, which reframes our native-streaming interaction model under a single organizing view: a video is a world plus an event stream. The world is the persistent context in which a video unfolds, including the environment, scene, subjects, ambient acoustic conditions, voice characteristics, and other relatively stable conditions. The event stream is everything that changes over time within that world, including scene or environmental changes, subject behavior, speech, and other sounds. This yields a general-purpose pretraining task over large amounts of real video: given a world and incoming input, predict how the world moves, changes, and responds in real time. The resulting competence can be specialized to a broad family of real-time downstream tasks. We instantiate it on real-time full-duplex audio-visual interaction, where the event stream is the agent&#39;s speech together with free-form behavior. Functionally, the model&#39;s multimodal understanding process is vision-language-action-like: it maps multimodal user input to language-form speech and behavior actions. Wan-Streamer v0.3 preserves the v0.2 operating point: 640x368 video at 25 FPS, a 160 ms streaming unit, approximately 200 ms model-side response latency, and approximately 550 ms total interaction latency under a 350 ms bidirectional network budget.</p>
+        </details>
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2607.15038v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2607.15038" target="_blank" rel="noopener">Abs</a>
+<a class="html" href="https://arxiv.org/html/2607.15038v1" target="_blank" rel="noopener">HTML</a><a class="project" href="https://wan-streamer.com/" target="_blank" rel="noopener">Project</a>        </div>
+        <div class="paper-figures">
+            <a href="https://arxiv.org/html/2607.15038v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.15038v1/x1.png" loading="lazy" alt="Figure"></a>
+            <a href="https://arxiv.org/html/2607.15038v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.15038v1/x2.png" loading="lazy" alt="Figure"></a>
+        </div>
+      </li>
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">3</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2607.14202" target="_blank" rel="noopener">KeyFrame-Compass: Towards Comprehensive Evaluation of Keyframe-Conditioned Video Generation</a></h2>
+<p class="paper-title-zh">KeyFrame-Compass：对关键帧条件视频生成的综合评估</p>          </div>
+        </div>
+        <p class="sel-reason">首个关键帧条件视频生成系统性评估基准</p>
+        <div class="sel-tags"><span class="sel-tag">生成模型</span><span class="sel-tag">数据集</span></div>
+        <div class="paper-meta">
+          <span class="authors">Yuqi Tang, Tengfei Liu, Yizheng Lai, Yuran Wang, Yang Shi</span>
+        </div>
+        <div class="abstract-box">
+          <p class="paper-abstract">视频生成越来越依赖于基于关键帧的工作流程，其中创建者指定一系列参考图像来指导生成。尽管最近的模型支持多关键帧调节，但仍不清楚它们是否能够忠实地再现规定的关键帧，同时保持整体视频质量。我们推出了 KeyFrame-Compass，这是第一个用于评估关键帧调节视频生成的综合基准。该基准测试包含 386 个精心策划的样本，涵盖三个应用领域、两种视频结构、两种提示粒度、两种调节格式和四种关键帧密度，从而能够在不同的生成设置下进行受控分析。我们进一步引入了一个自动评估框架，可以联合测量关键帧执行和整体视频质量。具体来说，我们将关键帧执行分解为六个互补指标，涵盖存在性、保真度、时间顺序、本地化、持久性和唯一性，同时通过基于证据的 MLLM 判断并辅以专门的感知模型来评估整体视频质量。对九个代表性视频生成系统的实验揭示了几个基本局限性。当前模型在忠实关键帧执行和自然视频合成之间表现出明显的权衡。随着关键帧约束变得更加密集，并且大多数开源模型也无法将故事板网格输入解释为按时间排序的关键帧序列，它们的性能进一步下降。</p>
+          <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
+        </div>
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Video generation increasingly relies on keyframe-based workflows, where creators specify a sequence of reference images to guide generation. Although recent models support multi-keyframe conditioning, it remains unclear whether they can faithfully reproduce the prescribed keyframes while maintaining overall video quality. We present KeyFrame-Compass, the first comprehensive benchmark for evaluating keyframe-conditioned video generation. The benchmark contains 386 carefully curated samples spanning three application domains, two video structures, two prompt granularities, two conditioning formats, and four keyframe densities, enabling controlled analysis under diverse generation settings. We further introduce an automated evaluation framework that jointly measures keyframe execution and overall video quality. Specifically, we decompose keyframe execution into six complementary metrics covering presence, fidelity, temporal ordering, localization, persistence, and uniqueness, while assessing overall video quality through evidence-grounded MLLM judgments augmented with specialized perception models. Experiments on nine representative video generation systems reveal several fundamental limitations. Current models exhibit a clear trade-off between faithful keyframe execution and natural video synthesis. Their performance further degrades as keyframe constraints become denser and most open-source models also fail to interpret storyboard-grid inputs as temporally ordered keyframe sequences.</p>
+        </details>
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2607.14202v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2607.14202" target="_blank" rel="noopener">Abs</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="sel-category">
+    <h3 class="sel-cat-name">3D/4D 重建与生成<span class="sel-cat-count">（4）</span></h3>
+    <ul class="sel-paper-list">
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">1</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2607.15211" target="_blank" rel="noopener">MAGiSt3R: Multi-Agent Feed-forward 3D Reconstruction from Monocular RGB Videos</a></h2>
+<p class="paper-title-zh">MAGiSt3R：单目 RGB 视频的多智能体前馈 3D 重建</p>          </div>
+        </div>
+        <p class="sel-reason">多智能体前馈式3D重建，近10FPS从单目视频恢复全局点云</p>
+        <div class="sel-tags"><span class="sel-tag">3D重建</span><span class="sel-tag">feed-forward</span></div>
+        <div class="paper-meta">
+          <span class="authors">Ziren Gong, Xiaohan Li, Fabio Tosi, Ninghui Xu, Stefano Mattoccia</span>
+        </div>
+        <div class="abstract-box">
+          <p class="paper-abstract">本文介绍了 MAGiSt3R，这是一种多智能体 3D 重建框架，能够以近 10 FPS 的速度对单目 RGB 视频执行重建和相机跟踪。 MAGiSt3R 依赖于 3R 系列的前馈模型来处理 RGB 视频并回归局部点图，并依赖于合并模型 MAGMA，该模型在代理内和代理间级别上组合局部图以获得最终的全局点图。此外，MAGiSt3R 执行位姿图优化，以减轻前馈管道中发生的累积相机漂移。我们在合成数据集和真实数据集上评估 MAGiSt3R，证明其与最先进的方法相比具有卓越的重建和相机跟踪准确性。</p>
+          <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
+        </div>
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>This paper presents MAGiSt3R, a multi-agent 3D reconstruction framework performing reconstruction and camera tracking for monocular RGB videos at almost 10 FPS. MAGiSt3R relies on a feed-forward model from the 3R family to process RGB videos and regress local point maps, and on a merging model, MAGMA, that combines local maps at both intra-agent and inter-agent levels to obtain the final global point map. Furthermore, MAGiSt3R performs pose graph optimization to mitigate cumulative camera drift occurring along the feed-forward pipeline. We evaluate MAGiSt3R on both synthetic and real-world datasets, demonstrating its superior reconstruction and camera tracking accuracy compared to state-of-the-art approaches.</p>
+        </details>
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2607.15211v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2607.15211" target="_blank" rel="noopener">Abs</a>
+<a class="html" href="https://arxiv.org/html/2607.15211v1" target="_blank" rel="noopener">HTML</a>        </div>
+        <div class="paper-figures">
+            <a href="https://arxiv.org/html/2607.15211v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.15211v1/x1.png" loading="lazy" alt="Figure"></a>
+            <a href="https://arxiv.org/html/2607.15211v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.15211v1/x2.png" loading="lazy" alt="Figure"></a>
+            <a href="https://arxiv.org/html/2607.15211v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.15211v1/x3.png" loading="lazy" alt="Figure"></a>
+        </div>
+      </li>
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">2</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2607.15048" target="_blank" rel="noopener">RoGS: Adaptive Meshgrid Gaussian for Large-Scale Road Surface Mapping</a></h2>
+<p class="paper-title-zh">RoGS：用于大规模路面测绘的自适应网格高斯</p>          </div>
+        </div>
+        <p class="sel-reason">自适应网格高斯用于大规模道路表面建图，提升自动驾驶场景重建质量</p>
+        <div class="sel-tags"><span class="sel-tag">3DGS</span><span class="sel-tag">3D重建</span><span class="sel-tag">自动驾驶</span></div>
+        <div class="paper-meta">
+          <span class="authors">Tianchen Deng, Zhiheng Feng, Wenhua Wu, Ziming Li, Siting Zhu</span>
+        </div>
+        <div class="abstract-box">
+          <p class="paper-abstract">路面测绘在自动驾驶中发挥着至关重要的作用，支持高清地图生成、车道级感知和自动道路标注。最近基于网格的路面重建方法已经显示出良好的结果，但它们仍然受到重建质量有限和优化成本高的困扰，特别是在大规模驾驶场景中。为了解决这些限制，我们提出了 ROADGS-T，一种基于自适应网格高斯表示的稳健且高效的大规模路面测绘框架。具体来说，我们通过将 2D 高斯面元放置在网格上来对路面进行建模，其中每个面元显式存储颜色、语义和几何信息。与传统的基于网格的表示和3D高斯图元相比，所提出的网格高斯表示更好地匹配道路的薄表面特性，同时显着减少优化过程中的冗余图元和重叠。为了进一步提高表示效率和结构保真度，我们引入了一种道路结构感知自适应网格策略，该策略将更密集的高斯面元分配给几何或语义复杂的区域，例如车道标记、道路边界和高度不连续性，同时在平坦的道路区域保持紧凑的表示。此外，我们不依赖于单个最近的车辆姿态，而是设计了一种轨迹一致性引导的姿态鲁棒细化策略，该策略从多个相邻姿态估计局部表面先验，并根据其几何一致性自适应权重姿态引导高度正则化。</p>
+          <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
+        </div>
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Road surface mapping plays a crucial role in autonomous driving, supporting high-definition map generation, lane-level perception, and automatic road annotation. Recent mesh-based road surface reconstruction methods have shown promising results, but they still suffer from limited reconstruction quality and high optimization cost, especially in large-scale driving scenarios. To address these limitations, we propose ROADGS-T, a robust and efficient large-scale road surface mapping framework based on adaptive meshgrid Gaussian representation. Specifically, we model the road surface by placing 2D Gaussian surfels on a meshgrid, where each surfel explicitly stores color, semantic, and geometric information. Compared with conventional mesh-based representations and 3D Gaussian primitives, the proposed meshgrid Gaussian representation better matches the thin-surface property of roads while significantly reducing redundant primitives and overlap during optimization. To further improve representation efficiency and structural fidelity, we introduce a road-structure-aware adaptive meshgrid strategy, which allocates denser Gaussian surfels to geometrically or semantically complex regions, such as lane markings, road boundaries, and height discontinuities, while maintaining a compact representation in flat road areas. Moreover, instead of relying on a single nearest vehicle pose, we design a trajectory-consistency-guided pose-robust refinement strategy, which estimates local surface priors from multiple neighboring poses and adaptively weights pose-guided height regularization according to their geometric consistency.</p>
+        </details>
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2607.15048v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2607.15048" target="_blank" rel="noopener">Abs</a>
+<a class="html" href="https://arxiv.org/html/2607.15048v1" target="_blank" rel="noopener">HTML</a>        </div>
+        <div class="paper-figures">
+            <a href="https://arxiv.org/html/2607.15048v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.15048v1/x1.png" loading="lazy" alt="Figure"></a>
+            <a href="https://arxiv.org/html/2607.15048v1/fig/RoGs-T.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.15048v1/fig/RoGs-T.png" loading="lazy" alt="Figure"></a>
+            <a href="https://arxiv.org/html/2607.15048v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.15048v1/x2.png" loading="lazy" alt="Figure"></a>
+            <a href="https://arxiv.org/html/2607.15048v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.15048v1/x3.png" loading="lazy" alt="Figure"></a>
+        </div>
+      </li>
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">3</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2607.14481" target="_blank" rel="noopener">Immediate 3D Gaussian Splat Reconstruction of Unordered Input with Global Consistency</a></h2>
+<p class="paper-title-zh">具有全局一致性的无序输入的立即 3D 高斯 Splat 重建</p>          </div>
+        </div>
+        <p class="sel-reason">无序输入即时3DGS重建，全局一致性约束避免逐帧累积误差</p>
+        <div class="sel-tags"><span class="sel-tag">3DGS</span><span class="sel-tag">3D重建</span></div>
+        <div class="paper-meta">
+          <span class="authors">Andreas Meuleman, Linus Franke, Boris Zhestiankin, Camille Montemagni, George Drettakis</span>
+        </div>
+        <div class="abstract-box">
+          <p class="paper-abstract">3D 高斯分布 (3DGS) 已成为重建和实时渲染捕获场景的首选方法。为了捕捉具有良好视觉质量的场景，通常将连续图像序列与无序镜头相结合，以获得更好的场景覆盖。运动结构可以重建此类捕获，但前提是它们全部可用并且通常需要很高的计算成本。增量重建方法——通常源自 SLAM 解决方案——提供即时反馈，但无法处理我们所需的无序捕获。我们为这种辐射场捕获提供了第一个即时反馈解决方案，以提供全球一致性。我们首先介绍了一种在无序序列中快速匹配的方法，通过重新利用视觉位置识别模型和共视图，并提供一种有效的方法来查找高度连接的关键帧，甚至提高有序序列的质量。我们展示了这些步骤——连同 GPU 优化和仔细的高斯基元放置——如何在我们具有挑战性的辐射场重建案例中提供快速的局部重建。然后，我们引入一种新颖的基于集群的方法，再次使用共可见性图，以提供不需要顺序输入的高效循环闭合。最后，为了处理我们上下文中的大型场景，我们引入了渐进式层次结构，使我们的方法能够扩展到大型环境，而不影响效率。我们的结果表明，我们在多个数据集中提供了具有良好视觉质量的即时反馈 3DGS 重建，其中包含多达数千个输入图像。</p>
+          <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
+        </div>
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>3D Gaussian Splatting (3DGS) has become the method of choice for reconstructing and real-time rendering of captured scenes. To capture a scene with good visual quality, continuous image sequences are usually combined with out-of-order shots for better scene coverage. Structure from motion can reconstruct such captures, but only after they are all available and often with high computational cost. Incremental reconstruction methods -- often derived from SLAM solutions -- provide immediate feedback, but cannot handle the out-of-order capture we require. We provide the first immediate feedback solution for such radiance field capture that provides global consistency. We first introduce a method for fast matching in out-of-order sequences, by repurposing visual place recognition models and a covisibility graph, and provide an efficient way to find highly connected keyframes, improving quality even for ordered sequences. We show how these steps -- together with GPU optimization and careful Gaussian primitive placement -- provide fast local reconstruction, in our challenging radiance field reconstruction case. We then introduce a novel cluster-based method, again using the covisibility graph, to provide efficient loop closure that does not require sequential input. Finally, to handle large scenes in our context, we introduce a progressive hierarchy that allows our method to scale to large environments, without compromising efficiency. Our results show we provide immediate feedback 3DGS reconstruction with good visual quality in several datasets, with up to thousands of input images.</p>
+        </details>
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2607.14481v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2607.14481" target="_blank" rel="noopener">Abs</a>
+<a class="html" href="https://arxiv.org/html/2607.14481v1" target="_blank" rel="noopener">HTML</a>        </div>
+        <div class="paper-figures">
+            <a href="https://arxiv.org/html/2607.14481v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.14481v1/x1.png" loading="lazy" alt="Figure"></a>
+            <a href="https://arxiv.org/html/2607.14481v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.14481v1/x2.png" loading="lazy" alt="Figure"></a>
+            <a href="https://arxiv.org/html/2607.14481v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.14481v1/x3.png" loading="lazy" alt="Figure"></a>
+            <a href="https://arxiv.org/html/2607.14481v1/x4.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.14481v1/x4.png" loading="lazy" alt="Figure"></a>
+        </div>
+      </li>
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">4</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2607.15271" target="_blank" rel="noopener">Online Neural Space Time Memory for Dynamic Novel View Synthesis</a></h2>
+<p class="paper-title-zh">用于动态小说视图合成的在线神经时空记忆</p>          </div>
+        </div>
+        <p class="sel-reason">在线时空记忆机制实现动态新视角合成，兼顾长期记忆与实时约束</p>
+        <div class="sel-tags"><span class="sel-tag">3D重建</span><span class="sel-tag">NeRF</span></div>
+        <div class="paper-meta">
+          <span class="authors">Baback Elmieh, Lynn Tsai, Zeman Li, Srinivas Kaza, Tiancheng Sun</span>
+        </div>
+        <div class="abstract-box">
+          <p class="paper-abstract">多视图流视频的在线新颖视图合成面临着一个基本的权衡：在严格的实时约束下运行时，维持持久的长视野内存以重建暂时遮挡的区域。虽然测试时训练 (TTT) 提供了强大的记忆机制，但标准模型要求在每一帧进行基于梯度的记忆更新，以适应动态场景中不断变化的运动。大量内存更新的计算成本阻碍了实时应用，并可能导致长上下文中的不稳定。鉴于内存更新比内存申请要求更高，并且视频内容很大程度上是冗余的，我们建议将这两个过程的频率解耦。我们的方法执行定期内存更新，同时在每帧的基础上应用内存，使用跨视图注意力来管理先前内存状态和当前帧之间的变形。为了锁定历史背景，我们引入了两个关键机制：强制场景持久内化的辅助内存丢失，以及规范主动权重以防止灾难性漂移的内存缓存策略。我们的方法在具有动态人体运动以及分钟级在线记忆的场景中展示了实时、最先进的性能。</p>
+          <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
+        </div>
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Online novel view synthesis from multi-view streaming videos faces a fundamental trade-off: maintaining a persistent, long-horizon memory to reconstruct temporarily occluded regions while operating under strict real-time constraints. While Test-Time Training (TTT) offers a powerful memory mechanism, standard models mandate gradient-based memory updates at every frame to adapt to the changing motion in dynamic scenes. The computational cost of heavy memory updates precludes real-time application and can lead to instability over long contexts. Given that memory updates are more demanding than memory application and video content is largely redundant, we propose to decouple the frequencies of these two processes. Our approach performs periodic memory updates while applying the memory on a per-frame basis, using cross-view attention to manage deformations between the prior memory state and the current frame. To lock in the historical context, we introduce two critical mechanisms: an auxiliary Memory Loss that forces persistent internalization of the scene, and a Memory Caching strategy that regularizes active weights against catastrophic drift. Our method demonstrates real-time, state-of-the-art performance on scenes with dynamic human motion as well as minute-scale online memorization.</p>
+        </details>
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2607.15271v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2607.15271" target="_blank" rel="noopener">Abs</a>
+<a class="html" href="https://arxiv.org/html/2607.15271v1" target="_blank" rel="noopener">HTML</a><a class="project" href="https://nst-mem.github.io" target="_blank" rel="noopener">Project</a>        </div>
+        <div class="paper-figures">
+            <a href="https://arxiv.org/html/2607.15271v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.15271v1/x1.png" loading="lazy" alt="Figure"></a>
+            <a href="https://arxiv.org/html/2607.15271v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.15271v1/x2.png" loading="lazy" alt="Figure"></a>
+            <a href="https://arxiv.org/html/2607.15271v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.15271v1/x3.png" loading="lazy" alt="Figure"></a>
+            <a href="https://arxiv.org/html/2607.15271v1/x4.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.15271v1/x4.png" loading="lazy" alt="Figure"></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="sel-category">
+    <h3 class="sel-cat-name">自动驾驶与机器人<span class="sel-cat-count">（3）</span></h3>
+    <ul class="sel-paper-list">
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">1</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2607.14695" target="_blank" rel="noopener">Reflex: Real-Time VLA Control through Streaming Inference</a></h2>
+<p class="paper-title-zh">Reflex：通过流推理进行实时 VLA 控制</p>          </div>
+        </div>
+        <p class="sel-reason">流匹配VLA实时流式推理框架，突破去噪模型与机器人实时控制的根本矛盾</p>
+        <div class="sel-tags"><span class="sel-tag">VLA</span><span class="sel-tag">具身智能</span><span class="sel-tag">顶会</span></div>
+        <div class="paper-meta">
+          <span class="authors">Yuanchun Guo, Bingyan Liu</span>
+        </div>
+        <div class="abstract-box">
+          <p class="paper-abstract">流匹配视觉-语言-动作 (VLA) 模型承诺精确的连续控制，但其迭代去噪性质引入了与实时机器人技术的根本不兼容性：全局时间步注入使 KV 缓存失效，迫使在缓慢的 $O(N^2)$ 重新计算或数学上不正确的缓存重用之间做出选择。我们提出了 \textbf{Reflex}，一个框架，它通过利用 \textit{时间步长不变性} 来实现流匹配策略的 \textit{实时流推理}——感知编码器在功能上独立于去噪循环。 Reflex 将注意力上下文划分为静态、滑动和动态区域，从而实现 $O(1)$ 增量缓存更新，同时保留固定输入的全批量等效注意力输出。为了确保连续高频推理下的稳定性，我们引入了 \textit{AdaRMSNorm}，这是一个自适应归一化层，可通过对流相位进行选通来防止 BFloat16 数值崩溃。我们通过将视觉编码与动作生成分离的 \textit{async pipeline} 进一步最大化吞吐量，并结合 \textit{operator fusion} 减少内核开销。在 LIBERO 和 Kinetix 基准测试中，Reflex 实现了 2.58$\times$ 的推理加速和 50Hz 的稳定流传输，将反应延迟减少了高达 54\%，并在不降低性能的情况下实现了高效部署。</p>
+          <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
+        </div>
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Flow matching Vision-Language-Action (VLA) models promise precise continuous control, but their iterative denoising nature introduces fundamental incompatibilities with real-time robotics: global timestep injection invalidates KV-caching, forcing a choice between slow $O(N^2)$ re-computation or mathematically incorrect cache reuse. We present \textbf{Reflex}, a framework that enables \textit{real-time streaming inference} for flow matching policies by exploiting the \textit{Timestep-Invariance Property} -- that perception encoders are functionally independent of the denoising loop. Reflex partitions the attention context into static, sliding, and dynamic regions, enabling $O(1)$ incremental cache updates while preserving full-batch-equivalent attention outputs for fixed inputs. To ensure stability under continuous high-frequency inference, we introduce \textit{AdaRMSNorm}, an adaptive normalization layer that prevents BFloat16 numerical collapse by gating on flow phase. We further maximize throughput through an \textit{async pipeline} that decouples visual encoding from action generation, combined with \textit{operator fusion} that reduces kernel overhead. On LIBERO and Kinetix benchmarks, Reflex achieves a 2.58$\times$ inference speedup and 50Hz stable streaming, reducing reaction latency by up to 54\% and enabling efficient deployment without performance degradation.</p>
+        </details>
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2607.14695v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2607.14695" target="_blank" rel="noopener">Abs</a>
+<a class="html" href="https://arxiv.org/html/2607.14695v1" target="_blank" rel="noopener">HTML</a>        </div>
+        <div class="paper-figures">
+            <a href="https://arxiv.org/html/2607.14695v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.14695v1/x1.png" loading="lazy" alt="Figure"></a>
+            <a href="https://arxiv.org/html/2607.14695v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.14695v1/x2.png" loading="lazy" alt="Figure"></a>
+            <a href="https://arxiv.org/html/2607.14695v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.14695v1/x3.png" loading="lazy" alt="Figure"></a>
+            <a href="https://arxiv.org/html/2607.14695v1/x4.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.14695v1/x4.png" loading="lazy" alt="Figure"></a>
+        </div>
+      </li>
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">2</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2607.14507" target="_blank" rel="noopener">DRIFT: Drift and Aggregation for Motion Planning</a></h2>
+<p class="paper-title-zh">DRIFT：运动规划的漂移和聚合</p>          </div>
+        </div>
+        <p class="sel-reason">漂移聚合端到端规划器，单步漂移+聚合替代多步去噪实现实时轨迹生成</p>
+        <div class="sel-tags"><span class="sel-tag">自动驾驶</span><span class="sel-tag">生成模型</span></div>
+        <div class="paper-meta">
+          <span class="authors">Yining Xing, Zhiyuan Liu, Zehong Ke, Wenhao Yu, Jianqiang Wang</span>
+        </div>
+        <div class="abstract-box">
+          <p class="paper-abstract">端到端轨迹规划器需要表示多种合理的驾驶行为，同时在实时约束下生成单个可执行轨迹。基于提案的方法通过生成多个候选方案来解决这种模糊性，但将提案集转换为最终计划仍然是一个关键的设计问题。我们提出了 DRIFT，一种固定深度规划器，它将紧凑轨迹潜在空间中的一步漂移与场景感知提案聚合相结合。以预训练视觉编码器的特征为条件，DRIFT 解码器在单批处理中生成 48 个提议特征，其中 alpha=0.5 时有 32 个样本，alpha=0.9 时有 16 个样本。轻量级聚合头将这些功能与场景、导航和自我状态信息集成，并直接预测最终轨迹，而不需要轨迹级质量标签进行聚合。其输出通过专家轨迹模拟和地图派生的边界正则化器进行训练，该正则化器对可行驶多边形外部的航路点和其边界附近的内部航路点进行惩罚。在 NAVSIM navtest 上，DRIFT 达到 89.6 PDMS 和 90.4 EPDMS，在比较方法中具有很强的可驾驶区域合规性和自我进步。提案生成和聚合模块在 NVIDIA RTX 4090 上的运行时间为 10.82 毫秒，而包括视觉主干的全模型推理则需要 66.43 毫秒。这些结果表明，一步潜在建议生成和直接聚合为多假设运动规划提供了一种有效的设计。</p>
+          <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
+        </div>
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>End-to-end trajectory planners need to represent multiple plausible driving behaviors while producing a single executable trajectory under real-time constraints. Proposal-based approaches address this ambiguity by generating multiple candidates, but converting the proposal set into a final plan remains a key design problem. We present DRIFT, a fixed-depth planner that combines one-step drifting in a compact trajectory latent space with scene-aware proposal aggregation. Conditioned on features from a pretrained visual encoder, the DRIFT Decoder generates 48 proposal features in a single batched pass, with 32 samples at alpha=0.5 and 16 samples at alpha=0.9. A lightweight Aggregation Head integrates these features with scene, navigation, and ego-state information and directly predicts the final trajectory without requiring trajectory-level quality labels for aggregation. Its output is trained with expert-trajectory imitation and a map-derived boundary regularizer that penalizes waypoints outside the drivable polygon and inside waypoints near its boundary. On NAVSIM navtest, DRIFT achieves 89.6 PDMS and 90.4 EPDMS, with strong drivable-area compliance and ego progress among the methods compared. The proposal-generation and aggregation module runs in 10.82 ms on an NVIDIA RTX 4090, while full-model inference including the visual backbone takes 66.43 ms. These results show that one-step latent proposal generation and direct aggregation provide an efficient design for multi-hypothesis motion planning.</p>
+        </details>
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2607.14507v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2607.14507" target="_blank" rel="noopener">Abs</a>
+<a class="html" href="https://arxiv.org/html/2607.14507v1" target="_blank" rel="noopener">HTML</a>        </div>
+        <div class="paper-figures">
+            <a href="https://arxiv.org/html/2607.14507v1/Framework.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.14507v1/Framework.png" loading="lazy" alt="Figure"></a>
+            <a href="https://arxiv.org/html/2607.14507v1/uncond.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.14507v1/uncond.png" loading="lazy" alt="Figure"></a>
+            <a href="https://arxiv.org/html/2607.14507v1/planning.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.14507v1/planning.png" loading="lazy" alt="Figure"></a>
+        </div>
+      </li>
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">3</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2607.14852" target="_blank" rel="noopener">Towards Human-like Physical Intelligence: LifelongVision-Language-Action Learning for Robotic Manipulation</a></h2>
+<p class="paper-title-zh">迈向类人物理智能：机器人操作的终身视觉-语言-动作学习</p>          </div>
+        </div>
+        <p class="sel-reason">终身VLA学习框架，平衡新任务学习与旧任务保持，避免灾难性遗忘</p>
+        <div class="sel-tags"><span class="sel-tag">VLA</span><span class="sel-tag">具身智能</span><span class="sel-tag">操控</span></div>
+        <div class="paper-meta">
+          <span class="authors">Yao He, Gan Sun, Wenqi Liang, Fazeng Li, Yang Cong</span>
+        </div>
+        <div class="abstract-box">
+          <p class="paper-abstract">与人类连续学习新任务的自然能力类似，具有视觉-语言-动作（VLA）模型的机器人在部署在开放世界环境中时应该具备终身学习能力来学习新任务。然而，最近提出的终身学习模型旨在有效地学习当前任务（可塑性）或保持先前任务的高精度（稳定性），而可塑性与稳定性的权衡在机器人操纵模型中很大程度上仍未得到解决。为了解决这一根本挑战，我们提出了一种用于机器人操作的缓存高效的终身视觉-语言-动作学习框架（即LifelongVLA），它通过双时间尺度适应机制减轻了可塑性与稳定性的权衡，同时通过缓存高效的重放策略实现了低成本的机器人部署。更具体地说，我们提出了一个双时间尺度 LoRA 门控模块，将 VLA 适应分解为两个轻量级路径：用于可塑性的短期适配器和用于稳定整合的长期适配器。这些途径通过任务感知门进行集成，从而能够明确控制可塑性与稳定性的权衡。在技​​能重放阶段，提出了一种高效缓存的随机重放策略，以在无需全轨迹存储的情况下保留更平衡的保留信号。最后，实验表明 LifelongVLA 优于现有基线，展示了高效的技能扩展、对所学操作行为的稳健保留，以及减少了在 xArm 机器人上进行实际部署时对再训练的依赖。</p>
+          <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
+        </div>
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Similar to the natural capabilities of humans to sequentially learn new tasks, robots with Vision-Language-Action (VLA) models should possess lifelong learning ability to learn a new task when deployed in open-world environments. However, most recently proposed lifelong learning models aim to effectively learn the current task (plasticity) or maintain high accuracy on previous tasks (stability), while the plasticity-stability trade-off remains largely unsolved in robotic manipulation models. To address this fundamental challenge, we propose a cache-efficient lifelong Vision-Language-Action learning framework for robotic manipulation (i.e., LifelongVLA), which alleviates the plasticity-stability trade-off with a dual-timescale adaptation mechanism while achieving low-cost robotic deployment with a cache-efficient replay strategy. More concretely, we propose a dual-timescale LoRA gating module to decompose VLA adaptation into two lightweight pathways: a short-term adapter for plasticity and a long-term adapter for stable consolidation. These pathways are integrated via a task-aware gate, enabling explicit control of the plasticity-stability trade-off. In the skill replay phase, a cache-efficient stochastic replay strategy is proposed to preserve more balanced retention signals without full-trajectory storage. Finally, experiments show that LifelongVLA outperforms existing baselines, demonstrating efficient skill expansion, robust retention of learned manipulation behaviors, and reduced reliance on retraining for real-world deployment on an xArm robot.</p>
+        </details>
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2607.14852v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2607.14852" target="_blank" rel="noopener">Abs</a>
+<a class="html" href="https://arxiv.org/html/2607.14852v1" target="_blank" rel="noopener">HTML</a>        </div>
+        <div class="paper-figures">
+            <a href="https://arxiv.org/html/2607.14852v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.14852v1/x1.png" loading="lazy" alt="Figure"></a>
+            <a href="https://arxiv.org/html/2607.14852v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.14852v1/x2.png" loading="lazy" alt="Figure"></a>
+            <a href="https://arxiv.org/html/2607.14852v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.14852v1/x3.png" loading="lazy" alt="Figure"></a>
+            <a href="https://arxiv.org/html/2607.14852v1/x4.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.14852v1/x4.png" loading="lazy" alt="Figure"></a>
+        </div>
+      </li>
+    </ul>
+  </div>
 </div>  </main>
 
   <footer class="site-footer">
     <div class="wrap footer-wrap">
       <span>Categories: cs.CV, cs.RO, cs.AI</span>
-      <span>Generated 2026-07-18 14:32 UTC</span>
+      <span>Generated 2026-07-18 14:44 UTC</span>
     </div>
   </footer>
 
