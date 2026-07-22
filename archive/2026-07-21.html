@@ -16,7 +16,7 @@
           <a class="site-nav-link " href="../blogs/">Blogs</a>
         </nav>
       </div>
-      <div class="header-meta">Updated 2026-07-22 14:45 UTC</div>
+      <div class="header-meta">Updated 2026-07-22 14:49 UTC</div>
     </div>
   </header>
 
@@ -14758,10 +14758,10 @@
 <div id="selected-panel" class="hidden">
   <div class="selected-head">
     <h2>Curated Papers <span>from 133 submissions</span></h2>
-    <span>14 selected</span>
+    <span>6 selected</span>
   </div>
   <div class="sel-category">
-    <h3 class="sel-cat-name">世界模型&amp;视频/场景生成模型<span class="sel-cat-count">（3）</span></h3>
+    <h3 class="sel-cat-name">世界模型&amp;视频/场景生成模型<span class="sel-cat-count">（2）</span></h3>
     <ul class="sel-paper-list">
       <li class="sel-paper">
         <div class="sel-header">
@@ -14798,36 +14798,6 @@
         <div class="sel-header">
           <span class="sel-score">2</span>
           <div class="sel-titles">
-            <h2 class="paper-title"><a href="https://arxiv.org/abs/2607.17454" target="_blank" rel="noopener">Test-Time Scaling for World Action Models via Zero-Shot Geometric Evaluation</a></h2>
-<p class="paper-title-zh">通过零样本几何评估来缩放世界行动模型的测试时间</p>          </div>
-        </div>
-        <p class="sel-reason">训练无关的选择性测试时扩展框架，让世界动作模型在推理时按需分配额外计算预算</p>
-        <div class="sel-tags"><span class="sel-tag">世界模型</span><span class="sel-tag">顶会</span></div>
-        <div class="paper-meta">
-          <span class="authors">Zesen Zhao, Minkyoung Cho, Hui shen, Boyuan Zheng, Kunxiao Gao, Yulong Cao, Z. Morley Mao</span>
-        </div>
-        <div class="abstract-box">
-          <p class="paper-abstract">测试时间缩放通过花费额外的计算来改进基础模型推理，但机器人控制需要在执行操作之前决定额外的计算是否有用。世界行动模型 (WAM) 使这一决策变得自然：每次推出都会公开一个行动块和预测的未来观察结果。我们提出了 \methodated，一种用于 WAM 的免训练选择性测试时间扩展框架。我们首先实例化 \method，一个固定预算 Best-of-$N$ 选择器，通过使用冻结几何基础模型计算的预测未来的交叉视图深度重投影一致性对采样的推出进行排名。 \methodated\ 添加了一个轻量级操作——未来一致性门，仅当初始部署出现内部不一致时才调用 \method\。在 RoboCasa、LIBERO Long 和 RoboTwin~2.0 上的五个基准-骨干设置中，固定预算\方法\在每个设置中提高了 $N{=}8$ 任务成功率，例如，使用 Cosmos Policy 将 RoboCasa 组平均从 $66.3\%$ 提高到 $68.4\%$，使用 X-WAM 从 $80.8\%$ 提高到 $82.5\%$。启用门控后，\methodated\ 平均恢复 $74.8\%$ 的始终在线成功增益，同时仅在 $26.2\%$ 的决策点上触发额外采样。离线诊断表明，跨视图重投影是一种强大的无任务标签选择器，我们将错误的低分选择识别为一种故障模式，有助于解释为什么性能会随着 $N$ 的增加而饱和或下降。</p>
-          <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
-        </div>
-        <details class="abstract-en">
-          <summary>Show English abstract</summary>
-          <p>Test-time scaling improves foundation-model inference by spending additional computation, but robot control requires deciding whether extra compute is useful before executing an action. World Action Models (WAMs) make this decision natural: each rollout exposes both an action chunk and predicted future observations. We propose \methodgated, a training-free selective test-time scaling framework for WAMs. We first instantiate \method, a fixed-budget Best-of-$N$ selector that ranks sampled rollouts by cross-view depth reprojection consistency of their predicted futures, computed with a frozen geometry foundation model. \methodgated\ adds a lightweight action--future consistency gate that invokes \method\ only when the initial rollout appears internally inconsistent. Across five benchmark--backbone settings on RoboCasa, LIBERO Long, and RoboTwin~2.0, fixed-budget \method\ improves $N{=}8$ task success in every setting, e.g., raising the RoboCasa group average from $66.3\%$ to $68.4\%$ with Cosmos Policy and from $80.8\%$ to $82.5\%$ with X-WAM. With gating enabled, \methodgated\ recovers on average $74.8\%$ of the always-on success gain while triggering additional sampling on only $26.2\%$ of decision points. Offline diagnostics show that cross-view reprojection is a strong task-label-free selector, and we identify false low-score selections as a failure mode that helps explain why performance can saturate or degrade as $N$ increases.</p>
-        </details>
-        <div class="paper-actions">
-          <a href="https://arxiv.org/pdf/2607.17454v1" target="_blank" rel="noopener">PDF</a>
-          <a href="https://arxiv.org/abs/2607.17454" target="_blank" rel="noopener">Abs</a>
-<a class="html" href="https://arxiv.org/html/2607.17454v1" target="_blank" rel="noopener">HTML</a>        </div>
-        <div class="paper-figures">
-            <a href="https://arxiv.org/html/2607.17454v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.17454v1/x1.png" loading="lazy" alt="Figure"></a>
-            <a href="https://arxiv.org/html/2607.17454v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.17454v1/x2.png" loading="lazy" alt="Figure"></a>
-            <a href="https://arxiv.org/html/2607.17454v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.17454v1/x3.png" loading="lazy" alt="Figure"></a>
-        </div>
-      </li>
-      <li class="sel-paper">
-        <div class="sel-header">
-          <span class="sel-score">3</span>
-          <div class="sel-titles">
             <h2 class="paper-title"><a href="https://arxiv.org/abs/2607.16314" target="_blank" rel="noopener">Depth-Regularized JEPA World Models Learn More Transferable Representations from Real Outdoor Robot Data</a></h2>
 <p class="paper-title-zh">深度正则化 JEPA 世界模型从真实户外机器人数据中了解更多可转移表示</p>          </div>
         </div>
@@ -14858,72 +14828,12 @@
     </ul>
   </div>
   <div class="sel-category">
-    <h3 class="sel-cat-name">3D/4D 重建与生成<span class="sel-cat-count">（2）</span></h3>
+    <h3 class="sel-cat-name">3D/4D 重建与生成<span class="sel-cat-count">（0）</span></h3>
     <ul class="sel-paper-list">
-      <li class="sel-paper">
-        <div class="sel-header">
-          <span class="sel-score">1</span>
-          <div class="sel-titles">
-            <h2 class="paper-title"><a href="https://arxiv.org/abs/2607.17058" target="_blank" rel="noopener">DROID-ANCHOR: Odometry-Anchored Recurrent Metric Depth Estimation</a></h2>
-<p class="paper-title-zh">DROID-ANCHOR：里程计锚定循环度量深度估计</p>          </div>
-        </div>
-        <p class="sel-reason">端到端循环架构将视觉SLAM锚定到本体感知里程计，输出物理尺度度量深度</p>
-        <div class="sel-tags"><span class="sel-tag">深度估计</span><span class="sel-tag">3D重建</span></div>
-        <div class="paper-meta">
-          <span class="authors">Yuxuan Chen, Brook Du</span>
-        </div>
-        <div class="abstract-box">
-          <p class="paper-abstract">精确的度量深度估计是自主机器人导航的基础，但单目系统本质上会受到尺度模糊和尺度漂移的影响。虽然最近基于循环流的 SLAM 系统已经展示了最先进的鲁棒性，但它们的规模仍然不明确。在本文中，我们提出了 Metric-DROID，这是一种端到端循环架构，通过集成本体感受里程计将视觉 SLAM 锚定到物理现实。我们的框架引入了以下创新：（1）LSTM更新算子，将高频里程计序列编码为空间特征图，为迭代细化提供持久的度量偏差。 (2) 不确定性感知指标后端 ($BA_{odom}$)，将里程计视为具有学习异方差协方差的几何锚点。通过回归随时间变化的度量不确定性 $Σ_{o}$，我们的系统智能地平衡视觉重投影和度量平移残差，有效减轻车轮打滑和传感器噪声的影响。 (3)我们进一步提出了一种选择性残差微调策略，以保留预先训练的几何先验，同时实现零样本度量对齐。</p>
-          <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
-        </div>
-        <details class="abstract-en">
-          <summary>Show English abstract</summary>
-          <p>Precise metric depth estimation is fundamental for autonomous robot navigation, yet monocular systems inherently suffer from scale ambiguity and scale drift. While recent recurrent flow-based SLAM systems have demonstrated state-of-the-art robustness, they remain scale-ambiguous. In this paper, we propose Metric-DROID, an end-to-end recurrent architecture that anchors visual SLAM to physical reality by integrating proprioceptive odometry. Our framework introduces the following innovations: (1) A LSTM Update Operator that encodes high-frequency odometry sequences into spatial feature maps, providing a persistent metric bias for iterative refinement. (2) An Uncertainty-Aware Metric Backend ($BA_{odom}$) that treats odometry as a geometric anchor with learned heteroscedastic covariance. By regressing a time-varying metric uncertainty $Σ_{o}$, our system intelligently balances visual re-projection and metric translation residuals, effectively mitigating the impact of wheel-slip and sensor noise. (3) We further propose a selective residual fine-tuning strategy to preserve pre-trained geometric priors while enabling zero-shot metric alignment.</p>
-        </details>
-        <div class="paper-actions">
-          <a href="https://arxiv.org/pdf/2607.17058v1" target="_blank" rel="noopener">PDF</a>
-          <a href="https://arxiv.org/abs/2607.17058" target="_blank" rel="noopener">Abs</a>
-<a class="html" href="https://arxiv.org/html/2607.17058v1" target="_blank" rel="noopener">HTML</a>        </div>
-        <div class="paper-figures">
-            <a href="https://arxiv.org/html/2607.17058v1/teaser.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.17058v1/teaser.png" loading="lazy" alt="Figure"></a>
-            <a href="https://arxiv.org/html/2607.17058v1/framework.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.17058v1/framework.png" loading="lazy" alt="Figure"></a>
-        </div>
-      </li>
-      <li class="sel-paper">
-        <div class="sel-header">
-          <span class="sel-score">2</span>
-          <div class="sel-titles">
-            <h2 class="paper-title"><a href="https://arxiv.org/abs/2607.17171" target="_blank" rel="noopener">VIDAR: Visual-Inertial Dense Alignment and Reconstruction via a Geometric Foundation Model</a></h2>
-<p class="paper-title-zh">VIDAR：通过几何基础模型进行视觉惯性密集对准和重建</p>          </div>
-        </div>
-        <p class="sel-reason">以VIO位姿为度量锚点对齐Depth Anything稠密几何预测，融合为全局一致重建</p>
-        <div class="sel-tags"><span class="sel-tag">3D重建</span><span class="sel-tag">深度估计</span></div>
-        <div class="paper-meta">
-          <span class="authors">Diyari Mohammed Salih, Lingxiang Hu, Naima AitOufroukh-Mammar, Fabien Bonardi</span>
-        </div>
-        <div class="abstract-box">
-          <p class="paper-abstract">单目基础模型提供密集的几何形状，但通常缺乏稳定的公制比例。本文介绍了 VIDAR，一种将 SVO+IMU 里程计与 Depth Anything 3 结合起来的视觉惯性密集重建框架。VIDAR 使用视觉惯性前端作为度量锚点：它提供相机姿态、比例和一致的世界框架，用于跨时间对齐密集基础模型预测。然后，基础模型提供详细的局部几何形状，并将其融合到全局重建中。我们研究了姿势条件 DA3 和解耦对齐策略。在 EuRoC 上，位姿注入将尺度误差降低至约 1\%，并达到 0.463 均值 F@0.10；解耦混合将其提高到 0.676，无需地面实况姿势。 EuRoC 和 TUM RGB-D 的结果表明，VIDAR 是度量密集单目重建的实用途径。</p>
-          <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
-        </div>
-        <details class="abstract-en">
-          <summary>Show English abstract</summary>
-          <p>Monocular foundation models provide dense geometry but usually lack a stable metric scale. This paper presents VIDAR, a visual-inertial dense reconstruction framework that couples SVO+IMU odometry with Depth Anything 3. VIDAR uses the visual-inertial front end as a metric anchor: it provides camera poses, scale, and a consistent world frame for aligning dense foundation-model predictions across time. The foundation model then contributes detailed local geometry that is fused into a global reconstruction. We study both pose-conditioned DA3 and a decoupled alignment strategy. On EuRoC, pose injection reduces scale error to about 1\% and reaches 0.463 mean F@0.10; the decoupled hybrid improves this to 0.676 without ground-truth poses. Results on EuRoC and TUM RGB-D show that VIDAR is a practical route to metric dense monocular reconstruction.</p>
-        </details>
-        <div class="paper-actions">
-          <a href="https://arxiv.org/pdf/2607.17171v1" target="_blank" rel="noopener">PDF</a>
-          <a href="https://arxiv.org/abs/2607.17171" target="_blank" rel="noopener">Abs</a>
-<a class="html" href="https://arxiv.org/html/2607.17171v1" target="_blank" rel="noopener">HTML</a>        </div>
-        <div class="paper-figures">
-            <a href="https://arxiv.org/html/2607.17171v1/figures/fig_01_vidar_overview.jpg" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.17171v1/figures/fig_01_vidar_overview.jpg" loading="lazy" alt="Figure"></a>
-            <a href="https://arxiv.org/html/2607.17171v1/figures/fig_10_euroc_v1_vidar_dense_reconstruction.jpg" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.17171v1/figures/fig_10_euroc_v1_vidar_dense_reconstruction.jpg" loading="lazy" alt="Figure"></a>
-            <a href="https://arxiv.org/html/2607.17171v1/figures/fig_09_da3_tum_cloudcompare_reconstruction_grid_compressed.jpg" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.17171v1/figures/fig_09_da3_tum_cloudcompare_reconstruction_grid_compressed.jpg" loading="lazy" alt="Figure"></a>
-            <a href="https://arxiv.org/html/2607.17171v1/figures/fig_02a_traj_svo_imu_vs_gt.jpg" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.17171v1/figures/fig_02a_traj_svo_imu_vs_gt.jpg" loading="lazy" alt="Figure"></a>
-        </div>
-      </li>
     </ul>
   </div>
   <div class="sel-category">
-    <h3 class="sel-cat-name">自动驾驶与机器人<span class="sel-cat-count">（8）</span></h3>
+    <h3 class="sel-cat-name">自动驾驶与机器人<span class="sel-cat-count">（4）</span></h3>
     <ul class="sel-paper-list">
       <li class="sel-paper">
         <div class="sel-header">
@@ -14991,37 +14901,6 @@
         <div class="sel-header">
           <span class="sel-score">3</span>
           <div class="sel-titles">
-            <h2 class="paper-title"><a href="https://arxiv.org/abs/2607.18231" target="_blank" rel="noopener">FM-VLA: Force-based Memory for Vision-Language-Action Models in Contact-Rich Manipulation</a></h2>
-<p class="paper-title-zh">FM-VLA：基于力的记忆，用于多接触操作中的视觉-语言-动作模型</p>          </div>
-        </div>
-        <p class="sel-reason">用力觉记忆增强VLA处理接触密集操作，解决视觉模糊场景下的时序事件感知问题</p>
-        <div class="sel-tags"><span class="sel-tag">VLA</span><span class="sel-tag">操控</span></div>
-        <div class="paper-meta">
-          <span class="authors">Ruicheng Li, Qixiu Li, Ruichun Ma, Yu Deng, Lin Luo, Zhiying Du, Jianfeng Xiang, Huizhi Liang, Ruicheng Wang, Jiaolong Yang, Baining Guo</span>
-        </div>
-        <div class="abstract-box">
-          <p class="paper-abstract">视觉-语言-动作 (VLA) 模型在机器人操作方面取得了令人印象深刻的泛化能力，最近的记忆增强 VLA 通过对过去的图像或语言摘要进行调节，放松了马尔可夫假设。基于视觉的记忆方法通过对过去采样的图像帧进行调节来解决这个问题，但是当时间事件在视觉上不明确时（例如，以小动作多次按下按钮），它们的计算成本很高并且从根本上受到限制。我们提出了 FM-VLA，一种具有基于力的记忆的 VLA 模型，能够对非马尔可夫、接触丰富的操作进行时间上下文推理。我们使用通过力时间序列重建进行预训练的变分自动编码器（VAE）将力历史编码为紧凑的力记忆标记。通过将力潜在表示和短状态历史记录作为附加条件标记投射到动作专家模块，我们使 VLA 能够利用累积的接触事件历史记录来指导操作。我们在三个依赖于记忆的任务上评估 FM-VLA，包括找到隐藏的块、按下按钮和擦拭盘子特定次数。我们的轻量级力存储器以最小的推理开销实现了超过 80% 的成功率，显着优于基线方法。项目页面：https://qft-333.github.io/FM-VLA-Page/</p>
-          <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
-        </div>
-        <details class="abstract-en">
-          <summary>Show English abstract</summary>
-          <p>Vision-language-action (VLA) models have achieved impressive generalization in robotic manipulation, and recent memory-augmented VLAs have relaxed the Markovian assumption by conditioning on past images or language summaries. Vision-based memory approaches address this by conditioning on sampled past image frames, but they are computationally expensive and fundamentally limited when temporal events are visually ambiguous, e.g., pushing a button multiple times with small movements. We propose FM-VLA, a VLA model with force-based memory, enabling temporal context reasoning for non-Markovian, contact-rich manipulation. We encode force histories into compact force memory tokens with a variational autoencoder (VAE) pretrained with force time series reconstruction. By projecting force latent representations and short state history as additional conditioning tokens to the action expert module, we enable VLAs to leverage accumulated contact event history to guide manipulation. We evaluate FM-VLA on three memory-dependent tasks, including finding a hidden block, pressing a button, and wiping a dish for a specific number of times. Our lightweight force memory achieves over 80% success rate with minimal inference overhead, significantly outperforming baseline approaches. Project page: https://qft-333.github.io/FM-VLA-Page/</p>
-        </details>
-        <div class="paper-actions">
-          <a href="https://arxiv.org/pdf/2607.18231v1" target="_blank" rel="noopener">PDF</a>
-          <a href="https://arxiv.org/abs/2607.18231" target="_blank" rel="noopener">Abs</a>
-<a class="html" href="https://arxiv.org/html/2607.18231v1" target="_blank" rel="noopener">HTML</a><a class="project" href="https://qft-333.github.io/FM-VLA-Page/" target="_blank" rel="noopener">Project</a>        </div>
-        <div class="paper-figures">
-            <a href="https://arxiv.org/html/2607.18231v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.18231v1/x1.png" loading="lazy" alt="Figure"></a>
-            <a href="https://arxiv.org/html/2607.18231v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.18231v1/x2.png" loading="lazy" alt="Figure"></a>
-            <a href="https://arxiv.org/html/2607.18231v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.18231v1/x3.png" loading="lazy" alt="Figure"></a>
-            <a href="https://arxiv.org/html/2607.18231v1/x4.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.18231v1/x4.png" loading="lazy" alt="Figure"></a>
-        </div>
-      </li>
-      <li class="sel-paper">
-        <div class="sel-header">
-          <span class="sel-score">4</span>
-          <div class="sel-titles">
             <h2 class="paper-title"><a href="https://arxiv.org/abs/2607.18016" target="_blank" rel="noopener">Closing the Loop in Humanoid VLA: Persistent 3D Object Tokens for Verifiable Loco-Manipulation</a></h2>
 <p class="paper-title-zh">关闭 Humanoid VLA 中的循环：用于可验证的局部操作的持久 3D 对象令牌</p>          </div>
         </div>
@@ -15051,38 +14930,7 @@
       </li>
       <li class="sel-paper">
         <div class="sel-header">
-          <span class="sel-score">5</span>
-          <div class="sel-titles">
-            <h2 class="paper-title"><a href="https://arxiv.org/abs/2607.18106" target="_blank" rel="noopener">Importance Sampling and PCA for Finding Failures in Commercial Autonomous Vehicles</a></h2>
-<p class="paper-title-zh">用于查找商用自动驾驶汽车故障的重要性采样和 PCA</p>          </div>
-        </div>
-        <p class="sel-reason">首次在商用自动驾驶卡车上验证稀有失效发现算法，重要性采样+PCA找最危险场景</p>
-        <div class="sel-tags"><span class="sel-tag">自动驾驶</span><span class="sel-tag">闭环仿真</span></div>
-        <div class="paper-meta">
-          <span class="authors">Hailey Warner, Duncan Eddy, Shreya Parjan, Caroline Cahilly, Harrison Delecki, Matthias Kleinstauber, Chaitanya Shinde, Jerry Lopez, Mykel J. Kochenderfer</span>
-        </div>
-        <div class="abstract-box">
-          <p class="paper-abstract">迄今为止，发现自主系统中罕见故障的方法几乎完全在简单的、学术性的驱动堆栈的模拟中得到了证明，但它们是否可以推广到商业系统中使用的更强大的规划器尚不确定。我们通过将两种罕见事件发现算法应用于商业自动驾驶卡车堆栈来解决这一差距。自适应压力测试 (AST) 使用强化学习来搜索最有可能导致模拟碰撞的噪声轨迹，而基于扩散的故障采样 (DiFS) 则训练去噪扩散模型来对不同的故障集进行采样。我们表明，两种算法都可以在合并和切入操作期间发现模拟碰撞，而传统的蒙特卡罗模拟则不能。为了使这些故障具有可操作性，我们引入了基于主成分分析 (PCA) 的统计分析，将故障分为常见模式并确定对结果影响最大的时间步长。我们对主成分进行聚类并反转 PCA 变换以恢复广义噪声轨迹，并表明这些轨迹在相同和相似的场景中重现故障。这提供了从故障发现到感知级缺陷的系统诊断的途径。</p>
-          <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
-        </div>
-        <details class="abstract-en">
-          <summary>Show English abstract</summary>
-          <p>Methods for discovering rare failures in autonomous systems have so far been demonstrated almost exclusively in simulations with simple, academic driving stacks, leaving open whether they generalize to the more robust planners used in commercial systems. We address this gap by applying two rare-event discovery algorithms to a commercial autonomous trucking stack. Adaptive stress testing (AST) uses reinforcement learning to search for the most likely noise trajectories leading to a simulated collision, while diffusion-based failure sampling (DiFS) trains a denoising diffusion model to sample a diverse set of failures. We show that both algorithms find simulated collisions during merge and cut-in maneuvers where traditional Monte Carlo simulation does not. To make these failures actionable, we introduce a statistical analysis based on principal component analysis (PCA) that classifies failures into common modes and identifies the timesteps that most influence the outcome. We cluster the principal components and invert the PCA transform to recover generalized noise trajectories, and show that these trajectories reproduce failures in identical and similar scenarios. This provides a path from failure discovery to systematic diagnosis of perception-level flaws.</p>
-        </details>
-        <div class="paper-actions">
-          <a href="https://arxiv.org/pdf/2607.18106v1" target="_blank" rel="noopener">PDF</a>
-          <a href="https://arxiv.org/abs/2607.18106" target="_blank" rel="noopener">Abs</a>
-<a class="html" href="https://arxiv.org/html/2607.18106v1" target="_blank" rel="noopener">HTML</a>        </div>
-        <div class="paper-figures">
-            <a href="https://arxiv.org/html/2607.18106v1/figures/cut_in.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.18106v1/figures/cut_in.png" loading="lazy" alt="Figure"></a>
-            <a href="https://arxiv.org/html/2607.18106v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.18106v1/x1.png" loading="lazy" alt="Figure"></a>
-            <a href="https://arxiv.org/html/2607.18106v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.18106v1/x2.png" loading="lazy" alt="Figure"></a>
-            <a href="https://arxiv.org/html/2607.18106v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.18106v1/x3.png" loading="lazy" alt="Figure"></a>
-        </div>
-      </li>
-      <li class="sel-paper">
-        <div class="sel-header">
-          <span class="sel-score">6</span>
+          <span class="sel-score">4</span>
           <div class="sel-titles">
             <h2 class="paper-title"><a href="https://arxiv.org/abs/2607.16806" target="_blank" rel="noopener">Token-Wise Latent Streaming from Slow Reasoners to Fast Planners for Dynamic Vision Language Navigation</a></h2>
 <p class="paper-title-zh">用于动态视觉语言导航的从缓慢推理器到快速规划器的令牌明智潜在流</p>          </div>
@@ -15111,104 +14959,11 @@
             <a href="https://arxiv.org/html/2607.16806v1/x4.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.16806v1/x4.png" loading="lazy" alt="Figure"></a>
         </div>
       </li>
-      <li class="sel-paper">
-        <div class="sel-header">
-          <span class="sel-score">7</span>
-          <div class="sel-titles">
-            <h2 class="paper-title"><a href="https://arxiv.org/abs/2607.18060" target="_blank" rel="noopener">RoboHarness: Memory-Driven Orchestration of Heterogeneous Robot Policies for Long-Horizon Planning</a></h2>
-<p class="paper-title-zh">RoboHarness：用于长期规划的异构机器人策略的内存驱动编排</p>          </div>
-        </div>
-        <p class="sel-reason">记忆驱动的异构机器人策略编排框架，让不同能力的策略协同执行长程任务</p>
-        <div class="sel-tags"><span class="sel-tag">机器人</span><span class="sel-tag">VLA</span></div>
-        <div class="paper-meta">
-          <span class="authors">Jinbang Huang, Yuanzhao Hu, Zhiyuan Li, Ran Qi, Yixin Xiao, Zhanguang Zhang, Mark Coates, Tongtong Cao, Yingxue Zhang</span>
-        </div>
-        <div class="abstract-box">
-          <p class="paper-abstract">长期机器人任务需要多种功能，而没有任何单一策略可以可靠地提供这些功能。异构策略提供了互补的优势，但编排它们需要对不确定的能力边界和跨策略分布不匹配进行推理，而这些在很大程度上被基于具有固定适用性的同质、预定义技能的现有规划方法所忽视。我们提出了 RoboHarness，一个统一的框架，它将独立开发的机器人控制系统封装为可重用的代理技能。尽管在这项工作中使用 VLA、RL 策略和任务与运动规划 (TAMP) 系统进行实例化，但 RoboHarness 被设计为与更广泛的机器人策略兼容的通用框架，例如导航策略、模型预测控制器和世界动作模型。 RoboHarness 使用多模式执行内存和在线证据来表征策略能力边界，以进行能力感知分解和路由。为了稳定策略切换，其内存桥检索与下一个策略相关的执行轨迹，估计其分布内状态区域，并引导机器人走向该区域，而无需联合策略再训练。对三个公共基准、500 个定制任务和 135 个真实机器人实验的广泛实验证明了有效的能力感知路由和稳定的策略编排，在零样本长期规划和分布外鲁棒性方面取得了实质性改进。</p>
-          <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
-        </div>
-        <details class="abstract-en">
-          <summary>Show English abstract</summary>
-          <p>Long-horizon robotic tasks require diverse capabilities that no single policy can reliably provide. Heterogeneous policies offer complementary strengths, but orchestrating them requires reasoning over uncertain capability boundaries and cross-policy distribution mismatch, which are largely overlooked by existing planning methods built on homogeneous, predefined skills with fixed applicability. We propose RoboHarness, a unified framework that encapsulates independently developed robot control systems as reusable agentic skills. Although instantiated in this work with VLAs, RL policies, and task-and-motion planning (TAMP) systems, RoboHarness is designed as a general framework compatible with a broader range of robot policies, such as navigation policies, model predictive controllers, and world-action models. RoboHarness uses multi-modal execution memory and online evidence to characterize policy capability boundaries for capability-aware decomposition and routing. To stabilize policy handoffs, its Memory Bridge retrieves execution trajectories associated with the next policy, estimates its in-distribution state region, and guides the robot toward that region without joint policy retraining. Extensive experiments on three public benchmarks, 500 customized tasks, and 135 real-robot experiments demonstrate effective capability-aware routing and stable policy orchestration, yielding substantial improvements in zero-shot long-horizon planning and out-of-distribution robustness.</p>
-        </details>
-        <div class="paper-actions">
-          <a href="https://arxiv.org/pdf/2607.18060v1" target="_blank" rel="noopener">PDF</a>
-          <a href="https://arxiv.org/abs/2607.18060" target="_blank" rel="noopener">Abs</a>
-<a class="html" href="https://arxiv.org/html/2607.18060v1" target="_blank" rel="noopener">HTML</a>        </div>
-        <div class="paper-figures">
-            <a href="https://arxiv.org/html/2607.18060v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.18060v1/x1.png" loading="lazy" alt="Figure"></a>
-            <a href="https://arxiv.org/html/2607.18060v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.18060v1/x2.png" loading="lazy" alt="Figure"></a>
-            <a href="https://arxiv.org/html/2607.18060v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.18060v1/x3.png" loading="lazy" alt="Figure"></a>
-            <a href="https://arxiv.org/html/2607.18060v1/x4.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.18060v1/x4.png" loading="lazy" alt="Figure"></a>
-        </div>
-      </li>
-      <li class="sel-paper">
-        <div class="sel-header">
-          <span class="sel-score">8</span>
-          <div class="sel-titles">
-            <h2 class="paper-title"><a href="https://arxiv.org/abs/2607.17651" target="_blank" rel="noopener">HCPG-Flow:Hierarchical Contact-Progress Guidance for Flow-Policy Robot Manipulation</a></h2>
-<p class="paper-title-zh">HCPG-Flow：流程策略机器人操作的分层接触进度指南</p>          </div>
-        </div>
-        <p class="sel-reason">引入层级化接触进度引导的流式策略，用解析选择器替代采样后critic排序</p>
-        <div class="sel-tags"><span class="sel-tag">操控</span><span class="sel-tag">机器人</span></div>
-        <div class="paper-meta">
-          <span class="authors">Guanghu Xie, Mingxu Li, Shuo Zhang, Yonglong Zhang, Yifan Yang, Yang Liu, Zongwu Xie, Baoshi Cao</span>
-        </div>
-        <div class="abstract-box">
-          <p class="paper-abstract">流策略可以表示机器人操纵的多模式动作分布，但机器人必须在每个控制步骤执行一个动作。当对多个提案进行采样时，基于评论家的排名使得数据收集依赖于对候选动作的价值估计，而这些候选动作在重播中可能表现不佳。我们引入了 HCPG-Flow，这是一种分析推出时间选择器，它通过分层、以对象为中心的接触进度指导来增强 SAC-Flow，同时保留其参与者和批评者目标。 HCPG 在接触后从末端执行器方法切换到任务进展，通过任务相关距离的一阶减少对每个提案进行评分，标准化候选集中的分数，并执行温度控制的动作嵌入。在 10 项模拟任务中，HCPG 在两个基准测试中均比 SAC-Flow 提高了平均成功率，其中与 Maniskill 相比提高了 9.5 个百分点。四项物理任务进一步显示出很高的成功率，成功完成步骤减少了 17.4%。项目页面：https://hitxraz.github.io/HCPG-Flow/</p>
-          <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
-        </div>
-        <details class="abstract-en">
-          <summary>Show English abstract</summary>
-          <p>Flow policies can represent multimodal action distributions for robot manipulation, yet a robot must execute one action at each control step. When several proposals are sampled, critic-based ranking makes data collection depend on value estimates over candidate actions that may be weakly represented in replay. We introduce HCPG-Flow, an analytic rollout-time selector that augments SAC-Flow with hierarchical, object-centric contact-progress guidance while preserving its actor and critic objectives. HCPG switches from end-effector approach to task progress after contact, scores each proposal by the first-order reduction of a task-relevant distance, standardizes scores within the candidate set, and executes a temperature-controlled action embedding. Across ten simulated tasks, HCPG improves mean success over SAC-Flow on both benchmarks, including a 9.5 percentage-point gain on Maniskill. Four physical tasks further show high success with a 17.4% reduction in successful completion steps.Project page: https://hitxraz.github.io/HCPG-Flow/</p>
-        </details>
-        <div class="paper-actions">
-          <a href="https://arxiv.org/pdf/2607.17651v1" target="_blank" rel="noopener">PDF</a>
-          <a href="https://arxiv.org/abs/2607.17651" target="_blank" rel="noopener">Abs</a>
-<a class="html" href="https://arxiv.org/html/2607.17651v1" target="_blank" rel="noopener">HTML</a><a class="project" href="https://hitxraz.github.io/HCPG-Flow/" target="_blank" rel="noopener">Project</a>        </div>
-        <div class="paper-figures">
-            <a href="https://arxiv.org/html/2607.17651v1/figures/hcpg_framework_image2_hybrid_sacbox_normalized.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.17651v1/figures/hcpg_framework_image2_hybrid_sacbox_normalized.png" loading="lazy" alt="Figure"></a>
-            <a href="https://arxiv.org/html/2607.17651v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.17651v1/x1.png" loading="lazy" alt="Figure"></a>
-            <a href="https://arxiv.org/html/2607.17651v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.17651v1/x2.png" loading="lazy" alt="Figure"></a>
-            <a href="https://arxiv.org/html/2607.17651v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.17651v1/x3.png" loading="lazy" alt="Figure"></a>
-        </div>
-      </li>
     </ul>
   </div>
   <div class="sel-category">
-    <h3 class="sel-cat-name">VLM / LLM<span class="sel-cat-count">（1）</span></h3>
+    <h3 class="sel-cat-name">VLM / LLM<span class="sel-cat-count">（0）</span></h3>
     <ul class="sel-paper-list">
-      <li class="sel-paper">
-        <div class="sel-header">
-          <span class="sel-score">1</span>
-          <div class="sel-titles">
-            <h2 class="paper-title"><a href="https://arxiv.org/abs/2607.15851" target="_blank" rel="noopener">Von Mises-Fisher Mixture Model with Dynamic Shrinkage for Realistic Test-Time Transduction</a></h2>
-<p class="paper-title-zh">具有动态收缩的 Von Mises-Fisher 混合模型，可实现真实的测试时间转换</p>          </div>
-        </div>
-        <p class="sel-reason">从惩罚似然估计视角重新审视VLM测试时转导，用动态收缩von Mises-Fisher混合模型解决类别不平衡退化</p>
-        <div class="sel-tags"><span class="sel-tag">VLM</span><span class="sel-tag">顶会</span><span class="sel-tag">开源</span></div>
-        <div class="paper-meta">
-          <span class="authors">Jiazhen Huang, Zhiming Liu, Changhu Wang, Wei Ju, Ziyue Qiao, Xiao Luo</span>
-        </div>
-        <div class="abstract-box">
-          <p class="paper-abstract">一系列方法旨在提高视觉语言模型（VLM）在测试时的性能。其中，转导由于其强大的兼容性和效率而成为一种有前途的范式。然而，现实的评估往往涉及高度不平衡的类别分布，这会导致性能下降甚至崩溃。在这项工作中，我们从惩罚似然估计（PLE）的角度系统地重新审视转导，表明具有 KL 散度锚项的 PLE 自然会在先前锚点和经验估计之间产生自适应收缩行为。从这个角度来看，传导方法的脆弱性可归因于缺乏锚定机制和收缩强度的静态建模。因此，我们提出了 Von Mises-Fisher 模型与动态收缩的混合 (MOON)。 MOON 建立在 von Mises-Fisher 分布的混合之上，用于对单位超球面上的特征表示进行建模。为了处理不平衡问题，MOON 在实例和类级别使用零样本先验动态调整收缩强度。因此，它可以抑制不可靠的分配并防止来自离群值类的有害更新，从而减轻负迁移。 MOON 与模型无关，无需训练，并且不需要特定于任务的超参数调整。大量的实验进一步验证了MOON在性能和效率上的优势。我们的代码可在 https://github.com/walawaalagoose/MOON 获取</p>
-          <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
-        </div>
-        <details class="abstract-en">
-          <summary>Show English abstract</summary>
-          <p>A range of methods aim to enhance the performance of vision-language models (VLMs) at test time. Among them, transduction has emerged as a promising paradigm due to its strong compatibility and efficiency. However, realistic evaluations often involve highly imbalanced class distributions, which cause performance degradation or even collapse. In this work, we systematically revisit transduction from the perspective of penalized likelihood estimation (PLE), showing that PLE with a KL-divergence anchor term naturally yields an adaptive shrinkage behavior between prior anchors and empirical estimates. From this viewpoint, the brittleness of transductive methods can be attributed to the absence of anchoring mechanism and static modeling of the shrinkage strength. Therefore, we propose Mixture of Von Mises-Fisher Models with Dynamic Shrinkage (MOON). MOON is built upon a mixture of von Mises-Fisher distributions to model feature representations on the unit hypersphere. To handle imbalance, MOON dynamically adjusts the shrinkage strength using zero-shot priors at both instance and class levels. Thus, it suppresses unreliable assignments and prevents harmful updates from outlier classes, thereby mitigating negative transfer. MOON is model-agnostic, training-free, and requires no task-specific hyperparameter tuning. Extensive experiments further validate the advantage of MOON in both performance and efficiency. Our code is available at https://github.com/walawalagoose/MOON</p>
-        </details>
-        <div class="paper-actions">
-          <a href="https://arxiv.org/pdf/2607.15851v1" target="_blank" rel="noopener">PDF</a>
-          <a href="https://arxiv.org/abs/2607.15851" target="_blank" rel="noopener">Abs</a>
-<a class="html" href="https://arxiv.org/html/2607.15851v1" target="_blank" rel="noopener">HTML</a><a class="code" href="https://github.com/walawalagoose/MOON" target="_blank" rel="noopener">Code</a>        </div>
-        <div class="paper-figures">
-            <a href="https://arxiv.org/html/2607.15851v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.15851v1/x1.png" loading="lazy" alt="Figure"></a>
-            <a href="https://arxiv.org/html/2607.15851v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.15851v1/x2.png" loading="lazy" alt="Figure"></a>
-            <a href="https://arxiv.org/html/2607.15851v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.15851v1/x3.png" loading="lazy" alt="Figure"></a>
-            <a href="https://arxiv.org/html/2607.15851v1/x4.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.15851v1/x4.png" loading="lazy" alt="Figure"></a>
-        </div>
-      </li>
     </ul>
   </div>
 </div>  </main>
@@ -15216,7 +14971,7 @@
   <footer class="site-footer">
     <div class="wrap footer-wrap">
       <span>Categories: cs.CV, cs.RO, cs.AI</span>
-      <span>Generated 2026-07-22 14:45 UTC</span>
+      <span>Generated 2026-07-22 14:49 UTC</span>
     </div>
   </footer>
 
