@@ -1,0 +1,292 @@
+{
+  "date": "2026-07-20",
+  "total_candidates": 97,
+  "total_selected": 6,
+  "categories": [
+    {
+      "id": "worldmodel",
+      "name": "世界模型&视频/场景生成模型",
+      "papers": [
+        {
+          "id": "2607.15667",
+          "title": "PE-Field 4D: Video Generation Models as Canvas",
+          "title_zh": "PE-Field 4D：视频生成模型作为画布",
+          "authors": [
+            "Yunpeng Bai",
+            "Haoxiang Li",
+            "Qixing Huang"
+          ],
+          "abstract": "Diffusion Transformers have recently achieved strong performance in video generation, yet controlling scene geometry under viewpoint changes and camera motion remains challenging. In this work, we revisit the role of positional encoding in video diffusion transformers and show that it provides a useful spatial bias for geometry-aware control. Specifically, if reference tokens are encoded according to their projected locations in the target view, the denoising model is encouraged to retrieve content from position aligned regions of the input video. Building on this observation, we introduce a geometry-aware cross-attention mechanism that enables target video latent tokens to attend to structured context tokens derived from reference images or frames. To establish correspondence between the reference content and the target camera trajectory, we equip the context tokens with a projected positional encoding scheme that combines target-view 2D reprojection with depth-aware disambiguation. At the same time, we preserve the original spatiotemporal positional encoding of the generated video latent, allowing geometric guidance to be injected while maintaining consistency with the video model's native latent structure. The resulting framework provides a simple and effective approach for controllable video generation. It improves spatial controllability in viewpoint-dependent editing tasks, including camera re-trajectory, novel-view video synthesis, and geometry-aware video editing, while preserving the generative prior of the underlying video diffusion model. The code is available at: https://github.com/MTLab/PE-Field.",
+          "abstract_zh": "Diffusion Transformers 最近在视频生成方面取得了强大的性能，但在视点变化和相机运动下控制场景几何形状仍然具有挑战性。在这项工作中，我们重新审视了位置编码在视频扩散变换器中的作用，并表明它为几何感知控制提供了有用的空间偏差。具体来说，如果参考标记根据其在目标视图中的投影位置进行编码，则鼓励去噪模型从输入视频的位置对齐区域检索内容。基于这一观察，我们引入了一种几何感知交叉注意机制，使目标视频潜在标记能够关注从参考图像或帧派生的结构化上下文标记。为了建立参考内容和目标相机轨迹之间的对应关系，我们为上下文标记配备了投影位置编码方案，该方案将目标视图 2D 重投影与深度感知消歧相结合。同时，我们保留了生成的视频潜在的原始时空位置编码，允许注入几何引导，同时保持与视频模型的本机潜在结构的一致性。由此产生的框架为可控视频生成提供了一种简单有效的方法。它提高了视点相关编辑任务的空间可控性，包括摄像机重新轨迹、新颖视图视频合成和几何感知视频编辑，同时保留底层视频扩散模型的生成先验。该代码位于：https://github.com/MTLab/PE-Field。",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "submitted": "2026-07-17T06:22:14Z",
+          "updated": "2026-07-17T06:22:14Z",
+          "has_code": true,
+          "has_project": false,
+          "code_links": [
+            "https://github.com/MTLab/PE-Field"
+          ],
+          "project_links": [],
+          "code_url": "https://github.com/MTLab/PE-Field",
+          "project_url": null,
+          "abs_url": "https://arxiv.org/abs/2607.15667",
+          "pdf_url": "https://arxiv.org/pdf/2607.15667v1",
+          "html_url": "https://arxiv.org/html/2607.15667v1",
+          "figures": [
+            "https://arxiv.org/html/2607.15667v1/x1.png",
+            "https://arxiv.org/html/2607.15667v1/x2.png",
+            "https://arxiv.org/html/2607.15667v1/x3.png",
+            "https://arxiv.org/html/2607.15667v1/x4.png"
+          ],
+          "venue": null,
+          "comments": null,
+          "rank": 1,
+          "score": 90,
+          "reason_zh": "用视频扩散模型位置编码注入几何先验，实现视角可控视频生成与视角合成",
+          "tags": [
+            "生成模型",
+            "4D重建",
+            "开源"
+          ]
+        },
+        {
+          "id": "2607.16192",
+          "title": "MotionForesight: Re-purposing Video Models for Future 3D Scene-Flow Prediction",
+          "title_zh": "MotionForesight：重新利用视频模型以实现未来 3D 场景流预测",
+          "authors": [
+            "Homanga Bharadhwaj",
+            "Yash Jangir"
+          ],
+          "abstract": "Humans can infer how objects are likely to move from passive observation: a cup may be lifted, a drawer may slide, and a lid may rotate shut. Such predictions expose the physical consequences of interaction needed to act in the real world. We study how to learn this anticipation from ordinary monocular videos of human-object interaction. Given a short observed video context, MotionForesight predicts future 3D trajectories for points on the manipulated object. This casts interaction prediction as object-centered 3D motion forecasting without any assumptions on the object properties. Our key insight is that video prediction models already encode rich priors about how objects move during human interactions. We redirect these priors from pixel prediction toward future 3D scene flow. We start from a dense 3D tracker built on a pretrained video model, generate pseudo-ground-truth tracks from complete clips, and train the forecaster using only the observed frames. We replace future RGB and geometry with learned mask latents and train a lightweight adapter to turn the retrospective tracking representation into a forward predictor, while freezing the large video and tracking components. Using just 40k human videos and no auxiliary inputs such as language, MotionForesight generalizes across diverse out-of-distribution objects, environments, viewpoints, and interactions. It also outperforms substantially larger models that use over a million training videos. These results show that we can efficiently re-purpose video priors into explicit geometric forecasts for embodied intelligence. https://motionforesight.github.io/",
+          "abstract_zh": "人类可以通过被动观察来推断物体可能如何移动：杯子可以被举起，抽屉可以滑动，盖子可以旋转关闭。这些预测揭示了现实世界中行动所需的互动的物理后果。我们研究如何从人与物体交互的普通单眼视频中学习这种预期。给定一个简短的观察视频上下文，MotionForesight 可以预测被操纵对象上的点的未来 3D 轨迹。这将交互预测转化为以对象为中心的 3D 运动预测，而无需对对象属性进行任何假设。我们的主要见解是，视频预测模型已经编码了关于人类交互过程中物体如何移动的丰富先验知识。我们将这些先验从像素预测转向未来的 3D 场景流。我们从基于预训练视频模型构建的密集 3D 跟踪器开始，从完整的剪辑生成伪地面实况轨迹，并仅使用观察到的帧来训练预测器。我们用学习到的掩模潜伏替换未来的 RGB 和几何形状，并训练一个轻量级适配器将回顾性跟踪表示转变为前向预测器，同时冻结大型视频和跟踪组件。 MotionForesight 仅使用 40k 人类视频，没有语言等辅助输入，可以概括不同的分布外对象、环境、观点和交互。它还优于使用超过一百万个训练视频的更大模型。这些结果表明，我们可以有效地将视频先验重新用于具体智能的显式几何预测。 https://motionforesight.github.io/",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "submitted": "2026-07-17T17:59:38Z",
+          "updated": "2026-07-17T17:59:38Z",
+          "has_code": false,
+          "has_project": true,
+          "code_links": [],
+          "project_links": [
+            "https://motionforesight.github.io/"
+          ],
+          "code_url": null,
+          "project_url": "https://motionforesight.github.io/",
+          "abs_url": "https://arxiv.org/abs/2607.16192",
+          "pdf_url": "https://arxiv.org/pdf/2607.16192v1",
+          "html_url": "https://arxiv.org/html/2607.16192v1",
+          "figures": [
+            "https://arxiv.org/html/2607.16192v1/final_figs/teasermain.png",
+            "https://arxiv.org/html/2607.16192v1/x1.png",
+            "https://arxiv.org/html/2607.16192v1/x2.png",
+            "https://arxiv.org/html/2607.16192v1/x3.png"
+          ],
+          "venue": null,
+          "comments": "Website with visual results motionforesight.github.io",
+          "rank": 2,
+          "score": 87,
+          "reason_zh": "从人类操作视频预测物体未来3D运动轨迹，交互预测即物体中心运动预测",
+          "tags": [
+            "世界模型",
+            "3D重建"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reconstruction",
+      "name": "3D/4D 重建与生成",
+      "papers": [
+        {
+          "id": "2607.15536",
+          "title": "E3DGS: Unified Geometric-Photometric Equivariance for 3D Gaussian Splatting via Color-as-Geometry Embedding",
+          "title_zh": "E3DGS：通过颜色几何嵌入实现 3D 高斯泼溅的统一几何光度等方差",
+          "authors": [
+            "Chankyo Kim",
+            "Maani Ghaffari"
+          ],
+          "abstract": "3D Gaussian Splatting (3DGS) captures scenes by coupling explicit geometry (position, covariance) with view-dependent photometry (Spherical Harmonics). However, building $\\mathrm{SE}(3)$-equivariant architectures on these primitives presents a fundamental representation bottleneck. Color has been treated as a signal rather than a geometric entity, making it nontrivial to unify symmetry across geometry and appearance as the camera frame changes. While translations are handled by relative coordinates, rotations act heterogeneously across attributes: $μ\\mapsto Rμ$, $Σ\\mapsto RΣR^\\top$, and $f_\\ell\\mapsto D^\\ell(R)f_\\ell$. This mismatch complicates strict equivariance, leading existing methods to either discard or flatten SH coefficients, thereby breaking symmetry. We propose a unified solution rooted in representation theory: for SH degrees $\\ell\\le2$, photometry is algebraically isomorphic to a rank-2 geometric tensor. We prove that the Wigner-$D$ action on these SH coefficients can be exactly reformulated as the conjugation action on $3\\times3$ matrices. Leveraging this, we introduce the Unified Matrix Embedding, a lifting that maps all Gaussian attributes into a unified carrier space, $\\mathfrak{gl}(3)$. Building on the \"Color-as-Geometry\" formulation, we present E3DGS, a rigid-body ($\\mathrm{SE}(3)$) equivariant architecture that processes 3D Gaussians without Clebsch-Gordan tensor products. Evaluations on object vision and action-conditioned Gaussian world modeling demonstrate that our unified approach yields strong robustness under camera-frame changes and improved data efficiency.",
+          "abstract_zh": "3D 高斯溅射 (3DGS) 通过将显式几何（位置、协方差）与视图相关的光度测量（球谐函数）耦合来捕获场景。然而，在这些基元上构建 $\\mathrm{SE}(3)$ 等效架构存在基本的表示瓶颈。颜色被视为信号而不是几何实体，因此随着相机框架的变化，统一几何形状和外观的对称性变得非常重要。虽然平移是通过相对坐标处理的，但旋转在属性之间的作用是不同的：$μ\\mapsto Rμ$、$Σ\\mapsto RΣR^\\top$ 和 $f_\\ell\\mapsto D^\\ell(R)f_\\ell$。这种不匹配使严格的等方差变得复杂，导致现有方法要么丢弃要么展平 SH 系数，从而破坏对称性。我们提出了一个植根于表示论的统一解决方案：对于 SH 度 $\\ell\\le2$，光度测量在代数上与 2 阶几何张量同构。我们证明，这些 SH 系数上的 Wigner-$D$ 作用可以精确地重新表述为 $3\\times3$ 矩阵上的共轭作用。利用这一点，我们引入了统一矩阵嵌入，一种将所有高斯属性映射到统一载体空间 $\\mathfrak{gl}(3)$ 的提升。基于“颜色作为几何”公式，我们提出了 E3DGS，这是一种刚体 ($\\mathrm{SE}(3)$) 等变架构，可以处理 3D 高斯，无需 Clebsch-Gordan 张量积。对目标视觉和动作条件高斯世界建模的评估表明，我们的统一方法在相机帧变化下具有很强的鲁棒性，并提高了数据效率。",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV",
+            "cs.LG"
+          ],
+          "submitted": "2026-07-17T01:12:26Z",
+          "updated": "2026-07-17T01:12:26Z",
+          "has_code": false,
+          "has_project": false,
+          "code_links": [],
+          "project_links": [],
+          "code_url": null,
+          "project_url": null,
+          "abs_url": "https://arxiv.org/abs/2607.15536",
+          "pdf_url": "https://arxiv.org/pdf/2607.15536v1",
+          "html_url": "https://arxiv.org/html/2607.15536v1",
+          "figures": [
+            "https://arxiv.org/html/2607.15536v1/figures/e3dgs-figure1.png",
+            "https://arxiv.org/html/2607.15536v1/figures/e3dgs-mae.png",
+            "https://arxiv.org/html/2607.15536v1/figures/feature-heatmap.png",
+            "https://arxiv.org/html/2607.15536v1/figures/qualitative-mae2.png"
+          ],
+          "venue": null,
+          "comments": "31 pages, 7 figures, 5 tables",
+          "rank": 3,
+          "score": 86,
+          "reason_zh": "将颜色视为几何实体实现3DGS的SE(3)等变性，统一几何与光度对称性",
+          "tags": [
+            "3DGS",
+            "3D重建"
+          ]
+        },
+        {
+          "id": "2607.15542",
+          "title": "ImprovedVBGS: Real-time Continual Variational Bayes Gaussian Splatting",
+          "title_zh": "改进的VBGS：实时连续变分贝叶斯高斯分布",
+          "authors": [
+            "Damani Mguni-Coker"
+          ],
+          "abstract": "On-the-fly reconstruction is a key requirement for many applications in robotics and autonomous navigation. Variational Bayes Gaussian Splatting (VBGS) enables continual learning without replay buffers using Coordinate Ascent Variational Inference (CAVI), but its per-frame iterations over all observed points make it too slow for real-time use with strict memory and latency requirements. We present ImprovedVBGS, an accelerated framework for on-the-fly continual reconstruction. This is achieved primarily through (i) spatially truncated variational inference, and (ii) improved reassignment that uses forwarding, truncation and eliminates wasteful dynamic recompilation. On the NeRF synthetic dataset, we reduce mean per-frame latency from ~84.0 s to ~0.050 s on an RTX 3070 Ti, a 1680x speed-up while maintaining reconstruction quality.",
+          "abstract_zh": "动态重建是机器人和自主导航领域许多应用的关键要求。变分贝叶斯高斯分布 (VBGS) 使用坐标上升变分推理 (CAVI) 可以在没有重播缓冲区的情况下进行连续学习，但其对所有观察点的每帧迭代使其速度太慢，无法满足严格内存和延迟要求的实时使用。我们提出了改进的VBGS，这是一个用于动态连续重建的加速框架。这主要是通过（i）空间截断变分推理和（ii）使用转发、截断并消除浪费的动态重新编译来改进重新分配来实现的。在 NeRF 合成数据集上，我们将 RTX 3070 Ti 上的平均每帧延迟从约 84.0 秒减少到约 0.050 秒，在保持重建质量的同时加速了 1680 倍。",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV",
+            "cs.RO"
+          ],
+          "submitted": "2026-07-17T01:24:25Z",
+          "updated": "2026-07-17T01:24:25Z",
+          "has_code": true,
+          "has_project": false,
+          "code_links": [
+            "https://github.com/damanimc/ImprovedVBGS"
+          ],
+          "project_links": [],
+          "code_url": "https://github.com/damanimc/ImprovedVBGS",
+          "project_url": null,
+          "abs_url": "https://arxiv.org/abs/2607.15542",
+          "pdf_url": "https://arxiv.org/pdf/2607.15542v1",
+          "html_url": "https://arxiv.org/html/2607.15542v1",
+          "figures": [
+            "https://arxiv.org/html/2607.15542v1/figures/fit_reassign_ablation_dense.png",
+            "https://arxiv.org/html/2607.15542v1/figures/fit_reassign_ablation_truncated.png",
+            "https://arxiv.org/html/2607.15542v1/figures/lego_predictions_clean.png"
+          ],
+          "venue": null,
+          "comments": "5 pages, 4 figure. Technical Report. This work introduces ImprovedVBGS, accelerated continual learning for 3D Gaussian Splatting based Reconstruction. Code available at [https://github.com/damanimc/ImprovedVBGS](https://github.com/damanimc/ImprovedVBGS)",
+          "rank": 4,
+          "score": 85,
+          "reason_zh": "空间截断变分推断+改进重分配，加速3DGS持续学习实现机器人实时重建",
+          "tags": [
+            "3DGS",
+            "3D重建",
+            "开源",
+            "机器人"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vla",
+      "name": "自动驾驶与机器人",
+      "papers": [
+        {
+          "id": "2607.15330",
+          "title": "Xiaomi-Robotics-1: Scaling Vision-Language-Action Models with over 100K Hours of Real-World Trajectories",
+          "title_zh": "Xiaomi-Robotics-1：利用超过 10 万小时的真实世界轨迹扩展视觉-语言-动作模型",
+          "authors": [
+            "Xiaomi Robotics Team",
+            "Jun Guo",
+            "Piaopiao Jin",
+            "Jason Li",
+            "Peiyan Li"
+          ],
+          "abstract": "We present Xiaomi-Robotics-1, a foundational vision-language-action (VLA) model capable of (1) following diverse language instructions to perform a wide range of mobile manipulation tasks in unseen environments out-of-the-box, and (2) efficiently adapting to novel downstream tasks with minimal fine-tuning data. We propose a two-stage training recipe consisting of pre-training and post-training. During pre-training, we imbue the model with broad and generalizable action-generation capabilities by training on over 100k hours of real-world manipulation trajectories collected via UMI devices. Crucially, we develop a scalable auto-labeling pipeline that annotates trajectory clips with natural languages describing scene state transitions, providing rich and precise conditioning for action learning. During post-training, we aim to align these capabilities with robot embodiments and imperative instructions that humans naturally use to prompt robots. Extensive experiments demonstrate strong scaling behavior. Xiaomi-Robotics-1 consistently improves with increased data scales and model sizes during pre-training. This scaling behavior directly transfers to post-training, where a stronger pre-training model yields better out-of-the-box real-robot performance in unseen environments. Furthermore, Xiaomi-Robotics-1 serves as a strong robot foundation policy that can be efficiently fine-tuned on complex, dexterous tasks with high data efficiency. Across multiple simulation benchmarks, Xiaomi-Robotics-1 outperforms state-of-the-art methods. Notably, it establishes a new state-of-the-art with a 57.6% success rate on RoboCasa365, surpassing the previous best of 46.6%. Furthermore, it achieves an average score of 20.07 on RoboDojo, significantly outperforming the prior state-of-the-art (13.07). Code and model checkpoints will be released. Project page: https://robotics.xiaomi.com/xiaomi-robotics-1.html",
+          "abstract_zh": "我们提出了Xiaomi-Robotics-1，这是一种基础的视觉-语言-动作（VLA）模型，能够（1）遵循不同的语言指令，在未见的环境中开箱即用地执行各种移动操作任务，以及（2）以最少的微调数据有效地适应新的下游任务。我们提出了一个由预训练和后训练组成的两阶段训练方案。在预训练期间，我们通过 UMI 设备收集的超过 10 万小时的真实操作轨迹进行训练，为模型注入广泛且可概括的动作生成能力。至关重要的是，我们开发了一个可扩展的自动标记管道，用描述场景状态转换的自然语言对轨迹片段进行注释，为动作学习提供丰富而精确的调节。在训练后，我们的目标是将这些功能与机器人实施例和人类自然用来提示机器人的命令指令结合起来。大量的实验证明了强大的缩放行为。在预训练期间，Xiaomi-Robotics-1 随着数据规模和模型大小的增加而不断改进。这种扩展行为直接转移到训练后，更强大的预训练模型可以在未见过的环境中产生更好的开箱即用的真实机器人性能。此外，Xiaomi-Robotics-1作为强大的机器人基础策略，可以在复杂、灵巧的任务上进行高效微调，并具有高数据效率。在多个模拟基准测试中，Xiaomi-Robotics-1 的性能优于最先进的方法。值得注意的是，它在 RoboCasa365 上以 57.6% 的成功率创造了新的最先进水平，超过了之前 46.6% 的最佳成绩。此外，它在 RoboDojo 上的平均得分为 20.07，显着优于之前的最佳水平 (13.07)。代码和模型检查点将被发布。项目页面：https://robotics.xiaomi.com/xiaomi-robotics-1.html",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV",
+            "cs.RO"
+          ],
+          "submitted": "2026-07-16T16:02:25Z",
+          "updated": "2026-07-16T16:02:25Z",
+          "has_code": false,
+          "has_project": true,
+          "code_links": [],
+          "project_links": [
+            "https://robotics.xiaomi.com/xiaomi-robotics-1.html"
+          ],
+          "code_url": null,
+          "project_url": "https://robotics.xiaomi.com/xiaomi-robotics-1.html",
+          "abs_url": "https://arxiv.org/abs/2607.15330",
+          "pdf_url": "https://arxiv.org/pdf/2607.15330v1",
+          "html_url": "https://arxiv.org/html/2607.15330v1",
+          "figures": [
+            "https://arxiv.org/html/2607.15330v1/x1.png",
+            "https://arxiv.org/html/2607.15330v1/x2.png",
+            "https://arxiv.org/html/2607.15330v1/x3.png",
+            "https://arxiv.org/html/2607.15330v1/x4.png"
+          ],
+          "venue": null,
+          "comments": "Project page: https://robotics.xiaomi.com/xiaomi-robotics-1.html",
+          "rank": 1,
+          "score": 96,
+          "reason_zh": "小米机器人100K+小时真实操作数据预训练VLA，零样本泛化+高效下游微调",
+          "tags": [
+            "VLA",
+            "具身智能",
+            "操控"
+          ]
+        },
+        {
+          "id": "2607.15642",
+          "title": "Difference-Based Relational Learning for Zero-Shot Object-Goal Visual Navigation With Direct Sim-to-Real Transfer",
+          "title_zh": "基于差异的关系学习，用于零样本目标目标视觉导航，具有直接模拟到真实的迁移",
+          "authors": [
+            "Guolei Qi",
+            "Feitian Zhang"
+          ],
+          "abstract": "End-to-end deep reinforcement learning (DRL) for zero-shot object-goal visual navigation remains challenged by the sim-to-real gap, particularly variations in object appearance and restricted camera field-of-view (FoV). This letter proposes a Temporal Difference-Relational Network (T-DRN) for robust zero-shot sim-to-real transfer. T-DRN combines a Siamese difference-based feature extractor, which computes relational difference between the target and observed objects to produce domain-independent representations, with a dual-frame temporal buffer that preserves short-term object continuity under narrow FoV. Extensive experiments in AI2-THOR demonstrate that T-DRN improves zero-shot generalization in terms of success rates over strong baselines. Furthermore, T-DRN is systematically validated on a physical wheeled robot, demonstrating robust performance under real sensing and actuation constraints and supporting the feasibility of direct sim-to-real transfer.",
+          "abstract_zh": "用于零样本目标目标视觉导航的端到端深度强化学习（DRL）仍然受到模拟与真实差距的挑战，特别是物体外观的变化和受限的相机视场（FoV）。这封信提出了一种时域差分关系网络（T-DRN），用于稳健的零样本模拟到真实的传输。 T-DRN 结合了基于连体差异的特征提取器（计算目标和观察对象之间的关系差异以生成与域无关的表示）和双帧时间缓冲区（可在窄 FoV 下保留短期对象连续性）。 AI2-THOR 中的大量实验表明，T-DRN 在强基线的成功率方面提高了零样本泛化能力。此外，T-DRN 在物理轮式机器人上进行了系统验证，展示了真实传感和驱动约束下的稳健性能，并支持直接模拟到真实传输的可行性。",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.RO"
+          ],
+          "submitted": "2026-07-17T05:35:40Z",
+          "updated": "2026-07-17T05:35:40Z",
+          "has_code": false,
+          "has_project": false,
+          "code_links": [],
+          "project_links": [],
+          "code_url": null,
+          "project_url": null,
+          "abs_url": "https://arxiv.org/abs/2607.15642",
+          "pdf_url": "https://arxiv.org/pdf/2607.15642v1",
+          "html_url": "https://arxiv.org/html/2607.15642v1",
+          "figures": [
+            "https://arxiv.org/html/2607.15642v1/MODEL.png",
+            "https://arxiv.org/html/2607.15642v1/compare1.png",
+            "https://arxiv.org/html/2607.15642v1/pe.png"
+          ],
+          "venue": null,
+          "comments": null,
+          "rank": 6,
+          "score": 80,
+          "reason_zh": "时序差分关系网络实现零样本目标导航sim-to-real迁移，域不变特征表示",
+          "tags": [
+            "导航",
+            "具身智能"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vlm",
+      "name": "VLM / LLM",
+      "papers": []
+    }
+  ]
+}
