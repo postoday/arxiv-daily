@@ -1,6 +1,6 @@
 {
   "date": "2026-07-22",
-  "generated_at": "2026-07-22T05:14:56+00:00",
+  "generated_at": "2026-07-26T15:11:07+00:00",
   "categories": [
     "cs.CV",
     "cs.RO",
@@ -55,6 +55,9 @@
       "affiliations": [
         "Peking University",
         "Alibaba Group"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -93,6 +96,10 @@
       "affiliations": [
         "Brown University",
         "Adobe Research"
+      ],
+      "announced_in": [
+        "cs.CV",
+        "cs.AI"
       ]
     },
     {
@@ -139,6 +146,10 @@
         "Stanford University",
         "University of Maryland, College Park",
         "Harvard University"
+      ],
+      "announced_in": [
+        "cs.CV",
+        "cs.RO"
       ]
     },
     {
@@ -172,6 +183,9 @@
         "https://arxiv.org/html/2607.19341v1/x2.png",
         "https://arxiv.org/html/2607.19341v1/x3.png",
         "https://arxiv.org/html/2607.19341v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -206,7 +220,10 @@
       "project_links": [],
       "title_zh": "OmniReasoner：通过本机工具使用长音频-视频进行思考",
       "abstract_zh": "对于全模态法学硕士来说，长视听推理是很困难的，因为决定性的证据通常是稀疏的、跨模态的，并且用统一的高保真输入来保存成本太高。我们引入了 OmniReasoner，一个用于长音频-视频思考的工具使用后培训框架：全模态法学硕士通过监督微调和强化学习来学习，以决定在回答之前是否以及在哪里调用放大工具。 OmniReasoner 首先构建完整流的低成本全局预览，然后在需要时，根据请求的时间间隔调用放大工具，以便在应答之前进行更高保真度的视觉和音频检查。因为模型在此调用之前和之后观察到不同的采样粒度（稀疏的全局预览和更密集的本地剪辑），所以我们引入了 TimeAnchor，它使工具的时间参数在这些粒度上保持有效和往返一致，而不是与特定采样率的帧索引相关联。为了使这种工具使用行为无需昂贵的手动间隔注释即可训练，我们构建了一个时间增强数据引擎，通过视频编辑和合成来合成工具使用后训练轨迹。全模态和视频基准测试表明，OmniReasoner 提高了答案准确性和时间基础，同时将高保真计算集中在信息区域。代码可在 https://github.com/RockyChen0205/OmniReasoner 获取。",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.CV"
+      ]
     },
     {
       "arxiv_id": "2607.19338",
@@ -252,6 +269,9 @@
         "New York University",
         "ByteDance",
         "Amazon"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -281,7 +301,10 @@
       "title_zh": "野外代理：研究与部署的结合",
       "abstract_zh": "基于大语言模型 (LLM) 的代理系统架构能够推理、规划、执行以及与工具和其他代理协调，正在从研究原型快速过渡到跨软件工程、科学发现和金融等领域的生产规模部署。虽然学术工作强调基准和算法创新，但部署在稳健性、安全性和可靠性方面提出了新的挑战。本教程汇集了研究人员和从业者，探索推理和规划、多代理协调和评估方面的进展，强调部署经验带来的开放挑战。通过药物发现和金融系统中的应用案例研究，我们分析了使代理系统成功的常见设计模式，并讨论了针对故障模式的实用缓解策略，例如验证管道、后备机制和人在环监督。与会者将获得对该领域的全面了解，以及具体的设计模式、评估清单和跨行业安全可靠部署的模板。",
       "html_url": "https://arxiv.org/html/2607.19336v1",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.AI"
+      ]
     },
     {
       "arxiv_id": "2607.19333",
@@ -309,7 +332,10 @@
       "project_links": [],
       "title_zh": "通过 DDIM 针对线性逆问题可证明的基于扩散的后验采样",
       "abstract_zh": "基于扩散的方法在解决逆问题方面取得了显着的经验成功。然而，许多现有的后采样器要么缺乏严格的理论保证，要么会产生大量的计算开销。我们提出了一种简单而有效的算法，称为 \\pddim，用于通过 DDIM 型采样器解决具有扩散先验的线性逆问题。我们的方法只需要对标准 DDIM 更新进行轻量级的、坐标式的修改，同时明确地合并测量模型。关键思想是沿着测量算子的每个奇异方向分别执行后验采样：对于每个方向，当观测信噪比（SNR）低于相应的扩散SNR时，采样器遵循学习的扩散先验，否则切换到基于校准的测量的预测器。我们证明所提出的采样器收敛于以测量为条件的贝叶斯后验。经验结果表明，所提出的采样器在一系列图像恢复任务中的性能优于现有的基于扩散的后采样器，在所考虑的大多数评估指标上实现了最佳性能。总的来说，我们的结果将噪声线性逆问题的后验采样转换为简单的坐标方式 DDIM 更新，从而产生了一种高效、易于实现的算法，并具有可证明的后验一致性。",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.AI"
+      ]
     },
     {
       "arxiv_id": "2607.19332",
@@ -333,7 +359,10 @@
       "project_links": [],
       "title_zh": "ROMS-IMLE：竞争性单步生成建模的极简方法",
       "abstract_zh": "生成模型经历了很多代的演变，从 VAE/GAN 到扩散/流匹配。一路走来，基础技术变得更加复杂，并且关于驱动强大经验表现的各种信念已经占据主导地位。由于扩散模型和流匹配的成功，更常见的信念之一是通过许多小的变换逐渐将噪声分布转换为数据分布的重要性。我们询问这是否真的有必要，并采取极简主义的方法来设计有竞争力的生成模型。我们从最基本的要素开始，即训练目标和模型。我们有目的地让两者变得简单。对于训练目标，我们选择隐式最大似然估计（IMLE），并避开更复杂的替代方案，例如变分推理、对抗性训练和数值积分。对于该模型，我们避开了 Transformer，而是选择了中等大小的卷积网络。然后，我们明智地添加了真正重要的元素，令人惊讶的是，其中不包括迭代去噪。结果是一个单步参数高效的生成模型，可以快速生成高质量样本：它在 ImageNet 256 上实现了 2.56 的 FID，同时获得了良好的精度和召回率。",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.CV"
+      ]
     },
     {
       "arxiv_id": "2607.19331",
@@ -379,6 +408,9 @@
         "Together AI",
         "Recursive Superintelligence Inc",
         "ELLIS Institute Tübingen"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -404,7 +436,10 @@
       "project_links": [],
       "title_zh": "卷积神经网络中的联想情感学习",
       "abstract_zh": "联想情绪学习使生物体能够适应性地将愉快或不愉快的结果与预测刺激的存在联系起来。尽管 Rescorla-Wagner 模型等计算模型已经揭示了这一重要功能，但这些模型的局限性也是众所周知的，特别是当它们应用于神经数据时。深度神经网络的出现为关联情感学习建模开辟了另一条途径。在这项工作中，我们提出了一种视觉效价处理的深度神经网络模型，由一个编码复杂自然场景的视觉模块和一个根据效价（情感的关键维度）识别其情感意义的模块组成，并在该模型上测试了一种新颖的巴甫洛夫学习范式。结果表明，通过学习，该模型再现了人类联想学习研究中的一些观察结果，包括联想形成和泛化，并且条件刺激和非条件刺激的神经表征在单个单元和神经群体水平上变得越来越一致。模型与人体实验数据之间的比较进一步验证了我们的方法。因此，这项研究表明，深度神经网络模型与适当的学习算法相结合，可以用于对关联情绪/效价学习的行为和神经特征进行建模。",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.AI"
+      ]
     },
     {
       "arxiv_id": "2607.19324",
@@ -435,6 +470,9 @@
         "https://arxiv.org/html/2607.19324v1/images/arch.jpeg",
         "https://arxiv.org/html/2607.19324v1/x2.png",
         "https://arxiv.org/html/2607.19324v1/x3.png"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -466,7 +504,10 @@
       "project_links": [],
       "title_zh": "ResearchArena：评估自动化人工智能研发中的破坏和监控",
       "abstract_zh": "随着人工智能代理开始自动化人工智能研发，我们需要方法来评估其输出是否可以安全部署，即使代理本身可能不可信。人工智能控制提供了一种这样的方法：它不是信任代理，而是将其视为潜在的对手，并在部署之前使用监视器来检测秘密破坏。我们使用 ResearchArena 评估自动化 AI 研发的 AI 控制，该框架涵盖四个长期任务：训练后安全、训练后功能、CUDA 内核优化和推理服务器优化。由于人工智能研发中的可交付成果是一个将要部署和运行的工件，因此我们将每个主要任务与两种隐藏的副任务配对：一个是破坏提交的模型、适配器、内核或服务器本身的嵌入式副任务，以及一个独立的副任务，它在沙箱中采取隐蔽的超出范围的操作，同时保持工件诚实。我们在破坏和监视方面评估前沿代理，跨越四种沿两个轴变化的监视器类型：监视器是否可以执行和探测生成的工件，以及它是否看到代理的思维链。我们发现隐藏在训练数据中的破坏行为是最难发现的，被标记的概率不到一半。让监视器在工件上运行实验，而不是仅仅读取轨迹，会有所帮助，但这还不够：监视器仍然会通过仅检查表面、注意到异常但解释它消失、或者用错误的测试探测工件来错过嵌入的破坏。我们发布 ResearchArena 作为一个模块化框架，用于评估自动化人工智能研发中的破坏和控制。",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.AI"
+      ]
     },
     {
       "arxiv_id": "2607.19315",
@@ -498,6 +539,9 @@
         "https://arxiv.org/html/2607.19315v1/figures/ic9600_correlation.png",
         "https://arxiv.org/html/2607.19315v1/figures/sr_retention_pretrain.png",
         "https://arxiv.org/html/2607.19315v1/figures/sr_retention_finetune.png"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -531,6 +575,9 @@
       "figures": [
         "https://arxiv.org/html/2607.19313v1/x1.png",
         "https://arxiv.org/html/2607.19313v1/x2.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -570,6 +617,11 @@
         "https://arxiv.org/html/2607.19306v1/x2.jpg",
         "https://arxiv.org/html/2607.19306v1/x3.png",
         "https://arxiv.org/html/2607.19306v1/fig/error_bound/sdf-prior-single-circle-gt.png"
+      ],
+      "announced_in": [
+        "cs.CV",
+        "cs.RO",
+        "cs.AI"
       ]
     },
     {
@@ -594,7 +646,10 @@
       "project_links": [],
       "title_zh": "黎曼深度学习：模块、网络和几何",
       "abstract_zh": "基于流形值表示的深度神经网络引起了越来越多的兴趣，但许多基本组件仍然与特定流形相关，依赖于欧几里得近似，或者需要昂贵且数值脆弱的几何运算。本论文从三个互补的角度开发了黎曼深度学习的统一框架：可重用的神经模块、流形特定的网络架构和底层几何的设计。它将批量归一化从欧几里德空间和单个流形推广到广泛的李群和陀螺群，并将多项式逻辑回归从欧几里德空间扩展到 SPD 流形，然后扩展到一般黎曼流形。它进一步开发了几种重要几何表示的神经网络，包括双曲空间的无约束模型、基于布斯曼的双曲学习和满秩相关矩阵。最后，它引入了 SPD 流形上的自适应且计算高效的黎曼度量，包括可学习的 Log-Euclidean 几何和快速、稳定的基于 Cholesky 的几何。所提出的方法得到了理论分析的支持，并通过视觉、信号处理、图形学习和基因组学方面的数值实验和应用进行了验证。",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.AI"
+      ]
     },
     {
       "arxiv_id": "2607.19300",
@@ -625,6 +680,9 @@
         "https://arxiv.org/html/2607.19300v1/figure1b.png",
         "https://arxiv.org/html/2607.19300v1/figure1c.png",
         "https://arxiv.org/html/2607.19300v1/gpt-5.4-mini_r1.5_f0.95_sc4_counts.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -653,7 +711,10 @@
       "title_zh": "使用 LangGraph 的基于图的代理 AI：长期运行的有状态业务流程的工作流程路径",
       "abstract_zh": "本文是业务流程中长期运行、有状态、多步骤生成人工智能系统的基于图的工作流程路径的从业者指南。我们没有将 LangGraph（用于有状态代理的低级编排框架）视为模型质量基准目标，而是提出了三个可执行方案——带有修复循环的 SQL 分析、带有证据门控的代理检索增强生成以及带有中断和检查点恢复的人在环策略审查——以展示类型化状态、条件路由、确定性工具、重试、中断、检查点和跟踪如何组合在一起。 LangGraph 根据工作流程复杂性进行定位，而不是作为通用默认设置：更简单的 ReAct 风格或普通 SDK 循环可能更适合基本工具使用、用于结构化提取和验证的模式优先工具，以及当提示或程序优化是主要目标时的 DSPy。每个秘诀都解释了 LangGraph 何时值得额外的结构，以及哪些实现模式使路由、暂停和审计跟踪显式产品行为而不是隐藏的提示逻辑。",
       "html_url": "https://arxiv.org/html/2607.19297v1",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.AI"
+      ]
     },
     {
       "arxiv_id": "2607.19292",
@@ -683,6 +744,9 @@
         "https://arxiv.org/html/2607.19292v1/figures/teaser-image.png",
         "https://arxiv.org/html/2607.19292v1/figures/calib_debt.png",
         "https://arxiv.org/html/2607.19292v1/figures/safety-drift-ecosystem-erosion.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -712,7 +776,11 @@
       "project_links": [],
       "title_zh": "无需培训，飞行更佳：用于无人机导航的测试时间缩放 VLM",
       "abstract_zh": "测试时间扩展提供了一种很有前景的方法，无需额外训练即可提高视觉语言模型 (VLM) 的推理性能。无人机 (UAV) 的现有视觉语言导航 (VLN) 方法通常依赖于单个推理过程，该推理过程可能会在复杂环境中产生次优或不安全的轨迹，从而出现问题。在本文中，我们探索了一种简单有效的方法，将测试时间缩放应用于无人机的 VLN。我们通过迭代细化过程增强导航推理，无需额外的模型训练，引导模型重新评估其初始导航计划，以获得更好的准确性和安全性。我们的方法首先提示模型生成多个并行候选，然后执行自我校正步骤，在不改变底层模型的情况下实现更深入、更稳健的规划。为了进一步加强决策，我们设计了一个多标准评分函数，根据安全性、目标一致性和前进进度来评估细化的候选者。这种简单而强大的组合使冻结的无人机导航 VLM 能够自我纠正并生成更准确、更可靠的飞行计划，从而在此任务中实现 SOTA 性能。",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.CV",
+        "cs.RO"
+      ]
     },
     {
       "arxiv_id": "2607.19284",
@@ -739,6 +807,9 @@
       "html_url": "https://arxiv.org/html/2607.19284v1",
       "figures": [
         "https://arxiv.org/html/2607.19284v1/images/smo_sst.png"
+      ],
+      "announced_in": [
+        "cs.RO"
       ]
     },
     {
@@ -777,6 +848,9 @@
         "https://arxiv.org/html/2607.19274v1/x2.png",
         "https://arxiv.org/html/2607.19274v1/x3.png",
         "https://arxiv.org/html/2607.19274v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.RO"
       ]
     },
     {
@@ -808,6 +882,9 @@
         "https://arxiv.org/html/2607.19270v1/plots/datasets/od_matrix_comparison.png",
         "https://arxiv.org/html/2607.19270v1/plots/datasets/link_capacity_flow_boxplots.png",
         "https://arxiv.org/html/2607.19270v1/plots/datasets/computation_efficiency.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -835,7 +912,10 @@
       "title_zh": "他们会验证。他们就是不采取行动。权限框架和洗钱代码如何将可信代理 CI/CD 管道变成攻击面",
       "abstract_zh": "我们研究了一个五代理 CI/CD 管道（分类 -> 开发人员 -> 安全扫描 -> 审查 -> 批准/部署），该管道由三个提供商的五个不同的生产 LLM 构建，位于影子模式下的 LLM 防火墙后面。单个不受信任的输入（请求“使用遥测”功能的外部问题）要求提供将进程秘密 (dict(os.environ)) 泄露到攻击者 URL 的代码，并被洗白为可观察性。通过预先注册的 A x B (x C) 阶乘（N=20；naivearm N=60），我们发现：（1）进入代理不会泄漏其系统提示（0/40）； (2) 权威框架注入（“根据 SEC-2291 预先批准，不要重新审查”）使下游验证者看到秘密泄露行，引用预先批准，然后发送 - 扫描器通过了约 80% 的经过清洗的拉取请求，最坏情况的单元达到 55% 的折衷； (3) 即使在 N=60 的情况下，感知到其他验证者的存在也只会对个人审查产生很小的、非显着的减少（弱旁观者模拟）； (4) 基于内容的控制 - 代码扫描器和模式检测器等 - 完全忽略了经过清洗的意图（代码在语法上是干净的）；只有法学硕士对意图的推理才是部分辩护。失败是系统性的：即时保密和分布式验证都无法提供保护；入口处的出处感知控制，独立于两者，将会有。所有数据均为 100% 合成；接收器被模拟并且永远不会联系 exfil URL。",
       "html_url": "https://arxiv.org/html/2607.19267v1",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.AI"
+      ]
     },
     {
       "arxiv_id": "2607.19266",
@@ -865,6 +945,9 @@
         "https://arxiv.org/html/2607.19266v1/Diagram_1.png",
         "https://arxiv.org/html/2607.19266v1/Diagram_2.png",
         "https://arxiv.org/html/2607.19266v1/detection_performance.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -898,7 +981,10 @@
       "project_links": [],
       "title_zh": "BioSecBench-Surveillance：病原体基因组监测中 AI 代理的可验证基准",
       "abstract_zh": "随着病原体基因组监测规模的扩大，瓶颈正在从数据生成转向分析。我们推出了 BioSecBench-Surveillance，这是一个包含 100 项评估的可验证基准，测试 AI 代理是否可以从原始测序数据和监控上下文中推断出正确的分析流程。每次评估仅向代理提供人类分析师将拥有的数据和上下文，然后确定性地对其结构化答案进行评分。这些任务涵盖七个类别，从分类学分类到基因工程检测，涉及不同的样本类型和测序技术。在 16 个模型背带对的 3,962 次可分级尝试中，最强的配置仅通过了大约一半。 Opus 4.8 with PI 领先，为 50.2%，在 83 项评估中，95% 置信区间为 40.1% 至 60.3%，与 GPT-5.5 with Codex 持平，为 50.2%，95% 置信区间为 40.8% 至 59.6%，其次是 Opus 4.7，PI 为 49.6%，95% 置信区间为40.0% 到 59.2%，Sonnet 4.6 的 PI 为 48.6%，95% 置信区间为 38.9% 到 58.3%。即使代理调用了正确的工作流程，他们的错误也来自于他们周围的选择，例如要应用哪些引用、阈值、过滤器和标准化。 BioSecBench-Surveillance 提供了一个标准，用于衡量在下一次疫情爆发时是否可以信任代理执行基因组监测。",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.AI"
+      ]
     },
     {
       "arxiv_id": "2607.19261",
@@ -935,6 +1021,10 @@
         "https://arxiv.org/html/2607.19261v1/x2.png",
         "https://arxiv.org/html/2607.19261v1/x3.png",
         "https://arxiv.org/html/2607.19261v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.CV",
+        "cs.AI"
       ]
     },
     {
@@ -961,7 +1051,10 @@
       "project_links": [],
       "title_zh": "财务报表欺诈检测的基准概括：稳健的评估和新颖的任务",
       "abstract_zh": "财务报表欺诈检测 (FSFD) 对于市场诚信至关重要，但面临着日益复杂的方案和财务报告中未充分利用的文本数据的挑战。现有的方法通常依赖于随机数据分割，导致过于乐观的绩效估计，无法反映对新公司或未来时期的现实世界的概括。为了用最先进的技术解决这个反复出现的问题，我们提出了一个强大的 FSFD 框架，利用大型语言模型 (LLM) 来集成财务报告中的结构化财务数据和非结构化文本信息。我们通过称为公司隔离 FSFD (CI-FSFD) 的新颖且具有挑战性的基准任务提供更现实的评估。我们构建并公开了一个综合的美国公司数据集，其中结合了财务报表、MD&A 文本摘要和欺诈标签。我们的方法在具有挑战性的 CI-FSFD 任务中实现了最佳性能，证明了文本数据的关键价值和可靠的金融欺诈检测的稳健评估。",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.AI"
+      ]
     },
     {
       "arxiv_id": "2607.19257",
@@ -992,6 +1085,9 @@
         "https://arxiv.org/html/2607.19257v1/x2.png",
         "https://arxiv.org/html/2607.19257v1/x3.png",
         "https://arxiv.org/html/2607.19257v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -1025,6 +1121,9 @@
         "https://arxiv.org/html/2607.19253v1/Personal_Knowledge_Graph_Construction.png",
         "https://arxiv.org/html/2607.19253v1/x2.png",
         "https://arxiv.org/html/2607.19253v1/sample_pkg_structure.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -1048,7 +1147,10 @@
       "project_links": [],
       "title_zh": "法学硕士中跨语言事实一致性的推理时间指导",
       "abstract_zh": "尽管大型语言模型（LLM）表现出显着的多语言流畅性，但它们的内部知识表示仍然不成比例地偏向于高资源语言。这导致跨语言的事实不一致，他们仅根据提示语言改变经验答案分布。我们研究是否可以在推理时减轻这些偏差，迫使英语提示的模型像用目标语言（德语、西班牙语、保加利亚语）进行查询一样回答，并评估四种干预策略：零样本上下文引导（角色提示）、通过对比激活添加（CAA）进行内部表征操纵，以及通过基于基准派生的事实数据和概念概括数据进行训练的直接偏好优化（DPO）进行轻量级权重修改。为了评估一致性，我们策划了一个多语言事实数据集以及一个新颖的泛化基准，其中包含基于文化的查询，以确定事实干预是否转移到更广泛的以目标为中心的偏好。 Gemma 3 12B Instruct 上的实验揭示了促使成为最强整体干预、平衡功效、安全性和域外泛化的角色。虽然 CAA 会产生急剧的不一致基准变化，但它对配置敏感，并且存在知识退化的风险。基于 DPO 的适配器可提供永久性的增益，但增益范围较小且可转移性较差。这些发现表明，跨语言不一致至少部分是一个选择问题，并且简单的上下文干预可能优于更具侵入性的稳健、可转移的对齐方法。",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.AI"
+      ]
     },
     {
       "arxiv_id": "2607.19235",
@@ -1082,6 +1184,9 @@
         "https://arxiv.org/html/2607.19235v1/x2.png",
         "https://arxiv.org/html/2607.19235v1/x3.png",
         "https://arxiv.org/html/2607.19235v1/figures/statistics.png"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -1125,6 +1230,9 @@
       "affiliations": [
         "S-Lab, Nanyang Technological University",
         "Institute of Artificial Intelligence, Hefei Comprehensive National Science Center"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -1150,7 +1258,10 @@
       "project_links": [],
       "title_zh": "推理的代价：神经机器翻译强化学习的成本与质量权衡",
       "abstract_zh": "具有可验证奖励的强化学习 (RLVR) 已被确立为大型语言模型 (LLM) 后期训练的可行范例，包括神经机器翻译 (NMT) 等下游任务。最新研究表明，由于 RLVR 具有诱导推理能力，RLVR 可能成为翻译法律文档的首选训练方法，但这引发了一个问题：它是否真的归因于推理，或更普遍地归因于训练范式。我们研究了在训练和推理过程中将模型的推理轨迹包含在生成的响应中的重要性，方法是系统地从其中一个阶段中省略它。我们的实验表明，包括推理，特别是在推理过程中，对整体翻译质量具有积极影响。此外，我们认识到推理会导致输出标记的增加，因此我们研究增加的计算需求和提高的翻译质量之间的成本质量权衡。",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.AI"
+      ]
     },
     {
       "arxiv_id": "2607.19219",
@@ -1184,6 +1295,9 @@
         "https://arxiv.org/html/2607.19219v1/x2.png",
         "https://arxiv.org/html/2607.19219v1/x3.png",
         "https://arxiv.org/html/2607.19219v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -1213,7 +1327,11 @@
       "project_links": [],
       "title_zh": "飞行计算：引领无人机计算的未来愿景",
       "abstract_zh": "该报告设想，在十年内，无人机运输货物、医疗用品和信息的规模将与高速公路和电网等国家基础设施投资相当。潜在的应用包括在几分钟内发现野火源的自然灾害探测无人机、绕过地面拥堵到达乡村医院的医疗供应链，以及持续检查桥梁和电线的全国车队。然而，要实现这一未来，需要缩小报告作者所说的“能力差距”，即硬件和愿望超过了大规模安全运行所需的软件和系统。\n  该报告确定了实现无人机技术变革潜力必须解决的 12 项技术挑战： 扩展到数百万架无人机； AI智能与保障；边云连续体和实时协调；人工智能自主和代理系统；数据、培训和验证基础设施；关键基础设施保护；从非确定性代理建立可靠的车队；信任、安全和分布式身份验证；下一代无人机网络；人机合作和可扩展的洞察力；标准、认证和监管；劳动力发展和教育。\n  这十二项挑战以及针对这些挑战提出的方法构成了报告的基础，为现有技术的发展奠定了多方面的发展道路。",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.RO",
+        "cs.AI"
+      ]
     },
     {
       "arxiv_id": "2607.19210",
@@ -1243,7 +1361,10 @@
       "project_links": [],
       "title_zh": "计算机断层扫描心包分割的解剖学感知 3D 网格细化",
       "abstract_zh": "在心脏 CT 扫描中准确描绘心包对于量化心外膜脂肪组织至关重要，但由于其对比度边界较差，它仍然是分割时最具挑战性的结构之一。我们的框架不是仅仅依赖图像梯度，而是利用周围解剖结构的解剖背景来指导分割。这项工作引入了一种新颖的 3D 迭代网格细化框架，该框架平衡源自固有解剖规则的解剖力和几何力，以将最初的、可能不明确的分割细化为高精度、解剖学上合理的结果。我们的方法被设计为与模型无关的后处理步骤，使用 3D 矢量场迭代地将顶点推送到正确的解剖位置。通过评估高分辨率内部数据集和粗略、稀疏注释的开源数据集的细化，我们的方法持续改进了所有体积、表面和解剖指标。该框架在应用于较弱的初始分割时表现出更大的改进，突出了其改进域外模型和有限训练数据场景的分割的潜力。该方法被制定为基于梯度的 GPU 加速框架，可以轻松扩展到其他解剖用例。",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.CV"
+      ]
     },
     {
       "arxiv_id": "2607.19209",
@@ -1276,6 +1397,9 @@
       "figures": [
         "https://arxiv.org/html/2607.19209v1/x1.png",
         "https://arxiv.org/html/2607.19209v1/figures/clustering.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -1305,7 +1429,10 @@
       "title_zh": "MIRA-Ev：临床检查中粒度证据检测和关系推理的基准",
       "abstract_zh": "临床 NLP 评估仍然以多项选择题回答 (MCQA) 为主，它仅对最终答案的准确性进行评分，无法检测模型何时达到正确的诊断，同时以不相关、不存在或矛盾的证据为基础。我们推出 MIRA-Ev，一个基于西班牙 Médico Interno Residente (MIR) 许可考试案例构建的临床论证挖掘基准，由专家临床医生以跨度前提、主张和定向支持/攻击关系重新注释，并并行发布西班牙语（母语）、英语和巴斯克语版本，这是巴斯克语的第一个临床论证资源。 MIRA-Ev 将评估组织为三层任务层次结构：证据句子检索、论证成分提取和关系分类。",
       "html_url": "https://arxiv.org/html/2607.19201v1",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.AI"
+      ]
     },
     {
       "arxiv_id": "2607.19196",
@@ -1336,6 +1463,9 @@
         "https://arxiv.org/html/2607.19196v1/x2.png",
         "https://arxiv.org/html/2607.19196v1/x3.png",
         "https://arxiv.org/html/2607.19196v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.RO"
       ]
     },
     {
@@ -1367,6 +1497,9 @@
         "https://arxiv.org/html/2607.19195v1/k4r1.png",
         "https://arxiv.org/html/2607.19195v1/k4r2.png",
         "https://arxiv.org/html/2607.19195v1/LSE.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -1401,6 +1534,10 @@
         "https://arxiv.org/html/2607.19194v1/figures_article/F2new.png",
         "https://arxiv.org/html/2607.19194v1/figures_article/F3.png",
         "https://arxiv.org/html/2607.19194v1/figures_article/F4a.png"
+      ],
+      "announced_in": [
+        "cs.CV",
+        "cs.RO"
       ]
     },
     {
@@ -1471,6 +1608,10 @@
         "https://arxiv.org/html/2607.19191v1/x1.png",
         "https://arxiv.org/html/2607.19191v1/x2.png",
         "https://arxiv.org/html/2607.19191v1/x3.png"
+      ],
+      "announced_in": [
+        "cs.CV",
+        "cs.AI"
       ]
     },
     {
@@ -1501,25 +1642,29 @@
         "Chenfanfu Jiang",
         "Peter Yichen Chen"
       ],
-      "abstract": "Real-to-sim conversion for robotic interaction with objects remains labor-intensive because it requires more than visual reconstruction: a streamlined real2sim process must recover scene geometries and object states, infer physical parameters, and assemble actors, objects, cameras, poses, and trajectories into a runnable physical simulation. Today this process still depends on manual tuning of visual foundation models, mesh cleanup, coordinate-frame alignment, and brittle workflow glue across visual perception tools and simulators. We introduce \\textit{Agentic Real2Sim}, a framework for generalized physical world modeling with vision-language agents, converting a real-world recording of object-robot interaction into a simulatable episodic twin which preserves observations, geometries, robot interactions, and object states. We evaluate Agentic Real2Sim on rigid-object manipulation, deformable-object interaction, and humanoid motion scenes, spanning domains that are usually handled by separate Real2Sim pipelines, marking a first step toward scalable conversion. The framework's agentic decisions can be driven by an open-weight VLM backend at a small fraction of the cost of frontier models, while attaining comparable conversion success rate. We aim to use the resulting real-world-aligned twins for downstream robotics tasks, specifically policy learning and evaluation. The project site is available at https://ericchen321.github.io/agentic_real2sim.github.io/.",
+      "abstract": "Real-to-sim conversion for robotic interaction with objects remains labor-intensive because it requires more than visual reconstruction: a streamlined real2sim process must recover scene geometries and object states, infer physical parameters, and assemble actors, objects, cameras, poses, and trajectories into a runnable physical simulation. Today this process still depends on manual tuning of visual foundation models, mesh cleanup, coordinate-frame alignment, and brittle workflow glue across visual perception tools and simulators. We introduce \\textit{Agentic Real2Sim}, a framework for generalized physical world modeling with vision-language agents, converting a real-world recording of object-robot interaction into a simulatable episodic twin which preserves observations, geometries, robot interactions, and object states. We evaluate Agentic Real2Sim on rigid-object manipulation, deformable-object interaction, and humanoid motion scenes, spanning domains that are usually handled by separate Real2Sim pipelines, marking a first step toward scalable conversion. The framework's agentic decisions can be driven by an open-weight VLM backend at a small fraction of the cost of frontier models, while attaining comparable conversion success rate. We aim to use the resulting real-world-aligned twins for downstream robotics tasks, specifically policy learning and evaluation. The project site is available at https://agentic-real2sim.github.io/.",
       "abs_url": "https://arxiv.org/abs/2607.19190",
-      "pdf_url": "https://arxiv.org/pdf/2607.19190v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.19190v2",
       "primary_category": "cs.RO",
       "categories": [
         "cs.AI",
         "cs.RO"
       ],
       "submitted": "2026-07-21T15:23:38Z",
-      "updated": "2026-07-21T15:23:38Z",
-      "comments": null,
+      "updated": "2026-07-22T03:43:37Z",
+      "comments": "Project page URL fixed",
       "code_links": [],
       "project_links": [
-        "https://ericchen321.github.io/agentic_real2sim.github.io/"
+        "https://agentic-real2sim.github.io/"
       ],
       "title_zh": "Agentic Real2Sim：使用视觉语言代理进行基于物理的世界建模",
-      "abstract_zh": "机器人与物体交互的实数到模拟转换仍然是劳动密集型的，因为它需要的不仅仅是视觉重建：简化的 real2sim 流程必须恢复场景几何形状和物体状态，推断物理参数，并将演员、物体、相机、姿势和轨迹组装成可运行的物理模拟。如今，这个过程仍然依赖于手动调整视觉基础模型、网格清理、坐标系对齐以及视觉感知工具和模拟器之间脆弱的工作流程粘合。我们引入了 \\textit{Agentic Real2Sim}，这是一个使用视觉语言代理进行广义物理世界建模的框架，将对象与机器人交互的真实世界记录转换为可模拟的情景孪生，以保留观察结果、几何形状、机器人交互和对象状态。我们在刚性对象操作、可变形对象交互和人形运动场景上评估 Agentic Real2Sim，跨越通常由单独的 Real2Sim 管道处理的领域，标志着迈向可扩展转换的第一步。该框架的代理决策可以由开放重量的 VLM 后端驱动，成本仅为前沿模型的一小部分，同时获得可比的转换成功率。我们的目标是将由此产生的与现实世界一致的双胞胎用于下游机器人任务，特别是政策学习和评估。该项目站点位于 https://ericchen321.github.io/agentic_real2sim.github.io/。",
-      "html_url": "https://arxiv.org/html/2607.19190v1",
-      "figures": []
+      "abstract_zh": "机器人与物体交互的实数到模拟转换仍然是劳动密集型的，因为它需要的不仅仅是视觉重建：简化的 real2sim 流程必须恢复场景几何形状和物体状态，推断物理参数，并将演员、物体、相机、姿势和轨迹组装成可运行的物理模拟。如今，这个过程仍然依赖于手动调整视觉基础模型、网格清理、坐标系对齐以及视觉感知工具和模拟器之间脆弱的工作流程粘合。我们引入了 \\textit{Agentic Real2Sim}，这是一个使用视觉语言代理进行广义物理世界建模的框架，将对象与机器人交互的真实世界记录转换为可模拟的情景孪生，以保留观察结果、几何形状、机器人交互和对象状态。我们在刚性对象操作、可变形对象交互和人形运动场景上评估 Agentic Real2Sim，跨越通常由单独的 Real2Sim 管道处理的领域，标志着迈向可扩展转换的第一步。该框架的代理决策可以由开放重量的 VLM 后端驱动，成本仅为前沿模型的一小部分，同时获得可比的转换成功率。我们的目标是将由此产生的与现实世界一致的双胞胎用于下游机器人任务，特别是政策学习和评估。该项目站点位于 https://agentic-real2sim.github.io/。",
+      "html_url": "https://arxiv.org/html/2607.19190v2",
+      "figures": [],
+      "announced_in": [
+        "cs.RO",
+        "cs.AI"
+      ]
     },
     {
       "arxiv_id": "2607.19181",
@@ -1552,7 +1697,10 @@
       "title_zh": "翻译前推理：通过结构化推理增强法律机器翻译",
       "abstract_zh": "法律领域的神经机器翻译（NMT）是一项语言和概念上要求很高的任务，这主要是由于法律语言的复杂性及其要求的高精度。最近出现的具有推理能力的语言模型为应对此类挑战提供了新的可能性。他们添加了一系列其他先前提出的技术来提高翻译质量，其中包括监督微调和强化学习。\n  在这项工作中，我们对这些不同的方法进行了比较。更具体地说，我们评估了通过各种再训练范例增强的 Qwen3.5 4B、Qwen3.5 9B 和 Gemma 3 12B 等小型语言模型，并将它们的性能与前沿推理模型进行了比较。我们关注瑞士的法律体系，该体系以其独特的多语言法规为推理增强模型提供了一个特别具有挑战性的测试平台。我们的结果表明，小型“基础”模型的质量可以大大提高，并且具有可验证奖励的强化学习可以应用于法律领域的 NMT，并超越监督微调的翻译质量。增强型小模型的性能接近最先进的推理模型之一，但仍然较差。我们还注意到，随着模型大小的增加，重新训练范例的回报会递减。代码和模型可在 https://github.com/aixiuxiuxu/Legal-MT-SFT-RL 上公开获取。",
       "html_url": "https://arxiv.org/html/2607.19181v1",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.AI"
+      ]
     },
     {
       "arxiv_id": "2607.19174",
@@ -1584,6 +1732,9 @@
         "https://arxiv.org/html/2607.19174v1/x1.png",
         "https://arxiv.org/html/2607.19174v1/figures/scenes3.png",
         "https://arxiv.org/html/2607.19174v1/x2.png"
+      ],
+      "announced_in": [
+        "cs.RO"
       ]
     },
     {
@@ -1616,6 +1767,9 @@
         "https://arxiv.org/html/2607.19171v1/x2.png",
         "https://arxiv.org/html/2607.19171v1/x3.png",
         "https://arxiv.org/html/2607.19171v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -1640,7 +1794,10 @@
       "project_links": [],
       "title_zh": "打破同质性假设：预测性维护中罕见故障检测的专门多生成器对抗学习",
       "abstract_zh": "预测维护领域的监督学习模型定期在高度不平衡的工业数据集上进行训练：机器故障很少发生，但对操作的影响却不成比例。除了明显的类别差异外，故障数据通常是非同质的，不同的物理过程产生不同的故障模式，并在少数群体和类别中表现出多模式分布。传统的不平衡管理方法，例如欠采样、基于 SMOTE 的插值或成本敏感学习，通常假设少数群体是同质的。这意味着它们的有效性在工业实践中遇到的多方面条件下受到严重限制。本文确定了故障类型意识生成增强程序的可能性，以改进预测维护系统中罕见故障的识别。使用泄漏安全的实验设计来比较五种不平衡处理方法：成本敏感学习、随机欠采样、SMOTE 过采样、单生成器 GAN 增强以及专门的多生成器 GAN 架构，该架构具有独立的生成器，需要学习各个故障子类型。面向精度/召回率的测量用于量化模型性能；主要评价指标是PR-AUC。在 AI4I 2020 预测维护数据集上进行的实验表明，与传统重采样方法和单个生成器 GAN 增强相比，所提出的多生成器 GAN 框架可生成更真实的少数样本，产生更高的 PR-AUC 和召回分数。",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.AI"
+      ]
     },
     {
       "arxiv_id": "2607.19147",
@@ -1674,6 +1831,9 @@
         "https://arxiv.org/html/2607.19147v1/x2.png",
         "https://arxiv.org/html/2607.19147v1/x3.png",
         "https://arxiv.org/html/2607.19147v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -1708,6 +1868,9 @@
       "affiliations": [
         "National Institute of Standards and Technology, USA",
         "Michigan Technological University, USA"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -1748,6 +1911,9 @@
         "https://arxiv.org/html/2607.19139v1/x2.png",
         "https://arxiv.org/html/2607.19139v1/x3.png",
         "https://arxiv.org/html/2607.19139v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -1779,6 +1945,9 @@
       "figures": [
         "https://arxiv.org/html/2607.19137v1/figures/diagram.png",
         "https://arxiv.org/html/2607.19137v1/figures/exp197_before_after_grid_3cases_roi.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -1814,6 +1983,9 @@
       "affiliations": [
         "Czech Technical University, Prague, Czech Republic",
         "Department of Computer Science, KU Leuven, Leuven, Belgium"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -1844,6 +2016,9 @@
         "https://arxiv.org/html/2607.19122v1/images/CNNgait3.png",
         "https://arxiv.org/html/2607.19122v1/images/tsneCNF0.png",
         "https://arxiv.org/html/2607.19122v1/images/tsneCNF8.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -1878,6 +2053,9 @@
         "https://arxiv.org/html/2607.19120v1/x2.png",
         "https://arxiv.org/html/2607.19120v1/x3.png",
         "https://arxiv.org/html/2607.19120v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -1905,6 +2083,9 @@
       "figures": [
         "https://arxiv.org/html/2607.19117v1/multi_agent_framework.png",
         "https://arxiv.org/html/2607.19117v1/training_time_algorithms.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -1943,6 +2124,9 @@
       "affiliations": [
         "Hong Kong University of Science and Technology",
         "Hong Kong University of Science and Technology (Guangzhou)"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -1975,6 +2159,9 @@
         "https://arxiv.org/html/2607.19111v1/x1.png",
         "https://arxiv.org/html/2607.19111v1/x2.png",
         "https://arxiv.org/html/2607.19111v1/x3.png"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -2011,6 +2198,9 @@
         "https://arxiv.org/html/2607.19108v1/x2.png",
         "https://arxiv.org/html/2607.19108v1/x3.png",
         "https://arxiv.org/html/2607.19108v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -2050,6 +2240,9 @@
         "https://arxiv.org/html/2607.19104v1/x2.png",
         "https://arxiv.org/html/2607.19104v1/x3.png",
         "https://arxiv.org/html/2607.19104v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -2085,6 +2278,9 @@
         "https://arxiv.org/html/2607.19100v1/x3.png",
         "https://arxiv.org/html/2607.19100v1/figs/canonical_avatar.png",
         "https://arxiv.org/html/2607.19100v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -2110,7 +2306,10 @@
       "title_zh": "Supra 认知模式：代理内存的路由架构",
       "abstract_zh": "代理内存工作负载混合了直接事实查找、关系链和当前状态推理以及长期历史的广泛综合。我们描述了 Supra 认知模式（SCM），这是一种将显式或自动选择的每个查询模式映射到一个共享摄取基底上的检索和合成有效负载的架构。冻结语义分类器和运行时门在融合词汇和密集查找、图形或迭代多跳处理以及分层长形式合成之间分派查询。该基底结合了多粒度嵌入、提取的三元组、事实版本元数据和可选的异步丰富。我们在三个基准上描述了部署的配置：长期会话内存（LoCoMo；n = 1,986）、MemoryAgentBench（MAB；n = 3,671）和 LongMemEval（n = 500）。参考运行在 LoCoMo 事实类别上记录了 84.87%，在对抗性弃权上记录了 68.61%，在两次重复的 MAB 上记录了 61.49%，在 LongMemEval 上记录了 86.00%。存储库支持的复制会产生类似的聚合分数，并支持任务和模式条件的故障分析。原始基线输出、LoCoMo 和 LongMemEval 一致的端到端时序以及完整的代币分类账不可用；存储的行还省略了一些最终的运行时决策。结果表征了一种已实现的路由配置及其诊断故障模式，而源检查则验证了每个查询的控制接口和共享底层设计。因果路由效应、效率增益和统计显着性仍然没有可用证据。",
       "html_url": "https://arxiv.org/html/2607.19096v1",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.AI"
+      ]
     },
     {
       "arxiv_id": "2607.19088",
@@ -2150,6 +2349,9 @@
       "affiliations": [
         "Xi’an Jiaotong University",
         "Huawei Technologies Ltd"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -2184,6 +2386,9 @@
         "https://arxiv.org/html/2607.19086v1/x2.png",
         "https://arxiv.org/html/2607.19086v1/x3.png",
         "https://arxiv.org/html/2607.19086v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -2215,6 +2420,9 @@
       "html_url": "https://arxiv.org/html/2607.19082v1",
       "figures": [
         "https://arxiv.org/html/2607.19082v1/x1.png"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -2245,6 +2453,9 @@
         "https://arxiv.org/html/2607.19077v1/x1.png",
         "https://arxiv.org/html/2607.19077v1/x2.png",
         "https://arxiv.org/html/2607.19077v1/fig3_Qualitative_evaluation.jpg"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -2270,7 +2481,10 @@
       "project_links": [],
       "title_zh": "从运营到老年护理成果：工业工程和决策支持方法的专题回顾",
       "abstract_zh": "全球老龄化人口的快速增长给医疗保健系统带来了严峻的挑战，需要高效、公平和以患者为中心的护理模式。虽然工业工程和运筹学 (OR) 提供了强大的优化和决策支持工具来解决这些多维复杂性，但当前的应用程序通常仍然分散。本文对手术室和老年护理交叉领域的 30 项开创性研究进行了专题综述，将文献分为家庭医疗保健操作、多药管理和临床时间疗法。我们的分析强调了从静态、确定性模型到与人工智能 (AI) 集成的动态和随机框架的重大方法论演变。尽管取得了这些进步，但关键的转化差距仍然存在：当前的手术室文献主要以流程级优化（例如人员路线）为主，并且很难将这些运营效率转化为可衡量的临床结果。此外，连接医院和社区护理之间过渡的整体模型仍然严重缺乏探索。为了开发有弹性的智能医疗保健系统，本研究提出了一个概念框架，将研究重点从孤立的操作任务转移到综合的、多层次的决策。我们强调迫切需要强大的系统分析、人性化设计以及通过新兴数字技术（包括数字双胞胎和大型语言模型）实现护理智能化，以成功弥合理论操作指标和切实的患者健康结果之间的差距。",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.AI"
+      ]
     },
     {
       "arxiv_id": "2607.19072",
@@ -2295,7 +2509,10 @@
       "project_links": [],
       "title_zh": "论图组合优化预训练的有效性",
       "abstract_zh": "本文介绍了一种用于图组合优化的自监督预训练框架，专门用于解决旅行商问题等路由问题的本质。通过利用图形对比学习和几何增强（特别是旋转和轴向反射），模型被迫学习不变的结构表示和全局相对距离分布。结果表明，这种预训练策略在各种问题规模上都优于非预训练模型。值得注意的是，混合策略（结合旋转和反射）使 TSP1000 的行程长度提高了 6.57%，证明几何预训练是将神经求解器有效扩展到高维实例的重要归纳偏差。",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.AI"
+      ]
     },
     {
       "arxiv_id": "2607.19069",
@@ -2331,6 +2548,9 @@
         "https://arxiv.org/html/2607.19069v1/images/testTrainWorldPlot.png",
         "https://arxiv.org/html/2607.19069v1/images/testTrainHist.png",
         "https://arxiv.org/html/2607.19069v1/images/valAvgFieldsWorldPlot.png"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -2386,6 +2606,10 @@
         "https://arxiv.org/html/2607.19064v1/figures/edit_gallery/edit_gallery_showcase_1_compressed.jpg",
         "https://arxiv.org/html/2607.19064v1/figures/edit_gallery/edit_gallery_showcase_2_compressed.jpg",
         "https://arxiv.org/html/2607.19064v1/x2.png"
+      ],
+      "announced_in": [
+        "cs.CV",
+        "cs.AI"
       ]
     },
     {
@@ -2421,6 +2645,9 @@
         "https://arxiv.org/html/2607.19063v1/fig1b.png",
         "https://arxiv.org/html/2607.19063v1/fig1c.png",
         "https://arxiv.org/html/2607.19063v1/fig2a.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -2451,6 +2678,10 @@
         "https://arxiv.org/html/2607.19061v1/pipeline.drawio.png",
         "https://arxiv.org/html/2607.19061v1/dataset1.jpg",
         "https://arxiv.org/html/2607.19061v1/03_adaptive_gate_analysis.png"
+      ],
+      "announced_in": [
+        "cs.CV",
+        "cs.AI"
       ]
     },
     {
@@ -2486,6 +2717,9 @@
         "https://arxiv.org/html/2607.19060v1/x3.png",
         "https://arxiv.org/html/2607.19060v1/x4.png",
         "https://arxiv.org/html/2607.19060v1/x5.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -2517,6 +2751,9 @@
         "https://arxiv.org/html/2607.19058v1/x2.png",
         "https://arxiv.org/html/2607.19058v1/x3.png",
         "https://arxiv.org/html/2607.19058v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -2546,6 +2783,9 @@
         "https://arxiv.org/html/2607.19056v1/x2.png",
         "https://arxiv.org/html/2607.19056v1/x3.png",
         "https://arxiv.org/html/2607.19056v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -2585,6 +2825,9 @@
       "affiliations": [
         "Shanghai Jiao Tong University",
         "Alibaba Group"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -2614,6 +2857,9 @@
       "figures": [
         "https://arxiv.org/html/2607.19042v1/MLP.png",
         "https://arxiv.org/html/2607.19042v1/SHONN.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -2652,6 +2898,9 @@
         "https://arxiv.org/html/2607.19040v1/x2.png",
         "https://arxiv.org/html/2607.19040v1/x3.png",
         "https://arxiv.org/html/2607.19040v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -2690,6 +2939,10 @@
         "https://arxiv.org/html/2607.19038v1/x2.png",
         "https://arxiv.org/html/2607.19038v1/x3.png",
         "https://arxiv.org/html/2607.19038v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.CV",
+        "cs.AI"
       ]
     },
     {
@@ -2728,6 +2981,10 @@
         "https://arxiv.org/html/2607.19036v1/x2.png",
         "https://arxiv.org/html/2607.19036v1/x3.png",
         "https://arxiv.org/html/2607.19036v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.CV",
+        "cs.AI"
       ]
     },
     {
@@ -2758,6 +3015,9 @@
         "https://arxiv.org/html/2607.19032v1/x2.png",
         "https://arxiv.org/html/2607.19032v1/x3.png",
         "https://arxiv.org/html/2607.19032v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -2790,6 +3050,9 @@
         "https://arxiv.org/html/2607.19027v1/x2.png",
         "https://arxiv.org/html/2607.19027v1/x3.png",
         "https://arxiv.org/html/2607.19027v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -2824,6 +3087,9 @@
         "https://arxiv.org/html/2607.19020v1/figs/fig1_updated_drift_distributions.png",
         "https://arxiv.org/html/2607.19020v1/figs/fig2.png",
         "https://arxiv.org/html/2607.19020v1/figs/bam2.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -2858,6 +3124,9 @@
         "https://arxiv.org/html/2607.19011v1/x1.png",
         "https://arxiv.org/html/2607.19011v1/x2.png",
         "https://arxiv.org/html/2607.19011v1/x3.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -2890,6 +3159,9 @@
         "https://arxiv.org/html/2607.19000v1/x2.png",
         "https://arxiv.org/html/2607.19000v1/x3.png",
         "https://arxiv.org/html/2607.19000v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -2927,6 +3199,9 @@
         "https://arxiv.org/html/2607.18999v1/x2.png",
         "https://arxiv.org/html/2607.18999v1/x3.png",
         "https://arxiv.org/html/2607.18999v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -2960,7 +3235,10 @@
       "project_links": [],
       "title_zh": "AEC 工程图纸布局检测和信息提取的深度学习方法基准测试",
       "abstract_zh": "从建筑、工程和施工 (AEC) 图纸中提取信息 (IE) 仍然受到手动效率低下的阻碍，而布局检测（组织图形和文本层次结构的重要“中间件”）尚未得到充分开发。针对以文本为中心的内容进行优化的通用文档布局模型缺乏工程图纸的验证。本研究构建了一个定制的 AEC 特定布局数据集，并对五种深度学习架构进行了基准测试。 RF-DETR 实现了最先进的性能，$mAP_{50}$ 为 0.949，而视觉语言模型 Qwen3-VL 获得了领先的 F1 分数 0.911。相反，在一般文档数据集上预训练的模型会遭受“域干扰”，导致性能下降。这为 AEC 中的自动化 IE 奠定了坚实的技术基础。",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.CV"
+      ]
     },
     {
       "arxiv_id": "2607.18990",
@@ -2993,6 +3271,10 @@
         "https://arxiv.org/html/2607.18990v1/x2.png",
         "https://arxiv.org/html/2607.18990v1/x3.png",
         "https://arxiv.org/html/2607.18990v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.CV",
+        "cs.AI"
       ]
     },
     {
@@ -3030,6 +3312,9 @@
       "html_url": "https://arxiv.org/html/2607.18988v1",
       "figures": [
         "https://arxiv.org/html/2607.18988v1/x1.png"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -3066,6 +3351,9 @@
         "https://arxiv.org/html/2607.18985v1/x3.png",
         "https://arxiv.org/html/2607.18985v1/x4.png",
         "https://arxiv.org/html/2607.18985v1/x5.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -3102,6 +3390,9 @@
       "affiliations": [
         "Technical University of Munich, Germany",
         "Sapienza University of Rome, Italy"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -3146,6 +3437,9 @@
         "Peking University",
         "The Chinese University of Hong Kong, Shenzhen",
         "Zhejiang University"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -3187,7 +3481,10 @@
       ],
       "title_zh": "Mi-Memory：个人人工智能的生命周期内存框架",
       "abstract_zh": "个人人工智能正在超越仅限聊天的交互，转向涵盖手机、汽车、家庭、可穿戴设备、相机和工具的持续服务。在此设置中，内存无法保留先前对话的缓存。它应该作为连续性和治理基础：保留持久的用户状态，以多模式和设备证据为基础提供答案，支持纠正和遗忘，限制策略演变，并在延迟、成本、隐私和边缘云限制下保持可部署性。这份技术报告介绍了 Mi-Memory，这是一个用于个人人工智能的生命周期内存框架，围绕四个角色组织：结构、扩展、进化和部署。共享审计合约通过四个重复的工件系列将这些角色联系起来：类型化证据有效负载保留源身份和出处，诊断跟踪本地化整个服务管道中的证据丢失，策略工件使内存策略更改明确，门/回滚记录绑定可接受的演变。 MiMemory 通过 MemStack、MemSense/MemFuse、D$^{2}$ACCI/E$^{2}$MEND 和 LiteMem 实例化角色。在受控参考结构评估中，MemStack 在 LoCoMo、PersonaMem-V2 和 LongMemEval 上分别达到 93.59%、57.24% 和 87.47%；其他跟踪报告模块级、初步/内部、转移可行性或具有明确边界的仅设计证据。 MiMemory 是朝着个人人工智能的可审计、证据门控和部署感知存储系统迈出的一步。项目主页：https://darwin-agent.github.io/Mi-Memory/ 。",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.AI"
+      ]
     },
     {
       "arxiv_id": "2607.18973",
@@ -3216,6 +3513,9 @@
       "figures": [
         "https://arxiv.org/html/2607.18973v1/figure_concept.png",
         "https://arxiv.org/html/2607.18973v1/figure_overview.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -3246,6 +3546,9 @@
         "https://arxiv.org/html/2607.18970v1/figures/fig02-skillware-ontology.png",
         "https://arxiv.org/html/2607.18970v1/figures/fig03-evidence-tracks.png",
         "https://arxiv.org/html/2607.18970v1/figures/fig04-implementation-dimensions.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -3277,7 +3580,10 @@
       "project_links": [],
       "title_zh": "通过对比信念更新衡量奖励寻求",
       "abstract_zh": "通过强化学习训练的语言模型可能会学习优化评分者的判断而不是预期目标。这种“寻求奖励”很难衡量，因为每当评分者奖励预期行为时，追求评分者判断的模型和追求预期目标的模型都会表现相同。我们使用对比综合文档微调来测量奖励寻求，以改变模型对评分者奖励的信念，使这些信念与用户或开发人员想要的相冲突，并测量模型采用各方首选行为的速率。应用于以功能为中心的 OpenAI o3 RL 运行的中间检查点，无需安全培训，我们发现这些检查点通常更倾向于评分者的偏好，而不是用户或开发人员在编码和对齐任务上的偏好。在强化学习训练中，这种站在评分者一边的倾向呈上升趋势。例如，在一个被迫在遵守对主管的承诺和违背承诺来完成任务之间做出选择的环境中，当 SDF 文件说评分者奖励任务完成时，以后期能力为中心的 o3 检查点在 87% 的情况下违反了承诺，而当他们说它奖励诚实时（其思维链通常会明确选择这一选择），这一比例为 9%。较早的检查点敏感性要低得多（40% 对 24%）。我们的方法还可以推广到奖励黑客模型。经过训练的奖励黑客模型生物 (gpt-oss-120b) 对评分者偏好的敏感度是未修改模型的两倍多，平均行为转变有利于评分者，从 33% 上升到 86%。这些结果表明，强化学习可以在训练过程中增加对奖励的寻求，产生的模型可能会违背开发者的意图，因为开发者认为这样做会带来更高的奖励。",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.AI"
+      ]
     },
     {
       "arxiv_id": "2607.18965",
@@ -3309,6 +3615,9 @@
         "https://arxiv.org/html/2607.18965v1/x2.png",
         "https://arxiv.org/html/2607.18965v1/x3.png",
         "https://arxiv.org/html/2607.18965v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -3332,7 +3641,10 @@
       "title_zh": "从依赖性到组合性：通过组合分类语法对 LLM 输出进行神经符号提升",
       "abstract_zh": "大型语言模型 (LLM) 通过从前缀增量预测下一个标记来生成流畅的文本。生成传统的批评者认为，这样的系统缺乏真正的语法。从依存语法角度来看，有影响力的回复认为，LLM 的行为可以通过逐字构建的局部头部依赖结构来很好地描述。我们认为，一个更尖锐的观察被忽视了：自回归生成的前缀驱动、类型完成动态与组合分类语法（CCG）最初设计支持的增量处理模型密切相关。在此基础上，我们提出了一个神经符号框架，其中法学硕士的输出被提升为类型化的组合推导——并不是说法学硕士在内部实现CCG，而是他们的输出承认有原则的、增量的、可审计的CCG重建。接下来有两个后果。首先，通过 Curry-Howard 通信，提升范围从自然语言扩展到法学硕士也产生的形式语言——编程语言，如 Solidity、描述逻辑和查询语言，如 OWL 和 SQL——类型系统不断变化，架构保持固定。其次，提升支持两层检查：直接捕获结构故障的组合层，以及根据外部知识源检查提升的结构的内容层，从而能够尽早标记幻觉内容。因此，该帐户需要的不是生产者的认知，而是前缀驱动的生成配置文件。最后，我们以同步 LLM-CCG 耦合的草图作为框架打开的一个方向。",
       "html_url": "https://arxiv.org/html/2607.18961v1",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.AI"
+      ]
     },
     {
       "arxiv_id": "2607.18960",
@@ -3365,6 +3677,9 @@
         "https://arxiv.org/html/2607.18960v1/x2.png",
         "https://arxiv.org/html/2607.18960v1/x3.png",
         "https://arxiv.org/html/2607.18960v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -3398,6 +3713,10 @@
         "https://arxiv.org/html/2607.18958v1/Figure/dual_axis_caption_vqa.png",
         "https://arxiv.org/html/2607.18958v1/x1.png",
         "https://arxiv.org/html/2607.18958v1/x2.png"
+      ],
+      "announced_in": [
+        "cs.CV",
+        "cs.AI"
       ]
     },
     {
@@ -3423,7 +3742,10 @@
       "project_links": [],
       "title_zh": "手指被动旋转欠驱动手的设计与稳定性分析",
       "abstract_zh": "本文提出了具有空间移动性的欠驱动机器人手指的创新设计和稳定性分析，旨在增强机器人手的抓取灵活性。手指架构在其底部包含一个旋转关节，可实现被动空间旋转，从而有利于圆柱形和球形抓取。每个手指只有两个指骨，该设计简化了运动学复杂性，同时支持精确和包络性抓握。引入了基于接触力引起的手指基部关节力矩的稳定性标准，以确保可靠的物体抓取并防止在操作过程中弹出。该研究还研究了一种差动机构，该机构将单个驱动扭矩分布在多个手指上，从而实现自适应和协调的运动。这种机制增强了手通过最小的预抓取调整来抓取不同物体形状的能力，利用被动性进行自主适应。使用全机械原型对理论结果进行了实验验证，证明了执行圆柱形、球形、平行和包络抓取的多功能性。欠驱动的集成（在单个手指内和多个手指之间）降低了机械复杂性、成本和控制要求，同时保持功能适应性。这项工作促进了兼容机器人手的开发，适用于需要灵活性和坚固性的应用，例如农业机器人、物流、辅助技术和废物分类。未来的研究将集中于自动化驱动和完善控制策略，以进一步提高抓取稳定性和精度，为非结构化环境中的自主操作铺平道路。",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.RO"
+      ]
     },
     {
       "arxiv_id": "2607.18943",
@@ -3446,7 +3768,10 @@
       "project_links": [],
       "title_zh": "一般智能需要什么：跨描述级别的不可约约束",
       "abstract_zh": "通用智能是人类认知成就的全部保障，它不仅仅是计算架构的属性。本文提出了一个论点：一般智力的结构性约束占据了不同的描述层次，并且是相互不可还原的，从特殊科学传统赋予该术语的意义上来说。由此可见，任何单一的架构进步以及扩展计划本身都无法产生通用人工智能 (AGI)，并且研究计划必须根据完整的约束条件进行评估，而不是根据任何一个基准的性能进行评估。该论文是通过一种方法来发展的，该方法通过四个证据镜头来解读一般情报：人工智能系统研究、人类学、法律和经济学，每个镜头都以不同的描述水平为基础，并辅以推测性小说，在发现的背景下而不是在辩护的背景下用作有纪律的启发式。应用该方法产生了将二十三个结构约束组织成八个簇的分类法；六项内容经过深入研究，并按照级别的上升阶梯进行排序，并通过明确的桥梁显示为什么一个级别的进步无法延续到下一个级别。该论点提出了五个可证伪的预测，每个预测都有一个指定的基准族和一个否定条件，将描述性框架转换为一个研究计划，其范围比缩放假设所暗示的更长。",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.AI"
+      ]
     },
     {
       "arxiv_id": "2607.18940",
@@ -3469,7 +3794,10 @@
       "project_links": [],
       "title_zh": "低移动任务下串行机器人的扭曲分解",
       "abstract_zh": "本文介绍了用于执行较低移动性任务的串行机械手的扭曲分解框架。该方法不依赖雅可比零空间投影，而是使用几何定义的扭曲投影仪将末端执行器扭曲分为任务组件和冗余组件。该公式提供了操作空间中与任务相关和与任务无关的运动之间的直接直观的区别，从而实现了紧凑的逆运动学方案，可以自然地处理操纵器和任务冗余。",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.RO"
+      ]
     },
     {
       "arxiv_id": "2607.18936",
@@ -3500,6 +3828,10 @@
         "https://arxiv.org/html/2607.18936v1/figures/feature_matching.jpeg",
         "https://arxiv.org/html/2607.18936v1/figures/orthomosaic.png",
         "https://arxiv.org/html/2607.18936v1/figures/rviz_ngps_cropped.png"
+      ],
+      "announced_in": [
+        "cs.CV",
+        "cs.RO"
       ]
     },
     {
@@ -3530,6 +3862,9 @@
         "https://arxiv.org/html/2607.18930v1/x2.png",
         "https://arxiv.org/html/2607.18930v1/x3.png",
         "https://arxiv.org/html/2607.18930v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -3553,7 +3888,10 @@
       "project_links": [],
       "title_zh": "OntoBook：基于本体的医学编码器预训练综合教材",
       "abstract_zh": "我们提出了 OntoBook，一种将医学本体结构转换为编码器语言模型的预训练信号的方法。我们的方法分为三个阶段：通过本体图进行随机游走，捕获医学代码之间的层次结构和因果关系，大型语言模型将这些游走重新表述为流畅的教科书式散文，生成的文本用于训练 ModernCamemBERT，这是一个 149M 参数的法语编码器，对同一数据有两个目标：掩码语言建模和代码对之间的关​​系预测。在三个法国医学编码基准（FRACCO、Cantemist-FR、Distemist-FR）上，OntoBook 比仅 MLM 预训练取得了显着改进，FRACCO 上 +2.5 micro-F1，Distemist +8.0 micro-F1。我们发现目标之间的一致性是必要的：不一致的训练，即每个任务使用不同的数据，会导致 30 分的降级。我们发布了 130 万本法学硕士重新制定的医学教科书，涉及三个法国本体（CIM-10、CCAM、ATC）和预训练模型检查点。",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.AI"
+      ]
     },
     {
       "arxiv_id": "2607.18924",
@@ -3594,6 +3932,9 @@
       "affiliations": [
         "State Key Laboratory of Virtual Reality Technology and Systems, SCSE, Beihang University",
         "AMAP, Alibaba Group"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -3629,6 +3970,9 @@
         "Fudan University",
         "Shanghai Innovation Institute",
         "IQuest Research"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -3665,6 +4009,9 @@
         "School of Electrical and Information Engineering, Tianjin University",
         "The International Joint Institute of Tianjin University, Fuzhou, Tianjin University",
         "Department of Automation, Tsinghua University"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -3693,6 +4040,9 @@
       "html_url": "https://arxiv.org/html/2607.18909v1",
       "figures": [
         "https://arxiv.org/html/2607.18909v1/x5.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -3726,6 +4076,9 @@
         "https://arxiv.org/html/2607.18907v1/x2.png",
         "https://arxiv.org/html/2607.18907v1/figures/blender/syngal/1_met.jpg",
         "https://arxiv.org/html/2607.18907v1/figures/blender/syngal/1_150.png"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -3756,6 +4109,9 @@
         "https://arxiv.org/html/2607.18899v1/images/segment_mse_vs_update_rate.png",
         "https://arxiv.org/html/2607.18899v1/images/integrate_update_rate_heatmap.png",
         "https://arxiv.org/html/2607.18899v1/images/integrate_segment_mse_relative_heatmap.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -3788,6 +4144,9 @@
         "https://arxiv.org/html/2607.18887v1/x1.png",
         "https://arxiv.org/html/2607.18887v1/x2.png",
         "https://arxiv.org/html/2607.18887v1/x3.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -3813,7 +4172,10 @@
       "project_links": [],
       "title_zh": "公众对人工智能驱动的医疗保健决策的看法：结构方程建模方法",
       "abstract_zh": "人工智能 (AI) 越来越多地融入医疗保健中，以支持诊断、决策和管理流程。然而，人工智能的成功实施不仅取决于技术性能，还取决于公众对其有用性、风险性和公平性的看法。本研究调查了公众对医疗保健领域自动决策 (ADM) 的看法。数据来自正在进行的第一波纵向调查小组。最终样本由 3,915 名受访者组成，并通过结构方程模型进行了分析。对医疗保健领域 ADM 有益、有风险和公平的看法被视为因变量。人工智能素养、对不同形式人工智能的熟悉程度、对临床医生区分人工智能和人类生成内容的能力的信心、使用对话代理获取健康信息以及使用传统数字健康信息源都被列为外源因素。对不同形式的人工智能更加熟悉，对临床医生识别人工智能生成内容的能力更有信心，以及使用对话代理获取健康信息都与更大的感知帮助相关。使用会话代理与较低的感知风险相关，而对人工智能的更加熟悉和对传统健康信息源的更大依赖与较高的感知风险相关。对 ADM 公平性的看法最强烈地取决于对临床医生能力的信心，此外还与 AI 熟悉程度、AI 素养和对话代理的使用存在较小的正相关。公众对医疗保健领域 ADM 的看法取决于技术熟悉程度、对话代理的使用以及对人类监督的信心。总体而言，ADM 的帮助性和公平性更多地是由对医疗保健专业人员的信任驱动的，而不是对技术本身的信任。",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.AI"
+      ]
     },
     {
       "arxiv_id": "2607.18883",
@@ -3847,6 +4209,9 @@
         "https://arxiv.org/html/2607.18883v1/x2.png",
         "https://arxiv.org/html/2607.18883v1/x3.png",
         "https://arxiv.org/html/2607.18883v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -3881,6 +4246,9 @@
         "https://arxiv.org/html/2607.18882v1/gan-good-examples-v2.png",
         "https://arxiv.org/html/2607.18882v1/gan-negative-examples.png",
         "https://arxiv.org/html/2607.18882v1/dm-good-example3.png"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -3919,6 +4287,9 @@
         "School of Computer Science, Peking University",
         "University of Pittsburgh",
         "Key Laboratory of High Confidence Software Technologies, Ministry of Education (PKU)"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -3952,6 +4323,9 @@
         "https://arxiv.org/html/2607.18863v1/figures/fig_unigeo_framework.png",
         "https://arxiv.org/html/2607.18863v1/figures/fig_gate_activation_distribution.png",
         "https://arxiv.org/html/2607.18863v1/figures/fig_training_convergence_curve.png"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -3983,6 +4357,9 @@
         "https://arxiv.org/html/2607.18860v1/figures/overall_arch.png",
         "https://arxiv.org/html/2607.18860v1/figures/fig03_experimental_setup.png",
         "https://arxiv.org/html/2607.18860v1/figures/fig04_damaged_battery.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -4022,6 +4399,9 @@
         "https://arxiv.org/html/2607.18859v1/x1.png",
         "https://arxiv.org/html/2607.18859v1/x2.png",
         "https://arxiv.org/html/2607.18859v1/figure/ablation_chart-2.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -4051,6 +4431,9 @@
         "https://arxiv.org/html/2607.18856v1/x2.png",
         "https://arxiv.org/html/2607.18856v1/x3.png",
         "https://arxiv.org/html/2607.18856v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -4082,6 +4465,9 @@
         "https://arxiv.org/html/2607.18855v1/x2.png",
         "https://arxiv.org/html/2607.18855v1/x3.png",
         "https://arxiv.org/html/2607.18855v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.RO"
       ]
     },
     {
@@ -4122,6 +4508,10 @@
         "Tsinghua University",
         "Guangdong Laboratory of Artificial Intelligence and Digital Economy (SZ)",
         "Shenzhen University"
+      ],
+      "announced_in": [
+        "cs.CV",
+        "cs.AI"
       ]
     },
     {
@@ -4155,6 +4545,9 @@
         "https://arxiv.org/html/2607.18847v1/x2.png",
         "https://arxiv.org/html/2607.18847v1/x3.png",
         "https://arxiv.org/html/2607.18847v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -4198,6 +4591,9 @@
         "https://arxiv.org/html/2607.18840v1/x3.png",
         "https://arxiv.org/html/2607.18840v1/x4.png",
         "https://arxiv.org/html/2607.18840v1/x5.png"
+      ],
+      "announced_in": [
+        "cs.RO"
       ]
     },
     {
@@ -4228,7 +4624,10 @@
       "project_links": [],
       "title_zh": "ABOPD：通过按策略蒸馏进行抗体 CDR 设计",
       "abstract_zh": "抗体是重要的治疗分子，其互补决定区 (CDR) 形成主要的抗原识别界面。最近的蛋白质生成模型已经证明了生物分子设计的广泛能力，但下游目标的训练后策略仍然有限。标准去噪训练对通过扰动本机结构获得的噪声状态进行操作，而递归生成则通过模型生成的中间状态进行。对于灵活的抗体 CDR 环（例如 CDR-H3），这种不匹配可能会导致主链偏差沿着去噪轨迹累积，并损害面向抗原的环几何形状。我们引入了 ABOPD，一种基于策略蒸馏的抗体设计框架，它在训练期间利用特权原生几何来监督沿着模型自身的去噪轨迹访问的状态。通过这种细粒度的结构监督，ABOPD 显着提高了 RAbD CDR-H3 生成的结构恢复，将 RMSD 降低了 0.42 Å（从 2.37 Å 到 1.95 Å），并且优于监督微调和离线蒸馏控制，为更高保真度的蛋白质设计提供了一条途径。",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.AI"
+      ]
     },
     {
       "arxiv_id": "2607.18830",
@@ -4259,6 +4658,9 @@
         "https://arxiv.org/html/2607.18830v1/plots_variance/GoToLocal.png",
         "https://arxiv.org/html/2607.18830v1/plots_variance/PickupDist.png",
         "https://arxiv.org/html/2607.18830v1/plots_variance/GoToObjDoor.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -4284,7 +4686,10 @@
       "title_zh": "在缺失信息下评估医疗人工智能：同一提供商的法官和人类评估者改变了表面上的安全性",
       "abstract_zh": "医疗人工智能的准备压力测试主要集中在封闭式和多模式基准上。我们将其扩展到缺失信息下的开放式临床对话，其中安全行为意味着识别缺失信息并进行限定、澄清或不过分承诺，并且评估者成为测量的一部分。我们通过删除 HealthBench 对话中最终用户回合的后半部分、使用四位提供者的 LLM 评审小组和盲法临床医生锚定参考对四种模型进行压力测试，其中三种旗舰型号（Claude Opus 4.8、GPT-5.5、Grok 4.3）和一种中端型号（Gemini 3.5 Flash）。两个面向评估者的结果是稳健的。首先，法官的选择实质上改变了表面上的安全性：法官间的一致性只是中等（Fleiss' kappa = 0.65），并且在调整每个法官的普遍宽大程度（投票级别逻辑回归）后，相同提供商之间的积极关联仍然存在（精确排列 p = 0.04；概率尺度上的 GPT-5.5 ~ +0.10） - 足够大，足以改变哪个模型在其自己的提供商法官出现后至少会过度承诺被排除在外。其次，LLM 法官对 50 个项目的盲法子样本比临床医生更宽容：所有四位法官都比更严格的独立临床医生更宽松（认为 66-84% 的项目有适当的不确定性，而 52% 的项目具有适当的不确定性），四分之三的法官比受作者影响的共识（仅 Grok 方向；法官与共识 kappa = 0.20-0.43）更宽松。在作者审核的临床不确定子集上，许可差距扩大，点估计模型排序保持不变。封闭式 MedQA 锚确认准确性很高，并且对于四个模型中的三个模型，选项顺序效应处于 +/-5 点等效区域内，因此安全差距与校准有关，而不是与知识有关。我们发布了工具、提示、每个项目的输出、判断小组、扰动审计和人工注释协议。",
       "html_url": "https://arxiv.org/html/2607.18828v1",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.AI"
+      ]
     },
     {
       "arxiv_id": "2607.18827",
@@ -4317,6 +4722,9 @@
         "https://arxiv.org/html/2607.18827v1/x2.png",
         "https://arxiv.org/html/2607.18827v1/x3.png",
         "https://arxiv.org/html/2607.18827v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -4349,6 +4757,9 @@
         "https://arxiv.org/html/2607.18826v1/figures/fig2_auc_summary.png",
         "https://arxiv.org/html/2607.18826v1/figures/fig3_squeeze_summary.png",
         "https://arxiv.org/html/2607.18826v1/figures/figA_data_map.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -4383,6 +4794,9 @@
         "https://arxiv.org/html/2607.18825v1/x2.png",
         "https://arxiv.org/html/2607.18825v1/x3.png",
         "https://arxiv.org/html/2607.18825v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -4418,6 +4832,9 @@
         "Jönköping University, Jönköping, Sweden",
         "Halmstad University, Halmstad, Sweden",
         "Centre for Reliable Machine Learning, Royal Holloway, University of London, Egham, Surrey, UK"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -4451,6 +4868,9 @@
         "https://arxiv.org/html/2607.18816v1/figures/prov_to_quotient_horizontal.png",
         "https://arxiv.org/html/2607.18816v1/figures/usage_scenario_1.png",
         "https://arxiv.org/html/2607.18816v1/figures/usage_scenario_2_new.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -4483,6 +4903,9 @@
         "https://arxiv.org/html/2607.18806v1/images/tourmeeting_overview2.png",
         "https://arxiv.org/html/2607.18806v1/x2.png",
         "https://arxiv.org/html/2607.18806v1/x3.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -4518,6 +4941,9 @@
         "https://arxiv.org/html/2607.18801v1/x2.png",
         "https://arxiv.org/html/2607.18801v1/x3.png",
         "https://arxiv.org/html/2607.18801v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -4552,6 +4978,9 @@
         "https://arxiv.org/html/2607.18798v1/figures/pipeline.png",
         "https://arxiv.org/html/2607.18798v1/x2.png",
         "https://arxiv.org/html/2607.18798v1/figures/ablation_finalfinal.png"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -4588,6 +5017,9 @@
         "https://arxiv.org/html/2607.18794v1/x2.png",
         "https://arxiv.org/html/2607.18794v1/x3.png",
         "https://arxiv.org/html/2607.18794v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.RO"
       ]
     },
     {
@@ -4618,6 +5050,9 @@
       "figures": [
         "https://arxiv.org/html/2607.18791v1/x1.png",
         "https://arxiv.org/html/2607.18791v1/x2.png"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -4649,6 +5084,9 @@
         "https://arxiv.org/html/2607.18789v1/assets/dataset_examples/1L_f1.png",
         "https://arxiv.org/html/2607.18789v1/assets/dataset_examples/1L_f2.png",
         "https://arxiv.org/html/2607.18789v1/assets/dataset_examples/1L_f3.png"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -4677,6 +5115,9 @@
         "https://arxiv.org/html/2607.18787v1/figures/elliptic-results.png",
         "https://arxiv.org/html/2607.18787v1/figures/heat-results.png",
         "https://arxiv.org/html/2607.18787v1/figures/cgl-results.png"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -4715,6 +5156,9 @@
         "https://arxiv.org/html/2607.18785v1/x2.png",
         "https://arxiv.org/html/2607.18785v1/x3.png",
         "https://arxiv.org/html/2607.18785v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -4746,6 +5190,9 @@
         "https://arxiv.org/html/2607.18779v1/figures/points_marked_on_image_c.png",
         "https://arxiv.org/html/2607.18779v1/figures/unit_vector.png",
         "https://arxiv.org/html/2607.18779v1/figures/rotation.png"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -4778,6 +5225,9 @@
         "https://arxiv.org/html/2607.18773v1/ISIC_0024306.jpg",
         "https://arxiv.org/html/2607.18773v1/ISIC_0024307.jpg",
         "https://arxiv.org/html/2607.18773v1/ISIC_0024308.jpg"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -4808,6 +5258,9 @@
         "https://arxiv.org/html/2607.18770v1/x2.png",
         "https://arxiv.org/html/2607.18770v1/x3.png",
         "https://arxiv.org/html/2607.18770v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -4843,6 +5296,9 @@
         "https://arxiv.org/html/2607.18768v1/x2.png",
         "https://arxiv.org/html/2607.18768v1/x3.png",
         "https://arxiv.org/html/2607.18768v1/figs/attention.png"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -4872,6 +5328,10 @@
         "https://arxiv.org/html/2607.18767v1/abls_aar_sel_page20001-02.png",
         "https://arxiv.org/html/2607.18767v1/abls_aar_sel_q1a_cropped.png",
         "https://arxiv.org/html/2607.18767v1/accuracy_vs_flops_formal.png"
+      ],
+      "announced_in": [
+        "cs.CV",
+        "cs.AI"
       ]
     },
     {
@@ -4900,6 +5360,9 @@
         "https://arxiv.org/html/2607.18763v1/x2.png",
         "https://arxiv.org/html/2607.18763v1/x3.png",
         "https://arxiv.org/html/2607.18763v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -4932,7 +5395,10 @@
       "project_links": [],
       "title_zh": "用于基于 PET 的肿瘤内异质性内容检索的弱监督病理学知情表示学习",
       "abstract_zh": "我们提出了一种弱监督的 18FFDG PET 表示学习框架，用于基于内容的医学图像检索，在训练期间使用 H&E 导出的信息，同时保留仅 PET 的推理。所提出的方法旨在在训练期间使用 H&E 导出的信息，同时保持仅 PET 推理。使用师生培训策略来学习 PET 肿瘤衍生的体素表示，从中生成全局和热点条件嵌入以及我们的食道癌测试案例中肿瘤内异质性图。使用渐进消融策略来评估不同监督机制的贡献。使用包括平均精度、标准化贴现累积增益和平均倒数排名在内的指标来评估交叉验证折叠的检索性能。其他分析评估了消融性能、通过扰动/删除实验的热点忠实度、原型特异性 PET 摄取行为以及学习的 PET 原型类别和选定的组织特征之间的间接患者水平一致性。与全局 PET 表示和传统 PET 基线相比，逐步引入病理学知情监督和热点建模提高了 PET 检索性能。在整个消融阶梯中，PET 热点条件表示始终提供比全局嵌入更强的检索，这表明关注信息丰富的肿瘤亚区域可以提高对肿瘤内异质性的敏感性。组织病理学一致性进一步表明，学习的类别不仅仅是高摄取 PET 区域；相反，他们在 18F FDG 吸收方面表现出明显的异质性。",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.CV"
+      ]
     },
     {
       "arxiv_id": "2607.18760",
@@ -4960,6 +5426,9 @@
         "https://arxiv.org/html/2607.18760v1/x1.png",
         "https://arxiv.org/html/2607.18760v1/x2.png",
         "https://arxiv.org/html/2607.18760v1/x3.png"
+      ],
+      "announced_in": [
+        "cs.RO"
       ]
     },
     {
@@ -5005,6 +5474,9 @@
         "University of Toronto",
         "Google",
         "Stanford University"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -5037,6 +5509,9 @@
         "https://arxiv.org/html/2607.18748v1/x5.png",
         "https://arxiv.org/html/2607.18748v1/x6.png",
         "https://arxiv.org/html/2607.18748v1/x7.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -5069,6 +5544,9 @@
         "https://arxiv.org/html/2607.18747v1/figures/scenarios/clutter_bg.png",
         "https://arxiv.org/html/2607.18747v1/figures/scenarios/dark.png",
         "https://arxiv.org/html/2607.18747v1/figures/scenarios/multi_track.png"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -5098,6 +5576,9 @@
         "https://arxiv.org/html/2607.18737v1/fig/grasp_dominant.png",
         "https://arxiv.org/html/2607.18737v1/fig/bmu_trial2.png",
         "https://arxiv.org/html/2607.18737v1/fig/trial_timeline.png"
+      ],
+      "announced_in": [
+        "cs.RO"
       ]
     },
     {
@@ -5128,6 +5609,9 @@
         "https://arxiv.org/html/2607.18731v1/x2.png",
         "https://arxiv.org/html/2607.18731v1/x3.png",
         "https://arxiv.org/html/2607.18731v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.RO"
       ]
     },
     {
@@ -5164,6 +5648,9 @@
         "https://arxiv.org/html/2607.18725v1/x2.png",
         "https://arxiv.org/html/2607.18725v1/x3.png",
         "https://arxiv.org/html/2607.18725v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -5201,6 +5688,9 @@
         "School of Science and Engineering, The Chinese University of Hong Kong, Shenzhen 518172, China",
         "XJTU-POLIMI Joint School, Xi’an Jiaotong University, Xi’an 710049, China",
         "Shenzhen Future Network of Intelligence Institute (FNii-Shenzhen)"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -5233,6 +5723,9 @@
         "https://arxiv.org/html/2607.18719v1/x2.png",
         "https://arxiv.org/html/2607.18719v1/x3.png",
         "https://arxiv.org/html/2607.18719v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -5272,6 +5765,9 @@
         "Zhejiang Key Laboratory of Digital-Intelligence Service Technology, China",
         "Hong Kong Polytechnic University, Hong Kong SAR",
         "The University of Southern Queensland, Australia"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -5303,6 +5799,9 @@
         "https://arxiv.org/html/2607.18715v1/Figs/framework.png",
         "https://arxiv.org/html/2607.18715v1/x1.png",
         "https://arxiv.org/html/2607.18715v1/x2.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -5337,6 +5836,10 @@
         "https://arxiv.org/html/2607.18713v1/figures/original/centroid_executed_fraction_vs_sigma_c.png",
         "https://arxiv.org/html/2607.18713v1/figures/original/centroid_mae_executed_only_vs_sigma_c.png",
         "https://arxiv.org/html/2607.18713v1/figures/original/centroid_mean_jerk_vs_sigma_c.png"
+      ],
+      "announced_in": [
+        "cs.CV",
+        "cs.RO"
       ]
     },
     {
@@ -5372,6 +5875,9 @@
         "https://arxiv.org/html/2607.18709v1/x2.png",
         "https://arxiv.org/html/2607.18709v1/x3.png",
         "https://arxiv.org/html/2607.18709v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.RO"
       ]
     },
     {
@@ -5403,6 +5909,9 @@
         "https://arxiv.org/html/2607.18704v1/figs/image2.png",
         "https://arxiv.org/html/2607.18704v1/figs/image3.png",
         "https://arxiv.org/html/2607.18704v1/figs/image4.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -5438,6 +5947,9 @@
         "https://arxiv.org/html/2607.18703v1/x2.png",
         "https://arxiv.org/html/2607.18703v1/assets/qualitative_aligned_comparison_row0.png",
         "https://arxiv.org/html/2607.18703v1/assets/qualitative_aligned_comparison_row1.png"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -5472,6 +5984,10 @@
         "https://arxiv.org/html/2607.18700v1/images/EDA/original_image_with_boxes0.jpg",
         "https://arxiv.org/html/2607.18700v1/images/EDA/original_image_with_boxes1.jpg",
         "https://arxiv.org/html/2607.18700v1/images/EDA/original_image_with_boxes2.jpg"
+      ],
+      "announced_in": [
+        "cs.CV",
+        "cs.AI"
       ]
     },
     {
@@ -5499,6 +6015,9 @@
         "https://arxiv.org/html/2607.18696v1/x1.png",
         "https://arxiv.org/html/2607.18696v1/x2.png",
         "https://arxiv.org/html/2607.18696v1/x3.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -5535,6 +6054,10 @@
         "https://arxiv.org/html/2607.18695v1/x1.png",
         "https://arxiv.org/html/2607.18695v1/Feat_Mutual_Info.png",
         "https://arxiv.org/html/2607.18695v1/dist_shift.png"
+      ],
+      "announced_in": [
+        "cs.CV",
+        "cs.AI"
       ]
     },
     {
@@ -5564,6 +6087,9 @@
         "https://arxiv.org/html/2607.18691v1/x2.png",
         "https://arxiv.org/html/2607.18691v1/x3.png",
         "https://arxiv.org/html/2607.18691v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -5597,6 +6123,9 @@
         "https://arxiv.org/html/2607.18688v1/framework2.png",
         "https://arxiv.org/html/2607.18688v1/dataset.png",
         "https://arxiv.org/html/2607.18688v1/drop.png"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -5627,6 +6156,9 @@
         "https://arxiv.org/html/2607.18678v1/figures/MAMAMIA.png",
         "https://arxiv.org/html/2607.18678v1/figures/fastmri.png",
         "https://arxiv.org/html/2607.18678v1/figures/new_dataset_final.png"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -5663,6 +6195,9 @@
       "affiliations": [
         "Weathon Software, Canada",
         "Department of Computer Science, University of British Columbia, Canada"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -5697,6 +6232,9 @@
       "figures": [
         "https://arxiv.org/html/2607.18665v1/figure/data.png",
         "https://arxiv.org/html/2607.18665v1/figure/final.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -5728,6 +6266,9 @@
         "https://arxiv.org/html/2607.18664v1/x2.png",
         "https://arxiv.org/html/2607.18664v1/x3.png",
         "https://arxiv.org/html/2607.18664v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -5761,6 +6302,9 @@
         "https://arxiv.org/html/2607.18663v1/x2.png",
         "https://arxiv.org/html/2607.18663v1/x3.png",
         "https://arxiv.org/html/2607.18663v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.RO"
       ]
     },
     {
@@ -5806,6 +6350,9 @@
       "affiliations": [
         "*This work was supported in part by the Department of the Air Force under Contract FA857126C0002; in part by the National Science Foundation under Awards 2423068 and 2520136; and in part by the U.S. Department of Agriculture under Awards 2023-67021-39072 and 2024-67021-42878.",
         "Elmore Family School of Electrical and Computer Engineering, Purdue University, West Lafayette, IN 47907, USA."
+      ],
+      "announced_in": [
+        "cs.RO"
       ]
     },
     {
@@ -5840,6 +6387,9 @@
         "https://arxiv.org/html/2607.18659v1/x2.png",
         "https://arxiv.org/html/2607.18659v1/x3.png",
         "https://arxiv.org/html/2607.18659v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -5871,6 +6421,9 @@
         "https://arxiv.org/html/2607.18646v1/images/smiley_face.png",
         "https://arxiv.org/html/2607.18646v1/images/gear_test.png",
         "https://arxiv.org/html/2607.18646v1/images/noisy_moon.png"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -5897,7 +6450,10 @@
       "project_links": [],
       "title_zh": "基于抽绳原理的织物气动人工肌肉",
       "abstract_zh": "气动人工肌肉在机器人和工业领域有着广泛的应用。传统的气动人工肌肉在轴向收缩时会产生额外的径向变形，这严重浪费了可用的工作空间。受纺织产品中广泛采用的抽绳原理的启发，本文提出了一种新型抽绳织物气动人工肌肉（DPAM）。与传统的同类产品不同，所提出的 DPAM 在收缩过程中不会产生额外的径向变形，从而大大提高了结构的紧凑性。 DPAM表现出优异的机械性能：负载能力超过自重的800倍，最大收缩率达到44%，功率密度高达4.98 kW/kg，并具有出色的可扩展性。通过仿生机器人和工业生产线两个代表性应用场景进行论证，验证了其实用性。 DPAM 可以在二维平面内轻松扩展，正如所制造的 DPAM 矩阵所验证的那样。这项工作不仅提出了一种高性能的新型气动人造肌肉，而且激发了研究人员从传统纺织结构中汲取设计灵感，以解决软机器人技术中现有的挑战。",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.RO"
+      ]
     },
     {
       "arxiv_id": "2607.18638",
@@ -5930,7 +6486,11 @@
       "project_links": [],
       "title_zh": "根据 CT 数字重建射线照片深度学习估计性别、年龄、身高和体重",
       "abstract_zh": "目的：开发和验证深度学习集成，用于根据诊断 CT 生成的冠状数字重建射线照片 (DRR) 估计成人性别、年龄、身高和体重。材料和方法：这项回顾性研究包括日本 9 个机构的 80,004 名成年人的 128,621 次 CT 检查。三个多任务模型——ConvNeXt-Base、ViT-Base/16 和 MaxViT-Base——使用日冕 DRR 进行微调，并通过加权平均进行组合。数据按机构分为训练（114,147 项考试；7 家机构）、调优（4,305 项；1 家机构）和测试（10,169 项；1 家机构）组；在两个非日本数据集上评估了普遍性。准确度和平均绝对误差（MAE）分别用于评估性别分类以及年龄、身高和体重回归。使用真实身高和体重与估计身高和体重来比较经体表面积 (BSA) 校正的心脏和肝脏体积趋势。结果：在测试集中（中位年龄 69.9 岁；10,169 名男性中的 4,899 名 [48.2%]），总体性别分类准确度为 0.997（95% CI，0.996-0.998），MAE 为 3.57 岁（3.51-3.63）、2.59 cm（2.54-2.64）和年龄、身高和体重分别为 3.40 公斤 (3.34-3.47)。在覆盖胸部至骨盆的检查中，准确度为 1.000，MAE 分别为 3.15 年、2.28 厘米和 3.18 公斤。根据估计值计算的 BSA 再现了使用真实值获得的与年龄相关的心脏和肝脏体积趋势。在非日本数据集上，高度误差增加，但通过持续微调减少了。结论：该团队根据 CT 衍生的 DRR 估计了成人性别、年龄、身高和体重，随着解剖覆盖范围的扩大，检查误差通常较低。",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.CV",
+        "cs.AI"
+      ]
     },
     {
       "arxiv_id": "2607.18637",
@@ -5969,6 +6529,9 @@
         "https://arxiv.org/html/2607.18637v1/x2.png",
         "https://arxiv.org/html/2607.18637v1/x3.png",
         "https://arxiv.org/html/2607.18637v1/cpk_comparison_bar.png"
+      ],
+      "announced_in": [
+        "cs.RO"
       ]
     },
     {
@@ -6001,6 +6564,9 @@
         "https://arxiv.org/html/2607.18630v1/qualitative_comparison.png",
         "https://arxiv.org/html/2607.18630v1/wonder3d_caption_arch.png",
         "https://arxiv.org/html/2607.18630v1/wonder3d_depth_arch.png"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -6031,6 +6597,10 @@
         "https://arxiv.org/html/2607.18625v1/x2.png",
         "https://arxiv.org/html/2607.18625v1/x3.png",
         "https://arxiv.org/html/2607.18625v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.CV",
+        "cs.AI"
       ]
     },
     {
@@ -6071,6 +6641,9 @@
         "University of British Columbia",
         "Vector Institute",
         "McMaster University"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -6101,6 +6674,9 @@
       ],
       "affiliations": [
         "Xintong Zhima (Beijing) Technology Co., Ltd., Beijing, China"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -6130,7 +6706,10 @@
       "project_links": [],
       "title_zh": "LatentMT：具有潜在推理的机器翻译",
       "abstract_zh": "潜在推理循环语言模型 (LoopLM) 为机器翻译 (MT) 提供了不同的扩展路径：它们不是增加参数数量或发出显式的思想链标记，而是在隐藏状态内花费额外的循环计算。我们介绍 LatentMT，这是第一个针对机器翻译潜在推理 LoopLM 的系统研究。 LatentMT 采用小型 2.6B 参数骨干模型进行轻量级训练。在涵盖高、中、低资源语言的 32 个翻译方向上，LatentMT 所实现的性能可与大三到五倍的模型相媲美。它在高资源语言上具有竞争力，并且在中等资源和低资源语言上都实现了最先进的性能。研究缩放循环推理步骤数量的行为，我们发现循环计算在早期步骤中持续提高翻译质量，然后很快饱和。我们的机制分析表明，隐藏表示差异沿着循环推理步骤轴缩小，支持观察到的性能饱和。最后，我们的效率分析表明，与具有类似性能的更大的非潜在推理模型相比，LatentMT 需要更少的训练和推理计算，这使得潜在循环计算成为实现紧凑、高效和强大的机器翻译的有希望的途径。",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.AI"
+      ]
     },
     {
       "arxiv_id": "2607.18609",
@@ -6173,6 +6752,9 @@
         "Sun Yat-sen University",
         "South China Agricultural University",
         "Peng Cheng Laboratory"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -6208,6 +6790,9 @@
       "affiliations": [
         "Department of Electrical and Computer Engineering, Johns Hopkins University",
         "Department of Computer Science, Washington University in St. Louis"
+      ],
+      "announced_in": [
+        "cs.RO"
       ]
     },
     {
@@ -6246,6 +6831,10 @@
         "https://arxiv.org/html/2607.18604v1/images/illustration/hierachical-framework-haps-uav2.png",
         "https://arxiv.org/html/2607.18604v1/x2.png",
         "https://arxiv.org/html/2607.18604v1/x3.png"
+      ],
+      "announced_in": [
+        "cs.RO",
+        "cs.AI"
       ]
     },
     {
@@ -6287,6 +6876,9 @@
       "affiliations": [
         "University of Massachusetts Amherst",
         "Databricks Mosaic Research"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -6313,6 +6905,9 @@
       "html_url": "https://arxiv.org/html/2607.18589v1",
       "figures": [
         "https://arxiv.org/html/2607.18589v1/x1.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -6340,6 +6935,9 @@
       "figures": [
         "https://arxiv.org/html/2607.18586v1/Fig1.png",
         "https://arxiv.org/html/2607.18586v1/Fig2.png"
+      ],
+      "announced_in": [
+        "cs.RO"
       ]
     },
     {
@@ -6373,6 +6971,9 @@
         "https://arxiv.org/html/2607.18580v1/x2.png",
         "https://arxiv.org/html/2607.18580v1/x3.png",
         "https://arxiv.org/html/2607.18580v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.RO"
       ]
     },
     {
@@ -6406,6 +7007,9 @@
         "https://arxiv.org/html/2607.18578v1/x1.png",
         "https://arxiv.org/html/2607.18578v1/x2.png",
         "https://arxiv.org/html/2607.18578v1/images/cube_finetune_box.png"
+      ],
+      "announced_in": [
+        "cs.RO"
       ]
     },
     {
@@ -6434,6 +7038,9 @@
         "https://arxiv.org/html/2607.18577v1/x1.png",
         "https://arxiv.org/html/2607.18577v1/x2.png",
         "https://arxiv.org/html/2607.18577v1/x3.png"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -6472,6 +7079,9 @@
         "https://arxiv.org/html/2607.18576v1/Figs/visual_review_all.png",
         "https://arxiv.org/html/2607.18576v1/Figs/prompts.png",
         "https://arxiv.org/html/2607.18576v1/Figs/Fig-model-fruit.png"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -6494,7 +7104,10 @@
       "project_links": [],
       "title_zh": "机器学习何时击败价值排序？曝光加权发货优先级的三数据集诊断",
       "abstract_zh": "延误风险模型通常通过预测准确性来判断。在实践中，重要的是范围更窄：经理只能检查少数货物，那么经理应该首先检查哪些货物？我们评估机器学习是否清除了苛刻的无模型基线：首先检查价值最高的货物。在三个真实的供应链环境中：SCMS 采购、DataCo 物流和 Olist 电子商务，我们使用泄漏控制滚动原点评估和 1000 个样本配对引导置信区间。在所有三个数据集中，按预测延迟严重性乘以已知值 (M1) 进行的排名优于仅严重性排名，但通常不会优于值排序。按照 10% 的审核预算，M1 减去 VALUE_ONLY 后，SCMS 为 -5.5 个百分点 (pp)，DataCo 为 +10.1 个百分点，Olist 为 -4.9 个百分点。这种划分与严重性可学习性一致：DataCo 的 R^2 = 0.27 和 +0.01 天的校准偏差，而 SCMS 和 Olist 的 R^2 约为 -0.02 和负校准偏差。 Nested-CV 成本敏感的再训练并不能比 M1 带来稳定的改进。本文提出了一种部署诊断和评估协议，而不是提出一种新的学习算法。价值排序应该仍然是一个永久的基准，并且只有在严重性可学习性和校准经过审核并且模型在泄漏控制滚动原点评估下清除该门之后才应部署机器学习。",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.AI"
+      ]
     },
     {
       "arxiv_id": "2607.18570",
@@ -6526,6 +7139,9 @@
         "https://arxiv.org/html/2607.18570v1/images/shap_ex_so_waterfall.png",
         "https://arxiv.org/html/2607.18570v1/images/shap_normal_verb_yet_130_v3.png",
         "https://arxiv.org/html/2607.18570v1/images/shap_neg_verb_yet_130_v3.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -6557,6 +7173,9 @@
         "https://arxiv.org/html/2607.18567v1/x2.png",
         "https://arxiv.org/html/2607.18567v1/x3.png",
         "https://arxiv.org/html/2607.18567v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -6587,6 +7206,9 @@
         "https://arxiv.org/html/2607.18566v1/figure1.png",
         "https://arxiv.org/html/2607.18566v1/x1.png",
         "https://arxiv.org/html/2607.18566v1/fig3_bci_transfer.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -6617,6 +7239,9 @@
         "https://arxiv.org/html/2607.18565v1/thresold_plot.png",
         "https://arxiv.org/html/2607.18565v1/S0_Analysis.png",
         "https://arxiv.org/html/2607.18565v1/S3_Analysis.png"
+      ],
+      "announced_in": [
+        "cs.RO"
       ]
     },
     {
@@ -6652,6 +7277,9 @@
       "affiliations": [
         "College of Science, Beijing Forestry University, Beijing 100083, China",
         "School of Software, North University of China, Taiyuan, Shanxi 030051, China"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -6676,7 +7304,10 @@
       "title_zh": "循环语言模型中的操作原型自省：过程质量水龙头、可执行分支和读出控制边界",
       "abstract_zh": "语言模型能否读取正在进行的计算的质量，并且外部干预能否将读取的结果转化为更好的结果？我们在冻结的 2.6B 环形变压器 Ouro-RLTT 中测试了这两个问题。在 GSM8K 上，严格的预答案探测排除了答案区域和黄金值，但预测了最终的成功：隐藏状态加上长度和对数概率快捷方式达到 AUROC 0.797，而单独快捷方式为 0.731（增量 +0.066；任务集群 95% CI [+0.021，+0.112]；170 个任务，680 个候选）。低容量 Tap 还读取角色专用属性：任务不相交分支生存达到 0.9697 预言保留，内容排名达到 0.6310 宏 top-1，生成分支正确性达到 AUROC 0.7755。非循环控制复制候选质量读数，因此不需要每个信号都重复。\n  我们在 Ouro 的 192 槽循环缓存上构建分支/进位/修剪机制，包括特定于分支的缓存沿袭和位精确的残差捕获拼接，该拼接仅重新计算受影响的后缀，并节省高达 88% 的每分支层传递。任何冻结的干预都不会产生经过验证的能力增益。定向转向是一个既定的负面因素；四任务匹配抽样比较消除了冻叉增益的证据，但无法估计总体赤字；终端选择仍未解决且动力不足；有界 LoRA 会改变表面行为，但不会提高网络可达性。二空审计不支持最简单的跨度错位解释。\n  我们将这种可读但尚不可用的属性称为操作原型内省。该模型没有咨询我们的探测器：我们读取其隐藏的轨迹，而我们的干预措施无法将这些读数转换为经过验证的能力。预答结果仅限于一个域。承载值使用源项目不相交分割和反对称评估（如果适用）。",
       "html_url": "https://arxiv.org/html/2607.18553v1",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.AI"
+      ]
     },
     {
       "arxiv_id": "2607.18548",
@@ -6711,6 +7342,9 @@
         "https://arxiv.org/html/2607.18548v1/x2.png",
         "https://arxiv.org/html/2607.18548v1/Figures/survey-framework.png",
         "https://arxiv.org/html/2607.18548v1/Figures/benchmarks.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -6742,6 +7376,9 @@
         "https://arxiv.org/html/2607.18544v1/x2.png",
         "https://arxiv.org/html/2607.18544v1/x3.png",
         "https://arxiv.org/html/2607.18544v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -6773,6 +7410,10 @@
         "https://arxiv.org/html/2607.18540v1/x1.png",
         "https://arxiv.org/html/2607.18540v1/x2.png",
         "https://arxiv.org/html/2607.18540v1/x3.png"
+      ],
+      "announced_in": [
+        "cs.CV",
+        "cs.RO"
       ]
     },
     {
@@ -6813,6 +7454,9 @@
         "https://arxiv.org/html/2607.18539v1/x2.png",
         "https://arxiv.org/html/2607.18539v1/x3.png",
         "https://arxiv.org/html/2607.18539v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -6844,6 +7488,10 @@
         "https://arxiv.org/html/2607.18536v1/Figures/MAGE_overall_v2.png",
         "https://arxiv.org/html/2607.18536v1/x1.png",
         "https://arxiv.org/html/2607.18536v1/x2.png"
+      ],
+      "announced_in": [
+        "cs.RO",
+        "cs.AI"
       ]
     },
     {
@@ -6875,6 +7523,9 @@
         "https://arxiv.org/html/2607.18530v1/figures/architecture.png",
         "https://arxiv.org/html/2607.18530v1/x1.png",
         "https://arxiv.org/html/2607.18530v1/x2.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -6910,6 +7561,9 @@
       "affiliations": [
         "National Taiwan University",
         "NTU Artificial Intelligence Center of Research Excellence"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -6943,6 +7597,9 @@
         "https://arxiv.org/html/2607.18527v1/figure/mech1V1.png",
         "https://arxiv.org/html/2607.18527v1/figure/general-overview-placeholder.png",
         "https://arxiv.org/html/2607.18527v1/figure/dynam.jpg"
+      ],
+      "announced_in": [
+        "cs.RO"
       ]
     },
     {
@@ -6977,6 +7634,9 @@
         "https://arxiv.org/html/2607.18517v1/x1.png",
         "https://arxiv.org/html/2607.18517v1/x2.png",
         "https://arxiv.org/html/2607.18517v1/images/nonlinear_dynamic_primary_study/plot_metric_successful_trial_condition_success.png"
+      ],
+      "announced_in": [
+        "cs.RO"
       ]
     },
     {
@@ -7009,6 +7669,9 @@
         "https://arxiv.org/html/2607.18516v1/x2.png",
         "https://arxiv.org/html/2607.18516v1/x3.png",
         "https://arxiv.org/html/2607.18516v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -7040,6 +7703,9 @@
         "https://arxiv.org/html/2607.18515v1/x2.png",
         "https://arxiv.org/html/2607.18515v1/x3.png",
         "https://arxiv.org/html/2607.18515v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -7072,6 +7738,9 @@
         "https://arxiv.org/html/2607.18514v1/figures/S4_Fig1.png",
         "https://arxiv.org/html/2607.18514v1/figures/BLV1_Fig9_Final.png",
         "https://arxiv.org/html/2607.18514v1/figures/BLV3_Fig3_SubductionZones.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -7101,6 +7770,9 @@
         "https://arxiv.org/html/2607.18510v1/x1.png",
         "https://arxiv.org/html/2607.18510v1/x2.png",
         "https://arxiv.org/html/2607.18510v1/x3.png"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -7137,6 +7809,9 @@
       "figures": [
         "https://arxiv.org/html/2607.18508v1/x1.png",
         "https://arxiv.org/html/2607.18508v1/x2.png"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -7181,6 +7856,10 @@
         "Rubicon, Paris, France",
         "IBM Research, Zurich, Switzerland",
         "Norwegian Computing Center, Oslo, Norway"
+      ],
+      "announced_in": [
+        "cs.CV",
+        "cs.AI"
       ]
     },
     {
@@ -7213,6 +7892,9 @@
         "https://arxiv.org/html/2607.18496v1/FDIC.png",
         "https://arxiv.org/html/2607.18496v1/impostor-scam-predictors.png",
         "https://arxiv.org/html/2607.18496v1/identity-theft-predictors.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -7249,6 +7931,10 @@
         "https://arxiv.org/html/2607.18488v1/figures/robots_back_and_forth.jpg",
         "https://arxiv.org/html/2607.18488v1/x2.png",
         "https://arxiv.org/html/2607.18488v1/x3.png"
+      ],
+      "announced_in": [
+        "cs.RO",
+        "cs.AI"
       ]
     },
     {
@@ -7273,7 +7959,10 @@
       "title_zh": "可信凭证，不可信行为：高性能计算中的 LLM-Agent 安全性基准测试",
       "abstract_zh": "大型语言模型 (LLM) 代理开始承担高性能计算 (HPC) 中的日常工作，包括监控 Slurm 作业、诊断失败的构建、检查模拟输出以及协调科学工作流程。为了完成这项工作，代理通常根据其用户的凭据进行操作，并继承用户对文件和调度程序的访问权限。这种安排创建了普通帐户级控制无法捕获的故障模式。日志、工具描述、共享文件或对等代理消息中的对抗性指令可能会将代理重定向到用户分配的任务之外，即使每个结果命令都经过身份验证并允许该帐户使用。我们将此称为被劫持的授权代理问题。现有的代理安全研究解释了相关机制，例如间接提示注入和工具滥用，但通常在网络、企业或个人助理设置中对其进行评估。相比之下，HPC 安全性具有成熟的身份和隔离控制，但通常不代表特定任务的意图。本文定义了 HPC 设置中的威胁模型，识别了调度程序、共享存储、多项目帐户和科学工作流程创建的攻击面，并检查了当前控制措施的不足之处。最后提出了研究议程和实证基准 TaskBound 的计划。",
       "html_url": "https://arxiv.org/html/2607.18485v1",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.AI"
+      ]
     },
     {
       "arxiv_id": "2607.18483",
@@ -7314,7 +8003,10 @@
       "project_links": [],
       "title_zh": "算法时代的良好治理：数字治国之道的基础",
       "abstract_zh": "国家的数字基础——数据、算法、基础设施、平台、应用程序——在没有足够概念基础的情况下受到治理。治理这一基础以及利用它进行治理所需的能力和合法性同时存在失调、争议和结构性缺失。我们引入数字治国方略作为这一新兴领域的组织概念，认为“数字”重构了治国方略问题，而不仅仅是扩展其领域。这一概念有两个维度：数字系统的治国之道，涉及国家相对于数字基础本身的权威和能力；数字系统的治国之道，涉及将算法工具部署为治理权威的工具。它基于两个基本要求，即技术一致性和合法权威，而这两个要求确实是紧张的。我们从这些基础中得出了数字治国的十项原则，每一项都指出了一种条件，如果缺席，就会导致可识别的结构性治理失败：公共利益至上、人机互补、设计可治理性、系统一致性、混合机构、适应性治理、以人为本和公民机构、可问责和可追踪的权威、跨时间的判断以及不可授权的核心。本文以国家为出发点，它是历史上为应对有效合法的公共治理问题而发展起来的制度形态，也是当前在制度上具备全套合法性条件的唯一候选者。但数字治国方案提出了一个更深层次的问题，而不仅仅是国家是否可以自我改革：在算法时代进行良好的治理可能需要重新思考国家本身的边界、规模和隶属基础。",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.AI"
+      ]
     },
     {
       "arxiv_id": "2607.18476",
@@ -7343,6 +8035,9 @@
       "html_url": "https://arxiv.org/html/2607.18476v1",
       "figures": [
         "https://arxiv.org/html/2607.18476v1/x1.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -7385,6 +8080,9 @@
       "affiliations": [
         "University of California San Diego",
         "Adobe Research"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -7417,6 +8115,9 @@
         "https://arxiv.org/html/2607.18466v1/x2.png",
         "https://arxiv.org/html/2607.18466v1/figures/pca_anchor_features_crop.jpg",
         "https://arxiv.org/html/2607.18466v1/figures/attribute_frequency_crop.jpg"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -7446,6 +8147,9 @@
         "https://arxiv.org/html/2607.18460v1/x2.png",
         "https://arxiv.org/html/2607.18460v1/x3.png",
         "https://arxiv.org/html/2607.18460v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -7476,6 +8180,9 @@
         "https://arxiv.org/html/2607.18454v1/1b.png",
         "https://arxiv.org/html/2607.18454v1/Fig2._lessblur.png",
         "https://arxiv.org/html/2607.18454v1/multi_metric.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -7508,6 +8215,10 @@
         "https://arxiv.org/html/2607.18451v1/x1.png",
         "https://arxiv.org/html/2607.18451v1/x2.png",
         "https://arxiv.org/html/2607.18451v1/x3.png"
+      ],
+      "announced_in": [
+        "cs.CV",
+        "cs.AI"
       ]
     },
     {
@@ -7541,6 +8252,9 @@
         "https://arxiv.org/html/2607.18448v1/figures/report_homogeneity_histogram_overlay.png",
         "https://arxiv.org/html/2607.18448v1/figures/cancer_distribution_horizontal.png",
         "https://arxiv.org/html/2607.18448v1/figures/clean_meteor_vs_crqs_by_dataset.png"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -7571,6 +8285,9 @@
         "https://arxiv.org/html/2607.18445v1/x2.png",
         "https://arxiv.org/html/2607.18445v1/x3.png",
         "https://arxiv.org/html/2607.18445v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -7595,7 +8312,10 @@
       "project_links": [],
       "title_zh": "Relay-Bench：评估多领域推理链上的法学硕士",
       "abstract_zh": "隆重推出 Relay-Bench，这是一个不饱和的、整体的、纯文本的基准，用于衡量法学硕士在单个提示中完成不同领域的各种任务的能力。领先的模型 GPT-5.5 (xHigh) 得分为 43.3%。测试集完全由复合问题组成：单域子问题组串在一起形成需要跨多个域进行组合推理的挑战。这些问题中的许多都通过即时编码和故意的上下文膨胀而增加了层层复杂性。测试的领域包括视觉推理、编码、数学、信息提取（重点是网络搜索）、问题解决、常识和数据分析。在模型利用之外没有任何限制，并且明确鼓励模型利用代码执行、网络搜索和所有可用的工具。所有问题都由两到十三个子问题组成，不需要多模态输入或输出。",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.AI"
+      ]
     },
     {
       "arxiv_id": "2607.18436",
@@ -7629,6 +8349,9 @@
         "https://arxiv.org/html/2607.18436v1/x1.png",
         "https://arxiv.org/html/2607.18436v1/x2.png",
         "https://arxiv.org/html/2607.18436v1/x3.png"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -7664,6 +8387,9 @@
       "affiliations": [
         "Allen Discovery Center at Tufts University, Medford, MA, 02155, USA",
         "Wyss Institute for Biologically Inspired Engineering at Harvard University"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -7690,7 +8416,10 @@
       "project_links": [],
       "title_zh": "网络钓鱼电子邮件检测的对抗鲁棒性：TF-IDF + Logistic 回归和微调 DistilBERT 的比较研究",
       "abstract_zh": "网络钓鱼电子邮件仍然是最持久的网络安全威胁之一，机器学习分类器被广泛用于检测它们。然而，大多数报告的检测准确性是根据干净的、分发中的测试数据来衡量的，而不是根据故意更改以逃避检测的电子邮件来衡量的。本文报告了两种网络钓鱼检测方法（TF-IDF + Logistic Regression 基线和微调 DistilBERT 转换器）的受控成对比较，该方法在来自六个公共数据集的 82,255 封电子邮件的统一语料库上进行训练，并在三种条件下进行评估：正常分布、合成网络钓鱼和对抗性网络钓鱼。两个模型在干净数据上的准确率都超过了 98%，但在对抗性测试下急剧下降：TF-IDF + LR 下降至 64.00%（下降 34.59 个百分点），DistilBERT 下降至 63.64%（下降 35.40 个百分点），差距仅 0.36 个百分点，相当于 275 个样本的对抗性测试中的一封电子邮件设置。 LIME、SHAP 和注意力推出分析表明，这两个模型依赖于不同的证据，但显示出相似的漏洞。成对误差分析显示，这些模型在 54.9% 的对抗性样本上达成一致，但每个模型都产生了相似数量的排他性错误（分别为 24 和 25），表明部分互补而不是相同的故障模式。结果表明，干净数据的准确性并不能预测对抗性的鲁棒性，对抗性测试应该成为网络钓鱼检测评估的标准部分。",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.AI"
+      ]
     },
     {
       "arxiv_id": "2607.18368",
@@ -7720,6 +8449,9 @@
         "https://arxiv.org/html/2607.18368v1/x2.png",
         "https://arxiv.org/html/2607.18368v1/x3.png",
         "https://arxiv.org/html/2607.18368v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -7765,6 +8497,9 @@
         "https://arxiv.org/html/2607.18367v1/x2.png",
         "https://arxiv.org/html/2607.18367v1/x3.png",
         "https://arxiv.org/html/2607.18367v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -7791,7 +8526,10 @@
       "project_links": [],
       "title_zh": "人工智能代理的操作幻觉和安全漂移",
       "abstract_zh": "在使用工具的自治代理中充当规划器的大型语言模型（LLM）在多轮执行中引入了动态可靠性风险。虽然单圈安全机制相对成熟，但扩展的交互揭示了结构漏洞，其中初始对准随着时间的推移而退化。本文根据经验描述了多个最先进的法学硕士中观察到的两种故障模式：安全漂移，所声明的安全意图的逐渐侵蚀导致违反约束的行为（例如，文本拒绝，然后是侦察和不安全执行），以及操作幻觉，持续重复的工具调用表明有缺陷的状态感知（例如，即使在合法任务中也存在活锁）。通过对高风险道德困境、恶意请求和良性控制进行受控多轮评估，我们使用声明-行动差距和活锁指标来量化这些现象，证明它们在直接执行协议下的跨模型普遍性。根本原因分析将不稳定性归因于当前代理循环中推理上下文与执行状态的解耦。我们提出了一个动作感知监督层——一个轻量级、即插即用的架构蓝图，包含意图-动作一致性检查、运行时状态跟踪和强制终止原语。对捕获的故障轨迹进行事后模拟表明，该层可以拦截观察到的违规行为，而不会误报良性案例。这项工作通过将重点从语言保障转移到负责任的代理人工智能的可执行架构机制来提高代理可靠性。",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.AI"
+      ]
     },
     {
       "arxiv_id": "2607.18365",
@@ -7820,6 +8558,9 @@
         "https://arxiv.org/html/2607.18365v1/figures/B1_inference_pic_adjusted.png",
         "https://arxiv.org/html/2607.18365v1/x1.png",
         "https://arxiv.org/html/2607.18365v1/figures/b1_pushing_base_height_new_cropped.png"
+      ],
+      "announced_in": [
+        "cs.RO"
       ]
     },
     {
@@ -7857,6 +8598,9 @@
         "https://arxiv.org/html/2607.18363v1/x2.png",
         "https://arxiv.org/html/2607.18363v1/x3.png",
         "https://arxiv.org/html/2607.18363v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -7890,6 +8634,9 @@
         "https://arxiv.org/html/2607.18362v1/x2.png",
         "https://arxiv.org/html/2607.18362v1/x3.png",
         "https://arxiv.org/html/2607.18362v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.RO"
       ]
     },
     {
@@ -7925,6 +8672,9 @@
         "https://arxiv.org/html/2607.18361v1/x2.png",
         "https://arxiv.org/html/2607.18361v1/x3.png",
         "https://arxiv.org/html/2607.18361v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -7959,6 +8709,9 @@
         "https://arxiv.org/html/2607.18360v1/x2.png",
         "https://arxiv.org/html/2607.18360v1/x3.png",
         "https://arxiv.org/html/2607.18360v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -7998,6 +8751,9 @@
         "https://arxiv.org/html/2607.18357v1/x2.png",
         "https://arxiv.org/html/2607.18357v1/x3.png",
         "https://arxiv.org/html/2607.18357v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -8026,6 +8782,9 @@
       "html_url": "https://arxiv.org/html/2607.18356v1",
       "figures": [
         "https://arxiv.org/html/2607.18356v1/samples/codens-erase.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -8059,6 +8818,9 @@
         "https://arxiv.org/html/2607.18354v1/x2.png",
         "https://arxiv.org/html/2607.18354v1/x3.png",
         "https://arxiv.org/html/2607.18354v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -8088,7 +8850,10 @@
       "project_links": [],
       "title_zh": "MambaLSTM：增强交通事故风险预测的时空框架",
       "abstract_zh": "在交通事故风险预测中，大多数研究忽略了将时间特征融合到空间特征时可能会合并的额外噪声，并且一些模型难以捕获空间区域之间的全局相关性。为了应对这些挑战，我们提出了一种新颖的交通事故风险预测框架，名为 MambaLSTM。首先，我们开发了一个挤压和激励时间特征融合模块来集成时间信息而不损害时空完整性。其次，我们引入了一种新的补丁嵌入模块，用于有效捕获空间相邻区域之间的语义关系。此外，我们引入了基于状态空间模型的 Mamba 块来模拟城市地区的全局空间语义。最后，我们提出了一个 MambaLSTM 单元来有效捕获长期和短期时间依赖性，以识别动态风险模式。对现实世界数据集的大量实验证明了所提出的模型相对于最先进方法的优越性。代码发布于 https://github.com/Zhenzovo/MambaLSTM。",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.AI"
+      ]
     },
     {
       "arxiv_id": "2607.18349",
@@ -8118,6 +8883,9 @@
         "https://arxiv.org/html/2607.18349v1/figures/figure2_preprocessing.png",
         "https://arxiv.org/html/2607.18349v1/figures/figure3_severity_grades.png",
         "https://arxiv.org/html/2607.18349v1/figures/figure4_results_charts.png"
+      ],
+      "announced_in": [
+        "cs.CV"
       ]
     },
     {
@@ -8148,6 +8916,9 @@
         "https://arxiv.org/html/2607.18348v1/plots/relative_displacement/coding_input.png",
         "https://arxiv.org/html/2607.18348v1/plots/stats/depth_structure/depth_structure_validation.png",
         "https://arxiv.org/html/2607.18348v1/plots/stats/depth_structure/dominant_peak_layers.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -8176,7 +8947,10 @@
       "project_links": [],
       "title_zh": "使用扩散生成模型解决听觉注意力解码中的有限数据问题",
       "abstract_zh": "有限的训练数据限制了助听器 (HA) 中听觉注意力解码 (AAD) 的深度学习模型。 AAD 使用脑电图 (EEG) 数据来解码听众的注意力，从而实现对特定声源的实时跟踪。然而，由于现实世界中语音诱发脑电图数据的稀缺，在 HA 中典型的短时间窗口（<=1 秒）内实现高 AAD 性能具有挑战性。为了解决这个问题，我们研究了用于生成合成语音诱发脑电图数据的扩散概率模型（DPM）。 DPM 通过去噪过程学习底层的复杂数据结构，并可以生成适合数据增强的真实样本。我们评估了合成脑电图数据在注意力轨迹（LoA）分类任务中增强数据集的用途。我们的实验表明，与仅根据测量的 EEG 数据训练的模型相比，DPM 可以生成真实的 EEG 信号，并且合并合成数据可显着提高 AAD 性能 (p<0.05)。这些结果凸显了基于扩散的数据增强在减轻训练数据限制并提高 HA 应用中短窗口 AAD 模型的鲁棒性方面的潜力。",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.AI"
+      ]
     },
     {
       "arxiv_id": "2607.18344",
@@ -8216,6 +8990,9 @@
       "affiliations": [
         "College of Artificial Intelligence, Nanjing University of Aeronautics and Astronautics, Nanjing, China",
         "The International Joint Institute of Tianjin University, Fuzhou, Tianjin University, Tianjin, China"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -8246,6 +9023,9 @@
         "https://arxiv.org/html/2607.18343v1/x2.png",
         "https://arxiv.org/html/2607.18343v1/x3.png",
         "https://arxiv.org/html/2607.18343v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -8273,7 +9053,10 @@
       "project_links": [],
       "title_zh": "PRISM：用于高效神经网络加密的灵敏度感知多项式剪枝",
       "abstract_zh": "结构化剪枝对于使神经网络推理在同态加密 (HE) 下可行至关重要，但其对模型可靠性的影响尚未得到探索。本文提出了剪枝 CKKS 加密神经网络的系统可靠性表征，并介绍了多项式灵敏度感知剪枝（PSAP），这是一种本质上具有可靠性感知的结构化剪枝方法。 PSAP 通过权重大小、多项式激活灵敏度和旋转成本对过滤器进行联合评分，将剪枝集中在容错区域。在两种架构、两个数据集、两种数值表示和 5 个误码率（40 个全模型和 108 个每层实验）中，PSAP 剪枝模型将灾难性（>10 pp 准确度下降）层限制为最多 2 个，而幅度剪枝基线为 5--14 个，在 int32 位翻转注入下将最坏情况的漏洞减少了 29 倍。直接 CKKS 加密故障注入表明 BER~ 10^{-5} 附近的安全操作边界，支持 int32 注入作为保守的可靠性代理。故障关键结构层仅占参数的 1.1%，能够以最小的开销实现选择性硬化。这些可靠性收益与竞争效率一起获得：PSAP 在 ResNet-32 上将 Halevi-Shoup 旋转减少了高达 45.2%，自适应混合度分配方案将乘法深度从 66 级降低到 56 级，无需引导即可实现分级推理。",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.AI"
+      ]
     },
     {
       "arxiv_id": "2607.18340",
@@ -8308,6 +9091,9 @@
         "https://arxiv.org/html/2607.18340v1/figures/simon_complexity.png",
         "https://arxiv.org/html/2607.18340v1/figures/EM_N5-10_rank_vs_birthday.png",
         "https://arxiv.org/html/2607.18340v1/figures/grover_speedup.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -8332,23 +9118,32 @@
       ],
       "abstract": "Accurate prediction of ADMET (Absorption, Distribution, Metabolism, Excretion, and Toxicity) is important for drug discovery. Most predictors use undirected molecular graphs and pairwise edges. This choice misses asymmetric interactions, nonreversible dynamics, and motif level effects from functional groups and ring systems. We propose ChemHyperMag for multitask ADMET prediction under missing labels. ChemHyperMag builds a functional group hypergraph from rings, BRICS fragments, Bemis-Murcko scaffolds, and bonds. It also defines a potential driven nonreversible flow guided by electronegativity and Gasteiger partial charges. The resulting circulation is encoded by a Hermitian magnetic Laplacian and processed with a magnetic Chebyshev encoder. We perturb magnetic phases to form stochastic views and train with an InfoNCE objective. Experiments on multiple ADMET benchmarks show improvements over recent methods with fewer labeled samples and no conformers. ChemHyperMag is scalable and provides interpretable directional signals through its magnetic phases.",
       "abs_url": "https://arxiv.org/abs/2607.18332",
-      "pdf_url": "https://arxiv.org/pdf/2607.18332v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.18332v2",
       "primary_category": "cs.LG",
       "categories": [
         "cs.AI",
         "cs.LG"
       ],
       "submitted": "2026-07-19T13:33:35Z",
-      "updated": "2026-07-19T13:33:35Z",
+      "updated": "2026-07-22T14:11:41Z",
       "comments": "Accepted by Proceedings of the AI4Physics Workshop at the 43 rd International Conference on Machine Learning (AI4Physics@ICML 2026)",
       "code_links": [],
       "project_links": [],
       "title_zh": "ChemHyperMag：基于物理的磁超图学习改进了分子 ADMET 预测",
       "abstract_zh": "准确预测 ADMET（吸收、分布、代谢、排泄和毒性）对于药物发现非常重要。大多数预测器使用无向分子图和成对边。这种选择忽略了官能团和环系统的不对称相互作用、不可逆动力学以及基序水平效应。我们提出 ChemHyperMag 用于缺失标签下的多任务 ADMET 预测。 ChemHyperMag 从环、BRICS 片段、Bemis-Murcko 支架和键构建官能团超图。它还定义了由电负性和 Gasteiger 部分电荷引导的电势驱动的不可逆流。产生的循环由厄米磁拉普拉斯算子编码，并用磁切比雪夫编码器处理。我们扰乱磁相以形成随机视图并以 InfoNCE 目标进行训练。对多个 ADMET 基准的实验表明，与最近的方法相比，标记样本更少且无构象异构体有所改进。 ChemHyperMag 具有可扩展性，并通过其磁相提供可解释的方向信号。",
-      "html_url": "https://arxiv.org/html/2607.18332v1",
+      "html_url": "https://arxiv.org/html/2607.18332v2",
       "figures": [
-        "https://arxiv.org/html/2607.18332v1/sections/img/Fig1.png",
-        "https://arxiv.org/html/2607.18332v1/sections/img/Fig2.png"
+        "https://arxiv.org/html/2607.18332v2/sections/img/Fig1.png",
+        "https://arxiv.org/html/2607.18332v2/sections/img/Fig2.png"
+      ],
+      "affiliations": [
+        "Department of Health Technology and Informatics, Hong Kong Polytechnic University, Hong Kong SAR, China",
+        "University of Liverpool, Liverpool, United Kingdom",
+        "Shanghai Jiao Tong University, Shanghai, China",
+        "Fudan University, Shanghai, China"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -8374,7 +9169,10 @@
       "project_links": [],
       "title_zh": "物理引导屏蔽多任务网络，用于根据随机碎片充电曲线进行边缘友好的电池健康诊断",
       "abstract_zh": "可靠的锂离子电池管理系统的部署对于加速电气化至关重要，但健康状态（SOH）和剩余使用寿命（RUL）的联合预测仍然受到任务异方差性的严重阻碍。传统的多任务学习框架无法平衡 SOH 估计的有界、低方差噪声与长期 RUL 预测的无界、非线性扩展的不确定性。在这里，我们提出了旋转 SOH 注入先验电池变压器 (RoSIP-Batt)，这是一个解决这些优化冲突的统一联合估计框架。通过将联合预测制定为贝叶斯多任务目标，RoSIP-Batt 引入了同方差不确定性加权机制，以根据学习到的残余噪声水平动态缩放特定于任务的梯度。该架构利用解耦的双分类令牌和每维门控融合机制，由梯度分离算子保护，以防止高方差 RUL 更新破坏稳定的 SOH 表示空间。为了在不依赖绝对循环步骤的情况下捕获电化学降解模式，将旋转位置嵌入 (RoPE) 合并到共享 Transformer 主干中，以对平移不变的相对时间曲线进行建模。至关重要的是，中间 SOH 估计被直接注入 RUL 回归头作为物理退化先验。对 NASA、MIT-Stanford 和 HUST 数据集的评估表明，RoSIP-Batt 显着优于最先进的基线，将 NASA 的 SOH 估计误差降低至 1.994% MAE，并将斯坦福大学的 RUL 预测误差限制为 62.85 个周期。这些发现使 RoSIP-Batt 成为一种高度通用、计算高效的解决方案，适合实时嵌入式 BMS 部署。",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.AI"
+      ]
     },
     {
       "arxiv_id": "2607.18329",
@@ -8400,7 +9198,10 @@
       "project_links": [],
       "title_zh": "通过旋转 SOH 注入现有电池变压器进行锂离子电池联合 SOH 和 RUL 预测的动态损耗平衡",
       "abstract_zh": "可靠的锂离子电池管理系统的部署对于加速电气化至关重要，但健康状态（SOH）和剩余使用寿命（RUL）的联合预测仍然受到任务异方差性的严重阻碍。传统的多任务学习框架无法平衡 SOH 估计的有界、低方差噪声与长期 RUL 预测的无界、非线性扩展的不确定性。在这里，我们提出了旋转 SOH 注入先验电池变压器 (RoSIP-Batt)，这是一个解决这些优化冲突的统一联合估计框架。通过将联合预测制定为贝叶斯多任务目标，RoSIP-Batt 引入了同方差不确定性加权机制，以根据学习到的残余噪声水平动态缩放特定于任务的梯度。该架构利用解耦的双分类令牌和每维门控融合机制，由梯度分离算子保护，以防止高方差 RUL 更新破坏稳定的 SOH 表示空间。为了在不依赖绝对循环步骤的情况下捕获电化学降解模式，将旋转位置嵌入 (RoPE) 合并到共享 Transformer 主干中，以对平移不变的相对时间曲线进行建模。至关重要的是，中间 SOH 估计被直接注入 RUL 回归头作为物理退化先验。对 NASA、MIT-Stanford 和 HUST 数据集的评估表明，RoSIP-Batt 显着优于最先进的基线，将 NASA 的 SOH 估计误差降低至 1.994% MAE，并将斯坦福大学的 RUL 预测误差限制为 62.85 个周期。这些发现使 RoSIP-Batt 成为一种高度通用、计算高效的解决方案，适合实时嵌入式 BMS 部署。",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.AI"
+      ]
     },
     {
       "arxiv_id": "2607.18325",
@@ -8434,6 +9235,11 @@
         "https://arxiv.org/html/2607.18325v1/Graphics/img_mode_prec_vs_recall.png",
         "https://arxiv.org/html/2607.18325v1/Graphics/dense_cap_mode_prec_vs_recall.png",
         "https://arxiv.org/html/2607.18325v1/Graphics/baseline-compare-danger-bar.png"
+      ],
+      "announced_in": [
+        "cs.CV",
+        "cs.RO",
+        "cs.AI"
       ]
     },
     {
@@ -8458,7 +9264,10 @@
       "title_zh": "反应式计算图的成本核算：穷举扫描、顺序突变和后向局部性差距",
       "abstract_zh": "对神经网络计算图进行详尽的逐点干预——激活修补扫描、电路发现搜索、系统消融研究——会在每个候选位点变异图，其成本主要由每次变异后的重新计算决定。在反应式图引擎上，其失效可证明恰好触及突变节点的下游锥体，我们给出了此类工作负载的完整成本核算。首先，在独立的完全重新计算上进行穷举扫描的总加速不是一个通用常数：如果每层权重随卡拉马塔索引 q 处的深度有规律地变化，当权重集中在输出附近时，该比率收敛到 (q+2)/(q+1)，而当权重集中在输入附近时，该比率收敛到 q+2，仅在深度均匀的情况下恢复 2；挂钟推论预测上限约为 1.79，低于 2，直到解释器开销被编译掉。其次，我们证明了一系列持久突变的确切成本，在插入之间永远不会撤销：交错成本超过了孤立总和，通过对可比位点对进行精确的超算求和，在插入顺序上具有封闭形式的极值，而批处理应用程序是与顺序无关的和子可加的，其成本恰好是位点锥体加上新鲜节点的并集。第三，我们证明了向后传递的前向局部性的精确镜像，表明它在没有长跳跃连接的架构上的反向传播下将聚合加速比压缩到 1。每个身份都在 NeuroDSL 上进行验证，NeuroDSL 是 Julia 中的反应式图形引擎：测量的扫描比在四种成本配置文件下收敛到预测限制；训练模式比率以预测速率降至 1；所有 18 个每移植物的顺序成本和批量总计与三个插入订单的零容差封闭表格相匹配。",
       "html_url": "https://arxiv.org/html/2607.18323v1",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.AI"
+      ]
     },
     {
       "arxiv_id": "2607.18316",
@@ -8486,7 +9295,10 @@
       "title_zh": "多步骤工具增强代理中的结合漂移",
       "abstract_zh": "工具增强的语言模型代理通过外部系统执行多步骤工作流，解析一个实体一次，然后在后续步骤中对其进行操作。先前的研究表明，在单步操作中，代理会选择正确的工具，但 24-26% 的情况下会将其绑定到错误的实体。我们研究实体绑定随着时间的推移会发生什么：它们是否保持正确，默默地漂移到不同的实体，或者，如果从一开始就是错误的，传播和复合？我们将绑定漂移（在步骤 1 中正确，稍后错误）形式化为与错误传播（在步骤 1 中错误，结转）不同，并在不相交的工作流程集上对它们进行评分，以便两者不能混为一谈。在受控的多步骤测试台（200 个工作流程、580 个实体绑定评分步骤、4 个企业域、8 个从小到前沿的模型后端）中，我们发现：(1) 在受控错误注入下，实体锁（直观的“保留第一个绑定”修复）将错误操作从 907 放大到 2,746（3.0 倍；引导 95% CI [2.8, 3.3]），因为它忠实地将播种的错误实体带入后续的每一步； (2) 在受影响最严重的模型 (Claude Opus 4.5) 上放大达到 8.5 倍； (3) 实用的基于 LLM 的重新验证器（重新读取原始指令的单个廉价第二模型调用）将错误操作减少了 79% (0.21x; CI [0.18, 0.25])，将差距缩小到预言机上限 (0.20x) 的 1 个百分点以内； (4) 在自然（非注入）环境中，基线代理在 18% 的合格工作流程上发生漂移，每步错误率在各个步骤中不断上升。持久性和重新验证不可互换：消除漂移的防御可能会恶化传播，而实用的重新验证器几乎与预言机恢复相匹配。",
       "html_url": "https://arxiv.org/html/2607.18316v1",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.AI"
+      ]
     },
     {
       "arxiv_id": "2607.18311",
@@ -8518,6 +9330,9 @@
         "https://arxiv.org/html/2607.18311v1/fig_datasetSizeSplit.png",
         "https://arxiv.org/html/2607.18311v1/fig_treePairDistribution.png",
         "https://arxiv.org/html/2607.18311v1/x2.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -8547,6 +9362,9 @@
         "https://arxiv.org/html/2607.18310v1/x2.png",
         "https://arxiv.org/html/2607.18310v1/x3.png",
         "https://arxiv.org/html/2607.18310v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -8577,6 +9395,9 @@
       "figures": [
         "https://arxiv.org/html/2607.18308v1/x1.png",
         "https://arxiv.org/html/2607.18308v1/x2.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -8608,6 +9429,9 @@
         "https://arxiv.org/html/2607.18306v1/x2.png",
         "https://arxiv.org/html/2607.18306v1/x3.png",
         "https://arxiv.org/html/2607.18306v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -8636,6 +9460,9 @@
       "figures": [
         "https://arxiv.org/html/2607.18305v1/fig_cdt_method_large.png",
         "https://arxiv.org/html/2607.18305v1/fig_a3_scaling.jpeg"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -8663,7 +9490,10 @@
       "project_links": [],
       "title_zh": "深度强化学习掌握Baghchal的非对称策略",
       "abstract_zh": "Baghchal 是一款起源于尼泊尔的两人不对称棋盘游戏，四只老虎要捕捉山羊，二十只山羊则要让老虎保持不动。尽管Baghchal具有复杂的战略性结构、完善的信息结构和文化意义，但它在深度强化学习（RL）文献中尚未得到充分的覆盖。本文对四种深度 RL 解决方案 Deep Q-Network (DQN)、REINFORCE、Proximal Policy Optimization (PPO) 和 MuZero 进行了系统探索，这些解决方案在 Baghchal 的非对称游戏玩法的一侧进行训练，然后在另一侧进行评估。这些算法根据获胜率、平局率、平均捕获数、训练收敛性和计算成本进行评级。实验发现，MuZero 在这两项任务中都产生了最佳性能，以 86% 的胜率战胜了这些老虎，以 62% 的胜率战胜了这些山羊，而能够做到这一点要归功于通过蒙特卡罗树搜索的基于模型的规划机。 PPO 是最现实的算法，与 MuZero 相比，其计算成本显着降低，并且在非对称任务中具有竞争力。紧急战略行为分析表明，基于模型的策略比长期规划是最优的，而基于价值的策略（例如 DQN）由于更实质性的奖励信号而更偏向老虎角色。",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.AI"
+      ]
     },
     {
       "arxiv_id": "2607.18292",
@@ -8693,6 +9523,9 @@
         "https://arxiv.org/html/2607.18292v1/x2.png",
         "https://arxiv.org/html/2607.18292v1/x3.png",
         "https://arxiv.org/html/2607.18292v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -8725,6 +9558,9 @@
         "https://arxiv.org/html/2607.18291v1/x2.png",
         "https://arxiv.org/html/2607.18291v1/x3.png",
         "https://arxiv.org/html/2607.18291v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -8754,6 +9590,9 @@
         "https://arxiv.org/html/2607.18290v1/x2.png",
         "https://arxiv.org/html/2607.18290v1/x3.png",
         "https://arxiv.org/html/2607.18290v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -8785,6 +9624,9 @@
         "https://arxiv.org/html/2607.18289v1/x2.png",
         "https://arxiv.org/html/2607.18289v1/x3.png",
         "https://arxiv.org/html/2607.18289v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -8813,7 +9655,10 @@
       "title_zh": "BearingNAS：使用笔记本电脑获得轴承传感器内智能故障诊断系统",
       "abstract_zh": "本文介绍了 BearingNAS，这是一种硬件感知神经架构搜索 (HW-NAS) 框架，旨在通过传感器内处理将智能直接转移到传感器芯片上。 BearingNAS 将搜索视为针对极端微预算（4 至 8 kiB RAM 和 16 至 32 kiB 闪存）的约束优化问题。为了消除对昂贵的离散 GPU 的依赖，我们提出了一种轻量级、无导数的搜索策略，与单个数据流搜索空间相结合，利用衰减内核增长公式来防止参数爆炸。我们根据凯斯西储大学 (CWRU) 轴承基准评估我们的框架，优化三个意法半导体目标的架构：两个商用微控制器和 LSM6DSO16IS 智能传感器处理单元 (ISPU)。搜索完全在笔记本电脑 CPU 上运行，不到一个小时即可收敛。由此产生的最佳传感器内架构在 ISPU 上实现了 99.50% 的极具竞争力的诊断精度。这些结果证明了在传感器包内转移机器学习工作负载的可行性，从而实现低成本、大规模生产的轴承故障诊断。",
       "html_url": "https://arxiv.org/html/2607.18287v1",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.AI"
+      ]
     },
     {
       "arxiv_id": "2607.18286",
@@ -8845,6 +9690,9 @@
         "https://arxiv.org/html/2607.18286v1/x1.png",
         "https://arxiv.org/html/2607.18286v1/x2.png",
         "https://arxiv.org/html/2607.18286v1/x3.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -8878,6 +9726,9 @@
         "https://arxiv.org/html/2607.18285v1/ESpecFormer_HW_BIG.png",
         "https://arxiv.org/html/2607.18285v1/acc_vs_snr.png",
         "https://arxiv.org/html/2607.18285v1/acc_vs_kmacs_and_confmat.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -8910,6 +9761,9 @@
         "https://arxiv.org/html/2607.18284v1/sections/images/ranks-comparison/query_ranks_comparison.png",
         "https://arxiv.org/html/2607.18284v1/sections/images/ranks-comparison/key_ranks_comparison.png",
         "https://arxiv.org/html/2607.18284v1/sections/images/ranks-comparison/value_ranks_comparison.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -8947,6 +9801,10 @@
         "https://arxiv.org/html/2607.18283v1/cc1.jpg",
         "https://arxiv.org/html/2607.18283v1/framework.png",
         "https://arxiv.org/html/2607.18283v1/x1.png"
+      ],
+      "announced_in": [
+        "cs.CV",
+        "cs.AI"
       ]
     },
     {
@@ -8979,6 +9837,9 @@
         "https://arxiv.org/html/2607.18280v1/x1.png",
         "https://arxiv.org/html/2607.18280v1/x2.png",
         "https://arxiv.org/html/2607.18280v1/x3.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -9007,6 +9868,9 @@
       "html_url": "https://arxiv.org/html/2607.18279v1",
       "figures": [
         "https://arxiv.org/html/2607.18279v1/diagram.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -9038,6 +9902,9 @@
         "https://arxiv.org/html/2607.18278v1/figures/openml_adult/fig1_global_metrics.png",
         "https://arxiv.org/html/2607.18278v1/figures/openml_bank_marketing/fig1_global_metrics.png",
         "https://arxiv.org/html/2607.18278v1/figures/openml_miniboone/fig1_global_metrics.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -9067,6 +9934,9 @@
         "https://arxiv.org/html/2607.18275v1/fig2_memory.png",
         "https://arxiv.org/html/2607.18275v1/fig3_snr.png",
         "https://arxiv.org/html/2607.18275v1/fig4_internals.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -9099,6 +9969,9 @@
         "https://arxiv.org/html/2607.18274v1/figures/square.png",
         "https://arxiv.org/html/2607.18274v1/figures/tree.png",
         "https://arxiv.org/html/2607.18274v1/figures/tree2.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -9131,6 +10004,9 @@
         "https://arxiv.org/html/2607.18272v1/x2.png",
         "https://arxiv.org/html/2607.18272v1/x3.png",
         "https://arxiv.org/html/2607.18272v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -9161,6 +10037,9 @@
         "https://arxiv.org/html/2607.18271v1/figures/nasdaq_ts_example.png",
         "https://arxiv.org/html/2607.18271v1/figures/facotr_extraction_pipeline.png",
         "https://arxiv.org/html/2607.18271v1/figures/atrr_impt.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -9192,6 +10071,9 @@
         "https://arxiv.org/html/2607.18270v1/Figures/Figure_1_Overview.png",
         "https://arxiv.org/html/2607.18270v1/Figures/Figure2_KG.png",
         "https://arxiv.org/html/2607.18270v1/Figures/Figure3_ProfileRetriever.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -9219,6 +10101,9 @@
       "figures": [
         "https://arxiv.org/html/2607.18269v1/x1.png",
         "https://arxiv.org/html/2607.18269v1/x2.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -9246,6 +10131,9 @@
       "html_url": "https://arxiv.org/html/2607.18268v1",
       "figures": [
         "https://arxiv.org/html/2607.18268v1/x1.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -9278,6 +10166,9 @@
         "https://arxiv.org/html/2607.18267v1/x1.png",
         "https://arxiv.org/html/2607.18267v1/images/revise_reliable.png",
         "https://arxiv.org/html/2607.18267v1/x2.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -9302,7 +10193,10 @@
       "title_zh": "用于小语言模型算术微调的结构化综合推理数据",
       "abstract_zh": "小语言模型对于本地部署很有吸引力，但它们常常难以进行多步算术推理。我们研究结构化综合推理数据是否可以在消费者硬件限制下改善这种行为。从 GSM8K 开始，我们使用 GPT-5-mini 生成了包含 21,250 个小学算术单词问题变体示例的语料库，结合了自然语言解决方案轨迹、浅苏格拉底式提示、结构变化和不相关的干扰上下文。然后，我们在消费类硬件（Apple M4、16 GB RAM）上使用 LoRA 对 Qwen3-0.6B 和 Qwen3-1.7B 进行了微调。 Qwen3-0.6B 在 GSM8K 上的精确匹配精度从 36.5% 提高到 49.1%，Qwen3-1.7B 从 53.5% 提高到 66.5%。对于 Qwen3-1.7B，向相关算术基准的迁移更强，在 MultiArith 上达到 98.9%，在 SVAMP 上达到 73.0%，而基础模型为 54.4% 和 45.3%。定性分析表明，经过微调的模型会产生更短的推理轨迹，减少算术和干扰项使用错误，并更一致地从自一致性抽样中受益。这些结果表明，低成本的合成数据设计可以显着改善小语言模型的算术适应性。由于干预将苏格拉底式线索与其他数据设计选择相结合，我们将收益解释为结构化综合推理数据的证据，而不是单独对苏格拉底式指导的因果检验。",
       "html_url": "https://arxiv.org/html/2607.18266v1",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.AI"
+      ]
     },
     {
       "arxiv_id": "2607.18265",
@@ -9332,6 +10226,9 @@
       "figures": [
         "https://arxiv.org/html/2607.18265v1/images/architecture.png",
         "https://arxiv.org/html/2607.18265v1/images/feas_vs_ratio_nano_nano.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -9366,6 +10263,9 @@
         "https://arxiv.org/html/2607.18264v1/x2.png",
         "https://arxiv.org/html/2607.18264v1/x3.png",
         "https://arxiv.org/html/2607.18264v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -9395,6 +10295,9 @@
       "figures": [
         "https://arxiv.org/html/2607.18263v1/0_figures/comparison.png",
         "https://arxiv.org/html/2607.18263v1/0_figures/harm-types.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -9427,6 +10330,9 @@
         "https://arxiv.org/html/2607.18262v1/x2.png",
         "https://arxiv.org/html/2607.18262v1/x3.png",
         "https://arxiv.org/html/2607.18262v1/Fig/latency_overhead.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -9450,7 +10356,10 @@
       "title_zh": "当 JSON 不够时：模式约束的 LLM 订购代理的语义可靠性",
       "abstract_zh": "LLM 代理越来越多地用作事务编译器：用户用自然语言陈述意图，模型发出 API 可以执行的结构化对象。 JSON 模式和提供者级结构化输出模式非常有用，因为它们消除了大量解析失败，但它们本身并不能决定对象是否是安全、可靠的事务。我们引入了 OrderBench，这是餐厅订购代理的确定性基准，它将语法有效性、模式有效性、状态决策、精确项目语义、约束保留和不安全接受分开。在仅提示和 JSON 模式模式下对四个开放模型进行 2,400 次 Nebius 令牌工厂调用中，我们发现模式有效的输出仍然具有较大的语义错误率。在最强的模型中，两种模式都实现了 100% 的模式有效性，但语义成功率仍接近 80%；在较弱的模型中，模式有效的不安全接受以两位数出现。结果是一个具体的工程警告：结构化输出是必要的接口层，不能替代域验证和故障关闭执行。",
       "html_url": "https://arxiv.org/html/2607.18261v1",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.AI"
+      ]
     },
     {
       "arxiv_id": "2607.18260",
@@ -9472,7 +10381,10 @@
       "project_links": [],
       "title_zh": "FindStatBench：评估组合代码合成的大型语言模型",
       "abstract_zh": "我们介绍 FindStatBench，这是一个用于评估组合代码合成的大型语言模型的执行基准。它由 FindStat 构建而成，包含跨 24 个集合的 2,329 个任务和 552 万个隐藏实例，涵盖统计合成（将对象映射到整数）和映射合成（将对象映射到对象）。每个任务给出一个数学描述和最多五个公共输入输出示例；模型必须发出一个 Python 求解函数，无需检索、工具使用、执行反馈、投票或重新排名。通过对保留的组合对象进行精确的沙盒执行来对提交的内容进行评分。我们评估了 11 个系统：四个闭源生产模型和七个通过一个推理提供商提供的开放权重模型。 FindStatBench 揭示了三种主要模式。首先，最强大的开源和闭源系统在 1 pp 实例精度内收敛，并且所有系统的预言机和来自一个中间层模型的五路采样只能产生有限的任务精度增益。其次，例子可能会造成伤害：一些经典的双射在零个例子的情况下可以完美解决，但在五个例子的提示下却失败了。第三，一些失败反映了输出预算机制，因为推理可能会在代码发出之前耗尽可见的响应。总体而言，统计合成比地图合成容易得多，一些集合仍然接近于零，长提示会导致精确度急剧下降，而精确的符号规则归纳仍然很脆弱。",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.AI"
+      ]
     },
     {
       "arxiv_id": "2607.18259",
@@ -9502,6 +10414,9 @@
         "https://arxiv.org/html/2607.18259v1/experimentImgs/cos_sim_analysis_2.png",
         "https://arxiv.org/html/2607.18259v1/experimentImgs/similarity.png",
         "https://arxiv.org/html/2607.18259v1/InnerVisualization.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -9538,6 +10453,9 @@
       "affiliations": [
         "State Key Laboratory for Novel Software Technology, Nanjing University",
         "School of Computer Science and Artificial Intelligence, Zhengzhou University"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -9568,6 +10486,9 @@
         "https://arxiv.org/html/2607.18257v1/OpenClaw_Images/OpenClaw_Chat_Diagram.png",
         "https://arxiv.org/html/2607.18257v1/x1.png",
         "https://arxiv.org/html/2607.18257v1/OpenClaw_Images/action_boundary_mockup.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -9596,7 +10517,10 @@
       "project_links": [],
       "title_zh": "PEARL：自然语言的循环求解器交互式优化建模",
       "abstract_zh": "优化建模是将现实世界的决策问题（通常用自然语言描述）转换为正式的数学公式和可执行求解器代码的过程。虽然大型语言模型的最新进展在自动化这一过程方面显示出了希望，但大多数现有方法仍然是一次性的：模型生成一次公式，而不执行它，以求解器反馈为条件，或迭代地修改错误。这与现实世界的优化建模形成鲜明对比，现实世界的优化建模本质上是交互式的，并通过重复的解决-调试-修改循环进行。我们介绍 PEARL，这是一个用于交互式优化建模的系统，它在循环内使用 Python 执行和数学编程求解器。 PEARL 不依赖于固定的修复工作流程，而是学习何时测试部分模型、如何根据求解器诊断进行修改以及何时停止。它在多轮工具集成设置中运行，其中中间执行结果、可行性信号和解决方案检查用于在最终确定之前改进公式和求解器代码。在各种优化基准中，PEARL 比强大的一次性和工具增强基准大幅提高了经过验证的解决率；值得注意的是，我们的 PEARL-Qwen3-\\textbf{4B} 模型在优化建模任务的宏观和微观平均精度方面都优于更大的 DeepSeek-V3.2-\\textbf{685B}。",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.AI"
+      ]
     },
     {
       "arxiv_id": "2607.18255",
@@ -9626,6 +10550,9 @@
         "https://arxiv.org/html/2607.18255v1/x2.png",
         "https://arxiv.org/html/2607.18255v1/scg_ai_figures/experiment2_radar.png",
         "https://arxiv.org/html/2607.18255v1/thesis_pengyijiang_v1_0__Copy_/linearworkflow.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -9658,6 +10585,9 @@
         "https://arxiv.org/html/2607.18254v1/x2.png",
         "https://arxiv.org/html/2607.18254v1/x3.png",
         "https://arxiv.org/html/2607.18254v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -9689,6 +10619,9 @@
         "https://arxiv.org/html/2607.18253v1/x2.png",
         "https://arxiv.org/html/2607.18253v1/x3.png",
         "https://arxiv.org/html/2607.18253v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -9723,6 +10656,9 @@
         "https://arxiv.org/html/2607.18252v1/figures/appendix/token_analysis_milp-indset.png",
         "https://arxiv.org/html/2607.18252v1/figures/appendix/token_analysis_milp-cauctions.png",
         "https://arxiv.org/html/2607.18252v1/figures/appendix/token_analysis_milp-setcover.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -9755,6 +10691,9 @@
         "https://arxiv.org/html/2607.18251v1/pic02.jpg",
         "https://arxiv.org/html/2607.18251v1/pic03.jpg",
         "https://arxiv.org/html/2607.18251v1/pic04.jpg"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -9783,7 +10722,10 @@
       "project_links": [],
       "title_zh": "MechAInistic：法学硕士指导的多智能体系统，用于对基于基因组规模约束的代谢模型进行推理",
       "abstract_zh": "基于约束的代谢模型是研究细胞状态和疾病的机制基础的有效方法，但其有效使用需要大量的计算专业知识和多步骤分析的仔细协调。我们开发了 MechAInistic 来降低这一障碍，使研究人员能够用自然语言提出复杂的生物学问题。 MechAInistic 利用大型语言模型，是一个围绕架构师-审阅者模式组织的多代理系统，可将自然语言问题转换为可执行的、基于模型的工作流程，并生成结构化报告。该系统支持各种任务，包括途径比较、扰动分析、药物靶标探索以及配对代谢模型状态的基于文献的解释。我们使用两个配对的免疫细胞代谢模型用例来开发和评估 MechAInistic，以生成治疗假设。对于来自类风湿性关节炎 (RA) 的幼稚 B 细胞与健康对照，MechAInistic 确定了线粒体代谢重连，并指定 Devimistat/CPI-613 作为以 OGDH 为中心的研究假设。在针对多发性硬化症 (MS) 和健康对照的配对 CD4+ Th17 细胞研究中，相同的工作流程将 NADP 依赖性异柠檬酸脱氢酶确定为最佳单一靶点，并提议将 ivosidenib 作为 FDA 批准的再利用候选药物。总之，这些结果表明 MechAInistic 将自然语言生物学问题转换为可执行的、基于模型的工作流程，以生成可追踪的治疗假设。",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.AI"
+      ]
     },
     {
       "arxiv_id": "2607.18246",
@@ -9809,7 +10751,10 @@
       "title_zh": "Phionyx：具有结构化状态管理和预响应治理的确定性 AI 运行时架构",
       "abstract_zh": "我们提出了 Phionyx，这是一种确定性 AI 运行时架构，源自更广泛的 Echoism 交互框架，它引入了 AI 工程的治理优先方法：将大型语言模型 (LLM) 输出视为噪声传感器测量而不是直接决策。与概率代理不同，Phionyx 通过由确定性状态演化方程控制的结构化状态向量强制执行确定性状态演化，从而在需要可审计性和治理的应用程序中实现可重现的行为。该架构集成了三层：(1) 通过规范的 46 块管道处理噪声传感器测量的确定性评估内核，(2) 提供预响应控制和架构隐私执行的统一安全层，以及 (3) 实现影响加权缓存驱逐的基于语义时间的内存系统。单实例部署的实验验证表明，与事后过滤（不安全输入比率为 30%，模拟成本模型）相比，计算开销减少了约 31%，与 LRU 相比，高价值数据保留提高了 24%（与 FIFO 相比，72%，相同的缓存容量，经过基准验证），在 100 次重复运行中验证了确定性执行，控制信号方差为零（经过哈希验证），单实例部署中的意外重启为零测试（有关方法和范围，请参阅附录 C）。本文介绍了该架构、其分析结构和范围实验证据；分布式或多租户部署的推广仍然是未来的工作。",
       "html_url": "https://arxiv.org/html/2607.18246v1",
-      "figures": []
+      "figures": [],
+      "announced_in": [
+        "cs.AI"
+      ]
     },
     {
       "arxiv_id": "2607.18245",
@@ -9844,6 +10789,9 @@
       "affiliations": [
         "Artificial Intelligence Institute, University of South Carolina",
         "Indian AI Research Organization"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -9875,6 +10823,9 @@
         "https://arxiv.org/html/2607.18243v1/x2.png",
         "https://arxiv.org/html/2607.18243v1/x3.png",
         "https://arxiv.org/html/2607.18243v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -9906,6 +10857,9 @@
         "https://arxiv.org/html/2607.18242v1/x2.png",
         "https://arxiv.org/html/2607.18242v1/x3.png",
         "https://arxiv.org/html/2607.18242v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -9932,6 +10886,9 @@
       "figures": [
         "https://arxiv.org/html/2607.18241v1/fig_architecture.png",
         "https://arxiv.org/html/2607.18241v1/fig_batching.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -9962,6 +10919,9 @@
         "https://arxiv.org/html/2607.18240v1/x2.png",
         "https://arxiv.org/html/2607.18240v1/x3.png",
         "https://arxiv.org/html/2607.18240v1/x4.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     },
     {
@@ -9992,6 +10952,9 @@
         "https://arxiv.org/html/2607.18239v1/pseek_to_loc.png",
         "https://arxiv.org/html/2607.18239v1/factorial_heatmap.png",
         "https://arxiv.org/html/2607.18239v1/turns_vs_scores.png"
+      ],
+      "announced_in": [
+        "cs.AI"
       ]
     }
   ]
