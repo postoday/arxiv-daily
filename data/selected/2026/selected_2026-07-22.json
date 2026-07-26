@@ -1,0 +1,359 @@
+{
+  "date": "2026-07-22",
+  "total_candidates": 92,
+  "categories": [
+    {
+      "id": "worldmodel",
+      "name": "世界模型&视频/场景生成模型",
+      "papers": [
+        {
+          "id": "2607.19343",
+          "rank": 3,
+          "score": 83,
+          "reason_zh": "用像素空间掩码轨迹统一视频世界模型的动作控制，单模型跨多具身实现前向预测与逆运动学",
+          "tags": [
+            "世界模型",
+            "生成模型",
+            "VLA",
+            "机器人",
+            "具身智能"
+          ],
+          "title": "Masked Visual Actions for Unified World Modeling",
+          "authors": [
+            "Hadi Alzayer",
+            "Wenlong Huang",
+            "Haonan Chen",
+            "Christopher Luey",
+            "Lvmin Zhang"
+          ],
+          "abstract": "Video models absorb rich priors over how the visual world moves, interacts, and responds to contact, making them promising substrates for robotic world modeling. The central challenge is how to communicate action to such models in a form aligned with the visual space in which they learned these interaction priors, yet still grounded in physical manipulation. We introduce Masked Visual Actions, a pixel-space control interface that expresses action as a partially revealed trajectory of an arbitrary entity in a video. Revealing robot motion makes the model act as a forward dynamics model that predicts the scene's response to low-level robot actions, while revealing desired object motion makes the same model recover robot behavior consistent with that outcome. Finetuned with only 15 hours of masked examples from real videos and simulation, a single checkpoint achieves strong visual fidelity and controllability across diverse scenes and multiple embodiments. In downstream manipulation settings, the model produces imagined rollouts whose outcomes correlate with real-world execution for policy evaluation, improves decision making by ranking candidate futures in model-based planning, and supports inverse modeling by synthesizing robot motion from desired object motion.",
+          "abs_url": "https://arxiv.org/abs/2607.19343",
+          "pdf_url": "https://arxiv.org/pdf/2607.19343v1",
+          "html_url": "https://arxiv.org/html/2607.19343v1",
+          "figures": [
+            "https://arxiv.org/html/2607.19343v1/x1.png",
+            "https://arxiv.org/html/2607.19343v1/x2.png",
+            "https://arxiv.org/html/2607.19343v1/x3.png",
+            "https://arxiv.org/html/2607.19343v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": "https://masked-visual-actions.github.io",
+          "code_links": [],
+          "project_links": [
+            "https://masked-visual-actions.github.io"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": null,
+          "comments": "Project webpage: https://masked-visual-actions.github.io",
+          "submitted": "2026-07-21T17:59:11Z",
+          "updated": "2026-07-21T17:59:11Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV",
+            "cs.RO"
+          ],
+          "title_zh": "用于统一世界建模的蒙面视觉动作",
+          "abstract_zh": "视频模型吸收了有关视觉世界如何移动、交互和接触响应的丰富先验知识，使它们成为机器人世界建模的有前景的基础。核心挑战是如何以与视觉空间一致的形式向这些模型传达动作，在视觉空间中模型学习了这些交互先验，但仍然以物理操作为基础。我们引入了 Masked Visual Actions，这是一种像素空间控制界面，它将动作表示为视频中任意实体的部分显示轨迹。揭示机器人运动使模型充当前向动力学模型，预测场景对低级机器人动作的响应，同时揭示所需的物体运动使同一模型恢复与该结果一致的机器人行为。仅使用来自真实视频和模拟的 15 小时蒙版示例进行微调，单个检查点即可在不同场景和多个实施例中实现强大的视觉保真度和可控性。在下游操纵设置中，该模型产生想象的推出，其结果与策略评估的现实执行相关，通过在基于模型的规划中对候选未来进行排名来改进决策，并通过从所需的物体运动合成机器人运动来支持逆向建模。"
+        },
+        {
+          "id": "2607.18840",
+          "rank": 7,
+          "score": 78,
+          "reason_zh": "推理增强记忆的世界动作模型WAM，500万事件操控数据集统一自主规划与细粒度可控执行",
+          "tags": [
+            "世界模型",
+            "VLA",
+            "机器人",
+            "具身智能",
+            "数据集"
+          ],
+          "title": "WorldScape Policy 2.0: Empowering Steerable World Action Modeling with Reasoning-Augmented Memory",
+          "authors": [
+            "Haisheng Su",
+            "Zongdai Liu",
+            "Xin Jin",
+            "Haoxuan Dou",
+            "Chengming Hu"
+          ],
+          "abstract": "World Action Models (WAMs) offer a promising paradigm for robotic manipulation by jointly modeling visual state transitions and robot actions. However, existing WAMs are constrained by limited temporal context, coarse episode-level language supervision, and predominantly text-only conditioning, which hinder task-progress tracking and fine-grained language-video-action grounding while limiting visual-context reasoning and cross-embodiment transfer. In this paper, we introduce WorldScape Policy 2.0, a controllable WAM with reasoning-augmented long short-term memory. Its causal short-term visual memory supplies recent observations as DiT prefill to preserve local interaction dynamics, while its long short-term event memory organizes historical VLM outputs into global-history, local-active, and event-boundary representations for progress-aware retrieval. The retrieved history augments perception and autoregressively generated planning tokens, yielding an implicit subgoal condition for autonomous planning; semantic forcing further transfers event-level instruction semantics into this latent planning pathway. To establish fine-grained multimodal controllability, we construct ManipEvent-5M, an event-grounded embodied pretraining dataset containing nearly 5 million event segments with aligned action trajectories, episode-level task instructions, segment-level subtask captions, goal images, and video demonstrations. These designs provide a unified interface for autonomous planning from high-level instructions and controllable execution from fine-grained text, goal-image, or video-context prompts. Experiments in both simulation and real-world platforms demonstrate superior capabilities in long-horizon autonomous planning, fine-grained instruction following and in-context adaptation.",
+          "abs_url": "https://arxiv.org/abs/2607.18840",
+          "pdf_url": "https://arxiv.org/pdf/2607.18840v1",
+          "html_url": "https://arxiv.org/html/2607.18840v1",
+          "figures": [
+            "https://arxiv.org/html/2607.18840v1/x2.png",
+            "https://arxiv.org/html/2607.18840v1/x3.png",
+            "https://arxiv.org/html/2607.18840v1/x4.png",
+            "https://arxiv.org/html/2607.18840v1/x5.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": null,
+          "submitted": "2026-07-21T08:25:37Z",
+          "updated": "2026-07-21T08:25:37Z",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.RO"
+          ],
+          "title_zh": "WorldScape 政策 2.0：通过推理增强记忆增强可操纵的世界行动建模",
+          "abstract_zh": "世界动作模型（WAM）通过联合建模视觉状态转换和机器人动作，为机器人操作提供了一个有前途的范例。然而，现有的 WAM 受到有限的时间上下文、粗略的情节级语言监督和主要的纯文本调节的限制，这阻碍了任务进度跟踪和细粒度的语言视频动作基础，同时限制了视觉上下文推理和跨实体传输。在本文中，我们介绍了 WorldScape Policy 2.0，这是一种具有推理增强长短期记忆的可控 WAM。它的因果短期视觉记忆提供最近的观察结果作为 DiT 预填充，以保留局部交互动态，而其长期短期事件记忆将历史 VLM 输出组织成全局历史、局部活动和事件边界表示，以进行进度感知检索。检索到的历史增强了感知和自回归生成的规划标记，从而产生自主规划的隐式子目标条件；语义强制进一步将事件级指令语义转移到这个潜在的规划路径中。为了建立细粒度的多模态可控性，我们构建了 ManipEvent-5M，这是一个基于事件的具体预训练数据集，包含近 500 万个事件片段，这些事件片段具有对齐的动作轨迹、情节级任务指令、片段级子任务标题、目标图像和视频演示。这些设计提供了一个统一的界面，用于根据高级指令进行自主规划，并根据细粒度文本、目标图像或视频上下文提示进行可控执行。模拟和现实世界平台上的实验证明了其在长期自主规划、细粒度指令跟踪和上下文适应方面的卓越能力。"
+        },
+        {
+          "id": "2607.18539",
+          "rank": 9,
+          "score": 73,
+          "reason_zh": "视频扩散模型驱动大规模3DGS场景动画，迭代render-and-refine逐步扩展视角覆盖",
+          "tags": [
+            "世界模型",
+            "生成模型",
+            "3DGS",
+            "3D重建"
+          ],
+          "title": "AniGS: Bridging Rendering and Diffusion Prior for 3D Scene Animation",
+          "authors": [
+            "Yen-Chi Cheng",
+            "Chen Gao",
+            "Chuhan Chen",
+            "Tuotuo Li",
+            "Rajvi Shah"
+          ],
+          "abstract": "Novel view rendering of large and complex reconstructed scenes is becoming increasingly photorealistic. However, most reconstructions remain static and lack the ambient motion that makes environments immersive. We present AniGS, a method for scene-level animation of 3D Gaussian Splatting (3DGS) reconstructions that adds subtle, distributed dynamics, e.g., vegetation motion, while preserving rigid structures. Unlike existing 3D animation techniques which are limited to object-centric subjects or small regions, AniGS is designed for large, cluttered, navigable scenes. AniGS represents the scene with a canonical 3DGS and models motion using a time-conditioned deformation field. To animate the entire scene, we leverage a pretrained video diffusion model and introduce an iterative dataset--model update strategy that progressively expands viewpoint coverage and repeatedly updates camera-fixed training videos using a render-and-refine scheme. To prevent artifacts from unintended motion in static areas, we further introduce a composed video-to-video refinement scheme that restricts motion to desired regions. Experiments on five real-world, large-scale outdoor scenes demonstrate that AniGS produces natural ambient dynamics and high-quality novel view videos, enabling more immersive viewing experiences of reconstructed environments.",
+          "abs_url": "https://arxiv.org/abs/2607.18539",
+          "pdf_url": "https://arxiv.org/pdf/2607.18539v1",
+          "html_url": "https://arxiv.org/html/2607.18539v1",
+          "figures": [
+            "https://arxiv.org/html/2607.18539v1/x1.png",
+            "https://arxiv.org/html/2607.18539v1/x2.png",
+            "https://arxiv.org/html/2607.18539v1/x3.png",
+            "https://arxiv.org/html/2607.18539v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": "https://yccyenchicheng.github.io/AniGS/",
+          "code_links": [],
+          "project_links": [
+            "https://yccyenchicheng.github.io/AniGS/"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": null,
+          "comments": "Preprint. Project page: https://yccyenchicheng.github.io/AniGS/",
+          "submitted": "2026-07-20T22:14:03Z",
+          "updated": "2026-07-20T22:14:03Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "AniGS：桥接 3D 场景动画的渲染和扩散先验",
+          "abstract_zh": "大型复杂重建场景的新颖视图渲染变得越来越逼真。然而，大多数重建仍然是静态的，缺乏使环境具有沉浸感的环境运动。我们提出了 AniGS，一种用于 3D 高斯泼溅 (3DGS) 重建的场景级动画的方法，它添加了微妙的分布式动态，例如植被运动，同时保留了刚性结构。与仅限于以对象为中心的主题或小区域的现有 3D 动画技术不同，AniGS 专为大型、杂乱、可导航的场景而设计。 AniGS 使用规范的 3DGS 表示场景，并使用时间条件变形场对运动进行建模。为了对整个场景进行动画处理，我们利用预训练的视频扩散模型，并引入迭代数据集模型更新策略，该策略逐步扩大视点覆盖范围，并使用渲染和优化方案重复更新相机固定的训练视频。为了防止静态区域中意外运动产生的伪影，我们进一步引入了一种组合的视频到视频细化方案，该方案将运动限制在所需区域。对五个真实世界的大型户外场景的实验表明，AniGS 可以产生自然的环境动态和高质量的新颖视图视频，从而实现重建环境的更身临其境的观看体验。"
+        }
+      ]
+    },
+    {
+      "id": "reconstruction",
+      "name": "3D/4D 重建与生成",
+      "papers": [
+        {
+          "id": "2607.19228",
+          "rank": 2,
+          "score": 80,
+          "reason_zh": "流式4D几何Transformer首次实现动态场景几何与实例一致性联合重建，147K数据集驱动",
+          "tags": [
+            "3D重建",
+            "4D重建",
+            "feed-forward",
+            "数据集"
+          ],
+          "title": "IGGT4D: Streaming 4D Instance-Grounded Geometry Transformer",
+          "authors": [
+            "Zhengyu Zou",
+            "Hao Li",
+            "Kuixuan Jiao",
+            "Liu Liu",
+            "Tingyang Xiao"
+          ],
+          "abstract": "Real-world spatial intelligence requires agents to understand scenes from continuous video streams, where objects move, persist, disappear, and reappear over time. While recent spatial foundation models have enabled generalizable feed-forward 3D reconstruction, most streaming methods remain geometry-centric and lack temporally consistent object-level understanding. Meanwhile, existing semantic reconstruction and 3D-aware vision-language methods largely rely on externally extracted 2D semantic cues or loosely coupled geometry inputs, limiting unified geometry-instance learning in long dynamic scenes. In this paper, we propose IGGT4D, a streaming instance-grounded geometry Transformer for online 4D scene understanding. IGGT4D processes video frames sequentially, reuses historical context through causal spatial-temporal modeling, and incrementally updates a unified representation of camera motion, geometry, and object identity. This enables long-sequence feed-forward reconstruction with geometry-instance consistency in dynamic environments. To address the lack of high-quality 4D supervision, we further construct InsScene4D-147K, a large-scale dataset spanning real/synthetic and static/dynamic scenes, with RGB images, depth, poses, and temporally consistent instance masks generated by an automated geometry-guided annotation pipeline. Experiments on 3D reconstruction, pose estimation, instance spatial tracking, and open-vocabulary segmentation demonstrate that IGGT4D outperforms existing streaming baselines while maintaining scalable online inference for long dynamic sequences.",
+          "abs_url": "https://arxiv.org/abs/2607.19228",
+          "pdf_url": "https://arxiv.org/pdf/2607.19228v1",
+          "html_url": "https://arxiv.org/html/2607.19228v1",
+          "figures": [
+            "https://arxiv.org/html/2607.19228v1/x1.png",
+            "https://arxiv.org/html/2607.19228v1/x2.png",
+            "https://arxiv.org/html/2607.19228v1/x3.png",
+            "https://arxiv.org/html/2607.19228v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": "https://iggt4d.github.io",
+          "code_links": [],
+          "project_links": [
+            "https://iggt4d.github.io"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": null,
+          "comments": "Project Page: https://iggt4d.github.io",
+          "submitted": "2026-07-21T16:00:01Z",
+          "updated": "2026-07-21T16:00:01Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "IGGT4D：流式传输 4D 实例接地几何变换器",
+          "abstract_zh": "现实世界的空间智能要求代理理解连续视频流中的场景，其中对象随着时间的推移移动、持续、消失和重新出现。虽然最近的空间基础模型已经实现了可推广的前馈 3D 重建，但大多数流方法仍然以几何为中心，并且缺乏时间一致的对象级理解。同时，现有的语义重建和 3D 感知视觉语言方法很大程度上依赖于外部提取的 2D 语义线索或松散耦合的几何输入，限制了长动态场景中的统一几何实例学习。在本文中，我们提出了 IGGT4D，一种基于流实例的几何 Transformer，用于在线 4D 场景理解。 IGGT4D 按顺序处理视频帧，通过因果时空建模重用历史背景，并逐步更新摄像机运动、几何形状和对象身份的统一表示。这使得能够在动态环境中实现具有几何实例一致性的长序列前馈重建。为了解决缺乏高质量 4D 监督的问题，我们进一步构建了 InsScene4D-147K，这是一个跨越真实/合成和静态/动态场景的大型数据集，具有由自动几何引导注释管道生成的 RGB 图像、深度、姿势和时间一致的实例蒙版。 3D 重建、姿态估计、实例空间跟踪和开放词汇分割的实验表明，IGGT4D 优于现有的流基线，同时保持长动态序列的可扩展在线推理。"
+        }
+      ]
+    },
+    {
+      "id": "vla",
+      "name": "自动驾驶与机器人",
+      "papers": [
+        {
+          "id": "2607.18709",
+          "rank": 1,
+          "score": 85,
+          "reason_zh": "230k操控片段+十类中间表征统一具身世界建模与VLA，中间表征双向桥接动作与物理仿真",
+          "tags": [
+            "VLA",
+            "世界模型",
+            "具身智能",
+            "操控",
+            "数据集"
+          ],
+          "title": "RoboInter1.5: A Holistic Intermediate Representation Suite for Embodied World Modeling and Robotic Manipulation",
+          "authors": [
+            "Ziqin Wang",
+            "Hao Li",
+            "Weijun Wang",
+            "Junhao Cai",
+            "Jia Zeng"
+          ],
+          "abstract": "Existing robot datasets remain expensive to curate, embodiment-specific, and insufficiently annotated with the fine-grained structure required for generalizable reasoning, execution, or long-horizon environment dynamics simulation. Building on our prior work, RoboInter1.0, we present RoboInter1.5, an extended and holistic suite of intermediate representations for both robotic manipulation and embodied world modeling. RoboInter1.5 provides a unified resource of data, benchmarks, and models centered on dense manipulation-oriented intermediate representations. Specifically, RoboInter-Data contains over 230k manipulation episodes across 571 scenes with dense per-frame annotations covering more than ten types of intermediate representations, including subtasks, primitive skills, object and gripper grounding, segmentation, affordance, grasp poses, contact points, motion traces, etc. Built upon these annotations, RoboInter-VQA introduces spatial and temporal embodied VQA tasks to benchmark and improve the intermediate-representation reasoning capabilities of our RoboInter-VLM. RoboInter-VLA further studies how such representations benefit action execution through implicit, explicit, and modular plan-then-execute paradigms. To better model the physical world, we further introduce RoboInter-World, which leverages intermediate representations as structured conditioning signals for controllable prediction of future world states. Extensive evaluations demonstrate that RoboInter1.5 provides a unified spatiotemporal scaffolding for intermediate representations. Rather than treating intermediate representations merely as interpretable signals, RoboInter1.5 conceptualizes them as a bidirectional interface that both regularizes low-level action spaces and constrains the latent rollouts of open-world physical simulators.",
+          "abs_url": "https://arxiv.org/abs/2607.18709",
+          "pdf_url": "https://arxiv.org/pdf/2607.18709v1",
+          "html_url": "https://arxiv.org/html/2607.18709v1",
+          "figures": [
+            "https://arxiv.org/html/2607.18709v1/x1.png",
+            "https://arxiv.org/html/2607.18709v1/x2.png",
+            "https://arxiv.org/html/2607.18709v1/x3.png",
+            "https://arxiv.org/html/2607.18709v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": "28 pages. arXiv admin note: substantial text overlap with arXiv:2602.09973",
+          "submitted": "2026-07-21T05:05:01Z",
+          "updated": "2026-07-21T05:05:01Z",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.RO"
+          ],
+          "title_zh": "RoboInter1.5：用于具体世界建模和机器人操作的整体中间表示套件",
+          "abstract_zh": "现有的机器人数据集的管理成本仍然很高，且特定于具体实施例，并且没有充分注释通用推理、执行或长期环境动力学模拟所需的细粒度结构。在我们之前的工作 RoboInter1.0 的基础上，我们推出了 RoboInter1.5，这是一套用于机器人操作和具体世界建模的扩展且整体的中间表示套件。 RoboInter1.5 提供了以密集操作为导向的中间表示为中心的统一数据、基准和模型资源。具体来说，RoboInter-Data 包含跨越 571 个场景的超过 23 万个操作片段，每帧都有密集的注释，涵盖十多种类型的中间表示，包括子任务、原始技能、对象和抓手接地、分割、可供性、抓取姿势、接触点、运动轨迹等。基于这些注释，RoboInter-VQA 引入了空间和时间体现的 VQA 任务来基准测试和提高我们的中间表示推理能力。 RoboInter-VLM。 RoboInter-VLA 进一步研究了这种表示如何通过隐式、显式和模块化的计划然后执行范式有利于行动执行。为了更好地模拟物理世界，我们进一步引入了 RoboInter-World，它利用中间表示作为结构化条件信号来对未来世界状态进行可控预测。广泛的评估表明，RoboInter1.5 为中间表示提供了统一的时空支架。 RoboInter1.5 并没有将中间表示仅仅视为可解释的信号，而是将它们概念化为双向接口，既规范低级动作空间，又限制开放世界物理模拟器的潜在推出。"
+        },
+        {
+          "id": "2607.18794",
+          "rank": 3,
+          "score": 77,
+          "reason_zh": "线性注意力替代Transformer做状态更新，VLA导航策略在真实机器人上达82%成功率",
+          "tags": [
+            "VLA",
+            "导航",
+            "具身智能"
+          ],
+          "title": "Beyond Transformers: Linear Attention Policy for Open-Vocabulary Object Goal Navigation",
+          "authors": [
+            "Jiahong Zhang",
+            "Yifan Lin",
+            "Yandong Zhang",
+            "Sijun Shen",
+            "Kexin Wang"
+          ],
+          "abstract": "Open-Vocabulary Object Goal Navigation (OVON) requires agents to operate under partial observability, making effective internal state updates critical for navigation performance. This update is implemented by the policy network, where recent approaches adopt Transformer-based backbones with self-attention over a context window to integrate temporal information. However, our controlled experiments show that performance does not scale with context length under Transformer-based policies, questioning the suitability of self-attention for state integration in navigation. To this end, we propose Linear Attention-based Navigation (LANav), which adopts linear attention (LA) as the policy backbone to maintain a structured state update rather than self-attention over the context window. Across multiple LA variants evaluated under identical settings, LANav consistently outperforms Transformer-based baselines. Performance improves as state update mechanisms become more structured and regulated, highlighting the importance of state update design. To improve state update effectiveness, we introduce Weighted State-Expansion Linear Attention (WSLA), which expands each attention head's state into multiple sub-states and uses learnable weighted readout to aggregate expanded sub-states. Equipped with WSLA, LANav achieves 36.4% average success rate (SR) on HM3D-OVON, outperforming Transformer-based counterparts by 6.3 percentage points in macro-averaged SR, while maintaining computational efficiency. Distance-stratified results show larger gains in long-distance episodes, while HSSD transfer and fine-tuning demonstrate robustness across scene distributions. Real-world deployment on a Unitree Go2 further achieves an 82% success rate over 50 trials, supporting the practical feasibility and sim-to-real transfer of LANav.",
+          "abs_url": "https://arxiv.org/abs/2607.18794",
+          "pdf_url": "https://arxiv.org/pdf/2607.18794v1",
+          "html_url": "https://arxiv.org/html/2607.18794v1",
+          "figures": [
+            "https://arxiv.org/html/2607.18794v1/x1.png",
+            "https://arxiv.org/html/2607.18794v1/x2.png",
+            "https://arxiv.org/html/2607.18794v1/x3.png",
+            "https://arxiv.org/html/2607.18794v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": "12 pages, 7 figures",
+          "submitted": "2026-07-21T07:15:36Z",
+          "updated": "2026-07-21T07:15:36Z",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.RO"
+          ],
+          "title_zh": "超越变形金刚：开放词汇对象目标导航的线性注意策略",
+          "abstract_zh": "开放词汇对象目标导航 (OVON) 要求代理在部分可观察性下运行，从而使有效的内部状态更新对于导航性能至关重要。此更新是由策略网络实现的，其中最近的方法采用基于 Transformer 的主干，在上下文窗口上进行自我关注以集成时间信息。然而，我们的对照实验表明，在基于 Transformer 的策略下，性能不会随着上下文长度的变化而变化，这质疑了自注意力对于导航中状态集成的适用性。为此，我们提出了基于线性注意力的导航（LANav），它采用线性注意力（LA）作为策略支柱来维持结构化状态更新，而不是在上下文窗口上进行自注意力。在相同设置下评估的多个 LA 变体中，LANav 始终优于基于 Transformer 的基线。随着状态更新机制变得更加结构化和规范，性能会提高，这凸显了状态更新设计的重要性。为了提高状态更新效率，我们引入了加权状态扩展线性注意力（WSLA），它将每个注意力头的状态扩展为多个子状态，并使用可学习的加权读出来聚合扩展的子状态。配备 WSLA 后，LANav 在 HM3D-OVON 上实现了 36.4% 的平均成功率 (SR)，在宏观平均 SR 方面比基于 Transformer 的同类产品高出 6.3 个百分点，同时保持了计算效率。距离分层结果显示长距离场景中的增益更大，而 HSSD 传输和微调则证明了跨场景分布的稳健性。在 Unitree Go2 上的实际部署在 50 次试验中进一步实现了 82% 的成功率，支持 LANav 的实际可行性和模拟到真实的转移。"
+        }
+      ]
+    },
+    {
+      "id": "vlm",
+      "name": "VLM / LLM",
+      "papers": [
+        {
+          "id": "2607.18716",
+          "rank": 1,
+          "score": 83,
+          "reason_zh": "分布感知专家路由实现Video-MLLM跨域持续适配，域间域内双路由机制防止灾难性遗忘",
+          "tags": [
+            "VLM",
+            "顶会"
+          ],
+          "title": "Continual Video-MLLM Adaptation over Evolving Domains",
+          "authors": [
+            "Rui Cheng",
+            "Meixing Shi",
+            "Yuxiang Cai",
+            "Jingcai Guo",
+            "Jianwei Yin"
+          ],
+          "abstract": "Video multimodal large language models have shown strong capability in video understanding, yet their adaptation to sequentially evolving domains remains underexplored. In real-world deployments, video data often arrives continuously from heterogeneous domains, requiring the model to acquire new domain-specific knowledge without overwriting previously learned capabilities. Existing continual learning methods typically rely on shared adaptation spaces, which can induce severe cross-domain interference and catastrophic forgetting. We propose Distribution-Aware Expert Routing, a parameter-efficient framework for continual Video-MLLM adaptation over evolving domains. DAER maintains domain-isolated lightweight experts while keeping the pretrained Video-MLLM backbone frozen, thereby decoupling domain-specific adaptation from the general multimodal knowledge of the pretrained model. To enable fine-grained specialization, we introduce an intra-domain distribution-aware routing mechanism that matches each input to expert-level prototype reservoirs using MMD. To address the absence of task identities at inference time, we further propose an inter-domain routing mechanism that performs prototype matching in a discriminative subspace for robust domain identification. In addition, we introduce adaptive domain merging to improve parameter scalability and adopt a two-stage optimization strategy to stabilize expert specialization during continual learning. We evaluate DAER by curating a domain-incremental benchmark built from ten VidQA datasets covering diverse visual environments and reasoning demands. Experiments on two strong Video-MLLM backbones show that DAER consistently outperforms prior methods.",
+          "abs_url": "https://arxiv.org/abs/2607.18716",
+          "pdf_url": "https://arxiv.org/pdf/2607.18716v1",
+          "html_url": "https://arxiv.org/html/2607.18716v1",
+          "figures": [
+            "https://arxiv.org/html/2607.18716v1/x1.png",
+            "https://arxiv.org/html/2607.18716v1/x2.png",
+            "https://arxiv.org/html/2607.18716v1/x3.png",
+            "https://arxiv.org/html/2607.18716v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": "Accepted to ACM MM 2026",
+          "submitted": "2026-07-21T05:16:36Z",
+          "updated": "2026-07-21T05:16:36Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "不断发展的领域的视频-MLLM 适应",
+          "abstract_zh": "视频多模态大语言模型在视频理解方面表现出了强大的能力，但它们对连续发展的领域的适应仍有待探索。在现实部署中，视频数据通常从异构域连续到达，要求模型获取新的特定于域的知识，而不覆盖以前学习的功能。现有的持续学习方法通​​常依赖于共享的适应空间，这可能会导致严重的跨域干扰和灾难性遗忘。我们提出了分布式感知专家路由，这是一种参数高效的框架，用于在不断发展的领域中进行持续的视频 MLLM 适应。 DAER 维护领域隔离的轻量级专家，同时保持预训练的 Video-MLLM 主干冻结，从而将特定领域的适应与预训练模型的通用多模态知识解耦。为了实现细粒度的专业化，我们引入了一种域内分布感知路由机制，该机制使用 MMD 将每个输入与专家级原型存储库相匹配。为了解决推理时任务身份缺失的问题，我们进一步提出了一种域间路由机制，该机制在判别性子空间中执行原型匹配，以实现鲁棒的域识别。此外，我们引入自适应域合并来提高参数可扩展性，并采用两阶段优化策略来稳定持续学习期间的专家专业化。我们通过策划一个领域增量基准来评估 DAER，该基准由涵盖不同视觉环境和推理需求的 10 个 VidQA 数据集构建。在两个强大的 Video-MLLM 主干上进行的实验表明，DAER 始终优于先前的方法。"
+        }
+      ]
+    }
+  ]
+}
