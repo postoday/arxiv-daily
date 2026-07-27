@@ -1,0 +1,428 @@
+{
+  "date": "2026-07-23",
+  "total_candidates": 100,
+  "categories": [
+    {
+      "id": "worldmodel",
+      "name": "世界模型&视频/场景生成模型",
+      "papers": [
+        {
+          "id": "2607.20368",
+          "rank": 1,
+          "score": 93,
+          "reason_zh": "两阶段训练恢复长视频自回归的梯度信号，不改架构解决历史上下文-梯度断层",
+          "tags": [
+            "生成模型",
+            "世界模型"
+          ],
+          "title": "Self Gradient Forcing: Native Long Video Extrapolation",
+          "authors": [
+            "Junhao Zhuang",
+            "Shiyi Zhang",
+            "Yuxuan Bian",
+            "Yaowei Li",
+            "Yawen Luo",
+            "Yijun Liu",
+            "Weiyang Jin",
+            "Songchun Zhang",
+            "Xianglong He",
+            "Xuying Zhang",
+            "Haoran Li",
+            "Haoyang Huang",
+            "Zeyue Xue",
+            "Nan Duan"
+          ],
+          "abstract": "Recent autoregressive video diffusion methods are increasingly built upon Self Forcing, where the student is trained on histories produced by its own rollout rather than ground-truth video contexts. This reduces exposure bias, but the historical key-value cache is still used by future frames only as frozen rollout state. As a result, future losses cannot supervise how earlier generated latents should be written into more useful keys and values for later video-latent generation. We call this the historical context-gradient gap. We propose Self Gradient Forcing (SGF), a two-pass training strategy that restores this missing supervision signal without backpropagating through the full serial rollout. Pass 1 performs a no-gradient autoregressive rollout matching inference and, at a sampled denoising exit step, records both the self-generated context and the noisy latents fed to the model. Pass 2 performs parallel context-gradient reconstruction for the recorded exit step. The generated context is used as stop-gradient clean-latent input, while the model recomputes the context KV representations and future-to-context causal attention. Thus, SGF provides the missing memory-writing supervision within the native autoregressive training objective, using losses on future video latents to train the model to encode context into more effective causal memory. Across extensive long-horizon frame-wise and chunk-wise experiments under different initializations, SGF achieves stronger native long-video extrapolation than Self Forcing, especially in subject identity, background/layout consistency, and temporal stability. Remarkably, using only a 5-second training window, SGF can extrapolate to videos lasting several minutes. Code and models will be released to advance research on autoregressive video generation.",
+          "abs_url": "https://arxiv.org/abs/2607.20368",
+          "pdf_url": "https://arxiv.org/pdf/2607.20368v1",
+          "html_url": "https://arxiv.org/html/2607.20368v1",
+          "figures": [
+            "https://arxiv.org/html/2607.20368v1/x1.png",
+            "https://arxiv.org/html/2607.20368v1/x2.png",
+            "https://arxiv.org/html/2607.20368v1/x3.png",
+            "https://arxiv.org/html/2607.20368v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": "https://zhuang2002.github.io/SelfGradientForcing/",
+          "code_links": [],
+          "project_links": [
+            "https://zhuang2002.github.io/SelfGradientForcing/"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": null,
+          "comments": "Project page: https://zhuang2002.github.io/SelfGradientForcing/",
+          "submitted": "2026-07-22T16:59:23Z",
+          "updated": "2026-07-22T16:59:23Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "自梯度强制：原生长视频外推",
+          "abstract_zh": "最近的自回归视频传播方法越来越多地建立在自我强迫的基础上，学生接受的是其自身推出产生的历史而不是真实的视频背景的训练。这减少了曝光偏差，但历史键值缓存仍由未来帧仅用作冻结转出状态。因此，未来的损失无法监督如何将早期生成的潜在变量写入更有用的键和值，以供以后的视频潜在生成。我们称之为历史背景梯度差距。我们提出自梯度强迫（SGF），这是一种两遍训练策略，可以恢复丢失的监督信号，而无需通过完整的串行推出进行反向传播。第 1 遍执行无梯度自回归推出匹配推理，并在采样去噪退出步骤中记录自生成的上下文和馈送到模型的噪声潜伏。第 2 遍对记录的退出步骤执行并行上下文梯度重建。生成的上下文用作停止梯度干净潜在输入，而模型重新计算上下文 KV 表示和未来到上下文的因果注意力。因此，SGF 在本机自回归训练目标中提供了缺失的记忆写入监督，利用未来视频潜伏的损失来训练模型，将上下文编码为更有效的因果记忆。在不同初始化下的广泛长视界帧级和块级实验中，SGF 实现了比 Self Forcing 更强的原生长视频外推，特别是在主体身份、背景/布局一致性和时间稳定性方面。值得注意的是，仅使用 5 秒的训练窗口，SGF 就可以推断出持续几分钟的视频。将发布代码和模型以推进自回归视频生成的研究。"
+        },
+        {
+          "id": "2607.19701",
+          "rank": 3,
+          "score": 88,
+          "reason_zh": "用目标条件扩散生成自动驾驶安全关键场景，替代仿真器做VLM安全评估",
+          "tags": [
+            "世界模型",
+            "自动驾驶",
+            "闭环仿真"
+          ],
+          "title": "SafeGen: Goal-Conditioned Video Diffusion of Safety-Critical Scenarios for VLM-Based Autonomous Driving",
+          "authors": [
+            "Jiangfan Liu",
+            "Zexuan Cui",
+            "Tianyuan Zhang",
+            "Zonglei Jing",
+            "Zonghao Ying",
+            "Yaoyuan Zhang",
+            "Jiakai Wang",
+            "Xiaoqi Jiang",
+            "Aishan Liu",
+            "Xianglong Liu"
+          ],
+          "abstract": "VLMs are increasingly deployed in AD systems, creating an urgent need for rigorous safety evaluation under rare yet safety-critical scenarios. Among these, interactions with vulnerable road users represent a major source of real-world failures. However, existing safety-critical scenario generation methods predominantly rely on simulator-based pipelines, which suffer from a substantial sim-to-real gap and often fail to capture realistic, diverse, and unforeseen human-vehicle interaction dynamics. We present SafeGen, a goal-conditioned diffusion framework for safety-critical scenario generation in VLMADs. Our key insight is to formulate scenario generation as a goal-conditioned diffusion process, where a predefined catastrophic end-state serves as a strong supervisory signal, guiding the generation of temporally coherent video trajectories that naturally evolve toward safety-critical outcomes. Building on this formulation, we introduce Context Grounded End State Reasoning, which leverages VLMs to analyze benign driving contexts and infer latent vulnerabilities in human-vehicle interactions, producing structured end-state specifications that induce high-risk scenarios. Conditioned on these targets, we further propose End State Conditioned Video Evolution, which grounds semantic threats into physically plausible visual dynamics. Specifically, we instantiate high-risk agents within the scene via depth-aware geometric projection, followed by boundary-conditioned diffusion to generate intermediate frames with consistent motion patterns and temporal coherence. Extensive experiments across 3 VLMADs demonstrate that SafeGen increases the Judge Overall Score, a metric using a VLM judge to evaluate VLMADs' understanding and decision-making, by 24.25% on average compared to SoTA baselines. Furthermore, fine-tuning a VLMAD improves performance in real-world driving scenes by an average of 15.9%.",
+          "abs_url": "https://arxiv.org/abs/2607.19701",
+          "pdf_url": "https://arxiv.org/pdf/2607.19701v1",
+          "html_url": "https://arxiv.org/html/2607.19701v1",
+          "figures": [
+            "https://arxiv.org/html/2607.19701v1/x1.png",
+            "https://arxiv.org/html/2607.19701v1/x2.png",
+            "https://arxiv.org/html/2607.19701v1/x3.png",
+            "https://arxiv.org/html/2607.19701v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": null,
+          "submitted": "2026-07-22T03:05:32Z",
+          "updated": "2026-07-22T03:05:32Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "SafeGen：基于 VLM 的自动驾驶安全关键场景的目标条件视频扩散",
+          "abstract_zh": "VLM 越来越多地部署在 AD 系统中，迫切需要在罕见但安全关键的场景下进行严格的安全评估。其中，与弱势道路使用者的互动是现实世界失败的主要根源。然而，现有的安全关键场景生成方法主要依赖于基于模拟器的管道，这些管道存在巨大的模拟与真实差距，并且往往无法捕捉现实、多样化和不可预见的人车交互动态。我们提出了 SafeGen，这是一种目标条件扩散框架，用于在 VLMAD 中生成安全关键场景。我们的主要见解是将场景生成制定为目标条件扩散过程，其中预定义的灾难性最终状态作为强大的监督信号，指导生成时间相干的视频轨迹，自然地演变成安全关键的结果。在此基础上，我们引入了基于情境的最终状态推理，它利用 VLM 来分析良性驾驶情境并推断人车交互中的潜在漏洞，从而生成引发高风险场景的结构化最终状态规范。以这些目标为条件，我们进一步提出最终状态条件视频进化，它将语义威胁转化为物理上合理的视觉动态。具体来说，我们通过深度感知的几何投影在场景内实例化高风险代理，然后进行边界条件扩散以生成具有一致运动模式和时间连贯性的中间帧。跨越 3 个 VLMAD 的广泛实验表明，与 SoTA 基线相比，SafeGen 将法官总体得分（使用 VLM 法官评估 VLMAD 理解和决策的指标）平均提高了 24.25%。此外，微调 VLMAD 可以将现实驾驶场景中的性能平均提高 15.9%。"
+        },
+        {
+          "id": "2607.20125",
+          "rank": 4,
+          "score": 85,
+          "reason_zh": "AR视频生成注意力头分类+KV cache重构，训练无关即插即用加速框架",
+          "tags": [
+            "生成模型",
+            "开源"
+          ],
+          "title": "HeadCast: Casting Attention Heads for Efficient Autoregressive Video Generation",
+          "authors": [
+            "Jinliang Shen",
+            "Lianghao Su",
+            "Zheming Li",
+            "Kang He",
+            "ZiLiang Lai",
+            "Yanbing Jiang",
+            "Chengru Song"
+          ],
+          "abstract": "Autoregressive (AR) video diffusion models have become a promising paradigm for long and streaming video synthesis, but the continuously growing Key-Value (KV) cache makes attention the dominant inference cost, especially at high resolution where each frame contributes many tokens. Existing remedies either evict the cache with coarse heuristics that cause inter-frame flickering, or require model re-training. We propose HeadCast, a training-free, plug-and-play acceleration framework built on the observation that a pre-trained AR model's attention heads exhibit stable, heterogeneous behaviors. After a short warm-up, HeadCast performs a one-time classification at the maximum-noise step that sorts every head into one of four archetypes: Sink, Dummy, Spatial, and Global, and restructures the monolithic KV cache into head-specific pathways. Crucially, it retains the Global heads that preserve the long-range temporal consistency aggressive eviction destroys. Because the Spatial pathway operates on a fixed-size grid, its savings grow with resolution: across state-of-the-art AR models, HeadCast accelerates inference by up to 1.62x at 720P and 1.95x at 1080P, while keeping VBench quality on par with full attention and largely flicker-free. Code is available at https://github.com/sjlgaga/HeadCast .",
+          "abs_url": "https://arxiv.org/abs/2607.20125",
+          "pdf_url": "https://arxiv.org/pdf/2607.20125v1",
+          "html_url": "https://arxiv.org/html/2607.20125v1",
+          "figures": [
+            "https://arxiv.org/html/2607.20125v1/x1.png",
+            "https://arxiv.org/html/2607.20125v1/x2.png",
+            "https://arxiv.org/html/2607.20125v1/x3.png",
+            "https://arxiv.org/html/2607.20125v1/x4.png"
+          ],
+          "code_url": "https://github.com/sjlgaga/HeadCast",
+          "project_url": null,
+          "code_links": [
+            "https://github.com/sjlgaga/HeadCast"
+          ],
+          "project_links": [],
+          "has_code": true,
+          "has_project": false,
+          "venue": null,
+          "comments": null,
+          "submitted": "2026-07-22T13:29:35Z",
+          "updated": "2026-07-22T13:29:35Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV",
+            "cs.LG"
+          ],
+          "title_zh": "HeadCast：吸引注意力以实现高效的自回归视频生成",
+          "abstract_zh": "自回归 (AR) 视频扩散模型已成为长视频和流视频合成的有前途的范例，但不断增长的键值 (KV) 缓存使注意力成为主要的推理成本，尤其是在高分辨率下，每帧贡献许多令牌。现有的补救措施要么使用导致帧间闪烁的粗略启发法逐出缓存，要么需要模型重新训练。我们提出了 HeadCast，这是一种免训练、即插即用的加速框架，基于对预训练 AR 模型的注意力头表现出稳定、异构行为的观察。经过短暂的预热后，HeadCast 在最大噪声步骤执行一次性分类，将每个头分类为四种原型之一：Sink、Dummy、Spatial 和 Global，并将整体 KV 缓存重组为特定于头的路径。至关重要的是，它保留了全局头部，以保持激进驱逐所破坏的长期时间一致性。由于 Spatial 路径在固定大小的网格上运行，因此其节省的成本随着分辨率的提高而增长：在最先进的 AR 模型中，HeadCast 在 720P 下将推理速度提高了 1.62 倍，在 1080P 下将推理速度提高了 1.95 倍，同时保持 VBench 质量与全神贯注的水平相当，并且基本不闪烁。代码可在 https://github.com/sjlgaga/HeadCast 获取。"
+        }
+      ]
+    },
+    {
+      "id": "reconstruction",
+      "name": "3D/4D 重建与生成",
+      "papers": [
+        {
+          "id": "2607.20417",
+          "rank": 1,
+          "score": 92,
+          "reason_zh": "Feed-forward 3DGS引入自适应3D Token扩展，恢复逐场景优化才有的容量分配能力",
+          "tags": [
+            "3DGS",
+            "feed-forward",
+            "3D重建"
+          ],
+          "title": "ATSplat: Compact Feed-forward 3D Gaussian Splatting with Adaptive Token Expansion",
+          "authors": [
+            "Cho In",
+            "Jeonghwan Cho",
+            "Mijin Yoo",
+            "Gim Hee Lee",
+            "Seon Joo Kim"
+          ],
+          "abstract": "3D Gaussian Splatting (3DGS) achieves high-quality novel-view synthesis by optimizing freely placed primitives in 3D and adaptively densifying them in under-reconstructed regions. However, this scene-adaptive capacity allocation is largely lost in existing feed-forward 3DGS methods, which commonly regress Gaussians at input pixels and lift them along camera rays. Such pixel-aligned formulations make the number and placement of primitives depend on image resolution and input viewpoints rather than scene complexity, resulting in dense and often redundant Gaussian sets. We present ATSplat, a feed-forward 3DGS framework that restores the adaptive allocation capability of 3DGS optimization through Adaptive 3D Tokens. ATSplat first lifts coarse patch-level depth and camera cues into sparse 3D anchor tokens, forming a compact scaffold of the scene. Each token is then regressed into local Gaussians with learnable 3D offsets, decoupling primitive placement from input image grids. An Adaptive Token Expansion module predicts a token-level uncertainty score, supervised by rendering error maps, and selectively expands high-uncertainty tokens through learnable expansion layers. This sparse-to-adaptive formulation enables ATSplat to concentrate primitives in challenging regions while maintaining a compact representation. Experiments on two representative datasets, RealEstate10K and DL3DV, show that ATSplat achieves state-of-the-art rendering quality while reducing the number of Gaussians by more than $5.7\\times$ compared with dense feed-forward 3DGS methods. From 12 input images at $512 \\times 960$ resolution, ATSplat completes reconstruction in less than a second using a single commercial GPU, and renders high-quality novel views at 1136 FPS ($512 \\times 960$) with only 311K Gaussians.",
+          "abs_url": "https://arxiv.org/abs/2607.20417",
+          "pdf_url": "https://arxiv.org/pdf/2607.20417v1",
+          "html_url": "https://arxiv.org/html/2607.20417v1",
+          "figures": [
+            "https://arxiv.org/html/2607.20417v1/x1.png",
+            "https://arxiv.org/html/2607.20417v1/x2.png",
+            "https://arxiv.org/html/2607.20417v1/x3.png",
+            "https://arxiv.org/html/2607.20417v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": null,
+          "submitted": "2026-07-22T17:54:44Z",
+          "updated": "2026-07-22T17:54:44Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "ATSplat：具有自适应令牌扩展的紧凑前馈 3D 高斯分布",
+          "abstract_zh": "3D 高斯溅射 (3DGS) 通过优化 3D 中自由放置的图元并在重建区域中自适应地致密化它们，实现了高质量的新颖视图合成。然而，这种场景自适应容量分配在现有的前馈 3DGS 方法中很大程度上丢失了，这些方法通常在输入像素处回归高斯并沿着相机光线提升它们。这种像素对齐的公式使得基元的数量和位置取决于图像分辨率和输入视点而不是场景复杂性，从而导致密集且通常冗余的高斯集。我们提出了 ATSplat，一个前馈 3DGS 框架，它通过自适应 3D 代币恢复 3DGS 优化的自适应分配能力。 ATSplat 首先将粗略的补丁级深度和相机线索提升到稀疏的 3D 锚标记中，形成场景的紧凑支架。然后，每个标记都会回归为具有可学习 3D 偏移的局部高斯分布，从而将原始放置与输入图像网格解耦。自适应令牌扩展模块可预测令牌级别的不确定性分数，通过渲染误差图进行监督，并通过可学习的扩展层选择性地扩展高不确定性令牌。这种稀疏到自适应的公式使 ATSplat 能够将基元集中在具有挑战性的区域，同时保持紧凑的表示。对两个代表性数据集 RealEstate10K 和 DL3DV 的实验表明，与密集前馈 3DGS 方法相比，ATSplat 实现了最先进的渲染质量，同时将高斯数量减少了 5.7 美元以上。从分辨率为 512 美元×960 美元的 12 个输入图像中，ATSplat 使用单个商用 GPU 在不到一秒的时间内完成重建，并仅用 311K 高斯以 1136 FPS（512 美元×960 美元）渲染高质量的新颖视图。"
+        },
+        {
+          "id": "2607.19765",
+          "rank": 2,
+          "score": 90,
+          "reason_zh": "首次将大视图合成模型扩展到3D场景理解，RGB学到的空间对应直接传播全景标签",
+          "tags": [
+            "3D重建",
+            "feed-forward",
+            "顶会"
+          ],
+          "title": "Extending a Large View Synthesis Model for Multi-view Panoptic Segmentation",
+          "authors": [
+            "Kwonyoung Ryu",
+            "In-Jae Lee",
+            "Jonghyun Jin",
+            "Hyunjee Lee",
+            "Jongmin Lee",
+            "Jaesik Park"
+          ],
+          "abstract": "Large view synthesis models synthesize novel views through cross-view attention without explicit 3D representations, and recent studies have shown that they learn accurate spatial correspondence from RGB supervision alone. We observe that this correspondence generalizes beyond appearance. When non-photorealistic signals such as binary encoded panoptic labels are passed through the model, they are propagated to novel views with consistent spatial structure. These results indicate that the correspondence learned for RGB view synthesis can also propagate view-independent per-pixel labels. From this observation, we present the first work to extend large view synthesis models beyond appearance rendering to 3D scene understanding. We propose a panoptic segmentation pipeline that reuses a frozen view synthesis model to propagate panoptic labels from input views to novel views, without 3D reconstruction or any segmentation-specific training of the view synthesis model. Given panoptic labels on the input views, we encode them into binary channel representations and pass them through the same model to render target-view segmentation. On ScanNet, our method achieves segmentation quality on par with Gaussian based approaches requiring explicit 3D reconstruction, while outperforming them in novel view synthesis by more than 7 dB. The label propagation also transfers across datasets, surpassing these approaches on Replica without any fine-tuning.",
+          "abs_url": "https://arxiv.org/abs/2607.19765",
+          "pdf_url": "https://arxiv.org/pdf/2607.19765v1",
+          "html_url": "https://arxiv.org/html/2607.19765v1",
+          "figures": [
+            "https://arxiv.org/html/2607.19765v1/x1.png",
+            "https://arxiv.org/html/2607.19765v1/x2.png",
+            "https://arxiv.org/html/2607.19765v1/x3.png",
+            "https://arxiv.org/html/2607.19765v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": "https://kwonyoung9120.github.io/PanopticLVSM/",
+          "code_links": [],
+          "project_links": [
+            "https://kwonyoung9120.github.io/PanopticLVSM/"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": null,
+          "comments": "Accepted to ECCV 2026. 31 pages, 7 figures, 9 tables. Project page: https://kwonyoung9120.github.io/PanopticLVSM/",
+          "submitted": "2026-07-22T05:16:30Z",
+          "updated": "2026-07-22T05:16:30Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "扩展大视图合成模型以实现多视图全景分割",
+          "abstract_zh": "大视图合成模型通过跨视图注意力合成新颖的视图，无需明确的 3D 表示，最近的研究表明，它们仅从 RGB 监督中学习准确的空间对应关系。我们观察到这种对应关系超越了表象。当非真实感信号（例如二进制编码的全景标签）通过模型时，它们会传播到具有一致空间结构的新视图。这些结果表明，为 RGB 视图合成学习到的对应关系也可以传播与视图无关的每像素标签。根据这一观察，我们提出了第一个将大视图合成模型从外观渲染扩展到 3D 场景理解的工作。我们提出了一种全景分割管道，它重用冻结视图合成模型将全景标签从输入视图传播到新视图，而无需 3D 重建或视图合成模型的任何特定于分割的训练。给定输入视图上的全景标签，我们将它们编码为二进制通道表示，并将它们传递到相同的模型以渲染目标视图分割。在 ScanNet 上，我们的方法实现的分割质量与需要显式 3D 重建的基于高斯的方法相当，同时在新颖的视图合成方面优于它们 7 dB 以上。标签传播还可以跨数据集传输，无需任何微调就超越了副本上的这些方法。"
+        }
+      ]
+    },
+    {
+      "id": "vla",
+      "name": "自动驾驶与机器人",
+      "papers": [
+        {
+          "id": "2607.20175",
+          "rank": 1,
+          "score": 94,
+          "reason_zh": "感知先验世界-动作模型+自适应专家路由，清华×阿里，端到端驾驶新范式",
+          "tags": [
+            "自动驾驶",
+            "世界模型",
+            "端到端"
+          ],
+          "title": "PerceptDrive: Perception Prior World-Action Modeling with Adaptive Expert Routing for End-to-End Autonomous Driving",
+          "authors": [
+            "Yushan Liu",
+            "Tianxiong Lv",
+            "Bohua Wang",
+            "Hangqi Fan",
+            "Chenxu Zhao",
+            "He Zheng",
+            "Xuchang Zhong",
+            "Yifan Xie",
+            "Congyang Zhao",
+            "Zhihao Liao",
+            "Leigang Luo",
+            "Yang Cai",
+            "Xiao-Ping Zhang",
+            "Wenbo Ding"
+          ],
+          "abstract": "Frozen perception foundation models encode rich geometric, semantic, and dynamic knowledge. Yet narrow conditioning interfaces may attenuate task-relevant cues, while static fusion cannot adjust expert contributions to each scene. We cast this challenge as the prior-to-plan transfer problem and introduce PerceptDrive, a perception prior world-action modeling framework with adaptive expert routing. PerceptDrive feeds teacher-distilled priors from a frozen, driving-adapted provider and dense observation latents from a frozen self-supervised video encoder into a trainable expert-routed world-action model. Expert-specific query branches process these signals, while a prior-retention objective anchors each branch to its prior. A router predicts soft gates from a shared scene representation and combines the expert conditions before trajectory generation. During training, privileged rule-based sub-metric estimates for branch-specific trajectory drafts provide soft-gate distillation targets. The predicted action-free future latent conditions a flow-matching actor. At inference, privileged components are absent; with one front-facing camera, PerceptDrive generates one trajectory per planning step without test-time scoring, reranking, or search. Experiments show that PerceptDrive achieves state-of-the-art performance with 90.4 PDMS on NAVSIM v1 and 90.2 EPDMS on NAVSIM v2, outperforming existing methods. Ablations confirm complementary gains from prior retention and scene-conditioned routing, alongside differential reliance on the three priors. These results demonstrate that preserving and adaptively routing perception priors improves direct planning without test-time candidate selection.",
+          "abs_url": "https://arxiv.org/abs/2607.20175",
+          "pdf_url": "https://arxiv.org/pdf/2607.20175v1",
+          "html_url": "https://arxiv.org/html/2607.20175v1",
+          "figures": [
+            "https://arxiv.org/html/2607.20175v1/x1.png",
+            "https://arxiv.org/html/2607.20175v1/x2.png",
+            "https://arxiv.org/html/2607.20175v1/img/visualize.jpg",
+            "https://arxiv.org/html/2607.20175v1/x3.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": null,
+          "submitted": "2026-07-22T14:09:15Z",
+          "updated": "2026-07-22T14:09:15Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "PerceptDrive：感知先行世界动作建模与自适应专家路由，用于端到端自动驾驶",
+          "abstract_zh": "冻结的感知基础模型编码丰富的几何、语义和动态知识。然而，狭窄的调节界面可能会减弱与任务相关的线索，而静态融合无法调整专家对每个场景的贡献。我们将这一挑战视为先于计划的传输问题，并引入 PerceptDrive，这是一种具有自适应专家路由的感知先验世界动作建模框架。 PerceptDrive 将来自冻结的、适合驾驶的提供者的教师提炼的先验信息和来自冻结的自监督视频编码器的密集观察潜值馈送到可训练的专家路由的世界动作模型中。专家特定的查询分支处理这些信号，而先验保留目标将每个分支锚定到其先验。路由器根据共享场景表示来预测软门，并在生成轨迹之前结合专家条件。在训练期间，针对特定于分支的轨迹草稿的基于优先规则的子度量估计提供了软门蒸馏目标。预测的无动作未来潜在条件是流量匹配参与者。据推断，特权组件不存在； PerceptDrive 使用一个前置摄像头，为每个规划步骤生成一个轨迹，无需测试时评分、重新排名或搜索。实验表明，PerceptDrive 在 NAVSIM v1 上实现了 90.4 PDMS，在 NAVSIM v2 上实现了 90.2 EPDMS，达到了最先进的性能，优于现有方法。消融确认了先前保留和场景条件路由的互补收益，以及对三个先验的不同依赖。这些结果表明，保留和自适应路由感知先验可以改善直接规划，而无需测试时候选选择。"
+        },
+        {
+          "id": "2607.20061",
+          "rank": 4,
+          "score": 90,
+          "reason_zh": "先指向再跟踪的VLA范式，图像空间检测替代抽象潜在推理，南科大×腾讯×北大",
+          "tags": [
+            "VLA",
+            "具身智能",
+            "导航",
+            "开源"
+          ],
+          "title": "ReferTrack: Referring Then Tracking for Embodied Visual Tracking",
+          "authors": [
+            "Hanjing Ye",
+            "Tianle Zeng",
+            "Jiazhao Zhang",
+            "Shaoan Wang",
+            "Zibo Zhang",
+            "Weisi Situ",
+            "Yuchen Zhou",
+            "Yonggen Ling",
+            "Hong Zhang"
+          ],
+          "abstract": "Embodied visual tracking (EVT) requires a mobile agent to continuously follow a specific target described in natural language using only onboard vision. While recent vision-language-action (VLA) policies unify target identification and trajectory planning, their chain-of-thought (CoT) reasoning often operates in abstract spatial latents that are difficult to supervise and weakly aligned with explicit image-space detections. To address this, we introduce ReferTrack, a referring-then-tracking paradigm that grounds EVT using a single forward-facing camera. Our model first selects the target from an indexed set of bounding boxes, then decodes tracking waypoints conditioned on this image-grounded decision. To preserve target motion cues over time, ReferTrack maintains a sliding-window queue of previously selected bounding boxes, injecting their geometric features into the visual history via temporal-viewpoint-bbox indicator (TVBI) tokens. We further enhance target identification by co-training on a custom Refer-QA dataset. On EVT-Bench, ReferTrack achieves state-of-the-art single-view performance with success rates of 89.4%, 73.3%, and 74.1% on the single-target, distracted, and ambiguity tracking splits, respectively -- matching or even surpassing several multi-camera baselines on identification-heavy tasks. Finally, real-world deployments on legged and humanoid robots validate its robust sim-to-real transfer capabilities. Code is available at https://github.com/MedlarTea/referTrack.",
+          "abs_url": "https://arxiv.org/abs/2607.20061",
+          "pdf_url": "https://arxiv.org/pdf/2607.20061v1",
+          "html_url": "https://arxiv.org/html/2607.20061v1",
+          "figures": [
+            "https://arxiv.org/html/2607.20061v1/x1.png",
+            "https://arxiv.org/html/2607.20061v1/x2.png",
+            "https://arxiv.org/html/2607.20061v1/x3.png",
+            "https://arxiv.org/html/2607.20061v1/figures/EVT00.jpg"
+          ],
+          "code_url": "https://github.com/MedlarTea/referTrack",
+          "project_url": null,
+          "code_links": [
+            "https://github.com/MedlarTea/referTrack"
+          ],
+          "project_links": [],
+          "has_code": true,
+          "has_project": false,
+          "venue": null,
+          "comments": null,
+          "submitted": "2026-07-22T12:05:13Z",
+          "updated": "2026-07-22T12:05:13Z",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.RO"
+          ],
+          "title_zh": "ReferTrack：针对具体视觉跟踪的引用然后跟踪",
+          "abstract_zh": "体现视觉跟踪（EVT）要求移动代理仅使用机载视觉连续跟踪以自然语言描述的特定目标。虽然最近的视觉-语言-动作（VLA）策略统一了目标识别和轨迹规划，但它们的思想链（CoT）推理通常在抽象的空间潜伏中进行，这些潜伏难以监督，并且与显式图像空间检测的一致性较弱。为了解决这个问题，我们引入了 ReferTrack，这是一种先参考后跟踪的范例，它使用单个前置摄像头来实现 EVT。我们的模型首先从一组索引的边界框中选择目标，然后根据该基于图像的决策解码跟踪路径点。为了随着时间的推移保留目标运动线索，ReferTrack 维护先前选择的边界框的滑动窗口队列，通过时间视点 bbox 指示器 (TVBI) 标记将其几何特征注入视觉历史记录。我们通过在自定义 Refer-QA 数据集上进行联合训练来进一步增强目标识别。在 EVT-Bench 上，ReferTrack 实现了最先进的单视图性能，在单目标、分散注意力和模糊性跟踪分割上的成功率分别为 89.4%、73.3% 和 74.1%，在识别繁重的任务上匹配甚至超过了多个多摄像头基线。最后，在腿式和人形机器人上的实际部署验证了其强大的模拟到真实传输能力。代码可在 https://github.com/MedlarTea/referTrack 获取。"
+        },
+        {
+          "id": "2607.19530",
+          "rank": 7,
+          "score": 85,
+          "reason_zh": "首个开源低成本自主导盲机器狗，2K美元实现室内外导航，提交CoRL 2026",
+          "tags": [
+            "机器人",
+            "导航",
+            "开源"
+          ],
+          "title": "Milo, a Fully Autonomous Indoor/Outdoor Robotic Guide Dog",
+          "authors": [
+            "Florian Golemo",
+            "Joanna Wolski",
+            "Joel Ruben Antony Moniz",
+            "Christopher Pal"
+          ],
+          "abstract": "Many Blind and Low-Vision (BLV) people rely on guide dogs for moment-to-moment navigation, such as staying on path and avoiding obstacles and pedestrians. However, guide dogs are expensive to acquire and maintain (approximately \\$50k USD plus ongoing costs), often involve long waiting lists, and have relatively short life expectancies. While robot guide dogs offer a promising alternative, existing approaches exploring this idea suffer from several drawbacks: They often lack the autonomy required for real-world deployment, relying on prior 3D scans of the environment, external computation, or limited awareness of the handler. In this work, we present Milo, the first open-source, low-cost (approximately \\$2k USD) robotic guide dog platform capable of fulfilling the basic collaborative navigation role expected of a guide dog. Milo is fully autonomous, requiring no a priori knowledge of the environment, completely self-contained with all computation performed onboard, and suitable for both indoor and outdoor navigation while avoiding obstacles and pedestrians. Our system consists of a modified Unitree Go2 robot (equipped with onboard compute, sensors, and a handle), a perception stack combining voxel mapping with floor, obstacle, and pedestrian detection, and a navigation stack based on an obstacle-avoidance policy trained in a custom bird's-eye-view simulator. We evaluate Milo in real indoor and outdoor obstacle courses and compare it against a costmap-based baseline, demonstrating smoother navigation and fewer handler collisions. To maximize accessibility for BLV users, we release both the robot hardware instructions and the complete software stack as open source.",
+          "abs_url": "https://arxiv.org/abs/2607.19530",
+          "pdf_url": "https://arxiv.org/pdf/2607.19530v1",
+          "html_url": "https://arxiv.org/html/2607.19530v1",
+          "figures": [
+            "https://arxiv.org/html/2607.19530v1/figs/cover-v2.jpg",
+            "https://arxiv.org/html/2607.19530v1/figs/system-v3.png",
+            "https://arxiv.org/html/2607.19530v1/figs/method-joanna-v2c.png",
+            "https://arxiv.org/html/2607.19530v1/figs/costmap8.png"
+          ],
+          "code_url": null,
+          "project_url": "https://fgolemo.github.io/milo",
+          "code_links": [],
+          "project_links": [
+            "https://fgolemo.github.io/milo"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": null,
+          "comments": "Submitted to CoRL 2026. The Milo project website is available here: https://fgolemo.github.io/milo",
+          "submitted": "2026-07-21T19:19:23Z",
+          "updated": "2026-07-21T19:19:23Z",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.RO"
+          ],
+          "title_zh": "Milo，完全自主的室内/室外机器人导盲犬",
+          "abstract_zh": "许多盲人和低视力 (BLV) 人士依靠导盲犬进行即时导航，例如保持在道路上并避开障碍物和行人。然而，导盲犬的获取和维护成本高昂（大约 5 万美元加上持续成本），通常需要很长的等待名单，并且预期寿命相对较短。虽然机器人导盲犬提供了一种有前途的替代方案，但探索这一想法的现有方法存在几个缺点：它们通常缺乏现实世界部署所需的自主性，依赖于先前的环境 3D 扫描、外部计算或处理程序的有限意识。在这项工作中，我们展示了 Milo，这是第一个开源、低成本（约 2000 美元）的机器人导盲犬平台，能够履行导盲犬的基本协作导航角色。 Milo 是完全自主的，不需要先验环境知识，完全独立，所有计算都在船上执行，适合室内和室外导航，同时避开障碍物和行人。我们的系统由改进的 Unitree Go2 机器人（配备机载计算、传感器和手柄）、将体素映射与地板、障碍物和行人检测相结合的感知堆栈以及基于在自定义鸟瞰模拟器中训练的避障策略的导航堆栈组成。我们在真实的室内和室外障碍训练场中评估 Milo，并将其与基于成本图的基线进行比较，展示出更流畅的导航和更少的处理程序碰撞。为了最大限度地提高 BLV 用户的可访问性，我们以开源方式发布了机器人硬件指令和完整的软件堆栈。"
+        }
+      ]
+    },
+    {
+      "id": "vlm",
+      "name": "VLM / LLM",
+      "papers": []
+    }
+  ]
+}

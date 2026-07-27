@@ -1,0 +1,1718 @@
+{
+  "date": "2026-07-24",
+  "total_candidates": 125,
+  "total_selected": 34,
+  "categories": [
+    {
+      "id": "worldmodel",
+      "name": "世界模型&视频/场景生成模型",
+      "papers": [
+        {
+          "id": "2607.21522",
+          "rank": 1,
+          "score": 93,
+          "reason_zh": "用基础模型构建Agentic系统，从语言描述生成物理真实的4D动态世界",
+          "tags": [
+            "世界模型",
+            "生成模型",
+            "闭环仿真"
+          ],
+          "title": "GS-Agent: Creating 4D Physical Worlds With Generative Simulation",
+          "authors": [
+            "Hongxin Zhang",
+            "Chunru Lin",
+            "Junyan Li",
+            "Zhou Xian",
+            "Tsun-Hsuan Wang",
+            "Chuang Gan"
+          ],
+          "abstract": "Creating dynamic and physically realistic 4D worlds from natural language descriptions is both fascinating and challenging. Traditional computer graphics methods rely on manual creation, requiring extensive human effort to fine-tune materials, motions, and visual fidelity. Recent advances in generative foundation models have sparked interest in learning to generate such 4D worlds from large-scale data; however, existing methods still struggle to ensure physical plausibility and controllability. In this work, we take a different path by leveraging foundation models to construct an agentic system that emulates how humans traditionally create 4D worlds, yet automates the entire process. We present GS-Agent, an end-to-end multi-agent framework that integrates physics engines in the loop to generate realistic, dynamic, and controllable 4D physical worlds from natural language. Inspired by how humans build 4D worlds, GS-Agent decomposes the task into entity management, covering 3D asset curation, material tuning, placement, and motion control, and rendering configuration, including camera and lighting manipulation. Multiple agents with distinct expertise interact with the physics engine via code, seek multimodal feedback, and collaborate to iteratively construct 4D worlds that align with the given descriptions. Experimental results show that GS-Agent effectively converts natural language into diverse and physically plausible 4D worlds exhibiting rich interactions among liquids, deformable objects, and rigid bodies, while achieving cinematic camera and lighting control. We envision GS-Agent as a foundation for a new paradigm in 4D world generation, empowering creative content creation and physical AI. Project page at https://umass-embodied-agi.github.io/gs-agent/",
+          "abs_url": "https://arxiv.org/abs/2607.21522",
+          "pdf_url": "https://arxiv.org/pdf/2607.21522v1",
+          "html_url": "https://arxiv.org/html/2607.21522v1",
+          "figures": [
+            "https://arxiv.org/html/2607.21522v1/x2.png",
+            "https://arxiv.org/html/2607.21522v1/x3.png",
+            "https://arxiv.org/html/2607.21522v1/x4.png",
+            "https://arxiv.org/html/2607.21522v1/x5.png"
+          ],
+          "code_url": null,
+          "project_url": "https://umass-embodied-agi.github.io/gs-agent/",
+          "code_links": [],
+          "project_links": [
+            "https://umass-embodied-agi.github.io/gs-agent/"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": null,
+          "comments": "",
+          "submitted": "2026-07-23T17:04:36Z",
+          "updated": "2026-07-23T17:04:36Z",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.AI",
+            "cs.CL",
+            "cs.CV",
+            "cs.RO"
+          ],
+          "title_zh": "GS-Agent：通过生成模拟创建 4D 物理世界",
+          "abstract_zh": "根据自然语言描述创建动态且物理逼真的 4D 世界既令人着迷又充满挑战。传统的计算机图形方法依赖于手动创建，需要大量的人力来微调材质、运动和视觉保真度。生成基础模型的最新进展激发了人们对学习从大规模数据生成此类 4D 世界的兴趣；然而，现有方法仍然难以确保物理合理性和可控性。在这项工作中，我们采取了不同的路径，利用基础模型构建一个代理系统，模拟人类传统上如何创建 4D 世界，同时实现整个过程的自动化。我们提出了 GS-Agent，这是一个端到端的多代理框架，它将物理引擎集成到循环中，以从自然语言生成现实、动态且可控的 4D 物理世界。受到人类如何构建 4D 世界的启发，GS-Agent 将任务分解为实体管理，涵盖 3D 资产管理、材质调整、放置和运动控制以及渲染配置（包括相机和照明操作）。具有不同专业知识的多个代理通过代码与物理引擎交互，寻求多模式反馈，并协作迭代构建与给定描述相符的 4D 世界。实验结果表明，GS-Agent 有效地将自然语言转换为多样化且物理上合理的 4D 世界，展示了液体、可变形物体和刚体之间丰富的交互，同时实现了电影摄影和灯光控制。我们设想 GS-Agent 作为 4D 世界生成新范式的基础，赋能创意内容创建和物理人工智能。项目页面：https://umass-embodied-agi.github.io/gs-agent/",
+          "affiliations": [
+            "University of Massachusetts Amherst"
+          ]
+        },
+        {
+          "id": "2607.21594",
+          "rank": 2,
+          "score": 92,
+          "reason_zh": "多智能体视频扩散引入世界状态寄存器，跨视角维护共享世界信息",
+          "tags": [
+            "世界模型",
+            "生成模型"
+          ],
+          "title": "Streaming Multi-Agent Autoregressive Diffusion Model with World State Registers",
+          "authors": [
+            "Sicheng Mo",
+            "Yuheng Li",
+            "Ziyang Leng",
+            "Krishna Kumar Singh",
+            "Bolei Zhou"
+          ],
+          "abstract": "Multi-agent interactive world models should not only generate consistent observations, but also maintain world states that persist across agents and evolve across views. Existing autoregressive video diffusion pipelines carry forward observation history as conditioning context, which makes shared state difficult to maintain in multi-agent and multi-view settings. We present WorldWeaver (W^2), a streaming multi-agent video diffusion model that augments rollout with cross-agent world state registers: learnable tokens that store shared world information, track individual agent status, and are dynamically updated after each generated chunk. We ground these registers with supervision signals spanning individual agent status, global state views including bird's-eye views, and scene text. We further improve the architecture with a Mixture-of-Transformers design that uses separate weights for world state modeling and visual frame modeling. Extensive experiments in two-agent Minecraft video generation show that explicit world-state modeling improves logical consistency and generation quality.",
+          "abs_url": "https://arxiv.org/abs/2607.21594",
+          "pdf_url": "https://arxiv.org/pdf/2607.21594v1",
+          "html_url": "https://arxiv.org/html/2607.21594v1",
+          "figures": [
+            "https://arxiv.org/html/2607.21594v1/x1.png",
+            "https://arxiv.org/html/2607.21594v1/x2.png",
+            "https://arxiv.org/html/2607.21594v1/x3.png",
+            "https://arxiv.org/html/2607.21594v1/figures/world_score_plot_v2.png"
+          ],
+          "code_url": null,
+          "project_url": "https://vail-ucla.github.io/worldweaver/",
+          "code_links": [],
+          "project_links": [
+            "https://vail-ucla.github.io/worldweaver/"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": null,
+          "comments": "Project page: https://vail-ucla.github.io/worldweaver/",
+          "submitted": "2026-07-23T17:59:58Z",
+          "updated": "2026-07-23T17:59:58Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "具有世界状态寄存器的流式多智能体自回归扩散模型",
+          "abstract_zh": "多智能体交互世界模型不仅应该生成一致的观察结果，还应该维持跨智能体持续存在并跨视图演变的世界状态。现有的自回归视频扩散管道将观察历史记录作为调节上下文，这使得在多代理和多视图设置中难以维护共享状态。我们提出了 WorldWeaver (W^2)，一种流式多智能体视频传播模型，它通过跨智能体世界状态寄存器增强了部署：可学习的令牌存储共享世界信息、跟踪单个智能体状态，并在每个生成块后动态更新。我们将这些寄存器与涵盖个体代理状态、全局状态视图（包括鸟瞰图）和场景文本的监督信号结合起来。我们通过混合变形金刚设计进一步改进了架构，该设计使用单独的权重进行世界状态建模和视觉框架建模。双智能体 Minecraft 视频生成的大量实验表明，显式世界状态建模提高了逻辑一致性和生成质量。",
+          "affiliations": [
+            "University of California, Los Angeles",
+            "Adobe Research"
+          ]
+        },
+        {
+          "id": "2607.21553",
+          "rank": 3,
+          "score": 90,
+          "reason_zh": "混合线性-Softmax注意力+块注意力残差，5B/14B视频DiT单卡跑720p",
+          "tags": [
+            "生成模型",
+            "世界模型",
+            "开源"
+          ],
+          "title": "SANA-Video 2.0: Hybrid Linear Attention with Attention Residuals for Efficient Video Generation",
+          "authors": [
+            "Junsong Chen",
+            "Jincheng Yu",
+            "Yitong Li",
+            "Shuchen Xue",
+            "Haozhe Liu",
+            "Jingyu Xin",
+            "Yuyang Zhao",
+            "Tian Ye",
+            "Zhangjie Wu",
+            "Zian Wang",
+            "Daquan Zhou",
+            "Ping Luo",
+            "Song Han",
+            "Enze Xie"
+          ],
+          "abstract": "We introduce SANA-Video 2.0, a hybrid video diffusion transformer instantiated at 5B and 14B scales under a unified architecture. Designed to generate high-quality video up to 720p on a single GPU, SANA-Video 2.0 matches full-softmax video DiTs in quality while retaining the favorable long-sequence scaling of linear attention. To avoid quadratic attention throughout, Hybrid Linear-Softmax Attention combines gated linear attention for O(N)-dominated mixing with periodic gated-softmax anchors at a 3:1 ratio, restoring the full-rank token interactions that pure linear attention lacks. To propagate these refreshed representations across depth, Block Attention Residuals (AttnRes) route completed block summaries into later linear layers, enabling anchor-feature reuse and boosting deep-layer effective rank by ~12%. Through from-scratch training, SANA-Video 2.0 learns the complete hybrid directly rather than linearizing pretrained models, with reduced-resolution proxy studies establishing 25% softmax as the optimal quality-efficiency trade-off. With 40-step sampling, SANA-Video 2.0 achieves a VBench score of 84.30 in 13.2s at 480p on a single H100, remaining competitive with far larger softmax video DiTs at a fraction of the latency. Its compiled DiT forward pass is 3.2x faster than a matched full-softmax baseline at 720p/60s, a gap that expands with video duration. Furthermore, full-stack Sol-Engine optimization (kernel fusion, caching, and sparse attention) accelerates this hardware-friendly backbone by a further 3.58x, bringing the 5B pipeline to 13.06s at 720p/5s and making it 120x faster than Wan 2.2-A14B on one H100. Overall, our hybrid design recovers softmax-level expressiveness at substantially reduced cost, unlocking scalable long, high resolution video generation.",
+          "abs_url": "https://arxiv.org/abs/2607.21553",
+          "pdf_url": "https://arxiv.org/pdf/2607.21553v1",
+          "html_url": "https://arxiv.org/html/2607.21553v1",
+          "figures": [
+            "https://arxiv.org/html/2607.21553v1/x3.png",
+            "https://arxiv.org/html/2607.21553v1/x4.png",
+            "https://arxiv.org/html/2607.21553v1/x5.png",
+            "https://arxiv.org/html/2607.21553v1/x6.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": "13 pages, 9 figures, 5 tables",
+          "submitted": "2026-07-23T17:36:05Z",
+          "updated": "2026-07-23T17:36:05Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "SANA-Video 2.0：具有注意力残差的混合线性注意力，可实现高效视频生成",
+          "abstract_zh": "我们推出 SANA-Video 2.0，这是一种在统一架构下以 5B 和 14B 规模实例化的混合视频扩散转换器。 SANA-Video 2.0 旨在在单个 GPU 上生成高达 720p 的高质量视频，其质量可与全 softmax 视频 DiT 相匹配，同时保留线性注意力有利的长序列缩放。为了避免整个过程中的二次注意力，混合线性 Softmax 注意力将 O(N) 主导混合的门控线性注意力与周期性门控 Softmax 锚点以 3:1 的比例结合起来，恢复纯线性注意力所缺乏的全秩令牌交互。为了跨深度传播这些刷新的表示，块注意力残差 (AttnRes) 将完成的块摘要路由到后面的线性层，从而实现锚点特征重用并将深层有效排名提高约 12%。通过从头开始训练，SANA-Video 2.0 直接学习完整的混合模型，而不是线性化预训练模型，并通过降低分辨率的代理研究确定 25% softmax 作为最佳质量效率权衡。通过 40 步采样，SANA-Video 2.0 在单个 H100 上以 480p 的速度在 13.2 秒内实现了 84.30 的 VBench 分数，与更大的 softmax 视频 DiT 相比，其延迟仅为一小部分。其编译的 DiT 前向传播速度比 720p/60s 下匹配的全 softmax 基线快 3.2 倍，这一差距随着视频时长的增加而扩大。此外，全栈 Sol-Engine 优化（内核融合、缓存和稀疏注意力）将这种硬件友好型骨干网的速度进一步提高了 3.58 倍，使 5B 管道在 720p/5 秒时达到 13.06 秒，比 H100 上的 Wan 2.2-A14B 快 120 倍。总体而言，我们的混合设计以大幅降低的成本恢复了 softmax 级别的表现力，解锁了可扩展的长、高分辨率视频生成。",
+          "affiliations": []
+        },
+        {
+          "id": "2607.20940",
+          "rank": 4,
+          "score": 85,
+          "reason_zh": "按噪声等级自适应空间粒度，流式视频生成窗口token数降低45%",
+          "tags": [
+            "生成模型",
+            "世界模型"
+          ],
+          "title": "Ms. Forcing: Efficient Streaming Video Generation with Multi-Scale Patchification and Attention",
+          "authors": [
+            "Zekun Li",
+            "Xiaoyan Cong",
+            "Hongyu Li",
+            "Zhiyang Dou",
+            "Chuan Guo",
+            "Abhay Mittal",
+            "Sizhe An",
+            "Srinath Sridhar"
+          ],
+          "abstract": "Streaming video diffusion models have made substantial progress toward interactive and dynamic world simulation, but the nested autoregressive and denoising loops of conventional next-frame generation hinder real-time deployment. Recent rolling-window methods pipeline denoising across multiple consecutive frames at different noise levels, improving throughput and long-horizon stability. However, they tokenize every state at the same fine spatial granularity, leaving substantial noise-dependent redundancy in the joint denoising window. We propose Ms.Forcing, an efficient streaming video generation paradigm that adapts spatial granularity to each state's noise level. Its Multi-Scale Patchification (MSP) assigns coarser patches to noisier states, reducing the active-window token count by 45%, while Multi-Scale Self-Attention (MSSA) matches the density of visible non-sink keys and values to each query scale to further reduce attention cost. Because both schedules are fixed by window position, Ms.Forcing retains a static, hardware-friendly computation graph. We further introduce Homogeneous-Noise-Level DMD (H-DMD), which assembles each fake video from clean predictions sharing the same source noise level, thereby reducing the mismatch between DMD training sequences and inference-time rollouts. The multi-scale design helps offset the additional training cost of backpropagating through overlapping windows. We include both quantitative and qualitative experiments to show that Ms.Forcing reaches 22.84 FPS on a single H200 GPU, 39.6% faster than Rolling Forcing, while significantly improving VBench scores in both short video and long video generation setting.",
+          "abs_url": "https://arxiv.org/abs/2607.20940",
+          "pdf_url": "https://arxiv.org/pdf/2607.20940v1",
+          "html_url": "https://arxiv.org/html/2607.20940v1",
+          "figures": [
+            "https://arxiv.org/html/2607.20940v1/x1.png",
+            "https://arxiv.org/html/2607.20940v1/x2.png",
+            "https://arxiv.org/html/2607.20940v1/x3.png",
+            "https://arxiv.org/html/2607.20940v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": "",
+          "submitted": "2026-07-23T05:35:31Z",
+          "updated": "2026-07-23T05:35:31Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "Ms. Forcing：通过多尺度修补和注意力机制实现高效流媒体视频生成",
+          "abstract_zh": "流视频扩散模型在交互式和动态世界模拟方面取得了实质性进展，但传统下一帧生成的嵌套自回归和去噪循环阻碍了实时部署。最近的滚动窗口方法在不同噪声水平的多个连续帧上进行管道降噪，从而提高吞吐量和长范围稳定性。然而，它们以相同的精细空间粒度标记每个状态，从而在联合去噪窗口中留下大量与噪声相关的冗余。我们提出了 Ms.Forcing，一种高效的流媒体视频生成范例，可以使空间粒度适应每个状态的噪声水平。其多尺度补丁化 (MSP) 将较粗的补丁分配给噪声较大的状态，从而将活动窗口令牌计数减少 45%，而多尺度自注意力 (MSSA) 将可见非接收器键和值​​的密度与每个查询尺度相匹配，以进一步降低注意力成本。由于两个计划均由窗口位置固定，因此 Ms.Forcing 保留了静态的、硬件友好的计算图。我们进一步引入了同质噪声级 DMD (H-DMD)，它从共享相同源噪声级的干净预测中组装每个假视频，从而减少 DMD 训练序列和推理时间推出之间的不匹配。多尺度设计有助于抵消通过重叠窗口反向传播的额外训练成本。我们进行的定量和定性实验表明，Ms.Forcing 在单个 H200 GPU 上达到了 22.84 FPS，比 Rolling Forcing 快 39.6%，同时在短视频和长视频生成设置中显着提高了 VBench 分数。",
+          "affiliations": [
+            "Abhay Mittal",
+            "Brown University",
+            "Massachusetts Institute of Technology",
+            "Meta"
+          ]
+        },
+        {
+          "id": "2607.20653",
+          "rank": 5,
+          "score": 82,
+          "reason_zh": "可微MPM模拟器+神经网络残差校正，实现材料感知的形变世界模型",
+          "tags": [
+            "世界模型",
+            "机器人"
+          ],
+          "title": "PhysCoRe: Physics-Corrected Residual World Models for Material-Aware Deformable Dynamics",
+          "authors": [
+            "Haocheng Yin",
+            "Shuohan Tao",
+            "Yongsheng Chen",
+            "Lu Gan"
+          ],
+          "abstract": "Predicting how deformable objects evolve under robotic manipulation is a longstanding challenge. Existing approaches typically rely on per-object optimization to fit material parameters, which can be slow and cannot generalize, while end-to-end learned alternatives extrapolate poorly and often violate basic physical structure. We present PhysCoRe, a physics-corrected residual world model that couples a differentiable Material Point Method (MPM) simulator with two feed-forward neural networks. A material refinement module, Material from Motion (MfM), infers per-particle elasticity from visual observations, grounding the simulator in object-specific physics. A residual correction module, Residual from Dynamics (RfD), learns the discrepancy and predicts corrections to the simulator's internal dynamics, absorbing systematic biases that the analytical model cannot capture. This design also supports online material identification on novel objects. MfM adapts from limited interactions, and its predictive uncertainty steers further exploration toward the regions where its estimate is least confident. Experiments on real deformable-object manipulation sequences show that PhysCoRe outperforms state-of-the-art baselines in prediction accuracy, and that its predicted confidence forms a reliable distribution across the object's geometry, providing a natural signal for future confidence-guided exploration.",
+          "abs_url": "https://arxiv.org/abs/2607.20653",
+          "pdf_url": "https://arxiv.org/pdf/2607.20653v1",
+          "html_url": "https://arxiv.org/html/2607.20653v1",
+          "figures": [
+            "https://arxiv.org/html/2607.20653v1/x1.png",
+            "https://arxiv.org/html/2607.20653v1/x2.png",
+            "https://arxiv.org/html/2607.20653v1/x3.png",
+            "https://arxiv.org/html/2607.20653v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": "",
+          "submitted": "2026-07-22T18:25:57Z",
+          "updated": "2026-07-22T18:25:57Z",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.CV",
+            "cs.LG",
+            "cs.RO"
+          ],
+          "title_zh": "PhysCoRe：用于材料感知可变形动力学的物理校正残差世界模型",
+          "abstract_zh": "预测可变形物体在机器人操纵下如何演化是一个长期的挑战。现有的方法通常依赖于每个对象的优化来适应材料参数，这可能很慢并且无法泛化，而端到端学习的替代方案推断效果很差并且经常违反基本的物理结构。我们提出了 PhysCoRe，这是一种经过物理校正的残差世界模型，它将可微分质点法 (MPM) 模拟器与两个前馈神经网络结合起来。材料细化模块“运动材料”(MfM) 从视觉观察中推断出每个粒子的弹性，使模拟器基于特定于对象的物理原理。残差校正模块“动力学残差”(RfD) 可了解差异并预测对模拟器内部动态的校正，吸收分析模型无法捕获的系统偏差。该设计还支持新奇物体的在线材质识别。 MfM 适应有限的相互作用，其预测不确定性引导进一步探索其估计最不可信的区域。对真实可变形对象操作序列的实验表明，PhysCoRe 在预测精度方面优于最先进的基线，并且其预测的置信度在对象的几何形状上形成了可靠的分布，为未来的置信引导探索提供了自然信号。",
+          "affiliations": []
+        },
+        {
+          "id": "2607.21580",
+          "rank": 6,
+          "score": 80,
+          "reason_zh": "图结构条件控制多物体交互的视频生成，支持遮挡下的精确多主体控制",
+          "tags": [
+            "生成模型",
+            "世界模型"
+          ],
+          "title": "GraphVid: Interactive Graph-Controllable Video Generation",
+          "authors": [
+            "Vedant Shah",
+            "Onkar Susladkar",
+            "Tushar Prakash",
+            "Kiet Nguyen",
+            "Tianjio Yu",
+            "Adheesh Juvekar",
+            "Muntasir Waheed",
+            "Ismini Lourentzou"
+          ],
+          "abstract": "Controllable video generation remains challenging due to the difficulty of specifying precise multi-object interactions using text prompts or motion-control inputs that primarily constrain pixel movement. In practice, trajectory-based control often requires users to draw accurate tracks for multiple objects, which scales poorly with scene complexity and becomes ambiguous under occlusion or overlap. To enable flexible yet precise multi-subject control, we introduce $\\textbf{GraphVid}$, a graph-conditioned image-to-video generation model that enables interactive control through structured interaction graphs. We further curate $\\textbf{GraphVid-Bench}$, a large-scale interaction-centric video dataset with structured relational annotations to enable training of interaction-aware video generation models. Despite using substantially less training data and fewer trainable parameters than prior motion-control methods, GraphVid delivers strong controllability and video quality. Compared with Motion-I2V, GraphVid reduces FID by up to 39.9% and FVD by 37.6%, while improving PSNR (9.87=>15.98) and SSIM (0.38=>0.61). Our results highlight the potential of structured semantic interfaces as a powerful paradigm for controllable video generation.",
+          "abs_url": "https://arxiv.org/abs/2607.21580",
+          "pdf_url": "https://arxiv.org/pdf/2607.21580v1",
+          "html_url": "",
+          "figures": [],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": "",
+          "submitted": "2026-07-23T17:56:30Z",
+          "updated": "2026-07-23T17:56:30Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.AI",
+            "cs.CV"
+          ],
+          "title_zh": "GraphVid：交互式图形可控视频生成",
+          "abstract_zh": "由于使用主要限制像素移动的文本提示或运动控制输入来指定精确的多对象交互非常困难，因此可控视频生成仍然具有挑战性。在实践中，基于轨迹的控制通常要求用户为多个对象绘制准确的轨迹，这随着场景复杂性的缩放而变化，并且在遮挡或重叠的情况下变得模糊。为了实现灵活而精确的多主体控制，我们引入了 $\\textbf{GraphVid}$，这是一种图条件图像到视频生成模型，可通过结构化交互图实现交互控制。我们进一步策划了 $\\textbf{GraphVid-Bench}$，这是一个以交互为中心的大规模视频数据集，具有结构化关系注释，可以训练交互感知视频生成模型。尽管与之前的运动控制方法相比，使用的训练数据和可训练参数要少得多，但 GraphVid 仍提供了强大的可控性和视频质量。与Motion-I2V相比，GraphVid将FID降低高达39.9%，将FVD降低37.6%，同时提高PSNR（9.87=>15.98）和SSIM（0.38=>0.61）。我们的结果凸显了结构化语义接口作为可控视频生成的强大范例的潜力。",
+          "affiliations": []
+        },
+        {
+          "id": "2607.21027",
+          "rank": 7,
+          "score": 78,
+          "reason_zh": "多身份定制视频生成框架，用多模态对齐解决多身份场景的身份混淆",
+          "tags": [
+            "生成模型"
+          ],
+          "title": "GroupVideo: Multi-Identity Customized Text-to-Video Generation",
+          "authors": [
+            "Xinyang Song",
+            "Libin Wang",
+            "Jianxin Sun",
+            "Qi Li",
+            "Dandan Zheng",
+            "JingDong Chen",
+            "Zhenan Sun"
+          ],
+          "abstract": "Current identity customized video generation methodologies are predominantly limited to single-identity scenarios, as the lack of explicit identity separation mechanisms often leads to identity confusion in multi-identity settings. Existing multi-identity approaches, which directly extend single-identity frameworks by concatenating face images as input conditions, frequently result in unnatural facial expressions and motions, manifesting as the \"copy-paste\" phenomenon. To overcome these limitations, we introduce GroupVideo, a novel framework that leverages multiple individual photographs to generate identitycustomized video. Built upon Video Diffusion Transformers, GroupVideo incorporates multimodal identity alignment: visual alignment jointly encodes multiple face images to provide robust identity references, while semantic alignment introduces a semantic perceiver to enhance the naturalness of motions. An ID localization module with spatial guidance is introduced to address identity blending and enhance identity fidelity, along with bounding box constraints and mask regularization loss, to focus on facial regions and improve training efficiency. In response to the shortage of multi-ID video datasets, we have curated a comprehensive high-quality dataset of 20,000 videos, thereby establishing a crucial resource to advance future research in multi-ID video generation. Extensive experiments demonstrate that GroupVideo outperforms existing methods in generating multi-character videos with consistent identities and natural motions.",
+          "abs_url": "https://arxiv.org/abs/2607.21027",
+          "pdf_url": "https://arxiv.org/pdf/2607.21027v1",
+          "html_url": "https://arxiv.org/html/2607.21027v1",
+          "figures": [
+            "https://arxiv.org/html/2607.21027v1/x1.png",
+            "https://arxiv.org/html/2607.21027v1/x2.png",
+            "https://arxiv.org/html/2607.21027v1/x3.png",
+            "https://arxiv.org/html/2607.21027v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": "",
+          "submitted": "2026-07-23T08:09:04Z",
+          "updated": "2026-07-23T08:09:04Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "GroupVideo：多身份定制文本转视频生成",
+          "abstract_zh": "当前的身份定制视频生成方法主要局限于单一身份场景，因为缺乏明确的身份分离机制往往会导致多身份环境中的身份混淆。现有的多身份方法通过连接人脸图像作为输入条件来直接扩展单身份框架，经常导致不自然的面部表情和动作，表现为“复制粘贴”现象。为了克服这些限制，我们引入了 GroupVideo，这是一种新颖的框架，它利用多张单独的照片来生成身份定制视频。 GroupVideo 基于视频扩散变压器构建，结合了多模态身份对齐：视觉对齐联合编码多个人脸图像以提供强大的身份参考，而语义对齐引入语义感知器以增强运动的自然度。引入具有空间引导的身份定位模块来解决身份混合并增强身份保真度，以及边界框约束和掩模正则化损失，以专注于面部区域并提高训练效率。针对多 ID 视频数据集的短缺，我们整理了包含 20,000 个视频的综合高质量数据集，从而为推进多 ID 视频生成的未来研究奠定了重要的资源。大量实验表明，GroupVideo 在生成具有一致身份和自然动作的多角色视频方面优于现有方法。",
+          "affiliations": []
+        }
+      ]
+    },
+    {
+      "id": "reconstruction",
+      "name": "3D/4D 重建与生成",
+      "papers": [
+        {
+          "id": "2607.21416",
+          "rank": 1,
+          "score": 92,
+          "reason_zh": "实时3DGS-SLAM实现大规模室外建图，流式稠密化+空间分解解耦追踪与建图",
+          "tags": [
+            "3D重建",
+            "3DGS",
+            "顶会",
+            "开源"
+          ],
+          "title": "GLAM-SLAM: Real-time Gaussian Large-scale Mapping via Flow Densification and Spatial Decomposition",
+          "authors": [
+            "Panagiotis Mermigkas",
+            "Argyris Manetas",
+            "Petros Maragos"
+          ],
+          "abstract": "Existing Gaussian-splatting-based monocular Simultaneous Localization and Mapping (SLAM) systems are either tailored to short sequences, are not real-time, or suffer from prohibitive GPU memory requirements, limiting their applicability in realistic, long-horizon scenarios. To address this, we present GLAM-SLAM, a real-time, decoupled Gaussian-splatting SLAM system designed for large-scale outdoor scenes. We ensure lightweight tracking using a robust, feature-based SLAM frontend, while for mapping, we adopt a structured, sparse anchor grid representation that ensures scalable operation and maintains scene coherence across long-term sequences. To satisfy the dense initialization requirements of 3D Gaussian Splatting (3DGS), we introduce a geometry-based flow-densification anchoring strategy using epipolar constraints. Furthermore, by treating mapping as a multi-scene problem, we propose a scene-partitioning strategy that introduces a strong spatial inductive bias via MLP initializations to generate localized Gaussians. We evaluate our system on the challenging, long-sequence KITTI Odometry, Oxford RobotCar, and M'alaga datasets. Extensive ablations and comparisons demonstrate a 15% improvement in reconstruction quality over the second-best performer, while maintaining real-time performance and the ability to scale to longer sequences. Code is publicly available for the benefit of the community.",
+          "abs_url": "https://arxiv.org/abs/2607.21416",
+          "pdf_url": "https://arxiv.org/pdf/2607.21416v1",
+          "html_url": "https://arxiv.org/html/2607.21416v1",
+          "figures": [
+            "https://arxiv.org/html/2607.21416v1/images/fig1_novel_views/kitti06_novel_view.jpg",
+            "https://arxiv.org/html/2607.21416v1/images/fig1_novel_views/oxford02_novel_view.jpg",
+            "https://arxiv.org/html/2607.21416v1/x2.png",
+            "https://arxiv.org/html/2607.21416v1/images/fig3_contributions/kitti00/image_rgb_295.jpg"
+          ],
+          "code_url": "https://github.com/pmermigkas/GLAM-SLAM/",
+          "project_url": "https://glamslam.github.io/",
+          "code_links": [
+            "https://github.com/pmermigkas/GLAM-SLAM/"
+          ],
+          "project_links": [
+            "https://glamslam.github.io/"
+          ],
+          "has_code": true,
+          "has_project": true,
+          "venue": null,
+          "comments": "Accepted to IROS 2026. Project page: https://glamslam.github.io/ Code: https://github.com/pmermigkas/GLAM-SLAM/",
+          "submitted": "2026-07-23T15:22:42Z",
+          "updated": "2026-07-23T15:22:42Z",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.CV",
+            "cs.RO"
+          ],
+          "title_zh": "GLAM-SLAM：通过流致密化和空间分解进行实时高斯大规模建图",
+          "abstract_zh": "现有的基于高斯喷射的单目同步定位与建图 (SLAM) 系统要么是针对短序列定制的，不是实时的，要么是受到过高的 GPU 内存需求的影响，限制了它们在现实、长视野场景中的适用性。为了解决这个问题，我们提出了 GLAM-SLAM，这是一种专为大规模室外场景设计的实时、解耦高斯溅射 SLAM 系统。我们使用强大的、基于特征的 SLAM 前端来确保轻量级跟踪，而对于映射，我们采用结构化的稀疏锚网格表示，以确保可扩展的操作并保持长期序列中的场景连贯性。为了满足 3D 高斯分布 (3DGS) 的密集初始化要求，我们引入了一种使用极线约束的基于几何的流致密化锚定策略。此外，通过将映射视为多场景问题，我们提出了一种场景分区策略，该策略通过 MLP 初始化引入强空间归纳偏差以生成局部高斯。我们在具有挑战性的长序列 KITTI Odometry、Oxford RobotCar 和 M'alaga 数据集上评估我们的系统。广泛的消融和比较表明，与第二好的执行者相比，重建质量提高了 15%，同时保持了实时性能和扩展到更长序列的能力。代码是公开可用的，以造福社区。",
+          "affiliations": []
+        },
+        {
+          "id": "2607.20889",
+          "rank": 2,
+          "score": 88,
+          "reason_zh": "单图→引擎可编辑3D场景，解析物体实例+参数化灯光，UE5数据集训练",
+          "tags": [
+            "3D重建",
+            "生成模型"
+          ],
+          "title": "Engine-Native Editable 3D World Reconstruction with Objects and Lighting",
+          "authors": [
+            "Junhao Chen",
+            "Xinghao Chen",
+            "Henghaofan Zhang",
+            "Zihao Qiao",
+            "Saining Zhang",
+            "Yongzhi Li",
+            "Ruqi Huang",
+            "Sisi Li",
+            "Yimin Sheng",
+            "Jianyi Zhu",
+            "Hao Zhao"
+          ],
+          "abstract": "Editable 3D scene creation requires object instances and lights that can be inspected, moved, and imported into standard engines, yet existing single-image methods largely stop at room-scale geometry, baked/global illumination, or text-driven generation. We introduce Lumera (Light-aware Unified Engine-native Reconstruction and Assembly), a benchmark and reference pipeline for engine-native, light-aware 3D scene parsing from a single image. Lumera-2K is built from 2,513 UE5 projects and provides 3.73M components, 63M object instances, 102.6K engine-native parametric lights, and 95.1K camera views. On this data, Lumera-Box and Lumera-Light adapt VLM to parse object boxes and parametric light tuples (x,y,z,r,g,b,I), which are assembled with per-object mesh reconstruction, HDR environment estimation, and a bounded agentic refinement loop. In a sanitized box benchmark against DetAny3D, SpatialLM, N3D-VLM, and WildDet3D, Lumera-Box obtains the strongest overall detection, geometry, semantic, and layout scores (merged mAP 0.1141, IoU-B 0.2472, F-score 0.2762), while WildDet3D remains stronger on anchor recall. For lights, Lumera-Light recovers almost all non-empty scenes (recall 0.998) but remains limited at individual-light localization (F1 0.209 at 0.5 m); matched lights have median position error 0.261 m, median ΔE2000 4.59, and intensity Pearson r=0.628. These results establish parametric lights as a measurable editable-scene target and expose remaining bottlenecks in relation structure, light recall/intensity, and cross-engine generalization.",
+          "abs_url": "https://arxiv.org/abs/2607.20889",
+          "pdf_url": "https://arxiv.org/pdf/2607.20889v1",
+          "html_url": "https://arxiv.org/html/2607.20889v1",
+          "figures": [
+            "https://arxiv.org/html/2607.20889v1/x1.png",
+            "https://arxiv.org/html/2607.20889v1/x2.png",
+            "https://arxiv.org/html/2607.20889v1/x3.png",
+            "https://arxiv.org/html/2607.20889v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": "https://haidilao0328.github.io/Lumera/",
+          "code_links": [],
+          "project_links": [
+            "https://haidilao0328.github.io/Lumera/"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": null,
+          "comments": "18 pages, 7 figures, Project Page: https://haidilao0328.github.io/Lumera/",
+          "submitted": "2026-07-23T03:26:02Z",
+          "updated": "2026-07-23T03:26:02Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "使用对象和照明进行引擎原生可编辑 3D 世界重建",
+          "abstract_zh": "可编辑的 3D 场景创建需要可以检查、移动和导入到标准引擎中的对象实例和灯光，但现有的单图像方法很大程度上停留在房间规模的几何体、烘焙/全局照明或文本驱动的生成上。我们介绍 Lumera（光感知统一引擎原生重建和组装），这是一个基准和参考管道，用于从单个图像解析引擎原生、光感知 3D 场景。 Lumera-2K 由 2,513 个 UE5 项目构建而成，提供 373 万个组件、6300 万个对象实例、102.6K 引擎原生参数化灯光和 95.1K 摄像机视图。在此数据上，Lumera-Box 和 Lumera-Light 采用 VLM 来解析对象框和参数化光元组 (x,y,z,r,g,b,I)，这些元组通过每个对象的网格重建、HDR 环境估计和有界代理细化循环进行组装。在针对 DetAny3D、SpatialLM、N3D-VLM 和 WildDet3D 的净化框基准测试中，Lumera-Box 获得了最强的整体检测、几何、语义和布局分数（合并 mAP 0.1141、IoU-B 0.2472、F 分数 0.2762），而 WildDet3D 在锚点召回方面仍然更强。对于灯光，Lumera-Light 可以恢复几乎所有非空场景（召回率 0.998），但在单个灯光定位方面仍然受到限制（0.5 m 处的 F1 0.209）；匹配灯的中位位置误差为 0.261 m，中位 ΔE2000 为 4.59，强度 Pearson r=0.628。这些结果将参数化灯光建立为可测量的可编辑场景目标，并暴露了关系结构、灯光回忆/强度和跨引擎泛化方面的剩余瓶颈。",
+          "affiliations": []
+        },
+        {
+          "id": "2607.21023",
+          "rank": 3,
+          "score": 85,
+          "reason_zh": "前馈式水下3D重建，用退化自适应模块在单次前向中输出3D点图与位姿",
+          "tags": [
+            "3D重建",
+            "feed-forward"
+          ],
+          "title": "WAT3R: Feedforward Underwater 3D Reconstruction",
+          "authors": [
+            "Jiayi Xu",
+            "Jiahao Lu",
+            "Ziqiang Zheng",
+            "Yihao Tan",
+            "Yaolong Zhu",
+            "Yuan Liu",
+            "Sai-Kit Yeung"
+          ],
+          "abstract": "Reliable feedforward underwater 3D reconstruction remains challenging due to severe light attenuation and backscattering, which degrade visual quality and disrupt feature consistency across views, leading to inaccurate multi-view geometry. To address this issue, we propose WAT3R, a feed-forward framework for reconstructing 3D scenes directly from underwater images. By leveraging degradation adaptation as a geometry-constrained process, WAT3R integrates a lightweight neural adaptation module to flexibly account for these underwater imaging effects, thereby improving multi-view reconstruction quality. Implemented in a single forward pass, WAT3R directly and efficiently outputs pixel-aligned 3D point maps and camera poses from underwater videos, allowing a high-quality underwater 3D reconstruction. Experiments conducted on the FLSea, SQUID, and USOD10K datasets show that our method consistently outperforms state-of-the-art approaches on 3D reconstruction tasks, including multi-view/monocular depth estimation and camera pose estimation.",
+          "abs_url": "https://arxiv.org/abs/2607.21023",
+          "pdf_url": "https://arxiv.org/pdf/2607.21023v1",
+          "html_url": "https://arxiv.org/html/2607.21023v1",
+          "figures": [
+            "https://arxiv.org/html/2607.21023v1/x1.png",
+            "https://arxiv.org/html/2607.21023v1/x2.png",
+            "https://arxiv.org/html/2607.21023v1/x3.png",
+            "https://arxiv.org/html/2607.21023v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": "",
+          "submitted": "2026-07-23T08:07:43Z",
+          "updated": "2026-07-23T08:07:43Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "WAT3R：前馈水下 3D 重建",
+          "abstract_zh": "由于严重的光衰减和反向散射，可靠的前馈水下 3D 重建仍然具有挑战性，这会降低视觉质量并破坏视图之间的特征一致性，导致多视图几何形状不准确。为了解决这个问题，我们提出了 WAT3R，一种用于直接从水下图像重建 3D 场景的前馈框架。通过利用退化适应作为几何约束过程，WAT3R 集成了轻量级神经适应模块来灵活地考虑这些水下成像效应，从而提高多视图重建质量。 WAT3R 在单次前向传递中实现，直接高效地输出水下视频中像素对齐的 3D 点图和相机姿势，从而实现高质量的水下 3D 重建。在 FLSea、SQUID 和 USOD10K 数据集上进行的实验表明，我们的方法在 3D 重建任务（包括多视图/单目深度估计和相机姿态估计）上始终优于最先进的方法。",
+          "affiliations": [
+            "The Hong Kong University of Science and Technology",
+            "The Chinese University of Hong Kong",
+            "Peking University"
+          ]
+        },
+        {
+          "id": "2607.20660",
+          "rank": 4,
+          "score": 84,
+          "reason_zh": "统一多模态遮挡感知3D生成，图像+可见性掩码+相机参数+点云联合条件",
+          "tags": [
+            "3D重建",
+            "生成模型",
+            "顶会"
+          ],
+          "title": "Axolotl3D: a Unified Framework for Faithful 3D Shape Completion",
+          "authors": [
+            "Anita Hu",
+            "Maria Shugrina"
+          ],
+          "abstract": "Recent 3D generative models produce high-quality geometry from a single image using large-scale priors and diffusion architectures. However, they assume complete visibility and single-view inputs, limiting applicability in multi-view, occluded, or editing scenarios. Although prior works address these challenges individually, they lack a unified framework for controllable 3D completion under diverse conditioning signals. We present Axolotl3D, a multi-modal and occlusion-aware 3D generation model that jointly conditions on images, visibility masks, camera parameters, and a partial point cloud. The point cloud serves as a geometric anchor promoting faithful shape completion, while camera parameters ensure consistent multi-view alignment in a shared 3D coordinate system. A unified training strategy synthesizes diverse conditioning regimes from large-scale 3D data, enabling robust cross-modal reasoning. Experiments on Toys4K and OmniObject3D demonstrate state-of-the-art performance under both clean and occluded settings, as well as strong results in real-world reconstruction and geometry-consistent editing.",
+          "abs_url": "https://arxiv.org/abs/2607.20660",
+          "pdf_url": "https://arxiv.org/pdf/2607.20660v1",
+          "html_url": "https://arxiv.org/html/2607.20660v1",
+          "figures": [
+            "https://arxiv.org/html/2607.20660v1/x1.png",
+            "https://arxiv.org/html/2607.20660v1/x2.png",
+            "https://arxiv.org/html/2607.20660v1/img/data_aug_surface_points.png",
+            "https://arxiv.org/html/2607.20660v1/img/data_aug_single_view_0_points.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": "Accepted to ECCV 2026",
+          "submitted": "2026-07-22T18:38:20Z",
+          "updated": "2026-07-22T18:38:20Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "Axolotl3D：忠实完成 3D 形状的统一框架",
+          "abstract_zh": "最近的 3D 生成模型使用大规模先验和扩散架构从单个图像生成高质量的几何图形。然而，它们假设完全可见性和单视图输入，限制了多视图、遮挡或编辑场景中的适用性。尽管之前的工作分别解决了这些挑战，但它们缺乏在不同条件信号下可控 3D 完成的统一框架。我们提出了 Axolotl3D，这是一种多模态和遮挡感知的 3D 生成模型，它联合调节图像、可见性掩模、相机参数和部分点云。点云充当几何锚点，促进忠实的形状完成，而相机参数则确保共享 3D 坐标系中一致的多视图对齐。统一的训练策略从大规模 3D 数据中综合不同的调节机制，从而实现强大的跨模式推理。 Toys4K 和 OmniObject3D 上的实验展示了在干净和遮挡设置下的最先进的性能，以及在现实世界重建和几何一致编辑方面的出色结果。",
+          "affiliations": []
+        },
+        {
+          "id": "2607.21448",
+          "rank": 5,
+          "score": 82,
+          "reason_zh": "梯度解耦动态3DGS：层级锚点骨架+逐高斯变形，停止梯度阻断运动回传",
+          "tags": [
+            "3DGS",
+            "4D重建"
+          ],
+          "title": "GrainGS: Gradient-Decoupled Gaussian Splatting for Efficient Dynamic Novel View Synthesis",
+          "authors": [
+            "Jiahao He",
+            "Yihua Shao",
+            "Zhengkai Zhao",
+            "Pan Gao",
+            "Fei Ma",
+            "Jingcai Guo",
+            "Hao Tang",
+            "Nicu Sebe",
+            "Qi Tian"
+          ],
+          "abstract": "Dynamic scene reconstruction with 3D Gaussian Splatting requires a balance between fine-grained motion modeling, structural stability, and compact representation. Existing per-primitive methods provide flexible local deformation but often suffer from redundant primitive growth, while anchor-based methods improve spatial regularity at the cost of suppressing locally varying motion. To address these issues, we present GrainGS, a dynamic Gaussian framework that combines a hierarchical anchor scaffold with per-Gaussian deformation. A static warm-up stage first establishes a time-invariant canonical representation from observations across all timestamps. During joint training, a stop-gradient operation blocks the deformation-mediated gradient pathway to the canonical positions while preserving their direct refinement through the reconstruction objective. Each Gaussian then predicts independent temporal offsets for position, rotation, and scale, enabling detailed local motion within a structurally constrained scaffold. A canonical-residual appearance decomposition further models frame-dependent photometric changes without forcing them into geometric deformation. Experiments on synthetic monocular and real-world multiview benchmarks show that GrainGS achieves high reconstruction quality, real-time novel view synthesis, and compact storage. Under the synthetic benchmark setting, it reaches an average peak signal-to-noise ratio of 36.98 decibels, renders at 435.6 frames per second, and requires 4.67 megabytes of storage.",
+          "abs_url": "https://arxiv.org/abs/2607.21448",
+          "pdf_url": "https://arxiv.org/pdf/2607.21448v1",
+          "html_url": "https://arxiv.org/html/2607.21448v1",
+          "figures": [
+            "https://arxiv.org/html/2607.21448v1/x1.png",
+            "https://arxiv.org/html/2607.21448v1/x2.png",
+            "https://arxiv.org/html/2607.21448v1/x3.png",
+            "https://arxiv.org/html/2607.21448v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": "",
+          "submitted": "2026-07-23T15:52:35Z",
+          "updated": "2026-07-23T15:52:35Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "GrainGS：梯度解耦高斯泼溅，用于高效动态新颖视图合成",
+          "abstract_zh": "使用 3D 高斯分布进行动态场景重建需要在细粒度运动建模、结构稳定性和紧凑表示之间取得平衡。现有的基于基元的方法提供了灵活的局部变形，但经常遭受冗余基元增长的困扰，而基于锚的方法以抑制局部变化的运动为代价提高了空间规律性。为了解决这些问题，我们提出了 GrainGS，这是一个动态高斯框架，它将分层锚支架与每高斯变形相结合。静态预热阶段首先根据所有时间戳的观察建立时不变的规范表示。在联合训练期间，停止梯度操作会阻止变形介导的梯度路径到达规范位置，同时通过重建目标保留其直接细化。然后，每个高斯预测位置、旋转和缩放的独立时间偏移，从而在结构受限的支架内实现详细的局部运动。规范残差外观分解进一步模拟了与帧相关的光度变化，而不迫使它们发生几何变形。合成单目和现实世界多视图基准的实验表明，GrainGS 实现了高重建质量、实时新视图合成和紧凑存储。在综合基准设置下，它的平均峰值信噪比为 36.98 分贝，渲染速度为每秒 435.6 帧，需要 4.67 MB 的存储空间。",
+          "affiliations": []
+        },
+        {
+          "id": "2607.20813",
+          "rank": 6,
+          "score": 80,
+          "reason_zh": "亚像素高斯重参数化，从低分辨率特征恢复结构密度，实现高分辨率NVS",
+          "tags": [
+            "3DGS",
+            "3D重建"
+          ],
+          "title": "SubSplat: High-Resolution Pixel-aligned 3DGS via Sub-pixel Gaussian Reparameterization",
+          "authors": [
+            "Jiun Lee",
+            "Jaekwang Kim",
+            "Sangmin Lee"
+          ],
+          "abstract": "Pixel-aligned Gaussian splatting enables efficient and generalizable novel-view synthesis. However, high-resolution rendering faces a critical trade-off where increasing input resolution improves detail at the expense of quadratically rising network computational cost. Conversely, maintaining low-resolution inputs stabilizes this cost but results in insufficient Gaussian density and artifacts. To address this, we propose SubSplat, which introduces Sub-pixel Gaussian Reparameterizer(SPGR) to subdivide primary Gaussians into fine-grained primitives, restoring structural density directly from low-resolution features. We further enhance the reparameterization quality through feature aggregation, which effectively captures high-frequency details across multiple views. Experiments on RealEstate10K and ACID demonstrate that SubSplat achieves high-fidelity rendering with superior efficiency. Our results validate that the proposed framework successfully resolves the trade-off between reparameterization fidelity and network computational cost inherent in pixel-aligned Gaussian Splatting.",
+          "abs_url": "https://arxiv.org/abs/2607.20813",
+          "pdf_url": "https://arxiv.org/pdf/2607.20813v1",
+          "html_url": "https://arxiv.org/html/2607.20813v1",
+          "figures": [
+            "https://arxiv.org/html/2607.20813v1/x1.png",
+            "https://arxiv.org/html/2607.20813v1/x2.png",
+            "https://arxiv.org/html/2607.20813v1/x3.png",
+            "https://arxiv.org/html/2607.20813v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": "",
+          "submitted": "2026-07-23T00:56:18Z",
+          "updated": "2026-07-23T00:56:18Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "SubSplat：通过子像素高斯重新参数化实现高分辨率像素对齐 3DGS",
+          "abstract_zh": "像素对齐的高斯喷射可以实现高效且可推广的新颖视图合成。然而，高分辨率渲染面临着一个关键的权衡，即增加输入分辨率可以改善细节，但代价是网络计算成本呈二次方上升。相反，维持低分辨率输入可以稳定该成本，但会导致高斯密度和伪影不足。为了解决这个问题，我们提出了 SubSplat，它引入了子像素高斯重新参数化器（SPGR），将初级高斯细分为细粒度基元，直接从低分辨率特征恢复结构密度。我们通过特征聚合进一步提高重新参数化质量，有效地捕获多个视图中的高频细节。在 RealEstate10K 和 ACID 上的实验表明，SubSplat 能够以卓越的效率实现高保真渲染。我们的结果验证了所提出的框架成功地解决了像素对齐高斯泼溅中固有的重新参数化保真度和网络计算成本之间的权衡。",
+          "affiliations": []
+        },
+        {
+          "id": "2607.20789",
+          "rank": 7,
+          "score": 78,
+          "reason_zh": "单视图生成式修复+3D感知PatchMatch传播，高效3DGS场景物体移除",
+          "tags": [
+            "3DGS",
+            "3D重建"
+          ],
+          "title": "3D-GIMP: When 3D Gaussian Inpainting Meets PatchMatch",
+          "authors": [
+            "Xuening Tian",
+            "Dieter Schmalstieg",
+            "Shohei Mori"
+          ],
+          "abstract": "Recent advances in 3D scene editing have leveraged iterative diffusion models to update input views. However, this process is computationally expensive and struggles to produce sharp details. Meanwhile, ``hallucination drift'' frequently introduces multi-view inconsistencies, leading to structural artifacts when rendering novel viewpoints. To address this problem, we present 3D-GIMP (3D Gaussian Inpainting Meets Patch Matching), a novel hybrid paradigm designed for high-fidelity object removal in 3D Gaussian Splatting. Instead of diffusing every view, 3D-GIMP performs a single generative inpainting on a key reference view, which serves as an appearance prior. We then introduce a 3D-aware PatchMatch algorithm to propagate these reference textures across all remaining views via correspondence matching, effectively bypassing the stochastic nature of frame-by-frame diffusion. By prioritizing reconstructive consistency over iterative generation, 3D-GIMP maintains high-frequency details across arbitrary resolutions while ensuring a mathematically consistent 3D reconstruction. Our experiments demonstrate that 3D-GIMP not only achieves competitive inpainting quality as previous methods using diffusion in multiple views, but also outperforms these methods in rendering speed and view consistency.",
+          "abs_url": "https://arxiv.org/abs/2607.20789",
+          "pdf_url": "https://arxiv.org/pdf/2607.20789v1",
+          "html_url": "https://arxiv.org/html/2607.20789v1",
+          "figures": [
+            "https://arxiv.org/html/2607.20789v1/teaser_v3.jpg",
+            "https://arxiv.org/html/2607.20789v1/hallucinations.jpg",
+            "https://arxiv.org/html/2607.20789v1/dataflow.jpg",
+            "https://arxiv.org/html/2607.20789v1/patch_propagation_v2.jpg"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": "15 pages",
+          "submitted": "2026-07-22T23:27:20Z",
+          "updated": "2026-07-22T23:27:20Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV",
+            "cs.GR"
+          ],
+          "title_zh": "3D-GIMP：当 3D 高斯修复遇到 PatchMatch 时",
+          "abstract_zh": "3D 场景编辑的最新进展利用迭代扩散模型来更新输入视图。然而，这个过程的计算成本很高，并且很难产生清晰的细节。同时，“幻觉漂移”经常会引入多视图不一致，导致渲染新视点时出现结构性伪影。为了解决这个问题，我们提出了 3D-GIMP（3D 高斯修复与补丁匹配），这是一种新颖的混合范例，专为 3D 高斯泼溅中的高保真对象去除而设计。 3D-GIMP 不是扩散每个视图，而是对关键参考视图执行单个生成修复，作为外观先验。然后，我们引入 3D 感知 PatchMatch 算法，通过对应匹配将这些参考纹理传播到所有剩余视图，从而有效地绕过逐帧扩散的随机性。通过优先考虑重建一致性而不是迭代生成，3D-GIMP 可以在任意分辨率下保持高频细节，同时确保数学上一致的 3D 重建。我们的实验表明，3D-GIMP 不仅可以实现与之前在多个视图中使用扩散的方法相比具有竞争力的修复质量，而且在渲染速度和视图一致性方面也优于这些方法。",
+          "affiliations": []
+        },
+        {
+          "id": "2607.21592",
+          "rank": 8,
+          "score": 78,
+          "reason_zh": "从不相交数据集联合预测深度/法向/语义等8种稠密属性，ECCV 2026",
+          "tags": [
+            "深度估计",
+            "3D重建",
+            "顶会"
+          ],
+          "title": "Unified Video Dense Prediction from Disjoint Data",
+          "authors": [
+            "Yihong Sun",
+            "Seoung Wug Oh",
+            "Jiahui Huang",
+            "Bharath Hariharan",
+            "Joon-Young Lee"
+          ],
+          "abstract": "Scene understanding requires simultaneous prediction about geometry, appearance, and semantics. However, existing task-specific annotations are fragmented across incompatible, domain-specific datasets. Current unified systems circumvent this by restricting training to fully co-annotated data, or by incurring the large computational cost of pseudo-labeling. To mitigate this, we introduce UniD, a unified video model that jointly predicts eight dense scene properties-depth, surface normals, semantic segmentation, boundaries, human parts, albedo, shading, and materials-all learned from disjoint, domain-specific datasets. We propose a simple yet effective distillation step in which per-task experts supervise a unified backbone through lightweight task projectors, eliminating the need for annotation overlap or pseudo-labeling. Our key insight is that the strong visual priors of a pretrained diffusion model are sufficient to bridge the domain gaps introduced by disjoint training sources, enabling robust generalization to scene-task combinations never seen during training. UniD achieves competitive performance against per-task specialists and multi-task baselines, with strong generalization to out-of-distribution scenarios and enhanced temporal and cross-task consistency. Code and video results are available at https://unid-video.github.io/.",
+          "abs_url": "https://arxiv.org/abs/2607.21592",
+          "pdf_url": "https://arxiv.org/pdf/2607.21592v1",
+          "html_url": "https://arxiv.org/html/2607.21592v1",
+          "figures": [
+            "https://arxiv.org/html/2607.21592v1/x1.png",
+            "https://arxiv.org/html/2607.21592v1/x2.png",
+            "https://arxiv.org/html/2607.21592v1/x3.png"
+          ],
+          "code_url": null,
+          "project_url": "https://unid-video.github.io/",
+          "code_links": [],
+          "project_links": [
+            "https://unid-video.github.io/"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": null,
+          "comments": "ECCV 2026",
+          "submitted": "2026-07-23T17:59:50Z",
+          "updated": "2026-07-23T17:59:50Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "根据不相交数据进行统一视频密集预测",
+          "abstract_zh": "场景理解需要同时预测几何、外观和语义。然而，现有的特定于任务的注释分散在不兼容的、特定于域的数据集中。当前的统一系统通过将训练限制为完全共同注释的数据或通过产生伪标记的大量计算成本来规避这一点。为了缓解这个问题，我们引入了 UniD，这是一个统一的视频模型，它联合预测八个密集场景属性——深度、表面法线、语义分割、边界、人体部位、反照率、阴影和材质——所有这些属性都是从不相交的、特定领域的数据集中学习的。我们提出了一个简单而有效的蒸馏步骤，其中每个任务的专家通过轻量级任务投影仪监督统一的骨干网，消除了注释重叠或伪标签的需要。我们的主要见解是，预训练扩散模型的强大视觉先验足以弥合由不相交的训练源引入的领域差距，从而能够对训练期间从未见过的场景任务组合进行稳健的泛化。 UniD 实现了与每任务专家和多任务基线相比的竞争性能，对分布外场景具有强大的泛化能力，并增强了时间和跨任务一致性。代码和视频结果可在 https://unid-video.github.io/ 获取。",
+          "affiliations": []
+        },
+        {
+          "id": "2607.20922",
+          "rank": 9,
+          "score": 76,
+          "reason_zh": "单图4D可动高斯头像，对称语义注意力正则化解耦重建与动画冲突",
+          "tags": [
+            "4D重建",
+            "3DGS"
+          ],
+          "title": "FA-LAM: Focus-Aware Large Avatar Model for One-Shot 4D Animatable Gaussian Head",
+          "authors": [
+            "Yingdong Hu",
+            "Yisheng He",
+            "Yiming Jiang",
+            "Zehong Lin",
+            "Steven Hoi",
+            "Jun Zhang"
+          ],
+          "abstract": "We propose FA-LAM, a Focus-Aware Large Avatar Model for one-shot animatable Gaussian head creation, while simultaneously enabling static 3D and dynamic 4D full-head recovery. The core of our method lies in a thorough analysis of the attention mechanisms and the entangled reconstruction and animation training pipeline adopted by prior state-of-the-art approaches. Our analysis identifies two main factors that compromise the quality of 3D full-head generation: (1) incorrect and noisy attention activations, and (2) conflicts between the tasks of reconstruction and animation. To address the first issue, we introduce a symmetric and semantic attention regularization strategy that leverages the inherent semantics and structural symmetry of human heads. To disentangle the objectives of reconstruction and animation, we develop a novel dual-phase training pipeline that separates the model's capabilities for large-view hallucination and animation into distinct modules. Moreover, we enhance our model to support multi-view and streaming 4D reconstruction in an efficient and memory-friendly manner through a core autoregressive modification with tailored visibility-aware token fusion. Collectively, these innovations enable FA-LAM to reconstruct animatable Gaussian full heads with superior quality, particularly in fine facial regions and large viewing angles.",
+          "abs_url": "https://arxiv.org/abs/2607.20922",
+          "pdf_url": "https://arxiv.org/pdf/2607.20922v1",
+          "html_url": "https://arxiv.org/html/2607.20922v1",
+          "figures": [
+            "https://arxiv.org/html/2607.20922v1/x1.png",
+            "https://arxiv.org/html/2607.20922v1/x2.png",
+            "https://arxiv.org/html/2607.20922v1/x3.png",
+            "https://arxiv.org/html/2607.20922v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": "",
+          "submitted": "2026-07-23T04:57:22Z",
+          "updated": "2026-07-23T04:57:22Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "FA-LAM：用于一次性 4D 可动画高斯头部的焦点感知大型头像模型",
+          "abstract_zh": "我们提出了 FA-LAM，一种焦点感知大型头像模型，用于一次性创建动画高斯头部，同时实现静态 3D 和动态 4D 全头部恢复。我们方法的核心在于对注意力机制以及先前最先进方法采用的纠缠重建和动画训练管道的彻底分析。我们的分析确定了影响 3D 全头生成质量的两个主要因素：(1) 不正确且嘈杂的注意力激活，以及 (2) 重建任务和动画任务之间的冲突。为了解决第一个问题，我们引入了一种对称和语义注意正则化策略，该策略利用人类头部的固有语义和结构对称性。为了理清重建和动画的目标，我们开发了一种新颖的双阶段训练管道，将模型的大视图幻觉和动画功能分为不同的模块。此外，我们通过核心自回归修改和定制的可见性感知令牌融合增强了我们的模型，以高效且内存友好的方式支持多视图和流式 4D 重建。总的来说，这些创新使 FA-LAM 能够以卓越的质量重建可动画的高斯全头，特别是在精细的面部区域和大视角方面。",
+          "affiliations": []
+        },
+        {
+          "id": "2607.20670",
+          "rank": 10,
+          "score": 75,
+          "reason_zh": "Neural ODE建模连续4D形变流，从3D点云+物理条件直接预测时序变形",
+          "tags": [
+            "4D重建",
+            "机器人",
+            "顶会"
+          ],
+          "title": "ODeform: Learning Continuous 4D Motion for Shape Deformation with Neural ODEs",
+          "authors": [
+            "Yordanka Velikova",
+            "Mahdi Saleh",
+            "Liming Kuang",
+            "Benjamin Busam"
+          ],
+          "abstract": "Modeling continuous object deformation is important for many computer vision and robotics tasks, such as manipulation and simulation. Existing approaches rely on learning-based methods or physics simulators to model shape deformations. However, these approaches either use discrete time steps or are too computationally intensive for real-time applications. We present ODeform, a novel extension of Neural Ordinary Differential Equations to continuous 4D dynamics of deformable objects in 3D space. Our method transforms 3D point clouds and physical conditions (like material properties) into a unified latent space. By solving the resulting ordinary differential equations over time, we model deformations as continuous flows within this learned embedding, eliminating the need for discrete time steps while maintaining computational efficiency. We evaluate our approach on unseen physical parameter configurations, showing improved motion prediction accuracy over baseline methods. Our experiments further demonstrate a successful transfer to real 3D captured objects with novel shapes, along with effective interpolation and extrapolation of the learned dynamics. Our code and data will be made publicly available.",
+          "abs_url": "https://arxiv.org/abs/2607.20670",
+          "pdf_url": "https://arxiv.org/pdf/2607.20670v1",
+          "html_url": "https://arxiv.org/html/2607.20670v1",
+          "figures": [
+            "https://arxiv.org/html/2607.20670v1/x1.png",
+            "https://arxiv.org/html/2607.20670v1/x2.png",
+            "https://arxiv.org/html/2607.20670v1/figures/odeform_fix_mass_bending-3.png",
+            "https://arxiv.org/html/2607.20670v1/figures/baseline-results-quant-suppl.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": "Accepted at IROS 2026",
+          "submitted": "2026-07-22T19:08:31Z",
+          "updated": "2026-07-22T19:08:31Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "ODeform：使用神经常微分方程学习形状变形的连续 4D 运动",
+          "abstract_zh": "连续物体变形建模对于许多计算机视觉和机器人任务（例如操纵和模拟）非常重要。现有方法依赖于基于学习的方法或物理模拟器来模拟形状变形。然而，这些方法要么使用离散时间步长，要么对于实时应用来说计算量太大。我们提出 ODeform，这是神经常微分方程到 3D 空间中可变形物体的连续 4D 动力学的新颖扩展。我们的方法将 3D 点云和物理条件（如材料属性）转换为统一的潜在空间。通过随时间求解所得的常微分方程，我们将变形建模为学习嵌入中的连续流，从而消除了对离散时间步长的需要，同时保持了计算效率。我们在看不见的物理参数配置上评估了我们的方法，显示出比基线方法更高的运动预测准确性。我们的实验进一步证明了能够成功迁移到具有新颖形状的真实 3D 捕获对象，以及对所学动态进行有效的插值和外推。我们的代码和数据将公开。",
+          "affiliations": []
+        },
+        {
+          "id": "2607.21471",
+          "rank": 11,
+          "score": 72,
+          "reason_zh": "动态场景表面重建新基准：评估模型对未来时刻几何的预测能力",
+          "tags": [
+            "3D重建",
+            "4D重建",
+            "数据集"
+          ],
+          "title": "Future Rendering $\\neq$ Future Surface: A Benchmark and Dataset for Dynamic Surface Reconstruction Beyond the Observed Window",
+          "authors": [
+            "Yukun Shi",
+            "Minglun Gong"
+          ],
+          "abstract": "Dynamic-scene reconstruction is almost always evaluated inside the observed time window, yet deployment settings such as AR overlays, robot interaction, and anticipatory planning need the future surface: the geometry at times beyond those captured. No standard benchmark measures this. We introduce FutureSurf, a controlled diagnostic benchmark and dataset for future-time surface reconstruction that trades scene diversity for exact future ground truth and falsification controls. A method trains on the observed first 75% of a sequence; we score its extracted per-frame surface on the held-out future by Chamfer distance, reporting absolute future CD as the primary score and the future/observed gap as a diagnostic. The dataset contains eight analytically defined controlled motions, including three falsification controls, with exact per-frame ground-truth meshes. We also provide a ground-truth-side recoverability oracle. The release includes split files, scoring code, a benchmark card, and Croissant metadata. On the controlled motions, the DG-Mesh backbone leaves a 2.7-4.1$\\times$ gap even for futures predictable in principle (four of five recoverable from observed motion by a fixed rule), while the falsification controls behave as designed (the surface-invariant motion shows no gap). Beyond the contributed dataset, the gap persists across six animated DG-Mesh asset scenes and a second backbone, Deformable-3DGS (2.0-6.6$\\times$; both share a deformation-MLP temporal model). The benchmark also shows that future rendering quality and future-surface accuracy are statistically decoupled, so the novel-view-synthesis metrics the field reports do not track future geometry. The future error is structured, concentrating where the surface moves. The dataset, evaluation toolkit, and scoring code are available on Hugging Face and GitHub (https://github.com/Ricky-S/futuresurf).",
+          "abs_url": "https://arxiv.org/abs/2607.21471",
+          "pdf_url": "https://arxiv.org/pdf/2607.21471v1",
+          "html_url": "https://arxiv.org/html/2607.21471v1",
+          "figures": [
+            "https://arxiv.org/html/2607.21471v1/x2.png",
+            "https://arxiv.org/html/2607.21471v1/x3.png",
+            "https://arxiv.org/html/2607.21471v1/x4.png",
+            "https://arxiv.org/html/2607.21471v1/x5.png"
+          ],
+          "code_url": "https://github.com/Ricky-S/futuresurf",
+          "project_url": null,
+          "code_links": [
+            "https://github.com/Ricky-S/futuresurf"
+          ],
+          "project_links": [],
+          "has_code": true,
+          "has_project": false,
+          "venue": null,
+          "comments": "See https://github.com/Ricky-S/futuresurf",
+          "submitted": "2026-07-23T16:14:59Z",
+          "updated": "2026-07-23T16:14:59Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "未来渲染$\\neq$未来表面：观察窗口之外动态表面重建的基准和数据集",
+          "abstract_zh": "动态场景重建几乎总是在观察到的时间窗口内进行评估，但 AR 叠加、机器人交互和预期规划等部署设置需要未来的表面：有时超出捕获的几何形状。没有标准基准来衡量这一点。我们引入了 FutureSurf，这是一种用于未来表面重建的受控诊断基准和数据集，它以场景多样性换取准确的未来地面真相和伪造控制。一种方法对观察到的序列的前 75% 进行训练；我们通过倒角距离在保留的未来上对提取的每帧表面进行评分，报告绝对未来 CD 作为主要分数，并将未来/观察到的间隙作为诊断。该数据集包含八个分析定义的受控运动，包括三个伪造控制，以及精确的每帧地面实况网格。我们还提供了一个真实的可恢复性预言机。该版本包括分割文件、评分代码、基准卡和羊角面包元数据。在受控运动上，即使对于原则上可预测的未来，DG-Mesh 主干也会留下 2.7-4.1$\\times$ 的间隙（五分之四可通过固定规则从观察到的运动中恢复），而伪造控制则按设计运行（表面不变运动显示没有间隙）。除了贡献的数据集之外，六个动画 DG-Mesh 资产场景和第二个主干 Deformable-3DGS（2.0-6.6$\\times$；两者共享变形 MLP 时间模型）之间仍然存在差距。该基准还表明，未来渲染质量和未来表面精度在统计上是解耦的，因此现场报告的新颖视图合成指标不会跟踪未来的几何形状。未来的误差是结构化的，集中在表面移动的地方。数据集、评估工具包和评分代码可在 Hugging Face 和 GitHub (https://github.com/Ricky-S/futuresurf) 上获取。",
+          "affiliations": []
+        },
+        {
+          "id": "2607.21526",
+          "rank": 12,
+          "score": 70,
+          "reason_zh": "多教师蒸馏+鲁棒雷达融合，自监督全天气深度估计应对传感器退化",
+          "tags": [
+            "深度估计",
+            "自动驾驶",
+            "开源"
+          ],
+          "title": "Boosting Robustness for All-Weather Self-Supervised Depth Estimation in Autonomous Driving",
+          "authors": [
+            "Mengshi Qi",
+            "Xiaoyang Bi",
+            "Xianlin Zhang",
+            "Huadong Ma"
+          ],
+          "abstract": "Self-supervised depth estimation is challenging for safe autonomous driving under various adverse weather conditions due to sensor perception degradation. These challenges arise from two main aspects. Firstly, adverse conditions can distort pixel correspondences and violate the assumptions embedded in the self-supervised loss function, leading to erroneous depth predictions. Secondly, while radar is a widely adopted sensor in adverse weather conditions, the sparse distribution of radar points in the Point of View (POV) poses challenges for self-supervised fusion. To address these issues, we introduce a novel self-training pipeline using unpaired real all-weather data through multi-teacher distillation and robust radar fusion. We propose the Uncertainty-Aware Multi-Teacher Distillation method to generate diverse teacher models with different adverse condition inputs, and then employ uncertainty modeling to weigh the knowledge distillation loss. Additionally, we design the POV-BEV Radar Fusion approach, which leverages camera-pixel ray constraints to establish connections between the camera's Point of View (POV) and the radar's Bird's-Eye View (BEV). This approach enables the utilization of denser radar points, effectively capturing the complementary perspectives of both POV and BEV. Extensive quantitative and qualitative experiments demonstrate the robustness of our proposed method on all-weather datasets, achieving state-of-the-art performance. Our code and models are available at https://github.com/MICLAB-BUPT/RobustDepth.",
+          "abs_url": "https://arxiv.org/abs/2607.21526",
+          "pdf_url": "https://arxiv.org/pdf/2607.21526v1",
+          "html_url": "https://arxiv.org/html/2607.21526v1",
+          "figures": [
+            "https://arxiv.org/html/2607.21526v1/x1.png",
+            "https://arxiv.org/html/2607.21526v1/x2.png",
+            "https://arxiv.org/html/2607.21526v1/x3.png",
+            "https://arxiv.org/html/2607.21526v1/x4.png"
+          ],
+          "code_url": "https://github.com/MICLAB-BUPT/RobustDepth",
+          "project_url": null,
+          "code_links": [
+            "https://github.com/MICLAB-BUPT/RobustDepth"
+          ],
+          "project_links": [],
+          "has_code": true,
+          "has_project": false,
+          "venue": null,
+          "comments": "",
+          "submitted": "2026-07-23T17:11:33Z",
+          "updated": "2026-07-23T17:11:33Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.CV"
+          ],
+          "title_zh": "提高自动驾驶中全天候自监督深度估计的鲁棒性",
+          "abstract_zh": "由于传感器感知退化，自我监督的深度估计对于在各种恶劣天气条件下的安全自动驾驶来说是一个挑战。这些挑战主要来自两个方面。首先，不利条件可能会扭曲像素对应关系并违反自监督损失函数中嵌入的假设，从而导致错误的深度预测。其次，虽然雷达是恶劣天气条件下广泛采用的传感器，但视点（POV）中雷达点的稀疏分布给自监督融合带来了挑战。为了解决这些问题，我们引入了一种新颖的自我训练管道，通过多教师蒸馏和强大的雷达融合，使用不成对的真实全天候数据。我们提出了不确定性感知多教师蒸馏方法，以生成具有不同不利条件输入的多种教师模型，然后采用不确定性建模来权衡知识蒸馏损失。此外，我们还设计了 POV-BEV 雷达融合方法，该方法利用相机像素光线约束在相机的视角 (POV) 和雷达的鸟瞰图 (BEV) 之间建立连接。这种方法可以利用更密集的雷达点，有效捕获 POV 和 BEV 的互补视角。广泛的定量和定性实验证明了我们提出的方法在全天候数据集上的鲁棒性，实现了最先进的性能。我们的代码和模型可在 https://github.com/MICLAB-BUPT/RobustDepth 获取。",
+          "affiliations": []
+        }
+      ]
+    },
+    {
+      "id": "vla",
+      "name": "自动驾驶与机器人",
+      "papers": [
+        {
+          "id": "2607.20988",
+          "rank": 1,
+          "score": 93,
+          "reason_zh": "HyWorldVLA：像素级+隐式世界模型混合，统一端到端自动驾驶VLA",
+          "tags": [
+            "VLA",
+            "自动驾驶",
+            "世界模型"
+          ],
+          "title": "HyWorldVLA: A Vision-Language-Action Model with Hybrid World Modeling for Autonomous Driving",
+          "authors": [
+            "Quanfu Yu",
+            "Xian Wu",
+            "Hao Xu",
+            "Liulong Ma"
+          ],
+          "abstract": "Vision-Language-Action (VLA) models augmented with world modeling represent a promising paradigm for end-to-end autonomous driving. While pixel-level future prediction enables fine-grained spatiotemporal reasoning, it compromises robustness in noisy driving scenarios. Conversely, latent-based world models alleviate this sensitivity but often incur limited interpretability and representational degradation due to absent pixel-level grounding. To reconcile this trade-off, we propose HyWorldVLA, a hybrid world-VLA framework that unifies pixel-level supervision and latent representation learning. In the pre-training stage, HyWorldVLA predicts video latents encoded by a pre-trained video VAE, while simultaneously reconstructing video frames to provide precise pixel-level grounding. During the subsequent co-fine-tuning phase, the model exclusively predicts latent features, which are fed into an action expert to generate trajectories. Extensive experiments on NAVSIM v1 and v2 benchmarks demonstrate that HyWorldVLA significantly outperforms both pixel-based and latent-based world model baselines. Notably, we present the first comprehensive qualitative and quantitative analysis of world model noise robustness in autonomous driving, establishing a new benchmark for evaluating future architectures.",
+          "abs_url": "https://arxiv.org/abs/2607.20988",
+          "pdf_url": "https://arxiv.org/pdf/2607.20988v1",
+          "html_url": "https://arxiv.org/html/2607.20988v1",
+          "figures": [
+            "https://arxiv.org/html/2607.20988v1/x1.png",
+            "https://arxiv.org/html/2607.20988v1/x2.png",
+            "https://arxiv.org/html/2607.20988v1/x3.jpg",
+            "https://arxiv.org/html/2607.20988v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": "20 pages with 13 figures",
+          "submitted": "2026-07-23T07:11:41Z",
+          "updated": "2026-07-23T07:11:41Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.AI",
+            "cs.CV"
+          ],
+          "title_zh": "HyWorldVLA：用于自动驾驶的具有混合世界建模的视觉-语言-动作模型",
+          "abstract_zh": "通过世界建模增强的视觉-语言-动作（VLA）模型代表了端到端自动驾驶的有前途的范例。虽然像素级的未来预测可以实现细粒度的时空推理，但它会损害噪声驾驶场景中的鲁棒性。相反，基于潜在的世界模型减轻了这种敏感性，但由于缺乏像素级基础，通常会导致可解释性有限和表征退化。为了协调这种权衡，我们提出了 HyWorldVLA，这是一种混合世界 VLA 框架，统一了像素级监督和潜在表示学习。在预训练阶段，HyWorldVLA 预测由预训练视频 VAE 编码的视频潜伏，同时重建视频帧以提供精确的像素级基础。在随后的协同微调阶段，该模型专门预测潜在特征，这些特征被输入到动作专家中以生成轨迹。 NAVSIM v1 和 v2 基准的大量实验表明，HyWorldVLA 显着优于基于像素和基于潜在的世界模型基准。值得注意的是，我们首次对自动驾驶中的世界模型噪声稳健性进行了全面的定性和定量分析，为评估未来架构建立了新的基准。",
+          "affiliations": []
+        },
+        {
+          "id": "2607.20785",
+          "rank": 2,
+          "score": 90,
+          "reason_zh": "8B视觉语言模型做通用导航，仅需单目RGB，跨机器人形态零样本迁移",
+          "tags": [
+            "VLA",
+            "导航"
+          ],
+          "title": "Robostral Navigate",
+          "authors": [
+            "Arjun Majumdar",
+            "Avinash Sooriyarachchi",
+            "Benjamin Tibi",
+            "Chris Bamford",
+            "Elliot Chane-Sane",
+            "Guillaume Lample",
+            "Khyathi Raghavi Chandu",
+            "Ludovic Ho Fuh",
+            "Mathieu Poiree",
+            "Olivier Duchenne",
+            "Rosalie Millner",
+            "Srijan Mishra",
+            "Theo Cachet",
+            "Thomas Chabal"
+          ],
+          "abstract": "Deploying navigation systems at scale requires a recipe that minimizes sensor assumptions, generalizes across robot embodiments, and trains efficiently. Yet, today's best systems depend on depth sensors, multi-camera rigs, or pre-built maps, limiting the hardware they support and increasing deployment cost. We introduce Robostral Navigate, an 8B vision-language model built around this scalability objective. The model consumes only a stream of monocular RGB images - the most ubiquitous sensor across robotic platforms and predicts waypoints by pointing to the next target location in the current camera view. Operating purely in image space, rather than robot-specific coordinates, makes the policy naturally robust to changes in camera intrinsics and scene scale, enabling deployment across wheeled, legged, and aerial robots without recalibration. We generate 2.4 million trajectories across 350k simulated scenes to reduce the reliance on real-world data collection and scale easily. We further introduce a prefix-caching training recipe that packs entire episodes into single training sequences, reducing training tokens by 22x and cutting training time from months to days. A tree-based attention mask prevents conditioning on previous ground-truth actions, encouraging visually grounded action prediction, and reinforcement learning is used to further improve exploration and recovery capabilities. On the Room-to-Room and Room-Across-Room in Continuous Environments (R2R-CE and RxR-CE) benchmarks, Robostral Navigate sets a new state of the art. On R2R-CE, it achieves a 77.4% success rate, surpassing the best monocular method by 10.5 points and the strongest depth- or multi-camera system by 5.3 points despite using only a single RGB camera. On RxR-CE, it reaches 75.1% success rate, outperforming all monocular baselines.",
+          "abs_url": "https://arxiv.org/abs/2607.20785",
+          "pdf_url": "https://arxiv.org/pdf/2607.20785v1",
+          "html_url": "https://arxiv.org/html/2607.20785v1",
+          "figures": [
+            "https://arxiv.org/html/2607.20785v1/x1.png",
+            "https://arxiv.org/html/2607.20785v1/images/cross_embodiment_v2.png",
+            "https://arxiv.org/html/2607.20785v1/images/data_fig.png",
+            "https://arxiv.org/html/2607.20785v1/images/prefix_cache.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": "",
+          "submitted": "2026-07-22T23:13:05Z",
+          "updated": "2026-07-22T23:13:05Z",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.AI",
+            "cs.RO"
+          ],
+          "title_zh": "机器人导航",
+          "abstract_zh": "大规模部署导航系统需要一个最小化传感器假设、概括机器人实施例并有效训练的方法。然而，当今最好的系统依赖于深度传感器、多摄像头设备或预构建地图，限制了它们支持的硬件并增加了部署成本。我们推出了 Robostral Navigate，这是一个围绕此可扩展性目标构建的 8B 视觉语言模型。该模型仅消耗单眼 RGB 图像流（机器人平台上最普遍的传感器），并通过指向当前摄像机视图中的下一个目标位置来预测路径点。纯粹在图像空间而不是特定于机器人的坐标中操作，使得该策略自然地对相机内在特性和场景规模的变化具有鲁棒性，从而无需重新校准即可在轮式、腿式和空中机器人上进行部署。我们在 35 万个模拟场景中生成 240 万条轨迹，以减少对现实世界数据收集和轻松扩展的依赖。我们进一步引入了前缀缓存训练配方，将整个剧集打包到单个训练序列中，将训练令牌减少 22 倍，并将训练时间从几个月缩短到几天。基于树的注意力掩模可以防止对先前的地面真实动作进行调节，鼓励基于视觉的动作预测，并使用强化学习来进一步提高探索和恢复能力。在连续环境中的房间到房间和房间跨房间（R2R-CE 和 RxR-CE）基准上，Robostral Navigate 树立了新的技术水平。在 R2R-CE 上，它实现了 77.4% 的成功率，尽管只使用单个 RGB 摄像头，但比最好的单目方法高出 10.5 分，比最强的深度或多摄像头系统高出 5.3 分。在 RxR-CE 上，它的成功率达到 75.1%，优于所有单眼基线。",
+          "affiliations": []
+        },
+        {
+          "id": "2607.21588",
+          "rank": 3,
+          "score": 88,
+          "reason_zh": "社区驱动的机器人操作数据引擎，207任务+50K轨迹，浏览器遥操作采集",
+          "tags": [
+            "机器人",
+            "数据集",
+            "操控"
+          ],
+          "title": "AXIS: A Growable Community-Driven Data Engine for Scalable Robot Manipulation",
+          "authors": [
+            "Mengfei Zhao",
+            "Dihong Huang",
+            "Yikai Tang",
+            "Peihao Li",
+            "Mingxuan Yan",
+            "Ruiqi Zhuang",
+            "Yanjia Huang",
+            "Jie Wang",
+            "Hai Zhai",
+            "Tony Zhou",
+            "Rui Zhang",
+            "Zhexi Luo",
+            "Yuchen Huang",
+            "Jianfei Yang",
+            "Jiachen Li"
+          ],
+          "abstract": "Learning effective robot manipulation policies requires diverse, high-quality demonstrations, yet existing data pipelines are often difficult to scale because they rely on specialized hardware, centralized operators, or fixed task suites. We present AXIS, a growable community-driven data engine and benchmark for scalable robot learning, which enables browser-based teleoperation for large-scale demonstration collection, automatically generates and validates new manipulation tasks, and transforms community-collected demonstrations into training-ready data through automated success checking, quality filtering, trajectory smoothing, and visual and physics-based augmentation. The AXIS dataset currently contains 207 diverse tasks and 50K+ trajectories. Meanwhile, AXIS organizes data into task snapshots and evaluates policies with a systematic held-out protocol. We compare vision-language-action (VLA) policies under a unified AXIS evaluation suite and analyze scaling behavior across different data volumes. Continual pretraining on AXIS substantially improves the overall success rate of $π_{0.5}$ by 5.8%, outperforms the model pretrained on RoboCasa365 by 37.3%, and exhibits consistent scaling with increasing data volume, with the largest gains observed under layout, sensor-noise, and camera perturbations.",
+          "abs_url": "https://arxiv.org/abs/2607.21588",
+          "pdf_url": "https://arxiv.org/pdf/2607.21588v1",
+          "html_url": "https://arxiv.org/html/2607.21588v1",
+          "figures": [
+            "https://arxiv.org/html/2607.21588v1/x1.png",
+            "https://arxiv.org/html/2607.21588v1/x2.png",
+            "https://arxiv.org/html/2607.21588v1/x3.png",
+            "https://arxiv.org/html/2607.21588v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": "https://axisaiorg.github.io/AXIS-V1/",
+          "code_links": [],
+          "project_links": [
+            "https://axisaiorg.github.io/AXIS-V1/"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": null,
+          "comments": "Project Website: https://axisaiorg.github.io/AXIS-V1/",
+          "submitted": "2026-07-23T17:58:08Z",
+          "updated": "2026-07-23T17:58:08Z",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.RO"
+          ],
+          "title_zh": "AXIS：可扩展的社区驱动数据引擎，用于可扩展的机器人操作",
+          "abstract_zh": "学习有效的机器人操作策略需要多样化、高质量的演示，但现有的数据管道通常难以扩展，因为它们依赖于专用硬件、集中式操作员或固定任务套件。我们推出了 AXIS，这是一个可扩展的社区驱动的数据引擎和可扩展机器人学习的基准，它支持基于浏览器的远程操作进行大规模演示收集，自动生成和验证新的操作任务，并通过自动成功检查、质量过滤、轨迹平滑以及基于视觉和物理的增强将社区收集的演示转换为训练就绪数据。 AXIS 数据集目前包含 207 个不同的任务和 50K 多个轨迹。同时，AXIS 将数据组织成任务快照，并使用系统的保留协议评估策略。我们在统一的 AXIS 评估套件下比较视觉-语言-操作 (VLA) 策略，并分析不同数据量的扩展行为。 AXIS 上的持续预训练将 $π_{0.5}$ 的整体成功率大幅提高了 5.8%，比 RoboCasa365 上预训练的模型提高了 37.3%，并且随着数据量的增加表现出一致的缩放，在布局、传感器噪声和相机扰动下观察到最大增益。",
+          "affiliations": [
+            "University of California, Berkeley",
+            "Georgia Institute of Technology",
+            "Texas A&M University",
+            "Johns Hopkins University",
+            "University of Pennsylvania"
+          ]
+        },
+        {
+          "id": "2607.20683",
+          "rank": 4,
+          "score": 82,
+          "reason_zh": "从RGB观测合成触觉信号，单次前馈即可为灵巧手操作生成触觉图像",
+          "tags": [
+            "机器人",
+            "操控",
+            "具身智能"
+          ],
+          "title": "FELT: Generating Tactile Signals from Vision for Visuo-Tactile Manipulation",
+          "authors": [
+            "Zinan Li",
+            "Yiyang Ling",
+            "Yuming Gu",
+            "Binghao Huang",
+            "Chenhao Liang",
+            "Sharfin Islam",
+            "Hisham Bedri",
+            "John Chirikjian",
+            "Yunzhu Li",
+            "Stefanos Nikolaidis",
+            "Daniel Seita"
+          ],
+          "abstract": "The sense of touch is central to manipulation, especially when vision is occluded or ambiguous. Although combining vision and touch improves manipulation, learning robust visuo-tactile policies requires substantial tactile data. Such data remains scarcer than visual data, because tactile sensors are fragile, specialized, and hard to standardize. To address this, we present Feature-Extracted Latent Tactile (FELT), a learning-based framework that synthesizes per-finger pressure tactile images from RGB observations, reducing the need for tactile-equipped data collection. FELT uses a large frozen visual encoder and a lightweight query decoder to predict tactile signals in a single feed-forward pass. To respect the physical topology of dual-finger tactile sensors, FELT decodes the left and right tactile sensor panels through separate branches, capturing the asymmetric contact patterns during interactions such as wiping, insertion, and in-hand rotation. At inference time, FELT only requires RGB data, allowing us to augment existing vision-only data with tactile observations, either as generated tactile images or as latent tactile features. Experiments on four contact-rich manipulation tasks demonstrate that both generated tactile images and latent tactile features improve policy success over vision-only baselines, with latent feature requiring no real tactile sensor during policy training or deployment. Supplementary material is available on our anonymous website: https://felt-tactile.github.io/.",
+          "abs_url": "https://arxiv.org/abs/2607.20683",
+          "pdf_url": "https://arxiv.org/pdf/2607.20683v1",
+          "html_url": "https://arxiv.org/html/2607.20683v1",
+          "figures": [
+            "https://arxiv.org/html/2607.20683v1/x1.png",
+            "https://arxiv.org/html/2607.20683v1/x2.png",
+            "https://arxiv.org/html/2607.20683v1/Image_draft/xarm_ablation_v2.png",
+            "https://arxiv.org/html/2607.20683v1/x3.png"
+          ],
+          "code_url": null,
+          "project_url": "https://felt-tactile.github.io/",
+          "code_links": [],
+          "project_links": [
+            "https://felt-tactile.github.io/"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": null,
+          "comments": "26 pages, including supplementary material",
+          "submitted": "2026-07-22T19:32:42Z",
+          "updated": "2026-07-22T19:32:42Z",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.RO"
+          ],
+          "title_zh": "FELT：从视觉生成触觉信号以进行视觉触觉操作",
+          "abstract_zh": "触觉是操纵的核心，尤其是当视觉被遮挡或模糊时。尽管视觉和触觉的结合可以改善操作，但学习强大的视觉触觉策略需要大量的触觉数据。此类数据仍然比视觉数据稀缺，因为触觉传感器脆弱、专业且难以标准化。为了解决这个问题，我们提出了特征提取的潜在触觉 (FELT)，这是一种基于学习的框架，可以从 RGB 观察中合成每个手指的压力触觉图像，从而减少对配备触觉的数据收集的需求。 FELT 使用大型冻结视觉编码器和轻量级查询解码器来预测单前馈传递中的触觉信号。为了尊重双指触觉传感器的物理拓扑，FELT 通过单独的分支对左右触觉传感器面板进行解码，捕获擦拭、插入和手中旋转等交互过程中的不对称接触模式。在推理时，FELT 仅需要 RGB 数据，使我们能够通过触觉观察来增强现有的纯视觉数据，无论是生成的触觉图像还是潜在的触觉特征。对四个富含接触的操作任务的实验表明，生成的触觉图像和潜在触觉特征都比仅视觉基线提高了策略成功率，其中潜在特征在策略训练或部署期间不需要真正的触觉传感器。补充材料可在我们的匿名网站上找到：https://felt-tactile.github.io/。",
+          "affiliations": [
+            "Viterbi School of Engineering, University of Southern California",
+            "Columbia University"
+          ]
+        },
+        {
+          "id": "2607.21341",
+          "rank": 5,
+          "score": 80,
+          "reason_zh": "组合扩散+能量模型联合优化双臂抓取-交接-重抓取-运动规划全流程",
+          "tags": [
+            "机器人",
+            "操控",
+            "顶会"
+          ],
+          "title": "Grasp, Handover, Rotate: Bimanual Object Reorientation via Compositional Diffusion and Energy-Based Optimization",
+          "authors": [
+            "Wun Lam Yeung",
+            "Wenjun Liu",
+            "Yui Cheung Yu",
+            "Zhengyan Lambo Qin",
+            "Qijin She",
+            "Heng Li",
+            "Ziqi Wang",
+            "Ping Tan"
+          ],
+          "abstract": "Bimanual object reorientation - picking an object, handing it over between two arms, and placing it in a desired target pose - is valuable when direct placement from the initial grasp is infeasible due to collisions, kinematic constraints, or poor final orientation. However, achieving this under multiple competing objectives remains challenging. We introduce BiCompoDiff, a compositional diffusion and energy-based framework that jointly optimizes grasp selection, handover, regrasp, and motion planning under multiple constraints. By combining a pretrained grasp diffusion model with bimanual planning energy-based models (EBMs), our method injects gradient guidance during reverse diffusion to enforce collision avoidance, trajectory smoothness (via differentiable inverse kinematics), handover feasibility, and regrasp safety. Annealed MCMC sampling further refines grasp poses over the composite energy landscape. Experiments across diverse simulated household reorientation tasks demonstrate that BiCompoDiff achieves over 20% higher success rates and up to 37% smoother trajectories (measured by joint displacement) compared to strong sampling-based baselines. Real-world validation confirms effective sim-to-real transfer and robust performance on challenging scenes.",
+          "abs_url": "https://arxiv.org/abs/2607.21341",
+          "pdf_url": "https://arxiv.org/pdf/2607.21341v1",
+          "html_url": "https://arxiv.org/html/2607.21341v1",
+          "figures": [
+            "https://arxiv.org/html/2607.21341v1/figures/handover_needed.png",
+            "https://arxiv.org/html/2607.21341v1/x1.png",
+            "https://arxiv.org/html/2607.21341v1/x2.png",
+            "https://arxiv.org/html/2607.21341v1/figures/mlpworkflow.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": "IROS 2026",
+          "submitted": "2026-07-23T14:11:14Z",
+          "updated": "2026-07-23T14:11:14Z",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.RO"
+          ],
+          "title_zh": "抓取、切换、旋转：通过组合扩散和基于能量的优化进行双手物体重新定向",
+          "abstract_zh": "当由于碰撞、运动学限制或最终方向不佳而无法从初始抓握直接放置物体时，双手物体重新定向（拾取物体，将其移交给两只手臂之间，并将其放置在所需的目标姿势）非常有价值。然而，在多个相互竞争的目标下实现这一目标仍然具有挑战性。我们引入了 BiCompoDiff，这是一种基于组合扩散和能量的框架，可在多种约束下联合优化抓取选择、切换、重新抓取和运动规划。通过将预训练的抓取扩散模型与基于能量的双手规划模型（EBM）相结合，我们的方法在反向扩散过程中注入梯度引导，以强制避免碰撞、轨迹平滑（通过可微逆运动学）、切换可行性和重新抓取安全性。退火 MCMC 采样进一步细化了对复合能源景观的掌握。各种模拟家庭重新定位任务的实验表明，与基于采样的强大基线相比，BiCompoDiff 的成功率提高了 20% 以上，轨迹平滑（通过关节位移测量）高达 37%。现实世界的验证证实了模拟到真实的有效传输以及在具有挑战性的场景中的稳健性能。",
+          "affiliations": [
+            "The Hong Kong University of Science and Technology",
+            "Shenzhen Loop Area Institute"
+          ]
+        },
+        {
+          "id": "2607.21017",
+          "rank": 6,
+          "score": 80,
+          "reason_zh": "Real2Sim自动构建仿真桌面场景，从互联网图片重建物理真实操作环境",
+          "tags": [
+            "机器人",
+            "数据集",
+            "操控"
+          ],
+          "title": "TableVerse: A Large-scale Tabletop Dataset with Real-world Grounded Layouts for Generalizable Manipulation",
+          "authors": [
+            "Boyuan Wang",
+            "Yue Zhang",
+            "Xutao Xue",
+            "Xueyu Song",
+            "Yu Sun"
+          ],
+          "abstract": "The development of generalizable robotic manipulation policies is inherently bounded by the availability of large-scale, high-fidelity scene data. While recent automated synthesis methods attempt to bridge this gap via text-to-layout hallucination or simplified procedural generation, they frequently suffer from physical implausibility and fail to capture the complex, dense clutter of actual human environments. In this paper, we introduce TableVerse, a fully automated Real2Sim pipeline that shifts the paradigm from imaginative layout generation to deterministic reconstruction from unstructured, in-the-wild image data. Our framework seamlessly processes unscripted internet media into high-fidelity, simulation-ready tabletop environments with accurate metric scales, authentic topologies, and verified mechanical stability. Furthermore, an automated task-conditioned trajectory generation framework is integrated to synthesize high-quality, collision-free pick-and-place demonstrations. Leveraging this complete pipeline, we construct the TableVerse-100K Dataset, a large-scale corpus comprising 100,000 unique, physically consistent environments paired with interactive manipulation trajectories. By capturing diverse asset compositions, realistic spatial distributions, and high-quality demonstrations, TableVerse-100K establishes a highly scalable and high-fidelity data foundation, providing significant value to facilitate future research in generalizable robotic manipulation tasks.",
+          "abs_url": "https://arxiv.org/abs/2607.21017",
+          "pdf_url": "https://arxiv.org/pdf/2607.21017v1",
+          "html_url": "https://arxiv.org/html/2607.21017v1",
+          "figures": [
+            "https://arxiv.org/html/2607.21017v1/images/figure9.png",
+            "https://arxiv.org/html/2607.21017v1/images/figure1.png",
+            "https://arxiv.org/html/2607.21017v1/images/figure8.png",
+            "https://arxiv.org/html/2607.21017v1/images/figure2.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": "",
+          "submitted": "2026-07-23T08:02:53Z",
+          "updated": "2026-07-23T08:02:53Z",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.RO"
+          ],
+          "title_zh": "TableVerse：一个大规模桌面数据集，具有现实世界的接地布局，可进行通用操作",
+          "abstract_zh": "通用机器人操作策略的发展本质上受到大规模、高保真场景数据可用性的限制。虽然最近的自动合成方法试图通过文本到布局的幻觉或简化的程序生成来弥补这一差距，但它们经常遭受物理上的难以置信的困扰，并且无法捕捉实际人类环境中复杂、密集的杂乱。在本文中，我们介绍了 TableVerse，这是一种完全自动化的 Real2Sim 流程，它将范式从富有想象力的布局生成转变为从非结构化、野外图像数据进行确定性重建。我们的框架将无脚本的互联网媒体无缝地处理成高保真、可模拟的桌面环境，具有精确的公制尺度、真实的拓扑结构和经过验证的机械稳定性。此外，还集成了自动化任务条件轨迹生成框架，以合成高质量、无碰撞的拾放演示。利用这个完整的管道，我们构建了 TableVerse-100K 数据集，这是一个大型语料库，包含 100,000 个独特的、物理一致的环境以及交互式操作轨迹。通过捕获不同的资产组成、真实的空间分布和高质量的演示，TableVerse-100K 建立了高度可扩展和高保真度的数据基础，为促进通用机器人操作任务的未来研究提供了重要价值。",
+          "affiliations": []
+        },
+        {
+          "id": "2607.21049",
+          "rank": 7,
+          "score": 78,
+          "reason_zh": "可解释可纠正的视觉注意力，用户一次修正→自动传播全执行过程",
+          "tags": [
+            "机器人",
+            "操控",
+            "具身智能"
+          ],
+          "title": "GuidedAttention: Interpretable and Correctable Visual Attention for OOD-Robust Robot Manipulation via Imitation Learning",
+          "authors": [
+            "Masaki Murooka",
+            "Ryoichi Nakajo",
+            "Keisuke Shirai",
+            "Tomohiro Motoda",
+            "Hanbit Oh",
+            "Ryo Hanai",
+            "Yukiyasu Domae"
+          ],
+          "abstract": "End-to-end visuomotor policies provide little opportunity for humans to understand or correct the policy's visual attention. We propose GuidedAttention, a visuomotor imitation learning framework that introduces interpretable and correctable visual attention as an explicit intermediate representation. Task-relevant attention keypoints are predicted from camera images and condition a diffusion-based action policy. Users can inspect and optionally correct selected keypoints once at rollout initialization, after which the corrected attention is automatically propagated throughout execution by a tracking module. Experiments in simulation and the real world demonstrate that GuidedAttention consistently improves robot manipulation performance, particularly under positional and appearance out-of-distribution (OOD) conditions.",
+          "abs_url": "https://arxiv.org/abs/2607.21049",
+          "pdf_url": "https://arxiv.org/pdf/2607.21049v1",
+          "html_url": "https://arxiv.org/html/2607.21049v1",
+          "figures": [
+            "https://arxiv.org/html/2607.21049v1/figs/intro.jpg",
+            "https://arxiv.org/html/2607.21049v1/figs/policy-overall.jpg",
+            "https://arxiv.org/html/2607.21049v1/figs/policy-encoder.jpg",
+            "https://arxiv.org/html/2607.21049v1/figs/policy-override.jpg"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": "",
+          "submitted": "2026-07-23T08:33:40Z",
+          "updated": "2026-07-23T08:33:40Z",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.RO"
+          ],
+          "title_zh": "GuidedAttention：通过模仿学习实现 OOD 鲁棒机器人操作的可解释和可纠正的视觉注意力",
+          "abstract_zh": "端到端的视觉运动策略几乎没有为人类提供理解或纠正策略的视觉注意力的机会。我们提出了 GuidedAttention，这是一种视觉运动模仿学习框架，它引入了可解释和可纠正的视觉注意力作为明确的中间表示。与任务相关的注意力关键点是根据相机图像预测的，并调节基于扩散的动作策略。用户可以在推出初始化时检查并选择性地纠正选定的关键点，之后纠正的注意力将通过跟踪模块在整个执行过程中自动传播。模拟和现实世界中的实验表明，GuidedAttention 持续改善机器人操作性能，特别是在位置和外观分布外 (OOD) 条件下。",
+          "affiliations": [
+            "Yukiyasu Domae",
+            "This work was supported in part by JST CREST, Japan, Grant Number JPMJCR2553 and JSPS KAKENHI Grant Number 22K17984.",
+            "CNRS-AIST JRL (Joint Robotics Laboratory), IRL, 1-1-1 Umezono, Tsukuba, Ibaraki 305-8560, Japan."
+          ]
+        },
+        {
+          "id": "2607.21227",
+          "rank": 8,
+          "score": 75,
+          "reason_zh": "冻结LLM分配力上限+选择恢复策略，底层控制器硬保证力约束不超标",
+          "tags": [
+            "机器人",
+            "操控"
+          ],
+          "title": "FORGE-plus: Force-Budgeted Recovery for Contact-Rich Assembly with a Frozen LLM Supervisor",
+          "authors": [
+            "Kyupaeck Jeff Rah",
+            "Midum Oh"
+          ],
+          "abstract": "Force-conditioned reinforcement learning (RL) enables tight-clearance assembly under a commanded force ceiling, but practical deployment requires determining an appropriate force limit for each object and recovering from insertion failures without exceeding it. We present a two-layer framework in which a frozen, text-only large language model (LLM) assigns a per-object force ceiling before execution and selects recovery maneuvers from a fixed action menu using compact textual force signatures. The LLM never controls force directly: a low-level controller enforces the force ceiling, the recovery policy cannot increase it, and the hidden breaking-force threshold is known only to the evaluator.\n  We evaluate the framework on fragile bottle placement and 0.4 mm diametral-clearance gear insertion using two grippers (Robotiq 2F-140 and Franka Panda hand). A single policy passes 256/256 evaluation episodes on both fragile and robust objects without breakage, correctly predicts release timing, and completes a full table-pick-and-insert pipeline with a mean peak force of 5.4 N. Under injected in-grip slip, the force-signature recovery strategy resolves 40% and 64% of failures on the two grippers, whereas a press-harder baseline is either ineffective or causes frequent breakage. We also report negative results, including the failure of PPO to solve the task under strict force constraints and unsuccessful learned release strategies. All experiments are conducted in rigid-body simulation with hidden force-threshold breakage; no sim-to-real claim is made.",
+          "abs_url": "https://arxiv.org/abs/2607.21227",
+          "pdf_url": "https://arxiv.org/pdf/2607.21227v1",
+          "html_url": "https://arxiv.org/html/2607.21227v1",
+          "figures": [
+            "https://arxiv.org/html/2607.21227v1/figures/franka_jam.png",
+            "https://arxiv.org/html/2607.21227v1/figures/gear_pick.png",
+            "https://arxiv.org/html/2607.21227v1/figures/gear_release.png",
+            "https://arxiv.org/html/2607.21227v1/figures/gear_regrasp.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": "",
+          "submitted": "2026-07-23T11:43:31Z",
+          "updated": "2026-07-23T11:43:31Z",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.RO"
+          ],
+          "title_zh": "FORGE-plus：与冻结的法学硕士主管一起对接触丰富的装配进行强制预算恢复",
+          "abstract_zh": "力调节强化学习 (RL) 可以在受控力上限下实现紧密间隙组装，但实际部署需要为每个对象确定适当的力限制，并在不超过该限制的情况下从插入失败中恢复。我们提出了一个两层框架，其中冻结的纯文本大语言模型（LLM）在执行前分配每个对象的力上限，并使用紧凑的文本力签名从固定动作菜单中选择恢复动作。 LLM 从不直接控制力：低级控制器强制执行力上限，恢复策略无法增加它，并且隐藏的断裂力阈值只有评估者知道。\n  我们使用两个夹具（Robotiq 2F-140 和 Franka Panda 手）评估易碎瓶子放置和 0.4 mm 直径间隙齿轮插入的框架。单个策略在易碎和坚固的物体上通过了 256/256 次评估，没有破损，正确预测了释放时间，并以 5.4 N 的平均峰值力完成了完整的工作台拾取和插入流程。在注入的抓握滑动下，力签名恢复策略解决了两个夹具上 40% 和 64% 的故障，而压力较大的基线要么无效，要么导致频繁破损。我们还报告了负面结果，包括 PPO 在严格的力量约束下未能解决任务以及不成功的学习释放策略。所有实验均在刚体模拟中进行，具有隐藏的力阈值破坏；没有做出模拟真实的声明。",
+          "affiliations": []
+        },
+        {
+          "id": "2607.21582",
+          "rank": 9,
+          "score": 74,
+          "reason_zh": "诊断VLA组合泛化的指令因子偏差，揭示预训练策略的捷径学习模式",
+          "tags": [
+            "VLA",
+            "机器人",
+            "具身智能"
+          ],
+          "title": "Scale Up Strategically: Learning Compositional Generalization via Bias-Aware Evaluation and Data Collection for Robotic Manipulation",
+          "authors": [
+            "Yu Qi",
+            "Zhang Ye",
+            "Xinyi Xu",
+            "Yuxuan Lu",
+            "Amitoj Sandhu",
+            "Boce Hu",
+            "Haojie Huang",
+            "Jonathan Tremblay",
+            "Lawson L. S. Wong"
+          ],
+          "abstract": "Compositional generalization is essential for robot to follow diverse instructions. However, pretrained policies are known to take shortcuts, deferring to salient cues rather than grounding language. We introduce a diagnostic framework that localizes this failure to individual \\textit{instruction factors}, \\textit{e.g.,} reusable semantic components such as color, verb, object, size, and spatial attribute. Our framework formalizes instruction factor bias, the tendency of fine-tuned policies to over-rely on dominant factors as shortcuts, and quantifies it through two metrics: Factor Dominance Rate (FDR), capturing pairwise bias between factors, and Factor Dominance Hierarchy (FDH), aggregating these into a global ranking. Evaluation on six foundation policies reveals broadly consistent ordering, \\textit{i.e.}, color $\\geq$ object $\\geq$ spatial $\\geq$ verb $\\geq$ size, with color dominant, and verb and size most under-grounded. We further show the diagnosis is actionable: a bias-aware data collection strategy that reallocates a fixed budget toward under-grounded factors outperforms baselines in simulation and on a real robot using half the demonstrations, thereby enabling more sample-efficient and generalizable policy learning.",
+          "abs_url": "https://arxiv.org/abs/2607.21582",
+          "pdf_url": "https://arxiv.org/pdf/2607.21582v1",
+          "html_url": "https://arxiv.org/html/2607.21582v1",
+          "figures": [
+            "https://arxiv.org/html/2607.21582v1/x1.png",
+            "https://arxiv.org/html/2607.21582v1/main/figure/objects_scene.png",
+            "https://arxiv.org/html/2607.21582v1/x2.png",
+            "https://arxiv.org/html/2607.21582v1/x3.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": "",
+          "submitted": "2026-07-23T17:57:09Z",
+          "updated": "2026-07-23T17:57:09Z",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.CV",
+            "cs.RO"
+          ],
+          "title_zh": "战略性地扩大规模：通过机器人操作的偏差感知评估和数据收集来学习组合概括",
+          "abstract_zh": "组合概括对于机器人遵循不同的指令至关重要。然而，众所周知，预先训练的政策会走捷径，遵循显着的线索而不是基础语言。我们引入了一个诊断框架，将这种失败定位到各个 \\textit{指令因素}，\\textit{例如} 可重用的语义组件，例如颜色、动词、对象、大小和空间属性。我们的框架形式化了指令因子偏差，即微调政策过度依赖主导因素作为捷径的倾向，并通过两个指标对其进行量化：因子优势率（FDR），捕获因子之间的成对偏差，以及因子优势层次（FDH），将它们汇总到全球排名中。对六项基础政策的评估揭示了大致一致的顺序，\\textit{i.e.}，颜色$\\geq$对象$\\geq$空间$\\geq$动词$\\geq$大小，其中颜色占主导地位，动词和大小最底层。我们进一步表明诊断是可行的：一种偏见感知的数据收集策略，将固定预算重新分配给地下因素，在模拟和使用一半演示的真实机器人上优于基线，从而实现更有效的样本和更普遍的政策学习。",
+          "affiliations": [
+            "Northeastern University",
+            "NVIDIA"
+          ]
+        },
+        {
+          "id": "2607.20992",
+          "rank": 10,
+          "score": 73,
+          "reason_zh": "分布式模型扩散分解为局部条件逆扩散，解决多机器人轨迹优化的维数灾难",
+          "tags": [
+            "机器人",
+            "导航"
+          ],
+          "title": "Distributed Model-Based Diffusion For Scalable Multi-Robot Trajectory Optimization",
+          "authors": [
+            "Haejoon Lee",
+            "Xinyi Wang",
+            "Taekyung Kim",
+            "Dimitra Panagou"
+          ],
+          "abstract": "Trajectory optimization for multi-robot systems remains a critical challenge, particularly when navigating highly non-convex, non-linear, and non-differentiable environments. While Model-Based Diffusion (MBD) has recently emerged as a promising sampling-based optimization paradigm for single-robot trajectory generation, extending it to multi-robot systems results in a centralized, high-dimensional inference problem that (i) suffers from poor sample efficiency due to the curse of dimensionality and (ii) requires global access to all robots' dynamics, constraints, and objectives. To address this, we propose Distributed Model-Based Diffusion (DMBD), a distributed server-robot framework that decomposes the reverse diffusion process into local conditional reverse diffusion processes. This decomposition enables each robot to iteratively perform denoising independently within its own control subspace while conditioning on the current trajectory estimates of the other robots that are aggregated and broadcast by the server. Extensive simulations in goal swapping, multi-floor coverage, parking, and rush-hour scenarios demonstrate that DMBD achieves strong scalability, solving many challenging coordination tasks in sub-seconds and significantly outperforming existing baselines.",
+          "abs_url": "https://arxiv.org/abs/2607.20992",
+          "pdf_url": "https://arxiv.org/pdf/2607.20992v1",
+          "html_url": "https://arxiv.org/html/2607.20992v1",
+          "figures": [
+            "https://arxiv.org/html/2607.20992v1/x1.png",
+            "https://arxiv.org/html/2607.20992v1/x2.png",
+            "https://arxiv.org/html/2607.20992v1/x3.png",
+            "https://arxiv.org/html/2607.20992v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": "9 pages, 4 figures",
+          "submitted": "2026-07-23T07:16:59Z",
+          "updated": "2026-07-23T07:16:59Z",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.RO"
+          ],
+          "title_zh": "基于分布式模型的扩散，用于可扩展的多机器人轨迹优化",
+          "abstract_zh": "多机器人系统的轨迹优化仍然是一个严峻的挑战，特别是在高度非凸、非线性和不可微分的环境中。虽然基于模型的扩散 (MBD) 最近已成为一种有前途的基于采样的单机器人轨迹生成优化范例，但将其扩展到多机器人系统会导致集中式高维推理问题，该问题 (i) 由于维数灾难而导致样本效率较差，(ii) 需要全局访问所有机器人的动态、约束和目标。为了解决这个问题，我们提出了基于分布式模型的扩散（DMBD），这是一种分布式服务器机器人框架，它将反向扩散过程分解为局部条件反向扩散过程。这种分解使每个机器人能够在其自己的控制子空间内独立地迭代执行去噪，同时以服务器聚合和广播的其他机器人的当前轨迹估计为条件。对目标交换、多层覆盖、停车和高峰时段场景的广泛模拟表明，DMBD 具有强大的可扩展性，可以在亚秒级内解决许多具有挑战性的协调任务，并且显着优于现有基线。",
+          "affiliations": []
+        },
+        {
+          "id": "2607.20912",
+          "rank": 11,
+          "score": 72,
+          "reason_zh": "统一导纳-阻抗控制与策略预测，切换比率由多模态观测自适应调节",
+          "tags": [
+            "机器人",
+            "操控"
+          ],
+          "title": "URF: A Unified Robot Control-Policy Framework for Stable Contact Aware Manipulation",
+          "authors": [
+            "Jiyou Shin",
+            "Youngjin Seo",
+            "Jaeseog Won",
+            "Sungwon Seo",
+            "Hyunjun Kim",
+            "Seokmin Yoon",
+            "Tuan Luong",
+            "Hyungpil Moon"
+          ],
+          "abstract": "Learning-based manipulation policies usually predict robot actions from sensory observations and leave their execution to a separate low-level controller. In rigid contact, this separation can be problematic: the same motion to a virtual target or compliant motion command can lead to unstable contact, tracking error, excessive loading, or tool damage, depending on the low-level controller. In this paper, we propose a \\textit{Unified Robot Control-Policy Framework} (URF), which connects compliant action prediction with unified impedance-admittance control. Given multimodal observations, URF predicts a virtual target, a stiffness matrix, and an impedance-admittance switch ratio. The switch ratio determines when the controller should behave more like admittance control for accurate motion tracking and when it should move toward impedance control for safer rigid contact. Because demonstration data do not provide ground-truth environment stiffness, we construct switch-ratio labels from measured contact forces and use them to supervise controller-mode prediction. Across box-flipping and line-pressing tasks, URF achieves higher task success rates while reducing failure modes observed with admittance-only execution, including rapid force buildup, large force oscillations, tool breakage, and robot safety stops. These results suggest that contact-aware policies benefit from predicting not only compliant actions but also the controller behavior used to execute them. Project page: https://jiyou384.github.io/urf_project_page/",
+          "abs_url": "https://arxiv.org/abs/2607.20912",
+          "pdf_url": "https://arxiv.org/pdf/2607.20912v1",
+          "html_url": "https://arxiv.org/html/2607.20912v1",
+          "figures": [
+            "https://arxiv.org/html/2607.20912v1/figures/network_architecture_cmu.png",
+            "https://arxiv.org/html/2607.20912v1/figures/env_setup_cmu.png",
+            "https://arxiv.org/html/2607.20912v1/figures/main_result_v4.png",
+            "https://arxiv.org/html/2607.20912v1/figures/main_result_b.png"
+          ],
+          "code_url": null,
+          "project_url": "https://jiyou384.github.io/urf_project_page/",
+          "code_links": [],
+          "project_links": [
+            "https://jiyou384.github.io/urf_project_page/"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": null,
+          "comments": "8 pages, 5 figures, 2 tables. Submitted to IEEE Robotics and Automation Letters (RA-L)",
+          "submitted": "2026-07-23T04:46:19Z",
+          "updated": "2026-07-23T04:46:19Z",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.RO"
+          ],
+          "title_zh": "URF：用于稳定接触感知操纵的统一机器人控制策略框架",
+          "abstract_zh": "基于学习的操纵策略通常根据感官观察来预测机器人的动作，并将其执行交给单独的低级控制器。在刚性接触中，这种分离可能会产生问题：虚拟目标的相同运动或顺应运动命令可能会导致接触不稳定、跟踪错误、负载过大或工具损坏，具体取决于低级控制器。在本文中，我们提出了一个\\textit{统一机器人控制策略框架}（URF），它将顺从动作预测与统一阻抗导纳控制连接起来。给定多模态观测结果，URF 可以预测虚拟目标、刚度矩阵和阻抗导纳切换比。开关比率决定控制器何时应该表现得更像导纳控制以实现精确的运动跟踪，以及何时应该转向阻抗控制以实现更安全的刚性接触。由于演示数据不提供真实环境刚度，因此我们根据测量的接触力构建开关比标签，并使用它们来监督控制器模式预测。在翻箱和压线任务中，URF 实现了更高的任务成功率，同时减少了仅准入执行中观察到的故障模式，包括快速力积聚、大力振荡、工具破损和机器人安全停止。这些结果表明，接触感知策略不仅受益于预测合规操作，还受益于预测用于执行这些操作的控制器行为。项目页面：https://jiyou384.github.io/urf_project_page/",
+          "affiliations": []
+        },
+        {
+          "id": "2607.21571",
+          "rank": 12,
+          "score": 72,
+          "reason_zh": "揭示具身问答的记忆架构瓶颈，持续场景下2D占用图优于3D点云记忆",
+          "tags": [
+            "机器人",
+            "导航",
+            "顶会"
+          ],
+          "title": "Beyond Episodic Evaluation: Memory Architectural Bottlenecks in Sequential Embodied Question Answering",
+          "authors": [
+            "Zikui Cai",
+            "Kaushal Janga",
+            "Tan Dat Dao",
+            "Seungjae Lee",
+            "Shivin Dass",
+            "Mingyo Seo",
+            "Kaiyu Yue",
+            "Mintong Kang",
+            "Nandhu Pillai",
+            "Monte Hoover",
+            "Aadi Palnitkar",
+            "Ruchit Rawal",
+            "Ruijie Zheng",
+            "Bo Li",
+            "Yuke Zhu",
+            "Roberto Martín-Martín",
+            "Tom Goldstein",
+            "Furong Huang"
+          ],
+          "abstract": "Embodied question answering (EQA) is traditionally evaluated under an episodic formulation, where agents solve each task independently and reset internal state between episodes. However, real-world robots operate continuously and must accumulate, retain, and selectively reuse information acquired from prior interactions. Despite this practical requirement, the architectural mechanisms needed to support sequential memory in EQA remain underexplored. In this work, we investigate how different memory architectures behave when EQA agents are evaluated sequentially, with multiple questions answered in the same scene while memory is carried forward across queries. We find that simply preserving existing memory is often insufficient. Agents that retain only traversability information, such as 2D occupancy maps, remember where the robot has explored but not the visual-semantic evidence needed for later questions. Agents trained on short-horizon episodic data face a different challenge: when exposed to continuous, multi-query histories, their inherited context suffers from severe temporal mismatch, rather than forming a reusable scene representation. To overcome this architectural bottleneck, we highlight the necessity of structured, spatially grounded memory: architectures that map persistent visual observations onto metric 3D geometry preserve visual-semantic evidence in a coherent scene representation. Extensive experiments in simulated environments reveal that this form of memory breaks the accuracy-efficiency tradeoff in sequential settings, simultaneously achieving higher answer accuracy and lower navigation costs. We further validate these findings on a real-world mobile robot, demonstrating that spatially grounded visual memory is critical for enabling continuous, intelligent operation in physical environments.",
+          "abs_url": "https://arxiv.org/abs/2607.21571",
+          "pdf_url": "https://arxiv.org/pdf/2607.21571v1",
+          "html_url": "https://arxiv.org/html/2607.21571v1",
+          "figures": [
+            "https://arxiv.org/html/2607.21571v1/images/fig1-episodic.png",
+            "https://arxiv.org/html/2607.21571v1/images/fig1-sequential.png",
+            "https://arxiv.org/html/2607.21571v1/x1.png",
+            "https://arxiv.org/html/2607.21571v1/x2.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": "Accepted to IROS 2026",
+          "submitted": "2026-07-23T17:50:45Z",
+          "updated": "2026-07-23T17:50:45Z",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.RO"
+          ],
+          "title_zh": "超越情景评估：顺序体现问答中的记忆架构瓶颈",
+          "abstract_zh": "传统上，实体问答（EQA）是根据情景公式进行评估的，其中代理独立地解决每个任务并在情景之间重置内部状态。然而，现实世界的机器人会持续运行，必须积累、保留和有选择地重用从先前交互中获得的信息。尽管存在这一实际需求，但在 EQA 中支持顺序内存所需的架构机制仍未得到充分探索。在这项工作中，我们研究了当 EQA 代理按顺序评估时，不同的内存架构如何表现，在同一场景中回答多个问题，同时跨查询传递内存。我们发现仅仅保留现有的记忆通常是不够的。仅保留可遍历性信息（例如 2D 占用地图）的智能体会记住机器人探索过的位置，但不会记住后续问题所需的视觉语义证据。在短视野情景数据上训练的智能体面临着不同的挑战：当暴露于连续的多查询历史时，它们继承的上下文会遭受严重的时间不匹配，而不是形成可重用的场景表示。为了克服这一架构瓶颈，我们强调了结构化、空间基础记忆的必要性：将持久视觉观察映射到度量 3D 几何上的架构可以在连贯的场景表示中保留视觉语义证据。在模拟环境中进行的大量实验表明，这种形式的记忆打破了顺序设置中的准确性与效率的权衡，同时实现了更高的答案准确性和更低的导航成本。我们在现实世界的移动机器人上进一步验证了这些发现，证明空间接地视觉记忆对于在物理环境中实现连续、智能操作至关重要。",
+          "affiliations": [
+            "Yuke Zhu",
+            "University of Maryland, College Park.",
+            "The University of Texas at Austin.",
+            "University of Illinois Urbana-Champaign."
+          ]
+        },
+        {
+          "id": "2607.20679",
+          "rank": 13,
+          "score": 70,
+          "reason_zh": "能力感知可通过性导航，SPADE模块将机器人物理极限嵌入空间特征",
+          "tags": [
+            "机器人",
+            "导航",
+            "顶会"
+          ],
+          "title": "Towards Capability-Aware Traversability Navigation for Unstructured Environments",
+          "authors": [
+            "Gianluca Capezzuto",
+            "Felipe Tommaselli",
+            "Matheus P. Angarola",
+            "Ricardo V. Godoy",
+            "Marcelo Becker"
+          ],
+          "abstract": "Estimating traversability in unstructured environments requires conditioning on robot embodiment, as the same terrain can be traversable for one platform and unsafe for another. Existing methods often transfer predictions across morphologies through late-stage trajectory filtering rather than encoding platform constraints in the learned representation. We propose Capability-Aware Traversability (CAT), a framework that embeds physical limits directly into the spatial feature space. CAT grounds dense supervision masks in physical trajectories through an interactive annotation pipeline and modulates semantic terrain maps with robot-specific traversability vectors through Spatially-Adaptive Denormalization (SPADE) blocks. Across human-annotated and trajectory-aligned datasets, CAT leads all ranking-based metrics, improving AUROC by 11.0% on physically executed trajectories and AUPRC by 15.8% on human traces over the strongest baseline. Ablations show that spatial conditioning and per-robot prototypes produce capability sensitivity beyond generic path prediction. Deployments on a legged quadruped and a wheeled skid-steer demonstrate embodiment-aware obstacle avoidance on embedded hardware at 4.8 Hz.",
+          "abs_url": "https://arxiv.org/abs/2607.20679",
+          "pdf_url": "https://arxiv.org/pdf/2607.20679v1",
+          "html_url": "https://arxiv.org/html/2607.20679v1",
+          "figures": [
+            "https://arxiv.org/html/2607.20679v1/x1.png",
+            "https://arxiv.org/html/2607.20679v1/x2.png",
+            "https://arxiv.org/html/2607.20679v1/x3.png",
+            "https://arxiv.org/html/2607.20679v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": "https://capability-aware-traversability.github.io/",
+          "code_links": [],
+          "project_links": [
+            "https://capability-aware-traversability.github.io/"
+          ],
+          "has_code": false,
+          "has_project": true,
+          "venue": null,
+          "comments": "8 pages, 7 figures. Accepted to the 2026 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2026). Project page: https://capability-aware-traversability.github.io/",
+          "submitted": "2026-07-22T19:28:57Z",
+          "updated": "2026-07-22T19:28:57Z",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.RO"
+          ],
+          "title_zh": "面向非结构化环境的能力感知可遍历性导航",
+          "abstract_zh": "估计非结构化环境中的可穿越性需要对机器人实施例进行调节，因为相同的地形对于一个平台来说可以穿越，而对于另一个平台来说是不安全的。现有方法通常通过后期轨迹过滤来跨形态转移预测，而不是在学习表示中编码平台约束。我们提出了能力感知可遍历性（CAT），这是一个将物理限制直接嵌入到空间特征空间中的框架。 CAT 通过交互式注释管道将密集的监督掩模置于物理轨迹中，并通过空间自适应非规范化 (SPADE) 块使用机器人特定的可遍历性向量来调制语义地形图。在人工注释和轨迹对齐的数据集中，CAT 领先于所有基于排名的指标，在​​最强基线上，物理执行轨迹的 AUROC 提高了 11.0%，人类轨迹的 AUPRC 提高了 15.8%。消融表明，空间调节和每个机器人原型产生的能力敏感性超出了通用路径预测。在有腿四足动物和轮式滑移装载机上的部署展示了在 4.8 Hz 频率下嵌入式硬件上的实施例感知避障。",
+          "affiliations": []
+        },
+        {
+          "id": "2607.21025",
+          "rank": 14,
+          "score": 70,
+          "reason_zh": "零样本多楼层物体导航+动态行人避让，VLM交叉验证多尺度观测防误判",
+          "tags": [
+            "机器人",
+            "导航",
+            "VLA"
+          ],
+          "title": "ZONDA: Zero-shot Object Navigation with Dynamic Avoidance in Multi-floor Environments",
+          "authors": [
+            "Shaomin Liang",
+            "Xuanhong Liao",
+            "Shiyao Zhang"
+          ],
+          "abstract": "In Object Goal Navigation task, existing methods are typically restricted to static and single-floor environments, ignoring cross-floor topologies and dynamic pedestrian, which limits their real-world deployment. To address these limitations, we propose ZONDA, a zero-shot object navigation with dynamic avoidance framework. In particular, ZONDA integrates three core components: (i) Heuristic multi-floor planning: from height-difference traversable maps, enables stair traversal and cross-floor exploration without a platform-specific learned controller; (ii) Multi-view target verification: cross-checks multi-scale observations with a vision-language model, significantly reducing false positives; and (iii) Dynamic pedestrian avoidance: explicitly tracks and predicts moving pedestrians to generate anticipatory behaviors. Evaluated on a real Direct Drive Tech TITA biped robot and extensive simulations on HM3D and MP3D, ZONDA achieves significantly improved results. Moreover, ZONDA can maintain robust navigation on the dynamic benchmark HM3D-DYNA compared to the existing baseline.",
+          "abs_url": "https://arxiv.org/abs/2607.21025",
+          "pdf_url": "https://arxiv.org/pdf/2607.21025v1",
+          "html_url": "https://arxiv.org/html/2607.21025v1",
+          "figures": [
+            "https://arxiv.org/html/2607.21025v1/x1.png",
+            "https://arxiv.org/html/2607.21025v1/x2.png",
+            "https://arxiv.org/html/2607.21025v1/x3.png",
+            "https://arxiv.org/html/2607.21025v1/x4.png"
+          ],
+          "code_url": null,
+          "project_url": null,
+          "code_links": [],
+          "project_links": [],
+          "has_code": false,
+          "has_project": false,
+          "venue": null,
+          "comments": "",
+          "submitted": "2026-07-23T08:07:52Z",
+          "updated": "2026-07-23T08:07:52Z",
+          "primary_category": "cs.RO",
+          "all_categories": [
+            "cs.RO"
+          ],
+          "title_zh": "ZONDA：多层环境中具有动态回避功能的零样本对象导航",
+          "abstract_zh": "在对象目标导航任务中，现有方法通常仅限于静态和单楼层环境，忽略了跨楼层拓扑和动态行人，这限制了它们的实际部署。为了解决这些限制，我们提出了 ZONDA，一种具有动态回避框架的零样本对象导航。特别是，ZONDA 集成了三个核心组件：（i）启发式多层规划：根据高度差可遍历地图，无需特定于平台的学习控制器即可实现楼梯遍历和跨楼层探索； (ii) 多视角目标验证：用视觉语言模型交叉检查多尺度观测结果，显着减少误报； (iii) 动态行人回避：明确跟踪和预测移动的行人以产生预期行为。经过对真实 Direct Drive Tech TITA 双足机器人的评估以及对 HM3D 和 MP3D 的广泛模拟，ZONDA 取得了显着改进的结果。此外，与现有基准相比，ZONDA 可以在动态基准 HM3D-DYNA 上保持稳健的导航。",
+          "affiliations": []
+        }
+      ]
+    },
+    {
+      "id": "vlm",
+      "name": "VLM / LLM",
+      "papers": [
+        {
+          "id": "2607.21595",
+          "rank": 1,
+          "score": 88,
+          "reason_zh": "阿里达摩院VLM-IE3D：隐式+显式3D几何Token增强VLM空间感知推理",
+          "tags": [
+            "VLM",
+            "3D重建",
+            "开源",
+            "顶会"
+          ],
+          "title": "3D-Aware VLMs with Implicit and Explicit Geometries",
+          "authors": [
+            "Wenhao Li",
+            "Xueying Jiang",
+            "Quanhao Qian",
+            "Deli Zhao",
+            "Ran Xu",
+            "Shijian Lu",
+            "Gongjie Zhang"
+          ],
+          "abstract": "Despite rapid progress, most existing vision-language models (VLMs) built from 2D visual inputs often struggle when handling various 3D tasks that require fine-grained spatial understanding and reasoning. To bridge this gap, we present VLM-IE3D, a unified framework that enhances the 3D spatial awareness of VLMs by equipping them with both implicit and explicit 3D geometries learned from RGB videos. Our VLM-IE3D introduces Implicit Geometry Tokens (IGTs) that capture high-level geometric priors from input videos, as well as complementary Explicit Geometry Tokens (EGTs) that encode detailed geometric structures from reconstructed 3D attributes. On top of that, VLM-IE3D comes with a 3D-aware adapter that effectively fuses the two types of geometric representations with 2D visual cues. This RGB-only design injects strong 3D inductive biases for fine-grained spatial understanding and reasoning without requiring any additional 3D inputs. Extensive experiments show that VLM-IE3D achieves superior performance consistently across various 3D tasks including 3D video detection, 3D visual grounding, 3D dense captioning, and spatial reasoning. Code and models are available at https://github.com/Vegetebird/VLM-IE3D.",
+          "abs_url": "https://arxiv.org/abs/2607.21595",
+          "pdf_url": "https://arxiv.org/pdf/2607.21595v1",
+          "html_url": "https://arxiv.org/html/2607.21595v1",
+          "figures": [
+            "https://arxiv.org/html/2607.21595v1/x1.png",
+            "https://arxiv.org/html/2607.21595v1/x2.png",
+            "https://arxiv.org/html/2607.21595v1/x3.png",
+            "https://arxiv.org/html/2607.21595v1/x4.png"
+          ],
+          "code_url": "https://github.com/Vegetebird/VLM-IE3D",
+          "project_url": null,
+          "code_links": [
+            "https://github.com/Vegetebird/VLM-IE3D"
+          ],
+          "project_links": [],
+          "has_code": true,
+          "has_project": false,
+          "venue": null,
+          "comments": "Accepted by ECCV 2026, Open Sourced",
+          "submitted": "2026-07-23T17:59:59Z",
+          "updated": "2026-07-23T17:59:59Z",
+          "primary_category": "cs.CV",
+          "all_categories": [
+            "cs.AI",
+            "cs.CV",
+            "cs.LG"
+          ],
+          "title_zh": "具有隐式和显式几何形状的 3D 感知 VLM",
+          "abstract_zh": "尽管进展迅速，但大多数现有的基于 2D 视觉输入构建的视觉语言模型 (VLM) 在处理需要细粒度空间理解和推理的各种 3D 任务时常常遇到困难。为了弥补这一差距，我们提出了 VLM-IE3D，这是一个统一的框架，通过为 VLM 配备从 RGB 视频中学习到的隐式和显式 3D 几何图形来增强 VLM 的 3D 空间感知。我们的 VLM-IE3D 引入了隐式几何标记 (IGT)，可从输入视频中捕获高级几何先验；以及互补的显式几何标记 (EGT)，可根据重建的 3D 属性对详细几何结构进行编码。最重要的是，VLM-IE3D 配备了 3D 感知适配器，可有效地将两种类型的几何表示与 2D 视觉提示融合在一起。这种纯 RGB 设计注入了强大的 3D 归纳偏差，可实现细粒度的空间理解和推理，而无需任何额外的 3D 输入。大量实验表明，VLM-IE3D 在各种 3D 任务中始终如一地实现了卓越的性能，包括 3D 视频检测、3D 视觉基础、3D 密集字幕和空间推理。代码和模型可在 https://github.com/Vegetebird/VLM-IE3D 获取。",
+          "affiliations": [
+            "DAMO Academy, Alibaba Group",
+            "HuPan Lab",
+            "Alibaba Group",
+            "Nanyang Technological University"
+          ]
+        }
+      ]
+    }
+  ]
+}
