@@ -16,7 +16,7 @@
           <a class="site-nav-link " href="../blogs/">Blogs</a>
         </nav>
       </div>
-      <div class="header-meta">Updated 2026-07-31 14:30 UTC</div>
+      <div class="header-meta">Updated 2026-08-03 15:14 UTC</div>
     </div>
   </header>
 
@@ -46,7 +46,7 @@
       <button class="tab " data-cat="cs.AI">
         AI<span class="tab-code">cs.AI</span>
       </button>
-    <button class="tab tab-selected" data-cat="__selected__">
+    <button class="tab tab-selected has-selected" data-cat="__selected__">
       Selected<span class="tab-code">精选</span>
     </button>
   </div>
@@ -6181,18 +6181,344 @@
 </ul>
 
 <div id="selected-panel" class="hidden">
-  <p class="sel-empty">今日暂无精选内容。</p>
+  <div class="selected-head">
+    <h2>Curated Papers <span>from 62 submissions</span></h2>
+    <span>10 selected</span>
+  </div>
+  <div class="sel-category">
+    <h3 class="sel-cat-name">世界模型&amp;视频/场景生成模型<span class="sel-cat-count">（4）</span></h3>
+    <ul class="sel-paper-list">
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">1</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2607.22535" target="_blank" rel="noopener">Robot-Factored World Models via Robot Rendering</a></h2>
+<p class="paper-title-zh">通过机器人渲染构建机器人因素的世界模型</p>          </div>
+        </div>
+        <p class="sel-reason">将机器人运动学与外观从世界模型中解耦，实现跨具身泛化的视频预测</p>
+        <div class="sel-tags"><span class="sel-tag">世界模型</span><span class="sel-tag">机器人</span><span class="sel-tag">生成模型</span></div>
+        <div class="paper-meta">
+          <span class="authors">Byungjun Kim, Taeksoo Kim, Hyunsoo Cha, Hanbyul Joo</span>
+        </div>
+        <div class="abstract-box">
+          <p class="paper-abstract">动作条件视频世界模型根据初始观察和动作信号预测未来的观察。在机器人技术中，动作通过两个不同的过程影响未来的观察：它们首先由机器人主体和控制器实现为机器人运动，然后场景通过接触和物体运动做出响应。直接根据动作命令进行调节要求世界模型学习实现过程本身，而根据记录的未来状态进行调节会泄露其旨在预测的交互结果。我们提出了机器人因素的世界模型，它将两个机器人特定的因素移到了世界模型之外。首先，动作实现：每个命令都通过机器人自己的控制器和运动学滚动到可部署的标称轨迹中，这是一个避免动作实现学习和未来状态泄漏的中间信号。其次，机器人渲染：这个标称轨迹是通过机器人 URDF 渲染的，将机器人的几何形状、运动学和外观从模型中分解出来，并转化为显式渲染的机器人几何形状。为了解决深度模糊问题，我们将末端执行器深度与场景深度配对，为超出图像平面重叠的接触和遮挡提供几何线索。相机感知的静态 RGB/深度上下文和渲染的机器人几何体一起形成了一个共享的视觉世界模型界面，该界面在视点和机器人实施例之间保持一致，因此模型仅将动作视为可见的机器人几何体，并学习对象如何响应它。我们的实验表明，渲染的界面优于矢量条件基线，并在推理时推广到看不见的机器人实施例。我们进一步证明，我们的模型通过将手部运动重新定位和渲染为机器人几何形状，从人类演示中生成机器人操作视频。</p>
+          <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
+        </div>
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Action-conditioned video world models predict future observations from an initial observation and an action signal. In robotics, actions influence future observations through two distinct processes: they are first realized into robot motion by the robot body and controller, and the scene then responds through contact and object motion. Conditioning directly on action commands asks the world model to learn the realization process itself, while conditioning on logged future states leaks the interaction outcomes it is meant to predict. We propose robot-factored world models, which move two robot-specific factors outside the world model. First, action realization: each command is rolled through the robot&#39;s own controller and kinematics into a deployment-available nominal trajectory, a middle signal that avoids both action-realization learning and future-state leakage. Second, robot rendering: this nominal trajectory is rendered through the robot URDF, factoring the robot&#39;s geometry, kinematics, and appearance out of the model and into explicit rendered robot geometry. To resolve depth ambiguity, we pair end-effector depth with scene depth, giving geometric cues for contact and occlusion beyond image-plane overlap. Together, camera-aware static RGB/depth context and rendered robot geometry form a shared visual world-model interface that stays consistent across viewpoints and robot embodiments, so the model sees the action only as visible robot geometry and learns how objects respond to it. Our experiments show that the rendered interface outperforms vector-conditioned baselines and generalizes to unseen robot embodiments at inference. We further demonstrate that our model generates robot manipulation videos from human demonstrations by retargeting and rendering the hand motion as robot geometry.</p>
+        </details>
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2607.22535v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2607.22535" target="_blank" rel="noopener">Abs</a>
+<a class="html" href="https://arxiv.org/html/2607.22535v1" target="_blank" rel="noopener">HTML</a><a class="project" href="https://bjkim95.github.io/rofacto/" target="_blank" rel="noopener">Project</a>        </div>
+        <div class="paper-figures">
+            <a href="https://arxiv.org/html/2607.22535v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.22535v1/x1.png" loading="lazy" alt="Figure"></a>
+            <a href="https://arxiv.org/html/2607.22535v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.22535v1/x2.png" loading="lazy" alt="Figure"></a>
+            <a href="https://arxiv.org/html/2607.22535v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.22535v1/x3.png" loading="lazy" alt="Figure"></a>
+            <a href="https://arxiv.org/html/2607.22535v1/x4.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.22535v1/x4.png" loading="lazy" alt="Figure"></a>
+        </div>
+      </li>
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">2</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2607.22530" target="_blank" rel="noopener">ViTacWorld: Scaling Visuo-Tactile World Models for Contact-Rich Robot Manipulation</a></h2>
+<p class="paper-title-zh">ViTacWorld：扩展视觉触觉世界模型以实现富含接触的机器人操作</p>          </div>
+        </div>
+        <p class="sel-reason">首个视觉-触觉世界模型，大规模预训练生成接触丰富操控rollout</p>
+        <div class="sel-tags"><span class="sel-tag">世界模型</span><span class="sel-tag">机器人</span><span class="sel-tag">操控</span></div>
+        <div class="paper-meta">
+          <span class="authors">Yunao Huang, Shiyu Sang, Haotao Lu, Suting Ni, Shijie Wu</span>
+        </div>
+        <div class="abstract-box">
+          <p class="paper-abstract">富含接触的机器人操纵需要相机通常看不到的物理交互线索，这使得触觉传感对于稳健控制至关重要。然而，扩展视觉触觉机器人学习仍然很困难，因为真实的触觉交互数据的收集成本昂贵、依赖于硬件，并且任务和场景多样性有限。我们推出了 ViTacWorld，这是一种动作条件视觉触觉世界模型，用于可扩展的接触丰富的机器人操作。 ViTacWorld 利用公共真实触觉数据集和构建的模拟环境来扩展视觉触觉动作数据，利用触觉信号直接基于物理接触的事实，并且可以表现出比纯视觉观察更小的模拟与真实差距。该模型首先使用大规模真实和模拟的视觉触觉轨迹进行预训练，然后通过现实世界的政策推出进行微调，以更好地匹配下游操纵行为。给定机器人动作，ViTacWorld 可以预测时间上对齐的视觉观察和触觉反馈，从而实现视觉-触觉动作的推出生成。据我们所知，ViTacWorld 是第一个使用世界模型进行机器人视觉触觉动作轨迹生成和策略评估的框架。它有两个作用：综合推出以改进下游触觉策略，以及通过预测受控动作序列下的动作条件视觉触觉结果来评估策略。对接触丰富的操纵任务的实验表明，ViTacWorld 生成物理上有意义的部署，通过可扩展的数据增强提高策略性能，并实现以动作为条件的策略评估。项目页面：https://vitacworld.github.io/</p>
+          <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
+        </div>
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Contact-rich robot manipulation requires physical interaction cues that are often invisible to cameras, making tactile sensing essential for robust control. However, scaling visuo-tactile robot learning remains difficult because real tactile interaction data are expensive to collect, hardware-dependent, and limited in task and scene diversity. We present ViTacWorld, an action-conditioned visuo-tactile world model for scalable contact-rich robot manipulation. ViTacWorld leverages public real tactile datasets and a constructed simulation environment to scale visuo-tactile-action data, exploiting the fact that tactile signals are directly grounded in physical contact and can exhibit a smaller simulation-to-real gap than purely visual observations. The model is first pretrained with large-scale real and simulated visuo-tactile trajectories, and then finetuned with real-world policy rollouts to better match downstream manipulation behaviors. Given robot actions, ViTacWorld predicts temporally aligned visual observations and tactile feedback, enabling visuo-tactile-action rollout generation. To the best of our knowledge, ViTacWorld is the first framework that uses a world model for robot visuo-tactile-action trajectory generation and policy evaluation. It serves two roles: synthesizing rollouts to improve downstream tactile policies, and evaluating policies by predicting action-conditioned visuo-tactile outcomes under controlled action sequences. Experiments on contact-rich manipulation tasks show that ViTacWorld generates physically meaningful rollouts, improves policy performance through scalable data augmentation, and enables action-conditioned policy evaluation. Project page: https://vitacworld.github.io/</p>
+        </details>
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2607.22530v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2607.22530" target="_blank" rel="noopener">Abs</a>
+<a class="html" href="https://arxiv.org/html/2607.22530v1" target="_blank" rel="noopener">HTML</a><a class="project" href="https://vitacworld.github.io/" target="_blank" rel="noopener">Project</a>        </div>
+        <div class="paper-figures">
+            <a href="https://arxiv.org/html/2607.22530v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.22530v1/x1.png" loading="lazy" alt="Figure"></a>
+            <a href="https://arxiv.org/html/2607.22530v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.22530v1/x2.png" loading="lazy" alt="Figure"></a>
+            <a href="https://arxiv.org/html/2607.22530v1/video_quality_v4.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.22530v1/video_quality_v4.png" loading="lazy" alt="Figure"></a>
+            <a href="https://arxiv.org/html/2607.22530v1/evaluation1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.22530v1/evaluation1.png" loading="lazy" alt="Figure"></a>
+        </div>
+      </li>
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">3</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2607.22241" target="_blank" rel="noopener">AgentHOI: Multi-Agent Reasoning for Human-Object-Interaction Video Generation via Implicit Representation Alignment</a></h2>
+<p class="paper-title-zh">AgentHOI：通过隐式表示对齐生成人机交互视频的多代理推理</p>          </div>
+        </div>
+        <p class="sel-reason">多智能体推理驱动人-物交互视频生成，先思考后生成提升交互自然性</p>
+        <div class="sel-tags"><span class="sel-tag">生成模型</span><span class="sel-tag">视频生成</span></div>
+        <div class="paper-meta">
+          <span class="authors">Ziyao Huang, Shunkai Li, Juan Cao, Chenyu Li, Youliang Zhang</span>
+        </div>
+        <div class="abstract-box">
+          <p class="paper-abstract">视频扩散模型的最新进展激发了人们对人机交互（HOI）视频生成的兴趣，这需要对单主体动画之外的交互逻辑进行细粒度控制。然而，现有的 HOI 方法严重依赖于显式运动控制，限制了跨不同对象和交互的可扩展性和泛化。在这项研究中，我们提出了 AgentHOI，一种文本驱动的 HOI 视频生成，遵循先思考后生成的框架，通过感知、交互和运动规划的多智能体推理，弥合了高级文本意图和物理执行之间的差距。基于生成的交互计划，我们进一步加强了文本驱动的运动理解。我们引入了一种隐式文本运动对齐策略，该策略将文本到运动先验提炼到视频扩散模型中，从而在推理时无需显式运动输入即可实现鲁棒的 HOI 合成。实验表明，AgentHOI 显着提高了交互自然性、对象外观保留以及在具有挑战性的以对象为中心的场景（例如佩戴和骑行）中对复杂文本指令的遵守。该代码可在 https://github.com/bone-11/agenthoi 获取。</p>
+          <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
+        </div>
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Recent advances in video diffusion models have spurred interest in human-object interaction (HOI) video generation, which demands fine-grained control over interaction logic beyond single-subject animation. However, existing HOI methods rely heavily on explicit motion control, limiting scalability and generalization across diverse objects and interactions. In this study, we propose AgentHOI, a text-driven HOI video generation following a thinking-before-generation framework that bridges the gap between high-level textual intent and physical execution through multi-agent reasoning over perception, interaction, and motion planning. Building upon the generated interaction plans, we further strengthen text-driven motion understanding. We introduce an implicit text-motion alignment strategy that distills text-to-motion priors into the video diffusion model, enabling robust HOI synthesis without explicit motion inputs at inference. Experiments show that AgentHOI significantly improves interaction naturalness, object appearance preservation, and adherence to complex textual instructions across challenging object-centric scenarios such as wearing and riding. The code is available at https://github.com/bone-11/agenthoi.</p>
+        </details>
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2607.22241v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2607.22241" target="_blank" rel="noopener">Abs</a>
+<a class="html" href="https://arxiv.org/html/2607.22241v1" target="_blank" rel="noopener">HTML</a><a class="code" href="https://github.com/bone-11/agenthoi" target="_blank" rel="noopener">Code</a>        </div>
+        <div class="paper-figures">
+            <a href="https://arxiv.org/html/2607.22241v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.22241v1/x2.png" loading="lazy" alt="Figure"></a>
+            <a href="https://arxiv.org/html/2607.22241v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.22241v1/x3.png" loading="lazy" alt="Figure"></a>
+            <a href="https://arxiv.org/html/2607.22241v1/x4.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.22241v1/x4.png" loading="lazy" alt="Figure"></a>
+            <a href="https://arxiv.org/html/2607.22241v1/x5.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.22241v1/x5.png" loading="lazy" alt="Figure"></a>
+        </div>
+      </li>
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">4</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2607.21848" target="_blank" rel="noopener">Closing the Loop: Training-Free Revisit Consistency for Autoregressive Generative Rendering</a></h2>
+<p class="paper-title-zh">闭环：自回归生成渲染的免训练重访一致性</p>          </div>
+        </div>
+        <p class="sel-reason">免训练重访一致性约束，解决自回归生成渲染的长时序漂移问题</p>
+        <div class="sel-tags"><span class="sel-tag">生成模型</span><span class="sel-tag">闭环仿真</span><span class="sel-tag">视频生成</span></div>
+        <div class="paper-meta">
+          <span class="authors">Wenchao Ma, Changran Liu, Sharon X. Huang, Haomiao Jiang</span>
+        </div>
+        <div class="abstract-box">
+          <p class="paper-abstract">最近的条件视频生成模型显示出将 3D 引擎渲染（例如深度图和无纹理几何体）转换为用于游戏和沉浸式内容创建的逼真视频的巨大潜力。这些应用程序需要长时域自回归生成，不断合成新帧，同时保留持久的 3D 世界。自回归生成器使用有界 KV 缓存逐块合成视频块，因此当相机在其上下文被逐出后重新访问某个位置时，即使调节渲染（例如深度）与底层几何结构保持完美对齐，模型通常会重新生成不一致的外观。我们通过利用 3D 引擎已经提供的对应关系，无需任何后训练即可解决这种重新访问不一致的问题：时间对应将姿势匹配的历史潜在块检索到KV 缓存作为闭环内存，而来自相机姿态和深度重投影的空间对应将标记级注意力偏向于检索到的块的几何对应区域。我们在从 TartanAir 和 TartanGround 数据集挖掘的闭环轨迹上展示了我们的方法，以反映复杂的现实应用场景，在重访一致性方面，它优于现有的免训练基线，而不会损失整体视频质量。项目页面：https://wenchao-m.github.io/ClosetheLoop.github.io/</p>
+          <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
+        </div>
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Recent conditional video generation models have shown promising potentials to transform 3D engine renderings, such as depth maps and untextured geometry, into photorealistic videos for gaming and immersive content creation. These applications require long-horizon auto-regressive generation that continuously synthesizes new frames while preserving a persistent 3D world. Auto-regressive generators synthesize video chunk by chunk with a bounded KV cache, so when the camera revisits a location after its context has been evicted, the model often regenerates inconsistent appearance, even though the conditioning renderings (e.g., depth) remain perfectly aligned with the underlying geometry.We address this revisit inconsistency without any post-training by exploiting correspondences the 3D engine already provides: temporal correspondence retrieves pose-matched historical latent chunks into the KV cache as loop-closure memory, while spatial correspondence from camera pose and depth reprojection biases token-level attention toward geometrically corresponding regions of the retrieved chunks. We demonstrate our method on loop-closure trajectories mined from TartanAir and TartanGround dataset to mirror complicate real-world application scenarios, where it outperforms existing training-free baselines on revisit consistency without losing overall video quality. Project Page: https://wenchao-m.github.io/ClosetheLoop.github.io/</p>
+        </details>
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2607.21848v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2607.21848" target="_blank" rel="noopener">Abs</a>
+<a class="html" href="https://arxiv.org/html/2607.21848v1" target="_blank" rel="noopener">HTML</a><a class="project" href="https://wenchao-m.github.io/ClosetheLoop.github.io/" target="_blank" rel="noopener">Project</a>        </div>
+        <div class="paper-figures">
+            <a href="https://arxiv.org/html/2607.21848v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.21848v1/x2.png" loading="lazy" alt="Figure"></a>
+            <a href="https://arxiv.org/html/2607.21848v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.21848v1/x3.png" loading="lazy" alt="Figure"></a>
+            <a href="https://arxiv.org/html/2607.21848v1/x4.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.21848v1/x4.png" loading="lazy" alt="Figure"></a>
+            <a href="https://arxiv.org/html/2607.21848v1/x5.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.21848v1/x5.png" loading="lazy" alt="Figure"></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="sel-category">
+    <h3 class="sel-cat-name">3D/4D 重建与生成<span class="sel-cat-count">（2）</span></h3>
+    <ul class="sel-paper-list">
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">1</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2607.22172" target="_blank" rel="noopener">JustDepth: Real-Time Radar-Camera Depth Estimation with Single-Scan LiDAR Supervision</a></h2>
+<p class="paper-title-zh">JustDepth：具有单扫描 LiDAR 监控的实时雷达相机深度估计</p>          </div>
+        </div>
+        <p class="sel-reason">雷达-相机实时深度估计，仅需单帧LiDAR监督适配自驾量产传感器配置</p>
+        <div class="sel-tags"><span class="sel-tag">深度估计</span><span class="sel-tag">自动驾驶</span></div>
+        <div class="paper-meta">
+          <span class="authors">Wooyung Yun, Dongwook Kim, Soomok Lee</span>
+        </div>
+        <div class="abstract-box">
+          <p class="paper-abstract">准确而低延迟的深度对于自主系统中的雷达摄像头感知至关重要。摄像头提供丰富的外观，但缺乏公制尺度，而汽车雷达提供公制范围，但稀疏且嘈杂。许多管道是多阶段的或依赖于辅助注释，增加了延迟并限制了可移植性。我们推出 JustDepth，这是一种仅使用雷达、相机和单扫描 LiDAR 进行训练的单级雷达相机深度估计器。所有雷达回波都聚合成固定宽度的一维表示，将运行时间与点计数解耦。高度融合块融合模态，轻量级 GNN 在全局范围内传播深度，仅训练置信解码器以零测试时间成本稳定学习。我们通过简单的增强来减轻条纹伪影，并使用垂直水平梯度比（VHGR）对其进行量化。在 nuScenes 上，与最近最先进的方法相比，JustDepth 在保持准确性的同时，将推理时间减少了 39.7 倍，将条纹伪影减少了 66%（根据 VHGR 测量）。</p>
+          <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
+        </div>
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Accurate yet low-latency depth is essential for radar-camera perception in autonomous systems. Cameras provide rich appearance but lack metric scale, whereas automotive radar offers metric range but is sparse and noisy. Many pipelines are multi-stage or depend on auxiliary annotations, increasing latency and limiting portability. We introduce JustDepth, a single-stage radar-camera depth estimator trained only with radar, camera, and single-scan LiDAR. All radar returns are aggregated into a fixed-width 1D representation, decoupling runtime from point count. A Height Fusion Block fuses modalities, a lightweight GNN propagates depth globally, and a training-only confidence decoder stabilizes learning with zero test-time cost. We mitigate stripe artifacts via simple augmentations and quantify them using the Vertical-Horizontal Gradient Ratio (VHGR). On nuScenes, compared to recent state-of-the-art methods, JustDepth maintains accuracy while reducing inference time by 39.7x and stripe artifacts by 66% as measured by VHGR.</p>
+        </details>
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2607.22172v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2607.22172" target="_blank" rel="noopener">Abs</a>
+<a class="html" href="https://arxiv.org/html/2607.22172v1" target="_blank" rel="noopener">HTML</a><a class="code" href="https://github.com/TPyun/JustDepth" target="_blank" rel="noopener">Code</a>        </div>
+        <div class="paper-figures">
+            <a href="https://arxiv.org/html/2607.22172v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.22172v1/x1.png" loading="lazy" alt="Figure"></a>
+            <a href="https://arxiv.org/html/2607.22172v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.22172v1/x2.png" loading="lazy" alt="Figure"></a>
+            <a href="https://arxiv.org/html/2607.22172v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.22172v1/x3.png" loading="lazy" alt="Figure"></a>
+            <a href="https://arxiv.org/html/2607.22172v1/x4.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.22172v1/x4.png" loading="lazy" alt="Figure"></a>
+        </div>
+      </li>
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">2</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2607.21896" target="_blank" rel="noopener">Learning Adaptive Semantic Gaussian Allocation for 3D Occupancy</a></h2>
+<p class="paper-title-zh">学习 3D 占用的自适应语义高斯分配</p>          </div>
+        </div>
+        <p class="sel-reason">自适应语义高斯分配策略高效渲染3D语义占用，提升自动驾驶场景理解</p>
+        <div class="sel-tags"><span class="sel-tag">3D重建</span><span class="sel-tag">3DGS</span><span class="sel-tag">自动驾驶</span></div>
+        <div class="paper-meta">
+          <span class="authors">Kanglin Ning, Yiran Zhao, Wenrui Li, Houde Quan, Qifan Li</span>
+        </div>
+        <div class="abstract-box">
+          <p class="paper-abstract">语义 3D 高斯通过在体素智能监督下将语义基元渲染到体素体积中，为 3D 语义占用预测提供紧凑的表示。最近的方法通过更灵活的原始形状、几何引导的初始化和渐进致密化提高了这种表示的建模能力和效率。然而，这些进步主要决定了如何表示、初始化或添加基元，并且没有明确解决当必须限制高斯总数以控制内存和计算时如何选择最有用的高斯。这种不平衡造成了分配瓶颈：冗余高斯仍然保留在简单区域中，而困难区域则得不到足够的语义支持。我们提出了语义高斯分配变换器（SAGFormer），它使用高斯属性和局部几何语义特征来对候选者进行评分并选择固定的最终高斯集。 nuScenes-SurroundOcc 和 SSCBench-KITTI-360 上的实验表明，SAGFormer 改进了评估协议下的占用率预测，并产生语义更一致、利用率更高的高斯表示。在类似的最终计数和原始覆盖范围下，它减少了语义混合，增强了类一致的体素支持，并产生了更少的未使用高斯。结果表明，显式容量分配是对语义占用预测的高斯细化的有用补充。</p>
+          <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
+        </div>
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Semantic 3D Gaussians provide a compact representation for 3D semantic occupancy prediction by rendering semantic primitives into a voxel volume under voxel-wise supervision. Recent methods have improved the modeling ability and efficiency of this representation through more flexible primitive shapes, geometry-guided initialization, and progressive densification. However, these advances mainly determine how primitives are represented, initialized, or added, and do not explicitly address how to select the most useful Gaussians when their total number must be limited to control memory and computation. This imbalance creates an allocation bottleneck: redundant Gaussians remain in simple regions, while difficult regions receive insufficient semantic support. We propose the Semantic Gaussian Allocation Transformer (SAGFormer), which uses Gaussian attributes and local geometric-semantic features to score candidates and select a fixed final Gaussian set. Experiments on nuScenes-SurroundOcc and SSCBench-KITTI-360 show that SAGFormer improves occupancy prediction under the evaluated protocols and yields more semantically consistent and better-utilized Gaussian representations. Under similar final counts and raw coverage, it reduces semantic mixing, strengthens class-consistent voxel support, and produces fewer unused Gaussians. The results indicate that explicit capacity allocation is a useful complement to Gaussian refinement for semantic occupancy prediction.</p>
+        </details>
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2607.21896v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2607.21896" target="_blank" rel="noopener">Abs</a>
+<a class="html" href="https://arxiv.org/html/2607.21896v1" target="_blank" rel="noopener">HTML</a>        </div>
+        <div class="paper-figures">
+            <a href="https://arxiv.org/html/2607.21896v1/Figures/graphic_abstract.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.21896v1/Figures/graphic_abstract.png" loading="lazy" alt="Figure"></a>
+            <a href="https://arxiv.org/html/2607.21896v1/Figures/framework.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.21896v1/Figures/framework.png" loading="lazy" alt="Figure"></a>
+            <a href="https://arxiv.org/html/2607.21896v1/Figures/Allocation_diagnostics_with_class_consistent_support.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.21896v1/Figures/Allocation_diagnostics_with_class_consistent_support.png" loading="lazy" alt="Figure"></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="sel-category">
+    <h3 class="sel-cat-name">自动驾驶与机器人<span class="sel-cat-count">（3）</span></h3>
+    <ul class="sel-paper-list">
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">1</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2607.21725" target="_blank" rel="noopener">Addressing the Orchestration Gap in Generalist Robots via Physical Agency</a></h2>
+<p class="paper-title-zh">通过物理代理解决多面手机器人的编排差距</p>          </div>
+        </div>
+        <p class="sel-reason">结构化物理代理替代端到端黑盒，Tri Dao等提出通用机器人编排新范式</p>
+        <div class="sel-tags"><span class="sel-tag">VLA</span><span class="sel-tag">机器人</span><span class="sel-tag">具身智能</span></div>
+        <div class="paper-meta">
+          <span class="authors">Liane Galanti, Dhruv Shah, Tri Dao</span>
+        </div>
+        <div class="abstract-box">
+          <p class="paper-abstract">通用机器人需要结合感知、世界知识、规划、成功检测、恢复和低级控制来推理其行为。当今最先进的模型试图通过大规模预训练将所有这些功能结合到学习策略中。相反，我们表明这些功能可以分解为通用语言条件的策略/控制代理和高级代理管理器/编排器。我们不是通过预训练来训练策略进行推理，而是构建一个闭环物理代理协调器，它可以进行高级规划，将目标分解为可实现的子目标，指挥低级运动命令，跟踪和验证低级观察的结果，并从故障中恢复。我们的物理代理协调器（Pigey）可以控制现有的视觉-语言-动作（VLA）策略以及参数化技能来解决现实世界中的复杂推理任务，而无需任何额外的数据收集或后期培训。我们在模拟基准和具有挑战性的现实世界机器人操作任务中广泛评估了 Pigey，并展示了相对于现有通用策略的显着性能改进。在 LIBERO-PRO 上，Pigey 将最先进的技术提高了 4 倍以上 (12.8% -&gt; 53.3%)，且无需针对特定任务进行微调。在真实的机器人上，Pigey 将推理受限任务的冻结策略从接近零提升到 90% 以上。我们将单独实现的冻结运动技能与在代理循环内实现的冻结运动技能之间的差异称为编排差距。</p>
+          <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
+        </div>
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>General-purpose robots need to reason about their actions, combining perception, world knowledge, planning, success detection, recovery, and low-level control. Today&#39;s state-of-the-art models attempt to combine all these capabilities into the learned policy via large-scale pre-training. Instead, we show that these capabilities can be decomposed into a general language-conditioned policy/control agent and a high-level agent manager/orchestrator. Rather than training policies to reason via pre-training, we build a closed-loop physical agent orchestrator that can do high-level planning, decompose the goal into achievable subgoals, command low-level motor commands, track and verify the outcome from low-level observations, and recover from failures. Our Physical Agency orchestrator (Pigey) can control existing vision-language-action (VLA) policies as well as parametrized skills to solve complex reasoning tasks in the real world, without any additional data collection or post-training. We evaluate Pigey extensively across simulation benchmarks and challenging real-world robotic manipulation tasks, and demonstrate significant performance improvements over existing generalist policies. On LIBERO-PRO, Pigey advances the state-of-the-art by over 4x (12.8% -&gt; 53.3%) with no task-specific fine-tuning. On a real robot, Pigey lifts the frozen policy from near-zero to over 90% on reasoning-limited tasks. We call the difference between what frozen motor skills achieve alone and inside the agentic loop the orchestration gap.</p>
+        </details>
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2607.21725v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2607.21725" target="_blank" rel="noopener">Abs</a>
+<a class="html" href="https://arxiv.org/html/2607.21725v1" target="_blank" rel="noopener">HTML</a>        </div>
+        <div class="paper-figures">
+            <a href="https://arxiv.org/html/2607.21725v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.21725v1/x1.png" loading="lazy" alt="Figure"></a>
+            <a href="https://arxiv.org/html/2607.21725v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.21725v1/x2.png" loading="lazy" alt="Figure"></a>
+            <a href="https://arxiv.org/html/2607.21725v1/figs/doll/turn01_Perceive_wrist.jpg" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.21725v1/figs/doll/turn01_Perceive_wrist.jpg" loading="lazy" alt="Figure"></a>
+            <a href="https://arxiv.org/html/2607.21725v1/figs/doll/turn02_Pick_after.jpg" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.21725v1/figs/doll/turn02_Pick_after.jpg" loading="lazy" alt="Figure"></a>
+        </div>
+      </li>
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">2</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2607.22494" target="_blank" rel="noopener">CARA: Concept-Aware Risk Attention for Interpretable Collision Anticipation</a></h2>
+<p class="paper-title-zh">CARA：可解释碰撞预期的概念感知风险关注</p>          </div>
+        </div>
+        <p class="sel-reason">事故语义概念驱动可解释碰撞预测，概念轨迹直接引导时空注意力</p>
+        <div class="sel-tags"><span class="sel-tag">自动驾驶</span><span class="sel-tag">VLM</span></div>
+        <div class="paper-meta">
+          <span class="authors">Zhishan Tao, Ruoyu Wang, Yucheng Wu, Enjun Du, Yilei Yuan</span>
+        </div>
+        <div class="abstract-box">
+          <p class="paper-abstract">自动驾驶中的碰撞预测不仅需要准确的早期预警，还需要对正在跟踪的风险因素以及风险如何随时间演变进行可解释的推理。现有方法在这方面存在不足：特征驱动模型不透明，事后解释往往缺乏保真度，基于概念的方法大多是为静态识别而不是动态驾驶场景而设计的。我们提出 CARA（概念感知风险注意），一种本质上可解释的碰撞预测时空框架。 CARA 从事故叙述中得出基于领域的风险概念，通过视觉语言相似性将它们与视频帧对齐，并将它们组织成不断发展的概念轨迹。这些轨迹提供了明确的风险证据，指导空间注意力、时间注意力和预期，允许语义概念直接影响模型关注的位置以及随着时间的推移预测风险的方式。通过将语义风险因素视为动态中间证据而不是辅助事后解释，CARA 将可解释性与预测过程紧密结合起来。对三个基准的广泛实验表明，CARA 在强基线上持续提高了预测准确性和预警提前性，同时提供了稀疏且基于语义的概念证据。</p>
+          <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
+        </div>
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Collision anticipation in autonomous driving requires not only accurate early warnings but also interpretable reasoning about what risk factors are being tracked and how risk evolves over time. Existing methods fall short in this regard: feature-driven models are opaque, post-hoc explanations often lack fidelity, and concept-based methods are mostly designed for static recognition rather than dynamic driving scenes. We propose CARA (Concept-Aware Risk Attention), an intrinsically interpretable spatio-temporal framework for collision anticipation. CARA derives domain-grounded risk concepts from accident narratives, aligns them with video frames via vision-language similarity, and organizes them into evolving concept trajectories. These trajectories provide explicit risk evidence that guides spatial attention, temporal attention, and anticipation, allowing semantic concepts to directly influence both where the model attends and how it predicts risk over time. By treating semantic risk factors as dynamic intermediate evidence rather than auxiliary post-hoc explanations, CARA tightly couples interpretability with the predictive process. Extensive experiments on three benchmarks show that CARA consistently improves anticipation accuracy and warning earliness over strong baselines, while providing sparse and semantically grounded concept evidence.</p>
+        </details>
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2607.22494v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2607.22494" target="_blank" rel="noopener">Abs</a>
+<a class="html" href="https://arxiv.org/html/2607.22494v1" target="_blank" rel="noopener">HTML</a>        </div>
+        <div class="paper-figures">
+            <a href="https://arxiv.org/html/2607.22494v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.22494v1/x1.png" loading="lazy" alt="Figure"></a>
+            <a href="https://arxiv.org/html/2607.22494v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.22494v1/x2.png" loading="lazy" alt="Figure"></a>
+            <a href="https://arxiv.org/html/2607.22494v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.22494v1/x3.png" loading="lazy" alt="Figure"></a>
+            <a href="https://arxiv.org/html/2607.22494v1/MM/figure/sandian.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.22494v1/MM/figure/sandian.png" loading="lazy" alt="Figure"></a>
+        </div>
+      </li>
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">3</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2607.22226" target="_blank" rel="noopener">Offline Vision-Language Navigation with Geometric Goal Localization for Outdoor Environments</a></h2>
+<p class="paper-title-zh">室外环境下具有几何目标定位的离线视觉语言导航</p>          </div>
+        </div>
+        <p class="sel-reason">系统评估17个边缘SLM用于VLN指令分解，语义-几何联合实现离线部署</p>
+        <div class="sel-tags"><span class="sel-tag">VLA</span><span class="sel-tag">导航</span><span class="sel-tag">具身智能</span></div>
+        <div class="paper-meta">
+          <span class="authors">Ali Salmasi, Xianjia Yu, Tomi Westerlund</span>
+        </div>
+        <div class="abstract-box">
+          <p class="paper-abstract">基于基础模型的视觉语言导航 (VLN) 具有先进的自主机器人导航功能，使机器人能够解释自然语言指令、识别语义目标并遵循用户指定的行为规则。然而，现有的 VLN 系统严重依赖云托管的基础模型来进行语言理解和语义基础，限制了它们在网络连接不可用且需要可靠的度量目标本地化的情况下的适用性。尽管最近的小语言模型（SLM）能够实现完全机载推理，但它们对导航指令分解的适用性尚未得到系统评估。本文为室外环境的完全机载 VLN 做出了三项贡献。首先，我们针对 4 个在线 API 提出了 17 个可边缘部署的 SLM 的第一个系统基准，用于机器人导航指令分解，评估三个计算平台上人工注释指令的准确性和延迟，并为选择板载语言模型提供实用指导。其次，我们提出了一种轻量级混合语义几何目标定位框架，该框架结合了开放词汇对象检测、提示分割和激光雷达几何来估计度量目标，同时在可靠的几何观测不可用时保持视觉方位引导。第三，我们将这些进步集成到 Edge-BehAV 中，这是 BehAV 架构的完全板载扩展，可实现独立于云的行为引导导航。实验结果表明，最佳离线 SLM 与最强云 API 的指令分解性能相匹配，同时运行速度提高约 9 倍且无需网络连接。所提出的目标定位框架以较低的计算成本将平均目标距离误差从 2.05 m 降低到 0.20 m，并且整个系统在 32 次闭环户外试验中的 31 次中取得了成功。</p>
+          <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
+        </div>
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Foundation-model-based vision-language navigation (VLN) has advanced autonomous robot navigation by enabling robots to interpret natural-language instructions, identify semantic goals, and follow user-specified behavioral rules. However, existing VLN systems rely heavily on cloud-hosted foundation models for language understanding and semantic grounding, limiting their applicability where network connectivity is unavailable and reliable metric goal localization is required. Although recent small language models (SLMs) enable fully onboard inference, their suitability for navigation instruction decomposition has not been systematically evaluated. This paper makes three contributions toward fully onboard VLN for outdoor environments. First, we present the first systematic benchmark of 17 edge-deployable SLMs against 4 online APIs for robotic navigation instruction decomposition, evaluating accuracy and latency on human-annotated instructions across three computing platforms and providing practical guidance for selecting onboard language models. Second, we propose a lightweight hybrid semantic-geometric goal localization framework that combines open-vocabulary object detection, prompted segmentation, and LiDAR geometry to estimate metric goals, while maintaining visual bearing guidance when reliable geometric observations are unavailable. Third, we integrate these advances into Edge-BehAV, a fully onboard extension of the BehAV architecture that enables cloud-independent behavior-guided navigation. Experimental results show that the best offline SLM matches the instruction decomposition performance of the strongest cloud API while running approximately 9x faster and without network connectivity. The proposed goal localization framework reduces mean goal-distance error from 2.05 m to 0.20 m at lower computational cost, and the complete system succeeds in 31 of 32 closed-loop outdoor trials.</p>
+        </details>
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2607.22226v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2607.22226" target="_blank" rel="noopener">Abs</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="sel-category">
+    <h3 class="sel-cat-name">VLM / LLM<span class="sel-cat-count">（1）</span></h3>
+    <ul class="sel-paper-list">
+      <li class="sel-paper">
+        <div class="sel-header">
+          <span class="sel-score">1</span>
+          <div class="sel-titles">
+            <h2 class="paper-title"><a href="https://arxiv.org/abs/2607.22531" target="_blank" rel="noopener">Twins: Learn to Predict Unified Representations with Focal Loss</a></h2>
+<p class="paper-title-zh">双胞胎：学习通过焦点损失预测统一表示</p>          </div>
+        </div>
+        <p class="sel-reason">通道拼接ViT与VAE特征构建统一视觉token空间，focal loss解多模态优化失衡</p>
+        <div class="sel-tags"><span class="sel-tag">VLM</span><span class="sel-tag">生成模型</span><span class="sel-tag">开源</span><span class="sel-tag">顶会</span></div>
+        <div class="paper-meta">
+          <span class="authors">Kaixiong Gong, Xin Cai, Bin Lin, Hao Wang, Yunlong Lin</span>
+        </div>
+        <div class="abstract-box">
+          <p class="paper-abstract">统一的多模态模型寻求一个支持多模态理解和图像生成的共享视觉标记空间。离散方法通过共享代码本统一接口，而连续管道通常依赖于两种不同的表示——用于理解的语义特征（例如 ViT）和用于合成的低级潜在特征（例如 VAE）——导致潜在空间不匹配。我们提出Twins，通过在同一令牌网格上按通道连接ViT和VAE特征形成统一的连续令牌空间，因此序列长度不变并且注意力成本不会增加。然而，在扩散变压器中联合建模孪生暴露了严重的优化不平衡：该模型很好地拟合了 ViT 组件，但很难匹配 VAE 潜在分布。我们将这种不平衡追溯到异质性的三个来源：频率偏差、内在维度以及条件对齐与条件无关的不确定性。为了解决这个问题，我们采用了流匹配的焦点回归目标，该目标增加了大误差 VAE 维度的权重，更好地平衡了 ViT 和 VAE 组件的优化。在 ImageNet 上，在没有无分类器指导的情况下，与朴素 MSE 损失相比，这会产生高达 10.57 gFID 的增益。 Twins 还在多模态理解基准上表现出竞争力，并提高了重建保真度，缩小了面向理解和面向生成的表示之间的差距。</p>
+          <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
+        </div>
+        <details class="abstract-en">
+          <summary>Show English abstract</summary>
+          <p>Unified multimodal models seek a shared visual token space that supports both multimodal understanding and image generation. Discrete methods unify the interface via a shared codebook, whereas continuous pipelines often rely on two disparate representations -- semantic features (e.g., ViT) for understanding and low-level latents (e.g., VAE) for synthesis -- resulting in mismatched latent spaces. We propose Twins, a unified continuous token space formed by channel-wise concatenating ViT and VAE features on the same token grid, so the sequence length is unchanged and attention cost does not increase. However, jointly modeling Twins in a Diffusion Transformer exposes a severe optimization imbalance: the model fits the ViT component well but struggles to match the VAE latent distribution. We trace this imbalance to three sources of heterogeneity: frequency bias, intrinsic dimensionality, and condition-aligned vs condition-independent uncertainty. To address it, we adapt a focal regression objective for flow matching that upweights large-error VAE dimensions, better balancing optimization across the ViT and VAE components. On ImageNet, this yields up to 10.57 gFID gain over naive MSE loss without classifier-free guidance. Twins also performs competitively on multimodal understanding benchmarks and improves reconstruction fidelity, narrowing the gap between understanding- and generation-oriented representations.</p>
+        </details>
+        <div class="paper-actions">
+          <a href="https://arxiv.org/pdf/2607.22531v1" target="_blank" rel="noopener">PDF</a>
+          <a href="https://arxiv.org/abs/2607.22531" target="_blank" rel="noopener">Abs</a>
+<a class="html" href="https://arxiv.org/html/2607.22531v1" target="_blank" rel="noopener">HTML</a><a class="code" href="https://github.com/Tencent-Hunyuan/Twins" target="_blank" rel="noopener">Code</a>        </div>
+        <div class="paper-figures">
+            <a href="https://arxiv.org/html/2607.22531v1/x1.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.22531v1/x1.png" loading="lazy" alt="Figure"></a>
+            <a href="https://arxiv.org/html/2607.22531v1/x2.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.22531v1/x2.png" loading="lazy" alt="Figure"></a>
+            <a href="https://arxiv.org/html/2607.22531v1/x3.png" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.22531v1/x3.png" loading="lazy" alt="Figure"></a>
+            <a href="https://arxiv.org/html/2607.22531v1/" target="_blank" rel="noopener"><img src="https://arxiv.org/html/2607.22531v1/" loading="lazy" alt="Figure"></a>
+        </div>
+      </li>
+    </ul>
+  </div>
 </div>  </main>
 
   <footer class="site-footer">
     <div class="wrap footer-wrap">
       <span>Categories: cs.CV, cs.RO, cs.AI</span>
-      <span>Generated 2026-07-31 14:30 UTC</span>
+      <span>Generated 2026-08-03 15:14 UTC</span>
     </div>
   </footer>
 
   <script>
-    window.__archiveDates = ["2026-07-31", "2026-07-30", "2026-07-29", "2026-07-28", "2026-07-27", "2026-07-24", "2026-07-23", "2026-07-22", "2026-07-21", "2026-07-20", "2026-07-17", "2026-07-16", "2026-07-15", "2026-07-14", "2026-07-13", "2026-07-10", "2026-07-09", "2026-07-08", "2026-07-07", "2026-07-03", "2026-07-02", "2026-07-01", "2026-06-30", "2026-06-29", "2026-06-26", "2026-06-25", "2026-06-24", "2026-06-23", "2026-06-19", "2026-06-18", "2026-06-17", "2026-06-16", "2026-06-15", "2026-06-12", "2026-06-11", "2026-06-10", "2026-06-09", "2026-06-08", "2026-06-05", "2026-06-04", "2026-06-03", "2026-06-02", "2026-06-01", "2026-05-29", "2026-05-28", "2026-05-27", "2026-05-26", "2026-05-25", "2026-05-22", "2026-05-21", "2026-05-20", "2026-05-19", "2026-05-18", "2026-05-15", "2026-05-14", "2026-05-13", "2026-05-12", "2026-05-11", "2026-05-08", "2026-05-07", "2026-05-06", "2026-05-05", "2026-05-04", "2026-05-01", "2026-04-30", "2026-04-29", "2026-04-28", "2026-04-27", "2026-04-24", "2026-04-23", "2026-04-22", "2026-04-21", "2026-04-20", "2026-04-17"];
+    window.__archiveDates = ["2026-08-03", "2026-07-31", "2026-07-30", "2026-07-29", "2026-07-28", "2026-07-27", "2026-07-24", "2026-07-23", "2026-07-22", "2026-07-21", "2026-07-20", "2026-07-17", "2026-07-16", "2026-07-15", "2026-07-14", "2026-07-13", "2026-07-10", "2026-07-09", "2026-07-08", "2026-07-07", "2026-07-03", "2026-07-02", "2026-07-01", "2026-06-30", "2026-06-29", "2026-06-26", "2026-06-25", "2026-06-24", "2026-06-23", "2026-06-19", "2026-06-18", "2026-06-17", "2026-06-16", "2026-06-15", "2026-06-12", "2026-06-11", "2026-06-10", "2026-06-09", "2026-06-08", "2026-06-05", "2026-06-04", "2026-06-03", "2026-06-02", "2026-06-01", "2026-05-29", "2026-05-28", "2026-05-27", "2026-05-26", "2026-05-25", "2026-05-22", "2026-05-21", "2026-05-20", "2026-05-19", "2026-05-18", "2026-05-15", "2026-05-14", "2026-05-13", "2026-05-12", "2026-05-11", "2026-05-08", "2026-05-07", "2026-05-06", "2026-05-05", "2026-05-04", "2026-05-01", "2026-04-30", "2026-04-29", "2026-04-28", "2026-04-27", "2026-04-24", "2026-04-23", "2026-04-22", "2026-04-21", "2026-04-20", "2026-04-17"];
     window.__currentDate = "2026-07-27";
     window.__assetPrefix = "../";
   </script>
