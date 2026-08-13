@@ -16,7 +16,7 @@
           <a class="site-nav-link " href="../blogs/">Blogs</a>
         </nav>
       </div>
-      <div class="header-meta">Updated 2026-08-11 13:45 UTC</div>
+      <div class="header-meta">Updated 2026-08-13 13:49 UTC</div>
     </div>
   </header>
 
@@ -556,7 +556,7 @@
 <p class="paper-comments">Benchmark link: https://github.com/apple/ml-mmtoolsandbox</p>      <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.11818v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.11818" target="_blank" rel="noopener">Abs</a>
-          <a class="code" href="https://github.com/apple/ml-mmtoolsandbox" target="_blank" rel="noopener">Code</a>
+<a class="html" href="https://arxiv.org/html/2607.11818v1" target="_blank" rel="noopener">HTML</a>          <a class="code" href="https://github.com/apple/ml-mmtoolsandbox" target="_blank" rel="noopener">Code</a>
       </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.CL">
@@ -593,7 +593,7 @@
       </h2>
 <p class="paper-title-zh">大型音频语言模型中声学感知的编码器侧神经元识别和放大</p>      <div class="paper-meta">
         <span class="authors">Yu-Han Huang, Chih-Kai Yang, Ke-Han Lu, An-Yu Cheng, Hung-yi Lee</span>
-      </div>
+<span class="affiliations">Graduate Institute of Communication Engineering, National Taiwan University, Taiwan · NTU Artificial Intelligence Center of Research Excellence (NTU AI-CoRE), Taiwan · ASUS Open Cloud Infrastructure Software Center, Taipei, Taiwan</span>      </div>
       <div class="abstract-box">
         <p class="paper-abstract">尽管在语音内容方面表现出色，但大型音频语言模型 (LALM) 在语音的细粒度非语义属性（例如说话者的情绪）方面通常表现不佳。在不花费重新训练成本的情况下改进这一点需要有效的推理时间干预，但大多数现有方法仅在音频编码器之后进行干预，并以相对粗糙的粒度进行操作。首先从波形中提取声学信息的编码器本身在很大程度上仍未被探索，特别是在单个神经元的水平上。我们介绍了 IAAN（识别和放大声学神经元），这是一种免训练、免标签的方法，通过将真实波形上的激活与缺乏真实音频声学信息的噪声参考上的激活进行对比，对音频编码器中的每个前馈神经元进行评分。然后，IAAN 会放大一小组推理时得分最高的神经元。在 10 个非语义语音属性中，IAAN 在 Audio-Flamingo-3 上的平均准确度提高了 25.7 点，在 Qwen2.5-Omni 上提高了 21.4 点，在 Kimi-Audio 上提高了 9.7 点。它还改进了已经明确微调以优先考虑声学证据的模型。在受控比较中，编码器位点和神经元级选择性都证明对于这种增益是必要的。在编码器之后、解码端或语言模型内部进行干预几乎不会产生任何改进，甚至会降低准确性。改进还取决于哪些特定神经元被放大，而不仅仅是其数量，这证实了 IAAN 的声学评分成功地识别了重要的神经元。这些结果表明，音频编码器内部的小规模、精确的针对性干预是加强 LALM 声学理解的有效且很大程度上尚未开发的方法，为推理时间方法开辟了新方向，通过神经元级访问编码器来改善声学感知。</p>
         <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
@@ -842,7 +842,7 @@
       </h2>
 <p class="paper-title-zh">NeuralActuator：机器人动力学和外力感知的神经驱动建模</p>      <div class="paper-meta">
         <span class="authors">Zhiyang Dou, John U. Onyemelukwe, Hangxing Zhang, Heng Zhang, Minghao Guo, Yunsheng Tian, Michal Piotr Lipiec, Joshua Jacob, Chao Liu, Peter Yichen Chen, Yuri Ivanov, Wojciech Matusik</span>
-      </div>
+<span class="affiliations">Amazon Robotics</span>      </div>
       <div class="abstract-box">
         <p class="paper-abstract">可微分模拟器具有先进的策略学习和基于模型的控制，但执行器动力学仍然是模拟到真实误差的重要来源。这在低成本平台上尤其严重，其中线性电流与扭矩关系 $τ= K_tI$ 在指令目标跟踪期间由于摩擦、迟滞、间隙和热效应而变得不可靠。我们提出了 NeuralActuator，一种神经执行器模型，它联合预测（i）模拟器等效的广义作用代理，用于低成本伺服平台上的轨迹传播，（ii）具有用于无传感器力感知的接触概率门的外力，以及（iii）受监督关节的运动状况得分。我们还介绍了神经驱动数据集（NAD），该数据集是通过双臂远程操作系统收集的，该系统记录机器人状态和执行器遥测以及外力标签。扭矩代理头通过姿势轨迹的可微分模拟进行训练，无需直接广义努力标签，而力、门和运动条件头则接受直接监督。 Transformer 捕获时间依赖性，同时支持实时推理。我们在 5 自由度 OpenManipulator-X、6 自由度 SO-101 和 7 自由度 Franka Emika Panda 上评估 NeuralActuator，涵盖三个执行器系列和平台，成本约为 500 美元至超过 30,000 美元。低成本平台支持动力学和力评估，而离线 Franka 实验提供了额外的有效负载力估计基准。实验进一步证明了其在 OpenManipulator-X 上的运动状态估计中的应用，以及当 NeuralActuator 用作预训练模块时改进的行为克隆性能。</p>
         <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
@@ -974,7 +974,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.11720v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.11720" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2607.11720v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.CV">
       <div class="paper-cats">
@@ -1207,7 +1207,7 @@
 <p class="paper-comments">Accepted by RSS 2026. Project page: https://zzongzheng0918.github.io/automated-facial-mechanisms-synthesis/</p>      <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.11688v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.11688" target="_blank" rel="noopener">Abs</a>
-          <a class="project" href="https://zzongzheng0918.github.io/automated-facial-mechanisms-synthesis/" target="_blank" rel="noopener">Project</a>
+<a class="html" href="https://arxiv.org/html/2607.11688v1" target="_blank" rel="noopener">HTML</a>          <a class="project" href="https://zzongzheng0918.github.io/automated-facial-mechanisms-synthesis/" target="_blank" rel="noopener">Project</a>
       </div>
     </li>
     <li class="paper" data-cats="cs.LG,cs.RO,cs.SE">
@@ -1233,7 +1233,7 @@
 <p class="paper-comments">18 pages, 11 figures, 4 tables</p>      <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.11686v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.11686" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2607.11686v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.CL">
       <div class="paper-cats">
@@ -1287,7 +1287,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.11681v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.11681" target="_blank" rel="noopener">Abs</a>
-          <a class="code" href="https://github.com/claudiom4sir/C2LUT" target="_blank" rel="noopener">Code</a>
+<a class="html" href="https://arxiv.org/html/2607.11681v1" target="_blank" rel="noopener">HTML</a>          <a class="code" href="https://github.com/claudiom4sir/C2LUT" target="_blank" rel="noopener">Code</a>
       </div>
     </li>
     <li class="paper" data-cats="cs.CV">
@@ -1311,7 +1311,7 @@
 <p class="paper-comments">Official Page: https://abot-world.amap.com/plaza</p>      <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.11673v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.11673" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2607.11673v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.RO,cs.SC,math.AC">
       <div class="paper-cats">
@@ -1336,7 +1336,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.11657v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.11657" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2607.11657v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.CV">
       <div class="paper-cats">
@@ -2136,7 +2136,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.11570v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.11570" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2607.11570v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.LG,physics.flu-dyn">
       <div class="paper-cats">
@@ -2459,7 +2459,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.11512v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.11512" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2607.11512v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.CV">
       <div class="paper-cats">
@@ -3328,7 +3328,7 @@
       </h2>
 <p class="paper-title-zh">OpsMem：使用跨内存共振进行故障诊断的双内存推理</p>      <div class="paper-meta">
         <span class="authors">Yongqian Sun, Rongchen Gao, Yu Luo, Wenwei Gu, Shenglin Zhang, Qingyi Guo, Qiuai Fu, Yaoliang Wu, Dan Pei</span>
-      </div>
+<span class="affiliations">Nankai University · Tsinghua University · Huawei Technologies Co., Ltd.</span>      </div>
       <div class="abstract-box">
         <p class="paper-abstract">现代软件系统中的故障诊断需要在操作经验的指导下迭代证据获取和假设推理。现有的基于法学硕士的方法通过代理推理或知识增强来改进诊断，但它们通常缺乏一种机制来协调不断变化的诊断状态与迭代诊断期间的操作经验。我们提出了 OpsMem，这是一种双内存框架，可维护当前诊断状态的短期记忆和可重用操作经验的长期记忆。 OpsMem 使用跨记忆共振来激活状态相关的长期记忆，对短期记忆和激活的长期记忆进行多智能体诊断，并将已解决事件中的可重用经验整合回长期记忆中。在真实的华为微服务故障诊断数据集上进行的实验表明，OpsMem 的性能优于代表性的代理推理和知识增强基线，匹配度和相关性比最强基线分别提高了 46.88% 和 18.39%。</p>
         <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
@@ -4253,7 +4253,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.11250v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.11250" target="_blank" rel="noopener">Abs</a>
-          <a class="code" href="https://github.com/deeplearning-wisc/mace" target="_blank" rel="noopener">Code</a>
+<a class="html" href="https://arxiv.org/html/2607.11250v1" target="_blank" rel="noopener">HTML</a>          <a class="code" href="https://github.com/deeplearning-wisc/mace" target="_blank" rel="noopener">Code</a>
       </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.SE">
@@ -5597,7 +5597,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.11079v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.11079" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2607.11079v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.CV">
       <div class="paper-cats">
@@ -5970,7 +5970,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.11027v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.11027" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2607.11027v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.CV,cs.LG">
       <div class="paper-cats">
@@ -6586,7 +6586,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.10963v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.10963" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2607.10963v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.CV">
       <div class="paper-cats">
@@ -6597,7 +6597,7 @@
       </h2>
 <p class="paper-title-zh">使用器官分层报告知识学习基于解剖学的 CT 视觉语言表示</p>      <div class="paper-meta">
         <span class="authors">Guoliang You, Hongming Li, Yuanwang Zhang, Yong Fan</span>
-      </div>
+<span class="affiliations">School of Engineering and Applied Science</span>      </div>
       <div class="abstract-box">
         <p class="paper-abstract">来自配对 CT 图像和放射学报告的医学视觉语言预训练 (VLP) 可以实现可扩展的表示学习，但大多数现有方法要么将整个扫描与整个报告对齐，要么将局部图像区域与文本片段对齐。这些表述没有充分利用放射学报告的一个关键属性：结果是围绕解剖结构组织的，并通过器官、疾病概念、位置和严重性相关属性描述异常。我们提出 OKA-CT，一种用于 CT 报告 VLP 的器官分层知识增强框架。 OKA-CT 首先使用放射学报告解析和法学硕士辅助语义结构将自由文本报告转换为器官条件知识。提取的层次结构用于两个学习阶段。 Stage~1 通过细粒度的器官条件监督将基于解剖学的证据注入 CT 视觉表示中，而 Stage~2 使用器官特定的报告证据来指导结构化报告-CT 对比学习，其中层次结构衍生的语义软目标将具有共享器官水平发现的非配对病例视为弱语义阳性而不是统一阴性。基于轻量级查询的全局分支进一步聚合与疾病相关的体积证据以进行全扫描表示。在 CT-RATE 和 RAD-ChestCT 数据集上，OKA-CT 实现了 84.9 和 72.2 的零样本异常诊断 AUROC，优于之前的 CT VLP 基线。检索和斑块遮挡分析进一步显示报告图像对齐得到改善，并且对疾病相关解剖区域具有更强的敏感性。</p>
         <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
@@ -7123,7 +7123,7 @@
       </h2>
 <p class="paper-title-zh">从业者如何构建SE代理？混合方法研究的见解</p>      <div class="paper-meta">
         <span class="authors">Yunbo Lyu, David Williams, Jieke Shi, Zhensu Sun, Chao Peng, Zhou Yang, Federica Sarro, David Lo</span>
-      </div>
+<span class="affiliations">Tencent, China · University of Alberta, Canada · Alberta Machine Intelligence Institute, Canada</span>      </div>
       <div class="abstract-box">
         <p class="paper-abstract">软件工程 (SE) 代理的兴起，即基于 LLM 的代理，可以理解大型代码库并在有限的人工干预下执行工程任务，其特点是快速发展和采用，但人们对开发人员如何在实践中构建这些系统知之甚少：现有研究挖掘存储库或检查部署，但很少研究 SE 代理的构建方式。本文通过对来自 12 个组织的 20 名从业者的半结构化访谈以及对 80 名从业者的在线调查，首次研究了 SE 流程在 SE 代理的开发中如何变化以及开发者面临哪些挑战。我们发现，随着实施变得更便宜，瓶颈会发生变化而不是消失：长期存在的非编码工作（例如需求、协调、审查和部署）变得更加明显，而审查和评估代理输出变得新的和中心化的。我们描述了七阶段工作流程和向评估驱动开发的转变，其中评估引导迭代，规范成为人类和代理阅读的版本化工件。我们进一步确定了团队面临的六大挑战，以及他们为解决这些挑战而采取的实践，包括不可靠的评估信号、代码超过理解时的理解债务，以及提供者端模型更新引入的行为变化。</p>
         <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
@@ -7135,7 +7135,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.10856v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.10856" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2607.10856v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.CV,cs.LG">
       <div class="paper-cats">
@@ -7747,7 +7747,7 @@
 <p class="paper-comments">51 pages, accepted by ACL 2026</p>      <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.10787v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.10787" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2607.10787v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.LG">
       <div class="paper-cats">
@@ -8133,7 +8133,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.10738v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.10738" target="_blank" rel="noopener">Abs</a>
-          <a class="code" href="https://github.com/zfj1998/AWA-RL" target="_blank" rel="noopener">Code</a>
+<a class="html" href="https://arxiv.org/html/2607.10738v1" target="_blank" rel="noopener">HTML</a>          <a class="code" href="https://github.com/zfj1998/AWA-RL" target="_blank" rel="noopener">Code</a>
       </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.LG,cs.MA">
@@ -8545,7 +8545,7 @@
 <p class="paper-comments">7 pages, 2 figures, 2 tables. Accepted in the Proceedings of the 2nd ACM Virtual Global Computing Education Conference (SIGCSE Virtual 2026)</p>      <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.10674v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.10674" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2607.10674v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cond-mat.mtrl-sci,cs.AI,cs.CV,cs.LG">
       <div class="paper-cats">
@@ -9435,7 +9435,7 @@
       </h2>
 <p class="paper-title-zh">PoseAlign：通过文本引导变形雕刻姿势一致的网格</p>      <div class="paper-meta">
         <span class="authors">Shijin Wang, Zichong Chen, Yang Zhou, Hui Huang</span>
-      </div>
+<span class="affiliations">Guangdong Provincial Key Lab. of Visual Media and Multidim. Intelligence, CSSE, Shenzhen University, China.</span>      </div>
       <div class="abstract-box">
         <p class="paper-abstract">网格变形是改变 3D 网格顶点位置同时保留其拓扑结构的过程，是计算机图形学的基石。尽管最近出现了大量文本引导的 3D 网格变形方法，但将初始网格变形为既遵循文本提示又保留其姿势的网格仍然具有挑战性。本文提出了 PoseAlign，它将文本引导的网格变形分解为两个阶段：全局姿态缩放和局部细节雕刻。具体来说，在第一阶段，我们引入拉普拉斯算子作为可微网格表示，以实现更有效且更平滑的全局变形。然后，我们通过采用注意力共享机制来调整分数蒸馏采样（SDS），提出了一种新颖的姿势对齐 SDS 损失，它为变形网格雕刻出细粒度的几何细节，同时保留其原始姿势。 PoseAlign 显着增强了整体变形过程的可控性，在姿势保留和文本对齐之间实现了良好的平衡。实验证明了我们的方法在文本对齐和网格质量方面的竞争优势。代码位于：https://couusingrade6.github.io/PoseAlign</p>
         <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
@@ -10394,7 +10394,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.10427v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.10427" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2607.10427v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.CV,cs.LG">
       <div class="paper-cats">
@@ -11443,7 +11443,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.10295v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.10295" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2607.10295v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.RO">
       <div class="paper-cats">
@@ -11640,7 +11640,7 @@
 <p class="paper-comments">66 pages, 9 figures; includes supplementary material</p>      <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.10275v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.10275" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2607.10275v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI">
       <div class="paper-cats">
@@ -12813,7 +12813,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.10114v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.10114" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2607.10114v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI">
       <div class="paper-cats">
@@ -13805,7 +13805,7 @@
 <p class="paper-comments">Project page: https://www.taekyung.me/seamlis</p>      <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.09959v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.09959" target="_blank" rel="noopener">Abs</a>
-          <a class="project" href="https://www.taekyung.me/seamlis" target="_blank" rel="noopener">Project</a>
+<a class="html" href="https://arxiv.org/html/2607.09959v1" target="_blank" rel="noopener">HTML</a>          <a class="project" href="https://www.taekyung.me/seamlis" target="_blank" rel="noopener">Project</a>
       </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.CL">
@@ -13992,7 +13992,7 @@
       </h2>
 <p class="paper-title-zh">Banshee：通过声学注入对万向稳定视觉跟踪系统进行目标切换攻击</p>      <div class="paper-meta">
         <span class="authors">Jiarui Li, Joseph Brewington, Qingzhao Zhang, Z. Morley Mao</span>
-      </div>
+<span class="affiliations">Affiliation: The University of Arizona · Affiliation: University of Michigan</span>      </div>
       <div class="abstract-box">
         <p class="paper-abstract">万向稳定视觉跟踪对于无人机 (UAV) 等现代自主系统至关重要。虽然之前的研究表明声学信号可能会干扰万向节内部结构，但此类攻击对无人机跟踪和跟随等现实世界应用的影响仍未得到充分研究。现有的演示在很大程度上忽略了现实世界攻击的实际挑战，例如对象运动的不确定性和运行时延迟。为了弥补这一差距，我们提出了 Banshee，这是第一个物理上可实现的攻击，它通过利用万向摄像头系统中的声学漏洞来诱导无人机视觉跟踪系统中的目标切换。 Banshee 生成精心设计的声波波形，引发优化的对抗性万向节振荡，导致相机视图方向偏移，从而破坏帧间目标关联。因此，机载跟踪器很有可能从原始目标切换到攻击者选择的目标，偶尔会丢失目标。 Banshee 在两个商用万向节系统和五个跟踪器的模拟中取得了 93.6% 的成功率。在不同场景下针对商用无人机的真实台式和飞行中黑匣子攻击显示，总体攻击成功率为 95.5%。我们的结果揭示了声学和视觉之间的实际跨域漏洞，强调了对万向节系统和应用程序的稳健设计的需求。我们的代码位于：https://github.com/U1ltra/Banshee。</p>
         <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
@@ -14563,7 +14563,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.09829v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.09829" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2607.09829v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.CV,eess.IV">
       <div class="paper-cats">
@@ -14647,7 +14647,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.09826v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.09826" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2607.09826v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.RO">
       <div class="paper-cats">
@@ -14671,7 +14671,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.09825v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.09825" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2607.09825v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.CL,cs.CV,cs.HC,cs.IR">
       <div class="paper-cats">
@@ -15275,7 +15275,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.09786v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.09786" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2607.09786v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.CV">
       <div class="paper-cats">
@@ -15287,7 +15287,7 @@
       </h2>
 <p class="paper-title-zh">终身表征：视觉模型持续自我监督学习的调查</p>      <div class="paper-meta">
         <span class="authors">Sergi Masip, Alicja Dobrzeniecka, Jonathan Swinnen, Joachim Collin, Bartłomiej Twardowski, Szymon Łukasik, Tinne Tuytelaars</span>
-      </div>
+<span class="affiliations">Szymon Łukasik · NASK - National Research Institute, Warsaw, Poland · Computer Vision Center, Universitat Autonoma de Barcelona, Barcelona, Spain</span>      </div>
       <div class="abstract-box">
         <p class="paper-abstract">传统上，持续学习假设可以访问标记数据，但许多现实世界的应用程序（例如终身机器人）需要模型不断适应未标记的数据流。这导致了持续自我监督学习（CSSL）的发展，这是一个快速发展的领域，但缺乏专门的系统审查。在这项工作中，我们对视觉 CSSL 进行了全面的调查，并与新兴的视觉语言设置相联系。首先，我们分析现有的评估协议并强调阻碍公平比较的不一致之处。然后，我们研究为什么自我监督目标对灾难性遗忘表现出更好的鲁棒性，并将其与任务无关的表示和更平滑的损失景观联系起来。接下来，我们根据现有方法的遗忘缓解策略将其组织成统一的分类法，包括蒸馏、重放、正则化、架构方法、模型合并和目标级别适应。最后，我们确定了开放性挑战，例如可扩展性和快速适应性的需求。我们认为，推进 CSSL 需要超越小规模基准，转向大规模系统的持续预训练范例。</p>
         <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
@@ -15580,7 +15580,7 @@
       </h2>
 <p class="paper-title-zh">基于 RISC-V 多核 MCU 的视觉系统的低功耗车牌检测和识别</p>      <div class="paper-meta">
         <span class="authors">Lorenzo Lamberti, Manuele Rusci, Marco Fariselli, Francesco Paci, Luca Benini</span>
-      </div>
+<span class="affiliations">Integrated System Laboratory - ETH Zurich, Switzerland · GreenWaves Technologies, Grenoble, France</span>      </div>
       <div class="abstract-box">
         <p class="paper-abstract">在本文中，我们首次（据我们所知）演示了基于低功耗 MCU 的自动车牌识别 (ALPR) 边缘设备。该设计利用 9 核 RISC-V 处理器 GAP8 以及 QVGA 超低功耗灰度成像器。所提出的视觉处理管道使用基于 SSDlite-MobilenetV2 的多模型推理方法进行车牌检测和 LPRNet 进行光学字符识别，第一个任务的 mAP 分数达到 38.9%，后者在公共数据集上的识别率达到 &gt;99.13%。在实际数据中，当 LP 裁剪的大小小至 30x5 像素时，管道会识别注册号。由于采用了压缩和优化策略，多模型推理 (687 MMAC) 在 GAP8 上运行时以 117 mW 的功耗实现了 1.09 FPS 的吞吐量。我们的解决方案是首款嵌入如此复杂网络水平的 MCU 级设备，其能源效率提高了 73 倍。采用 Raspberry Pi3 的先例移动级 ALPR 系统。所提出的设计不诉诸任何硬连线加速引擎，从而为未来的算法改进保留了充分的灵活性。</p>
         <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
@@ -15608,7 +15608,7 @@
       </h2>
 <p class="paper-title-zh">听听功能：由内容嵌入匹配信号重建驱动的语音匿名化</p>      <div class="paper-meta">
         <span class="authors">Adrien Schneider, Kacper Zabkowski, Anderson Augusma, Frédérique Letué, Maria Camila Pinzon, Dominique Vaufreydaz</span>
-      </div>
+<span class="affiliations">Univ. Grenoble Alpes, CNRS, Grenoble INP, LIG, 38000 Grenoble, France · Univ. Grenoble Alpes, CNRS, Grenoble INP, LJK, 38000 Grenoble, France</span>      </div>
       <div class="abstract-box">
         <p class="paper-abstract">该论文提出了一种语音匿名化模型，重点是保留内容而不是产生真实的语音。它依赖于从冻结的预训练 wav2vec2 编码器中提取的内容嵌入。使用矢量量化和 HiFi-GAN 声码器将这些嵌入解码为匿名信号，两者均在 LibriTTS 上进行训练，没有任何波形重建损失或说话人嵌入映射。训练目标强制匿名信号的嵌入与原始信号的嵌入相匹配。在训练时，使用具有梯度反转层的辅助说话人分类分支来丢弃特定于说话人的信息。结果表明，这种简单的基于嵌入的方法实现了非常低的 WER (2.53)，匿名化性能 (EER 13.39) 在 VPC 中排名第一。值得注意的是，即使没有支持的训练目标，情绪也会被部分保留（UAR 43.91），而匿名声音是可以听到的，而不会造成重建损失。</p>
         <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
@@ -15620,7 +15620,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.09767v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.09767" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2607.09767v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.CL,cs.LG,cs.MA">
       <div class="paper-cats">
@@ -15646,7 +15646,7 @@
 <p class="paper-comments">ICML2026 Trustworthy AI for Good Workshop</p>      <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.09766v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.09766" target="_blank" rel="noopener">Abs</a>
-          <a class="project" href="https://yaowenye.com/norm-enforcement" target="_blank" rel="noopener">Project</a>
+<a class="html" href="https://arxiv.org/html/2607.09766v1" target="_blank" rel="noopener">HTML</a>          <a class="project" href="https://yaowenye.com/norm-enforcement" target="_blank" rel="noopener">Project</a>
       </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.CL,cs.MA,eess.SY,math.OC">
@@ -16003,7 +16003,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.09752v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.09752" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2607.09752v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.LG">
       <div class="paper-cats">
@@ -16433,7 +16433,7 @@
 <p class="paper-comments">Please submit solutions at https://www.ramanujanmachine.com/ramanujan-challenge/</p>      <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.09721v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.09721" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2607.09721v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.RO">
       <div class="paper-cats">
@@ -16486,7 +16486,7 @@
 <p class="paper-comments">19 pages, 4 figures. Extends arXiv:2603.11560 to continuous time. Code: github.com/stevefatz95/fcms-continuous</p>      <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.09714v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.09714" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2607.09714v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.MA,cs.RO">
       <div class="paper-cats">
@@ -17424,12 +17424,12 @@
   <footer class="site-footer">
     <div class="wrap footer-wrap">
       <span>Categories: cs.CV, cs.RO, cs.AI</span>
-      <span>Generated 2026-08-11 13:45 UTC</span>
+      <span>Generated 2026-08-13 13:49 UTC</span>
     </div>
   </footer>
 
   <script>
-    window.__archiveDates = ["2026-08-11", "2026-08-10", "2026-08-07", "2026-08-06", "2026-08-05", "2026-08-04", "2026-08-03", "2026-07-31", "2026-07-30", "2026-07-29", "2026-07-28", "2026-07-27", "2026-07-24", "2026-07-23", "2026-07-22", "2026-07-21", "2026-07-20", "2026-07-17", "2026-07-16", "2026-07-15", "2026-07-14", "2026-07-13", "2026-07-10", "2026-07-09", "2026-07-08", "2026-07-07", "2026-07-03", "2026-07-02", "2026-07-01", "2026-06-30", "2026-06-29", "2026-06-26", "2026-06-25", "2026-06-24", "2026-06-23", "2026-06-19", "2026-06-18", "2026-06-17", "2026-06-16", "2026-06-15", "2026-06-12", "2026-06-11", "2026-06-10", "2026-06-09", "2026-06-08", "2026-06-05", "2026-06-04", "2026-06-03", "2026-06-02", "2026-06-01", "2026-05-29", "2026-05-28", "2026-05-27", "2026-05-26", "2026-05-25", "2026-05-22", "2026-05-21", "2026-05-20", "2026-05-19", "2026-05-18", "2026-05-15", "2026-05-14", "2026-05-13", "2026-05-12", "2026-05-11", "2026-05-08", "2026-05-07", "2026-05-06", "2026-05-05", "2026-05-04", "2026-05-01", "2026-04-30", "2026-04-29", "2026-04-28", "2026-04-27", "2026-04-24", "2026-04-23", "2026-04-22", "2026-04-21", "2026-04-20", "2026-04-17"];
+    window.__archiveDates = ["2026-08-13", "2026-08-11", "2026-08-10", "2026-08-07", "2026-08-06", "2026-08-05", "2026-08-04", "2026-08-03", "2026-07-31", "2026-07-30", "2026-07-29", "2026-07-28", "2026-07-27", "2026-07-24", "2026-07-23", "2026-07-22", "2026-07-21", "2026-07-20", "2026-07-17", "2026-07-16", "2026-07-15", "2026-07-14", "2026-07-13", "2026-07-10", "2026-07-09", "2026-07-08", "2026-07-07", "2026-07-03", "2026-07-02", "2026-07-01", "2026-06-30", "2026-06-29", "2026-06-26", "2026-06-25", "2026-06-24", "2026-06-23", "2026-06-19", "2026-06-18", "2026-06-17", "2026-06-16", "2026-06-15", "2026-06-12", "2026-06-11", "2026-06-10", "2026-06-09", "2026-06-08", "2026-06-05", "2026-06-04", "2026-06-03", "2026-06-02", "2026-06-01", "2026-05-29", "2026-05-28", "2026-05-27", "2026-05-26", "2026-05-25", "2026-05-22", "2026-05-21", "2026-05-20", "2026-05-19", "2026-05-18", "2026-05-15", "2026-05-14", "2026-05-13", "2026-05-12", "2026-05-11", "2026-05-08", "2026-05-07", "2026-05-06", "2026-05-05", "2026-05-04", "2026-05-01", "2026-04-30", "2026-04-29", "2026-04-28", "2026-04-27", "2026-04-24", "2026-04-23", "2026-04-22", "2026-04-21", "2026-04-20", "2026-04-17"];
     window.__currentDate = "2026-07-14";
     window.__assetPrefix = "../";
   </script>

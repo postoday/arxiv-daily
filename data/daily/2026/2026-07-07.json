@@ -138,7 +138,8 @@
       "project_links": [],
       "title_zh": "可解释的无人类标签的深度学习，用于具有不确定性量化的真实伪造分类",
       "abstract_zh": "时域调查会产生许多瞬态候选者，使真假分类成为自动发现管道中的关键步骤。可靠的标签成本高昂，而社区标签可能很嘈杂并且依赖于调查。我们的目标是开发一个真实-虚假分类框架，该框架可以在没有人工标记数据的情况下使用注入瞬态和虚假主导的调查数据进行训练，在强类别污染下保持稳健，并提供校准的不确定性量化。我们将模拟瞬态注入与受污染的调查类相结合，并使用不对称共同教学为具有不同标签噪声水平的类训练双网络模型。我们评估基准子集的性能，并使用潜在空间可视化工具分析学习到的表示。对于不确定性量化（UQ），我们比较了 MC dropout 和深度集成，并提出了一种低成本混合策略，利用双网络设置来改进校准。我们将评估扩展到光曲线领域，以评估光曲线类别的恢复。该方法在标记子集上实现了强大的Real-Bogus性能，并且在严重的类别污染下保持稳定。它以高保真度恢复瞬态光曲线类别，而单源识别则受到光曲线衍生标签的模糊性的限制。相对于更昂贵的集成基线，我们的混合 UQ 方法实现了有竞争力的校准。潜在空间分析表明，不确定性与决策边界一致，并揭示了虚假群体中的子类。我们的结果表明，注入驱动的弱监督训练可以实现可扩展且一致的真假分类，无需人工标记的训练数据，同时提供校准的不确定性。该方法适合通过重新运行基于注入的训练管道转移到即将进行的调查。",
-      "figures": []
+      "figures": [],
+      "html_url": "https://arxiv.org/html/2607.05393v1"
     },
     {
       "arxiv_id": "2607.05392",
@@ -600,6 +601,10 @@
         "https://arxiv.org/html/2607.05365v1/figures/S4_S8_merged.png",
         "https://arxiv.org/html/2607.05365v1/figures/stage3_article_dialects_point.png",
         "https://arxiv.org/html/2607.05365v1/figures/stage5_article_avd_consistency.png"
+      ],
+      "affiliations": [
+        "Department of Electrical and Computer Engineering, Johns Hopkins University, Baltimore, MD, USA",
+        "Amazon Inc., Seattle, WA, USA"
       ]
     },
     {
@@ -1045,6 +1050,18 @@
         "https://arxiv.org/html/2607.05325v1/Figures/CMB_Overview.png",
         "https://arxiv.org/html/2607.05325v1/Figures/Results_Synthetic_single.png",
         "https://arxiv.org/html/2607.05325v1/Figures/Grad_Cam.png"
+      ],
+      "affiliations": [
+        "Unit for Lifelong Health and Aging, University College London, UK",
+        "Bioengineering Department and Imperial-X, Imperial College London, UK",
+        "Institute of Cardiovascular Science, University College London, UK",
+        "Department of Diagnostic Radiology, Copenhagen University Hospital, Denmark",
+        "Neuroradiological Academic Unit, UCL Queen Square Institute of Neurology, London, UK",
+        "Department of Radiology and Nuclear Medicine, Erasmus MC, The Netherlands",
+        "Department of Radiology & Nuclear Medicine, Amsterdam UMC, Vrije Universiteit, The Netherlands",
+        "Queen Square Institute of Neurology, University College London, UK",
+        "Barts Heart Centre, St Bartholomew’s Hospital, London, UK",
+        "Department of Biomedical Computing - School of Biomedical Engineering and Imaging Sciences"
       ]
     },
     {
@@ -2168,7 +2185,8 @@
       "project_links": [],
       "title_zh": "统一音频智能而不退化文本智能",
       "abstract_zh": "音频智能涉及理解、推理和生成音频和语音。在这项工作中，我们介绍了 Nemotron-Labs-Audex-30B-A3B (Audex)，这是一个基于 Nemotron-Cascade-2-30B-A3B（强大的纯文本 MoE LLM）构建的统一音频文本 LLM。 Audex 采用简单的统一设计，只有一个 Transformer 解码器：音频输入被编码并投影到文本嵌入空间中，而文本标记和量化音频输出标记在生成过程中被统一处理。该架构可实现强大的音频文本融合、无缝多模式生成以及与标准法学硕士培训和推理基础设施的兼容性。对于训练，我们精心策划了包含 157.4B 音频标记和 320.5B 文本标记的音频文本数据集。我们对这些数据集应用多阶段监督训练，然后是纯文本 Cascade RL 和多域策略蒸馏。 Audex 提供最先进的音频理解、语音识别和翻译、文本到语音、音频生成和语音到语音生成，同时保留其纯文本 LLM 骨干的非常引人注目的推理、对齐、知识、长上下文和代理功能，并且具有边际或无回归。我们发布模型检查点以促进开放研究。",
-      "figures": []
+      "figures": [],
+      "html_url": "https://arxiv.org/html/2607.05196v1"
     },
     {
       "arxiv_id": "2607.05189",
@@ -2204,6 +2222,10 @@
         "https://arxiv.org/html/2607.05189v1/images/benchmark_v2.png",
         "https://arxiv.org/html/2607.05189v1/x1.png",
         "https://arxiv.org/html/2607.05189v1/x2.png"
+      ],
+      "affiliations": [
+        "Nanyang Technological University",
+        "Johns Hopkins University"
       ]
     },
     {
@@ -2540,7 +2562,8 @@
       "project_links": [],
       "title_zh": "通过高增益观察者融合进行支气管镜导航的几何感知视觉里程计",
       "abstract_zh": "导航支气管镜对于肺部干预至关重要，但目前的平台严重依赖术前 CT 或外部传感器，限制了其在重症监护和资源有限环境中的使用。仅视觉导航提供了一种可扩展的替代方案，但传统的视觉里程计 (VO) 难以应对纹理贫乏的气道图像、镜面反射和管状解剖结构的消失点奇点，导致频繁的跟踪失败和漂移。我们提出了一个几何感知的 VO 框架，该框架明确利用气道管腔的消失点线索。检测到的流明被反向投影到 3D 射线，即使在不存在视差提示的情况下，其加权融合也能产生稳定的前向。该航向与基于迫在眉睫的速度估计一起，使用定制的高增益观察器与噪声 VO 输出融合，该观察器强制执行气道跟随先验并拒绝漂移。我们通过电磁跟踪地面实况验证了体外机械通气人肺的方法。与最先进的流程（ORB-SLAM2、LoFTR-VO、DPVO）相比，我们的方法将绝对轨迹误差降低了 50% 以上，并在所有测试序列中实现了最低的相对位姿误差。",
-      "figures": []
+      "figures": [],
+      "html_url": "https://arxiv.org/html/2607.05162v1"
     },
     {
       "arxiv_id": "2607.05150",
@@ -4011,6 +4034,14 @@
         "https://arxiv.org/html/2607.04972v1/x2.png",
         "https://arxiv.org/html/2607.04972v1/x3.png",
         "https://arxiv.org/html/2607.04972v1/figures/real-world.png"
+      ],
+      "affiliations": [
+        "Shanghai Jiao Tong University",
+        "Sun Yat-sen University",
+        "National University of Singapore",
+        "University of Bristol",
+        "Purdue University",
+        "Newcastle University"
       ]
     },
     {
@@ -6145,7 +6176,8 @@
       "project_links": [],
       "title_zh": "URSA：实用逆合成评估的化学意识基准",
       "abstract_zh": "旨在寻找目标分子反应途径的合成规划是药物发现中最重要和最具挑战性的任务之一。最近的进展已经产生了专门的深度学习逆合成系统和通用大型语言模型，但由于缺乏灵活的、化学上可解释的基准测试协议，客观比较仍然很困难。在当前的研究中，我们引入了URSA（实用性逆合成评估）评估框架，该框架不仅从形式角度（例如与市售起始材料的趋同）提供了对合成路线进行基准测试的机会，而且还从化学合理性的角度，模仿专业化学家评估反应和路线的方式。该研究涵盖了对传统的端到端逆合成解决方案和法学硕士的综合评估，用于对一组具有未公开的合成路线的新颖、多样化的目标分子进行合成规划任务，这代表了日常药物设计常规中的现实任务。我们发现，虽然法学硕士可以支持高层战略规划，但它们目前在可靠地解决综合规划任务方面表现不佳。",
-      "figures": []
+      "figures": [],
+      "html_url": "https://arxiv.org/html/2607.04688v1"
     },
     {
       "arxiv_id": "2607.04686",
@@ -6232,7 +6264,8 @@
       "project_links": [],
       "title_zh": "它是看不见还是不知道？视觉语言模型中的错误归因",
       "abstract_zh": "视觉语言模型 (VLM) 在使用高质量图像进行视觉问答方面表现良好，但当问题需要超出清晰直接可见的知识时，就会表现不佳。在这种情况下，不确定性量化不仅应该表明模型是否可能失败，还应该跨感知、实体识别和知识检索等维度诊断模型不确定的原因。虽然之前的工作集中于孤立的单个故障模式或将错误答案视为整体故障，但我们提出了一个统一的框架来解开这些故障模式，并研究预生成信号是否可以预测这些故障源。在一系列数据集和模型系列中，我们发现 VLM 错误存在一致的模式：一些故障是由视觉或识别瓶颈引起的，而另一些故障在识别相关实体后仍然存在。我们的主要发现是，这些故障源可以在解码之前预测：与识别相关的故障最好通过视觉标记表示来捕获，而识别后仍然存在的故障可以通过提示条件隐藏状态更好地捕获。这种预生成信号可以在模型产生答案之前实现有效的故障源预测，从而允许将不确定的案例路由到有针对性的干预措施，例如图像修复、实体识别支持或外部检索。",
-      "figures": []
+      "figures": [],
+      "html_url": "https://arxiv.org/html/2607.04683v1"
     },
     {
       "arxiv_id": "2607.04681",
@@ -6441,6 +6474,11 @@
         "https://arxiv.org/html/2607.04673v1/fig1_schema_v2.png",
         "https://arxiv.org/html/2607.04673v1/fig2_case_v2.png",
         "https://arxiv.org/html/2607.04673v1/xai_perm_importance.png"
+      ],
+      "affiliations": [
+        "University of Texas Southwestern Medical Center",
+        "Southern Methodist University",
+        "Nanyang Technological University"
       ]
     },
     {
@@ -7432,7 +7470,8 @@
       "project_links": [],
       "title_zh": "TORINO：通过视觉语言模型中可解释的概念重叠来减少代币",
       "abstract_zh": "视觉语言模型（VLM）在不同的任务中展示了令人印象深刻的能力，但其计算成本主要由输入到语言模型的大量视觉标记决定。现有的标记缩减方法依赖于基于注意力的分数或成对相似性，而没有每个标记的显式语义表示。我们引入了 TORINO（通过可解释概念重叠进行令牌缩减），这是一种即插即用框架，用于 VLM 中的自适应视觉令牌缩减，无需对底层模型进行微调。 TORINO 利用稀疏自动编码器 (SAE) 将视觉标记投影到可解释的潜在空间中，在该空间中可以通过共享概念激活来分析标记关系。具体来说，我们将概念重叠定义为活跃 SAE 潜在变量之间的一致程度，并使用它对共享语义内容的标记进行分组。然后通过修剪或合并来执行每个组内的缩减，从而提供一个统一的框架，在保留语义上重要的视觉信息的同时消除冗余。与固定预算方法不同，TORINO 根据输入复杂性动态调整缩减率，允许不同的图像保留不同数量的令牌。跨多个视觉语言基准的实验表明，TORINO 实现了有利的效率与准确性权衡，以最小的性能损失减少了视觉标记的数量。",
-      "figures": []
+      "figures": [],
+      "html_url": "https://arxiv.org/html/2607.04593v1"
     },
     {
       "arxiv_id": "2607.04591",
@@ -7706,6 +7745,12 @@
         "https://arxiv.org/html/2607.04558v1/roc_curve_val.png",
         "https://arxiv.org/html/2607.04558v1/pr_curve_val.png",
         "https://arxiv.org/html/2607.04558v1/feature_importance.png"
+      ],
+      "affiliations": [
+        "Dept. of Brain and Cognitive Sciences, Massachusetts Institute of Technology, Cambridge, MA, USA Affiliation:",
+        "Dept. of Neuroscience, University of California, Berkeley, Berkeley, CA, USA Affiliation:",
+        "Dept. of Neurology and Neurologic Sciences, Stanford University, Palo Alto, CA, USA Affiliation:",
+        "Weill Institute of Neurology and Neurosciences, University of California, San Francisco, San Francisco, CA, USA Affiliation:"
       ]
     },
     {
@@ -8005,7 +8050,8 @@
       "project_links": [],
       "title_zh": "服从、分歧、崩溃：盲目服从不正确的指令会导致代码法学硕士陷入不可恢复的代码语义崩溃",
       "abstract_zh": "代码语言模型现在是生产工作流程中值得信赖的协作者，用于调试、重构和迭代修复，并且评估它们的每个基准都假设它们所执行的指令是正确的。我们研究当这个假设被打破时会发生什么。我们通过四个实验来评估代码语言模型，这些实验旨在评估模型是否在单遍和迭代修复设置中抵抗或遵守不正确的指令，使用带有确定性测试用例的算法 Python 问题的 RunBugRun 数据集。我们的研究结果揭示了一种引人注目的行为模式：模型正确地将不正​​确的指令识别为错误，然后无论如何都遵循它。这种合规性在不知不觉中引入了超出原始错误的错误，并且损坏的代码状态无法通过后续的自引导迭代修复来恢复，从而无法跨遍收敛。我们将这种盲目服从称为“盲目服从”，描述它引入的幽灵（未知）错误，量化语义损坏被证明不可恢复的案例比例，并表明扩展推理无法逆转它。这些发现揭示了通过率评估不可见的行为属性，对生产环境中部署的代码语言模型产生直接影响。",
-      "figures": []
+      "figures": [],
+      "html_url": "https://arxiv.org/html/2607.04537v1"
     },
     {
       "arxiv_id": "2607.04531",
@@ -8681,7 +8727,8 @@
       "project_links": [],
       "title_zh": "使用基于多尺度 Hessian 的滤波器融合和 TEASAR 骨架化对计算机断层扫描肺血管树进行空间图表示和形态分析",
       "abstract_zh": "从计算机断层扫描 (CT) 图像重建肺血管树对于定量肺部分析、血管形态评估和患者特异性建模至关重要，但由于血管跨越从近端动脉到远端微脉管系统的多个尺度，因此它仍然具有挑战性。临床胸部 CT 还受到空间分辨率有限、部分体积效应、图像质量不均匀和呼吸运动伪影的影响。与需要大量注释数据集的基于深度学习的肺血管分割方法不同，我们提出了一种确定性、免训练且可解释的管道，用于基于 CT 的肺血管树重建。该方法使用 1 至 8 mm 12 个空间尺度的加权最大响应融合基于 Hessian 的多尺度 Frangi 和 Sato 血管滤波器，从而能够检测大肺动脉和外周分支。肺实质通过 Hounsfield 单位阈值、形态后处理和 Chan-Vese 主动轮廓细化进行分割。使用 TEASAR 算法的 Kimimaro 实现提取血管中心线；然后构建、修剪单独的左肺和右肺血管图，并验证非循环性。使用体积分形维数、Strahler 阶次分析、霍顿比率和默里定律来评估几何合理性。所得分形维数约为 2.3，与人类肺血管系统的报告值一致。同时，分支指标的残余偏差反映了有限 CT 分辨率引起的远端血管截断。这些结果表明，所提出的可解释管道可以生成几何上合理的肺血管树模型，并且可以支持定量肺部成像、血管形态测量和计算肺建模。",
-      "figures": []
+      "figures": [],
+      "html_url": "https://arxiv.org/html/2607.04457v1"
     },
     {
       "arxiv_id": "2607.04453",
@@ -9316,7 +9363,8 @@
       "project_links": [],
       "title_zh": "ACE-Brain-0.5：物理代理人工智能的统一体现基础模型",
       "abstract_zh": "具身人工智能正在从孤立的感知或行动模块转向物理代理，这些物理代理可以理解、根据目标进行计划、通过机器人身体行动、监控进度并根据经验进行改进。现有系统仅部分解决此循环：端到端策略生成操作，但通常缺乏空间推理、规划和执行评估，而机器人代理系统编排工具或专家，但不学习共享表示。这种碎片化限制了一般的物理代理人工智能。我们提出了 ACE-Brain-0.5，这是一个统一的具身基础模型，它将机器人智能组织成五个耦合功能：空间感知、决策、具身交互、自我监控和自我改进。 ACE-Brain-0.5 以 ACE-Brain-0 为基础，将空间智能建立为跨机器人平台的共享支架，ACE-Brain-0.5 将以理解为中心的模型扩展为闭环基础模型。单个 8B 主干网实例化了前四个功能：基础对象和可供性、3D 推理和以自我为中心的空间关系、将指令分解为子目标、生成导航和操作操作以及估计验证和恢复的进度。为了统一这些功能而不产生跨任务干扰，我们引入了 SSR+，它通过任务向量合并后的重新激活阶段扩展了 Scaffold-Specialize-Reconcile。第五个功能是自我改进，是通过一个配套框架来实现的，该框架可以通过推出更新外部执行状态，包括任务模式、空间内存和故障恢复案例。在 15 个基准测试中，ACE-Brain-0.5 在 18 个空间感知和接地基准测试中的 14 个上比 ACE-Brain-0 有所改进，实现了有竞争力的导航和操作性能，并在 ID 和 OOD 设置中提供了强大的进度估计。总之，这些结果标志着迈向通用物理代理人工智能的早期一步。",
-      "figures": []
+      "figures": [],
+      "html_url": "https://arxiv.org/html/2607.04426v1"
     },
     {
       "arxiv_id": "2607.04425",
@@ -9487,7 +9535,8 @@
       "project_links": [],
       "title_zh": "LLM-as-a-Tutor：针对不可验证的 RL 的策略感知提示适应",
       "abstract_zh": "用于不可验证指令的强化学习（RL）越来越依赖于法学硕士法官以特定提示的规则作为奖励信号。 While recent methods adapt these rubrics to the evolving policy during training, the training prompts themselves remain static, drawn from fixed corpora.这种静态方法通常会导致提示难度和策略能力之间出现严重偏差，当提示未能引起推出之间的质量差异时，法官无法恢复歧视性奖励信号。 To address this misalignment, we introduce LLM-as-a-Tutor, a framework that extends the LLM's role from judge to tutor: a single model serves as an examiner that pairwise-compares policy rollouts to detect non-challenging prompts, and as a generator that appends atomic constraints to them. This append-only design monotonically raises difficulty in step with the policy's capability, producing a self-calibrating training signal without external difficulty schedules. On three complex instruction-following benchmarks, our method consistently outperforms both policy-unaware baselines and prior policy-adaptive methods that adapt rubrics or rewrite prompts, suggesting prompt adaptation as a missing axis of policy-awareness in non-verifiable RL.",
-      "figures": []
+      "figures": [],
+      "html_url": "https://arxiv.org/html/2607.04412v1"
     },
     {
       "arxiv_id": "2607.04403",
@@ -9991,7 +10040,18 @@
       ],
       "title_zh": "如何构建数字人类？从先验到逼真的头像",
       "abstract_zh": "这份最先进的报告概述了可控 3D 人体化身创建。我们描述当前的 3D 化身系统，通常由三个阶段组成：(i) 学习人类外观和运动的先验，(ii) 创建个性化化身，以及 (iii) 为化身制作动画。为了限制范围，我们重点关注之前的学习和头像创建阶段。我们定义当前的化身表示并引入一种分类法，该分类法沿多个轴对现有工作进行分类，包括身体区域和所使用的先验。我们回顾了全身和头部化身的方法，以及将身体分解为手、头发和衣服等组件的分层表示。最后，我们概述了共同的基本原则，为新手参考关键文献，并讨论了开放的挑战和未来的研究方向。",
-      "figures": []
+      "figures": [],
+      "html_url": "https://arxiv.org/html/2607.04341v1",
+      "affiliations": [
+        "Meta",
+        "Technical University of Munich",
+        "Google",
+        "Tsinghua University",
+        "Max Planck Institute for Intelligent Systems",
+        "NVIDIA",
+        "Technical University of Darmstadt",
+        "ETH Zurich"
+      ]
     },
     {
       "arxiv_id": "2607.04339",
@@ -10189,7 +10249,8 @@
       "project_links": [],
       "title_zh": "HAS-Bench：在可配置的人类参与下评估基于 LLM 的人类代理系统",
       "abstract_zh": "大型语言模型越来越多地在人类是主动协作者而不是被动任务提供者的环境中运行。我们引入了 HAS-Framework，这是一个基于图形的框架，它将人类和 LLM 支持的代理表示为具有明确角色、权限、通信路径和操作权限的一流参与者。在此框架的基础上，HAS-Bench 在跨机构级别、交互渠道和角色策略的可配置人类参与下评估人类代理系统。该基准衡量任务结果和流程级协作行为，包括澄清质量、反馈利用率、控制校准、安全性、主动性和交互成本。跨越六个领域的实验表明，人类参与可以极大地改善任务完成和故障恢复，但收益取决于何时、如何以及由谁执行人类输入。",
-      "figures": []
+      "figures": [],
+      "html_url": "https://arxiv.org/html/2607.04329v1"
     },
     {
       "arxiv_id": "2607.04315",
@@ -11816,7 +11877,8 @@
       "project_links": [],
       "title_zh": "CSB：位向量计数和采样工具",
       "abstract_zh": "可满足性模理论 (SMT) 求解器由于其在解决各个领域的问题方面的有效性而显着改进了自动推理。随着 SMT 求解器的进步，人们对探索超越单纯可满足性的功能越来越感兴趣，类似于布尔可满足性求解器中观察到的扩展到计数和采样的进展。在本研究中，我们研究了以下问题：我们能否依靠现代 CNF 模型计数器和 CNF 采样器来扩展现代 SMT 求解器来处理位向量的计数和采样问题？\n  这项工作的主要贡献是开发了一种高效且用户友好的工具 csb，它解决了基于位向量理论的模型计数和采样的一系列问题，即精确和近似投影和非投影模型计数，以及几乎均匀和类均匀采样。在精确计数、预计计数和均匀抽样的情况下。我们的工具 csb 使用位爆破技术将位向量公式转换为 CNF 公式，然后应用 CNF 模型计数器或采样器执行计数或采样。我们的实验表明，与现有方法相比，性能有了显着提高。",
-      "figures": []
+      "figures": [],
+      "html_url": "https://arxiv.org/html/2607.04142v1"
     },
     {
       "arxiv_id": "2607.04127",
@@ -11884,6 +11946,10 @@
         "https://arxiv.org/html/2607.04125v1/x2.png",
         "https://arxiv.org/html/2607.04125v1/x3.png",
         "https://arxiv.org/html/2607.04125v1/x4.png"
+      ],
+      "affiliations": [
+        "Hangzhou School of Automation, Zhejiang Normal University, Hangzhou, China",
+        "Beijing Geekplus Technology Co., Ltd, Beijing, China"
       ]
     },
     {
@@ -11953,6 +12019,10 @@
         "https://arxiv.org/html/2607.04119v1/x1.png",
         "https://arxiv.org/html/2607.04119v1/x2.png",
         "https://arxiv.org/html/2607.04119v1/x3.png"
+      ],
+      "affiliations": [
+        "Zhejiang Key Laboratory of Digital-Intelligence Service Technology, Zhejiang University",
+        "ZWSOFT Co., Ltd."
       ]
     },
     {
@@ -12626,7 +12696,8 @@
       "project_links": [],
       "title_zh": "OmniOpt：现代优化器的分类、几何和基准测试",
       "abstract_zh": "大规模模型训练的优化器选择已成为系统级设计决策，受到计算、内存、调优预算和任务多样性的共同约束，但一百多种方法的前景仍然支离破碎。因此，我们推出了 OmniOpt，这是一本为研究界提供的优化器统一调查和基准指南。 OmniOpt 依赖于四个耦合组件。首先，我们将每次优化器更新视为通过五阶段元管道的结构化转换，并表明大多数方法仅涉及其中的一个或两个阶段。其次，我们使用范数约束线性最小化预言（LMO）来统一不同的优化器。第三，这两种观点建立了双重分类法，一个维度将每种方法分配给一个机制系列，另一个维度记录其旨在改进的可衡量的培训目标。第四，也是本文的核心，我们在统一的跨领域基准中实例化了完整的分类法，涵盖代表性优化器、模型规模和从语言模型预训练到图像分类的训练机制，系统地分析跨多个效果目标的每个方法系列并列出它们的权衡。因此，OmniOpt 为研究界提供了一个在明确机制和客观假设下选择优化器的操作坐标系，并为优化器界未来的发展指明了方向。",
-      "figures": []
+      "figures": [],
+      "html_url": "https://arxiv.org/html/2607.04033v1"
     },
     {
       "arxiv_id": "2607.04030",
@@ -13310,7 +13381,8 @@
       "project_links": [],
       "title_zh": "OCT 和 OCT 血管造影的跨模式融合可改善糖尿病视网膜病变的诊断",
       "abstract_zh": "糖尿病视网膜病变 (DR) 是全球视力损害的主要原因，凸显了对准确且易于使用的筛查工具的需求。光学相干断层扫描 (OCT) 提供视网膜的高分辨率结构信息，而 OCT 血管造影 (OCTA) 提供与 DR 诊断高度相关的补充血管信息。在本研究中，我们提出了使用双向跨模态注意网络进行自动 DR 分类的 OCT B 扫描与单通道正面 OCTA 的跨模态融合。两个独立的数据集 OCT500 和 UIC 总共包含 730 名受试者，用于评估数据集内、组合数据集和跨数据集泛化设置下的表现。仅在 OCT 图像上训练的 ConvNeXt V2 模型用作单峰基线。除了真实 (GT) OCTA 之外，我们还探索了使用从 OCT 扫描生成的翻译 (TR) OCTA，从而消除了对专用 OCTA 硬件的需求。实验结果表明，在所有评估场景中，跨模态融合始终优于单模态 OCT 分类。与 GT OCTA 的融合提高了分类准确性和判别性能，而 TR OCTA 在大多数设置中取得了可比或更好的结果。此外，TR OCTA 提高了灵敏度和跨数据集泛化能力，表明对域转换的鲁棒性增强。这些发现表明，基于注意力的 OCT-OCTA 面部融合为 DR 检测提供了具有临床意义的改进，并表明计算生成的 OCTA 可以作为硬件获得的 OCTA 的实用、低成本替代方案，从而能够在资源有限的临床环境中更广泛地部署高性能视网膜筛查系统。",
-      "figures": []
+      "figures": [],
+      "html_url": "https://arxiv.org/html/2607.03959v1"
     },
     {
       "arxiv_id": "2607.03957",
@@ -13788,7 +13860,8 @@
       "project_links": [],
       "title_zh": "TabQueryBench：以查询为中心的综合表格数据基准",
       "abstract_zh": "合成表格数据支持数据共享、访问限制下的模型开发以及分析工作流程的快速原型设计等用例。现代生成模型通过其统计相似性、相关结构、隐私和下游机器学习效用进行评估。然而，此类评估留下了一个空白：它们很少测试对分析查询重要的结构。我们推出 TabQueryBench，这是一个以查询为中心的基准测试，它使用 SQL 型分析查询作为合成数据保真度的结构评估器。它为以查询为中心的合成数据评估提供了可扩展的基础。 TabQueryBench 从 12 个公共分析查询源中将重复出现的跨域逻辑分类为 44 个可重用查询模板，并通过策略引导的模板到 SQL 管道将它们扎根到每个数据集。这使得查询能够感知模式，同时保留生成模型之间的可比性。在 49 个数据集和 11 个生成模型中，它为每个数据集激活 10-12 个模板，为每个数据集生成 100 多个可执行 SQL 查询。我们的系统实验显示了五种主要模式。首先，当前的表格生成模型可以具有良好的基于​​距离的保真度，但在以查询为中心的保真度方面仍然存在不足：RealTabFormer 实现了最高的以查询为中心的保真度，但仅达到 0.75 +/- 0.15（REAL 数据得分为 1.00）。其次，表格生成模型难以应对基数非常高的离散支持。第三，SOTA 生成模型保留了良好的以全局条件查询为中心的保真度，但在本地查询上失败较多。第四，随着查询向极端尾部移动，尾部保真度会恶化；即使最好的模型也只能恢复大约 40.7% 的真实稀有值。最后，表格生成中存在保真度成本权衡：BayesNet 提供最强的权衡，以查询为中心的保真度稍低，但生成成本低得多。",
-      "figures": []
+      "figures": [],
+      "html_url": "https://arxiv.org/html/2607.03926v1"
     },
     {
       "arxiv_id": "2607.03920",
@@ -14324,6 +14397,9 @@
         "https://arxiv.org/html/2607.03862v1/figures/all.png",
         "https://arxiv.org/html/2607.03862v1/figures/pattern.png",
         "https://arxiv.org/html/2607.03862v1/figures/trace.png"
+      ],
+      "affiliations": [
+        "Alibaba Group"
       ]
     },
     {
@@ -15623,6 +15699,9 @@
       "figures": [
         "https://arxiv.org/html/2607.03744v1/figures/pipeline.png",
         "https://arxiv.org/html/2607.03744v1/figures/ctd_timeline.png"
+      ],
+      "affiliations": [
+        "Signal Analysis and Interpretation Laboratory (SAIL), University of Southern California, USA"
       ]
     },
     {
@@ -16000,7 +16079,14 @@
       "title_zh": "IPDiff：具有信息重建和多先验指导的扩散驱动的 ORSI 显着目标检测",
       "abstract_zh": "现有的光学遥感图像显着目标检测（ORSI-SOD）方法主要采用静态推理策略，在测试阶段使用固定的训练模型参数进行显着性推理。这意味着即使生成的显着图有错误，也无法进一步优化。在本文中，我们提出了新颖的 IPDiff，一种具有信息重建和多先验指导的扩散驱动的 ORSI-SOD 方法。我们基于独特的动态优化策略构建IPDiff，该策略赋予IPDiff使用动态参数迭代优化显着图的能力。具体来说，我们将 ORSI-SOD 表述为 IPDiff 中的条件扩散问题。 IPDiff 首先在信息重构驱动的注意力模块的帮助下，从 ORSI 中提取信息先验，包括先验网络中的显着性先验和层次先验。显着性先验可以提供显着对象的位置信息，而分层先验可以提供显着对象的具体细节和语义信息。在这些先验的指导下，随着时间步长在去噪网络中动态变化，IPDiff 会迭代地对随机噪声进行去噪，生成接近真实情况的显着性图。值得注意的是，我们通过混合损失函数同时监督空间域和谱域中的 IPDiff，以实现高效的网络训练。对公共 ORSSD、EORSSD 和 ORSI-4199 数据集的综合实验表明，与 46 种最先进的方法相比，我们提出的 IPDiff 实现了最佳性能。我们方法的代码和结果可在 https://github.com/MathLee/IPDiff 获取。",
       "html_url": "https://arxiv.org/html/2607.03696v1",
-      "figures": []
+      "figures": [],
+      "affiliations": [
+        "School of Communication and Information Engineering, Shanghai University, Shanghai, China",
+        "Department of Medical Equipment, the First Affiliated Hospital of Zhengzhou University, Zhengzhou, China",
+        "School of Control Science and Engineering, Shandong University, Jinan, China",
+        "School of Computer Science and Engineering, Nanyang Technological University, Singapore",
+        "Shenzhen Key Laboratory of Ubiquitous Data Enabling, Tsinghua Shenzhen International Graduate School, Tsinghua University, Shenzhen, China"
+      ]
     },
     {
       "arxiv_id": "2607.03694",
@@ -16493,7 +16579,8 @@
       "project_links": [],
       "title_zh": "探测特定身份的运动特征：一项受控诊断研究",
       "abstract_zh": "身份识别（例如，人、动物重新识别）传统上严重依赖静态外观线索。然而，运动——一致的、个体特定的动态——可以提供补充且可能更强大的特征，特别是当外观较弱或变化时。这就提出了一个基本问题：当特定身份的运动线索清晰存在时，现代视频模型在多大程度上使用它们进行识别？为了研究这个问题，我们进行了系统的诊断研究，并引入了 BALLER120，这是一个对 1​​20 名职业篮球运动员进行罚球的受控基准。通过关注个体之间相同的多阶段动作，BALLER120 减少了动作水平变化和与身份相关的获取偏差，从而能够对特定身份的运动模式进行细粒度分析。我们发现现代视频模型可以从 RGB 视频中准确预测身份，但通常依赖于静态外观线索，例如面部和球衣区域，即使有信息丰富的运动线索可用。引人注目的是，当通过仅轮廓或仅骨架输入抑制外观时，相同的模型架构会转向运动微模式（例如，脚的放置和肘部弯曲）。尽管包含较少的视觉信息，但外观抑制的表示实现了有竞争力的准确性和对外观变化的更强的鲁棒性。我们的定性分析进一步表明，外观抑制模型关注个体之间独特的运动模式。总体而言，我们的研究表明，特定于身份的运动特征是存在的、信息丰富且可学习的，但现代视频模型可能会忽略它们，而倾向于更简单的静态快捷方式，除非明显抑制外观线索。",
-      "figures": []
+      "figures": [],
+      "html_url": "https://arxiv.org/html/2607.03633v1"
     },
     {
       "arxiv_id": "2607.03624",
@@ -16970,7 +17057,8 @@
       "project_links": [],
       "title_zh": "区分评估器，而不是程序：神经符号学习的高效运行时表示",
       "abstract_zh": "人工智能系统越来越多地提出可执行的科学模型，其价值取决于其符号结构和拟合的连续参数。这使得参数校准成为程序和参数协同搜索的瓶颈：外部循环可以生成数千个候选程序，但每个程序都需要内部基于梯度的优化才能进行评估。将每个候选者放入其自己的可微图中可以使单个模型速度更快，但牺牲了保持搜索流畅的程序即数据属性；基于解释器的方法将程序保留为运行时数据，但会支付占主导地位的数值工作的解释器开销。\n  我们提出了本机可微虚拟机（NDVM），这是一种运行时表示，可以区分可执行程序，而无需将每个候选程序编译成单独的图。 NDVM 将符号结构与可微分的数值状态分开：标签、符号、环境和控制仍然是本机运行时数据，而数值有效负载位于密集的批处理缓冲区中，并沿着实现的执行轨迹记录精确的反向模式梯度，因此一次求值器的遍历会分摊到大量参数向量上。真正可微的自托管方案解释器的锁定成本模型激发了设计的动力。我们将 NDVM 实现为原生运行时，具有与参考后端等效的前向和梯度、大约 60 倍的每通道批量摊销、近线性多核扩展以及两个独立的前端。在 LLM 提议的项目的固定预算联合搜索中，NDVM 比挂钟时间快了约 24 倍，达到了高质量的解决方案，这表明运行时差异化是科学发现工作流程的实用系统基础。",
-      "figures": []
+      "figures": [],
+      "html_url": "https://arxiv.org/html/2607.03574v1"
     },
     {
       "arxiv_id": "2607.03572",
@@ -17116,7 +17204,8 @@
       "project_links": [],
       "title_zh": "如何避免争论：通过双效交互证明实现可扩展的人工智能安全",
       "abstract_zh": "随着人工智能模型不断发展强大的功能，我们能够验证它们的输出是否与我们的意图一致变得至关重要。最近的一项工作重点是通过辩论进行验证，这是一种交互式证明模型，其中两个相互竞争的强大证明者或人工智能模型相互辩论，以说服弱验证者或人类相信其主张的正确性。然而，争论假设这两个人工智能模型具有相同的能力，并且其中一个是真实的，这可能不现实。\n  在这项工作中，我们展示了\\emph{如何避免争论}：我们启动了\\emph{单证明者}人工智能安全交互式证明的研究。单证明者交互式证明的先前结果不会立即转移到人工智能安全设置中：例如，当计算可以访问预言机（例如人类判断或外部数据库（例如网络）时，它们不起作用）。我们提出了用于预言机辅助计算（也称为相对化证明）的双效单证明者交互式证明和参数，在以下设置中：（1）计算是鲁棒的，即如果预言机查询的答案最多有一小部分不正确，则输出不会改变，或者（2）预言机是低次多项式。这些结果表明，在结构化或耐噪声的预言机访问下，即使没有争论，交互式验证也是可能的。",
-      "figures": []
+      "figures": [],
+      "html_url": "https://arxiv.org/html/2607.03561v1"
     },
     {
       "arxiv_id": "2607.03558",
@@ -18694,6 +18783,9 @@
         "https://arxiv.org/html/2607.03338v1/mc_results.png",
         "https://arxiv.org/html/2607.03338v1/errors.png",
         "https://arxiv.org/html/2607.03338v1/att_err_mc.png"
+      ],
+      "affiliations": [
+        "Department of Engineering Cybernetics, Norwegian University of Science and Technology, Trondheim, Norway"
       ]
     },
     {
@@ -19015,7 +19107,8 @@
       "project_links": [],
       "title_zh": "代理代码审查有帮助吗？挖掘开发者对 CodeRabbit 野外评论的反馈",
       "abstract_zh": "代理代码审查（即自主代理对拉取请求提供代码审查评论）越来越多地集成到开发工作流程中，但关于开发人员在实践中如何响应此类评论的经验证据有限。在本文中，我们以 CodeRabbit 作为案例研究，对代理代码审查进行了实证研究。通过对 239 个 GitHub 存储库的 31,073 对代码审查和来自 10,191 个拉取请求的开发人员反馈进行实证研究，我们的结果表明，代理审查收到的评价褒贬不一：36.4% 被接受，7.3% 引发讨论，而 56.3% 被拒绝。拒绝主要与误报、冗余或超出范围的无效建议以及与开发人员意图和编码实践不一致有关。我们进一步发现，代理评论往往更关注功能问题，而不是与可进化性相关的评论，但它们更有可能是无效的。为了提高评审实践的有效性，我们探索了各种基于法学硕士的方法来预测评审拒绝。我们发现基于轻量级学习的方法的 F1 分数高达 76%，这表明代码审查及其相应反馈之间存在可学习的模式。我们的结果突出了 CodeRabbit 代理代码审查的现状，显示了改进的机会差距，以及阻碍其有效性的缺点。",
-      "figures": []
+      "figures": [],
+      "html_url": "https://arxiv.org/html/2607.03316v1"
     },
     {
       "arxiv_id": "2607.03303",
@@ -19320,6 +19413,9 @@
         "https://arxiv.org/html/2607.03254v1/x2.png",
         "https://arxiv.org/html/2607.03254v1/x3.png",
         "https://arxiv.org/html/2607.03254v1/x4.png"
+      ],
+      "affiliations": [
+        "German Research Center for Artificial Intelligence (DFKI), Germany."
       ]
     },
     {
@@ -19543,6 +19639,9 @@
         "https://arxiv.org/html/2607.03216v1/figures/fig.2.png",
         "https://arxiv.org/html/2607.03216v1/figures/fig.3.png",
         "https://arxiv.org/html/2607.03216v1/x1.png"
+      ],
+      "affiliations": [
+        "Department of Computer Systems, Tallinn University of Technology, Tallinn, Estonia"
       ]
     },
     {
@@ -19851,6 +19950,9 @@
         "https://arxiv.org/html/2607.03188v1/x1.png",
         "https://arxiv.org/html/2607.03188v1/x2.png",
         "https://arxiv.org/html/2607.03188v1/x3.png"
+      ],
+      "affiliations": [
+        "Saint Petersburg State University"
       ]
     },
     {
@@ -20045,6 +20147,9 @@
         "https://arxiv.org/html/2607.03174v1/diversity_results/160/0_Combined_Homogeneous/combined_global_mix.png",
         "https://arxiv.org/html/2607.03174v1/diversity_results/10139/0_Combined_Homogeneous/combined_global_mix.png",
         "https://arxiv.org/html/2607.03174v1/diversity_results/3n1/0_Combined_Homogeneous/combined_languages.png"
+      ],
+      "affiliations": [
+        "Centre for Software Reliability"
       ]
     },
     {
@@ -20398,7 +20503,8 @@
       "project_links": [],
       "title_zh": "重新思考神经非线性作为门控",
       "abstract_zh": "激活函数被认为是神经非线性的基本基元，即它们使神经网络能够充当通用逼近器。在本文中，我们表明这种非线性也可以通过分支作为通用原语通过输入条件阈值门控来实现。我们证明标准激活——无论是分段线性（ReLU、PReLU、Hardtanh）还是平滑（SiLU、Sigmoid、Tanh、GELU）——实际上都是单个阈值门控（TG）原语的实例。对于 softmax，我们证明它可以通过其等效的每元素 Sigmoid 形式进行精确的 TG 转换。然后，我们通过跨 CNN、基于 Transformer 的模型和循环架构转换预训练网络来验证这些等价性，从而无需重新训练即可保持模型性能。阈值门控还可以从头开始进行训练，而不仅仅是替换现有的激活，还可以提高模型压缩、性能和缩短训练时间。我们还提出了一个“最小分支定理”，它将我们的原语中所需分支的最小数量与一般深度神经网络的可训练性联系起来。在硬件实现方面，TG映射到模拟内存系统的统一实现，解决了模数和数模转换器（ADC/DAC）的瓶颈，该瓶颈已知会显着影响功耗和片上面积。",
-      "figures": []
+      "figures": [],
+      "html_url": "https://arxiv.org/html/2607.03148v1"
     },
     {
       "arxiv_id": "2607.03146",
@@ -20556,7 +20662,8 @@
       "project_links": [],
       "title_zh": "通过运行时跟踪分析检测安全关键固件中的架构漂移",
       "abstract_zh": "在长寿命的安全关键固件中，保持架构设计和运行时观察到的行为之间的一致性具有挑战性。本文提出了一种基于运行时的方法，用于检测符合 ISO 26262 的固件中的架构漂移。该方法收集硬件辅助执行跟踪，将其抽象为固件组件之间的消息交换，并通过确定性差异步骤将生成的运行时行为与设计时序列图进行比较。计算出的增量将差异识别为已确认、缺失、附加或倒置，而基于 LLM 的受限步骤会生成人类可读的报告，仅用于支持专家评审。我们通过基于协议的验证和从业者调查来评估工业固件环境中的方法。超过 26 个测试用例的结果显示生成的增量与专家策划的参考之间有很强的一致性，而从业者认为这些报告对于解释漂移、减少手动分析工作以及支持面向安全的文档活动很有用。研究结果表明，将运行时跟踪分析、确定性架构差异和基于 LLM 的受限报告相结合，实际上可以支持不断发展的安全关键固件中的架构漂移检测。",
-      "figures": []
+      "figures": [],
+      "html_url": "https://arxiv.org/html/2607.03135v1"
     },
     {
       "arxiv_id": "2607.03132",
@@ -20738,7 +20845,8 @@
       ],
       "title_zh": "Vidu S1：实时交互式视频生成模型",
       "abstract_zh": "我们推出Vidu S1，一种支持数字角色语音控制的实时交互式视频生成模型。用户可以随时通过语音指令控制视频生成内容。 Vidu S1支持无限长度的实时视频生成，不会出现模糊、漂移或视觉失真的情况。 Vidu S1 采用 TurboDiffusion 和 TurboServe 构建，在普通消费级 GPU 上以高达 42 FPS 的速度输出 540p 实时视频。用户可以上传真人、动漫、宠物的自定义图片，并选择不同的语音音调以获得个性化体验。实验表明，Vidu S1在所有测试指标上均实现了最佳性能，同时完全满足实时推理要求。可在 https://vidu.com/vidu-stream 上获取可玩的在线演示。",
-      "figures": []
+      "figures": [],
+      "html_url": "https://arxiv.org/html/2607.03118v1"
     },
     {
       "arxiv_id": "2607.03110",
@@ -20994,7 +21102,8 @@
       "project_links": [],
       "title_zh": "稳健性遇到不确定性：稳健选择性分类的证据对抗训练",
       "abstract_zh": "安全关键型应用需要坚固可靠的分类器。对抗性训练是一种广泛采用的防御方法，用于提高深度神经网络的鲁棒性；然而，它对预测不确定性可靠性的影响仍未得到充分研究。我们通过选择性分类的角度来研究这一差距，而选择性分类很少与对抗稳健性一起进行系统分析。我们引入了鲁棒性与不确定性权衡的统一基准。它标准化了干净、对抗和常见腐败环境中的架构、增强、威胁模型和评估指标。在各种最先进的对抗训练方法中，我们发现了一种反复出现的失败模式：几种方法提高了稳健的准确性，同时降低了不确定性排名，导致较差的选择性行为。为了解决这个问题，我们提出了证据对抗训练（EV-AT），它通过狄利克雷分布对不确定性进行建模，并将（i）基于证据的损失促进干净的准确性和可靠的不确定性与（ii）强大的证据对齐损失匹配对数狄利克雷参数空间中的干净和对抗性预测。大量实验表明，EV-AT 改变了鲁棒性与不确定性权衡的帕累托边界，超越了先前最先进的对抗训练方法。我们的源代码可在 https://github.com/NicolasSournac/Robustness_Meets_Uncertainty.EV-AT 上公开获取。",
-      "figures": []
+      "figures": [],
+      "html_url": "https://arxiv.org/html/2607.03075v1"
     },
     {
       "arxiv_id": "2607.03073",
@@ -22151,7 +22260,8 @@
       "project_links": [],
       "title_zh": "使用 Incognita 评估基于社会分布式任务环境中的行动的生成代理",
       "abstract_zh": "社会环境中的有效代理取决于代理何时寻求知识、何时采取行动以及其行动是否根据所获得的信息而合理。现有的接地基准提供了可执行的操作、持久状态和可验证的结果，而社交模拟环境则提供了语言代理之间丰富的交互。我们研究了结合这些要求的评估设置。我们将社交分布式任务环境定义为交互式环境，其中与任务相关的知识在角色隔离的参与者之间划分，并且只能通过他们来访问相应的操作。沟通是对角色划分知识的探索，而扎根行动是对环境状态的利用。我们引入了 Incognita，一个基于 Concordia 的框架，它将社交互动与扎根执行分开。被评估的代理将消息路由到用户或专家实体；专家对可接受的行动进行调解；确定性子环境在规范状态上执行可接受的操作；离线评估者通过继承奖励对结果进行评分。 Incognita-Retail 将 tau-bench 零售转变为多实体环境，同时保留最终状态奖励语义。我们针对按社会广度分层的 18 项任务评估了三种生成代理模型，进行了 540 次试验。进步体现在奖励和行为上：成功率从 0% 上升到 8.9% 和 17.2%，而过早完成的比率从 100% 下降到 87% 和 58%。更强大的模型会引出更多隐藏的知识，接触更多的实体，并尝试更扎实的写入，但可靠性仍然很低。这些发现表明，社会分布式任务环境暴露了可靠成功之前的行为，包括知识获取、来源选择、扎根的行动尝试和过早完成的信念。",
-      "figures": []
+      "figures": [],
+      "html_url": "https://arxiv.org/html/2607.02975v1"
     },
     {
       "arxiv_id": "2607.02968",
@@ -22214,7 +22324,8 @@
       ],
       "title_zh": "重量稀疏变压器中的各个参数似乎是可以解释的",
       "abstract_zh": "机械可解释性的中心目标是理解神经网络如何工作以及每个组件的作用。主要电路查找方法侧重于特定行为，并对相关子分布上组件的作用进行逆向工程。然而，过去的工作表明，组件可以具有不同的功能，这些功能在输入分布的不同子集上处于活动状态。在这项工作中，我们询问单个权重是否可以通过表征它何时重要（消除它改变模型预测的输入）来在整个训练分布中全局理解。我们引入了一个自动化的 LLM 管道，该管道会编写一个简短的、人类可读的描述，说明权重何时重要，并在保留的文本上验证它，仅当其描述具有概括性时才将其归功于权重。在两个稀疏变换器和两个密集变换器中，稀疏变换器中可解释的权重比例（在这个意义上）高于密集变换器，一旦丢弃不可靠的描述，这种差距就会扩大。我们的结果表明，稀疏 Transformer 模型权重的有意义部分是可以解释的：12% 到 31% 的权重有一个简短的描述，用于标识权重的用途。",
-      "figures": []
+      "figures": [],
+      "html_url": "https://arxiv.org/html/2607.02964v1"
     },
     {
       "arxiv_id": "2607.02963",
@@ -22316,7 +22427,8 @@
       ],
       "title_zh": "激励视觉语言模型搜索长视频问答",
       "abstract_zh": "我们引入了 VSeek，这是一个代理框架，它将长视频问答（LVQA）从被动的单通道感知任务转变为多轮检索过程。 VSeek 利用自然语言驱动的搜索来识别长视频中的相关上下文，并通过强化学习 (RL) 进行后训练，以联合制定目标搜索查询并对检索到的剪辑进行推理以进行 LVQA。虽然强化学习后训练彻底改变了数学和代码等符号领域的推理，但由于缺乏经过验证的奖励，其在长视频理解中的应用仍然受到阻碍。为了确保检索到的上下文是相关的，我们提出了一种新颖的神经符号方法，它将开放式自然语言与离散视觉验证联系起来。具体来说，复杂的用户查询被编译成正式的时态逻辑规范，用于系统地将自然语言问题分解为所需原子视觉原语的明确清单，例如关键对象和活动及其时间顺序。这些系统派生的基础事件为 RL 训练后提供了关键的反馈信号，基于成功检索这些特定的视觉元素，而不是完全依赖于仅结果的答案准确性，实现密集的、可验证的奖励。通过明确优化这种可验证的证据寻求行为，与基本模型相比，VSeek 在长视频理解基准上将 Pass@1 分数提高了 8%，将 Pass@4 分数提高了 15%。我们在 https://utaustin-swarmlab.github.io/VSeek 开源我们的代码。",
-      "figures": []
+      "figures": [],
+      "html_url": "https://arxiv.org/html/2607.02959v1"
     },
     {
       "arxiv_id": "2607.02957",
@@ -23356,7 +23468,8 @@
       "project_links": [],
       "title_zh": "E-TraMamba：使用事件摄像机进行高效长期 3D 特征跟踪的新范例",
       "abstract_zh": "基于事件的 3D 跟踪可实现低延迟和高速感知，而现有的基于 CNN 和 Transformer 的跟踪器很难捕获稀疏、噪声事件流中的远程时空依赖性，尤其是在实时和效率限制下。为了应对这些挑战，我们推出了 E-TraMamba，这是第一个基于 Mamba 的事件数据 3D 特征跟踪框架。这个新框架采用线性状态空间模型进行高效的远程建模，并集成了轻量级仿射变换预测器以在运动模糊和遮挡下保持稳定的跟踪。我们还设计了一种有效的方案，将多尺度线索（局部时空斑块、相关图和位置嵌入）融合成统一的表示，从而实现稳定、平滑的 3D 跟踪。我们构建了一个名为 EvD-PointOdyssey 的大规模合成数据集，该数据集通过单目渲染生成，并提供同步事件流、深度图和准确的 3D 轨迹，用于训练和评估基于事件的 3D 跟踪模型。基于事件的基准测试的大量实验表明，E-TraMamba 实现了最先进的性能，在严格的精度阈值（例如 0.1 m）下提供了超过 2 倍的更长的特征寿命，并且比所有基线具有更高的跟踪特征比率和更低的 RMSE。这些结果使 E-TraMamba 成为低延迟视觉里程计、实时 SLAM 和交互式机器人技术的有力候选者。",
-      "figures": []
+      "figures": [],
+      "html_url": "https://arxiv.org/html/2607.02866v1"
     },
     {
       "arxiv_id": "2607.02865",
@@ -23457,7 +23570,8 @@
       ],
       "title_zh": "视觉语言模型对 UML 图解释的先验偏差",
       "abstract_zh": "视觉语言模型 (VLM) 越来越多地应用于软件工程工件，尤其是其含义取决于视觉符号的 UML 类图。然而，目前还不清楚 VLM 是否真的读取了这些图表，或者而是根据预先训练的先验知识来回答类通常如何关联。我们引入了一个受控的 UML 基准，其中每个符合先验的图都与其先验冲突的对应图配对，(1) 保留相同的类名和布局，而 (2) 仅反转关系箭头。我们评估了来自两个模型系列 InternVL3.5 和 Qwen3 的八个开源 VLM，以及两个闭源前沿模型 GPT-5.4 和 GPT-5.4 Mini。在八个开源模型中，反向箭头平均使关系方向准确度降低了 33.48%，而 GPT-5.4 Mini 保留了 10% 的差距。在更难的三类条件下，开源模型的准确率急剧下降 45.28%，GPT-5.4 系列的平均准确率甚至下降 18.62%。缩放只能提供有限的改进，并且取决于家庭。我们的基准测试提出了基于图表的软件理解中的诊断先验驱动故障。我们的工件可在 https://anonymous.4open.science/r/UMLKnowledgeConflict-8461 上找到。",
-      "figures": []
+      "figures": [],
+      "html_url": "https://arxiv.org/html/2607.02853v1"
     },
     {
       "arxiv_id": "2607.02846",
@@ -23692,6 +23806,9 @@
         "https://arxiv.org/html/2607.02819v1/fig/tmr_curves.png",
         "https://arxiv.org/html/2607.02819v1/fig/loss_ablation_ocr.png",
         "https://arxiv.org/html/2607.02819v1/fig/latency.png"
+      ],
+      "affiliations": [
+        "Oak Ridge National Laboratory, Oak Ridge, USA"
       ]
     },
     {
@@ -24482,7 +24599,8 @@
       "project_links": [],
       "title_zh": "神经形态硬件上极轨迹的尖峰序列发生器",
       "abstract_zh": "用于尺寸、重量和功率受限系统的神经形态控制器需要既节能又在系统动力学层面可解释的神经架构。然而，现有的方法要么依赖于可解释性有限的端到端训练的尖峰网络，要么依赖于无法充分利用神经形态动力学的转换经典控制器。我们提出了一种用于生成极地轨迹的尖峰神经网络（SNN）架构，使用赢家通吃（WTA）架构和辅助群体来诱导神经活动的受控转变。我们展示了这些种群动态的调整规则，并利用一种分流抑制形式来独立控制所得极地轨迹的方向、速度和半径。我们在 SpiNNaker2 神经拟态处理器上实现了该网络，并证明与传统计算平台相比，挂钟步骤时间减少了两到三个数量级，能源消耗减少了三到四个数量级。",
-      "figures": []
+      "figures": [],
+      "html_url": "https://arxiv.org/html/2607.02753v1"
     },
     {
       "arxiv_id": "2607.02734",
@@ -25075,7 +25193,8 @@
       ],
       "title_zh": "K9-Bench：评估以犬类为中心的视频的多模式法学硕士",
       "abstract_zh": "MLLM 在不同的输入（例如图像、视频、音频和文本）中表现出了强大的零样本能力。这些模型的一个重要但尚未充分探索的应用在于理解和建模以动物为中心的场景。由于动物是数百万家庭不可或缺的一部分，因此在以宠物为中心的任务上对下一代人工智能模型进行基准测试，从识别求救信号到启用响应式机器人伴侣，对于构建可以与我们一起工作的人工智能系统至关重要。我们推出了 K9-Bench，这是一个专注于真实世界的家养狗视频的新颖基准，专门针对犬类动作和交互理解，通过跨越 5 个不同任务类别的 907 个视频中的约 5000 个问答对来测试 MLLM 中以犬类为中心的长形式多模态推理。为了创建这个数据集，我们提出了一个可扩展的、由 VLM/LLM 驱动的数据生成管道，可以自动从网络中挖掘以犬类为中心的视频，并策划需要对犬类动作和时间扩展的交互序列进行细粒度、多跳推理的 QA 对。我们实施偏差缓解策略，旨在消除 VLM 在数据集管理过程中引入的偏差。通过广泛的实验，我们发现前沿 MLLM 在以犬类为中心的任务上表现出有限的零样本性能：尽管最先进的闭源模型优于开源模型，但它们仍然难以对长期视野中的微妙姿势和交互线索进行组合推理。我们观察到，通用的思维链提示对于这种长期推理只能提供适度的性能。除了用于犬类活动分析的新颖数据集之外，K9-Bench 还提供了通用数据集构建管道，可适应其他低数据领域进行定量分析。我们的项目网站位于：https://ogmenrobotics.github.io/K9Bench。",
-      "figures": []
+      "figures": [],
+      "html_url": "https://arxiv.org/html/2607.02680v1"
     },
     {
       "arxiv_id": "2607.02674",
@@ -25797,7 +25916,8 @@
       "project_links": [],
       "title_zh": "AgentLTL：用于测量、执行和培训使用工具的 LLM 代理程序合规性的跟踪验证框架",
       "abstract_zh": "使用工具的法学硕士代理人通常由最终答案的正确性或法学硕士法官进行评估。两者都没有说明答案是如何产生的。在安全关键的环境中，程序本身就是正确性的一部分。在本文中，我们介绍了 AgentLTL，这是一种源自一阶线性时序逻辑 (FO-LTL) 的语言，用于表达代理跟踪的过程规则。它会产生确定性的、无需评判的合规性评分。在此框架中，单一规范驱动两种用途。第一个是利用：约束对完成的跟踪进行评分，或者在执行之前通过在线检查每个前缀来控制工具调用。第二个是微调：分数作为密集奖励。在涵盖排序、分支、迭代和基础的基准测试中，阻止和警告利用提高了七个模型中五个模型的合规性。使用相同的奖励进行微调，可以使保留模式（包括看不见的工具名称别名）的准确性和合规性提高 +38 和 +17.5 个百分点。这些发现与获取程序结构而不是记住表面工具名称和程序的模型是一致的。",
-      "figures": []
+      "figures": [],
+      "html_url": "https://arxiv.org/html/2607.02599v1"
     },
     {
       "arxiv_id": "2607.02598",
@@ -26933,7 +27053,8 @@
       "project_links": [],
       "title_zh": "科大讯飞-Embodied-Omni技术报告",
       "abstract_zh": "通用的实体代理必须理解多模式指令，预测其环境将如何演变，并在更广泛的范围内产生精确的控制行动。现有的方法通常专注于视觉语言推理、基于视频的世界建模或动作生成，而首先综合未来观察结果然后推断动作的级联管道可能会引入接口瓶颈和复合预测错误。我们提出了 iFLYTEK-Embodied-Omni，这是一个统一的多模态基础模型，可在单个 Omni 框架内对视觉（视频和图像）、语言和动作进行联合建模。其特定于模态的视觉语言、视频生成和动作生成组件通过共享的多模态自注意力进行通信。该设计建立了大脑-小脑协作：视觉语言模型和视频生成模型形成了用于指令理解、任务规划、进度跟踪和未来视觉状态预测的高级大脑，而动作生成模型作为低级小脑，直接将计划的子目标和共享的多模态上下文转换为可执行的动作块。为了开发这些功能，我们将来自人类演示和机器人交互的带动作注释和无动作的具体视频与具体推理、具体感知和通用图像文本数据相结合，构建一个综合数据集。我们进一步采用四阶段策略，逐步训练 VLM、VGM 和 AGM，然后共同微调整个模型。",
-      "figures": []
+      "figures": [],
+      "html_url": "https://arxiv.org/html/2607.02542v1"
     },
     {
       "arxiv_id": "2606.20691",
@@ -27147,7 +27268,8 @@
       "project_links": [],
       "title_zh": "OpenClaw 的 GLM-5 服务参数调整：针对长上下文代理工作负载的单部署 MaaS 推理优化",
       "abstract_zh": "OpenClaw 请求以长的、工具增强的前缀为主，包括系统提示、对话历史记录和反馈到上下文窗口的工具输出。对于此工作负载，每个请求大约有 28k-30k 个输入令牌和 500 个输出令牌，服务质量由吞吐量、TTFT 和尾部延迟决定，而不仅仅是短提示吞吐量。\n  本报告研究 MaaS 多模型推理优化架构中的 GLM-5 服务参数调整。范围是推理优化层的单节点优化块，其中分块预填充、张量并行性 (TP)、管道并行性 (PP) 和请求并发性针对一个 GLM-5 服务部署进行了调整；在本报告中，“单节点优化”表示架构块，而实验在两个节点、16 个 GPU 集群上运行。\n  在测试空间内，最佳配置是 chunked-prefill-size=3072、tp=4、pp-size=4 和 max-running-requests=24。与保守的 2048/4/4/16 基线相比，它将请求吞吐量从 0.43 req/s 增加到 0.48 req/s，总令牌吞吐量从 9029.64 tok/s 增加到 9993.23 tok/s，同时将平均 TTFT 从 8.98 秒减少到 6.69 秒，延迟 P90 从 40.23 秒减少到 32.64 秒。在相同的硬件占用空间下，这相当于每个请求的服务成本预计降低 10.4%，每个令牌的成本降低 9.6%。结果表明，最佳效果是特定于工作负载的：更大的块大小和更深的队列不会单调提高性能。因此，我们建议使用 3072 / tp4 / pp4 / max24 作为默认的 OpenClaw 部署配置文件。",
-      "figures": []
+      "figures": [],
+      "html_url": "https://arxiv.org/html/2607.02518v1"
     },
     {
       "arxiv_id": "2508.05049",
@@ -27242,7 +27364,8 @@
       "project_links": [],
       "title_zh": "SiamixFormer：具有时间融合功能的全变压器连体网络，用于双时态遥感图像中的精确建筑物检测和变化检测",
       "abstract_zh": "使用遥感图像进行建筑物检测和变化检测可以帮助城市和救援规划。此外，它们还可用于自然灾害后的建筑物损坏评估。目前，现有的建筑物检测模型大多数仅使用一张图像（灾前图像）来检测建筑物。这是基于这样的想法：由于存在被毁坏的建筑物，灾后图像会降低模型的性能。在本文中，我们提出了一种名为 SiamixFormer 的暹罗模型，它使用灾前和灾后图像作为输入。我们的模型有两个编码器，并具有分层变压器架构。两个编码器中每个阶段的输出都被提供给时间变换器进行特征融合，查询是从灾前图像生成的，(key, value)是从灾后图像生成的。为此，在特征融合中还考虑了时间特征。在特征融合中使用时间变换器的另一个优点是，与 CNN 相比，它们可以更好地保持变换器编码器生成的大感受野。最后，时间变换器的输出被提供给每个阶段的简单 MLP 解码器。 SiamixFormer 模型在 xBD 和 WHU 数据集上进行评估，用于构建检测，并在 LEVIR-CD 和 CDD 数据集上进行评估，以进行变化检测，并且可以超越最先进的技术。",
-      "figures": []
+      "figures": [],
+      "html_url": "https://arxiv.org/html/2208.00657v2"
     }
   ]
 }

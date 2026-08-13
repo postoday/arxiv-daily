@@ -16,7 +16,7 @@
           <a class="site-nav-link " href="../blogs/">Blogs</a>
         </nav>
       </div>
-      <div class="header-meta">Updated 2026-08-11 13:45 UTC</div>
+      <div class="header-meta">Updated 2026-08-13 13:49 UTC</div>
     </div>
   </header>
 
@@ -1207,7 +1207,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.12756v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.12756" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2607.12756v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.CY,cs.ET,cs.HC,cs.RO">
       <div class="paper-cats">
@@ -1276,7 +1276,7 @@
       </h2>
 <p class="paper-title-zh">Hallo4D：多模态幻觉缓解，实现一致的时空生成</p>      <div class="paper-meta">
         <span class="authors">Hongbo Wang, Huaibo Huang, Jie Cao, Jin Liu, Haoyang Tong, Ran He</span>
-      </div>
+<span class="affiliations">University of Chinese Academy of Sciences, Beijing, 101408, China · Shanghaitech University, Shanghai, 201210, China</span>      </div>
       <div class="abstract-box">
         <p class="paper-abstract">虽然 3D 生成领域的最新进展已经实现了令人印象深刻的视觉合成，但现有方法通常依赖于 2D 扩散监督，而没有明确的几何一致性机制，从而导致空间幻觉，例如重复的结构和未对齐的几何形状。这些问题在 4D 生成中变得更加严重，其中保持视点和时间演化的一致性会带来额外的挑战，包括抖动、身份闪烁和结构漂移。我们提出了 \textbf{Hallo4D}，一个与模型无关的统一框架，用于减轻 3D 和 4D 内容生成中的时空幻觉。 Hallo4D 引入了一种生成-检测-校正范例，利用大型多模态语言模型 (LMM) 来识别和总结多视图和多帧渲染中的空间和时间不一致。这些见解指导共识驱动的图像空间一致性优化，其中基于 LMM 的选择器通过多模型投票评估候选校正，无需重新训练或架构修改。为了进一步提高时间一致性和优化效率，Hallo4D 结合了运动感知关键帧采样、LMM 引导初始化和外观对齐。我们还引入了曝光感知优化和可见性修剪，以增强在具有挑战性的观点下的鲁棒性。大量实验表明，Hallo4D 在不同的 3D 和 4D 生成设置中始终优于强大的基线，为一致性感知内容生成提供了可扩展且通用的解决方案。</p>
         <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
@@ -4404,7 +4404,7 @@
 <p class="paper-comments">Benchmark link: https://github.com/apple/ml-mmtoolsandbox</p>      <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.11818v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.11818" target="_blank" rel="noopener">Abs</a>
-          <a class="code" href="https://github.com/apple/ml-mmtoolsandbox" target="_blank" rel="noopener">Code</a>
+<a class="html" href="https://arxiv.org/html/2607.11818v1" target="_blank" rel="noopener">HTML</a>          <a class="code" href="https://github.com/apple/ml-mmtoolsandbox" target="_blank" rel="noopener">Code</a>
       </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.CL">
@@ -4441,7 +4441,7 @@
       </h2>
 <p class="paper-title-zh">大型音频语言模型中声学感知的编码器侧神经元识别和放大</p>      <div class="paper-meta">
         <span class="authors">Yu-Han Huang, Chih-Kai Yang, Ke-Han Lu, An-Yu Cheng, Hung-yi Lee</span>
-      </div>
+<span class="affiliations">Graduate Institute of Communication Engineering, National Taiwan University, Taiwan · NTU Artificial Intelligence Center of Research Excellence (NTU AI-CoRE), Taiwan · ASUS Open Cloud Infrastructure Software Center, Taipei, Taiwan</span>      </div>
       <div class="abstract-box">
         <p class="paper-abstract">尽管在语音内容方面表现出色，但大型音频语言模型 (LALM) 在语音的细粒度非语义属性（例如说话者的情绪）方面通常表现不佳。在不花费重新训练成本的情况下改进这一点需要有效的推理时间干预，但大多数现有方法仅在音频编码器之后进行干预，并以相对粗糙的粒度进行操作。首先从波形中提取声学信息的编码器本身在很大程度上仍未被探索，特别是在单个神经元的水平上。我们介绍了 IAAN（识别和放大声学神经元），这是一种免训练、免标签的方法，通过将真实波形上的激活与缺乏真实音频声学信息的噪声参考上的激活进行对比，对音频编码器中的每个前馈神经元进行评分。然后，IAAN 会放大一小组推理时得分最高的神经元。在 10 个非语义语音属性中，IAAN 在 Audio-Flamingo-3 上的平均准确度提高了 25.7 点，在 Qwen2.5-Omni 上提高了 21.4 点，在 Kimi-Audio 上提高了 9.7 点。它还改进了已经明确微调以优先考虑声学证据的模型。在受控比较中，编码器位点和神经元级选择性都证明对于这种增益是必要的。在编码器之后、解码端或语言模型内部进行干预几乎不会产生任何改进，甚至会降低准确性。改进还取决于哪些特定神经元被放大，而不仅仅是其数量，这证实了 IAAN 的声学评分成功地识别了重要的神经元。这些结果表明，音频编码器内部的小规模、精确的针对性干预是加强 LALM 声学理解的有效且很大程度上尚未开发的方法，为推理时间方法开辟了新方向，通过神经元级访问编码器来改善声学感知。</p>
         <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
@@ -4590,7 +4590,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.11720v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.11720" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2607.11720v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.CR,cs.HC,cs.MA">
       <div class="paper-cats">
@@ -5078,7 +5078,7 @@
       </h2>
 <p class="paper-title-zh">SpikeDS：用于 3D MRI 中神经周围侵袭预测的双稀疏 Spikformer</p>      <div class="paper-meta">
         <span class="authors">Induk Um, Youngung Han, Kyeonghun Kim, Yului Jeong, Jina Jeong, Hyunsu Go, Dohyun Kweon, Sungha Park, Junga Kim, Anna Jung, Suah Park, Hyuk-Jae Lee, Pa Hong, Woo Kyoung Jeong, Won Jae Lee, Ken Ying-Kai Liao, Nam-Joon Kim</span>
-      </div>
+<span class="affiliations">Chung-Ang University, Seoul, Republic of Korea · Seoul National University, Seoul, Republic of Korea Affiliation: · OUTTA, Seoul, Republic of Korea · Kyung Hee University, Seoul, Republic of Korea Affiliation: · Seoul National University School of Medicine, Seoul, Republic of Korea Affiliation: · Samsung Changwon Hospital, Changwon, Republic of Korea · Samsung Medical Center, Seoul, Republic of Korea Affiliation: · NVIDIA AI Technology Center, Taipei, Taiwan Affiliation:</span>      </div>
       <div class="abstract-box">
         <p class="paper-abstract">神经周围浸润（PNI）与胆管癌（CCA）的不良预后相关。然而，由于肿瘤外围的微妙且空间异质的成像特征，3D MRI 的检测仍然具有挑战性。捕获这种空间稀疏的线索需要对 3D MRI 进行体积分析，但现有的深度学习方法在体积医学图像上会产生过高的计算成本，限制了其临床部署。我们提出了 Dual Sparsity Spikformer (SpikeDS)，这是一种尖峰神经网络架构，它联合利用二进制尖峰通信的激活稀疏性和基于发射率的窗口修剪的空间稀疏性。 SpikeDS 引入了双重稀疏尖峰注意力 (DSSA)，它结合了两种互补机制。第一个是基于窗口的专家混合尖峰注意力（W-EMSA），它有选择地将注意力仅应用于通过其触发率识别的显着窗口。第二个是跨窗口尖峰自注意力（CW-SSA），它通过非对称方案实现全局上下文交换，其中修剪的窗口仍然作为键值源做出贡献。通过 5 倍交叉验证对 139 名 CCA 患者的临床队列进行评估，SpikeDS 的 AUC 为 0.753，同时仅消耗 14.4 mJ，在 AUC 和能源效率方面都超过了最佳基线。这些结果表明，对偶稀疏性提供了一种有效的硬件感知策略，可在不影响诊断性能的情况下提高 3D 尖峰变压器的效率。</p>
         <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
@@ -5331,7 +5331,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.11512v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.11512" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2607.11512v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.LG,stat.ML">
       <div class="paper-cats">
@@ -5852,7 +5852,7 @@
       </h2>
 <p class="paper-title-zh">OpsMem：使用跨内存共振进行故障诊断的双内存推理</p>      <div class="paper-meta">
         <span class="authors">Yongqian Sun, Rongchen Gao, Yu Luo, Wenwei Gu, Shenglin Zhang, Qingyi Guo, Qiuai Fu, Yaoliang Wu, Dan Pei</span>
-      </div>
+<span class="affiliations">Nankai University · Tsinghua University · Huawei Technologies Co., Ltd.</span>      </div>
       <div class="abstract-box">
         <p class="paper-abstract">现代软件系统中的故障诊断需要在操作经验的指导下迭代证据获取和假设推理。现有的基于法学硕士的方法通过代理推理或知识增强来改进诊断，但它们通常缺乏一种机制来协调不断变化的诊断状态与迭代诊断期间的操作经验。我们提出了 OpsMem，这是一种双内存框架，可维护当前诊断状态的短期记忆和可重用操作经验的长期记忆。 OpsMem 使用跨记忆共振来激活状态相关的长期记忆，对短期记忆和激活的长期记忆进行多智能体诊断，并将已解决事件中的可重用经验整合回长期记忆中。在真实的华为微服务故障诊断数据集上进行的实验表明，OpsMem 的性能优于代表性的代理推理和知识增强基线，匹配度和相关性比最强基线分别提高了 46.88% 和 18.39%。</p>
         <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
@@ -6461,7 +6461,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.11250v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.11250" target="_blank" rel="noopener">Abs</a>
-          <a class="code" href="https://github.com/deeplearning-wisc/mace" target="_blank" rel="noopener">Code</a>
+<a class="html" href="https://arxiv.org/html/2607.11250v1" target="_blank" rel="noopener">HTML</a>          <a class="code" href="https://github.com/deeplearning-wisc/mace" target="_blank" rel="noopener">Code</a>
       </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.SE">
@@ -7194,7 +7194,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.11079v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.11079" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2607.11079v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.CV">
       <div class="paper-cats">
@@ -7686,7 +7686,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.10963v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.10963" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2607.10963v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.AR">
       <div class="paper-cats">
@@ -7957,7 +7957,7 @@
       </h2>
 <p class="paper-title-zh">从业者如何构建SE代理？混合方法研究的见解</p>      <div class="paper-meta">
         <span class="authors">Yunbo Lyu, David Williams, Jieke Shi, Zhensu Sun, Chao Peng, Zhou Yang, Federica Sarro, David Lo</span>
-      </div>
+<span class="affiliations">Tencent, China · University of Alberta, Canada · Alberta Machine Intelligence Institute, Canada</span>      </div>
       <div class="abstract-box">
         <p class="paper-abstract">软件工程 (SE) 代理的兴起，即基于 LLM 的代理，可以理解大型代码库并在有限的人工干预下执行工程任务，其特点是快速发展和采用，但人们对开发人员如何在实践中构建这些系统知之甚少：现有研究挖掘存储库或检查部署，但很少研究 SE 代理的构建方式。本文通过对来自 12 个组织的 20 名从业者的半结构化访谈以及对 80 名从业者的在线调查，首次研究了 SE 流程在 SE 代理的开发中如何变化以及开发者面临哪些挑战。我们发现，随着实施变得更便宜，瓶颈会发生变化而不是消失：长期存在的非编码工作（例如需求、协调、审查和部署）变得更加明显，而审查和评估代理输出变得新的和中心化的。我们描述了七阶段工作流程和向评估驱动开发的转变，其中评估引导迭代，规范成为人类和代理阅读的版本化工件。我们进一步确定了团队面临的六大挑战，以及他们为解决这些挑战而采取的实践，包括不可靠的评估信号、代码超过理解时的理解债务，以及提供者端模型更新引入的行为变化。</p>
         <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
@@ -7969,7 +7969,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.10856v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.10856" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2607.10856v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.CL,cs.LG">
       <div class="paper-cats">
@@ -8441,7 +8441,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.10738v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.10738" target="_blank" rel="noopener">Abs</a>
-          <a class="code" href="https://github.com/zfj1998/AWA-RL" target="_blank" rel="noopener">Code</a>
+<a class="html" href="https://arxiv.org/html/2607.10738v1" target="_blank" rel="noopener">HTML</a>          <a class="code" href="https://github.com/zfj1998/AWA-RL" target="_blank" rel="noopener">Code</a>
       </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.LG,cs.MA">
@@ -8741,7 +8741,7 @@
 <p class="paper-comments">7 pages, 2 figures, 2 tables. Accepted in the Proceedings of the 2nd ACM Virtual Global Computing Education Conference (SIGCSE Virtual 2026)</p>      <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.10674v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.10674" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2607.10674v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cond-mat.mtrl-sci,cs.AI,cs.CV,cs.LG">
       <div class="paper-cats">
@@ -10397,7 +10397,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.10295v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.10295" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2607.10295v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.SE">
       <div class="paper-cats">
@@ -10481,7 +10481,7 @@
 <p class="paper-comments">66 pages, 9 figures; includes supplementary material</p>      <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.10275v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.10275" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2607.10275v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI">
       <div class="paper-cats">
@@ -10703,7 +10703,7 @@
       </h2>
 <p class="paper-title-zh">TSCA-Net：用于可解释多模态行人轨迹预测的时空团注意</p>      <div class="paper-meta">
         <span class="authors">Md Mustafizur Rahman, Guangchao Yang, A F M Abdun Noor, Md Imam Ahasan, Md Mahfuzur Rahman, Md Ariful Islam</span>
-      </div>
+<span class="affiliations">College of Computer Science, Chongqing University, Chongqing, China · Department of Software Engineering, Daffodil International University, Dhaka, Bangladesh</span>      </div>
       <div class="abstract-box">
         <p class="paper-abstract">由于人体运动的多模态不确定性以及不同场景环境下运动动力学的可变复杂性，在拥挤环境中准确的行人轨迹预测仍然具有挑战性。现有的目标条件模型依赖于为所有历史时间步分配相同权重的静态位移结构、标准图注意机制以及无法适应局部预测复杂性的固定容量运动解码器。为了解决这些限制，我们提出了 TSCA-Net，这是一个基于三个互补模块构建的轨迹预测框架。时空派系注意力（TSCA）模块将可学习的时间门控引入到基于派系的目标历史交互中，从而能够对相对于每个候选目标的历史观察进行时间感知调制。跨行人集团潜力 (CPCP) 模块通过具有时变社交图的动态集团潜力框架对不对称的成对代理关系进行建模。自适应 KAN 网格细化 (AKGR) 机制根据每个智能体目标分布熵动态调整 Kolmogorov-Arnold 网络增强 LSTM 解码器的 B 样条网格分辨率，平衡模型表达能力和不同运动复杂性的过度拟合。对 ETH/UCY 和斯坦福无人机数据集基准的大量实验表明，TSCA-Net 实现了最先进的性能，ETH/UCY 上的平均 ADE/FDE 为 0.13/0.20 m，SDD 上的平均 ADE/FDE 为 6.95/10.43 像素。全面的消融研究证实了所有三个拟议模块的互补贡献。</p>
         <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
@@ -11328,7 +11328,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.10114v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.10114" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2607.10114v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI">
       <div class="paper-cats">
@@ -12276,7 +12276,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.09826v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.09826" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2607.09826v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.RO">
       <div class="paper-cats">
@@ -12300,7 +12300,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.09825v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.09825" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2607.09825v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.CL,cs.CV,cs.HC,cs.IR">
       <div class="paper-cats">
@@ -12698,7 +12698,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.09786v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.09786" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2607.09786v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.CV">
       <div class="paper-cats">
@@ -12710,7 +12710,7 @@
       </h2>
 <p class="paper-title-zh">终身表征：视觉模型持续自我监督学习的调查</p>      <div class="paper-meta">
         <span class="authors">Sergi Masip, Alicja Dobrzeniecka, Jonathan Swinnen, Joachim Collin, Bartłomiej Twardowski, Szymon Łukasik, Tinne Tuytelaars</span>
-      </div>
+<span class="affiliations">Szymon Łukasik · NASK - National Research Institute, Warsaw, Poland · Computer Vision Center, Universitat Autonoma de Barcelona, Barcelona, Spain</span>      </div>
       <div class="abstract-box">
         <p class="paper-abstract">传统上，持续学习假设可以访问标记数据，但许多现实世界的应用程序（例如终身机器人）需要模型不断适应未标记的数据流。这导致了持续自我监督学习（CSSL）的发展，这是一个快速发展的领域，但缺乏专门的系统审查。在这项工作中，我们对视觉 CSSL 进行了全面的调查，并与新兴的视觉语言设置相联系。首先，我们分析现有的评估协议并强调阻碍公平比较的不一致之处。然后，我们研究为什么自我监督目标对灾难性遗忘表现出更好的鲁棒性，并将其与任务无关的表示和更平滑的损失景观联系起来。接下来，我们根据现有方法的遗忘缓解策略将其组织成统一的分类法，包括蒸馏、重放、正则化、架构方法、模型合并和目标级别适应。最后，我们确定了开放性挑战，例如可扩展性和快速适应性的需求。我们认为，推进 CSSL 需要超越小规模基准，转向大规模系统的持续预训练范例。</p>
         <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
@@ -12880,7 +12880,7 @@
       </h2>
 <p class="paper-title-zh">听听功能：由内容嵌入匹配信号重建驱动的语音匿名化</p>      <div class="paper-meta">
         <span class="authors">Adrien Schneider, Kacper Zabkowski, Anderson Augusma, Frédérique Letué, Maria Camila Pinzon, Dominique Vaufreydaz</span>
-      </div>
+<span class="affiliations">Univ. Grenoble Alpes, CNRS, Grenoble INP, LIG, 38000 Grenoble, France · Univ. Grenoble Alpes, CNRS, Grenoble INP, LJK, 38000 Grenoble, France</span>      </div>
       <div class="abstract-box">
         <p class="paper-abstract">该论文提出了一种语音匿名化模型，重点是保留内容而不是产生真实的语音。它依赖于从冻结的预训练 wav2vec2 编码器中提取的内容嵌入。使用矢量量化和 HiFi-GAN 声码器将这些嵌入解码为匿名信号，两者均在 LibriTTS 上进行训练，没有任何波形重建损失或说话人嵌入映射。训练目标强制匿名信号的嵌入与原始信号的嵌入相匹配。在训练时，使用具有梯度反转层的辅助说话人分类分支来丢弃特定于说话人的信息。结果表明，这种简单的基于嵌入的方法实现了非常低的 WER (2.53)，匿名化性能 (EER 13.39) 在 VPC 中排名第一。值得注意的是，即使没有支持的训练目标，情绪也会被部分保留（UAR 43.91），而匿名声音是可以听到的，而不会造成重建损失。</p>
         <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
@@ -12892,7 +12892,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.09767v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.09767" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2607.09767v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.CL,cs.LG,cs.MA">
       <div class="paper-cats">
@@ -12918,7 +12918,7 @@
 <p class="paper-comments">ICML2026 Trustworthy AI for Good Workshop</p>      <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.09766v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.09766" target="_blank" rel="noopener">Abs</a>
-          <a class="project" href="https://yaowenye.com/norm-enforcement" target="_blank" rel="noopener">Project</a>
+<a class="html" href="https://arxiv.org/html/2607.09766v1" target="_blank" rel="noopener">HTML</a>          <a class="project" href="https://yaowenye.com/norm-enforcement" target="_blank" rel="noopener">Project</a>
       </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.CL,cs.MA,eess.SY,math.OC">
@@ -13276,7 +13276,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.09752v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.09752" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2607.09752v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.LG">
       <div class="paper-cats">
@@ -13617,7 +13617,7 @@
 <p class="paper-comments">Please submit solutions at https://www.ramanujanmachine.com/ramanujan-challenge/</p>      <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.09721v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.09721" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2607.09721v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.MA">
       <div class="paper-cats">
@@ -13641,7 +13641,7 @@
 <p class="paper-comments">19 pages, 4 figures. Extends arXiv:2603.11560 to continuous time. Code: github.com/stevefatz95/fcms-continuous</p>      <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2607.09714v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2607.09714" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2607.09714v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.MA,cs.RO">
       <div class="paper-cats">
@@ -14519,12 +14519,12 @@
   <footer class="site-footer">
     <div class="wrap footer-wrap">
       <span>Categories: cs.CV, cs.RO, cs.AI</span>
-      <span>Generated 2026-08-11 13:45 UTC</span>
+      <span>Generated 2026-08-13 13:49 UTC</span>
     </div>
   </footer>
 
   <script>
-    window.__archiveDates = ["2026-08-11", "2026-08-10", "2026-08-07", "2026-08-06", "2026-08-05", "2026-08-04", "2026-08-03", "2026-07-31", "2026-07-30", "2026-07-29", "2026-07-28", "2026-07-27", "2026-07-24", "2026-07-23", "2026-07-22", "2026-07-21", "2026-07-20", "2026-07-17", "2026-07-16", "2026-07-15", "2026-07-14", "2026-07-13", "2026-07-10", "2026-07-09", "2026-07-08", "2026-07-07", "2026-07-03", "2026-07-02", "2026-07-01", "2026-06-30", "2026-06-29", "2026-06-26", "2026-06-25", "2026-06-24", "2026-06-23", "2026-06-19", "2026-06-18", "2026-06-17", "2026-06-16", "2026-06-15", "2026-06-12", "2026-06-11", "2026-06-10", "2026-06-09", "2026-06-08", "2026-06-05", "2026-06-04", "2026-06-03", "2026-06-02", "2026-06-01", "2026-05-29", "2026-05-28", "2026-05-27", "2026-05-26", "2026-05-25", "2026-05-22", "2026-05-21", "2026-05-20", "2026-05-19", "2026-05-18", "2026-05-15", "2026-05-14", "2026-05-13", "2026-05-12", "2026-05-11", "2026-05-08", "2026-05-07", "2026-05-06", "2026-05-05", "2026-05-04", "2026-05-01", "2026-04-30", "2026-04-29", "2026-04-28", "2026-04-27", "2026-04-24", "2026-04-23", "2026-04-22", "2026-04-21", "2026-04-20", "2026-04-17"];
+    window.__archiveDates = ["2026-08-13", "2026-08-11", "2026-08-10", "2026-08-07", "2026-08-06", "2026-08-05", "2026-08-04", "2026-08-03", "2026-07-31", "2026-07-30", "2026-07-29", "2026-07-28", "2026-07-27", "2026-07-24", "2026-07-23", "2026-07-22", "2026-07-21", "2026-07-20", "2026-07-17", "2026-07-16", "2026-07-15", "2026-07-14", "2026-07-13", "2026-07-10", "2026-07-09", "2026-07-08", "2026-07-07", "2026-07-03", "2026-07-02", "2026-07-01", "2026-06-30", "2026-06-29", "2026-06-26", "2026-06-25", "2026-06-24", "2026-06-23", "2026-06-19", "2026-06-18", "2026-06-17", "2026-06-16", "2026-06-15", "2026-06-12", "2026-06-11", "2026-06-10", "2026-06-09", "2026-06-08", "2026-06-05", "2026-06-04", "2026-06-03", "2026-06-02", "2026-06-01", "2026-05-29", "2026-05-28", "2026-05-27", "2026-05-26", "2026-05-25", "2026-05-22", "2026-05-21", "2026-05-20", "2026-05-19", "2026-05-18", "2026-05-15", "2026-05-14", "2026-05-13", "2026-05-12", "2026-05-11", "2026-05-08", "2026-05-07", "2026-05-06", "2026-05-05", "2026-05-04", "2026-05-01", "2026-04-30", "2026-04-29", "2026-04-28", "2026-04-27", "2026-04-24", "2026-04-23", "2026-04-22", "2026-04-21", "2026-04-20", "2026-04-17"];
     window.__currentDate = "2026-07-15";
     window.__assetPrefix = "../";
   </script>

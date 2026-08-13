@@ -16,7 +16,7 @@
           <a class="site-nav-link " href="../blogs/">Blogs</a>
         </nav>
       </div>
-      <div class="header-meta">Updated 2026-08-11 13:45 UTC</div>
+      <div class="header-meta">Updated 2026-08-13 13:49 UTC</div>
     </div>
   </header>
 
@@ -394,7 +394,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2606.09802v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2606.09802" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2606.09802v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.MA,cs.SE">
       <div class="paper-cats">
@@ -1284,7 +1284,7 @@
 <p class="paper-comments">15 pages, 7 figures, 5 tables</p>      <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2606.09674v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2606.09674" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2606.09674v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.CL,cs.LG,cs.PF,q-bio.QM">
       <div class="paper-cats">
@@ -1648,7 +1648,7 @@
       </h2>
 <p class="paper-title-zh">FMplex：用于服务可扩展基础模型的模型虚拟化</p>      <div class="paper-meta">
         <span class="authors">Hetvi Shastri, Pragya Sharma, Walid A. Hanafy, David Irwin, Mani Srivastava, Prashant Shenoy</span>
-      </div>
+<span class="affiliations">University of Massachusetts Amherst · University of California Los Angeles</span>      </div>
       <div class="abstract-box">
         <p class="paper-abstract">基础模型 (FM) 越来越多地用作跨语言、视觉、时间序列和多模式应用程序的下游任务的骨干。然而，现有的模型服务系统将每个定制任务部署为独立的模型实例，从而复制重量级主干，浪费加速器内存，并失去分摊批处理和加载成本的机会。本文介绍了 FMplex，这是一个将 FM 主干网视为部署共享的虚拟化基础的服务系统。 FMplex 为每个任务提供一个虚拟基础模型 (vFM)，这是一个由共享物理 FM 支持的逻辑私有 FM 实例。这种抽象允许独立定制的任务共享主干，同时保留特定于任务的扩展、独立的生命周期和任务级隔离。此外，我们提出了一种批量感知的公平排队调度程序，它将加权任务级共享与跨共置任务的任务间和任务内批处理相结合。我们实现了基于 FMplex 的服务堆栈，涵盖任务构建、共享感知部署和运行时执行。在 7 个 FM 主干（16 个变体）和 92 个下游任务中，FMplex 比空间分区减少了高达 80% 的延迟，比尽力而为的共置减少了 33.3%，同时在集群规模上托管了多达 6 倍的任务。</p>
         <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
@@ -1660,7 +1660,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2606.09643v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2606.09643" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2606.09643v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.CV">
       <div class="paper-cats">
@@ -1729,7 +1729,7 @@
       </h2>
 <p class="paper-title-zh">CineDance：迈向下一代多镜头长格式电影音频视频生成</p>      <div class="paper-meta">
         <span class="authors">Yuheng Chen, Teng Hu, Yuji Wang, Qingdong He, Zhucun Xue, Qianyu Zhou, Xiangtai Li, Lizhuang Ma, Jiangning Zhang, Dacheng Tao</span>
-      </div>
+<span class="affiliations">Shanghai Jiao Tong University, Shanghai, China. · University of Electronic Science and Technology of China, Chengdu, China. · Zhejiang University, Hangzhou, China. · The University of Tokyo, Tokyo, Japan. · Nanyang Technological University, Singapore, Singapore.</span>      </div>
       <div class="abstract-box">
         <p class="paper-abstract">训练数据集的保真度和结构多样性从根本上决定了视频生成模型的能力。虽然商业系统显示出生成电影叙事的卓越能力，但开源模型的进展仍然受到高质量训练数据稀缺的限制。为了弥补这一差距，我们引入了 CineDance-1M，这是一个大规模、开放研究的文本到音频视频 (T2AV) 数据集，专为多镜头、长格式联合音频视频生成而设计。每个视频平均 92.8 秒和 24.2 个连续镜头，它为音频和视频模式提供可配置的结构化注释。这种卓越的品质是通过严格的三阶段管理流程实现的：i）多样化来源和全面清理，ii）受电影理论启发的叙事解析，以及 iii）分层双模式字幕。为了进行全面评估，我们建议使用 CineBench，它具有多样化的提示套件和专为复杂的叙事音视频评估而定制的六维、人性化的度量系统。此外，我们将 LTX-2.3 融入 CineDance，展示了卓越的单模态质量、精确的音视频对齐以及强大的主题和环境一致性，有效验证了我们的策展策略和 CineDance-1M 的高质量。我们预计这项工作将为加速未来多镜头、长格式联合音视频生成的研究奠定坚实的基础。我们的项目页面位于 https://aliothchen.github.io/projects/CineDance/。</p>
         <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
@@ -3365,7 +3365,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2606.09414v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2606.09414" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2606.09414v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.CL,cs.LG">
       <div class="paper-cats">
@@ -4092,7 +4092,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2606.09343v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2606.09343" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2606.09343v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.RO">
       <div class="paper-cats">
@@ -4735,7 +4735,7 @@
       </h2>
 <p class="paper-title-zh">放射治疗剂量传播中可变形图像配准不确定性的实用概率框架</p>      <div class="paper-meta">
         <span class="authors">Stefan Heldmann, Sven Kuckertz, Nasim Givehchi, Thomas Coradi, Mikel Byrne, Ben Archibald-Heeren, Nils Papenberg</span>
-      </div>
+<span class="affiliations">Varian, a Siemens Healthineers company, Dättwil, Switzerland · Icon Group, South Brisbane, QLD, Australia</span>      </div>
       <div class="abstract-box">
         <p class="paper-abstract">可变形图像配准（DIR）广泛用于放射治疗中的剂量传播和积累，但潜在变形的不确定性会极大地影响临床相关剂量估计。我们提出了一个实用的概率框架，用于将 DIR 不确定性传播到体素剂量统计和剂量体积直方图 (DVH)。该方法将每个体素处的映射对应关系建模为由透明局部确定性图控制的随机变量，该确定性图可以通过简单的安全裕度、结构边界失配或结构方面的保守不确定性值来定义。这会产生可解释的量，例如剂量概率、预期剂量、置信界限和诱导 DVH 包络线。   该框架旨在保持轻量级和可解释性：它避免了复杂的生物力学或基于集合的不确定性模型，而是强调简单的参数化、计算可行性和透明的剂量指标。我们进一步引入结构引导的输入/输出策略作为可选的细化，将映射概率限制到解剖学上合理的目标区域。该方法在前列腺放射治疗案例研究中得到证明，并用于比较不同的确定性图策略和概率核。实验表明，与特定核选择相比，确定性图设计对最终剂量和 DVH 不确定性界限具有更强的影响，而输入/输出策略的额外好处取决于情况，并且在本示例中是适度的。总体而言，所提出的框架提供了一种透明的方法，将 DIR 不确定性纳入放射治疗剂量评估，并研究建模选择如何影响传播剂量指标。</p>
         <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
@@ -4747,7 +4747,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2606.09253v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2606.09253" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2606.09253v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.CV">
       <div class="paper-cats">
@@ -5384,7 +5384,7 @@
 <p class="paper-comments">10 pages, 6 figures</p>      <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2606.09181v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2606.09181" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2606.09181v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.CV">
       <div class="paper-cats">
@@ -5493,7 +5493,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2606.09169v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2606.09169" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2606.09169v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.CV">
       <div class="paper-cats">
@@ -6300,7 +6300,7 @@
 <p class="paper-comments">22 pages, 11 figures</p>      <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2606.09108v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2606.09108" target="_blank" rel="noopener">Abs</a>
-          <a class="project" href="https://timwalter.github.io/ram" target="_blank" rel="noopener">Project</a>
+<a class="html" href="https://arxiv.org/html/2606.09108v1" target="_blank" rel="noopener">HTML</a>          <a class="project" href="https://timwalter.github.io/ram" target="_blank" rel="noopener">Project</a>
       </div>
     </li>
     <li class="paper" data-cats="cs.AI">
@@ -6725,7 +6725,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2606.09065v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2606.09065" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2606.09065v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.CV">
       <div class="paper-cats">
@@ -6843,7 +6843,7 @@
 <p class="paper-comments">66 pages, 17 figures</p>      <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2606.09052v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2606.09052" target="_blank" rel="noopener">Abs</a>
-          <a class="code" href="https://github.com/FFishy-git/INFUSER" target="_blank" rel="noopener">Code</a>
+<a class="html" href="https://arxiv.org/html/2606.09052v1" target="_blank" rel="noopener">HTML</a>          <a class="code" href="https://github.com/FFishy-git/INFUSER" target="_blank" rel="noopener">Code</a>
       </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.SD,eess.AS">
@@ -6869,7 +6869,7 @@
 <p class="paper-comments">Under Review</p>      <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2606.09048v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2606.09048" target="_blank" rel="noopener">Abs</a>
-          <a class="project" href="https://barewave.github.io/" target="_blank" rel="noopener">Project</a>
+<a class="html" href="https://arxiv.org/html/2606.09048v1" target="_blank" rel="noopener">HTML</a>          <a class="project" href="https://barewave.github.io/" target="_blank" rel="noopener">Project</a>
       </div>
     </li>
     <li class="paper" data-cats="cs.AI">
@@ -8799,7 +8799,7 @@
 <p class="paper-comments">Accepted at ICML 2026</p>      <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2606.08814v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2606.08814" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2606.08814v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.SE">
       <div class="paper-cats">
@@ -9206,7 +9206,7 @@
 <p class="paper-comments">Accepted at the 2nd Workshop on Challenges in Processing South Asian Languages (CHiPSAL 2026) at LREC 2026</p>      <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2606.08770v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2606.08770" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2606.08770v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.CL">
       <div class="paper-cats">
@@ -9218,7 +9218,7 @@
       </h2>
 <p class="paper-title-zh">RadOT-Eval：用于放射学报告评估的可审计结构化证据传输</p>      <div class="paper-meta">
         <span class="authors">Weixin Liu, Juming Xiong, Yang Li, Qingyuan Song, Susannah Rose, Murat Kantarcioglu, Bradley Malin, Zhijun Yin</span>
-      </div>
+<span class="affiliations">Vanderbilt University, Nashville, TN, USA Affiliation: · Vanderbilt University Medical Center, Nashville, TN, USA Affiliation:</span>      </div>
       <div class="abstract-box">
         <p class="paper-abstract">自动评估对于高风险文本生成至关重要，其中错误通常涉及遗漏的发现、幻觉内容、极性反转、位置变化、不确定性不匹配和时间比较错误，而不仅仅是低表面相似性。放射学报告生成提供了一个具有挑战性的测试用例，因为生成的报告必须保留跨来源的结构化临床证据。我们提出了 RadOT-Eval，这是一种可解释的结构化证据最佳传输框架，用于放射学报告生成的离线审核。 RadOT-Eval 将参考报告和候选报告分解为属性结构的临床证据单元，使用熵正则化最佳传输来对齐相应的证据，并使用单调风险模型中具有临床意义的侧通道差异来预测错误负担。所有传输、特征和读数选择均使用 ReXVal 数据集进行选择，并在独立的 RadEvalX 数据集上评估冻结系统。 RadOT-Eval 的 Spearman 相关性分别为 0.715、0.548 和 0.399，与总的、临床上显着的和临床上不显着的注释错误负担相比，产生比标准评估指标和基于开源大语言模型 (LLM) 的评估器 GREEN-radllama2-7B 更高的点估计。在 ReXErr-v1 上的冻结辅助损坏敏感性压力测试中，RadOT-Eval 实现了 0.768 AUROC 和 0.990 损坏大于干净的配对获胜率。这些结果表明，结构化证据传输为仅 ReXVal 模型选择和冻结 RadEvalX 测试下生成的高风险临床文本提供了可审核的、面向排名的评估工具。</p>
         <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
@@ -9602,7 +9602,7 @@
       </h2>
 <p class="paper-title-zh">用于数学推理的人工智能：语言模型、神经符号系统和验证发现的综合调查</p>      <div class="paper-meta">
         <span class="authors">Syed Rifat Raiyan, Mohsinul Kabir, Hasan Mahmud, Md Kamrul Hasan</span>
-      </div>
+<span class="affiliations">Department of Computer Science, University of Manchester, Manchester, United Kingdom</span>      </div>
       <div class="abstract-box">
         <p class="paper-abstract">长期以来，数学推理一直是对机器智能的严格测试。在过去的十年里，它已经从 NLP 中的一个小众问题转变为最重要的人工智能前沿之一。这项调查统一描述了该领域的演变，从早期基于规则的数学应用题（MWP）求解器和模板驱动的几何系统，通过神经表达式生成和法学硕士提示，到当代推理模型、多智能体系统、神经符号定理证明器和经过验证的发现工作流程。我们沿着四个轴组织景观：（i）通过文本和图表进行非正式推理，涵盖 MWP 求解、多模态几何和 VLM； (ii) 证明助手中的形式推理，包括自动形式化、策略预测、编译器引导修复和证明搜索； (iii) 数学发现，系统提出构造、改进界限或协助解决开放问题； (iv) 推理和训练时技术，包括 CoT 提示、工具使用、过程奖励模型和 RLVR，这些技术日益将生成与验证联系起来。我们对小学算术、竞赛数学、几何、形式证明、多模式和多语言推理以及专家评估等方面的主要基准进行了编目，并检查基准饱和度、污染、报告不匹配以及 pass@1、多数投票和验证者辅助 pass@$k$ 之间的区别。我们严格评估失败模式：扰动下的脆性、奖励黑客、多模式接地失败、脆弱的形式化以及推理规模推理的能量成本。根据工作数学家的最新观点，我们确定了以验证发现工作流程、推理效率和基础设施为中心的未来方向，以使人工智能辅助形式化得到广泛使用。配套材料：https://github.com/Starscream-11813/awesome-AI4Math。</p>
         <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
@@ -10575,7 +10575,7 @@
       </h2>
 <p class="paper-title-zh">深度学习时代的面部表情识别：方法、模型、数据集、性能、挑战和未来研究方向的系统性多标准回顾</p>      <div class="paper-meta">
         <span class="authors">Spyridon Georgiou, Aggelos Psiris, Spyridon Evangelatos, Thomas Lagkas, Vasileios Argyriou, Panagiotis Sarigiannidis, Iraklis Varlamis, Georgios Th. Papadopoulos</span>
-      </div>
+<span class="affiliations">Research &amp; Innovation Development Department, Netcompany-Intrasoft S.A., Luxembourg, Luxembourg · Department of Informatics, Faculty of Science, Democritus University of Thrace, Kavala, Greece · Department of Networks and Digital Media, Kingston University, Kingston upon Thames, United Kingdom · Department of Electrical and Computer Engineering, University of Western Macedonia, Kozani, Greece</span>      </div>
       <div class="abstract-box">
         <p class="paper-abstract">在从手工描述符和浅层分类器向深度卷积、基于注意力、视觉语言和基础模型架构的转变，以及涵盖分类、维度、复合、微表情、动作单元 (AU) 和强度估计任务的大规模野外基准的并行增长的推动下，面部表情识别 (FER) 在过去十年中取得了迅速发展。然而，迄今为止，基于深度学习的 FER 景观仅沿着狭窄的任务、架构或特定于应用程序的轴进行了回顾，而缺乏对其最新进展的整体、系统组织的描述。这项调查通过对最近基于深度学习的 FER 进行全面审查来解决这一差距，该 FER 与更广泛的面部表情识别 (FAR) 领域明确相关。它的主要贡献是：a) 描述 FER 演变为五个不同阶段，从手工特征和经典机器学习到基于注意力、视觉语言和基础模型方法，以及每个阶段的关键里程碑工作，b) 沿着七个互补轴分析文献的多标准分类法：识别任务、输入模态、人脸预处理管道、网络架构、学习策略、采集设置和应用领域，c) 每个标准的比较分析，对优点和应用领域进行批判性见解。野外条件下每个类别的局限性，d）对公共 FER 数据集及其注释方案、模式和评估协议进行任务组织的审查，e）性能指标的汇编以及广泛采用的基准上代表性最先进方法的每项任务定量比较，以及 f）对当前挑战和有希望的未来方向的讨论。</p>
         <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
@@ -10707,7 +10707,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2606.08596v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2606.08596" target="_blank" rel="noopener">Abs</a>
-          <a class="project" href="https://beiwenzhang.github.io/Co-pi-tree/" target="_blank" rel="noopener">Project</a>
+<a class="html" href="https://arxiv.org/html/2606.08596v1" target="_blank" rel="noopener">HTML</a>          <a class="project" href="https://beiwenzhang.github.io/Co-pi-tree/" target="_blank" rel="noopener">Project</a>
       </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.DC,cs.SE">
@@ -10760,7 +10760,7 @@
 <p class="paper-comments">Published as a conference paper at ICLR 2026</p>      <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2606.08574v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2606.08574" target="_blank" rel="noopener">Abs</a>
-          <a class="code" href="https://github.com/shengze-xu/OrderDP" target="_blank" rel="noopener">Code</a>
+<a class="html" href="https://arxiv.org/html/2606.08574v1" target="_blank" rel="noopener">HTML</a>          <a class="code" href="https://github.com/shengze-xu/OrderDP" target="_blank" rel="noopener">Code</a>
       </div>
     </li>
     <li class="paper" data-cats="cs.CV">
@@ -12402,7 +12402,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2606.08414v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2606.08414" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2606.08414v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.LG">
       <div class="paper-cats">
@@ -13065,7 +13065,7 @@
 <p class="paper-comments">IGARSS 2026 accepted paper conference</p>      <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2606.08324v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2606.08324" target="_blank" rel="noopener">Abs</a>
-          <a class="project" href="https://factral.co/SAE-LWIR/" target="_blank" rel="noopener">Project</a>
+<a class="html" href="https://arxiv.org/html/2606.08324v1" target="_blank" rel="noopener">HTML</a>          <a class="project" href="https://factral.co/SAE-LWIR/" target="_blank" rel="noopener">Project</a>
       </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.HC">
@@ -13366,7 +13366,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2606.08285v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2606.08285" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2606.08285v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.CV,cs.RO">
       <div class="paper-cats">
@@ -13722,7 +13722,7 @@
       </h2>
 <p class="paper-title-zh">注意你的脚步：精确人形立足点跟踪的通用学习框架</p>      <div class="paper-meta">
         <span class="authors">Alessandro Montenegro, Shihao Li, Puze Liu, Alberto Maria Metelli, Jan Peters</span>
-      </div>
+<span class="affiliations">German Research Center for Artificial Intelligence (DFKI) · Robotics Institute Germany (RIG)</span>      </div>
       <div class="abstract-box">
         <p class="paper-abstract">让仿人机器人能够在复杂、动态的环境中运行仍然是一个严峻的挑战，从根本上限制了稳健、安全和准确的导航能力。虽然采用速度指令策略的强化学习在人形运动中取得了显着的鲁棒性，但这种方法缺乏对立足点位置的明确控制，导致不安全的行为，例如踩到人的脚，或不精确的导航，阻碍后续的操纵任务。相反，明确的立足点跟踪策略通过直接受目标脚部姿势的控制提供了一种有前途的替代方案。然而，现有的方法通常受到不切实际的状态假设的限制，损害现实世界的部署，或者它们是分阶段管道的一部分，使它们与特定的下游任务相关联。在这项工作中，我们引入了一种新颖的轻量级框架，用于训练通用 3D 立足点跟踪策略。通过目标采样器动态提供足迹支持，该方法使学习的策略与特定地形无关。我们的新目标表示有效地缓解了现实世界中出现的挑战，例如噪声和不准确的姿势估计和脚部接触估计。我们的策略专为直接现实世界传输而设计，充当独立的低级控制器，可以与各种高级立足点生成器无缝配对。我们通过模拟和现实世界中的大量实验证明了我们框架的有效性。通过将我们的策略与不同的上游规划器相结合，我们在具有挑战性的环境中实现了自然而准确的运动，为复杂环境中的运动操纵任务铺平了道路。</p>
         <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
@@ -13782,7 +13782,7 @@
       </h2>
 <p class="paper-title-zh">用于道德野生动物监测的干扰感知空中机器人</p>      <div class="paper-meta">
         <span class="authors">Mahmut Osmanovic, Isac Paulsson, Teddy Lazebnik</span>
-      </div>
+<span class="affiliations">Department of Computing, Jonkoping University, Jonkoping, Sweden · Department of Information Systems, University of Haifa, Haifa, Israel</span>      </div>
       <div class="abstract-box">
         <p class="paper-abstract">可靠的野生动物监测对于生态和保护至关重要，但许多现有的方法，例如标记、捕获和近距离观察，可能会改变他们想要测量的行为。空中机器人提供了一种可扩展的替代方案，在多项研究中表现出了良好的性能。尽管如此，现有的方法通常缺乏行为意识，依赖于固定的启发式，或者需要昂贵、不切实际且在道德上难以获得的现实世界训练数据。因此，仍然没有基于自适应无人机的监测的通用框架，该框架既可以保持生态有效性，又可以跨物种、行为和机器人平台保持规模。在这项研究中，我们为异构空中机器人机队引入了一种基于干扰感知强化学习的框架，该框架能够实现自主野生动物跟踪，同时明确最大限度地减少行为干扰。我们将基于动物学的模拟环境与源自真实轨迹统计数据的拟合动物运动模型结合起来，并使用奖励公式来训练控制策略，该奖励公式捕获了观察质量和干扰风险之间的权衡。在具有不同生态和运动模式的三个物种（鸽子、豺狼和短翅田凫）以及自然界中常见的四种日益战略化的行为模型中，学习到的策略始终超越当前使用的基于规则的基线，并推广到监测任务、动物动态和无人机类型。这些结果将干扰感知学习建立为非侵入性自主野生动物观察的可行基础，为生态和保护领域的可扩展、道德负责和科学可靠的机器人监测开辟了道路。</p>
         <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
@@ -13794,7 +13794,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2606.08249v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2606.08249" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2606.08249v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.LG,eess.AS,eess.SP">
       <div class="paper-cats">
@@ -15183,7 +15183,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2606.08093v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2606.08093" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2606.08093v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.CV">
       <div class="paper-cats">
@@ -15298,7 +15298,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2606.08076v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2606.08076" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2606.08076v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.RO">
       <div class="paper-cats">
@@ -15460,7 +15460,7 @@
       </h2>
 <p class="paper-title-zh">你能有多小？ LoRA 微调 270M-8B 模型，用于金融交易中的商户信息提取</p>      <div class="paper-meta">
         <span class="authors">Donghao Huang, Tomas Drietomsky, Benjamin Barrett, Zhaoxia Wang</span>
-      </div>
+<span class="affiliations">Economic Intelligence, Mastercard, Prague, Czech Republic · School of Computing and Information Systems, Singapore Management University, Singapore</span>      </div>
       <div class="abstract-box">
         <p class="paper-abstract">金融交易处理需要从嘈杂、简短的银行交易字符串中大规模提取结构化商家信息。我们当前的生产系统是经过 LoRA 微调的 LLaMA 3.1-8B，在此任务上实现了 96.95% 的 F1，但部署 80 亿个参数的模型会带来过高的内存、延迟和成本限制。为了找到更有效的替代方案，我们对涵盖四个模型系列的 24 个模型变体进行了以部署为重点的研究：Gemma 3（270M、1B、4B）、Qwen 3.5（0.8B、2B、4B）、Aya（3.35B）和 LLaMA 3.1-8B，系统地评估准确性、推理吞吐量、训练成本和硬件行为，以评估生产适用性。我们的研究结果表明：（1）以 LoRA 等级 8 再现 LLaMA 3.1-8B 微调，实现了 96.75% F1，仅比等级 32 基线低 0.20 个点； (2) 仅使用 JSON 提示的 Qwen 3.5 4B 达到 96.60% F1，与 8B 基线相差 0.35 个百分点，同时使用大约一半的参数； (3) 0.8B Qwen 3.5 模型实现了 94.75% F1，匹配 2.5-4 倍大的模型，并提供了有吸引力的延迟精度权衡； (4) 思想链微调在大多数模型中通常将 F1 提高 0.3-1.8 点，尽管 Qwen 3.5 4B 在直接仅 JSON 提示下表现最佳； (5) Qwen 3.5 Think 和 Nothink 训练模板产生几乎相同的结果（F1 差异&lt;0.004），表明对于结构化提取任务不需要显式推理监督。我们进一步将所有 14 个经过微调的 sub-8B 模型部署为 Databricks 模型服务端点，并观察到基准性能可靠地转移到生产中，平均 F1 变化仅为 0.8 点。基于 Cohere2 架构的 Aya 3.35B 是唯一的例外，在服务条件下表现出 3-5 个百分点的下降。根据这些结果，我们提供了涵盖准确性和延迟要求的部署建议，...</p>
         <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
@@ -16165,7 +16165,7 @@
       </h2>
 <p class="paper-title-zh">学习用于开放词汇语义分割的语义校准网络</p>      <div class="paper-meta">
         <span class="authors">Yang Sun, Tao Wang, Anastasia Ioannou, Ge Xu</span>
-      </div>
+<span class="affiliations">School of Computer and Big Data, Minjiang University, Fuzhou, China. · Department of Computer Science and Engineering, European University Cyprus, Nicosia, Cyprus.</span>      </div>
       <div class="abstract-box">
         <p class="paper-abstract">语义图像分割为每个像素分配预定义的类别标签，最近取得了重大进展。开放词汇分割 (OVS) 将分割任务从固定集扩展到开放集，从而能够基于任意文本输入（例如类别名称或描述）识别和分割新概念。在本文中，我们提出了一种用于开放词汇语义分割的新型语义校准网络（SCN）。与之前侧重于特征聚合或对预训练模型进行简单微调的方法不同，SCN 通过显式建模类之间的语义相关性来细化掩模分类过程，旨在增强模型的判别力，同时有效保留预训练 CLIP 模型的泛化能力。具体来说，SCN包含两个核心组件：类消歧（CD）和Logits Fusion（LF）。首先，利用交叉注意机制将文本嵌入转换为视觉感知的伪文本嵌入，以便导出增强的相似度分数来补充原始掩码文本相似度分数。随后，类消歧模块通过残差架构捕获隐式类间依赖关系，以有效解决语义歧义。最后，Logits Fusion模块动态集成多方面的语义证据，确保模型在保持CLIP固有的泛化能力的同时，实现稳健的语义共识。主流基准测试的综合实验结果表明，与最先进的算法相比，所提出的方法实现了显着的性能改进。</p>
         <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
@@ -16638,7 +16638,7 @@
 <p class="paper-comments">28 pages, 12 figures, ICML 2026</p>      <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2606.07954v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2606.07954" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2606.07954v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI">
       <div class="paper-cats">
@@ -16767,7 +16767,7 @@
       </h2>
 <p class="paper-title-zh">DAL-PCQA：为点云质量评估启用失真级别和语言驱动的推理</p>      <div class="paper-meta">
         <span class="authors">Swarna Chakraborty, Gabriel De Castro Araújo, Syeda Tasmi Faria, Marcelo M. Carvalho, Mylene C. Q. Farias</span>
-      </div>
+<span class="affiliations">Department of Computer Science, Texas State University, USA · Ingram School of Engineering, Texas State University, USA</span>      </div>
       <div class="abstract-box">
         <p class="paper-abstract">点云质量评估（PCQA）方法通常预测标量平均意见得分（MOS），它量化整体感知退化，但不揭示其原因。相比之下，人类观察者自然会根据特定的扭曲（例如模糊、色移、点密度变化、缺失区域和几何变形）进行推理。为了弥补这一差距，我们引入了 DAL-PCQA，这是一个用于 PCQA 的失真感知、语言注释数据集。 DAL-PCQA 通过多级失真严重性标签、离散质量类别以及与人类感知一致的结构化自然语言描述来增强基准点云。我们定义了一个特定于点云的畸变分类法，涵盖光度和几何伪影。统计分析揭示了失真类型和质量水平的特征退化模式。为了评估这些注释的实用性，我们比较了用于生成感知质量描述的零样本和微调多模态模型。实验表明，失真感知监督极大地改善了词汇和语义与真实描述的对齐。通过实现可解释的、失真级别的推理，DAL-PCQA 促进了语言驱动的、可解释的点云质量评估。该数据集可在 https://github.com/swarna96/DAL-PCQA 上公开获取。</p>
         <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
@@ -17201,7 +17201,7 @@
       </h2>
 <p class="paper-title-zh">超越薄层限制：可见光范围衍射神经网络的可微体积训练</p>      <div class="paper-meta">
         <span class="authors">Dineth Jayakody, Dushan N. Wadduwage</span>
-      </div>
+<span class="affiliations">School of Data Science, Old Dominion University, Norfolk, VA 23529, USA · Department of Physics, Old Dominion University, Norfolk, VA 23529, USA Email:</span>      </div>
       <div class="abstract-box">
         <p class="paper-abstract">衍射深度神经网络 (D2NN) 有望为机器视觉提供小型化、高能效、光速的光学前端，但最成熟的演示仍然是太赫兹领域，由易于制造的毫米级神经元构建。将 D2NN 转换到几乎所有视觉管道都运行的可见光范围，长期以来一直被归咎于制造纳米级神经元的困难；但即使最近的进展消除了这一障碍，与太赫兹同类产品相匹配的可见光范围 D2NN 仍然遥不可及。我们将真正的障碍确定为几乎所有 D2NN 训练背后的薄层近似，它将每个衍射层视为无限薄的掩模。它失败并不是因为波长短（如通常假设的那样），而是因为在可见波长下使用的低折射率材料（n 约为 1.3-1.5）需要足够厚的浮雕结构，以使层内衍射和相位积累变得显着。为了克服这个问题，我们引入了一个可微分光束传播（$\partial$BPM）层，该层将每个元素建模为有限厚度的体积，并在训练期间通过它传播光，从而保持制造兼容的高度图端到端可训练，而无需在环路中进行全波模拟。在 MNIST、Fashion-MNIST 和 CIFAR-100 分类和成像中，$\partial$BPM 训练大大减少了设计与设备的不匹配，全波 FDTD 验证将分类精度从 50% 提高到 90%，而无需重新优化。因此，$\partial$BPM 层在高效的光学神经网络优化和制造一致的衍射设计之间提供了一个可扩展的、物理感知的桥梁。</p>
         <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
@@ -18153,7 +18153,7 @@
       </h2>
 <p class="paper-title-zh">用于偏振材料分类的量子增强相似性测量</p>      <div class="paper-meta">
         <span class="authors">Sara Shojaei, Seyed Mohamad Ali Tousi, Emma Bennett, Param Sangani, Ali Shiri Sichani, Ilker Ersoy, Hadi Ali-Akbarpour, Filiz Bunyak, G. N. DeSouza</span>
-      </div>
+<span class="affiliations">University of Missouri–Columbia, MO, USA</span>      </div>
       <div class="abstract-box">
         <p class="paper-abstract">我们提出了一种用于偏振材料分类的量子经典混合管道，将其视为点匹配问题。包含偏振光反射的体素立方体用于训练编码器以生成立方体体素的 32 维嵌入。在推理时，编码器头被丢弃，嵌入被编码为量子态的概率幅度。接下来，SWAP 测试电路估计查询立方体和锚立方体数据集的每个 32D 嵌入之间的保真度。聚合保真度作为材料相似度分数，具有最高聚合保真度的锚点的类别被视为查询材料的类别。我们在源自 Mueller 矩阵的 23 种材料（每种材料约 800 个样本）的数据集上评估我们的方法。比较了所提出的量子交换测试的点匹配方法和使用最佳传输的经典分类器。我们的结果证明了具有竞争力的分类准确性以及开放集辨别潜力，将其确立为基于 NISQ 的材料识别的可行途径。</p>
         <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
@@ -18333,7 +18333,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2606.07718v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2606.07718" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2606.07718v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.CV,eess.IV">
       <div class="paper-cats">
@@ -18647,7 +18647,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2606.07704v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2606.07704" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2606.07704v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.CL,cs.LG">
       <div class="paper-cats">
@@ -18914,7 +18914,7 @@
       </h2>
 <p class="paper-title-zh">Struct-Searcher：主体结构思维推进多模态深度信息搜索</p>      <div class="paper-meta">
         <span class="authors">Fan Zhang, Vireo Zhang, Shengju Qian, Haoxuan Li, Zheng Lian, Hao Wu, Yuan Gao, Xinyu Geng, Xin Wang, Pheng-Ann Heng</span>
-      </div>
+<span class="affiliations">Tongji University</span>      </div>
       <div class="abstract-box">
         <p class="paper-abstract">深度研究代理因其收集大规模在线信息以获取目标知识的能力而受到越来越多的关注，最近的努力从纯粹基于文本的信息搜索转向多模态设置。然而，现有的代理工作流程在很大程度上与证据积累模型保持一致，证据积累模型线性聚合证据，并且缺乏跨异构模式处理矛盾信息的原则性机制。为此，我们提出了 Struct-Searcher，这是一种基于信念修正理论的结构代理工作流程，它在整个推理过程中明确维护不断发展的多模态结构图，从而实现有效的冲突感知多模态深度信息搜索。跨多个基准数据集和主干模型的大量实验表明，Struct-Searcher 具有 (1) 即插即用和模型无关的特点，在五个不同主干上的 BrowseComp-VL 上平均相对准确度提高了 17.2%。 (2) 表现最佳、始终优于最先进的视觉语言模型 (VLM) 和深度研究代理，与第二好的竞争方法相比，MM-BrowseComp 的相对准确度提高了 3.7%，HLE-VL 提高了 1.5%，BrowseComp-VL 提高了 0.7%。</p>
         <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
@@ -18926,7 +18926,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2606.07689v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2606.07689" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2606.07689v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.CL,cs.IR,cs.LG">
       <div class="paper-cats">
@@ -20459,7 +20459,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2606.07613v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2606.07613" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2606.07613v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.CY,cs.LG">
       <div class="paper-cats">
@@ -23337,12 +23337,12 @@
   <footer class="site-footer">
     <div class="wrap footer-wrap">
       <span>Categories: cs.CV, cs.RO, cs.AI</span>
-      <span>Generated 2026-08-11 13:45 UTC</span>
+      <span>Generated 2026-08-13 13:49 UTC</span>
     </div>
   </footer>
 
   <script>
-    window.__archiveDates = ["2026-08-11", "2026-08-10", "2026-08-07", "2026-08-06", "2026-08-05", "2026-08-04", "2026-08-03", "2026-07-31", "2026-07-30", "2026-07-29", "2026-07-28", "2026-07-27", "2026-07-24", "2026-07-23", "2026-07-22", "2026-07-21", "2026-07-20", "2026-07-17", "2026-07-16", "2026-07-15", "2026-07-14", "2026-07-13", "2026-07-10", "2026-07-09", "2026-07-08", "2026-07-07", "2026-07-03", "2026-07-02", "2026-07-01", "2026-06-30", "2026-06-29", "2026-06-26", "2026-06-25", "2026-06-24", "2026-06-23", "2026-06-19", "2026-06-18", "2026-06-17", "2026-06-16", "2026-06-15", "2026-06-12", "2026-06-11", "2026-06-10", "2026-06-09", "2026-06-08", "2026-06-05", "2026-06-04", "2026-06-03", "2026-06-02", "2026-06-01", "2026-05-29", "2026-05-28", "2026-05-27", "2026-05-26", "2026-05-25", "2026-05-22", "2026-05-21", "2026-05-20", "2026-05-19", "2026-05-18", "2026-05-15", "2026-05-14", "2026-05-13", "2026-05-12", "2026-05-11", "2026-05-08", "2026-05-07", "2026-05-06", "2026-05-05", "2026-05-04", "2026-05-01", "2026-04-30", "2026-04-29", "2026-04-28", "2026-04-27", "2026-04-24", "2026-04-23", "2026-04-22", "2026-04-21", "2026-04-20", "2026-04-17"];
+    window.__archiveDates = ["2026-08-13", "2026-08-11", "2026-08-10", "2026-08-07", "2026-08-06", "2026-08-05", "2026-08-04", "2026-08-03", "2026-07-31", "2026-07-30", "2026-07-29", "2026-07-28", "2026-07-27", "2026-07-24", "2026-07-23", "2026-07-22", "2026-07-21", "2026-07-20", "2026-07-17", "2026-07-16", "2026-07-15", "2026-07-14", "2026-07-13", "2026-07-10", "2026-07-09", "2026-07-08", "2026-07-07", "2026-07-03", "2026-07-02", "2026-07-01", "2026-06-30", "2026-06-29", "2026-06-26", "2026-06-25", "2026-06-24", "2026-06-23", "2026-06-19", "2026-06-18", "2026-06-17", "2026-06-16", "2026-06-15", "2026-06-12", "2026-06-11", "2026-06-10", "2026-06-09", "2026-06-08", "2026-06-05", "2026-06-04", "2026-06-03", "2026-06-02", "2026-06-01", "2026-05-29", "2026-05-28", "2026-05-27", "2026-05-26", "2026-05-25", "2026-05-22", "2026-05-21", "2026-05-20", "2026-05-19", "2026-05-18", "2026-05-15", "2026-05-14", "2026-05-13", "2026-05-12", "2026-05-11", "2026-05-08", "2026-05-07", "2026-05-06", "2026-05-05", "2026-05-04", "2026-05-01", "2026-04-30", "2026-04-29", "2026-04-28", "2026-04-27", "2026-04-24", "2026-04-23", "2026-04-22", "2026-04-21", "2026-04-20", "2026-04-17"];
     window.__currentDate = "2026-06-09";
     window.__assetPrefix = "../";
   </script>

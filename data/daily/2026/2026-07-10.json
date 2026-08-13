@@ -504,6 +504,12 @@
         "https://arxiv.org/html/2607.08729v1/Challenges_Colorblindfriendly.png",
         "https://arxiv.org/html/2607.08729v1/figures/co-occurring_jumps_colorblindfriendly.png",
         "https://arxiv.org/html/2607.08729v1/figures/wasp_02_fr_2232__crop.png"
+      ],
+      "affiliations": [
+        "INRAE Institut Sophia Agrobiotech, Sophia Antipolis, France",
+        "Université Côte d’Azur, Sophia Antipolis, France",
+        "Indian Institute of Technology Delhi, Delhi, India",
+        "Institute of Plant Protection, Chinese Academy of Agricultural Sciences, Beijing, China"
       ]
     },
     {
@@ -1600,6 +1606,15 @@
         "https://arxiv.org/html/2607.08374v1/x2.png",
         "https://arxiv.org/html/2607.08374v1/x3.png",
         "https://arxiv.org/html/2607.08374v1/x4.png"
+      ],
+      "affiliations": [
+        "Noriyuki Kawarazaki",
+        "Kosuke Takano",
+        "Department of Mechatronics and Biomedical Engineering, Lee Kong Chian Faculty of Engineering and Science",
+        "Institute of Communication Studies, National Yang Ming Chiao Tung University, Taiwan Affiliation:",
+        "Institute of Information Management, National Yang Ming Chiao Tung University, Taiwan Affiliation:",
+        "Faculty of Information Technology, Kanagawa Institute of Technology, Japan Affiliation:",
+        "Laboratoire de Traitement et Transport de l’Information, Université Sorbonne Paris Nord, France"
       ]
     },
     {
@@ -1850,6 +1865,11 @@
         "https://arxiv.org/html/2607.08283v1/x2.png",
         "https://arxiv.org/html/2607.08283v1/x3.png",
         "https://arxiv.org/html/2607.08283v1/figures/dyn.png"
+      ],
+      "affiliations": [
+        "NYU Shanghai, Shanghai, China Affiliation:",
+        "University of Electronic Science and Technology of China, Chengdu, China Affiliation:",
+        "Beijing Institute of Technology, Beijing, China Affiliation:"
       ]
     },
     {
@@ -2557,7 +2577,8 @@
       "project_links": [],
       "title_zh": "LEEVLA：了解潜在环境进化中视觉-语言-行动的重要因素",
       "abstract_zh": "视觉-语言-动作（VLA）模型旨在将多模态输入映射到机器人动作。然而，大多数现有方法难以覆盖复杂的动态场景，因为统一处理所有视觉标记并使用人类选择的因素进行推理，缺乏强调任务关键证据并忽略潜在因素的机制。为了解决这个问题，我们提出了 LEEVLA，这是一种 VLA 架构，用于了解潜在环境演化中重要的内容，它明确引导模型走向信息区域，同时保留潜在世界表示的结构化演化。为了识别显着和指令相关的区域，我们引入了漂移引导的动态优先级（DGDP），它将动态位置优先级（DPP）与语义漂移指导（SDG）相结合，以指导 VLA 代理在训练期间参加哪里。除此之外，我们引入了结构化特征流生成（SFFG），它通过原型到外围（P2P）预测来模拟这些优先特征如何在潜在空间中演化，以及相互邻域对比（MC）损失以保持邻域之间的拓扑一致性。 DGDP 和 SFFG 共同构成了一个任务感知的“地点-如何”培训框架。对 VLA 基准的大量实验表明，LEEVLA 始终优于先前的方法，这证实了明确的任务证据指导和结构化潜在推理对于可扩展的 VLA 都至关重要。我们的代码可在 https://github.com/LyuQi127/LEEVLA 获取。",
-      "figures": []
+      "figures": [],
+      "html_url": "https://arxiv.org/html/2607.08182v1"
     },
     {
       "arxiv_id": "2607.08171",
@@ -3893,7 +3914,8 @@
       "project_links": [],
       "title_zh": "准确、跨学科、透明的结构属性理解与深层的原生结构推理",
       "abstract_zh": "结构-性质关系是生物学、化学和材料科学的基础，其中功能、反应性和物理响应产生于空间、化学和周期性组织。从机械上解释这些关系需要通过科学原理和物理约束来解释结构证据，从立体化学和键合到对称性、能量学和周期顺序。然而，将人工智能应用于这一过程提出了表示和推理的共同挑战：模型必须保留领域本机结构信息，同时显示特定证据如何支持这些约束下的预测。在这里，我们介绍 SciReasoner，这是一种多模式科学基础模型，用于蛋白质、小分子和无机晶体的本机结构推理。 SciReasoner 将坐标、拓扑和周期性连接离散化为统一的结构感知词汇，在推理过程中将结构标记视为可寻址的证据单元。在同源控制的基因本体预测中，SciReasoner 改进了低同源性和孤儿样蛋白质的细胞成分注释，将 $F_{\\max}$ 从 0.42 增加到 0.55。在化学中，它将单步逆合成精度从 0.63 提高到 0.72，同时生成片段级断开和前体验证痕迹。在材料科学中，它的表示分离元素相和化合物相并解决高带隙和低带隙状态。在 86 个基准测试中，SciReasoner 在 67 项任务上实现了最先进的性能。在 98% 的情况下，双盲专家评估将其推理轨迹评为首选或至少与前沿大型语言模型相当。通过使结构成为科学约束下推理的可检查基础，SciReasoner 将准确的预测与可解释的科学推理联系起来。",
-      "figures": []
+      "figures": [],
+      "html_url": "https://arxiv.org/html/2607.07708v1"
     },
     {
       "arxiv_id": "2607.07707",
@@ -4423,7 +4445,8 @@
       "project_links": [],
       "title_zh": "联邦学习中知识转移的协作合成数据生成",
       "abstract_zh": "一次性联邦学习 (OSFL) 通过将训练限制为单轮来解决联邦学习的通信开销，但在不牺牲模型质量的情况下这样做是很重要的，特别是当客户端数据分布存在分歧时。最近的工作通过构建可转移的合成数据集或蒸馏数据在服务器上聚合客户端知识来解决这一挑战。然而，这些方法大多数缺乏正式的隐私保证，在共同实现低通信、对异质性的鲁棒性和严格的隐私方面存在差距。我们提出了 FedKT-CSD（通过协作合成数据进行联合知识转移），这是一个受神经图像压缩启发的框架，它通过利用公开预训练的自动编码器作为共享潜在空间来缩小这一差距。每个客户端在一次前向传递中对其私有数据进行编码，计算类条件潜在统计数据，并将这些数据传输到服务器。服务器通过安全聚合来聚合这些统计数据，添加校准的差分隐私噪声，并解码合成数据集以训练全局模型和进一步的下游任务。该设计通过构造提供正式的$(\\varepsilon,δ)$-差分隐私，同时保持客户端计算和通信的轻量级。尽管在隐私限制下运行，FedKT-CSD 在不同的数据集和异质性设置中与非私有基准具有竞争力，甚至优于非私有基准，并且可以扩展到大量客户。我们的代码位于：https://github.com/an7123/FedKT-CSD",
-      "figures": []
+      "figures": [],
+      "html_url": "https://arxiv.org/html/2607.07565v1"
     },
     {
       "arxiv_id": "2607.07521",
@@ -5697,7 +5720,8 @@
       ],
       "title_zh": "ORCAID：深度强化学习策略的基于倾斜规则的连续动作解释",
       "abstract_zh": "Explainability remains a key issue in reinforcement learning (RL).当动作空间连续时，从在复杂环境中训练的智能体中提取可解释的策略尤其具有挑战性。我们引入了 ORCAID，这是一种从在具有连续动作空间的混合连续离散环境中运行的 RL 代理中提取可解释的基于规则的策略的新方法。我们的主要贡献是一种高效的倾斜决策树训练算法，该算法通过超平面划分状态空间并拟合局部线性模型。关键思想在于三阶段分割搜索：高效随机初始化、局部细化和向后消除。最后，相邻的叶子被合并，生成一组简洁的可解释规则，描述给定的深度强化学习策略。我们在多个 RL 环境中评估 ORCAID，证明提取的基于规则的策略可以通过少量参数保持强大的性能，甚至可以用于提高原始深度 RL 策略的性能。",
-      "figures": []
+      "figures": [],
+      "html_url": "https://arxiv.org/html/2607.07235v1"
     },
     {
       "arxiv_id": "2607.07232",
@@ -6114,6 +6138,10 @@
         "https://arxiv.org/html/2607.07091v1/x2.png",
         "https://arxiv.org/html/2607.07091v1/x3.png",
         "https://arxiv.org/html/2607.07091v1/x4.png"
+      ],
+      "affiliations": [
+        "School of Computer Science, Shanghai Jiao Tong University, China Affiliation:",
+        "Tencent, China Affiliation:"
       ]
     },
     {
@@ -6348,7 +6376,8 @@
       "project_links": [],
       "title_zh": "测量超越人类规模的智力",
       "abstract_zh": "我们如何衡量超出人类能力的智力？\n  人类编写的基准已经饱和，并且超出了人类的能力，审查员可能不知道哪些任务既困难又可验证。我们认为这种困难是绝对规模​​评估所固有的，并提出了一种基于相对测量的新范式，其中模型产生了区分其他系统的公共挑战。汇总这些结果会产生一个对抗性心理测量评级系统，该系统可以随着被测量的系统而扩展。我们描述了实用的协议，可以减少私人信息攻击的动机，支持无法官的裁决，并自然地随着代理能力的扩展而扩展。我们跨可验证和开放式、不可验证的领域实例化该框架，说明模型生成的评估如何继续衡量超出人类边界的系统。",
-      "figures": []
+      "figures": [],
+      "html_url": "https://arxiv.org/html/2607.07040v1"
     },
     {
       "arxiv_id": "2607.07035",
@@ -6773,6 +6802,9 @@
         "https://arxiv.org/html/2607.06963v1/figure2.png",
         "https://arxiv.org/html/2607.06963v1/figure3.png",
         "https://arxiv.org/html/2607.06963v1/figure4.png"
+      ],
+      "affiliations": [
+        "Google, Mountain View, California"
       ]
     },
     {
@@ -6897,7 +6929,8 @@
       "project_links": [],
       "title_zh": "MADB：专业多维标注的大规模音乐美学数据集",
       "abstract_zh": "音乐审美评估是一个具有挑战性但尚未得到充分探索的问题，需要模型捕捉细粒度、多维的人类感知判断。由于缺乏具有结构化美学注释的大规模数据集，该领域的进展受到限制。我们引入了 MADB，这是一个大型数据集和基准，包含由 30 位训练有素的注释者注释的 9,999 个轨道。每首曲目均由大约 10 名注释者在 10 个感知维度和一个总分上进行评分，并附有用于多模式分析的附加文本注释。我们在多个预训练模型上建立了统一的评估框架。结果揭示了模型预测与人类判断之间的巨大差距，暴露了当前方法的主要局限性。 MADB 为人类音乐理解提供了新的基准。项目页面：https://github.com/knownree/madb",
-      "figures": []
+      "figures": [],
+      "html_url": "https://arxiv.org/html/2607.06929v1"
     },
     {
       "arxiv_id": "2607.06925",
@@ -7508,6 +7541,10 @@
         "https://arxiv.org/html/2607.06757v1/x2.png",
         "https://arxiv.org/html/2607.06757v1/figure/epi_curve_abm_llm.png",
         "https://arxiv.org/html/2607.06757v1/figure/epi_curve_only_abm.png"
+      ],
+      "affiliations": [
+        "Geospatial Science and Human Security Division, Oak Ridge National Laboratory, Oak Ridge, TN 37830, USA",
+        "Computer Science and Mathematics Division, Oak Ridge National Laboratory, Oak Ridge, TN 37830, USA"
       ]
     },
     {
@@ -7650,7 +7687,8 @@
       "project_links": [],
       "title_zh": "无人机机器人和双手操作的视觉语言动作 (VLA) 模型：综述",
       "abstract_zh": "视觉语言动作 (VLA) 模型将视觉感知、自然语言理解和动作生成统一在一个基础模型中，使机器人能够遵循指令，例如折叠毛巾或直接从相机图像飞向红色建筑物。由于 VLA 继承了互联网规模预训练的世界知识，因此它们已成为基于学习的操作的主导框架，其中双手协调是最苛刻的测试平台：两个具有 7 个自由度的手臂必须协调一致地移动，以折叠、组装和重新定向物体。无人机机器人技术面临着结构上类似的挑战：无人机必须在严格的延迟和有效负载限制下协调推力、姿态和来自视觉观察的越来越多的抓手命令。本次回顾涵盖了 2017-2026 年期间的 183 项贡献，并按照七个维度进行组织：VLA 架构、训练方法、动作表示、双手协调（2022-2026 年）、无人机 (UAV) 导航和控制（2017-2026 年）、语言基础以及包括记忆和世界模型在内的跨领域关注点。我们展示了为双手 VLA 开发的协调策略、训练方法和动作表示转移到无人机系统，并确定了两个领域的 14 个研究方向。",
-      "figures": []
+      "figures": [],
+      "html_url": "https://arxiv.org/html/2607.06706v1"
     },
     {
       "arxiv_id": "2607.06701",

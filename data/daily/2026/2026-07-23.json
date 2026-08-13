@@ -3840,7 +3840,8 @@
       "figures": [],
       "announced_in": [
         "cs.RO"
-      ]
+      ],
+      "html_url": "https://arxiv.org/html/2607.19903v1"
     },
     {
       "arxiv_id": "2607.19901",
@@ -6224,6 +6225,10 @@
       ],
       "announced_in": [
         "cs.RO"
+      ],
+      "affiliations": [
+        "Vanderbilt University, Nashville, TN, USA Affiliation:",
+        "The University of Texas at Austin, Austin, TX, USA"
       ]
     },
     {

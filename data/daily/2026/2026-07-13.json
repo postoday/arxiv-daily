@@ -138,7 +138,14 @@
       "project_links": [],
       "title_zh": "可扩展的语言智能视觉预训练",
       "abstract_zh": "大型基础模型的快速进展主要是由大规模文本语料库的预训练推动的。然而，许多形式的知识是通过视觉表示来传达的，其中图形、排版方程和页面布局携带着丰富的信息，这些信息无法仅通过文本忠实或完整地捕获。然而，当前的预训练方法通过将文档和网页等视觉丰富的资源转换为纯文本来学习语言智能，从而抛弃了这些视觉线索。本文挑战了语言模型必须在纯文本表示上进行训练的默认假设，并表明视觉预训练是基础模型智能的可扩展学习器。为此，我们对无监督视觉预训练范例进行了系统研究，这些范例直接利用视觉文档而无需提取文本。在多个主干和基准中，同一底层语料库上的视觉预训练始终优于纯文本预训练，为可扩展的语言智能提供了有效的途径。",
-      "figures": []
+      "figures": [],
+      "html_url": "https://arxiv.org/html/2607.09657v1",
+      "affiliations": [
+        "Shanghai Artificial Intelligence Laboratory",
+        "University of Science and Technology of China",
+        "Zhejiang University",
+        "Shanghai Jiao Tong University"
+      ]
     },
     {
       "arxiv_id": "2607.09655",
@@ -1123,7 +1130,8 @@
       "project_links": [],
       "title_zh": "通过力约束弹性图进行演示的一次性多模态学习",
       "abstract_zh": "机器人操作任务通常需要同时对运动和接触力进行推理，但大多数演示学习 (LfD) 方法仅对空间轨迹进行建模，而忽略力与环境的相互作用。此限制降低了鲁棒性，并可能导致在力受限的设置中任务再现不安全或不一致。我们提出了一种新颖的一次性多模态 LfD 框架，用于包含力的演示的分割、编码和再现。首先，我们引入了一种多模态概率分割方法，该方法可以随时间自适应地权衡空间和力模态，从而能够自动提取力感知运动基元。其次，我们扩展了弹性图表示，以在技能编码期间纳入外力约束，并制定用于学习力一致轨迹模型的凸优化程序。由此产生的技能通过一次演示再现了运动和接触特征，同时通过考虑演示的力分布来促进更安全的执行。我们通过两种不同的力感应配置在五种真实世界的操作任务上验证了我们的方法：在带有 Robotiq 2f-85 夹具的 UR5e 上进行手腕力感应，在带有 Openhand Model O 夹具的 Kinova Gen3 上进行手指力感应。实验结果证明了强大的多模态分割、准确的力感知再现和跨平台通用性。",
-      "figures": []
+      "figures": [],
+      "html_url": "https://arxiv.org/html/2607.09515v1"
     },
     {
       "arxiv_id": "2607.09510",
@@ -3433,6 +3441,10 @@
         "https://arxiv.org/html/2607.09185v1/figures/zero.png",
         "https://arxiv.org/html/2607.09185v1/figures/transfer_new.png",
         "https://arxiv.org/html/2607.09185v1/x2.png"
+      ],
+      "affiliations": [
+        "Aether AI",
+        "University of California, San Diego"
       ]
     },
     {
@@ -3740,7 +3752,8 @@
       "project_links": [],
       "title_zh": "MedRealMM：中国在线医疗咨询的真实多模式基准",
       "abstract_zh": "大语言模型（LLM）越来越多地应用于在线医疗咨询中，但现有的基准仍然与实际临床实践不一致。许多方法依赖于综合对话或患者模拟器，忽略患者上传的医学图像，或使用多项选择或词汇重叠指标来评估开放式临床反应，而这些指标不能很好地反映临床质量。我们引入 \\textbf{MedRealMM}，这是一个多模式在线医疗咨询的大型基准，是根据从全国范围内的互联网医院收集的去识别化的医患互动而构建的。 MedRealMM 使用多模式临床挑战点 (MCCP) 提取框架来识别真实咨询轨迹中的临床要求时刻，并将每个时刻转换为标准化的下一个响应生成任务，同时保留前面的文本图像上下文。每个实例都与医生完善的针对特定病例的评分标准配对，奖励临床上理想的行为，并惩罚不安全、不受支持或矛盾的反应。当前版本包含 5,620 个真实的多模式病例，涵盖 64 个临床科室。我们评估了 19 个通用和医学专业法学硕士，包括纯文本和多模式系统。我们的结果表明，图像信息对于可靠的临床表现至关重要，并且当前的前沿模型仍然低于在线医生的反应。尽管一些前沿模型满足与医生一样多或更多的积极临床标准，但它们会引发更多消极标准，这表明安全敏感的错误避免仍然是一个中心瓶颈。 MedRealMM 为评估现实世界在线咨询中的多模式医学推理提供了现实且可重复的基准。该数据集将在 Hugging Face 上公开提供：https://huggingface.co/datasets/jdh-algo/MedRealMM。",
-      "figures": []
+      "figures": [],
+      "html_url": "https://arxiv.org/html/2607.09142v1"
     },
     {
       "arxiv_id": "2607.09138",
@@ -4497,7 +4510,8 @@
       "project_links": [],
       "title_zh": "GeoTrace：视频大语言模型的几何感知轨迹标记压缩",
       "abstract_zh": "尽管视频大语言模型（Video LLM）在视频理解方面表现出了强大的性能，但其效率仍然受到大量视觉标记的限制。现有的视频令牌压缩方法通常依赖于逐帧显着性或启发式令牌合并，这可能会过度关注局部显着区域并产生模糊的融合特征。为了解决这些问题，我们提出了 GeoTrace，这是一种免训练的时空令牌压缩框架，可将视频证据分解为精确的骨架令牌和可追踪的残留事件令牌。具体来说，上下文最远点锚定（CFPA）保留了显着的、上下文一致的和高覆盖率的骨架令牌，而轨迹约束残余压缩（TCRC）通过一对一的时间轨迹和约束的近流形压缩来压缩残余令牌，从而产生具有减少模糊性的可追踪事件令牌。我们在四个视频理解基准的四个视频法学硕士上评估了 GeoTrace，结果证明了其在不同模型架构和场景中的有效性和泛化性。在 LLaVA-OneVision 上，仅保留 10\\% 的视觉标记，GeoTrace 实现了\\(12.99\\times\\) TFLOPs 减少，同时保留了 99.1\\% 的普通性能。总体而言，GeoTrace 提供了紧凑且可追踪的令牌表示，以实现高效且稳健的视频 LLM 推理。代码可在 \\href{https://github.com/guohuan-xie/GeoTrace.git}{\\texttt{Code}} 获取。",
-      "figures": []
+      "figures": [],
+      "html_url": "https://arxiv.org/html/2607.09080v1"
     },
     {
       "arxiv_id": "2607.09078",
@@ -4528,7 +4542,8 @@
       "project_links": [],
       "title_zh": "野外无人机主动物体检测：大规模数据集、基准和方法",
       "abstract_zh": "物体检测是众多无人机 (UAV) 应用中的基本组成部分，但它长期以来一直受到遮挡或目标像素稀缺等障碍的困扰。主动物体检测 (AOD) 提供了一种通过主动视觉解决这些挑战的新颖范例，而由于缺乏用于算法开发和评估的高质量数据集和基准，基于无人机的 AOD 研究仍然稀缺。为了填补这一空白，本文提出了 ATRNet-LUDO，这是第一个用于无人机地面主动物体检测（UGAOD）的大规模现实世界数据集。包含12.1万张多视点全景多目标航拍图和121万张局部单目标切片，覆盖40个场景、10个车辆目标。它能够为无人机代理交互和主动观察策略学习构建多样化的训练和测试环境。基于该数据集，我们建立了 AOD 政策学习方法的综合评估基准。大多数现有的 AOD 策略依赖于深度强化学习 (DRL)，但泛化性较差。对我们基准的评估揭示了训练和测试性能之间存在显着的普遍差距，凸显了对解决方案的迫切需求。为此，我们利用联合嵌入预测架构（JEPA）构建一个增强状态表示学习的世界模型，并通过结合 AOD 特定的先验知识提出 AOD-JEPA。大量的实验验证了其有效性和优越性。我们希望 ATRNet-LUDO 和基准能够推进 UGAOD 领域的研究。数据集和代码即将在 https://github.com/Leo000ooo/LUDO_dataset 上提供。",
-      "figures": []
+      "figures": [],
+      "html_url": "https://arxiv.org/html/2607.09078v1"
     },
     {
       "arxiv_id": "2607.09076",
@@ -4982,6 +4997,12 @@
         "https://arxiv.org/html/2607.09020v1/x2.png",
         "https://arxiv.org/html/2607.09020v1/x3.png",
         "https://arxiv.org/html/2607.09020v1/x4.png"
+      ],
+      "affiliations": [
+        "CMU, USA",
+        "UT Austin, USA",
+        "UTokyo, Japan",
+        "UBC, Canada"
       ]
     },
     {
@@ -5718,7 +5739,8 @@
       "project_links": [],
       "title_zh": "伪装安全：机密医学图像建模的图像伪装的系统评估",
       "abstract_zh": "基于云的深度学习可以实现大规模医学图像分析，但当敏感的患者图像被外包用于模型开发时，会引发严重的隐私问题。图像伪装最近成为一种有前途的隐私增强技术（PET），它可以将图像转换为视觉上难以理解的表示，同时保留下游学习的信息。我们建立了一个统一的框架来评估涉及分类和语义分割任务的四个数据集的代表性方法 DisguishedNets 和 NeuraCrypt。我们的分析评估了针对重建攻击的预测效用、效率和稳健性。结果表明，不同任务之间的图像伪装性能存在显着差异；虽然方法保留了医学图像分类的实用性，但它们导致密集语义分割的严重退化。具体来说，随机多维变换 (RMT) 提供了性能和安全性的最佳平衡，而基于 AES 的伪装严重影响了实用性。此外，事实证明，对自然图像有效的基于回归的重建攻击在现实医学图像上的成功率要低得多。这些发现对 PET 对于机密医疗人工智能应用的适用性进行了系统评估。",
-      "figures": []
+      "figures": [],
+      "html_url": "https://arxiv.org/html/2607.08867v1"
     },
     {
       "arxiv_id": "2607.08857",
@@ -5903,6 +5925,10 @@
         "https://arxiv.org/html/2607.08804v1/x2.png",
         "https://arxiv.org/html/2607.08804v1/x3.png",
         "https://arxiv.org/html/2607.08804v1/x4.png"
+      ],
+      "affiliations": [
+        "The Hong Kong University of Science and Technology",
+        "The Chinese University of Hong Kong"
       ]
     },
     {
@@ -6296,6 +6322,11 @@
         "https://arxiv.org/html/2607.08782v1/x2.png",
         "https://arxiv.org/html/2607.08782v1/x3.png",
         "https://arxiv.org/html/2607.08782v1/x4.png"
+      ],
+      "affiliations": [
+        "School of Software Engineering, Sun Yat-Sen University, China",
+        "School of Cyber Science and Engineering, Xi’an Jiaotong University, China",
+        "School of Artificial Intelligence, Shandong University, China"
       ]
     },
     {

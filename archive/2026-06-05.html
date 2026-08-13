@@ -16,7 +16,7 @@
           <a class="site-nav-link " href="../blogs/">Blogs</a>
         </nav>
       </div>
-      <div class="header-meta">Updated 2026-08-11 13:45 UTC</div>
+      <div class="header-meta">Updated 2026-08-13 13:49 UTC</div>
     </div>
   </header>
 
@@ -1832,7 +1832,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2606.06042v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2606.06042" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2606.06042v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.NE,cs.RO">
       <div class="paper-cats">
@@ -1905,7 +1905,7 @@
       </h2>
 <p class="paper-title-zh">锥束 CT 截断重建的纹理保留隐式神经表示</p>      <div class="paper-meta">
         <span class="authors">Genyuan Zhang, Junyao Wang, Haoran Lan, Chuandong Tan, Songtao Zhu, Fenglin Liu</span>
-      </div>
+<span class="affiliations">Key Lab of Optoelectronic Technology and Systems, and Engineering Research Center of</span>      </div>
       <div class="abstract-box">
         <p class="paper-abstract">锥形束计算机断层扫描 (CBCT) 经常遭受数据截断的问题，从而引入严重的伪影并限制有效视场 (FOV)。现有的截锥束计算机断层扫描 (CBCT) 重建深度学习方法存在严重局限性，包括严格依赖有监督的地面实况以及无法考虑连续 3D 空间截断变化。为了应对这些挑战，我们引入了基于神经场景表示的自监督 3D 重建框架。通过在投影监督下直接将空间坐标映射到辐射密度，我们的方法本质上绕过了传统的滤波和反投影操作，从而从根本上消除了截断引起的环伪影，同时实现了稳健的连续 3D 数据外推。然而，坐标网络容易受到固有的频谱偏差的影响，这会导致临床重要的高频纹理的严重损失。为了解决这个瓶颈，我们进一步将基于物理的迭代细化模块纳入神经场景表示架构中。利用坐标网络中的无伪影外推体积作为最佳初始化，该模块逐步从原始投影中重新提取高频结构信息并将其注入回体积中。对模拟和真实数据集的大量实验表明，我们的方法成功地将神经网络卓越的伪影抑制和外推能力与迭代算法的高保真细节保留相结合。</p>
         <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
@@ -3053,7 +3053,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2606.05758v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2606.05758" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2606.05758v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.CV">
       <div class="paper-cats">
@@ -3166,7 +3166,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2606.05730v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2606.05730" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2606.05730v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.CV,cs.LG">
       <div class="paper-cats">
@@ -3717,7 +3717,7 @@
       </h2>
 <p class="paper-title-zh">KV-Control：用于轨迹控制文本到运动的参数高效 K/V 注入</p>      <div class="paper-meta">
         <span class="authors">Tengjiao Sun, Pengcheng Fang, Xiaoyu Zhan, Yanwen Guo, Dongjie Fu, Xiaohao Cai, Hansung Kim</span>
-      </div>
+<span class="affiliations">University of Southampton · Mogo AI Ltd. · Nanjing University Affiliation:</span>      </div>
       <div class="abstract-box">
         <p class="paper-abstract">文本调节的 3D 人体运动模型现在可以根据提示合成合理的运动，但实际的动画和具体代理工作流程很少停留在文本上：角色可能需要遵循草绘的根路径、击中末端执行器目标或满足多关节轨迹，同时仍保留语言描述的步态、风格和意图。这暴露了控制权衡。轨迹控制器应该是精确的，而不会覆盖之前预先训练的文本条件运动，但现有的解决方案要么复制生成器的大部分以重新获得每层控制访问权，要么将大部分成本转移到测试时优化。我们推出了 KV-Control，这是一种紧凑的注意力侧控制接口，用于冻结蒙版文本到运动转换器。关键思想是使几何约束可用作自注意力内部的记忆，而不是通过全局姿势标记注入它们或仅在输出侧强制它们。为了支持这个接口，我们共同设计了一个部分标记化的运动基底和控制器： \textbf{PartVQ} 学习解剖学对齐的部分代码本，T-Concat 将每个帧部分标记公开为注意力可寻址站点，KV-Control 在每个自注意力层注入控制条件键/值内存，同时保留预训练的查询流、文本交叉注意力、FFN 和所有骨干权重。由此产生的适配器仅在共享轨迹编码器之上添加可训练的注射参数，但在继承的细化协议下以亚厘米精度跟踪根和多关节约束，同时保留文本条件的运动质量。 KV-Control 将轨迹调节重新定义为轻量级内存检索，为文本到运动的生成提供小型、精确且透明的控制界面。</p>
         <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
@@ -4269,7 +4269,7 @@
 <p class="paper-comments">Accepted at ICML 2026</p>      <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2606.05471v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2606.05471" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2606.05471v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.RO">
       <div class="paper-cats">
@@ -4902,7 +4902,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2606.05152v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2606.05152" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2606.05152v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.NE">
       <div class="paper-cats">
@@ -5107,7 +5107,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2606.05107v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2606.05107" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2606.05107v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.CL,cs.CY">
       <div class="paper-cats">
@@ -5874,7 +5874,7 @@
 <p class="paper-comments">Accepted to Isabelle2026</p>      <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2606.04877v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2606.04877" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2606.04877v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI">
       <div class="paper-cats">
@@ -5960,7 +5960,7 @@
 <p class="paper-comments">14 pages</p>      <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2606.04850v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2606.04850" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2606.04850v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.LG">
       <div class="paper-cats">
@@ -5984,7 +5984,7 @@
 <p class="paper-comments">5 pages, 3 figures, accepted at AAAI 2026 AI4TS Workshop</p>      <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2606.04833v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2606.04833" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2606.04833v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.CL,cs.MA">
       <div class="paper-cats">
@@ -6009,7 +6009,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2606.04823v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2606.04823" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2606.04823v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.CV,cs.LG">
       <div class="paper-cats">
@@ -6424,7 +6424,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2606.04755v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2606.04755" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2606.04755v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.LG">
       <div class="paper-cats">
@@ -6851,7 +6851,7 @@
       </h2>
 <p class="paper-title-zh">对象检测中的实例级事后不确定性量化</p>      <div class="paper-meta">
         <span class="authors">Chongzhe Zhang, Zifan Zeng, Qunli Zhang, Feng Liu, Zheng Hu</span>
-      </div>
+<span class="affiliations">Technische Universität Berlin, Berlin, Germany · Technische Universität München, Munich, Germany</span>      </div>
       <div class="abstract-box">
         <p class="paper-abstract">物体检测是自动驾驶的安全关键组成部分。为了保证安全，必须量化边界框预测的不确定性。事后不确定性量化无需再培训，符合现实世界的部署要求；因此，我们采用拉普拉斯近似。由于需要实例级的不确定性，因此需要多次反向传播的线性推理方法不具有时间效率，并且基于采样的方法也不是完全事后的。我们提出蒙特卡罗广义线性化模型（MC-GLM），它提供实例级和近似事后不确定性量化。蒙特卡罗步骤中所需的样本数量是恒定的并且与输出实例的数量无关，因此可以并行化。使用 CenterPoint 检测器在 nuScenes 数据集上进行的实验验证了我们方法的有效性，并且所得的不确定性表现出良好的质量。</p>
         <button class="abstract-toggle" type="button" aria-expanded="false">Expand Abstract</button>
@@ -7089,7 +7089,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2606.04597v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2606.04597" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2606.04597v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.DC,cs.SE">
       <div class="paper-cats">
@@ -7496,7 +7496,7 @@
 <p class="paper-comments">Accepted by KDD 2026</p>      <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2606.04513v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2606.04513" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2606.04513v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.CL">
       <div class="paper-cats">
@@ -7606,7 +7606,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2606.04494v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2606.04494" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2606.04494v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.CV">
       <div class="paper-cats">
@@ -7630,7 +7630,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2606.04493v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2606.04493" target="_blank" rel="noopener">Abs</a>
-          <a class="code" href="https://github.com/Kirito14IT/SFMambaNet" target="_blank" rel="noopener">Code</a>
+<a class="html" href="https://arxiv.org/html/2606.04493v1" target="_blank" rel="noopener">HTML</a>          <a class="code" href="https://github.com/Kirito14IT/SFMambaNet" target="_blank" rel="noopener">Code</a>
       </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.LG,cs.MA">
@@ -7656,7 +7656,7 @@
 <p class="paper-comments">Technical report, 27 pages</p>      <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2606.04484v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2606.04484" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2606.04484v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.CL,cs.CV">
       <div class="paper-cats">
@@ -8375,7 +8375,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2606.04381v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2606.04381" target="_blank" rel="noopener">Abs</a>
-          <a class="code" href="https://github.com/chuchen2017/SLM" target="_blank" rel="noopener">Code</a>
+<a class="html" href="https://arxiv.org/html/2606.04381v1" target="_blank" rel="noopener">HTML</a>          <a class="code" href="https://github.com/chuchen2017/SLM" target="_blank" rel="noopener">Code</a>
       </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.IR">
@@ -8458,7 +8458,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2606.04365v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2606.04365" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2606.04365v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.CV">
       <div class="paper-cats">
@@ -8937,7 +8937,7 @@
 <p class="paper-comments">Presented at ICLR 2026: https://openreview.net/forum?id=TdiRLe3rPA</p>      <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2606.04275v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2606.04275" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2606.04275v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI">
       <div class="paper-cats">
@@ -9083,7 +9083,7 @@
 <p class="paper-comments">Preprint</p>      <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2606.04261v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2606.04261" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2606.04261v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.AR,cs.CL">
       <div class="paper-cats">
@@ -9529,7 +9529,7 @@
 <p class="paper-comments">preprint</p>      <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2606.04177v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2606.04177" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2606.04177v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.CR,cs.LG">
       <div class="paper-cats">
@@ -10050,7 +10050,7 @@
       <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2606.04095v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2606.04095" target="_blank" rel="noopener">Abs</a>
-      </div>
+<a class="html" href="https://arxiv.org/html/2606.04095v1" target="_blank" rel="noopener">HTML</a>      </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.CL,cs.CR,cs.CY,cs.LG">
       <div class="paper-cats">
@@ -10569,7 +10569,7 @@
 <p class="paper-comments">Accepted at KDD 2026</p>      <div class="paper-actions">
         <a href="https://arxiv.org/pdf/2606.04039v1" target="_blank" rel="noopener">PDF</a>
         <a href="https://arxiv.org/abs/2606.04039" target="_blank" rel="noopener">Abs</a>
-          <a class="code" href="https://github.com/shoraaa/DyNACO" target="_blank" rel="noopener">Code</a>
+<a class="html" href="https://arxiv.org/html/2606.04039v1" target="_blank" rel="noopener">HTML</a>          <a class="code" href="https://github.com/shoraaa/DyNACO" target="_blank" rel="noopener">Code</a>
       </div>
     </li>
     <li class="paper" data-cats="cs.AI,cs.LG,cs.SE">
@@ -11744,12 +11744,12 @@
   <footer class="site-footer">
     <div class="wrap footer-wrap">
       <span>Categories: cs.CV, cs.RO, cs.AI</span>
-      <span>Generated 2026-08-11 13:45 UTC</span>
+      <span>Generated 2026-08-13 13:49 UTC</span>
     </div>
   </footer>
 
   <script>
-    window.__archiveDates = ["2026-08-11", "2026-08-10", "2026-08-07", "2026-08-06", "2026-08-05", "2026-08-04", "2026-08-03", "2026-07-31", "2026-07-30", "2026-07-29", "2026-07-28", "2026-07-27", "2026-07-24", "2026-07-23", "2026-07-22", "2026-07-21", "2026-07-20", "2026-07-17", "2026-07-16", "2026-07-15", "2026-07-14", "2026-07-13", "2026-07-10", "2026-07-09", "2026-07-08", "2026-07-07", "2026-07-03", "2026-07-02", "2026-07-01", "2026-06-30", "2026-06-29", "2026-06-26", "2026-06-25", "2026-06-24", "2026-06-23", "2026-06-19", "2026-06-18", "2026-06-17", "2026-06-16", "2026-06-15", "2026-06-12", "2026-06-11", "2026-06-10", "2026-06-09", "2026-06-08", "2026-06-05", "2026-06-04", "2026-06-03", "2026-06-02", "2026-06-01", "2026-05-29", "2026-05-28", "2026-05-27", "2026-05-26", "2026-05-25", "2026-05-22", "2026-05-21", "2026-05-20", "2026-05-19", "2026-05-18", "2026-05-15", "2026-05-14", "2026-05-13", "2026-05-12", "2026-05-11", "2026-05-08", "2026-05-07", "2026-05-06", "2026-05-05", "2026-05-04", "2026-05-01", "2026-04-30", "2026-04-29", "2026-04-28", "2026-04-27", "2026-04-24", "2026-04-23", "2026-04-22", "2026-04-21", "2026-04-20", "2026-04-17"];
+    window.__archiveDates = ["2026-08-13", "2026-08-11", "2026-08-10", "2026-08-07", "2026-08-06", "2026-08-05", "2026-08-04", "2026-08-03", "2026-07-31", "2026-07-30", "2026-07-29", "2026-07-28", "2026-07-27", "2026-07-24", "2026-07-23", "2026-07-22", "2026-07-21", "2026-07-20", "2026-07-17", "2026-07-16", "2026-07-15", "2026-07-14", "2026-07-13", "2026-07-10", "2026-07-09", "2026-07-08", "2026-07-07", "2026-07-03", "2026-07-02", "2026-07-01", "2026-06-30", "2026-06-29", "2026-06-26", "2026-06-25", "2026-06-24", "2026-06-23", "2026-06-19", "2026-06-18", "2026-06-17", "2026-06-16", "2026-06-15", "2026-06-12", "2026-06-11", "2026-06-10", "2026-06-09", "2026-06-08", "2026-06-05", "2026-06-04", "2026-06-03", "2026-06-02", "2026-06-01", "2026-05-29", "2026-05-28", "2026-05-27", "2026-05-26", "2026-05-25", "2026-05-22", "2026-05-21", "2026-05-20", "2026-05-19", "2026-05-18", "2026-05-15", "2026-05-14", "2026-05-13", "2026-05-12", "2026-05-11", "2026-05-08", "2026-05-07", "2026-05-06", "2026-05-05", "2026-05-04", "2026-05-01", "2026-04-30", "2026-04-29", "2026-04-28", "2026-04-27", "2026-04-24", "2026-04-23", "2026-04-22", "2026-04-21", "2026-04-20", "2026-04-17"];
     window.__currentDate = "2026-06-05";
     window.__assetPrefix = "../";
   </script>

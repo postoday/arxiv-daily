@@ -223,7 +223,8 @@
       "figures": [],
       "announced_in": [
         "cs.CV"
-      ]
+      ],
+      "html_url": "https://arxiv.org/html/2607.19339v1"
     },
     {
       "arxiv_id": "2607.19338",
@@ -335,7 +336,8 @@
       "figures": [],
       "announced_in": [
         "cs.AI"
-      ]
+      ],
+      "html_url": "https://arxiv.org/html/2607.19333v1"
     },
     {
       "arxiv_id": "2607.19332",
@@ -362,7 +364,8 @@
       "figures": [],
       "announced_in": [
         "cs.CV"
-      ]
+      ],
+      "html_url": "https://arxiv.org/html/2607.19332v1"
     },
     {
       "arxiv_id": "2607.19331",
@@ -507,7 +510,8 @@
       "figures": [],
       "announced_in": [
         "cs.AI"
-      ]
+      ],
+      "html_url": "https://arxiv.org/html/2607.19321v1"
     },
     {
       "arxiv_id": "2607.19315",
@@ -649,7 +653,8 @@
       "figures": [],
       "announced_in": [
         "cs.AI"
-      ]
+      ],
+      "html_url": "https://arxiv.org/html/2607.19305v1"
     },
     {
       "arxiv_id": "2607.19300",
@@ -780,7 +785,8 @@
       "announced_in": [
         "cs.CV",
         "cs.RO"
-      ]
+      ],
+      "html_url": "https://arxiv.org/html/2607.19288v1"
     },
     {
       "arxiv_id": "2607.19284",
@@ -984,7 +990,8 @@
       "figures": [],
       "announced_in": [
         "cs.AI"
-      ]
+      ],
+      "html_url": "https://arxiv.org/html/2607.19262v1"
     },
     {
       "arxiv_id": "2607.19261",
@@ -1054,7 +1061,8 @@
       "figures": [],
       "announced_in": [
         "cs.AI"
-      ]
+      ],
+      "html_url": "https://arxiv.org/html/2607.19259v1"
     },
     {
       "arxiv_id": "2607.19257",
@@ -1150,7 +1158,8 @@
       "figures": [],
       "announced_in": [
         "cs.AI"
-      ]
+      ],
+      "html_url": "https://arxiv.org/html/2607.19243v1"
     },
     {
       "arxiv_id": "2607.19235",
@@ -1364,7 +1373,8 @@
       "figures": [],
       "announced_in": [
         "cs.CV"
-      ]
+      ],
+      "html_url": "https://arxiv.org/html/2607.19210v1"
     },
     {
       "arxiv_id": "2607.19209",
@@ -2456,6 +2466,10 @@
       ],
       "announced_in": [
         "cs.CV"
+      ],
+      "affiliations": [
+        "Queen Mary University of London, London, United Kingdom",
+        "EPFL, Lausanne, Switzerland"
       ]
     },
     {
@@ -2512,7 +2526,8 @@
       "figures": [],
       "announced_in": [
         "cs.AI"
-      ]
+      ],
+      "html_url": "https://arxiv.org/html/2607.19072v1"
     },
     {
       "arxiv_id": "2607.19069",
@@ -3484,7 +3499,8 @@
       "figures": [],
       "announced_in": [
         "cs.AI"
-      ]
+      ],
+      "html_url": "https://arxiv.org/html/2607.18975v1"
     },
     {
       "arxiv_id": "2607.18973",
@@ -3583,7 +3599,8 @@
       "figures": [],
       "announced_in": [
         "cs.AI"
-      ]
+      ],
+      "html_url": "https://arxiv.org/html/2607.18966v1"
     },
     {
       "arxiv_id": "2607.18965",
@@ -3745,7 +3762,8 @@
       "figures": [],
       "announced_in": [
         "cs.RO"
-      ]
+      ],
+      "html_url": "https://arxiv.org/html/2607.18950v1"
     },
     {
       "arxiv_id": "2607.18943",
@@ -3797,7 +3815,8 @@
       "figures": [],
       "announced_in": [
         "cs.RO"
-      ]
+      ],
+      "html_url": "https://arxiv.org/html/2607.18940v1"
     },
     {
       "arxiv_id": "2607.18936",
@@ -3891,7 +3910,8 @@
       "figures": [],
       "announced_in": [
         "cs.AI"
-      ]
+      ],
+      "html_url": "https://arxiv.org/html/2607.18927v1"
     },
     {
       "arxiv_id": "2607.18924",
@@ -6709,7 +6729,8 @@
       "figures": [],
       "announced_in": [
         "cs.AI"
-      ]
+      ],
+      "html_url": "https://arxiv.org/html/2607.18618v1"
     },
     {
       "arxiv_id": "2607.18609",
@@ -8315,7 +8336,8 @@
       "figures": [],
       "announced_in": [
         "cs.AI"
-      ]
+      ],
+      "html_url": "https://arxiv.org/html/2607.18438v1"
     },
     {
       "arxiv_id": "2607.18436",
@@ -8950,7 +8972,8 @@
       "figures": [],
       "announced_in": [
         "cs.AI"
-      ]
+      ],
+      "html_url": "https://arxiv.org/html/2607.18345v1"
     },
     {
       "arxiv_id": "2607.18344",
@@ -9056,7 +9079,8 @@
       "figures": [],
       "announced_in": [
         "cs.AI"
-      ]
+      ],
+      "html_url": "https://arxiv.org/html/2607.18342v1"
     },
     {
       "arxiv_id": "2607.18340",
@@ -9658,6 +9682,9 @@
       "figures": [],
       "announced_in": [
         "cs.AI"
+      ],
+      "affiliations": [
+        "Institute of Mechanical Intelligence, Sant’Anna School of Advanced Studies, Pisa, Italy"
       ]
     },
     {
@@ -10169,6 +10196,9 @@
       ],
       "announced_in": [
         "cs.AI"
+      ],
+      "affiliations": [
+        "RPTU University of Kaiserslautern-Landau, Germany"
       ]
     },
     {
@@ -10520,7 +10550,8 @@
       "figures": [],
       "announced_in": [
         "cs.AI"
-      ]
+      ],
+      "html_url": "https://arxiv.org/html/2607.18256v1"
     },
     {
       "arxiv_id": "2607.18255",
@@ -10826,6 +10857,11 @@
       ],
       "announced_in": [
         "cs.AI"
+      ],
+      "affiliations": [
+        "Zetafence, Dublin, CA, USA",
+        "Texas A&M University–Central Texas, Killeen, TX, USA",
+        "Howard University, Washington, DC, USA; ORCID: 0000-0003-3638-3464"
       ]
     },
     {
