@@ -3540,6 +3540,16 @@
         "https://arxiv.org/html/2608.18701v1/SoftVTBench_Figure2.png",
         "https://arxiv.org/html/2608.18701v1/Figures/tactilergb.png",
         "https://arxiv.org/html/2608.18701v1/Figures/ood_trends_all.png"
+      ],
+      "affiliations": [
+        "Stevens Institute of Technology",
+        "The Hong Kong University of Science and Technology (Guangzhou)",
+        "University of Manchester",
+        "Imperial College London",
+        "Carnegie Mellon University",
+        "Zhejiang University",
+        "Beihang University",
+        "The University of Hong Kong corresponding author"
       ]
     },
     {
@@ -8674,7 +8684,8 @@
       "project_links": [],
       "title_zh": "葡萄牙语语言模型：系统映射研究",
       "abstract_zh": "近年来，语言模型的快速发展通过广泛的应用改变了自然语言处理领域。然而，语言模型的开发并没有在所有语言中取得一致的进展。就葡萄牙语而言，学术界和公司最近越来越努力开发葡萄牙语的语言模型和创建数据资源。这些努力导致葡萄牙语语言模型生态系统日益多样化。然而，有关这些模型的信息仍然分散在科学出版物、技术报告、模型存储库和项目文档中。这项调查对为葡萄牙语开发的语言模型进行了系统的映射研究，全面概述了该领域的现状。我们总共绘制了 46 个模型，从各个方面来描述它们，包括基础模型、架构、计算资源、训练数据集、许可、代码可用性、数据和模型权重。此外，我们从系统发育的角度分析了这些模型之间的演变和关系，确定了当前的研究差距和机遇，并讨论了葡萄牙语语言模型的未来发展方向。",
-      "figures": []
+      "figures": [],
+      "html_url": "https://arxiv.org/html/2608.18138v1"
     },
     {
       "arxiv_id": "2608.18136",
